@@ -3,8 +3,8 @@ import Text from "../../../../components/Text/Text"
 
 const Hero = styled.div`
   position: absolute;
-  left: 20%;
-  top: 48vh;
+  top: 22vh;
+  left: 17.5%;
   width: 60vw;
   height: 40vh;
   background: linear-gradient(90deg, #000000 0%, #434343 100%);
@@ -16,6 +16,10 @@ const Profile = styled.div`
   width: 50%;
   width: 50vw;
   display: flex;
+`
+const Image = styled.img`
+  position: relative;
+  top: -215px;
 `
 const TopHalf = styled.div`
   margin-top: 40px;
@@ -31,8 +35,8 @@ const Avatar = styled.div`
   width: 110px;
   height: 110px;
   border-radius: 999px;
-  overflow: hidden;
   margin-right: 20px;
+  overflow: hidden;
 `
 const UnderLine = styled.div`
   position: absolute;
@@ -65,7 +69,7 @@ const Review = ({ what, avatar, profileName, profileTitle, profileReview }) => {
         <BottomHalf>
           <Profile>
             <Avatar>
-              <img src={avatar} height={110} width={110} />
+              <Image src={avatar} height={110} width={110} />
             </Avatar>
             <div>
               <Text

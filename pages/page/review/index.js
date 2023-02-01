@@ -4,18 +4,48 @@ import PageWidth from "../../../components/Width/PageWidth"
 import Text from "../../../components/Text/Text"
 import { bg, Responsive } from "./components/Style"
 import styled from "styled-components"
-import Dots from "./components/Dots"
 import BgRectangle from "../review/components/BgRectangle"
+import Review from "./components/Review"
 
 const slides = [
   {
-    eachSlide: "url(/content/tom1.png)",
+    eachSlide: (
+      <Review
+        what={"What our customer are saying"}
+        avatar={"/content/avatar.png"}
+        profileName={"Edward Newgate"}
+        profileTitle={"Founder Circle"}
+        profileReview={
+          "“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls or administrative hassle) and securely"
+        }
+      />
+    ),
   },
   {
-    eachSlide: "url(/content/tom2.png)",
+    eachSlide: (
+      <Review
+        what={"What our customer are saying"}
+        avatar={"/content/avatar.png"}
+        profileName={"john doe"}
+        profileTitle={"not Founder Circle"}
+        profileReview={
+          "“ portal allow you to access information instantaneously (no tedeous form, long calls or administrative hassle) and securely"
+        }
+      />
+    ),
   },
   {
-    eachSlide: "url(/content/tom3.png)",
+    eachSlide: (
+      <Review
+        what={"What our customer are saying"}
+        avatar={"/content/avatar.png"}
+        profileName={"some Newgate"}
+        profileTitle={"the Founder Circle"}
+        profileReview={
+          "“information instantaneously (no tedeous form, long calls or administrative hassle) and securely"
+        }
+      />
+    ),
   },
 ]
 export const Arrows = styled.button`
@@ -27,9 +57,12 @@ export const Arrows = styled.button`
   cursor: pointer;
   transition: ease 0.3s all;
   outline: none;
+  &:hover {
+    transform: scale(115%);
+  }
 `
 const Slide = styled.div`
-  transform: scale(80%);
+  transform: scale(120%);
   width: 100vw;
   height: 100vh;
   float: left;
@@ -40,11 +73,7 @@ const Slide = styled.div`
   background-position: center center;
   background-color: transparent;
 `
-const ArrowsHover = styled.div`
-  &:hover ${Arrows} {
-    transform: scale(105%);
-  }
-`
+const ArrowsHover = styled.div``
 const Wrapper = styled.div`
   height: 60vh;
   transition: 0.5s all linear;
@@ -55,6 +84,12 @@ const Section = styled.section`
   height: 100vh;
   overflow: hidden;
   position: relative;
+`
+const Dots = styled.img`
+  position: absolute;
+  top: 200px;
+  left: -120px;
+  transform: scale(25%);
 `
 const DotsContainer = styled.ul`
   height: auto;
@@ -73,6 +108,7 @@ const DotsContainer = styled.ul`
     padding: 5px 10px;
     font-size: 10px;
     & button {
+      cursor: pointer;
       color: #fff;
       background-color: transparent;
       border: none;
@@ -108,23 +144,16 @@ const index = () => {
   }
 
   const renderSlides = () =>
-    slides.map((item, index) => (
-      <Slide key={index} style={{ backgroundImage: item.eachSlide }}></Slide>
-    ))
+    slides.map((item, index) => <Slide key={index}>{item.eachSlide}</Slide>)
 
   const renderDots = () =>
-    slides.map(
-      (
-        silde,
-        index // check index
-      ) => (
-        <li className={isActive(index) + " dots"} key={index}>
-          <button onClick={() => setActive(index)}>
-            <span>&#9673;</span>
-          </button>
-        </li>
-      )
-    )
+    slides.map((silde, index) => (
+      <li className={isActive(index) + " dots"} key={index}>
+        <button onClick={() => setActive(index)}>
+          <span>&#9673;</span>
+        </button>
+      </li>
+    ))
 
   const renderArrows = () => (
     <ArrowsHover>
@@ -275,11 +304,11 @@ const index = () => {
         <Responsive>
           <BgRectangle />
           <Section>
+            <Dots src="/content/Dots.png" />
             <Wrapper style={setSliderStyles()}>{renderSlides()}</Wrapper>
             {renderArrows()}
             <DotsContainer>{renderDots()}</DotsContainer>
           </Section>
-          <Dots />
         </Responsive>
       </PageWidth>
     </PageLayout>

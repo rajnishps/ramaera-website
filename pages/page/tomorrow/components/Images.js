@@ -105,7 +105,7 @@ const Images = () => {
                 cy="29"
                 r="28.5"
                 fill="white"
-                fill-opacity="0.06"
+                fillOpacity="0.06"
                 stroke="white"
               />
               <path
@@ -168,7 +168,7 @@ const Images = () => {
                 cy="29"
                 r="28.5"
                 fill="white"
-                fill-opacity="0.06"
+                fillOpacity="0.06"
                 stroke="white"
               />
               <path

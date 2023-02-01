@@ -10,9 +10,9 @@ const BgWrapper = styled.div`
 
 const Bg = styled.div`
   position: absolute;
-  left: 22.5%;
-  top: 45vh;
-  width: 55vw;
+  left: 15%;
+  top: 46.5vh;
+  width: 65vw;
   height: 40vh;
   background: linear-gradient(282.22deg, #e8c952 15.22%, #eba14f 85.08%);
   border: 2px solid #ffffff;
