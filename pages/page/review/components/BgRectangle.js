@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 
 const BgWrapper = styled.div`
+  position: absolute;
+  bottom: 280px;
   height: 100vh;
   width: 100vw;
 `

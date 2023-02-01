@@ -3,8 +3,7 @@ import PageLayout from "../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../components/Width/PageWidth"
 import Text from "../../../components/Text/Text"
 import { bg, Responsive } from "./components/Style"
-import BgRectangle from "./components/BgRectangle"
-import Dots from "./components/Dots"
+import BgRectangle from "../review/components/BgRectangle"
 import Review from "./components/Review"
 
 const index = () => (
@@ -30,7 +29,6 @@ const index = () => (
             "“Our dedicated patient engagement app and web portal allow you to access information instantaneously (no tedeous form, long calls or administrative hassle) and securely"
           }
         />
-        <Dots />
       </Responsive>
     </PageWidth>
   </PageLayout>

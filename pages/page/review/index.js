@@ -1,16 +1,11 @@
+import { useState } from "react"
 import PageLayout from "../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../components/Width/PageWidth"
 import Text from "../../../components/Text/Text"
 import { bg, Responsive } from "./components/Style"
-import { useState } from "react"
 import styled from "styled-components"
-import {
-  Arrows,
-  Slide,
-  ArrowsHover,
-  Wrapper,
-  Section,
-} from "../tomorrow/components/Images"
+import Dots from "./components/Dots"
+import BgRectangle from "../review/components/BgRectangle"
 
 const slides = [
   {
@@ -22,13 +17,76 @@ const slides = [
   {
     eachSlide: "url(/content/tom3.png)",
   },
-  {
-    eachSlide: "url(/content/tom1.png)",
-  },
-  {
-    eachSlide: "url(/content/tom2.png)",
-  },
 ]
+export const Arrows = styled.button`
+  position: absolute;
+  top: 40%;
+  background: none;
+  height: 60px;
+  border: 0;
+  cursor: pointer;
+  transition: ease 0.3s all;
+  outline: none;
+`
+const Slide = styled.div`
+  transform: scale(80%);
+  width: 100vw;
+  height: 100vh;
+  float: left;
+  line-height: 50vh;
+  font-size: 40vh;
+  text-align: center;
+  background-size: cover;
+  background-position: center center;
+  background-color: transparent;
+`
+const ArrowsHover = styled.div`
+  &:hover ${Arrows} {
+    transform: scale(105%);
+  }
+`
+const Wrapper = styled.div`
+  height: 60vh;
+  transition: 0.5s all linear;
+  will-change: transform;
+`
+const Section = styled.section`
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+`
+const DotsContainer = styled.ul`
+  height: auto;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: auto;
+  text-align: center;
+  left: 50%;
+  bottom: 160px;
+  transform: translateX(-50%);
+  z-index: 10;
+  list-style-type: none;
+  & li {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 10px;
+    & button {
+      color: #fff;
+      background-color: transparent;
+      border: none;
+    }
+    &.active button {
+      color: #ffa751;
+      &.hover {
+        text-decoration: none;
+        opacity: 0.7;
+        cursor: pointer;
+      }
+    }
+  }
+`
 
 const index = () => {
   const [active, setActive] = useState(0)
@@ -62,7 +120,7 @@ const index = () => {
       ) => (
         <li className={isActive(index) + " dots"} key={index}>
           <button onClick={() => setActive(index)}>
-            <span>&#9679;</span>
+            <span>&#9673;</span>
           </button>
         </li>
       )
@@ -70,7 +128,7 @@ const index = () => {
 
   const renderArrows = () => (
     <ArrowsHover>
-      <Arrows style={{ left: 0 }} onClick={() => prevOne()}>
+      <Arrows style={{ left: 550, top: 618 }} onClick={() => prevOne()}>
         <svg
           width="32"
           height="19"
@@ -134,7 +192,7 @@ const index = () => {
           </defs>
         </svg>
       </Arrows>
-      <Arrows style={{ right: 0 }} onClick={() => nextOne()}>
+      <Arrows style={{ right: 550, top: 618 }} onClick={() => nextOne()}>
         <svg
           width="32"
           height="20"
@@ -215,11 +273,13 @@ const index = () => {
           lh="65px"
         />
         <Responsive>
+          <BgRectangle />
           <Section>
             <Wrapper style={setSliderStyles()}>{renderSlides()}</Wrapper>
             {renderArrows()}
-            <ul className="dots-container">{renderDots()}</ul>
+            <DotsContainer>{renderDots()}</DotsContainer>
           </Section>
+          <Dots />
         </Responsive>
       </PageWidth>
     </PageLayout>

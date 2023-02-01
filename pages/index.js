@@ -40,8 +40,8 @@ export default function Home() {
       <Story />
       <Future />
       <Leader />
-      <Trust />
-      {/*<Review />*/}
+      {/*<Trust />*/}
+      <Review />
       <Promoting />
       <Tomorrow />
       <Faqs />
