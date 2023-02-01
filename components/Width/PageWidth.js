@@ -9,8 +9,10 @@ const PageWidth = ({
   sp,
   width,
   position,
+  scale,
 }) => {
   const StyledWidth = styled.section`
+    transform: ${scale ? `scale(${scale})` : ""};
     width: ${full ? "100%" : width ? width : "1400px"};
     height: auto;
     display: flex;

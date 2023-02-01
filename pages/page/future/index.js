@@ -14,7 +14,7 @@ const index = () => {
         transition={{ duration: 4, repeat: 1 }}
       />
       <FutureContainer>
-        <PageWidth width="1400px" margin="0 0 2rem 0">
+        <PageWidth scale={"85%"} width="1400px" margin="0 0 2rem 0">
           <Text
             Text="The"
             lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"

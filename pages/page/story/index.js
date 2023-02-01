@@ -9,7 +9,7 @@ const index = () => {
 
   return (
     <PageLayout bgColor="#f5f5f5" bg={bg}>
-      <PageWidth width="1500px" margin="0 0 2rem 0">
+      <PageWidth scale={"85%"} width="1500px" margin="0 0 2rem 0">
         <Text
           Text="Stories that Inspire"
           lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"

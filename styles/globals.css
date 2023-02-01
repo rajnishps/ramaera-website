@@ -52,7 +52,7 @@
   :root {
     --foreground-rgb: 255, 255, 255;
     --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+    --background-end-rgb: 62, 62, 62;
 
     --primary-glow: radial-gradient(rgba(1, 65, 255, 0.4), rgba(1, 65, 255, 0));
     --secondary-glow: linear-gradient(
@@ -96,12 +96,12 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
+  background: rgb(0, 0, 0);
   background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+    90deg,
+    rgb(var(--background-start-rgb)) 0%,
+    rgb(var(--background-end-rgb)) 100%
+  );
 }
 
 a {
@@ -169,10 +169,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 8rem;
-  position: fixed;
+  height: 6rem;
+  position: absolute;
   top: 0;
-
   transition: 0.5s linear;
   width: 1800px;
   left: 50%;
@@ -213,7 +212,7 @@ a {
 .list * {
   box-sizing: border-box;
   transition: all 0.35s ease;
-  font-size: 24px;
+  font-size: 22px;
   padding: 0 !important;
   margin: 0 !important;
   font-weight: 500;

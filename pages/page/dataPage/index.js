@@ -13,7 +13,7 @@ const index = () => {
 
   return (
     <PageLayout bg={bg}>
-      <PageWidth width="1500px">
+      <PageWidth scale={"85%"} width="1500px">
         <div
           style={{ width: "100%" }}
           data-aos="fade-right"

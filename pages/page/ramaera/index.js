@@ -6,7 +6,11 @@ import Button from "../../../components/Button/Button"
 import SocialMedia from "./components/SocialMedia/SocialMedia"
 import { images, text } from "./components/Style"
 import Tab from "./components/Tab/Tab"
+import styled from "styled-components"
 
+const SmallSize = styled.div`
+  transform: scale(80%);
+`
 const index = () => {
   const [currentIndex, setCurrentIndex] = useState(0)
 
@@ -24,33 +28,35 @@ const index = () => {
 
   return (
     <PageLayout bg={images[currentIndex]} bgColor="#fff" Zindex="-2">
-      <PageWidth width="1500px" padding="8rem 0 0 0" position="fixed">
-        <Text
-          Text="Ramaera Industries"
-          lg="linear-gradient(90deg, #E65C00 0%, #F9D423 100%)"
-          font
-          size="96px"
-          lh="125px"
-          width="50rem"
-          fw="500"
-          align="center"
-        />
+      <SmallSize>
+        <PageWidth width="1500px" padding="8rem 0 0 0" position="relative">
+          <Text
+            Text="Ramaera Industries"
+            lg="linear-gradient(90deg, #E65C00 0%, #F9D423 100%)"
+            font
+            size="96px"
+            lh="125px"
+            width="50rem"
+            fw="500"
+            align="center"
+          />
 
-        {text[currentIndex]}
+          {text[currentIndex]}
 
-        <Button
-          Text="Explore more"
-          secondary
-          lightBorder
-          height="60px"
-          m="2rem 0 0 0"
-        />
-        <img
-          src="/background/bottom.png"
-          alt=""
-          style={{ height: "7rem", width: "9.5rem", margin: "1rem 0 0 0" }}
-        />
-      </PageWidth>
+          <Button
+            Text="Explore more"
+            secondary
+            lightBorder
+            height="60px"
+            m="2rem 0 0 0"
+          />
+          <img
+            src="/background/bottom.png"
+            alt=""
+            style={{ height: "7rem", width: "9.5rem", margin: "1rem 0 0 0" }}
+          />
+        </PageWidth>
+      </SmallSize>
       <SocialMedia />
       <Tab currentIndex={currentIndex} />
     </PageLayout>
