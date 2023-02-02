@@ -16,7 +16,7 @@ const Buy = () => {
 
   return (
     <PageLayout bg={bg} height="100%">
-      <PageWidth scale={"85%"} width="1500px" position="relative">
+      <PageWidth scale={"90%"} width="1500px" position="relative">
         <div
           data-aos="fade-right"
           data-aos-duration="500"

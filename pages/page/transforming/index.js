@@ -3,6 +3,7 @@ import PageLayout from "../../../components/PageLayout/PageLayout"
 import Text from "../../../components/Text/Text"
 import { factory, Responsive } from "./components/Style"
 import PageWidth from "../../../components/Width/PageWidth"
+import styled from "styled-components"
 
 const index = () => (
   <PageLayout bgColor="#f5f5f5" bg={factory}>

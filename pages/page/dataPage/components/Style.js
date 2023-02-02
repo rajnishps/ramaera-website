@@ -7,7 +7,7 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  padding: 2rem 0;
 `
 const StyleImage = () => {
   return <div>StyleImage</div>

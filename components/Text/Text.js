@@ -21,7 +21,6 @@ const Text = (props) => {
     width: ${props.width ? props.width : ""};
     opacity: 0.99;
     text-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
-
     &:hover {
       color: ${props.hoverColor ? props.hoverColor : null};
     }

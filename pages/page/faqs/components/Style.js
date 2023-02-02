@@ -12,11 +12,11 @@ export const CustomText = styled.h1`
   margin: 3rem 0;
 `
 export const Responsive = styled.div`
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 4rem 0 0 0;
+  margin: 0 0 0 0;
 `
 
 const Style = () => {

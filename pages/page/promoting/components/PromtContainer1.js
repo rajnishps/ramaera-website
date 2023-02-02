@@ -3,9 +3,6 @@ import Text from "../../../../components/Text/Text"
 import Button from "../../../../components/Button/Button"
 
 const Texts = styled.div`
-  position: absolute;
-  top: 35vh;
-  left: 45vw;
   width: 35vw;
 `
 const PromtContainer1 = () => {
