@@ -42,15 +42,15 @@ const index = () => {
           />
 
           {text[currentIndex]}
-
-          <Button
-            Text="Explore more"
-            secondary
-            lightBorder
-            height="60px"
-            m="2rem 0 0 0"
-            cursor="pointer"
-          />
+          <div>
+            <Button
+              Text="Explore more"
+              secondary
+              lightBorder
+              height="60px"
+              m="2rem 0 0 0"
+            />
+          </div>
           <img
             src="/background/bottom.png"
             alt=""
