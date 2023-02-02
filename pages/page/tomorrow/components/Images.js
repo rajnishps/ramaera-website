@@ -221,7 +221,9 @@ const Images = () => {
 
   return (
     <Section>
-      <Wrapper style={setSliderStyles()}>{renderSlides()}</Wrapper>
+      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+        <Wrapper style={setSliderStyles()}>{renderSlides()}</Wrapper>
+      </div>
       {renderArrows()}
     </Section>
   )

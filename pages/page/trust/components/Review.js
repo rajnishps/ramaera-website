@@ -3,12 +3,12 @@ import Text from "../../../../components/Text/Text"
 
 const Hero = styled.div`
   position: absolute;
-  left: 20%;
-  top: 48vh;
+  top: 22vh;
+  left: 17.5%;
   width: 60vw;
   height: 40vh;
   background: linear-gradient(90deg, #000000 0%, #434343 100%);
-  border: 3px solid #ffffff;
+  border: 2px solid #ffffff;
   border-radius: 24px;
 `
 const Profile = styled.div`
@@ -16,6 +16,12 @@ const Profile = styled.div`
   width: 50%;
   width: 50vw;
   display: flex;
+`
+const Image = styled.img`
+  position: absolute;
+  left: 100px;
+  border-radius: 999px;
+  border: solid 2px white;
 `
 const TopHalf = styled.div`
   margin-top: 40px;
@@ -27,12 +33,10 @@ const BottomHalf = styled.div`
   justify-content: center;
 `
 const Avatar = styled.div`
-  border: solid 2px white;
   width: 110px;
   height: 110px;
-  border-radius: 999px;
-  overflow: hidden;
   margin-right: 20px;
+  overflow: hidden;
 `
 const UnderLine = styled.div`
   position: absolute;
@@ -47,13 +51,13 @@ const ReviewText = styled.div`
   margin-right: 100px;
   overflow-wrap: wrap;
 `
-const Review = ({ what, avatar, profileName, profileTitle, profileReview }) => {
+const Review = ({ avatar, profileName, profileTitle, profileReview }) => {
   return (
     <>
       <Hero>
         <TopHalf>
           <Text
-            Text={what}
+            Text="What our customer are saying"
             size="28px"
             lh="60px"
             color="#FFF"
@@ -65,7 +69,7 @@ const Review = ({ what, avatar, profileName, profileTitle, profileReview }) => {
         <BottomHalf>
           <Profile>
             <Avatar>
-              <img src={avatar} height={110} width={110} />
+              <Image src={avatar} height={110} width={110} />
             </Avatar>
             <div>
               <Text

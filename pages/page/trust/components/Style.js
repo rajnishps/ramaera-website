@@ -11,14 +11,10 @@ export const CustomText = styled.h1`
   margin: 3rem 0;
 `
 export const Responsive = styled.div`
+  transform: scale(80%);
   width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin: 4rem 0 0 0;
+  margin: 0 0 0 0;
 `
-
-import React from "react"
 
 const Style = () => {
   return <div>StyleImage</div>

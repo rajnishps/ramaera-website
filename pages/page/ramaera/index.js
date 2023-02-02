@@ -49,6 +49,7 @@ const index = () => {
             lightBorder
             height="60px"
             m="2rem 0 0 0"
+            cursor="pointer"
           />
           <img
             src="/background/bottom.png"

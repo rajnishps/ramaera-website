@@ -21,12 +21,9 @@ export const RotateImage = styled(motion.div)`
   background-size: 100% 100%;
   background-repeat: no-repeat;
   border-radius: 1.5rem;
-  padding: 2rem;
+  padding: 8rem;
   position: absolute;
   z-index: -1;
-  @media (max-width: 13500px) {
-    width: 95%;
-  }
 `
 export const FutureContainer = styled.div`
   width: 100%;

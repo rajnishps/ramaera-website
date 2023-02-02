@@ -6,12 +6,11 @@ import { bg, RotateImage, FutureContainer } from "./components/Style"
 import Roadmap from "./components/Roadmap"
 
 const index = () => {
-  const [repeatAnimation, setRepeatAnimation] = useState(0)
   return (
     <PageLayout bgColor="#f5f5f5" bg={bg} Y height="90rem">
       <RotateImage
         animate={{ rotate: 315 }}
-        transition={{ duration: 4, repeat: 1 }}
+        transition={{ duration: 4, repeat: Infinity }}
       />
       <FutureContainer>
         <PageWidth scale={"85%"} width="1400px" margin="0 0 2rem 0">

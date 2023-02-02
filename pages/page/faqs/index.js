@@ -12,6 +12,7 @@ const index = () => (
         <div
           data-aos="slide-left"
           data-aos-easing="ease-in-back"
+          data-aos-anchor-placement="top-center"
           style={{
             position: "absolute",
             margin: " 8rem 0 8rem 0 ",

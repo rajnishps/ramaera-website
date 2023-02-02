@@ -10,8 +10,8 @@ export const StockImage = styled.div`
   height: 42rem;
 `
 export const HoverImage = styled(motion.div)`
-  width: 60%;
-  height: 35rem;
+  width: 87.5%;
+  height: 40rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -21,6 +21,7 @@ export const HoverImage = styled(motion.div)`
   background-repeat: no-repeat;
   border-radius: 1.5rem;
   padding: 2rem;
+  margin-top: 2.5rem;
   position: absolute;
   top: 50%;
   left: 50%;
