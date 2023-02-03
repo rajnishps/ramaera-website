@@ -46,23 +46,23 @@ const TextContainer = () => {
           <path
             d="M50 52.9995C59.1242 59.7653 70.7678 74.0078 72.4955 97.9995C74.5133 82.659 75.8698 76.6245 81.4937 66.4995"
             stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M91.3355 63.1988C93.7276 66.8546 94.9983 71.1304 94.991 75.4995C94.991 87.9263 84.9198 97.9995 72.4955 97.9995C60.0712 97.9995 50 87.9263 50 75.4995C50 63.0728 60.0712 52.9995 72.4955 52.9995C77.0014 52.9995 81.199 54.3248 84.7173 56.6063"
             stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <path
             d="M83.9776 57.4995C81.7235 60.366 81.3996 63.318 81.5031 66.4995C85.7772 66.2745 88.2585 66.0473 91.1761 63.3495C94.339 60.4245 94.7754 58.1745 95.0004 52.9995C88.9266 53.2245 86.8502 53.8433 83.9776 57.4995Z"
             stroke="white"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           />
           <defs>
             <filter
@@ -72,9 +72,9 @@ const TextContainer = () => {
               width="150"
               height="150"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"

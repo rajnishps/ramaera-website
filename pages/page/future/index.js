@@ -1,4 +1,3 @@
-import { useState } from "react"
 import PageLayout from "../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../components/Width/PageWidth"
 import Text from "../../../components/Text/Text"
@@ -8,10 +7,7 @@ import Roadmap from "./components/Roadmap"
 const index = () => {
   return (
     <PageLayout bgColor="#f5f5f5" bg={bg} Y height="90rem">
-      <RotateImage
-        animate={{ rotate: 315 }}
-        transition={{ duration: 4, repeat: Infinity }}
-      />
+      <RotateImage animate={{ rotate: 90 }} transition={{ duration: 1 }} />
       <FutureContainer>
         <PageWidth scale={"85%"} width="1400px" margin="0 0 2rem 0">
           <Text

@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 import PageLayout from "../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../components/Width/PageWidth"
 import Text from "../../../components/Text/Text"
@@ -117,9 +117,13 @@ const DotsContainer = styled.ul`
     }
   }
 `
-
 const index = () => {
   const [active, setActive] = useState(0)
+
+  useEffect(() => {
+    console.log(active)
+  }, [active])
+
   const max = slides.length
 
   const nextOne = () => active < max - 1 && setActive(active + 1)
@@ -173,9 +177,9 @@ const index = () => {
               width="36.0605"
               height="25.8574"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -209,8 +213,8 @@ const index = () => {
               y2="18.2859"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FFE159" />
-              <stop offset="1" stop-color="#FFA751" />
+              <stop stopColor="#FFE159" />
+              <stop offset="1" stopColor="#FFA751" />
             </linearGradient>
           </defs>
         </svg>
@@ -237,9 +241,9 @@ const index = () => {
               width="36.0605"
               height="25.8574"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -273,8 +277,8 @@ const index = () => {
               y2="0.714144"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#FFE159" />
-              <stop offset="1" stop-color="#FFA751" />
+              <stop stopColor="#FFE159" />
+              <stop offset="1" stopColor="#FFA751" />
             </linearGradient>
           </defs>
         </svg>

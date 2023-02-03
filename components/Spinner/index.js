@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react"
+import styled from "styled-components"
 
 const Spinner = () => (
   <StyledSpinner viewBox="0 0 50 50">
@@ -12,21 +12,21 @@ const Spinner = () => (
       strokeWidth="4"
     />
   </StyledSpinner>
-);
+)
 
 const StyledSpinner = styled.svg`
   animation: rotate 2s linear infinite;
   margin: -10px 0 0 -10px;
-  
+
   width: 50px;
   height: 50px;
-  
+
   & .path {
-    stroke: #5652BF;
-    stroke-linecap: round;
+    stroke: #5652bf;
+    strokelinecap: round;
     animation: dash 1.5s ease-in-out infinite;
   }
-  
+
   @keyframes rotate {
     100% {
       transform: rotate(360deg);
@@ -47,6 +47,6 @@ const StyledSpinner = styled.svg`
       stroke-dashoffset: -124;
     }
   }
-`;
+`
 
-export default Spinner;
+export default Spinner

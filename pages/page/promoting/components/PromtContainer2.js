@@ -26,7 +26,7 @@ const PromtContainer2 = () => {
         fw="200"
         m="0 4rem 2rem 0"
       />
-      <Button Text="Read More" m="0" lightBorder fontSize="12px" bg="none" />
+      <Button Text="Read More" m="0" lightborder fontSize="12px" bg="none" />
     </Texts>
   )
 }

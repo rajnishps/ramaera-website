@@ -46,7 +46,7 @@ const index = () => {
             <Button
               Text="Explore more"
               secondary
-              lightBorder
+              lightborder
               height="60px"
               m="2rem 0 0 0"
             />

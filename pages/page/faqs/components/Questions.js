@@ -118,10 +118,10 @@ const Questions = () => {
   return (
     <QuestionsContainer>
       <QuestionDiv>
-        <Question style={{ color: "rgba(255, 212, 87, 1)" }}>
+        <Question>
           What is Webflow and why is it the best website builder?
         </Question>
-        <Answer>
+        <Answer style={{ color: "rgba(255, 212, 87, 1)" }}>
           Vitae congue eu consequat ac felis placerat vestibulum lectus mauris
           ultrices. Cursus sit amet dictum sit amet justo donec enim diam
           porttitor lacus luctus accumsan tortor posuere.
@@ -142,10 +142,10 @@ const Questions = () => {
         <Hr />
         <Question>How do you clone a template from the Showcase?</Question>
         <Hr />
-        <Question style={{ color: "rgba(255, 212, 87, 1)" }}>
+        <Question>
           What is Webflow and why is it the best website builder?
         </Question>
-        <Answer>
+        <Answer style={{ color: "rgba(255, 212, 87, 1)" }}>
           Vitae congue eu consequat ac felis placerat vestibulum lectus mauris
           ultrices. Cursus sit amet dictum sit amet justo donec enim diam
           porttitor lacus luctus accumsan tortor posuere.

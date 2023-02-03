@@ -62,9 +62,9 @@ const TextContainer = () => {
               width="155"
               height="155"
               filterUnits="userSpaceOnUse"
-              color-interpolation-filters="sRGB"
+              colorInterpolationFilters="sRGB"
             >
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feFlood floodOpacity="0" result="BackgroundImageFix" />
               <feColorMatrix
                 in="SourceAlpha"
                 type="matrix"
@@ -121,8 +121,8 @@ const TextContainer = () => {
               y2="77.5"
               gradientUnits="userSpaceOnUse"
             >
-              <stop stop-color="#BF5AE0" />
-              <stop offset="1" stop-color="#A811DA" />
+              <stop stopColor="#BF5AE0" />
+              <stop offset="1" stopColor="#A811DA" />
             </linearGradient>
           </defs>
         </svg>
