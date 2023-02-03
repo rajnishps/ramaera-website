@@ -18,7 +18,7 @@ const Buy = () => {
     <PageLayout bg={bg} height="100%">
       <PageWidth scale={"90%"} width="1500px" position="relative">
         <div
-          data-aos="fade-right"
+          data-aos="slide-right"
           data-aos-duration="500"
           style={{
             position: "absolute",
@@ -41,7 +41,7 @@ const Buy = () => {
             alt=""
             style={{ width: "100%", height: "10rem" }}
           />
-          <div data-aos="fade-left" data-aos-duration="500">
+          <div data-aos="slide-left" data-aos-duration="500">
             <Responsive>
               <TextContainer />
             </Responsive>

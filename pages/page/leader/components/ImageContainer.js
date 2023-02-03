@@ -67,7 +67,9 @@ const Imagecontainer = () => {
   const [isActive, setisActive] = useState(false)
   const [isActive1, setisActive1] = useState(false)
   return (
-    <StyledImageContainer>
+    <StyledImageContainer
+      onMouseLeave={() => (setisActive(false), setisActive1(false))}
+    >
       <Img>
         <MainImg
           onMouseMove={() => setisActive(true)}

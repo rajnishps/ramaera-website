@@ -3,7 +3,6 @@ import Image from "next/image"
 import { Inter } from "@next/font/google"
 import styles from "../styles/Home.module.css"
 
-/*
 import Ramaera from "./page/ramaera"
 import Navbar from "../components/Navbar/Navbar"
 import Expansion from "./page/expansion"
@@ -24,10 +23,10 @@ import Transforming from "./page/transforming"
 import Faqs from "./page/faqs"
 import Tomorrow from "./page/tomorrow"
 import Faw from "./page/faw"
-*/
 
 //const DynamicHeader = dynamic(() => import('../components/header'), {  loading: () => 'Loading...',})
-const Ramaera = dynamic(() => import("./page/ramaera"))
+
+/* const Ramaera = dynamic(() => import("./page/ramaera"))
 const Navbar = dynamic(() => import("../components/Navbar/Navbar"))
 const Expansion = dynamic(() => import("./page/expansion"))
 const Technology = dynamic(() => import("./page/technology"))
@@ -46,7 +45,7 @@ const Footer = dynamic(() => import("./page/footer"))
 const Transforming = dynamic(() => import("./page/transforming"))
 const Faqs = dynamic(() => import("./page/faqs"))
 const Tomorrow = dynamic(() => import("./page/tomorrow"))
-const Faw = dynamic(() => import("./page/faw"))
+const Faw = dynamic(() => import("./page/faw")) */
 
 const inter = Inter({ subsets: ["latin"] })
 

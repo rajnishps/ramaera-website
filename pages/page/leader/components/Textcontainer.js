@@ -40,7 +40,7 @@ const Quote = styled.img`
 const Textcontainer = () => {
   const [isActive, setisActive] = useState(false)
   return (
-    <StyledTextContainer>
+    <StyledTextContainer onMouseLeave={() => setisActive(false)}>
       <Quote src="/content/quote.png" />
       <Text
         Text="Inflation a serious challenge for India`s economic growth: Devendra Mishra`"

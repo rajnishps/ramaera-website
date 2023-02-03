@@ -329,3 +329,12 @@ a {
   }
 }
 /* Navigartion Bar Ends */
+
+[data-aos="rotate-c"] {
+  transform: rotate(-90deg);
+  transition-property: transform;
+}
+
+[data-aos="rotate-c"].aos-animate {
+  transform: rotate(40deg);
+}

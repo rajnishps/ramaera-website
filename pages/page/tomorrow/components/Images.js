@@ -53,7 +53,7 @@ export const Section = styled.section`
 const Images = () => {
   const [active, setActive] = useState(1)
   const max = slides.length
-  const autoplay = 1
+  const autoplay = 0
   const intervalBetweenSlides = () =>
     autoplay && setActive(active === max - 1 ? 0 : active + 1)
 
@@ -221,7 +221,7 @@ const Images = () => {
 
   return (
     <Section>
-      <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
+      <div data-aos="slide-up" data-aos-anchor-placement="center-bottom">
         <Wrapper style={setSliderStyles()}>{renderSlides()}</Wrapper>
       </div>
       {renderArrows()}

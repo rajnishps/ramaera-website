@@ -14,15 +14,21 @@ const index = () => {
   return (
     <PageLayout bgColor="#f5f5f5" bg={bg}>
       <PageWidth width="1500px" margin="0 0 0 0 ">
-        <Text
-          Text="Promoting Entrepreneurship"
-          lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
-          font
-          size="55px"
-          fw="400"
-          align="center"
-          lh="45px"
-        />
+        <div
+          data-aos="fade-in"
+          data-aos-duration="500"
+          data-aos-anchor-placement="bottom-bottom"
+        >
+          <Text
+            Text="Promoting Entrepreneurship"
+            lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
+            font
+            size="55px"
+            fw="400"
+            align="center"
+            lh="45px"
+          />
+        </div>
 
         <Responsive>
           <CustomBg />
@@ -34,7 +40,7 @@ const index = () => {
             data-aos="fade-down"
             data-aos-easing="linear"
             data-aos-duration="200"
-            data-aos-anchor-placement="top-top"
+            data-aos-anchor-placement="top-center"
             style={{
               position: "absolute",
               left: "0",
@@ -58,10 +64,10 @@ const index = () => {
             <Dots />
           </div>
           <div
-            data-aos="fade-right"
+            data-aos="slide-right"
             data-aos-duration="500"
             data-aos-easing="linear"
-            data-aos-anchor-placement="top-center"
+            data-aos-anchor-placement="top-bottom"
             style={{
               position: "absolute",
               left: "0",
@@ -72,7 +78,7 @@ const index = () => {
             <Image1 />
           </div>
           <div
-            data-aos="fade-left"
+            data-aos="slide-left"
             data-aos-duration="500"
             data-aos-easing="linear"
             data-aos-anchor-placement="top-bottom"
@@ -89,6 +95,7 @@ const index = () => {
           <div
             data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
+            data-aos-anchor-placement="bottom-bottom"
             style={{
               position: "absolute",
               right: "15vw",

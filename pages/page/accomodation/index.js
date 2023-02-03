@@ -24,10 +24,10 @@ const Buy = () => {
             style={{ width: "100%", height: "10rem" }}
           />
           <div
-            data-aos="fade-right"
+            data-aos="slide-right"
             data-aos-duration="100"
             data-aos-easing="linear"
-            data-aos-anchor-placement="top-center"
+            data-aos-anchor-placement="top-bottom"
           >
             <Responsive>
               <TextContainer />
@@ -41,11 +41,11 @@ const Buy = () => {
         </div>
         <div
           style={{ position: "absolute", right: "0" }}
-          data-aos="fade-left"
+          data-aos="slide-left"
           // data-aos-offset="2000"
           data-aos-duration="500"
           data-aos-easing="linear"
-          data-aos-anchor-placement="top-center"
+          data-aos-anchor-placement="top-bottom"
         >
           <Image>
             <img

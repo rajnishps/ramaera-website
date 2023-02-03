@@ -7,7 +7,16 @@ import Roadmap from "./components/Roadmap"
 const index = () => {
   return (
     <PageLayout bgColor="#f5f5f5" bg={bg} Y height="90rem">
-      <RotateImage animate={{ rotate: 90 }} transition={{ duration: 1 }} />
+      <RotateImage>
+        <div
+          data-aos-easing="ease-in-sine"
+          data-aos="rotate-c"
+          data-aos-duration="500"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <img src="/content/card.png" />
+        </div>
+      </RotateImage>
       <FutureContainer>
         <PageWidth scale={"85%"} width="1400px" margin="0 0 2rem 0">
           <Text

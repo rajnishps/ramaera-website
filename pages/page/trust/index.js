@@ -120,10 +120,6 @@ const DotsContainer = styled.ul`
 const index = () => {
   const [active, setActive] = useState(0)
 
-  useEffect(() => {
-    console.log(active)
-  }, [active])
-
   const max = slides.length
 
   const nextOne = () => active < max - 1 && setActive(active + 1)
@@ -289,24 +285,36 @@ const index = () => {
   return (
     <PageLayout bgColor="#f5f5f5" bg={bg}>
       <PageWidth width="1500px" margin="2rem 0 0 0">
-        <Text
-          Text="Earning the trust of millions"
-          width="80vw"
-          lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
-          font
-          size="55px"
-          fw="400"
-          align="center"
-          lh="65px"
-        />
+        <div
+          data-aos="fade-in"
+          data-aos-duration="500"
+          data-aos-anchor-placement="top-center"
+        >
+          <Text
+            Text="Earning the trust of millions"
+            width="80vw"
+            lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
+            font
+            size="55px"
+            fw="400"
+            align="center"
+            lh="65px"
+          />
+        </div>
         <Responsive>
-          <BgRectangle />
-          <Section>
-            <Dots src="/content/Dots.png" />
-            <Wrapper style={setSliderStyles()}>{renderSlides()}</Wrapper>
-            {renderArrows()}
-            <DotsContainer>{renderDots()}</DotsContainer>
-          </Section>
+          <div
+            data-aos="fade-in"
+            data-aos-duration="500"
+            data-aos-anchor-placement="center-bottom"
+          >
+            <BgRectangle />
+            <Section>
+              <Dots src="/content/Dots.png" />
+              <Wrapper style={setSliderStyles()}>{renderSlides()}</Wrapper>
+              {renderArrows()}
+              <DotsContainer>{renderDots()}</DotsContainer>
+            </Section>
+          </div>
         </Responsive>
       </PageWidth>
     </PageLayout>

@@ -7,6 +7,7 @@ import CustomBg from "./components/CustomBg"
 
 const Container = styled.main`
   position: absolute;
+  display: flex;
 `
 
 const Section = styled.section`
@@ -19,7 +20,9 @@ const InnerSection = styled.div`
   margin: 6rem 0 0 4rem;
 `
 
-const AccordionContainer = styled.div``
+const AccordionContainer = styled.div`
+  display: flex;
+`
 
 const AccordionInner = styled.div`
   position: relative;
@@ -29,6 +32,7 @@ const AccordionInner = styled.div`
 const AccordionItem = styled.div`
   &:not(:last-child) {
     border-bottom: 1px solid rgba(256, 256, 256, 0.3);
+    padding-bottom: 0px;
   }
 `
 

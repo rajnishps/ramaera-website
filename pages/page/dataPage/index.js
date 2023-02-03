@@ -16,9 +16,9 @@ const index = () => {
       <PageWidth scale={"100%"} width="1500px">
         <div
           style={{ width: "100%" }}
-          data-aos="fade-right"
+          data-aos="slide-right"
           data-aos-duration="500"
-          data-aos-anchor-placement="top-center"
+          data-aos-anchor-placement="top-bottom"
         >
           <Container>
             <Item
