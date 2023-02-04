@@ -8,7 +8,7 @@ const index = () => {
   const [isActive, setisActive] = useState(false)
 
   return (
-    <PageLayout bgColor="#f5f5f5" bg={bg}>
+    <PageLayout bgColor="#f5f5f5">
       <div data-aos="fade-in" data-aos-anchor-placement="center-bottom">
         <PageWidth scale={"85%"} width="1500px" margin="0 0 2rem 0">
           <Text

@@ -22,6 +22,7 @@ import Footer from "./page/footer"
 import Transforming from "./page/transforming"
 import Faqs from "./page/faqs"
 import Tomorrow from "./page/tomorrow"
+import Tom from "./page/tom"
 import Faw from "./page/faw"
 
 //const DynamicHeader = dynamic(() => import('../components/header'), {  loading: () => 'Loading...',})
@@ -68,6 +69,7 @@ export default function Home() {
       <Trust />
       <Promoting />
       <Tomorrow />
+      <Tom />
       <Faqs />
       <Faw />
       <Transforming />

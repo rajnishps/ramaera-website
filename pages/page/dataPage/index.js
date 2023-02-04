@@ -3,7 +3,12 @@ import PageLayout from "../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../components/Width/PageWidth"
 import { Container } from "./components/Style"
 import Item from "./components/Item"
+import styled from "styled-components"
 
+const PolyBg = styled.div``
+const Image = styled.img`
+  height: 80vh;
+`
 const index = () => {
   const bg = "./background/bb.png"
   const svg1 = "./content/1.png"
@@ -12,10 +17,9 @@ const index = () => {
   const svg4 = "./content/4.png"
 
   return (
-    <PageLayout bg={bg}>
-      <PageWidth scale={"100%"} width="1500px">
+    <PageLayout padding={0}>
+      <PageWidth width="1500px">
         <div
-          style={{ width: "100%" }}
           data-aos="slide-right"
           data-aos-duration="500"
           data-aos-anchor-placement="top-bottom"
@@ -40,6 +44,17 @@ const index = () => {
           </Container>
         </div>
       </PageWidth>
+      <div
+        style={{ position: "absolute", right: "0", top: "0", zIndex: -1 }}
+        data-aos="slide-left"
+        data-aos-duration="100"
+        data-aos-easing="linear"
+        data-aos-anchor-placement="center-bottom"
+      >
+        <PolyBg>
+          <Image src={"/background/leftPoly.png"} alt="" />
+        </PolyBg>
+      </div>
     </PageLayout>
   )
 }

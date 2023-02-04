@@ -149,7 +149,7 @@ function index() {
 
   return (
     <>
-      <PageLayout height="150vh" bgColor="#f5f5f5" bg={bg}>
+      <PageLayout height="150vh" bgColor="#f5f5f5">
         <PageWidth width="1500px" margin="0 0 0 0 ">
           <Responsive>
             <CustomBg />

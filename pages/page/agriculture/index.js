@@ -8,7 +8,7 @@ const bg = "/background/blank.png"
 
 const Buy = () => {
   return (
-    <PageLayout bg={bg}>
+    <PageLayout  >
       <PageWidth scale={"90%"} width="1500px" position="relative">
         <div
           data-aos="slide-right"

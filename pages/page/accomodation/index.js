@@ -15,7 +15,7 @@ const Buy = () => {
   }, [])
 
   return (
-    <PageLayout bg={bg}>
+    <PageLayout>
       <PageWidth scale={"90%"} width="1500px" position="relative">
         <div style={{ width: "100%" }}>
           <img

@@ -12,7 +12,7 @@ import PromtContainer2 from "./components/PromtContainer2"
 
 const index = () => {
   return (
-    <PageLayout bgColor="#f5f5f5" bg={bg}>
+    <PageLayout bgColor="#f5f5f5">
       <PageWidth width="1500px" margin="0 0 0 0 ">
         <div
           data-aos="fade-in"

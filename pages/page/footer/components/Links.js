@@ -49,7 +49,7 @@ const Sub = styled.div`
   border-radius: 6px;
   background: linear-gradient(
     0deg,
-    rgba(255, 255, 255, 0.05),
+    rgba(26, 14, 71, 0.5),
     rgba(255, 255, 255, 0.05)
   );
 `

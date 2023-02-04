@@ -15,7 +15,7 @@ const Buy = () => {
   }, [])
 
   return (
-    <PageLayout bg={bg} height="100%">
+    <PageLayout height="100%">
       <PageWidth scale={"90%"} width="1500px" position="relative">
         <div
           data-aos="slide-right"

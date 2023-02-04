@@ -37,6 +37,11 @@ const txt3 = (
   </CustomText>
 )
 
+export const slides = [
+  { id: 0, url: bg1, content: txt1 },
+  { id: 1, url: bg1, content: txt2 },
+  { id: 2, url: bg1, content: txt3 },
+]
 export const images = [bg1, bg2, bg3]
 export const text = [txt1, txt2, txt3]
 

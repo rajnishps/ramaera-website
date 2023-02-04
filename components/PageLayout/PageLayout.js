@@ -20,7 +20,11 @@ const PageLayout = ({
     justify-content: ${start ? "flex-start" : "center"};
     flex-direction: column;
     padding-top: ${padding ? padding : "calc(1rem + 1rem)"};
-    background-color: ${bgColor ? bgColor : "#000"};
+    background: linear-gradient(
+      90deg,
+      rgb(var(--background-start-rgb)) 0%,
+      rgb(var(--background-end-rgb)) 100%
+    );
     background-image: url(${bg ? bg : ""});
     background-size: ${adjustBg ? "100% auto" : "100% 100%"};
     background-repeat: no-repeat;

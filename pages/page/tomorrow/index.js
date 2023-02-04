@@ -8,7 +8,7 @@ import Images from "./components/Images"
 //https://github.com/holdmypotion/react-3d-image-slider
 //https://github.com/suhailsulu/react-carousel-3d
 const index = () => (
-  <PageLayout bgColor="#f5f5f5" bg={bg}>
+  <PageLayout bgColor="#f5f5f5">
     <PageWidth width="1500px" margin="2rem 0 0 0">
       <div
         data-aos="fade-in"

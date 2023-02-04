@@ -6,7 +6,7 @@ import Roadmap from "./components/Roadmap"
 
 const index = () => {
   return (
-    <PageLayout bgColor="#f5f5f5" bg={bg} Y height="90rem">
+    <PageLayout bgColor="#f5f5f5" Y height="90rem">
       <RotateImage>
         <div
           data-aos-easing="ease-in-sine"
