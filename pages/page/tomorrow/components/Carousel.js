@@ -29,7 +29,8 @@ export default function Carroussel(props) {
         goToSlide={goToSlide}
         offsetRadius={offsetRadius}
         showNavigation={showArrows}
-        animationConfig={config.gentle}
+        goToSlideDelay={100}
+        animationConfig={{ tension: 100, friction: 20 }}
       />
     </div>
   )

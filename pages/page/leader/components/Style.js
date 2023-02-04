@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const bg = "/background/blank.png"
 
 export const CustomText = styled.h1`
-  font-size: 22px;
+  font-size: 20px;
   line-height: 39px;
   color: #fff;
   line-height: 42px;

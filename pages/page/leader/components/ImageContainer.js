@@ -4,8 +4,29 @@ import styled from "styled-components"
 export const Bg = styled.div`
   width: 100vw;
   height: 100vh;
-  background: #00000095;
-  box-shadow: 34px 34px 68px #bebebe, -34px -34px 68px #ffffff;
+  // background: #00000095;
+  //box-shadow: 34px 34px 68px #bebebe, -34px -34px 68px #ffffff;
+  /* ff 3.6+ */
+  background: -moz-radial-gradient(
+    ellipse at 50% 50%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7) 22%,
+    rgba(0, 0, 0, 0.5) 32%,
+    rgba(0, 0, 0, 0.5) 42%,
+    rgba(255, 255, 255, 0.3) 60% rgba(255, 255, 255, 0.05) 70%
+      rgba(255, 255, 255, 0) 75%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7) 22%,
+    rgba(0, 0, 0, 0.5) 32%,
+    rgba(0, 0, 0, 0.3) 42%,
+    rgba(255, 255, 255, 0) 60%
+  );
+
   position: absolute;
   top: 50%;
   left: 50%;
@@ -16,6 +37,7 @@ export const Bg = styled.div`
 const StyledImageContainer = styled.div``
 
 const MainImg = styled.div`
+  transform: scale(80%);
   width: 30rem;
   height: 40rem;
   @media (max-width: 1350px) {
@@ -24,6 +46,8 @@ const MainImg = styled.div`
   }
 `
 const TeamImg = styled.div`
+  transform: scale(80%);
+
   width: 18rem;
   height: 10rem;
   position: absolute;

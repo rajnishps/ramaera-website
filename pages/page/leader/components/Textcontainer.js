@@ -21,7 +21,26 @@ const Star = styled.img`
 const Bg = styled.div`
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.75);
+  //  background-color: rgba(0, 0, 0, 0.75);
+  background: -moz-radial-gradient(
+    ellipse at 50% 50%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7) 22%,
+    rgba(0, 0, 0, 0.5) 42%,
+    rgba(0, 0, 0, 0.5) 52%,
+    rgba(255, 255, 255, 0.3) 60% rgba(255, 255, 255, 0.05) 70%
+      rgba(255, 255, 255, 0) 75%
+  );
+
+  /* global 92%+ browsers support */
+  background: radial-gradient(
+    ellipse at 50% 50%,
+    rgba(0, 0, 0, 1) 0%,
+    rgba(0, 0, 0, 0.7) 22%,
+    rgba(0, 0, 0, 0.5) 32%,
+    rgba(0, 0, 0, 0.3) 42%,
+    rgba(255, 255, 255, 0) 60%
+  );
   position: absolute;
   top: 50%;
   left: 50%;
@@ -44,7 +63,7 @@ const Textcontainer = () => {
       <Quote src="/content/quote.png" />
       <Text
         Text="Inflation a serious challenge for India`s economic growth: Devendra Mishra`"
-        size="52px"
+        size="44px"
         lh="60px"
         color="#FFF"
         fw="500"

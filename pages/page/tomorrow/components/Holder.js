@@ -6,6 +6,7 @@ import { images } from "./Style"
 const Image = styled.img`
   padding: 13.5rem 2rem;
   position: absolute;
+  transform: scale(60%);
 `
 
 function Holder() {
@@ -54,10 +55,7 @@ function Holder() {
   return (
     <div>
       <Image style={{ left: 0 }} src={"/content/left.png"} />
-      <Image
-        style={{ right: 0, pointerEvents: "none" }}
-        src={"/content/right.png"}
-      />
+      <Image style={{ right: 0 }} src={"/content/right.png"} />
       <Carousel cards={cards} height="500px" width="100%" offset={1} />
     </div>
   )
