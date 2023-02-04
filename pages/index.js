@@ -47,7 +47,7 @@ const Transforming = dynamic(() => import("./page/transforming"))
 const Faqs = dynamic(() => import("./page/faqs"))
 const Tomorrow = dynamic(() => import("./page/tomorrow"))
 const Faw = dynamic(() => import("./page/faw")) */
-
+//check
 const inter = Inter({ subsets: ["latin"] })
 
 export default function Home() {
