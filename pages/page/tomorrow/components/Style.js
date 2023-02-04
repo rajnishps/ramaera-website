@@ -2,21 +2,17 @@ import styled from "styled-components"
 
 export const bg = "/background/blank.png"
 
-export const CustomText = styled.h1`
-  font-size: 25px;
-  line-height: 39px;
-  color: #fff;
-  line-height: 42px;
-  font-weight: 400;
-  margin: 3rem 0;
-`
+const img1 = "/content/tom1.png"
+const img2 = "/content/tom2.png"
+const img3 = "/content/tom3.png"
+
+export const images = [img1, img2, img3]
+
 export const Responsive = styled.div`
-  transform: scale(80%);
-  width: 100%;
+  width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 0 0 0;
+  justify-content: space-around;
 `
 
 const Style = () => {

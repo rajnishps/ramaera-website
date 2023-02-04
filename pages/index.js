@@ -69,7 +69,7 @@ export default function Home() {
       <Trust />
       <Promoting />
       <Tomorrow />
-      <Tom />
+      {/*<Tom/>*/}
       <Faqs />
       <Faw />
       <Transforming />

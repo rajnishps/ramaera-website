@@ -330,6 +330,7 @@ a {
 }
 /* Navigartion Bar Ends */
 
+/* aos custom animations start*/
 [data-aos="rotate-c"] {
   transform: rotate(-90deg);
   transition-property: transform;
@@ -338,3 +339,5 @@ a {
 [data-aos="rotate-c"].aos-animate {
   transform: rotate(40deg);
 }
+
+/* aos custom animations sends*/
