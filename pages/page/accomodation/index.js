@@ -19,6 +19,7 @@ const Buy = () => {
       <PageWidth scale={"90%"} width="1500px" position="relative">
         <div style={{ width: "100%" }}>
           <img
+            loading="lazy"
             src="/content/LineY.png"
             alt=""
             style={{ width: "100%", height: "10rem" }}
@@ -34,6 +35,7 @@ const Buy = () => {
             </Responsive>
           </div>
           <img
+            loading="lazy"
             src="/content/LineY.png"
             alt=""
             style={{ width: "100%", height: "10rem" }}
@@ -49,6 +51,7 @@ const Buy = () => {
         >
           <Image>
             <img
+              loading="lazy"
               src="/content/hotel.gif"
               alt=""
               style={{ width: "100%", height: "100%" }}

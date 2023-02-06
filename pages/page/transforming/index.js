@@ -16,6 +16,9 @@ const index = () => (
           fw="400"
           align="center"
           lh="105px"
+          xmsize="6rem"
+          xssize="10vw"
+          msize="4rem"
         />
       </div>
       <Responsive></Responsive>

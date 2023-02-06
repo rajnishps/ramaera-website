@@ -47,6 +47,7 @@ const Card = (props) => {
     <Box>
       <Upper>
         <img
+          loading="lazy"
           src={`${props.img ? props.img : ""}`}
           alt=""
           style={{ width: "100%", height: "100%" }}

@@ -36,6 +36,7 @@ const index = () => {
               //style={{display: `${isActive ? 'none' : 'block'}`}}
             >
               <img
+                loading="lazy"
                 src={stock}
                 alt=""
                 style={{ width: "100%", height: "100%" }}

@@ -40,7 +40,7 @@ const PageLayout = ({
     }
 
     @media (max-width: 768px) {
-      min-height: 100%;
+      min-height: 100vh;
     }
   `
 

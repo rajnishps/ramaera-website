@@ -38,6 +38,9 @@ const Buy = () => {
               fw="400"
               align="center"
               lh="55px"
+              xmsize="6rem"
+              xssize="10vw"
+              msize="4rem"
             />
             <Text
               Text="We are aiming to be a part of the major industrialisation drive in India and embarking our presence in every significant industrial domain including IT."
@@ -48,6 +51,9 @@ const Buy = () => {
               m="2rem 0 0 0"
               align="center"
               width="1100px"
+              xmsize="3rem"
+              xssize="5vw"
+              msize="1.6rem"
             />
           </div>
         </PageWidth>

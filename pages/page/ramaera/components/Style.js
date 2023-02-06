@@ -7,6 +7,19 @@ export const CustomText = styled.p`
   width: 60rem;
   text-align: center;
   font-weight: 500;
+  @media (max-width: 1200px) {
+    width: 100vw;
+    font-size: 2rem;
+    line-height: 42px;
+    padding: 0 14vw;
+    overflow-wrap: break-word;
+  }
+  @media (max-width: 768px) {
+    width: 100vw;
+    font-size: 1.6rem;
+    padding: 0 10vw;
+    overflow-wrap: break-word;
+  }
 `
 
 const bg1 = "./background/1.jpg"

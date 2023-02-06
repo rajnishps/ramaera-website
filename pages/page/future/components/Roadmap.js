@@ -15,6 +15,7 @@ const Roadmap = () => {
     <StyledRoadmap>
       <div style={{ width: "100%" }}>
         <img
+          loading="lazy"
           src="/content/r.png"
           alt=""
           styled={{ width: "100%", height: "3rem" }}
@@ -82,6 +83,7 @@ const Roadmap = () => {
       </div>
       <div style={{ width: "100%", margin: "2rem 0 0 0" }}>
         <img
+          loading="lazy"
           src="/content/r.png"
           alt=""
           styled={{ width: "100%", height: "3rem" }}

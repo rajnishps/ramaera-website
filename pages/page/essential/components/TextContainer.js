@@ -17,6 +17,7 @@ const TextContainer = () => {
     <StyleTextContainer>
       <Flex>
         <img
+          loading="lazy"
           src="/content/h.png"
           alt=""
           style={{

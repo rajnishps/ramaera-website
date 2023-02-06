@@ -8,7 +8,7 @@ const bg = "/background/blank.png"
 
 const Buy = () => {
   return (
-    <PageLayout  >
+    <PageLayout>
       <PageWidth scale={"90%"} width="1500px" position="relative">
         <div
           data-aos="slide-right"
@@ -19,6 +19,7 @@ const Buy = () => {
         >
           <Image>
             <img
+              loading="lazy"
               src="/content/agri.gif"
               alt=""
               style={{ width: "100%", height: "100%" }}
@@ -27,6 +28,7 @@ const Buy = () => {
         </div>
         <div style={{ width: "100%" }}>
           <img
+            loading="lazy"
             src="/background/Line.png"
             alt=""
             style={{ width: "100%", height: "10rem" }}
@@ -43,6 +45,7 @@ const Buy = () => {
             </Responsive>
           </div>
           <img
+            loading="lazy"
             src="/background/Line.png"
             alt=""
             style={{ width: "100%", height: "10rem" }}

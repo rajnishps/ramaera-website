@@ -39,6 +39,9 @@ const index = () => {
             width="50rem"
             fw="500"
             align="center"
+            xmsize="6rem"
+            xssize="10vw"
+            msize="4rem"
           />
 
           {text[currentIndex]}
@@ -52,6 +55,7 @@ const index = () => {
             />
           </div>
           <img
+            loading="lazy"
             src="/background/bottom.png"
             alt=""
             style={{ height: "7rem", width: "9.5rem", margin: "1rem 0 0 0" }}
