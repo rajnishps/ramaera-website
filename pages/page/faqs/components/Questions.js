@@ -51,7 +51,6 @@ import Text from "../../../../components/Text/Text"
     width: 35vw;
   `
   const Qcontainer1 = QuesAns1.map((line) => {
-    console.log(line)
     return (
       <Answer>
         <Question>{line[0]}</Question>
@@ -60,7 +59,6 @@ import Text from "../../../../components/Text/Text"
     )
   })
   const Qcontainer2 = QuesAns2.map((line) => {
-    console.log(line)
     return (
       <Answer>
         <Question>{line[0]}</Question>

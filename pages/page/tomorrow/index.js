@@ -20,6 +20,9 @@ const index = () => (
         fw="400"
         align="center"
         lh="65px"
+        xmsize="4rem"
+        xssize="6vw"
+        msize="2.4rem"
       />
       <Holder />
     </div>

@@ -11,7 +11,7 @@ const PolyBg = styled.div`
   position: absolute;
   z-index: -1;
   @media only screen and (max-width: 1000px) {
-    opacity: 20%;
+    opacity: 50%;
   }
 `
 const Image = styled.img`
@@ -41,8 +41,8 @@ const Buy = () => {
               fw="400"
               align="center"
               lh="70px"
-              xmsize="6rem"
-              xssize="10vw"
+              xmsize="4rem"
+              xssize="4rem"
               msize="4rem"
             />
             <Text
@@ -54,8 +54,8 @@ const Buy = () => {
               m="2rem 0 0 0"
               align="center"
               width="1100px"
-              xmsize="3rem"
-              xssize="5vw"
+              xmsize="2.2rem"
+              xssize="2rem"
               msize="1.6rem"
             />
           </div>

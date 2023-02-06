@@ -123,7 +123,6 @@ const AccordionItems = ({
         onClick={() => {
           setCurrentAccordion(i)
           setBodyHeight(refs[i].current.clientHeight)
-          console.log(refs[i].current.clientHeight)
         }}
       >
         {title}

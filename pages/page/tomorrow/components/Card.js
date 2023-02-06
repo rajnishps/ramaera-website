@@ -6,6 +6,9 @@ const CardContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   border-radius: 10px;
+  @media only screen and (max-width: 1000px) {
+    transform: scale(60%);
+  }
 `
 
 const Image = styled.img`

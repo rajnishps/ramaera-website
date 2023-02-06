@@ -9,6 +9,9 @@ const Bg = styled.div`
   height: 120vh;
   width: 100vw;
   z-index: -1;
+  @media only screen and (max-width: 1200px) {
+    background: transparent;
+  }
 `
 const TextContainer = styled.div`
   position: absolute;

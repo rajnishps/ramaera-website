@@ -27,6 +27,9 @@ const index = () => {
             fw="400"
             align="center"
             lh="45px"
+            xmsize="4rem"
+            xssize="6vw"
+            msize="2.4rem"
           />
         </div>
 

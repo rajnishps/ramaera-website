@@ -16,7 +16,7 @@ const Buy = () => {
           style={{
             position: "absolute",
             left: "0",
-            margin: "50vh 0 0 0",
+            margin: "30vh 0 0 0",
           }}
         >
           <Image>
@@ -33,7 +33,7 @@ const Buy = () => {
             loading="lazy"
             src="/background/Line.png"
             alt=""
-            style={{ width: "100%", height: "10rem" }}
+            style={{ position: "absolute", width: "100%", height: "10rem" }}
           />
           <div
             data-aos="slide-left"
@@ -50,7 +50,7 @@ const Buy = () => {
             loading="lazy"
             src="/background/Line.png"
             alt=""
-            style={{ width: "100%", height: "10rem" }}
+            style={{ position: "absolute", width: "100%", height: "10rem" }}
           />
         </div>
       </PageWidth>

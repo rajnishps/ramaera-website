@@ -5,7 +5,9 @@ import { Container } from "./components/Style"
 import Item from "./components/Item"
 import styled from "styled-components"
 
-const PolyBg = styled.div``
+const PolyBg = styled.div`
+  opacity: 50%;
+`
 const Image = styled.img`
   height: 80vh;
 `

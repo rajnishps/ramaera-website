@@ -7,6 +7,9 @@ const Image = styled.img`
   padding: 13.5rem 2rem;
   position: absolute;
   transform: scale(60%);
+  @media only screen and (max-width: 1000px) {
+    opacity: 0;
+  }
 `
 
 function Holder() {
@@ -51,7 +54,6 @@ function Holder() {
       ),
     },
   ]
-  console.log(cards)
   return (
     <div>
       <Image style={{ left: 0 }} src={"/content/left.png"} />
