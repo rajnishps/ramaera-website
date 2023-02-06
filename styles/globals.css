@@ -348,3 +348,9 @@ a {
 }
 
 /* aos custom animations sends*/
+
+@media only screen and (max-width: 1000px) {
+  input::placeholder {
+    text-align: center;
+  }
+}

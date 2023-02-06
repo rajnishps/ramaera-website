@@ -4,8 +4,6 @@ import PageWidth from "../../../components/Width/PageWidth"
 import TextContainer from "./components/TextContainer"
 import { Image, Responsive } from "./components/StyleImage"
 
-const bg = "/background/blank.png"
-
 const Buy = () => {
   return (
     <PageLayout>
@@ -15,7 +13,11 @@ const Buy = () => {
           data-aos-duration="500"
           data-aos-easing="linear"
           data-aos-anchor-placement="center-bottom"
-          style={{ position: "absolute", left: "0", margin: "20vh 0 0 0" }}
+          style={{
+            position: "absolute",
+            left: "0",
+            margin: "50vh 0 0 0",
+          }}
         >
           <Image>
             <img

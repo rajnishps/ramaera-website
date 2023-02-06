@@ -23,16 +23,18 @@ const PageWidth = ({
     margin: ${margin ? margin : "0"};
     position: ${position ? position : "static"};
 
-    @media only screen and (max-width: 1600px) {
-      width: ${full ? "100%" : "95%"};
+    @media only screen and (max-width: 1200px) {
+      width: 100%;
+      margin: 0;
+      position: absolute;
+      flex-direction: row;
+      height: 100vh;
+      justify-content: center;
     }
-    @media only screen and (max-width: 1400px) {
-      width: ${full ? "100%" : "98%"};
+    @media only screen and (max-width: 1000px) {
     }
 
-    @media only screen and (max-width: 540px) {
-      width: 100%;
-      padding: ${sp ? sp : "0 1rem"};
+    @media only screen and (max-width: 768px) {
     }
   `
 

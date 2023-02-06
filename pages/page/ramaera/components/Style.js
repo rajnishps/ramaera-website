@@ -18,7 +18,6 @@ export const CustomText = styled.p`
     width: 100vw;
     font-size: 1.6rem;
     padding: 0 10vw;
-    overflow-wrap: break-word;
   }
 `
 

@@ -8,11 +8,20 @@ const SocialHead = styled.h4`
   font-size: 14px;
   margin-left: 5px;
   color: white;
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+  }
 `
 const SocialContainer = styled.div`
   position: absolute;
   bottom: 80px;
   right: 150px;
+  @media only screen and (max-width: 1200px) {
+    bottom: 20px;
+    right: auto;
+    left: auto;
+  }
 `
 const Socials = () => {
   return (

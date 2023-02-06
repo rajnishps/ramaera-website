@@ -16,6 +16,15 @@ export const Responsive = styled.div`
   align-items: center;
   justify-content: space-between;
   margin: 4rem 0 0 0;
+
+  @media only screen and (max-width: 1200px) {
+  }
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+  }
+
+  @media only screen and (max-width: 768px) {
+  }
 `
 const Style = () => {
   return <div>StyleImage</div>

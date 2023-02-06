@@ -10,6 +10,9 @@ const PolyBg = styled.div`
   left: 0;
   position: absolute;
   z-index: -1;
+  @media only screen and (max-width: 1000px) {
+    opacity: 20%;
+  }
 `
 const Image = styled.img`
   height: 70vh;
@@ -37,7 +40,7 @@ const Buy = () => {
               size="65px"
               fw="400"
               align="center"
-              lh="55px"
+              lh="70px"
               xmsize="6rem"
               xssize="10vw"
               msize="4rem"

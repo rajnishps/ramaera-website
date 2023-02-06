@@ -11,6 +11,11 @@ const FootContainer = styled.div`
   bottom: 100px;
   left: 10vw;
   color: white;
+  @media only screen and (max-width: 1200px) {
+    left: auto;
+    right: auto;
+    gap: 20px;
+  }
 `
 const Link = styled.a`
   font-size: 10px;
@@ -39,6 +44,12 @@ const CopyRight = styled.div`
   font-size: 10px;
   margin-bottom: 1rem;
   color: white;
+  @media only screen and (max-width: 768px) {
+    width: fit-content;
+    left: auto;
+    right: auto;
+    bottom: 80px;
+  }
 `
 const Foot = () => {
   return (

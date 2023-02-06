@@ -7,6 +7,9 @@ const Div = styled.div`
   align-items: center;
   flex-direction: column;
   width: 10vw;
+  @media only screen and (max-width: 1000px) {
+    margin-bottom: 20px;
+  }
 `
 const Image = styled.img`
   height: 100px;
