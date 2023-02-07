@@ -6,8 +6,6 @@ import PageWidth from "../../../components/Width/PageWidth"
 import TextContainer from "./components/TextContainer"
 import { Image, Responsive } from "./components/StyleImage"
 
-const bg = "/background/blank.png"
-
 const Buy = () => {
   useEffect(() => {
     AOS.init()
@@ -16,15 +14,15 @@ const Buy = () => {
 
   return (
     <PageLayout height="100vh">
-      <PageWidth scale={"90%"} width="1500px">
+      <PageWidth scale={"90%"} width="1500px" position="relative">
         <div
           data-aos="slide-right"
+          data-aos-anchor-placement="center-center"
           data-aos-duration="500"
           style={{
             position: "absolute",
             left: "0",
             bottom: "0",
-            overflowY: "hidden",
           }}
         >
           <Image>
@@ -32,7 +30,12 @@ const Buy = () => {
               loading="lazy"
               src="/content/tech.gif"
               alt=""
-              style={{ width: "100%", height: "100%" }}
+              style={{
+                position: "absolute",
+                top: "30vh",
+                width: "100%",
+                height: "100%",
+              }}
             />
           </Image>
         </div>
@@ -41,13 +44,23 @@ const Buy = () => {
             loading="lazy"
             src="/background/Line.png"
             alt=""
-            style={{ position: "absolute", width: "100%", height: "100%" }}
+            style={{ position: "absolute", width: "100%", height: "10rem" }}
           />
-          <div data-aos="slide-left" data-aos-duration="500">
+          <div
+            data-aos="slide-left"
+            data-aos-anchor-placement="bottom-bottom"
+            data-aos-duration="500"
+          >
             <Responsive>
               <TextContainer />
             </Responsive>
           </div>
+          <img
+            loading="lazy"
+            src="/background/Line.png"
+            alt=""
+            style={{ position: "absolute", width: "100%", height: "10rem" }}
+          />
         </div>
       </PageWidth>
     </PageLayout>

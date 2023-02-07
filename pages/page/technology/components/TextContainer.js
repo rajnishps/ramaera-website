@@ -11,6 +11,9 @@ const StyleTextContainer = styled.div`
   justify-content: flex-end;
   flex-direction: column;
   // background: red;
+
+  position: absolute;
+  bottom: 0;
   width: 50rem;
   margin: -6rem 0 4rem 0;
 `
