@@ -9,7 +9,24 @@ import Image1 from "./components/Image1"
 import Image2 from "./components/Image2"
 import PromtContainer1 from "./components/PromtContainer1"
 import PromtContainer2 from "./components/PromtContainer2"
+import styled from "styled-components"
 
+const ResImage1 = styled.div`
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 20vh 0 0 10vw;
+  @media only screen and (max-width: 768px) {
+  }
+`
+const ResImage2 = styled.div`
+  position: absolute;
+  right: 0;
+  top: 72vh;
+  margin: 0 10vh 0 0;
+  @media only screen and (max-width: 768px) {
+  }
+`
 const index = () => {
   return (
     <PageLayout bgColor="#f5f5f5">
@@ -66,34 +83,22 @@ const index = () => {
           >
             <Dots />
           </div>
-          <div
+          <ResImage1
             data-aos="slide-right"
             data-aos-duration="500"
             data-aos-easing="linear"
             data-aos-anchor-placement="top-bottom"
-            style={{
-              position: "absolute",
-              left: "0",
-              top: "0",
-              margin: "20vh 0 0 10vw  ",
-            }}
           >
             <Image1 />
-          </div>
-          <div
+          </ResImage1>
+          <ResImage2
             data-aos="slide-left"
             data-aos-duration="500"
             data-aos-easing="linear"
             data-aos-anchor-placement="top-bottom"
-            style={{
-              position: "absolute",
-              right: "0",
-              top: "72vh",
-              margin: " 0 10vh 0 0 ",
-            }}
           >
             <Image2 />
-          </div>
+          </ResImage2>
 
           <div
             data-aos="fade-zoom-in"

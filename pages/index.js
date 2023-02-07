@@ -64,8 +64,8 @@ export default function Home() {
       <Story />
       <Future />
       <Leader />
-      <Trust />
-      <Promoting />
+      {/* <Trust />*/}
+      {/* <Promoting />*/}
       <Tomorrow />
       <Faqs />
       <Transforming />

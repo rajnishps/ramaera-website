@@ -11,6 +11,7 @@ const PageLayout = ({
   bgColor,
   Zindex,
   Y,
+  resTr,
 }) => {
   const StyledPageLayout = styled.section`
     //min-width: 100vh;

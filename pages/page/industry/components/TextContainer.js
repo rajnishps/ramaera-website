@@ -20,9 +20,11 @@ const StyleTextContainer = styled.div`
   }
 `
 const IconDiv = styled.div`
-  transform: scale(80%);
-  margin-right: -100px;
-  position: relative;
+  @media only screen and (max-width: 768px) {
+    transform: scale(80%);
+    margin-right: -100px;
+    position: relative;
+  }
 `
 
 const TextContainer = () => {

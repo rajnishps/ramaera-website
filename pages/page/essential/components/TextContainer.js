@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Heading from "../../../../components/Heading/Heading"
 import Flex from "../../../../components/Styling/Flex"
 import Text from "../../../../components/Text/Text"
 
@@ -11,34 +10,59 @@ const StyleTextContainer = styled.div`
   // background: red;
   width: 50rem;
   margin: 5rem 0 -5rem 0;
+  @media only screen and (max-width: 768px) {
+    position: absolute;
+    margin: 0;
+    width: 100vw;
+    top: 10vh;
+    overflow: hidden;
+  }
+`
+const IconDiv = styled.div`
+  @media only screen and (max-width: 768px) {
+    transform: scale(80%);
+    margin-right: -100px;
+    position: relative;
+  }
 `
 const TextContainer = () => {
   return (
     <StyleTextContainer>
       <Flex>
-        <img
-          loading="lazy"
-          src="/content/h.png"
-          alt=""
-          style={{
-            height: "6.75rem",
-            width: "7rem",
-            borderRadius: "50%",
-            margin: "0 2rem 0 0",
-          }}
-        />
+        <IconDiv>
+          <img
+            loading="lazy"
+            src="/content/h.png"
+            alt=""
+            style={{
+              height: "6.75rem",
+              width: "7rem",
+              borderRadius: "50%",
+              margin: "0 2rem 0 0",
+            }}
+          />
+        </IconDiv>
+
         <div>
           <Text
             Text="Get all your essentials in"
             size="42px"
             color="#FFF"
             lh="55px"
+            mta="left"
+            msize="1.6rem"
+            mlh="30px"
+            mpadding="0 0 0 4rem"
           />
           <Text
             Text="one place"
             size="42px"
             lg="linear-gradient(90deg, #B4DFFD 3.93%, #EFB79B 36.17%),linear-gradient(0deg, #FFFFFF, #FFFFFF)"
             lh="55px"
+            mta="left"
+            msize="1.6rem"
+            mlh="30px"
+            mpadding="0 0 0 4rem"
           />
         </div>
       </Flex>
@@ -49,6 +73,10 @@ const TextContainer = () => {
         lh="45px"
         width="40rem"
         m="2rem 0 0 0"
+        mpadding="0 60px"
+        xssize="18px"
+        mlh="30px"
+        msize="16px"
       />
     </StyleTextContainer>
   )

@@ -59,9 +59,11 @@ const Input = styled.input`
 `
 const MobileDiv = styled.div`
   display: flex;
-  gap: 20vw;
+  gap: 4rem;
 
   @media only screen and (max-width: 1000px) {
+    display: flex;
+    gap: 20vw;
   }
 `
 const Sub = styled.div`

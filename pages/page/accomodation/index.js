@@ -15,17 +15,24 @@ const Animdiv = styled.div`
     bottom: -15vh;
   }
 `
+const IconDiv = styled.div`
+  @media only screen and (max-width: 768px) {
+    transform: scale(20%);
+  }
+`
 const Buy = () => {
   return (
     <PageLayout>
       <PageWidth scale={"90%"} width="1500px" position="relative">
         <div style={{ width: "100%" }}>
-          <img
-            loading="lazy"
-            src="/content/LineY.png"
-            alt=""
-            style={{ width: "100%", height: "10rem" }}
-          />
+          <IconDiv>
+            <img
+              loading="lazy"
+              src="/content/LineY.png"
+              alt=""
+              style={{ width: "100%", height: "10rem" }}
+            />
+          </IconDiv>
           <div
             data-aos="slide-right"
             data-aos-duration="500"

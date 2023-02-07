@@ -8,7 +8,7 @@ const StyledRoadmap = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 2rem 0 0 0;
+  margin: 1rem 0 0 0;
   @media only screen and (max-width: 768px) {
     transform: scale(60%);
   }
@@ -31,7 +31,6 @@ const Roadmap = () => {
               size="16px"
               lh="18px"
               align="center"
-              xmsize="2rem"
               xssize="3vw"
               msize="1.8rem"
             />
@@ -42,7 +41,6 @@ const Roadmap = () => {
               lh="16.8px"
               fw="400"
               m="0.75rem 0 0 0"
-              xmsize="1.6rem"
               xssize="2.4vw"
               msize="1.2rem"
             />
@@ -61,7 +59,6 @@ const Roadmap = () => {
               size="16px"
               lh="18px"
               align="center"
-              xmsize="2rem"
               xssize="3vw"
               msize="1.8rem"
             />
@@ -72,7 +69,6 @@ const Roadmap = () => {
               lh="16.8px"
               fw="400"
               m="0.75rem 0 0 0"
-              xmsize="1.6rem"
               xssize="2.4vw"
               msize="1.2rem"
             />
@@ -84,7 +80,6 @@ const Roadmap = () => {
               size="16px"
               lh="18px"
               align="center"
-              xmsize="2rem"
               xssize="3vw"
               msize="1.8rem"
             />
@@ -95,14 +90,13 @@ const Roadmap = () => {
               lh="16.8px"
               fw="400"
               m="0.75rem 0 0 0"
-              xmsize="1.6rem"
               xssize="2.4vw"
               msize="1.2rem"
             />
           </div>
         </Flex>
       </div>
-      <div style={{ width: "100%", margin: "5rem 0 0 0" }}>
+      <div style={{ width: "100%", margin: "2rem 0 0 0" }}>
         <img
           loading="lazy"
           src="/content/r.png"
@@ -117,7 +111,6 @@ const Roadmap = () => {
               size="16px"
               lh="18px"
               align="center"
-              xmsize="2rem"
               xssize="3vw"
               msize="1.8rem"
             />
@@ -128,7 +121,6 @@ const Roadmap = () => {
               lh="16.8px"
               fw="400"
               m="0.75rem 0 0 0"
-              xmsize="1.6rem"
               xssize="2.4vw"
               msize="1.2rem"
             />
@@ -147,7 +139,6 @@ const Roadmap = () => {
               size="16px"
               lh="18px"
               align="center"
-              xmsize="2rem"
               xssize="3vw"
               msize="1.8rem"
             />
@@ -158,7 +149,6 @@ const Roadmap = () => {
               lh="16.8px"
               fw="400"
               m="0.75rem 0 0 0"
-              xmsize="1.6rem"
               xssize="2.4vw"
               msize="1.2rem"
             />
@@ -170,7 +160,6 @@ const Roadmap = () => {
               size="16px"
               lh="18px"
               align="center"
-              xmsize="2rem"
               xssize="3vw"
               msize="1.8rem"
             />
@@ -181,7 +170,6 @@ const Roadmap = () => {
               lh="16.8px"
               fw="400"
               m="0.75rem 0 0 0"
-              xmsize="1.6rem"
               xssize="2.4vw"
               msize="1.2rem"
             />

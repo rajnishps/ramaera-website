@@ -54,6 +54,9 @@ const AccordionTitle = styled.p`
     css`
       color: rgba(255, 212, 87, 1);
     `}
+  @media only screen and (max-width: 768px) {
+    font-size: 14px;
+  }
 `
 
 const AccordionBody = styled.div`

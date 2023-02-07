@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import PageLayout from "../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../components/Width/PageWidth"
 import Text from "../../../components/Text/Text"

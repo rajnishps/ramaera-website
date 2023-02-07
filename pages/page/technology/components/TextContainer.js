@@ -20,8 +20,11 @@ const StyleTextContainer = styled.div`
     bottom: 15vh;
   }
 `
-
-const IconDiv = styled.div``
+const IconDiv = styled.div`
+  @media only screen and (max-width: 768px) {
+    transform: scale(80%);
+  }
+`
 
 const TextContainer = () => {
   return (
