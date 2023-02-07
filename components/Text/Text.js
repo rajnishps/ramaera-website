@@ -22,6 +22,7 @@ const Text = (props) => {
     width: ${props.width ? props.width : ""};
     opacity: 0.99;
     text-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
+    padding: ${props.padding ? props.padding : "2vw"};
     &:hover {
       color: ${props.hoverColor ? props.hoverColor : null};
     }
@@ -36,9 +37,9 @@ const Text = (props) => {
     @media only screen and (max-width: 768px) {
       font-size: ${props.msize ? props.msize : "17px"};
       width: 100vw;
-      padding: 2vw;
-      text-align: center;
+      text-align: ${props.mta ? props.mta : "center"};
       line-height: ${props.mlh && props.mlh};
+      padding: ${props.mpadding ? props.mpadding : "2vw"};
     }
   `
   return <StyledText>{props.Text ? props.Text : "Default Text"}</StyledText>

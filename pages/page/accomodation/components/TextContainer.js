@@ -11,6 +11,13 @@ const StyleTextContainer = styled.div`
   // background: red;
   width: 50rem;
   margin: 5rem 0 -5rem 0;
+  @media only screen and (max-width: 768px) {
+    position: absolute;
+    margin: 0;
+    width: 100vw;
+    top: 10vh;
+    overflow: hidden;
+  }
 `
 const TextContainer = () => {
   return (
@@ -33,12 +40,21 @@ const TextContainer = () => {
             size="42px"
             lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%);"
             lh="55px"
+            mlh="30px"
+            xssize="3vw"
+            msize="2rem"
+            mta="left"
           />
           <Text
             Text="accommodations easier"
             size="42px"
             lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%);"
             lh="55px"
+            mlh="30px"
+            xmsize="2rem"
+            xssize="3vw"
+            mta="left"
+            msize="1.4rem"
           />
         </div>
       </Flex>
@@ -49,6 +65,10 @@ const TextContainer = () => {
         lh="45px"
         width="40rem"
         m="2rem 0 0 0"
+        mpadding="0 60px"
+        xssize="18px"
+        mlh="30px"
+        msize="16px"
       />
     </StyleTextContainer>
   )

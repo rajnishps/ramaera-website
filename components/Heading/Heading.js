@@ -26,6 +26,7 @@ const Heading = (props) => {
     @media only screen and (max-width: 768px) {
       font-size: ${props.ms ? props.ms : "16px"};
       line-height: ${props.lmh ? props.lmh : ""};
+      padding: ${props.mpadding ? props.mpadding : "2vw"};
     }
   `
   return (

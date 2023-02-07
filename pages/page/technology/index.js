@@ -1,29 +1,27 @@
-import React, { useEffect } from "react"
-import AOS from "aos"
-import "aos/dist/aos.css"
 import PageLayout from "../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../components/Width/PageWidth"
 import TextContainer from "./components/TextContainer"
 import { Image, Responsive } from "./components/StyleImage"
+import styled from "styled-components"
 
+const Animdiv = styled.div`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  @media only screen and (max-width: 768px) {
+    left: auto;
+    right: auto;
+    bottom: -15vh;
+  }
+`
 const Buy = () => {
-  useEffect(() => {
-    AOS.init()
-    AOS.refresh()
-  }, [])
-
   return (
     <PageLayout height="100vh">
       <PageWidth scale={"90%"} width="1500px" position="relative">
-        <div
+        <Animdiv
           data-aos="slide-right"
           data-aos-anchor-placement="center-center"
           data-aos-duration="500"
-          style={{
-            position: "absolute",
-            left: "0",
-            bottom: "0",
-          }}
         >
           <Image>
             <img
@@ -32,13 +30,13 @@ const Buy = () => {
               alt=""
               style={{
                 position: "absolute",
-                top: "30vh",
+                top: "35vh",
                 width: "100%",
                 height: "100%",
               }}
             />
           </Image>
-        </div>
+        </Animdiv>
         <div style={{ width: "100%" }}>
           <img
             loading="lazy"

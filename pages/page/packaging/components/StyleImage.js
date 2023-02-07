@@ -15,6 +15,10 @@ export const CustomText = styled.h1`
   color: #fff;
   text-align: right;
   font-weight: 700;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.6rem;
+  }
 `
 const StyleImage = () => {
   return <div>StyleImage</div>

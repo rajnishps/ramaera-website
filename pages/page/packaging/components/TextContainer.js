@@ -122,6 +122,10 @@ const TextContainer = () => {
         size="23px"
         lh="45px"
         width="40rem"
+        mpadding="0 60px"
+        xssize="18px"
+        mlh="30px"
+        msize="18px"
       />
     </StyleTextContainer>
   )

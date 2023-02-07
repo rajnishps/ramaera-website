@@ -1,19 +1,21 @@
-import React, { useEffect } from "react"
-import AOS from "aos"
-import "aos/dist/aos.css"
 import PageLayout from "../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../components/Width/PageWidth"
 import TextContainer from "./components/TextContainer"
 import { Image, Responsive } from "./components/StyleImage"
+import styled from "styled-components"
 
-const bg = "/background/blank.png"
-
+const Animdiv = styled.div`
+  position: absolute;
+  right: 0;
+  top: 15vh;
+  @media only screen and (max-width: 768px) {
+    top: 0;
+    left: auto;
+    right: auto;
+    bottom: -15vh;
+  }
+`
 const Buy = () => {
-  useEffect(() => {
-    AOS.init()
-    AOS.refresh()
-  }, [])
-
   return (
     <PageLayout>
       <PageWidth scale={"90%"} width="1500px" position="relative">
@@ -40,10 +42,8 @@ const Buy = () => {
             style={{ width: "100%", height: "10rem" }}
           />
         </div>
-        <div
-          style={{ position: "absolute", right: "0" }}
+        <Animdiv
           data-aos="slide-left"
-          // data-aos-offset="2000"
           data-aos-duration="500"
           data-aos-anchor-placement="top-bottom"
         >
@@ -52,10 +52,15 @@ const Buy = () => {
               loading="lazy"
               src="/content/hotel.gif"
               alt=""
-              style={{ width: "100%", height: "100%" }}
+              style={{
+                position: "absolute",
+                top: "-200px",
+                width: "100%",
+                height: "100%",
+              }}
             />
           </Image>
-        </div>
+        </Animdiv>
       </PageWidth>
     </PageLayout>
   )

@@ -3,7 +3,7 @@ import PageLayout from "../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../components/Width/PageWidth"
 import TextContainer from "./components/TextContainer"
 import { Image, Responsive } from "./components/StyleImage"
-
+import styled from "styled-components"
 const Buy = () => {
   return (
     <PageLayout>

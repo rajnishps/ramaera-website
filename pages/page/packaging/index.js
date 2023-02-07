@@ -3,18 +3,27 @@ import PageLayout from "../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../components/Width/PageWidth"
 import TextContainer from "./components/TextContainer"
 import { Image, Responsive } from "./components/StyleImage"
+import styled from "styled-components"
 
-const bg = "/background/blank.png"
+const Animdiv = styled.div`
+  position: absolute;
+  left: 0;
+  margin: 10vh 0 0 0;
+  @media only screen and (max-width: 768px) {
+    left: auto;
+    right: auto;
+    bottom: -30vh;
+  }
+`
 
 const Buy = () => {
   return (
     <PageLayout>
       <PageWidth scale={"90%"} width="1500px" position="relative">
-        <div
+        <Animdiv
           data-aos="slide-right"
           data-aos-duration="500"
           data-aos-anchor-placement="center-bottom"
-          style={{ position: "absolute", left: "0", margin: "10vh 0 0 0" }}
         >
           <Image>
             <img
@@ -24,7 +33,7 @@ const Buy = () => {
               style={{ width: "100%", height: "100%" }}
             />
           </Image>
-        </div>
+        </Animdiv>
         <div style={{ width: "100%" }}>
           <img
             loading="lazy"
