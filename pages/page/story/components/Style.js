@@ -6,8 +6,12 @@ export const stock = "/content/im.png"
 export const hover = "/content/im2.png"
 
 export const StockImage = styled.div`
-  width: 90%;
+  width: 100%;
   height: 42rem;
+  @media (max-width: 768px) {
+    width: 100%;
+    height: 100%;
+  }
 `
 export const HoverImage = styled(motion.div)`
   width: 87.5%;
@@ -29,8 +33,11 @@ export const HoverImage = styled(motion.div)`
   z-index: 2;
 
   @media (max-width: 1350px) {
-    width: 75%;
+    width: 100%;
     height: 32rem;
+  }
+  @media (max-width: 768px) {
+    opacity: 0;
   }
 `
 

@@ -9,7 +9,7 @@ const index = () => {
 
   return (
     <PageLayout bgColor="#f5f5f5">
-      <div data-aos="fade-in" data-aos-anchor-placement="center-bottom">
+      <div data-aos="fade-in" data-aos-anchor-placement="top-bottom">
         <PageWidth scale={"85%"} width="1500px" margin="0 0 2rem 0">
           <Text
             Text="Stories that Inspire"
@@ -19,6 +19,9 @@ const index = () => {
             fw="400"
             align="center"
             lh="55px"
+            xmsize="4rem"
+            xssize="6vw"
+            msize="2.4rem"
           />
           <Text
             Text="Ramaera Industries have implemented numerous philanthropic initiatives that have aimed at community building and upliftings. We have showcased some influential and impacting initiatives that have been performed by us."
@@ -29,6 +32,10 @@ const index = () => {
             m="2rem 0"
             align="center"
             width="1100px"
+            mlh="30px"
+            xmsize="2rem"
+            xssize="3vw"
+            msize="1.4rem"
           />
           <div onMouseLeave={() => setisActive(false)}>
             <StockImage
@@ -54,6 +61,10 @@ const index = () => {
                 color="#FFF"
                 size="26px"
                 lh="54px"
+                mlh="30px"
+                xmsize="2rem"
+                xssize="3vw"
+                msize="1.4rem"
               />
             </HoverImage>
             <Text
@@ -65,6 +76,10 @@ const index = () => {
               m="2rem 0 0 0"
               align="center"
               width="1200px"
+              mlh="30px"
+              xmsize="2rem"
+              xssize="3vw"
+              msize="1.4rem"
             />
           </div>
         </PageWidth>

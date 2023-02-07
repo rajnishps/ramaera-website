@@ -10,6 +10,11 @@ export const CustomText = styled.h1`
   font-weight: 600;
   padding-right: 120px;
   margin: 3rem 0;
+  @media (max-width: 768px) {
+    text-align: center;
+    padding: 0;
+    margin: 0;
+  }
 `
 export const Responsive = styled.div`
   width: 100%;

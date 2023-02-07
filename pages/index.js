@@ -22,8 +22,6 @@ import Footer from "./page/footer"
 import Transforming from "./page/transforming"
 import Faqs from "./page/faqs"
 import Tomorrow from "./page/tomorrow"
-import Tom from "./page/tom"
-import Faw from "./page/faw"
 
 //const DynamicHeader = dynamic(() => import('../components/header'), {  loading: () => 'Loading...',})
 
@@ -46,9 +44,9 @@ const Footer = dynamic(() => import("./page/footer"))
 const Transforming = dynamic(() => import("./page/transforming"))
 const Faqs = dynamic(() => import("./page/faqs"))
 const Tomorrow = dynamic(() => import("./page/tomorrow"))
-const Faw = dynamic(() => import("./page/faw")) */
 //check
 const inter = Inter({ subsets: ["latin"] })
+*/
 
 export default function Home() {
   return (
@@ -70,7 +68,6 @@ export default function Home() {
       <Promoting />
       <Tomorrow />
       <Faqs />
-      <Faw />
       <Transforming />
       <Footer />
     </>

@@ -49,8 +49,7 @@ const index = () => {
       <div
         style={{ position: "absolute", right: "0", top: "0", zIndex: -1 }}
         data-aos="slide-left"
-        data-aos-duration="100"
-        data-aos-easing="linear"
+        data-aos-duration="500"
         data-aos-anchor-placement="center-bottom"
       >
         <PolyBg>

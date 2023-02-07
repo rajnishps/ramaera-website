@@ -20,7 +20,6 @@ const Buy = () => {
           <div
             data-aos="slide-right"
             data-aos-duration="500"
-            data-aos-easing="linear"
             data-aos-anchor-placement="center-bottom"
           >
             <Responsive>
@@ -39,7 +38,6 @@ const Buy = () => {
           data-aos="slide-left"
           // data-aos-offset="2000"
           data-aos-duration="500"
-          data-aos-easing="linear"
           data-aos-anchor-placement="top-bottom"
         >
           <Image>

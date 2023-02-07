@@ -8,9 +8,34 @@ const StyledTextContainer = styled.div`
   @media (max-width: 1350px) {
     width: 55%;
   }
+  @media (max-width: 768px) {
+    width: 100vw;
+    position: absolute;
+    transform: scale(70%);
+  }
+`
+const ResHeading = styled.div`
+  @media (max-width: 768px) {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    position: absolute;
+    top: -45vh;
+    left: auto;
+    right: auto;
+  }
+`
+const ResSub = styled.div`
+  @media (max-width: 768px) {
+    position: absolute;
+    top: 35vh;
+  }
 `
 const Stars = styled.div`
   position: absolute;
+  @media (max-width: 768px) {
+    opacity: 0;
+  }
 `
 const Star = styled.img`
   height: 16px;
@@ -49,11 +74,18 @@ const Bg = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+  @media (max-width: 768px) {
+    width: 00vw;
+    height: 100vh;
+  }
 `
 const Quote = styled.img`
   position: absolute;
   top: 220px;
   left: 550px;
+  @media (max-width: 768px) {
+    opacity: 0;
+  }
 `
 
 const Textcontainer = () => {
@@ -61,24 +93,31 @@ const Textcontainer = () => {
   return (
     <StyledTextContainer onMouseLeave={() => setisActive(false)}>
       <Quote src="/content/quote.png" />
-      <Text
-        Text="Inflation a serious challenge for India`s economic growth: Devendra Mishra`"
-        size="44px"
-        lh="60px"
-        color="#FFF"
-        fw="500"
-      />
-      <CustomText>
-        Ramaera Chairman,{" "}
-        <span
-          style={{ color: "#FFE259" }}
-          onMouseMove={() => setisActive(true)}
-        >
-          Devendra Mishra{" "}
-        </span>{" "}
-        said that for India to stay on the growth trajectory, a triple decker
-        strategy focused on employment generation...
-      </CustomText>
+      <ResHeading>
+        <Text
+          Text="Inflation a serious challenge for India`s economic growth: Devendra Mishra`"
+          size="44px"
+          lh="60px"
+          color="#FFF"
+          fw="500"
+          xmsize="2rem"
+          xssize="3vw"
+          msize="1.8rem"
+        />
+      </ResHeading>
+      <ResSub>
+        <CustomText>
+          Ramaera Chairman,{" "}
+          <span
+            style={{ color: "#FFE259" }}
+            onMouseMove={() => setisActive(true)}
+          >
+            Devendra Mishra{" "}
+          </span>{" "}
+          said that for India to stay on the growth trajectory, a triple decker
+          strategy focused on employment generation...
+        </CustomText>
+      </ResSub>
       {isActive ? (
         <Bg>
           <div onMouseMove={() => setisActive(false)}>

@@ -15,8 +15,8 @@ const Buy = () => {
   }, [])
 
   return (
-    <PageLayout height="100%">
-      <PageWidth scale={"90%"} width="1500px" position="relative">
+    <PageLayout height="100vh">
+      <PageWidth scale={"90%"} width="1500px">
         <div
           data-aos="slide-right"
           data-aos-duration="500"
@@ -41,19 +41,13 @@ const Buy = () => {
             loading="lazy"
             src="/background/Line.png"
             alt=""
-            style={{ position: "absolute", width: "100%", height: "10rem" }}
+            style={{ position: "absolute", width: "100%", height: "100%" }}
           />
           <div data-aos="slide-left" data-aos-duration="500">
             <Responsive>
               <TextContainer />
             </Responsive>
           </div>
-          <img
-            loading="lazy"
-            src="/background/Line.png"
-            alt=""
-            style={{ position: "absolute", width: "100%", height: "10rem" }}
-          />
         </div>
       </PageWidth>
     </PageLayout>

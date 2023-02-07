@@ -288,7 +288,7 @@ const index = () => {
         <div
           data-aos="fade-in"
           data-aos-duration="500"
-          data-aos-anchor-placement="top-center"
+          data-aos-anchor-placement="top-bottom"
         >
           <Text
             Text="Earning the trust of millions"
@@ -299,13 +299,16 @@ const index = () => {
             fw="400"
             align="center"
             lh="65px"
+            xmsize="4rem"
+            xssize="6vw"
+            msize="2.4rem"
           />
         </div>
         <Responsive>
           <div
             data-aos="fade-in"
             data-aos-duration="500"
-            data-aos-anchor-placement="center-bottom"
+            data-aos-anchor-placement="top-bottom"
           >
             <BgRectangle />
             <Section>

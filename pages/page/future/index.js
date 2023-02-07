@@ -28,6 +28,9 @@ const index = () => {
             align="center"
             lh="55px"
             m="0 0 2rem 0"
+            xmsize="4rem"
+            xssize="6vw"
+            msize="2.4rem"
           />
           <Text
             Text="FUTURE"
@@ -36,7 +39,10 @@ const index = () => {
             size="111px"
             fw="400"
             align="center"
-            lh="75px"
+            lh="77px"
+            xmsize="4rem"
+            xssize="6vw"
+            msize="3.6rem"
           />
           <Text
             Text="Our Roadmap"
@@ -46,6 +52,9 @@ const index = () => {
             fw="600"
             align="center"
             lh="35px"
+            xmsize="4rem"
+            xssize="6vw"
+            msize="2.4rem"
           />
           <Text
             Text="A vision for the success of millions and national integration requires a fundamentally worthy and promising roadmap ."

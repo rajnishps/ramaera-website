@@ -21,7 +21,7 @@ export const RotateImage = styled(motion.div)`
 export const FutureContainer = styled.div`
   width: 100%;
   min-height: 50rem;
-  background-image: url(${bg});
+  background: linear-gradient(90deg, #000000 0%, #434343 100%);
   background-size: 100% 100%;
   background-repeat: no-repeat;
   display: flex;

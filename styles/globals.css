@@ -354,3 +354,7 @@ a {
     text-align: center;
   }
 }
+
+.accordian-color {
+  color: rgba(255, 212, 87, 1);
+}

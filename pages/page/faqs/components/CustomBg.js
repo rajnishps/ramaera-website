@@ -13,6 +13,7 @@ const Bg = styled.div`
     background: transparent;
   }
 `
+
 const TextContainer = styled.div`
   position: absolute;
   margin-left: auto;
@@ -34,6 +35,9 @@ const CustomBg = () => {
           fw="400"
           align="center"
           lh="45px"
+          xmsize="4rem"
+          xssize="6vw"
+          msize="2.4rem"
         />
       </TextContainer>
       <Bg />

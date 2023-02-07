@@ -8,7 +8,7 @@ import Textcontainer from "./components/Textcontainer"
 
 const index = () => {
   return (
-    <PageLayout bgColor="#f5f5f5">
+    <PageLayout>
       <PageWidth width="1500px" margin="0 0 2rem 0">
         <div
           data-aos="fade-in"
@@ -23,6 +23,9 @@ const index = () => {
             fw="400"
             align="center"
             lh="45px"
+            xmsize="4rem"
+            xssize="6vw"
+            msize="2.4rem"
           />
         </div>
         <Responsive>

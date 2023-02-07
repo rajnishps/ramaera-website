@@ -34,7 +34,11 @@ export const Bg = styled.div`
   z-index: 2;
 `
 
-const StyledImageContainer = styled.div``
+const StyledImageContainer = styled.div`
+  @media (max-width: 768px) {
+    transform: scale(70%);
+  }
+`
 
 const MainImg = styled.div`
   transform: scale(80%);
@@ -43,6 +47,10 @@ const MainImg = styled.div`
   @media (max-width: 1350px) {
     width: 25rem;
     height: 33rem;
+  }
+  @media (max-width: 768px) {
+    width: 100vw;
+    height: 100%;
   }
 `
 const TeamImg = styled.div`
@@ -53,6 +61,9 @@ const TeamImg = styled.div`
   position: absolute;
   bottom: 0;
   right: -4rem;
+  @media (max-width: 768px) {
+    right: auto;
+  }
 `
 const HoverImage = styled.div`
   width: 30rem;
@@ -81,6 +92,10 @@ const HoverImageTeam = styled.div`
   @media (max-width: 1350px) {
     width: 75%;
     height: 28rem;
+  }
+  @media (max-width: 768px) {
+    width: 150%;
+    height: 55%;
   }
 `
 const Img = styled.div`

@@ -37,6 +37,8 @@ const Text = (props) => {
       font-size: ${props.msize ? props.msize : "17px"};
       width: 100vw;
       padding: 2vw;
+      text-align: center;
+      line-height: ${props.mlh && props.mlh};
     }
   `
   return <StyledText>{props.Text ? props.Text : "Default Text"}</StyledText>
