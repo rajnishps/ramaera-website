@@ -14,17 +14,21 @@ import styled from "styled-components"
 const ResImage1 = styled.div`
   position: absolute;
   left: 0;
-  right: 0;
+  top: 5vh;
   margin: 20vh 0 0 10vw;
   @media only screen and (max-width: 768px) {
+    top: -10vh;
+    right: 60%;
   }
 `
 const ResImage2 = styled.div`
   position: absolute;
   right: 0;
-  top: 72vh;
+  top: 82vh;
   margin: 0 10vh 0 0;
   @media only screen and (max-width: 768px) {
+    top: 72vh;
+    margin: 0 -5vw 0 0;
   }
 `
 const index = () => {
@@ -46,7 +50,7 @@ const index = () => {
             lh="45px"
             xmsize="4rem"
             xssize="6vw"
-            msize="2.4rem"
+            msize="2.2rem"
           />
         </div>
 

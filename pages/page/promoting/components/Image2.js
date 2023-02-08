@@ -2,6 +2,9 @@ import styled from "styled-components"
 
 const Image = styled.div`
   transform: scale(75%);
+  @media only screen and (max-width: 768px) {
+    transform: scale(50%);
+  }
 `
 const Image2 = () => {
   return (

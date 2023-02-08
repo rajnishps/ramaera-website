@@ -75,8 +75,7 @@ const Bg = styled.div`
   align-items: center;
   justify-content: center;
   @media (max-width: 768px) {
-    width: 00vw;
-    height: 100vh;
+    width: 0;
   }
 `
 const Quote = styled.img`
@@ -129,6 +128,7 @@ const Textcontainer = () => {
               fw="400"
               align="center"
               lh="55px"
+              msize="60px"
             />
           </div>
         </Bg>

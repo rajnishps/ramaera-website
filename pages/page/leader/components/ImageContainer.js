@@ -76,6 +76,10 @@ const HoverImage = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 3;
+  @media (max-width: 768px) {
+    width: 38rem;
+    height: 50rem;
+  }
 `
 
 const HoverImageTeam = styled.div`

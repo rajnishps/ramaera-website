@@ -36,7 +36,7 @@ const Text = (props) => {
 
     @media only screen and (max-width: 768px) {
       font-size: ${props.msize ? props.msize : "17px"};
-      width: 100vw;
+      width: ${props.mwidth ? props.mwidth : "100vw;"};
       text-align: ${props.mta ? props.mta : "center"};
       line-height: ${props.mlh && props.mlh};
       padding: ${props.mpadding ? props.mpadding : "2vw"};
