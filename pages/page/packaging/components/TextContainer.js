@@ -12,6 +12,9 @@ const StyleTextContainer = styled.div`
   // background: red;
   width: 50rem;
   margin: -6rem 0 4rem 0;
+  @media only screen and (max-width: 768px) {
+    margin: 0 0 -30vh 0;
+  }
 `
 const TextContainer = () => {
   return (

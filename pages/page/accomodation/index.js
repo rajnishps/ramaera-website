@@ -12,7 +12,7 @@ const Animdiv = styled.div`
     top: 0;
     left: auto;
     right: auto;
-    bottom: -15vh;
+    top: -10vh;
   }
 `
 const IconDiv = styled.div`
@@ -20,6 +20,7 @@ const IconDiv = styled.div`
     transform: scale(20%);
   }
 `
+
 const Buy = () => {
   return (
     <PageLayout>

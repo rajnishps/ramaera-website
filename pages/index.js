@@ -52,7 +52,7 @@ export default function Home() {
   return (
     <>
       <Navbar />
-      <Ramaera />
+      <Ramaera imageIndex={0} />
       <Expansion />
       <Technology />
       <Accomodation />
@@ -64,7 +64,7 @@ export default function Home() {
       <Story />
       <Future />
       <Leader />
-      {/* <Trust />*/}
+      <Trust />
       <Promoting />
       <Tomorrow />
       <Faqs />

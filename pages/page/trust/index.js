@@ -26,7 +26,7 @@ const slides = [
         profileName={"Bill Gates"}
         profileTitle={"User Square"}
         profileReview={
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro impedit reiciendis modi facere provident deleniti explicabo perferendis ipsum voluptates quibusdam."
+          "Lorem ipsum dolor sit amet consectetur explicabo perferendis ipsum voluptates quibusdam."
         }
       />
     ),
@@ -44,15 +44,36 @@ const slides = [
     ),
   },
 ]
-export const Arrows = styled.button`
+export const ArrowLeft = styled.button`
   position: absolute;
   background: none;
+  border: 0;
+  left: 40vw;
+  bottom: 20vh;
+  cursor: pointer;
+  transition: ease 0.3s all;
+  outline: none;
+  &:hover {
+    transform: scale(115%);
+  }
+  @media only screen and (max-width: 768px) {
+    left: 30vw;
+  }
+`
+export const ArrowRight = styled.button`
+  position: absolute;
+  background: none;
+  right: 40vw;
+  bottom: 20vh;
   border: 0;
   cursor: pointer;
   transition: ease 0.3s all;
   outline: none;
   &:hover {
     transform: scale(115%);
+  }
+  @media only screen and (max-width: 768px) {
+    right: 30vw;
   }
 `
 const Slide = styled.div`
@@ -67,7 +88,6 @@ const Slide = styled.div`
   background-position: center center;
   background-color: transparent;
 `
-const ArrowsHover = styled.div``
 const Wrapper = styled.div`
   height: 60vh;
   transition: 0.5s all linear;
@@ -85,6 +105,7 @@ const Dots = styled.img`
   left: -120px;
   transform: scale(25%);
 `
+const ArrowsHover = styled.div``
 const DotsContainer = styled.ul`
   height: auto;
   margin: 0;
@@ -93,14 +114,14 @@ const DotsContainer = styled.ul`
   width: auto;
   text-align: center;
   left: 50%;
-  bottom: 160px;
+  bottom: 20vh;
   transform: translateX(-50%);
   z-index: 10;
   list-style-type: none;
   & li {
     display: inline-block;
     padding: 5px 10px;
-    font-size: 10px;
+    font-size: 20px;
     & button {
       cursor: pointer;
       color: #fff;
@@ -115,6 +136,8 @@ const DotsContainer = styled.ul`
         cursor: pointer;
       }
     }
+  }
+  @media only screen and (max-width: 768px) {
   }
 `
 const index = () => {
@@ -151,7 +174,7 @@ const index = () => {
 
   const renderArrows = () => (
     <ArrowsHover>
-      <Arrows style={{ left: 550, top: 618 }} onClick={() => prevOne()}>
+      <ArrowLeft onClick={() => prevOne()}>
         <svg
           width="32"
           height="19"
@@ -214,8 +237,8 @@ const index = () => {
             </linearGradient>
           </defs>
         </svg>
-      </Arrows>
-      <Arrows style={{ right: 550, top: 618 }} onClick={() => nextOne()}>
+      </ArrowLeft>
+      <ArrowRight onClick={() => nextOne()}>
         <svg
           width="32"
           height="20"
@@ -278,7 +301,7 @@ const index = () => {
             </linearGradient>
           </defs>
         </svg>
-      </Arrows>
+      </ArrowRight>
     </ArrowsHover>
   )
 

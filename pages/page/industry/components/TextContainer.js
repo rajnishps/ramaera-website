@@ -15,7 +15,7 @@ const StyleTextContainer = styled.div`
     position: absolute;
     margin: 0;
     width: 100vw;
-    top: 10vh;
+    top: 0vh;
     overflow: hidden;
   }
 `

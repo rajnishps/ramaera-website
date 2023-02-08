@@ -3,6 +3,7 @@ import PageWidth from "../../../components/Width/PageWidth"
 import TextContainer from "./components/TextContainer"
 import { Image, Responsive } from "./components/StyleImage"
 import styled from "styled-components"
+import NextImage from "next/image"
 
 const Animdiv = styled.div`
   position: absolute;
@@ -11,7 +12,7 @@ const Animdiv = styled.div`
   @media only screen and (max-width: 768px) {
     left: auto;
     right: auto;
-    bottom: -15vh;
+    bottom: 30vh;
   }
 `
 const Buy = () => {
@@ -24,10 +25,12 @@ const Buy = () => {
           data-aos-duration="500"
         >
           <Image>
-            <img
-              //loading="lazy"
+            <NextImage
+              loading="lazy"
               src="/content/tech.gif"
               alt=""
+              width={100}
+              height={100}
               style={{
                 position: "absolute",
                 top: "35vh",
@@ -39,7 +42,7 @@ const Buy = () => {
         </Animdiv>
         <div style={{ width: "100%" }}>
           <img
-            //loading="lazy"
+            loading="lazy"
             src="/background/Line.png"
             alt=""
             style={{ position: "absolute", width: "100%", height: "10rem" }}
@@ -54,7 +57,7 @@ const Buy = () => {
             </Responsive>
           </div>
           <img
-            //loading="lazy"
+            loading="lazy"
             src="/background/Line.png"
             alt=""
             style={{ position: "absolute", width: "100%", height: "10rem" }}

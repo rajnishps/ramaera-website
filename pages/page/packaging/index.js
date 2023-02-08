@@ -12,10 +12,9 @@ const Animdiv = styled.div`
   @media only screen and (max-width: 768px) {
     left: auto;
     right: auto;
-    bottom: -30vh;
+    bottom: 20vh;
   }
 `
-
 const Buy = () => {
   return (
     <PageLayout>

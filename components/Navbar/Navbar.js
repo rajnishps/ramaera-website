@@ -3,6 +3,7 @@ import React, { useState, useEffect, useRef } from "react"
 import styled from "styled-components"
 import { Burger, Menu } from "./components"
 import FocusLock from "react-focus-lock"
+import Link from "next/link"
 
 const Link2 = styled.div`
   display: flex;
@@ -27,7 +28,7 @@ const Link2 = styled.div`
 `
 
 const logo = "/logo/logo.png"
-const Navbar = () => {
+const Navbar = ({ selectedTab }) => {
   const [open, setOpen] = useState(false)
   const node = useRef()
   const menuId = "main-menu"
@@ -60,8 +61,8 @@ const Navbar = () => {
   return (
     <nav className="nav">
       <div>
-        <div
-          to="/"
+        <Link
+          href="/"
           spy={true}
           smooth={true}
           onClick={() => isActive({ ...navItem })}
@@ -71,78 +72,91 @@ const Navbar = () => {
             alt="Logo"
             className="Logo"
           />
-        </div>
+        </Link>
       </div>
       <div className="RightContainer">
         <div className="PC LeftNav">
           <ul className="list">
-            <Link2 to="/" onClick={() => isActive({ ...navItem, home: true })}>
-              HOME
-              <div
-                className="Line"
-                style={{
-                  display: active.home || active.default ? "block" : "none",
-                }}
-              />
+            <Link2>
+              <Link
+                href="/"
+                onClick={() => isActive({ ...navItem, home: true })}
+              >
+                HOME
+                <div
+                  className="Line"
+                  style={{
+                    display: active.home || active.default ? "block" : "none",
+                  }}
+                />
+              </Link>
             </Link2>
 
-            <Link2
-              to="/"
-              onClick={() =>
-                isActive({ ...navItem, marketPlace: true, default: false })
-              }
-            >
-              OUR INDUSTRIES
-              <div
-                className="Line"
-                style={{
-                  display: active.marketPlace ? "block" : "none",
-                }}
-              />
+            <Link2>
+              <Link
+                href="/industries"
+                onClick={() =>
+                  isActive({ ...navItem, marketPlace: true, default: false })
+                }
+              >
+                OUR INDUSTRIES
+                <div
+                  className="Line"
+                  style={{
+                    display: active.marketPlace ? "block" : "none",
+                  }}
+                />
+              </Link>
             </Link2>
 
-            <Link2
-              to="/"
-              onClick={() =>
-                isActive({ ...navItem, aboutUs: true, default: false })
-              }
-            >
-              OUR COMPANIES
-              <div
-                className="Line"
-                style={{
-                  display: active.aboutUs ? "block" : "none",
-                }}
-              />
+            <Link2>
+              <Link
+                href="/companies"
+                onClick={() =>
+                  isActive({ ...navItem, aboutUs: true, default: false })
+                }
+              >
+                OUR COMPANIES
+                <div
+                  className="Line"
+                  style={{
+                    display: active.aboutUs ? "block" : "none",
+                  }}
+                />
+              </Link>
             </Link2>
           </ul>
         </div>
 
         <div className="PC RightNav">
-          <Link2
-            to="/"
-            onClick={() =>
-              isActive({ ...navItem, event: true, default: false })
-            }
-            style={{
-              color: active.event ? "orange" : "#FFF",
-              fontSize: "0.9rem",
-            }}
-          >
-            Career
+          <Link2>
+            <Link
+              href="/career"
+              onClick={() =>
+                isActive({ ...navItem, event: true, default: false })
+              }
+              style={{
+                color: active.event ? "orange" : "#FFF",
+                fontSize: "0.9rem",
+              }}
+            >
+              Career
+            </Link>
           </Link2>
 
-          <Link2
-            to="/"
-            onClick={() =>
-              isActive({ ...navItem, metaverse: true, default: false })
-            }
-            style={{
-              color: active.metaverse ? "orange" : "#FFF",
-              fontSize: "0.9rem",
-            }}
-          >
-            Contact
+          <Link2>
+            <Link
+              href="/contact"
+              onClick={() =>
+                isActive({ ...navItem, metaverse: true, default: false })
+              }
+              style={{
+                color: active.metaverse ? "orange" : "#FFF",
+                fontSize: "0.9rem",
+              }}
+            >
+              Contact
+            </Link>
           </Link2>
           <svg
             width="26"

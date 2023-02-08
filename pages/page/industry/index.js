@@ -11,7 +11,7 @@ const Animdiv = styled.div`
   @media only screen and (max-width: 768px) {
     padding: 0;
     margin: 0;
-    top: -20vh;
+    top: -30vh;
     left: auto;
     right: auto;
   }

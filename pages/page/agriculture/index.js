@@ -23,7 +23,13 @@ const Buy = () => {
               //loading="lazy"
               src="/content/agri.gif"
               alt=""
-              style={{ width: "100%", height: "100%" }}
+              style={{
+                position: "absolute",
+                top: "-55vh",
+                left: "-5vh",
+                width: "100%",
+                height: "110%",
+              }}
             />
           </Image>
         </div>

@@ -17,7 +17,7 @@ const StyleTextContainer = styled.div`
   @media only screen and (max-width: 768px) {
     margin: 0;
     width: 100vw;
-    bottom: 15vh;
+    bottom: -50vh;
   }
 `
 const IconDiv = styled.div`

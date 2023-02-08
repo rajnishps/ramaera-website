@@ -8,7 +8,7 @@ const Animdiv = styled.div`
   position: absolute;
   right: 0;
   @media only screen and (max-width: 768px) {
-    padding: 0;
+    padding: 0 0 0 5vh;
     margin: 0;
     top: -20vh;
     left: auto;
@@ -54,7 +54,7 @@ const Buy = () => {
               //loading="lazy"
               src="/content/e-commerce.gif"
               alt=""
-              style={{ width: "100%", height: "100%" }}
+              style={{ width: "90%", height: "100%" }}
             />
           </Image>
         </Animdiv>

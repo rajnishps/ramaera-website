@@ -13,9 +13,10 @@ const StyleTextContainer = styled.div`
   margin: -6rem 0 4rem 0;
   @media only screen and (max-width: 768px) {
     position: absolute;
-    top: -40vh;
+    margin: -6rem 0 4rem 0;
+    top: 10vh;
     margin: 0;
-    width: 100vw;
+    width: 90vw;
   }
 `
 const IconDiv = styled.div`
