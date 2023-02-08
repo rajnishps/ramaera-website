@@ -23,12 +23,11 @@ const ResImage1 = styled.div`
 `
 const ResImage2 = styled.div`
   position: absolute;
-  right: 0;
+  right: 10vw;
   top: 82vh;
-  margin: 0 10vh 0 0;
   @media only screen and (max-width: 768px) {
     top: 72vh;
-    margin: 0 -5vw 0 0;
+    right: 0;
   }
 `
 const index = () => {

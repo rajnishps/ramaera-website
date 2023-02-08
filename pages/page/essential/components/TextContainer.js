@@ -31,7 +31,7 @@ const TextContainer = () => {
       <Flex>
         <IconDiv>
           <img
-            loading="lazy"
+            //loading="lazy"
             src="/content/h.png"
             alt=""
             style={{

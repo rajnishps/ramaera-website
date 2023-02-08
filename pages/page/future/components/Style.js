@@ -11,12 +11,15 @@ export const StockImage = styled.div`
 `
 export const RotateImage = styled(motion.div)`
   width: 100vw;
-  transform: scale(140%);
   position: absolute;
+  transform: scale(140%);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: -1;
+  @media only screen and (max-width: 768px) {
+    transform: scale(120%);
+  }
 `
 export const FutureContainer = styled.div`
   width: 100%;
@@ -32,7 +35,10 @@ export const FutureContainer = styled.div`
   border-top: 1px solid #fff;
   border-bottom: 1px solid #fff;
   margin: 12rem 0;
-  padding: 5rem 0;
+  padding: 0;
+  @media only screen and (max-width: 1000px) {
+    padding: 2rem 0;
+  }
 `
 export const HoverImage = styled.div``
 

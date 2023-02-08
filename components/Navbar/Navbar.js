@@ -66,7 +66,11 @@ const Navbar = () => {
           smooth={true}
           onClick={() => isActive({ ...navItem })}
         >
-          <img loading="lazy" src={logo} alt="Logo" className="Logo" />
+          <img //loading="lazy"
+            src={logo}
+            alt="Logo"
+            className="Logo"
+          />
         </div>
       </div>
       <div className="RightContainer">

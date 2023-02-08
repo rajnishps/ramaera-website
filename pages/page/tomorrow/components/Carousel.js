@@ -11,14 +11,12 @@ export default function Carroussel(props) {
   })
 
   const [offsetRadius, setOffsetRadius] = useState(2)
-  const [showArrows, setShowArrows] = useState(false)
   const [goToSlide, setGoToSlide] = useState(null)
   const [cards] = useState(table)
 
   useEffect(() => {
     setOffsetRadius(props.offset)
-    setShowArrows(props.showArrows)
-  }, [props.offset, props.showArrows])
+  }, [props.offset])
 
   return (
     <div
@@ -28,9 +26,8 @@ export default function Carroussel(props) {
         slides={cards}
         goToSlide={goToSlide}
         offsetRadius={offsetRadius}
-        showNavigation={showArrows}
         goToSlideDelay={100}
-        animationConfig={{ tension: 100, friction: 20 }}
+        animationConfig={{ config: config.stiff }}
       />
     </div>
   )

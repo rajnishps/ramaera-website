@@ -7,7 +7,7 @@ const Texts = styled.div`
   @media only screen and (max-width: 768px) {
     position: absolute;
     left: -20vw;
-    top: 35vh;
+    top: 30vh;
   }
 `
 const ButtonContainer = styled.div`

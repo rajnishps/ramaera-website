@@ -27,7 +27,7 @@ const Buy = () => {
         <div style={{ width: "100%" }}>
           <IconDiv>
             <img
-              loading="lazy"
+              //loading="lazy"
               src="/content/LineY.png"
               alt=""
               style={{ width: "100%", height: "10rem" }}
@@ -43,7 +43,7 @@ const Buy = () => {
             </Responsive>
           </div>
           <img
-            loading="lazy"
+            //loading="lazy"
             src="/content/LineY.png"
             alt=""
             style={{ width: "100%", height: "10rem" }}
@@ -56,7 +56,7 @@ const Buy = () => {
         >
           <Image>
             <img
-              loading="lazy"
+              //loading="lazy"
               src="/content/hotel.gif"
               alt=""
               style={{

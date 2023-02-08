@@ -9,7 +9,9 @@ const Image = styled.div`
 const Image2 = () => {
   return (
     <Image>
-      <img loading="lazy" src="/content/promt2.png" />
+      <img //loading="lazy"
+        src="/content/promt2.png"
+      />
     </Image>
   )
 }

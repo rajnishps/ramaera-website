@@ -8,8 +8,9 @@ const StyledRoadmap = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin: 1rem 0 0 0;
+  margin: 0 0 0 0;
   @media only screen and (max-width: 768px) {
+    margin: 1rem 0 0 0;
     transform: scale(60%);
   }
 `
@@ -18,7 +19,7 @@ const Roadmap = () => {
     <StyledRoadmap>
       <div style={{ width: "100%" }}>
         <img
-          loading="lazy"
+          //loading="lazy"
           src="/content/r.png"
           alt=""
           styled={{ width: "100%", height: "3rem" }}
@@ -98,7 +99,7 @@ const Roadmap = () => {
       </div>
       <div style={{ width: "100%", margin: "2rem 0 0 0" }}>
         <img
-          loading="lazy"
+          //loading="lazy"
           src="/content/r.png"
           alt=""
           styled={{ width: "100%", height: "3rem" }}

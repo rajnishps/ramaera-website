@@ -16,7 +16,7 @@ const Item = (props) => {
   return (
     <StyledItem>
       <img
-        loading="lazy"
+        //loading="lazy"
         src={props.img ? props.img : ""}
         alt=""
         style={{ height: "4rem", width: "4.25rem" }}

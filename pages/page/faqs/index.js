@@ -21,7 +21,8 @@ const InnerSection = styled.div`
 `
 const AccordianList = styled.div`
   position: relative;
-  max-width: 44vw;
+  max-width: 50vw;
+  padding-right: 2rem;
 `
 
 const AccordionContainer = styled.div`
@@ -56,6 +57,7 @@ const AccordionTitle = styled.p`
     `}
   @media only screen and (max-width: 768px) {
     font-size: 14px;
+    text-align: center;
   }
 `
 
@@ -81,6 +83,9 @@ const AccordionContent = styled.p`
   margin: 0;
   padding: 0 1rem 1rem;
   height: auto;
+  @media only screen and (max-width: 1000px) {
+    text-align: center;
+  }
 `
 
 const sampleAccordionData = [

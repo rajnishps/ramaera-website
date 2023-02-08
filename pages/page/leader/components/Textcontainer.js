@@ -15,9 +15,9 @@ const StyledTextContainer = styled.div`
   }
 `
 const ResHeading = styled.div`
+  margin: 0;
+  padding: 0;
   @media (max-width: 768px) {
-    margin: 0;
-    padding: 0;
     text-align: center;
     position: absolute;
     top: -45vh;
@@ -32,7 +32,10 @@ const ResSub = styled.div`
   }
 `
 const Stars = styled.div`
+  display: flex;
+  flex-direction: column;
   position: absolute;
+  bottom: 5vh;
   @media (max-width: 768px) {
     opacity: 0;
   }
@@ -99,6 +102,7 @@ const Textcontainer = () => {
           lh="60px"
           color="#FFF"
           fw="500"
+          padding=" 0 0 0 0 "
           xmsize="2rem"
           xssize="3vw"
           msize="1.8rem"
@@ -134,15 +138,17 @@ const Textcontainer = () => {
         </Bg>
       ) : null}
       <Stars>
-        <Star />
-        <Star />
-        <Star />
-        <Star />
-        <Star />
+        <div>
+          <Star />
+          <Star />
+          <Star />
+          <Star />
+          <Star />
+        </div>
         <Text
           Text="Financial Express"
           size="22px"
-          lh="60px"
+          lh="30px"
           color="#FFF"
           fw="500"
         />

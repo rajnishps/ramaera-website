@@ -14,7 +14,9 @@ const index = () => {
           data-aos-duration="500"
           data-aos-anchor-placement="top-bottom"
         >
-          <img loading="lazy" src="/content/card.png" />
+          <img //loading="lazy"
+            src="/content/card.png"
+          />
         </div>
       </RotateImage>
       <FutureContainer>
@@ -27,7 +29,7 @@ const index = () => {
             fw="400"
             align="center"
             lh="55px"
-            m="0 0 2rem 0"
+            m="0 0 0 0"
             xmsize="4rem"
             xssize="6vw"
             msize="2.4rem"
@@ -39,7 +41,7 @@ const index = () => {
             size="111px"
             fw="400"
             align="center"
-            lh="77px"
+            lh="65px"
             xmsize="4rem"
             xssize="6vw"
             msize="3.6rem"
@@ -64,7 +66,7 @@ const index = () => {
             fw="400"
             align="center"
             lh="31px"
-            width="31rem"
+            width="80vw"
           />
           <Roadmap />
         </PageWidth>

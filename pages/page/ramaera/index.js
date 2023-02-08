@@ -55,7 +55,7 @@ const index = () => {
             />
           </div>
           <img
-            loading="lazy"
+            //loading="lazy"
             src="/background/bottom.png"
             alt=""
             style={{ height: "7rem", width: "9.5rem", margin: "1rem 0 0 0" }}
