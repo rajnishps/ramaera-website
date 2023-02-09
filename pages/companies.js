@@ -5,7 +5,7 @@ import Footer from "./page/footer"
 const companies = () => {
   return (
     <>
-      <Navbar />
+      <Navbar selectedTab={"companies"} />
       <Ramaera imageIndex={2} />
       <Footer />
     </>

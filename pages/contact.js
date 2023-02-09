@@ -1,7 +1,13 @@
-import React from "react"
+import Navbar from "../components/Navbar/Navbar"
+import Footer from "./page/footer"
 
 const contact = () => {
-  return <div>contact</div>
+  return (
+    <>
+      <Navbar selectedTab={"contact"} />
+      <Footer />
+    </>
+  )
 }
 
 export default contact

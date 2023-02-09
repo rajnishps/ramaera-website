@@ -2,14 +2,14 @@ import Ramaera from "./page/ramaera"
 import Navbar from "../components/Navbar/Navbar"
 import Footer from "./page/footer"
 
-const companies = () => {
+const industries = () => {
   return (
     <>
-      <Navbar />
+      <Navbar selectedTab={"industries"} />
       <Ramaera imageIndex={1} />
       <Footer />
     </>
   )
 }
 
-export default companies
+export default industries

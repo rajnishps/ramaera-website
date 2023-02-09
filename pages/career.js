@@ -1,7 +1,13 @@
-import React from "react"
+import Navbar from "../components/Navbar/Navbar"
+import Footer from "./page/footer"
 
 const career = () => {
-  return <div>career</div>
+  return (
+    <>
+      <Navbar selectedTab={"career"} />
+      <Footer />
+    </>
+  )
 }
 
 export default career

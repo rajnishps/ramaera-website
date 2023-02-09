@@ -29,6 +29,7 @@ const Link2 = styled.div`
 
 const logo = "/logo/logo.png"
 const Navbar = ({ selectedTab }) => {
+  console.log(selectedTab)
   const [open, setOpen] = useState(false)
   const node = useRef()
   const menuId = "main-menu"
