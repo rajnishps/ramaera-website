@@ -355,6 +355,61 @@ a {
   }
 }
 
-.accordian-color {
+/*accordian*/
+
+.acc-kontainer {
+  width: 40%;
+  margin: auto;
+}
+
+@media only screen and (max-width: 768px) {
+  .acc-kontainer {
+    width: 90%;
+  }
+}
+.acc-kontainer .acc-body {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  height: 0;
+  color: rgba(0, 0, 0, 0);
+  line-height: 28px;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+.acc-kontainer label {
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  display: block;
+  padding: 15px;
+  width: 100%;
+  color: #fff;
+  font-weight: 400;
+  box-sizing: border-box;
+  z-index: 100;
+}
+
+.acc-kontainer input {
+  display: none;
+}
+
+.acc-kontainer label:before {
+  content: "﹢";
+  font-weight: bolder;
+  float: right;
+}
+
+.acc-kontainer input:checked + label {
   color: rgba(255, 212, 87, 1);
+}
+
+.acc-kontainer input:checked + label:before {
+  content: "▽";
+}
+
+.acc-kontainer input:checked ~ .acc-body {
+  height: auto;
+  color: #fff;
+  font-size: 12px;
+  padding: 20px;
 }

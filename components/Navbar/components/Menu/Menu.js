@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { bool } from "prop-types"
 import { StyledMenu } from "./Menu.styled"
 import styled from "styled-components"
-//import { Link } from 'react-router-dom'
+import Link from "next/link"
 import Button from "../../../Button/Button"
 
 const MenuItems = styled.div`
@@ -58,23 +58,30 @@ const Menu = ({ open, setOpen, ...props }) => {
       <Link1 to="home" spy={true} smooth={true}></Link1>
 
       <MenuItems>
-        <H to="/" onClick={() => setOpen(false)}>
-          HOME
+        <H>
+          <Link href="/" onClick={() => setOpen(false)}>
+            HOME
+          </Link>
         </H>
-        <H to="/" onClick={() => setOpen(false)}>
-          BUY HBT
+        <H>
+          <Link href="/industries" onClick={() => setOpen(false)}>
+            OUR INDUSTRIES
+          </Link>
         </H>
-        <H to="/claim" onClick={() => setOpen(false)}>
-          CLAIM HBT
+        <H>
+          <Link href="/companies" onClick={() => setOpen(false)}>
+            OUR COMPANIES
+          </Link>
         </H>
-        <H to="/referal" onClick={() => setOpen(false)}>
-          REFERRAL
+        <H>
+          <Link href="/career" onClick={() => setOpen(false)}>
+            Career
+          </Link>
         </H>
-        <H to="/lending" onClick={() => setOpen(false)}>
-          LENDING
-        </H>
-        <H to="/stake" onClick={() => setOpen(false)}>
-          STAKING
+        <H>
+          <Link href="/contact" onClick={() => setOpen(false)}>
+            Contact
+          </Link>
         </H>
         <Button
           nav

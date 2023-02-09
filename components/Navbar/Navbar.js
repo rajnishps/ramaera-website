@@ -45,7 +45,6 @@ const Navbar = ({ selectedTab }) => {
   }
   const [navbar, setNavbar] = useState(false)
   const [active, isActive] = useState(navItem)
-
   const changeBackground = () => {
     if (window.scrollY >= 50) {
       setNavbar(true)
@@ -63,7 +62,7 @@ const Navbar = ({ selectedTab }) => {
     <nav className="nav">
       <div>
         <Link
-          href="/"
+          href="/home"
           spy={true}
           smooth={true}
           onClick={() => isActive({ ...navItem })}
@@ -80,7 +79,7 @@ const Navbar = ({ selectedTab }) => {
           <ul className="list">
             <Link2>
               <Link
-                href="/"
+                href="/home"
                 onClick={() => isActive({ ...navItem, home: true })}
               >
                 HOME
