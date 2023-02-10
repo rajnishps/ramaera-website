@@ -2,19 +2,17 @@ import styled from "styled-components"
 import Text from "../../../../../components/Text/Text"
 
 const Txt = styled.div`
-  z-index: 10;
-  position: absolute;
-  top: 70%;
-  width: 70vw;
+  height: 100%;
   text-transform: uppercase;
-  left: 60%;
-  transform: translate(-50%, -50%);
+  margin-top: auto;
+  margin-bottom: auto;
 `
 const Bg = styled.div`
+  display: flex;
   background-image: url("/background/bg1p2.png");
   background-repeat: no-repeat;
   background-size: 100vw;
-  height: 80vh;
+  height: 100%;
   width: 100vw;
   margin-top: 20vh;
   z-index: -1;
@@ -24,15 +22,35 @@ const Bg = styled.div`
 `
 const AgriPos = styled.img`
   height: 75vh;
-  position: absolute;
-  top: 65vh;
   @media only screen and (max-width: 768px) {
   }
 `
 
+const PolyBg = styled.div`
+  z-index: -9;
+  @media only screen and (max-width: 1000px) {
+    opacity: 50%;
+  }
+`
+const Image = styled.img`
+  height: 70vh;
+`
 const CustomBg = () => {
   return (
-    <>
+    <Bg>
+      <div
+        data-aos="slide-right"
+        data-aos-duration="500"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <div>
+          <AgriPos
+            //loading="lazy"
+            src="/content/tech.gif"
+            alt=""
+          />
+        </div>
+      </div>
       <Txt>
         <Text
           Text="Information Technology"
@@ -48,26 +66,10 @@ const CustomBg = () => {
           mta="right"
         />
       </Txt>
-      <div
-        data-aos="slide-right"
-        data-aos-duration="500"
-        data-aos-anchor-placement="top-bottom"
-        style={{
-          position: "absolute",
-          left: "0",
-          margin: "0 0 0 0",
-        }}
-      >
-        <div>
-          <AgriPos
-            //loading="lazy"
-            src="/content/tech.gif"
-            alt=""
-          />
-        </div>
-      </div>
-      <Bg />
-    </>
+      <PolyBg>
+        <Image src={"/background/p2poly.png"} alt="" />
+      </PolyBg>
+    </Bg>
   )
 }
 

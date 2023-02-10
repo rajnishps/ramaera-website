@@ -7,6 +7,7 @@ import Consumer from "./page/page2/consumer"
 import Business from "./page/page2/business"
 import Ecom from "./page/page2/ecom"
 import Vision from "./page/page2/vision"
+import ScrollToTop from "./page/page2/scrollToTop"
 import Footer from "./page/common/footer"
 
 const industries = () => {
@@ -20,6 +21,7 @@ const industries = () => {
       <Consumer />
       <Business />
       <Ecom />
+      <ScrollToTop />
       <Vision />
       <Footer />
     </>

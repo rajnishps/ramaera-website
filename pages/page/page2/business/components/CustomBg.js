@@ -2,19 +2,17 @@ import styled from "styled-components"
 import Text from "../../../../../components/Text/Text"
 
 const Txt = styled.div`
-  z-index: 10;
-  position: absolute;
-  top: 60%;
-  width: 70vw;
+  height: 100%;
   text-transform: uppercase;
-  left: 60%;
-  transform: translate(-50%, -50%);
+  margin-top: auto;
+  margin-bottom: auto;
 `
 const Bg = styled.div`
+  display: flex;
   background-image: url("/background/bg1p2.png");
   background-repeat: no-repeat;
   background-size: 100vw;
-  height: 80vh;
+  height: 100%;
   width: 100vw;
   margin-top: 20vh;
   z-index: -1;
@@ -23,20 +21,30 @@ const Bg = styled.div`
   }
 `
 const AgriPos = styled.img`
-  height: 60vh;
-  left: 5vw;
-  position: absolute;
-  top: 25vh;
+  height: 75vh;
   @media only screen and (max-width: 768px) {
   }
 `
 
 const CustomBg = () => {
   return (
-    <>
+    <Bg>
+      <div
+        data-aos="slide-right"
+        data-aos-duration="500"
+        data-aos-anchor-placement="top-bottom"
+      >
+        <div>
+          <AgriPos
+            //loading="lazy"
+            src="/content/agri.gif"
+            alt=""
+          />
+        </div>
+      </div>
       <Txt>
         <Text
-          Text="Agri Business"
+          Text="Agri business"
           font
           align="right"
           size="42px"
@@ -49,26 +57,7 @@ const CustomBg = () => {
           mta="right"
         />
       </Txt>
-      <div
-        data-aos="slide-right"
-        data-aos-duration="500"
-        data-aos-anchor-placement="top-bottom"
-        style={{
-          position: "absolute",
-          left: "0",
-          margin: "0 0 0 0",
-        }}
-      >
-        <div>
-          <AgriPos
-            //loading="lazy"
-            src="/content/agri.gif"
-            alt=""
-          />
-        </div>
-      </div>
-      <Bg />
-    </>
+    </Bg>
   )
 }
 

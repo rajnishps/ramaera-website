@@ -1,17 +1,18 @@
-import PageLayout from "../../../../components/PageLayout/PageLayout"
-import PageWidth from "../../../../components/Width/PageWidth"
-import Text from "../../../../components/Text/Text"
 import styled from "styled-components"
+import PageWidth from "../../../../components/Width/PageWidth"
 import CustomBg from "./components/CustomBg"
+import Texts from "./components/Texts"
 
+const Bgc = styled.div`
+  background: #040;
+`
 const Capsule = () => {
   return (
     <>
-      <PageLayout>
-        <PageWidth Left={"left"} scale={"100vh"} width="1500px">
-          <CustomBg />
-        </PageWidth>
-      </PageLayout>
+      <PageWidth Left={"left"} width="1500px">
+        <CustomBg />
+      </PageWidth>
+      <Texts />
     </>
   )
 }
