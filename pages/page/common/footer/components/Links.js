@@ -74,11 +74,7 @@ const Sub = styled.div`
   margin-left: 3rem;
   border: 1px solid #ffffff;
   border-radius: 6px;
-  background: linear-gradient(
-    0deg,
-    rgba(26, 14, 71, 0.5),
-    rgba(255, 255, 255, 0.05)
-  );
+  background-color: rgba(63, 63, 63, 0.3);
   @media only screen and (max-width: 1000px) {
     overflow: hidden;
     width: 40vw;

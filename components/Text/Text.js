@@ -3,7 +3,6 @@ import styled from "styled-components"
 
 const Text = (props) => {
   const StyledText = styled.p`
-    overflow-wrap: break-word;
     font-size: ${props.size ? props.size : "22px"};
     color: ${props.color ? props.color : "#ffffff"};
     text-align: ${props.align ? props.align : "left"};
@@ -40,6 +39,7 @@ const Text = (props) => {
       text-align: ${props.mta ? props.mta : "center"};
       line-height: ${props.mlh && props.mlh};
       padding: ${props.mpadding ? props.mpadding : "2vw"};
+      padding: ${props.mmargin ? props.mmargin : ""};
     }
   `
   return <StyledText>{props.Text ? props.Text : "Default Text"}</StyledText>

@@ -1,5 +1,5 @@
 import Navbar from "../components/Navbar/Navbar"
-import Footer from "./page/footer"
+import Footer from "./common/page/footer"
 
 const contact = () => {
   return (

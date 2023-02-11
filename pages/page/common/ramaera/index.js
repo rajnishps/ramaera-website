@@ -17,6 +17,26 @@ import styled from "styled-components"
 const SmallSize = styled.div`
   transform: scale(80%);
 `
+const RotateTab = styled.div`
+  @media only screen and (max-width: 768px) {
+    transform: scale(100%);
+    transform: rotateZ(90deg);
+    margin-top: 15vh;
+    margin-left: 70%;
+  }
+`
+const RotateSocials = styled.div`
+  @media only screen and (max-width: 768px) {
+    transform: rotateZ(90deg);
+    margin-left: 50%;
+    margin-top: 0vh;
+  }
+`
+const ImageHide = styled.div`
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`
 
 const pageNo = [images, images2, images3]
 const textNo = [text, text2, text3]
@@ -48,11 +68,14 @@ const index = ({ imageIndex }) => {
             size="96px"
             lh="125px"
             width="50rem"
+            mwidth="90vw"
             fw="500"
             align="center"
             xmsize="6rem"
             xssize="10vw"
-            msize="4rem"
+            msize="3.6rem"
+            mpadding="0"
+            mmargin=" 0 0 2rem 0"
           />
 
           {contextNo[currentIndex]}
@@ -65,16 +88,22 @@ const index = ({ imageIndex }) => {
               m="2rem 0 0 0"
             />
           </div>
-          <img
-            //loading="lazy"
-            src="/background/bottom.png"
-            alt=""
-            style={{ height: "7rem", width: "9.5rem", margin: "1rem 0 0 0" }}
-          />
+          <ImageHide>
+            <img
+              //loading="lazy"
+              src="/background/bottom.png"
+              alt=""
+              style={{ height: "7rem", width: "9.5rem", margin: "1rem 0 0 0" }}
+            />
+          </ImageHide>
         </PageWidth>
       </SmallSize>
-      <SocialMedia />
-      <Tab currentIndex={currentIndex} />
+      <RotateSocials>
+        <SocialMedia />
+      </RotateSocials>
+      <RotateTab>
+        <Tab currentIndex={currentIndex} />
+      </RotateTab>
     </PageLayout>
   )
 }

@@ -12,6 +12,7 @@ const PageLayout = ({
   Zindex,
   Y,
   resTr,
+  mheight,
 }) => {
   const StyledPageLayout = styled.section`
     //min-width: 100vh;
@@ -42,6 +43,7 @@ const PageLayout = ({
 
     @media (max-width: 768px) {
       min-height: 100vh;
+      min-height: ${mheight ? mheight : ""};
     }
   `
 

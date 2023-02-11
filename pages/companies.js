@@ -1,6 +1,6 @@
-import Ramaera from "./page/ramaera"
+import Ramaera from "./page/common/ramaera"
 import Navbar from "../components/Navbar/Navbar"
-import Footer from "./page/footer"
+import Footer from "./page/common/footer"
 
 const companies = () => {
   return (

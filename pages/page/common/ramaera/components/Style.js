@@ -17,7 +17,8 @@ export const CustomText = styled.p`
   @media (max-width: 768px) {
     width: 100vw;
     font-size: 1.6rem;
-    padding: 0 10vw;
+    padding: 0 5vw;
+    margin: 0 0 2rem 0;
   }
 `
 

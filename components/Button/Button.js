@@ -39,7 +39,7 @@ const StyledButton = styled(motion.button)`
         ? props.navWidth
         : "15rem"};
     font-size: ${(props) =>
-      props.secondary ? "9px" : props.fontSize ? props.fontSize : "12px"};
+      props.secondary ? "18px" : props.fontSize ? props.fontSize : "18px"};
   }
 
   @media (max-width: 450px) {

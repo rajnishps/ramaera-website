@@ -16,20 +16,24 @@ const Bg = styled.div`
   width: 100vw;
   margin-top: 20vh;
   z-index: -1;
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 768px) {
     background: transparent;
+    flex-direction: column-reverse;
   }
 `
 const AgriPos = styled.img`
   height: 75vh;
   @media only screen and (max-width: 768px) {
+    height: 50vh;
   }
 `
 
 const PolyBg = styled.div`
-  z-index: -9;
   @media only screen and (max-width: 1000px) {
     opacity: 50%;
+  }
+  @media only screen and (max-width: 786px) {
+    display: none;
   }
 `
 const Image = styled.img`
@@ -37,39 +41,58 @@ const Image = styled.img`
 `
 const CustomBg = () => {
   return (
-    <Bg>
+    <>
       <div
-        data-aos="slide-right"
-        data-aos-duration="500"
+        data-aos="slide-left"
+        data-aos-duration="200"
         data-aos-anchor-placement="top-bottom"
       >
-        <div>
-          <AgriPos
-            //loading="lazy"
-            src="/content/tech.gif"
-            alt=""
-          />
-        </div>
+        <Bg>
+          <div
+            data-aos="slide-right"
+            data-aos-duration="500"
+            data-aos-anchor-placement="top-bottom"
+          >
+            <div>
+              <AgriPos
+                //loading="lazy"
+                src="/content/tech.gif"
+                alt=""
+              />
+            </div>
+          </div>
+          <Txt>
+            <Text
+              Text="Information Technology"
+              font
+              align="right"
+              size="42px"
+              lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
+              lh="55px"
+              mlh="50px"
+              xmsize="2rem"
+              xssize="3vw"
+              msize="2.4rem"
+            />
+          </Txt>
+        </Bg>
       </div>
-      <Txt>
-        <Text
-          Text="Information Technology"
-          font
-          align="right"
-          size="42px"
-          lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
-          lh="55px"
-          mlh="30px"
-          xmsize="2rem"
-          xssize="3vw"
-          msize="2rem"
-          mta="right"
-        />
-      </Txt>
-      <PolyBg>
-        <Image src={"/background/p2poly.png"} alt="" />
-      </PolyBg>
-    </Bg>
+      <div
+        data-aos="slide-left"
+        data-aos-duration="100"
+        data-aos-anchor-placement="top-bottom"
+        style={{
+          position: "absolute",
+          right: "0",
+          top: "130%",
+          zIndex: "-2",
+        }}
+      >
+        <PolyBg>
+          <Image src={"/background/p2poly.png"} alt="" />
+        </PolyBg>
+      </div>
+    </>
   )
 }
 

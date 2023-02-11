@@ -8,9 +8,10 @@ const Beginning = () => {
     <>
       <PageWidth Left={"left"} width="1500px">
         <div
-          data-aos="fade-up"
-          data-aos-easing="fade-down"
-          data-aos-duration="500"
+          data-aos="slide-up"
+          data-aos-mirror="true"
+          data-aos-easing="slide-down"
+          data-aos-duration="200"
         >
           <Text
             Text="Ramaera Industries "
@@ -22,7 +23,10 @@ const Beginning = () => {
             lh="70px"
             xmsize="4rem"
             xssize="4rem"
-            msize="4rem"
+            msize="3.2rem"
+            mwidth="100vw"
+            mpadding="0"
+            mmargin=" 4rem 0 2rem 0"
           />
           <Text
             Text="has begun with the primary motive of nation orientation and strengthening the vision of a sustainable and prosperous nation. With the idea of encompassing and emboldening our presence in industrial sectors such as FMCG, Hotels, Packaging, Agriculture & IT Businesses. We are consistent in serving you the best with due honesty and world class standards."
@@ -35,8 +39,12 @@ const Beginning = () => {
             width="1100px"
             xmsize="2.2rem"
             xssize="2rem"
-            msize="1.6rem"
+            msize="1.2rem"
+            mta="left"
             padding=" 0 10vw 0 2vw"
+            mwidth="90vw"
+            mpadding="0"
+            mmargin=" 0 0 2rem 2rem"
           />
         </div>
 

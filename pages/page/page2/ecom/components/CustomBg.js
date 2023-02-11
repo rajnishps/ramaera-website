@@ -16,48 +16,55 @@ const Bg = styled.div`
   width: 100vw;
   margin-top: 20vh;
   z-index: -1;
-  @media only screen and (max-width: 1200px) {
+  @media only screen and (max-width: 768px) {
     background: transparent;
+    flex-direction: column-reverse;
   }
 `
 const AgriPos = styled.img`
   height: 75vh;
   @media only screen and (max-width: 768px) {
+    height: 50vh;
   }
 `
 
 const CustomBg = () => {
   return (
-    <Bg>
-      <div
-        data-aos="slide-right"
-        data-aos-duration="500"
-        data-aos-anchor-placement="top-bottom"
-      >
-        <div>
-          <AgriPos
-            //loading="lazy"
-            src="/content/e-commerce.gif"
-            alt=""
-          />
+    <div
+      data-aos="slide-left"
+      data-aos-duration="200"
+      data-aos-anchor-placement="top-bottom"
+    >
+      <Bg>
+        <div
+          data-aos="slide-right"
+          data-aos-duration="500"
+          data-aos-anchor-placement="top-bottom"
+        >
+          <div>
+            <AgriPos
+              //loading="lazy"
+              src="/content/e-commerce.gif"
+              alt=""
+            />
+          </div>
         </div>
-      </div>
-      <Txt>
-        <Text
-          Text="E commerce"
-          font
-          align="right"
-          size="42px"
-          lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
-          lh="55px"
-          mlh="30px"
-          xmsize="2rem"
-          xssize="3vw"
-          msize="2rem"
-          mta="right"
-        />
-      </Txt>
-    </Bg>
+        <Txt>
+          <Text
+            Text="E commerce"
+            font
+            align="right"
+            size="42px"
+            lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
+            lh="55px"
+            mlh="30px"
+            xmsize="2rem"
+            xssize="3vw"
+            msize="2.4rem"
+          />
+        </Txt>
+      </Bg>
+    </div>
   )
 }
 

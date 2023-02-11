@@ -2,8 +2,6 @@ import React, { useEffect } from "react"
 import PageLayout from "../../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../../components/Width/PageWidth"
 import Text from "../../../../components/Text/Text"
-import AOS from "aos"
-import "aos/dist/aos.css"
 import styled from "styled-components"
 
 const PolyBg = styled.div`
@@ -19,11 +17,6 @@ const Image = styled.img`
 `
 
 const Buy = () => {
-  useEffect(() => {
-    AOS.init()
-    AOS.refresh()
-  }, [])
-
   return (
     <>
       <PageLayout>
