@@ -14,12 +14,15 @@ const PolyBg = styled.div`
 `
 const Image = styled.img`
   height: 70vh;
+  @media only screen and (max-width: 1000px) {
+    height: 80vw;
+  }
 `
 
 const Buy = () => {
   return (
     <>
-      <PageLayout>
+      <PageLayout mtpadding="20vh" mheight="40vh">
         <PageWidth scale={"90%"} width="1500px">
           <div
             data-aos="fade-up"
@@ -52,7 +55,7 @@ const Buy = () => {
               msize="1.6rem"
               mta="center"
               mwidth="100vw"
-              mpadding="0 10vw"
+              mlh="40px"
             />
           </div>
         </PageWidth>

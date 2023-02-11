@@ -3,7 +3,9 @@ import styled from "styled-components"
 export const Responsive = styled.div`
   display: flex;
   align-items: center;
-  //justify-content: flex-end;
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `
 
 const StyleImage = () => {

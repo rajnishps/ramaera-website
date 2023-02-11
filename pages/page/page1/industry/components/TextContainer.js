@@ -129,7 +129,7 @@ const TextContainer = () => {
             lh="55px"
             msize="2rem"
             mta="center"
-            mwidth="80vw"
+            mwidth="100vw"
           />
         </div>
       </Flex>
@@ -143,8 +143,8 @@ const TextContainer = () => {
         xssize="18px"
         mlh="30px"
         msize="18px"
-        mwidth="80vw"
-        mta="justify"
+        mwidth="100vw"
+        mta="center"
       />
     </StyleTextContainer>
   )

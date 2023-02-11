@@ -3,7 +3,7 @@ import Text from "../../../../components/Text/Text"
 import CustomBg from "./components/CustomBg"
 import Texts from "./components/Texts"
 
-const Beginning = () => {
+const index = () => {
   return (
     <>
       <PageWidth Left={"left"} width="1500px">
@@ -42,7 +42,7 @@ const Beginning = () => {
             msize="1.2rem"
             mta="left"
             padding=" 0 10vw 0 2vw"
-            mwidth="90vw"
+            mwidth="100vw"
             mpadding="0"
             mmargin=" 0 0 2rem 2rem"
           />
@@ -67,4 +67,4 @@ const Beginning = () => {
   )
 }
 
-export default Beginning
+export default index

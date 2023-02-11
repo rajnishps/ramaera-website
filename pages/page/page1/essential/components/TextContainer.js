@@ -49,7 +49,7 @@ const TextContainer = () => {
             mlh="30px"
             msize="1.6rem"
             mta="center"
-            mwidth="90vw"
+            mwidth="100vw"
           />
           <Text
             Text="one place"
@@ -59,7 +59,7 @@ const TextContainer = () => {
             mlh="30px"
             msize="2rem"
             mta="center"
-            mwidth="90vw"
+            mwidth="100vw"
           />
         </div>
       </Flex>
@@ -73,8 +73,8 @@ const TextContainer = () => {
         xssize="18px"
         mlh="30px"
         msize="18px"
-        mwidth="80vw"
-        mta="justify"
+        mwidth="100vw"
+        mta="center"
       />
     </StyleTextContainer>
   )

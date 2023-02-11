@@ -129,8 +129,8 @@ const TextContainer = () => {
         xssize="18px"
         mlh="30px"
         msize="18px"
-        mwidth="80vw"
-        mta="justify"
+        mwidth="100vw"
+        mta="center"
       />
     </StyleTextContainer>
   )

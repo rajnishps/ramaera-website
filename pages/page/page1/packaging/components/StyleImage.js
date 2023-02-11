@@ -8,6 +8,9 @@ export const Responsive = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+  }
 `
 export const CustomText = styled.h1`
   font-size: 42px;
@@ -18,7 +21,6 @@ export const CustomText = styled.h1`
 
   @media only screen and (max-width: 768px) {
     font-size: 1.6rem;
-    text-align: center;
   }
 `
 const StyleImage = () => {

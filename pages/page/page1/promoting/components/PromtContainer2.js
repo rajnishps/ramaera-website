@@ -25,7 +25,7 @@ const PromtContainer2 = () => {
         fw="700"
         m="0 0 0 0"
         mta="left"
-        mwidth="90vw"
+        mwidth="100vw"
       />
       <Text
         Text="The trust of Ramaera family has been the pillar of our phenomenal growth. This has enabled us to sustain millions of livelihoods and employ lakhs of people, turning our vision of finanicial independence of every Indian into reality."

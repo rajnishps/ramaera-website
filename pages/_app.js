@@ -11,7 +11,7 @@ export default function App({ Component, pageProps }) {
   }, [])
   return (
     <>
-      <NextNProgress color="#F9D423" startPosition={0.4} height={2} />
+      <NextNProgress color="#F9D423" startPosition={0.4} height={3} />
       <Component {...pageProps} />
     </>
   )

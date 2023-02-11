@@ -11,6 +11,8 @@ import {
   text2,
   images3,
   text3,
+  images4,
+  text4,
 } from "./components/Style"
 import Tab from "./components/Tab/Tab"
 import styled from "styled-components"
@@ -39,8 +41,8 @@ const ImageHide = styled.div`
   }
 `
 
-const pageNo = [images, images2, images3]
-const textNo = [text, text2, text3]
+const pageNo = [images, images2, images3, images4]
+const textNo = [text, text2, text3, text4]
 const index = ({ imageIndex }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [imageNo, setImageNo] = useState(pageNo[imageIndex])
@@ -78,10 +80,11 @@ const index = ({ imageIndex }) => {
               width="50rem"
               mwidth="100vw"
               fw="500"
+              mlh="80px"
               align="center"
               xmsize="6rem"
               xssize="10vw"
-              msize="3.6rem"
+              msize="3.8rem"
               mpadding="0"
               mmargin=" 0 0 2rem 0"
             />

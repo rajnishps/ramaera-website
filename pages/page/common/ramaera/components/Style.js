@@ -16,8 +16,8 @@ export const CustomText = styled.p`
   }
   @media (max-width: 768px) {
     width: 100vw;
-    font-size: 1.6rem;
-    padding: 0 5vw;
+    font-size: 1.7rem;
+    padding: 0 0vw;
     margin: 0 0 2rem 0;
   }
 `
@@ -31,6 +31,9 @@ const bg6 = "/background/6.jpg"
 const bg7 = "/background/7.jpg"
 const bg8 = "/background/8.jpg"
 const bg9 = "/background/9.jpg"
+const bg10 = "/background/10.jpg"
+const bg11 = "/background/11.jpg"
+const bg12 = "/background/12.jpg"
 
 const txt1 = (
   <CustomText>
@@ -102,6 +105,27 @@ const txt9 = (
     corporate values and benefiting the people.
   </CustomText>
 )
+const txt10 = (
+  <CustomText>
+    Ramaera Industries believes in{" "}
+    <span style={{ color: "#E65C00" }}>performance</span> in assessing realtime
+    instance and hence, ready to take on any challenge and succeed over it.
+  </CustomText>
+)
+const txt11 = (
+  <CustomText>
+    Ramaera Industries believes in{" "}
+    <span style={{ color: "#E65C00" }}>consistency</span> in assessing realtime
+    instance and hence, ready to take on any challenge and succeed over it.
+  </CustomText>
+)
+const txt12 = (
+  <CustomText>
+    Ramaera Industries believes in{" "}
+    <span style={{ color: "#E65C00" }}>efficiency</span> in assessing realtime
+    instance and hence, ready to take on any challenge and succeed over it.
+  </CustomText>
+)
 
 export const images = [bg1, bg2, bg3]
 export const text = [txt1, txt2, txt3]
@@ -109,6 +133,8 @@ export const images2 = [bg4, bg5, bg6]
 export const text2 = [txt4, txt5, txt6]
 export const images3 = [bg7, bg8, bg9]
 export const text3 = [txt7, txt8, txt9]
+export const images4 = [bg10, bg11, bg12]
+export const text4 = [txt10, txt11, txt12]
 
 import React from "react"
 
