@@ -22,15 +22,15 @@ export const CustomText = styled.p`
   }
 `
 
-const bg1 = "./background/1.jpg"
-const bg2 = "./background/2.jpg"
-const bg3 = "./background/3.jpg"
-const bg4 = "./background/4.jpg"
-const bg5 = "./background/5.jpg"
-const bg6 = "./background/6.jpg"
-const bg7 = "./background/7.jpg"
-const bg8 = "./background/8.jpg"
-const bg9 = "./background/9.jpg"
+const bg1 = "/background/1.jpg"
+const bg2 = "/background/2.jpg"
+const bg3 = "/background/3.jpg"
+const bg4 = "/background/4.jpg"
+const bg5 = "/background/5.jpg"
+const bg6 = "/background/6.jpg"
+const bg7 = "/background/7.jpg"
+const bg8 = "/background/8.jpg"
+const bg9 = "/background/9.jpg"
 
 const txt1 = (
   <CustomText>

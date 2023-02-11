@@ -46,7 +46,7 @@ const Card = (props) => {
     <Box>
       <Upper whileHover={{ scale: 1.1, boxShadow: "0 0 25px #ff7b00" }}>
         <img
-          //loading="lazy"
+          loading="lazy"
           src={`${props.img ? props.img : ""}`}
           alt=""
           style={{ width: "100%", height: "100%" }}

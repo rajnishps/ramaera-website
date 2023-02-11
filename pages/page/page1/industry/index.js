@@ -2,7 +2,7 @@ import React from "react"
 import PageLayout from "../../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../../components/Width/PageWidth"
 import TextContainer from "./components/TextContainer"
-import { Image, Responsive } from "./components/StyleImage"
+import { Responsive } from "./components/StyleImage"
 import styled from "styled-components"
 
 const Animdiv = styled.div`
@@ -16,18 +16,32 @@ const Animdiv = styled.div`
     right: auto;
   }
 `
+const Line = styled.div`
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`
+const Image = styled.div`
+  height: 27rem;
+  width: 31rem;
+  @media only screen and (max-width: 768px) {
+    margin-top: -25%;
+  }
+`
 
 const Buy = () => {
   return (
-    <PageLayout>
+    <PageLayout mtpadding="0">
       <PageWidth scale={"90%"} width="1500px" position="relative">
         <div style={{ width: "100%" }}>
-          <img
-            //loading="lazy"
-            src="/content/LineY.png"
-            alt=""
-            style={{ width: "100%", height: "10rem" }}
-          />
+          <Line>
+            <img
+              loading="lazy"
+              src="/content/LineY.png"
+              alt=""
+              style={{ width: "100%", height: "10rem" }}
+            />
+          </Line>
           <div
             data-aos="slide-right"
             data-aos-duration="500"
@@ -37,12 +51,14 @@ const Buy = () => {
               <TextContainer />
             </Responsive>
           </div>
-          <img
-            //loading="lazy"
-            src="/content/LineY.png"
-            alt=""
-            style={{ width: "100%", height: "10rem" }}
-          />
+          <Line>
+            <img
+              loading="lazy"
+              src="/content/LineY.png"
+              alt=""
+              style={{ width: "100%", height: "10rem" }}
+            />
+          </Line>
         </div>
         <Animdiv
           data-aos="slide-left"
@@ -51,7 +67,7 @@ const Buy = () => {
         >
           <Image>
             <img
-              //loading="lazy"
+              loading="lazy"
               src="/content/fmcg.gif"
               alt=""
               style={{ width: "100%", height: "100%" }}

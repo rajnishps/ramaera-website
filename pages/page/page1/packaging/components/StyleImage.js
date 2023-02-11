@@ -18,6 +18,7 @@ export const CustomText = styled.h1`
 
   @media only screen and (max-width: 768px) {
     font-size: 1.6rem;
+    text-align: center;
   }
 `
 const StyleImage = () => {

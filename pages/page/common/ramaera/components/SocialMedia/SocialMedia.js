@@ -17,6 +17,7 @@ const SocialMedia = () => {
     }
     @media (max-width: 768px) {
       transform: scale(80%);
+      left: 20vw;
     }
   `
   const RotateSvg = styled.a`

@@ -20,16 +20,13 @@ const StyleTextContainer = styled.div`
 `
 const IconDiv = styled.div`
   @media only screen and (max-width: 768px) {
-    transform: scale(80%);
-    margin-right: -100px;
-    position: relative;
   }
 `
 
 const TextContainer = () => {
   return (
     <StyleTextContainer>
-      <Flex>
+      <Flex mcolumn>
         <IconDiv>
           <svg
             width="155"
@@ -130,6 +127,9 @@ const TextContainer = () => {
             size="42px"
             lg="linear-gradient(90deg, #F2EFD3 0%, #358D82 100%)"
             lh="55px"
+            msize="2rem"
+            mta="center"
+            mwidth="80vw"
           />
         </div>
       </Flex>
@@ -140,10 +140,11 @@ const TextContainer = () => {
         lh="45px"
         width="40rem"
         m="2rem 0 0 0"
-        mpadding="0 60px"
         xssize="18px"
         mlh="30px"
-        msize="16px"
+        msize="18px"
+        mwidth="80vw"
+        mta="justify"
       />
     </StyleTextContainer>
   )

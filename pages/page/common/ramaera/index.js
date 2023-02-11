@@ -14,6 +14,7 @@ import {
 } from "./components/Style"
 import Tab from "./components/Tab/Tab"
 import styled from "styled-components"
+import Image from "next/image"
 const SmallSize = styled.div`
   transform: scale(80%);
 `
@@ -21,8 +22,8 @@ const RotateTab = styled.div`
   @media only screen and (max-width: 768px) {
     transform: scale(100%);
     transform: rotateZ(90deg);
-    margin-top: 15vh;
-    margin-left: 70%;
+    margin-right: auto;
+    margin-left: auto;
   }
 `
 const RotateSocials = styled.div`
@@ -58,52 +59,64 @@ const index = ({ imageIndex }) => {
   }, [imageNo[currentIndex]])
 
   return (
-    <PageLayout bg={imageNo[currentIndex]} bgColor="#fff" Zindex="-2">
-      <SmallSize>
-        <PageWidth width="1500px" padding="8rem 0 0 0" position="relative">
-          <Text
-            Text="Ramaera Industries"
-            lg="linear-gradient(90deg, #E65C00 0%, #F9D423 100%)"
-            font
-            size="96px"
-            lh="125px"
-            width="50rem"
-            mwidth="90vw"
-            fw="500"
-            align="center"
-            xmsize="6rem"
-            xssize="10vw"
-            msize="3.6rem"
-            mpadding="0"
-            mmargin=" 0 0 2rem 0"
-          />
+    <PageLayout bgColor="#fff" Zindex="-2">
+      <div style={{ zIndex: "-2" }}>
+        <Image
+          src={imageNo[currentIndex]}
+          layout="fill"
+          objectFit="cover"
+          objectPosition="center"
+        />
+        <SmallSize>
+          <PageWidth width="1500px" padding="8rem 0 0 0" position="relative">
+            <Text
+              Text="Ramaera Industries"
+              lg="linear-gradient(90deg, #E65C00 0%, #F9D423 100%)"
+              font
+              size="96px"
+              lh="125px"
+              width="50rem"
+              mwidth="100vw"
+              fw="500"
+              align="center"
+              xmsize="6rem"
+              xssize="10vw"
+              msize="3.6rem"
+              mpadding="0"
+              mmargin=" 0 0 2rem 0"
+            />
 
-          {contextNo[currentIndex]}
-          <div>
-            <Button
-              Text="Explore more"
-              secondary
-              lightborder
-              height="60px"
-              m="2rem 0 0 0"
-            />
-          </div>
-          <ImageHide>
-            <img
-              //loading="lazy"
-              src="/background/bottom.png"
-              alt=""
-              style={{ height: "7rem", width: "9.5rem", margin: "1rem 0 0 0" }}
-            />
-          </ImageHide>
-        </PageWidth>
-      </SmallSize>
-      <RotateSocials>
-        <SocialMedia />
-      </RotateSocials>
-      <RotateTab>
-        <Tab currentIndex={currentIndex} />
-      </RotateTab>
+            {contextNo[currentIndex]}
+            <div>
+              <Button
+                Text="Explore more"
+                secondary
+                lightborder
+                height="60px"
+                m="2rem 0 0 0"
+              />
+            </div>
+            <ImageHide>
+              <img
+                loading="lazy"
+                src="/background/bottom.png"
+                alt=""
+                style={{
+                  height: "7rem",
+                  width: "9.5rem",
+                  margin: "1rem 0 0 0",
+                }}
+              />
+            </ImageHide>
+          </PageWidth>
+        </SmallSize>
+        <RotateSocials>
+          <SocialMedia />
+        </RotateSocials>
+        <RotateTab>
+          <Tab currentIndex={currentIndex} />
+        </RotateTab>
+      </div>
     </PageLayout>
   )
 }

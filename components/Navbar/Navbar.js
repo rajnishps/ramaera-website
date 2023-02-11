@@ -62,16 +62,12 @@ const Navbar = ({ selectedTab }) => {
     <nav className="nav">
       <div>
         <Link
-          href="/home"
+          href="/"
           spy={true}
           smooth={true}
           onClick={() => isActive({ ...navItem })}
         >
-          <img //loading="lazy"
-            src={logo}
-            alt="Logo"
-            className="Logo"
-          />
+          <img loading="lazy" src={logo} alt="Logo" className="Logo" />
         </Link>
       </div>
       <div className="RightContainer">
@@ -79,7 +75,7 @@ const Navbar = ({ selectedTab }) => {
           <ul className="list">
             <Link2>
               <Link
-                href="/home"
+                href="/"
                 onClick={() => isActive({ ...navItem, home: true })}
               >
                 HOME

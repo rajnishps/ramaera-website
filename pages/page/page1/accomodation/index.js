@@ -9,31 +9,28 @@ const Animdiv = styled.div`
   right: 0;
   top: 15vh;
   @media only screen and (max-width: 768px) {
-    top: 0;
-    left: auto;
-    right: auto;
-    top: -10vh;
+    top: -30vh;
   }
 `
-const IconDiv = styled.div`
+const Line = styled.div`
   @media only screen and (max-width: 768px) {
-    transform: scale(20%);
+    display: none;
   }
 `
 
 const Buy = () => {
   return (
     <PageLayout>
-      <PageWidth scale={"90%"} width="1500px" position="relative">
+      <PageWidth sp="0" scale={"90%"} width="1500px" position="relative">
         <div style={{ width: "100%" }}>
-          <IconDiv>
+          <Line>
             <img
-              //loading="lazy"
+              loading="lazy"
               src="/content/LineY.png"
               alt=""
               style={{ width: "100%", height: "10rem" }}
             />
-          </IconDiv>
+          </Line>
           <div
             data-aos="slide-right"
             data-aos-duration="500"
@@ -43,12 +40,14 @@ const Buy = () => {
               <TextContainer />
             </Responsive>
           </div>
-          <img
-            //loading="lazy"
-            src="/content/LineY.png"
-            alt=""
-            style={{ width: "100%", height: "10rem" }}
-          />
+          <Line>
+            <img
+              loading="lazy"
+              src="/content/LineY.png"
+              alt=""
+              style={{ width: "100%", height: "10rem" }}
+            />
+          </Line>
         </div>
         <Animdiv
           data-aos="slide-left"
@@ -57,7 +56,7 @@ const Buy = () => {
         >
           <Image>
             <img
-              //loading="lazy"
+              loading="lazy"
               src="/content/hotel.gif"
               alt=""
               style={{

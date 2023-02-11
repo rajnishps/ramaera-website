@@ -8,6 +8,7 @@ const Flex = ({
   jc,
   m,
   mcolumn,
+  mrcolumn,
   lcolumn,
   width,
 }) => {
@@ -24,8 +25,9 @@ const Flex = ({
       flex-direction: ${column || lcolumn ? "column" : "row"};
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 768px) {
       flex-direction: ${column || lcolumn || mcolumn ? "column" : "row"};
+      flex-direction: ${column || lcolumn || mrcolumn ? "column-reverse" : ""};
     }
 
     @media (max-width: 450px) {

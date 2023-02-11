@@ -31,12 +31,6 @@ const Socials = () => {
         <Image src="/content/social-5.png" />
       </a>
       <a href="#">
-        <Image src="/content/social-4.png" />
-      </a>
-      <a href="#">
-        <Image src="/content/social-3.png" />
-      </a>
-      <a href="#">
         <Image src="/content/social-2.png" />
       </a>
       <a href="#">

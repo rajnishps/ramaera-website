@@ -13,10 +13,10 @@ const Tab = (props) => {
     right: 5rem; /* position the left edge of the element at the middle of the parent */
     transform: translate(0, -50%);
     @media only screen and (max-width: 768px) {
-      transform: scale(80%);
+      transform: scale(70%);
       width: 20px;
-      top: 45%;
-      right: 16px;
+      top: -35vw;
+      right: 40vw;
     }
   `
   const txt = ["01", "02", "03"]

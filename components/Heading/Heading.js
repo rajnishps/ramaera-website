@@ -10,7 +10,7 @@ const Heading = (props) => {
     -webkit-background-clip: ${props.gradient ? "text" : null};
     -webkit-text-fill-color: ${props.gradient ? "transparent" : null};
     margin: ${props.m ? props.m : ""};
-    text-align: ${props.align ? props.align : "left"} !important;
+    text-align: ${props.align ? props.align : "left"};
     letter-spacing: ${props.ls ? props.ls : ""};
 
     @media only screen and (max-width: 1500px) {
@@ -27,6 +27,7 @@ const Heading = (props) => {
       font-size: ${props.ms ? props.ms : "16px"};
       line-height: ${props.lmh ? props.lmh : ""};
       padding: ${props.mpadding ? props.mpadding : "2vw"};
+      text-align: center;
     }
   `
   return (

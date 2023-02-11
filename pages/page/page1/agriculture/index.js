@@ -30,16 +30,12 @@ const Buy = () => {
           }}
         >
           <Image>
-            <AgriPos
-              //loading="lazy"
-              src="/content/agri.gif"
-              alt=""
-            />
+            <AgriPos loading="lazy" src="/content/agri.gif" alt="" />
           </Image>
         </div>
         <div style={{ width: "100%" }}>
           <img
-            //loading="lazy"
+            loading="lazy"
             src="/background/Line.png"
             alt=""
             style={{ position: "absolute", width: "100%", height: "10rem" }}
@@ -55,7 +51,7 @@ const Buy = () => {
             </Responsive>
           </div>
           <img
-            //loading="lazy"
+            loading="lazy"
             src="/background/Line.png"
             alt=""
             style={{ position: "absolute", width: "100%", height: "10rem" }}

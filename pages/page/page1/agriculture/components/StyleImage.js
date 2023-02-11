@@ -7,7 +7,10 @@ export const Image = styled.div`
     transform: scale(90%);
   }
   @media only screen and (max-width: 1000px) {
-    transform: scale(80%);
+    height: 30rem;
+    width: 35rem;
+    margin-top: -10%;
+    margin-left: 5vw;
   }
 `
 export const Responsive = styled.div`

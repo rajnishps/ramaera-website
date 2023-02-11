@@ -22,14 +22,14 @@ const StyleTextContainer = styled.div`
 `
 const IconDiv = styled.div`
   @media only screen and (max-width: 768px) {
-    transform: scale(80%);
+    transform: scale(100%);
   }
 `
 
 const TextContainer = () => {
   return (
     <StyleTextContainer>
-      <Flex jc="flex-end">
+      <Flex jc="flex-end" mrcolumn>
         <div>
           <Heading
             Text="Unleashing the strength of"
@@ -39,7 +39,7 @@ const TextContainer = () => {
             color="#FFF"
             xm="3vw"
             mta="left"
-            ms="1.2rem"
+            ms="1.4rem"
           />
           <Text
             Text="Technology"
@@ -51,7 +51,7 @@ const TextContainer = () => {
             xmsize="2rem"
             xssize="3vw"
             msize="2rem"
-            mta="right"
+            mta="center"
           />
         </div>
         <IconDiv>
@@ -155,10 +155,11 @@ const TextContainer = () => {
         size="23px"
         lh="45px"
         width="40rem"
-        mpadding="0 60px"
         xssize="18px"
         mlh="30px"
         msize="18px"
+        mwidth="80vw"
+        mta="justify"
       />
     </StyleTextContainer>
   )

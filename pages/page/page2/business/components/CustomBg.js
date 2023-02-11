@@ -42,11 +42,7 @@ const CustomBg = () => {
           data-aos-anchor-placement="top-bottom"
         >
           <div>
-            <AgriPos
-              //loading="lazy"
-              src="/content/agri.gif"
-              alt=""
-            />
+            <AgriPos loading="lazy" src="/content/agri.gif" alt="" />
           </div>
         </div>
         <Txt>

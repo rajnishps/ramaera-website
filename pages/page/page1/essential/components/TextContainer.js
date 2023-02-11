@@ -14,24 +14,21 @@ const StyleTextContainer = styled.div`
     position: absolute;
     margin: 0;
     width: 100vw;
-    top: 10vh;
+    top: 5vh;
     overflow: hidden;
   }
 `
 const IconDiv = styled.div`
   @media only screen and (max-width: 768px) {
-    transform: scale(80%);
-    margin-right: -100px;
-    position: relative;
   }
 `
 const TextContainer = () => {
   return (
     <StyleTextContainer>
-      <Flex>
+      <Flex mcolumn>
         <IconDiv>
           <img
-            //loading="lazy"
+            loading="lazy"
             src="/content/h.png"
             alt=""
             style={{
@@ -48,21 +45,21 @@ const TextContainer = () => {
             Text="Get all your essentials in"
             size="42px"
             color="#FFF"
-            lh="55px"
-            mta="left"
-            msize="1.6rem"
+            lh="15px"
             mlh="30px"
-            mpadding="0 0 0 4rem"
+            msize="1.6rem"
+            mta="center"
+            mwidth="90vw"
           />
           <Text
             Text="one place"
             size="42px"
             lg="linear-gradient(90deg, #B4DFFD 3.93%, #EFB79B 36.17%),linear-gradient(0deg, #FFFFFF, #FFFFFF)"
-            lh="55px"
-            mta="left"
-            msize="1.6rem"
+            lh="15px"
             mlh="30px"
-            mpadding="0 0 0 4rem"
+            msize="2rem"
+            mta="center"
+            mwidth="90vw"
           />
         </div>
       </Flex>
@@ -73,10 +70,11 @@ const TextContainer = () => {
         lh="45px"
         width="40rem"
         m="2rem 0 0 0"
-        mpadding="0 60px"
         xssize="18px"
         mlh="30px"
-        msize="16px"
+        msize="18px"
+        mwidth="80vw"
+        mta="justify"
       />
     </StyleTextContainer>
   )

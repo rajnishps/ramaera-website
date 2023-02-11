@@ -16,14 +16,15 @@ const StyleTextContainer = styled.div`
     margin: 0 0 -30vh 0;
   }
 `
+
 const TextContainer = () => {
   return (
     <StyleTextContainer>
-      <Flex jc="flex-end">
+      <Flex jc="flex-end" mrcolumn>
         <div>
+          <CustomText>Packaging industry for</CustomText>
           <CustomText>
-            Packaging industry for business{" "}
-            <span style={{ color: "#EACDA3" }}>growth</span>
+            <span style={{ color: "#EACDA3" }}> business growth</span>
           </CustomText>
         </div>
         <svg
@@ -125,10 +126,11 @@ const TextContainer = () => {
         size="23px"
         lh="45px"
         width="40rem"
-        mpadding="0 60px"
         xssize="18px"
         mlh="30px"
         msize="18px"
+        mwidth="80vw"
+        mta="justify"
       />
     </StyleTextContainer>
   )

@@ -36,7 +36,7 @@ const Buy = () => {
               lh="70px"
               xmsize="4rem"
               xssize="4rem"
-              msize="4rem"
+              msize="3.2rem"
             />
             <Text
               Text="We are aiming to be a part of the major industrialisation drive in India and embarking our presence in every significant industrial domain including IT."
@@ -50,6 +50,9 @@ const Buy = () => {
               xmsize="2.2rem"
               xssize="2rem"
               msize="1.6rem"
+              mta="center"
+              mwidth="100vw"
+              mpadding="0 10vw"
             />
           </div>
         </PageWidth>

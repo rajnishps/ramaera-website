@@ -7,6 +7,7 @@ const PageWidth = ({
   padding,
   margin,
   sp,
+  height,
   width,
   position,
   scale,

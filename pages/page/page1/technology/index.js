@@ -15,6 +15,12 @@ const Animdiv = styled.div`
     bottom: 30vh;
   }
 `
+const Line = styled.div`
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`
+
 const Buy = () => {
   return (
     <PageLayout height="100vh">
@@ -41,12 +47,14 @@ const Buy = () => {
           </Image>
         </Animdiv>
         <div style={{ width: "100%" }}>
-          <img
-            loading="lazy"
-            src="/background/Line.png"
-            alt=""
-            style={{ position: "absolute", width: "100%", height: "10rem" }}
-          />
+          <Line>
+            <img
+              loading="lazy"
+              src="/background/Line.png"
+              alt=""
+              style={{ position: "absolute", width: "100%", height: "10rem" }}
+            />
+          </Line>
           <div
             data-aos="slide-left"
             data-aos-anchor-placement="bottom-bottom"
@@ -56,12 +64,14 @@ const Buy = () => {
               <TextContainer />
             </Responsive>
           </div>
-          <img
-            loading="lazy"
-            src="/background/Line.png"
-            alt=""
-            style={{ position: "absolute", width: "100%", height: "10rem" }}
-          />
+          <Line>
+            <img
+              loading="lazy"
+              src="/background/Line.png"
+              alt=""
+              style={{ position: "absolute", width: "100%", height: "10rem" }}
+            />
+          </Line>
         </div>
       </PageWidth>
     </PageLayout>

@@ -39,7 +39,7 @@ const Text = (props) => {
       text-align: ${props.mta ? props.mta : "center"};
       line-height: ${props.mlh && props.mlh};
       padding: ${props.mpadding ? props.mpadding : "2vw"};
-      padding: ${props.mmargin ? props.mmargin : ""};
+      margin: ${props.mmargin ? props.mmargin : ""};
     }
   `
   return <StyledText>{props.Text ? props.Text : "Default Text"}</StyledText>

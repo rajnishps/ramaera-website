@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Heading from "../../../../../components/Heading/Heading"
 import Flex from "../../../../../components/Styling/Flex"
 import Text from "../../../../../components/Text/Text"
 
@@ -15,16 +14,16 @@ const StyleTextContainer = styled.div`
     position: absolute;
     margin: 0;
     width: 100vw;
-    top: 10vh;
+    top: 0vh;
     overflow: hidden;
   }
 `
 const TextContainer = () => {
   return (
     <StyleTextContainer>
-      <Flex>
+      <Flex mcolumn>
         <img
-          //loading="lazy"
+          loading="lazy"
           src="/content/y.png"
           alt=""
           style={{
@@ -39,21 +38,21 @@ const TextContainer = () => {
             Text="Making"
             size="42px"
             lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%);"
-            lh="55px"
+            lh="0px"
             mlh="30px"
             xssize="3vw"
             msize="2rem"
-            mta="left"
+            mta="center"
           />
           <Text
             Text="accommodations easier"
             size="42px"
             lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%);"
-            lh="20px"
+            lh="10px"
             mlh="30px"
             xssize="3vw"
-            mta="left"
-            msize="1.4rem"
+            msize="1.6rem"
+            mta="center"
           />
         </div>
       </Flex>
@@ -64,10 +63,11 @@ const TextContainer = () => {
         lh="45px"
         width="40rem"
         m="2rem 0 0 0"
-        mpadding="0 60px"
         xssize="18px"
         mlh="30px"
-        msize="16px"
+        msize="18px"
+        mwidth="80vw"
+        mta="justify"
       />
     </StyleTextContainer>
   )

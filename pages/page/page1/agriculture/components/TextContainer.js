@@ -13,21 +13,19 @@ const StyleTextContainer = styled.div`
   margin: -6rem 0 4rem 0;
   @media only screen and (max-width: 768px) {
     position: absolute;
-    margin: -6rem 0 4rem 0;
-    top: 10vh;
     margin: 0;
+    top: 10%;
     width: 90vw;
   }
 `
 const IconDiv = styled.div`
   @media only screen and (max-width: 768px) {
-    transform: scale(80%);
   }
 `
 const TextContainer = () => {
   return (
     <StyleTextContainer>
-      <Flex jc="flex-end">
+      <Flex jc="flex-end" mrcolumn>
         <div>
           <Heading
             Text="Agri-business to bestow"
@@ -49,7 +47,7 @@ const TextContainer = () => {
             xmsize="2rem"
             xssize="3vw"
             msize="2rem"
-            mta="right"
+            mta="center"
           />
         </div>
         <IconDiv>
@@ -154,10 +152,11 @@ const TextContainer = () => {
         size="23px"
         lh="45px"
         width="40rem"
-        mpadding="0 60px"
         xssize="18px"
         mlh="30px"
         msize="18px"
+        mwidth="80vw"
+        mta="justify"
       />
     </StyleTextContainer>
   )
