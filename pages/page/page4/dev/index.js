@@ -29,7 +29,7 @@ const index = () => {
       </div> */}
       <div
         style={{
-          padding: "5vh",
+          padding: "5vw",
         }}
         data-aos="fade-up"
         data-aos-duration="500"

@@ -4,6 +4,7 @@ import Text from "../../../../components/Text/Text"
 import Position from "../common/position"
 
 const Heading = styled.h2``
+
 const index = () => {
   return (
     <>
@@ -29,7 +30,7 @@ const index = () => {
       </div>
       <div
         style={{
-          padding: "5vh",
+          padding: "5vw",
         }}
         data-aos="fade-up"
         data-aos-duration="500"

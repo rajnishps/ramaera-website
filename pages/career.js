@@ -8,6 +8,7 @@ import Product from "./page/page4/product"
 import Marketing from "./page/page4/marketing"
 import Talent from "./page/page4/talent"
 import Family from "./page/page4/family"
+import styled from "styled-components"
 
 const career = () => {
   return (

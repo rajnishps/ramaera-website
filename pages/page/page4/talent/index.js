@@ -4,8 +4,9 @@ import Candidate from "../common/candidate"
 const TalentWrapper = styled.div`
   height: 100vh;
   padding: 0 10vw;
-  overflow: hidden;
+  overflow: scroll;
   scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 `
 const index = () => {
   return (
@@ -59,7 +60,6 @@ const index = () => {
       />
       <Candidate
         id="div3"
-        href="#div0"
         sub1={"Ethical Priciples"}
         txt1={"Efficient Research to ensure perfection"}
         gif={"/content/enthusiam.gif"}
