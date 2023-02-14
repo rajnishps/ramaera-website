@@ -1,87 +1,78 @@
-import React from "react"
 import styled from "styled-components"
-import Text from "../../../../components/Text/Text"
+import Candidate from "../common/candidate"
 
-const Wrapper = styled.div`
-  padding: 5vh 10vw;
-`
-const Container = styled.div`
-  display: flex;
-`
-const LeftDiv = styled.div`
-  display: flex;
-`
-const RightDiv = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  p {
-    text-align: left;
-  }
+const TalentWrapper = styled.div`
+  height: 100vh;
+  padding: 0 10vw;
+  overflow: hidden;
+  scroll-behavior: smooth;
 `
 const index = () => {
   return (
-    <Wrapper>
-      <Text
-        Text="RECOGNIZING TRUE TALENT WITH DESERVED CANDIDATURE"
-        lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
-        font
-        size="2rem"
-        fw="400"
-        align="center"
-        padding="10vh 0 0 0"
-        xmsize="2rem"
-        xssize="5vw"
-        msize="1.4rem"
+    <TalentWrapper>
+      <Candidate
+        id="div0"
+        href="#div1"
+        sub1={"Ethical Priciples"}
+        txt1={
+          "With extremely competent resources and consistent efforts of improvisation, we thrive for excellence"
+        }
+        gif={"/content/creative.gif"}
+        sub2={"Redefining technology with innovation"}
+        txt2={
+          "The Ramaera Family believes in the dynamics of excellence in the Industry."
+        }
+        txt3={
+          " We have a flexible approach to any outward opportunity as we emphasize the prospect of creation with innovation."
+        }
+        number={"01"}
       />
-      <Container>
-        <LeftDiv>
-          <div>
-            <Text
-              Text="Ethical Priciples"
-              lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
-              font
-              size="1.2rem"
-              fw="400"
-              align="left"
-              padding="10vh 0 0 0"
-              xmsize="1.2rem"
-              xssize="5vw"
-              msize="1rem"
-            />
-            <p>
-              With extremely competent resources and consistent efforts of
-              improvisation, we thrive for excellence
-            </p>
-            <img src={"/content/creative.gif"} />
-          </div>
-        </LeftDiv>
-        <RightDiv>
-          <p>01</p>
-          <Text
-            Text="Redefining technology with innovation"
-            lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
-            font
-            size="1.2rem"
-            fw="400"
-            align="left"
-            padding="10vh 0 0 0"
-            xmsize="1.2rem"
-            xssize="5vw"
-            msize="1rem"
-          />
-          <p>
-            The Ramaera Family believes in the dynamics of excellence in the
-            Industry.
-          </p>
-          <p>
-            We have a flexible approach to any outward opportunity as we
-            emphasize the prospect of creation with innovation.
-          </p>
-        </RightDiv>
-      </Container>
-    </Wrapper>
+      <Candidate
+        id="div1"
+        href="#div2"
+        sub1={"Ethical Priciples"}
+        txt1={
+          "Accomplishing goals and scaling high with the support and teamwork"
+        }
+        gif={"/content/dedication.gif"}
+        sub2={"Cooperation and Teamwork"}
+        txt2={
+          "Ramaera Family is bound by the love and spirit of teamwork that helps us to tackle"
+        }
+        txt3={"every obstacle in the path with resilience and effort."}
+        number={"02"}
+      />
+      <Candidate
+        id="div2"
+        href="#div3"
+        sub1={"Ethical Priciples"}
+        txt1={"Known for being trustworthy and working in favour of the nation"}
+        gif={"/content/determation.gif"}
+        sub2={"Notable and admired"}
+        txt2={
+          "Ramaera Industries is one of the most trustworthy and reputed enterprises all over India"
+        }
+        txt3={
+          "Our years of hard work and efforts reflect majestically in the love of our consumers."
+        }
+        number={"03"}
+      />
+      <Candidate
+        id="div3"
+        href="#div0"
+        sub1={"Ethical Priciples"}
+        txt1={"Efficient Research to ensure perfection"}
+        gif={"/content/enthusiam.gif"}
+        sub2={"Research and organization"}
+        txt2={
+          "We believe in analyzing every aspect and all the factors before implementing any policy."
+        }
+        txt3={
+          "Comprehensive research and appropriate study is the foundational act of the organization."
+        }
+        number={"04"}
+      />
+    </TalentWrapper>
   )
 }
 

@@ -2,9 +2,6 @@ import Image from "next/image"
 import styled from "styled-components"
 import Text from "../../../../components/Text/Text"
 import Position from "../common/position"
-const PositionWrapper = styled.div`
-  padding: 15vh;
-`
 
 const Heading = styled.h2``
 const index = () => {
