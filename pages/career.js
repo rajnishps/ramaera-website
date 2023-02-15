@@ -9,7 +9,6 @@ import Marketing from "./page/page4/marketing"
 import Talent from "./page/page4/talent"
 import Family from "./page/page4/family"
 
-//https://www.figma.com/file/jqp7Fs923ENeSdDuVRmHY9/ramaera?node-id=1189%3A1643&t=e4IrJMidLJVLBIax-0
 const career = () => {
   return (
     <>
