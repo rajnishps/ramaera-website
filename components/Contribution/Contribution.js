@@ -6,7 +6,7 @@ import Box1 from "./Common/Box1";
 const MainContainer = styled.div`
   width: 100%;
 `;
-
+//ugy7uyfyth
 const BoxContainer = styled.div`
   width: 80%;
   margin: 10% auto;
@@ -49,18 +49,30 @@ const Contribution = () => {
       <BoxContainer>
         <div>
           <Box1
-            Heading={
-              "Businesses of Tomorrow"
+            Heading={"Businesses of Tomorrow"}
+            ParaGraph={
+              "Ramaera Industries aim to create and establish the businesses of tomorrow so that our future generation can enjoy the privilege of sustainable living."
             }
-            ParaGraph={"Ramaera Industries aim to create and establish the businesses of tomorrow so that our future generation can enjoy the privilege of sustainable living."}
           />
-          <Box1 Heading={
-              "Water Positive"}
-              ParaGraph="Ramaera Industries is committed to conservation of water as it is a great resource and hence, successfully being implementing conservational measures to become water positive."/>
+          <Box1
+            Heading={"Water Positive"}
+            ParaGraph="Ramaera Industries is committed to conservation of water as it is a great resource and hence, successfully being implementing conservational measures to become water positive."
+          />
         </div>
         <div>
-          <Box1 Heading={"Carbon Positive"} ParaGraph={"We are concerned about the climate change and increased levels of carbon dioxide. Ramaera Industries is taking efforts to reduce its carbon emission and remain carbon positive."}/>
-          <Box1 percent={"59%"} Heading={" of Total Energy is Renewable"} ParaGraph={"We are on a mission to become ecofriendly and replace energy consumption with renewable resources. Almost 59% of our industrial operations are powered by renewable energy."}/>
+          <Box1
+            Heading={"Carbon Positive"}
+            ParaGraph={
+              "We are concerned about the climate change and increased levels of carbon dioxide. Ramaera Industries is taking efforts to reduce its carbon emission and remain carbon positive."
+            }
+          />
+          <Box1
+            percent={"59%"}
+            Heading={" of Total Energy is Renewable"}
+            ParaGraph={
+              "We are on a mission to become ecofriendly and replace energy consumption with renewable resources. Almost 59% of our industrial operations are powered by renewable energy."
+            }
+          />
         </div>
       </BoxContainer>
     </MainContainer>
