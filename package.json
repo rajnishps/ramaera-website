@@ -3,14 +3,18 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "yarn run open-browser && next dev",
-    "open": "next dev",
+    "open": "yarn run open-browser && next dev",
+    "dev": "next dev",
     "open-browser": "open http://localhost:3000",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/material": "^5.11.9",
     "@next/font": "13.1.1",
     "aos": "^2.3.4",
     "eslint": "8.31.0",
