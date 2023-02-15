@@ -20,7 +20,7 @@ const Tab = (props) => {
       right: 40vw;
     }
   `
-  const txt = ["01", "02", "03"]
+  const txt = [" ", " ", " "]
 
   return (
     <StyledSocialMedia>
