@@ -5,6 +5,7 @@ import Innovation from "../components/Innovation/Innovation"
 import Innitiatives from "../components/Innitiatives/Innitiatives"
 import Values from "../components/Values/Values"
 import Contribution from "../components/Contribution/Contribution"
+import Partner from "../components/Partner/Partner"
 
 const companies = () => {
   return (
@@ -15,6 +16,7 @@ const companies = () => {
       <Innitiatives/>
       <Values/>
       <Contribution/>
+      <Partner/>
       <Footer />
     </>
   )
