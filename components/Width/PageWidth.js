@@ -30,7 +30,6 @@ const PageWidth = ({
     @media only screen and (max-width: 1400px) {
       width: ${full ? "100%" : "98%"};
     }
-
     @media only screen and (max-width: 540px) {
       width: 100%;
       padding: ${sp ? sp : "0 1rem"};

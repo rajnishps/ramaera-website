@@ -2,9 +2,6 @@ import Image from "next/image"
 import styled from "styled-components"
 import Text from "../../../../components/Text/Text"
 import Position from "../common/position"
-const PositionWrapper = styled.div`
-  padding: 15vh;
-`
 
 const Heading = styled.h2``
 const index = () => {
@@ -32,7 +29,7 @@ const index = () => {
       </div>
       <div
         style={{
-          padding: "15vh",
+          padding: "5vw",
         }}
         data-aos="fade-up"
         data-aos-duration="500"
@@ -50,11 +47,13 @@ const index = () => {
             xmsize="2rem"
             xssize="5vw"
             msize="1.4rem"
+            mta="center"
+            mwidth="100%"
           />
         </Heading>
         <Position
           role={"Senior Copywriter"}
-          place={"Noida, IN"}
+          place={"Noida,IN"}
           work={"Full Time"}
           description={
             "We are seeking a creative and enthusiastic Copywriter to join our awesome Marketing team  If you are creative  innovative and energetic, and if you love attracting people with your writing we want you in our team"
@@ -62,7 +61,7 @@ const index = () => {
         />
         <Position
           role={"Junior Copywriter"}
-          place={"Noida, IN"}
+          place={"Noida,IN"}
           work={"Full Time"}
           description={
             "We are looking for a Copywriter intern who is a professional who writes clear, concise copy for ads and marketing materials. They work closely alongside web and graphic designers to ensure their message is clear, whether in an email inbox or a website landing page."

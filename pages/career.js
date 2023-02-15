@@ -16,8 +16,7 @@ const career = () => {
       <Ramaera imageIndex={3} />
       <Investment />
       <Marketing />
-      {/*       <Dev />
-       */}{" "}
+      <Dev />
       <Product />
       <Talent />
       <Family />
