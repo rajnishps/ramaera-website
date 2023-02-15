@@ -8,10 +8,11 @@ const Tab = (props) => {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-items: center;
     position: absolute;
     top: 50%; /* position the top  edge of the element at the middle of the parent */
     right: 5rem; /* position the left edge of the element at the middle of the parent */
-    transform: translate(0, -50%);
+    transform: translate(0, -40%);
     @media only screen and (max-width: 768px) {
       transform: scale(70%);
       width: 20px;
