@@ -296,7 +296,9 @@ a {
   .none {
     display: none;
   }
-
+  .fixed-position {
+    position: fixed;
+  }
   .list {
     display: none;
   }

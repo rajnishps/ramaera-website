@@ -70,12 +70,12 @@ const index = ({ imageIndex }) => {
     }, 2200)
 
     return () => clearInterval(intervalId)
-  }, [imageNo[1]])
+  }, [imageNo[currentIndex]])
 
   return (
     <>
-      <PageLayout bgColor="#fff" Zindex="">
-        <div style={{ zIndex: "" }}>
+      <PageLayout bgColor="#fff">
+        <div>
           <Image
             src={imageNo[currentIndex]}
             layout="fill"
@@ -102,7 +102,7 @@ const index = ({ imageIndex }) => {
                 mmargin=" 0 0 2rem 0"
               />
 
-              {contextNo[1]}
+              {contextNo[currentIndex]}
               <LinkTo href={"#" + imageIndex}>
                 <Button
                   Text="Explore more"

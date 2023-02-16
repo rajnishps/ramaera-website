@@ -52,7 +52,13 @@ const H = styled.div`
 const Menu = ({ open, setOpen, ...props }) => {
   const isHidden = open ? true : false
   const tabIndex = isHidden ? 0 : -1
-
+  if (typeof window !== "undefined") {
+    if (open) {
+      document.body.classList.add("fixed-position")
+    } else if (!open) {
+      document.body.classList.remove("fixed-position")
+    }
+  }
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
       <Link1 to="home" spy={true} smooth={true}></Link1>
