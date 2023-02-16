@@ -21,6 +21,10 @@ const InnovationHead = styled.h1`
   background-clip: text;
   text-fill-color: transparent;
   margin-top: 40px;
+
+  @media (max-width: 600px){
+    font-size: 2rem;
+  }
 `;
 
 export const InnovationPara = styled.p`
@@ -32,6 +36,9 @@ export const InnovationPara = styled.p`
   text-align: center;
 
   color: #ffffff;
+  @media (max-width: 600px){
+    font-size: 1rem;
+  }
 `;
 
 export const ParaContainer = styled.div`
@@ -49,6 +56,10 @@ const PolyGonImg = styled.img`
    height: 45rem;
    /* position: relative;
    bottom: 20vh; */
+   @media (max-width: 600px){
+    width: 10rem;
+    height:25rem;
+   }
 
 `
 const Innovation = () => {

@@ -15,7 +15,6 @@ export const TrendingLeft = styled.div`
   background-position: right;
   /* background-size: contain; */
   background-repeat: no-repeat;
-  
 `;
 export const TrendingRight = styled.div`
   width: 30%;

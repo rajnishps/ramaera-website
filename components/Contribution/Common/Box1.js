@@ -5,10 +5,12 @@ import { Box, Head, Icon, Para, WhiteDiv, YellowDiv } from "../style";
 const Box1 = ({ Heading, ParaGraph, percent,source  }) => {
   return (
     <Box>
+      <div style={{position:"relative"}}>
       <YellowDiv />
       <WhiteDiv>
         <Icon src={source}/>
       </WhiteDiv>
+      </div>
       <Head>
         {" "}
         <span>{percent}</span>

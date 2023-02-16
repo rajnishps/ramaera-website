@@ -6,9 +6,15 @@ const ParnterEndBox = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  @media (max-width: 600px){
+    flex-direction: column;
+  }
 `;
 const LeftPara = styled.div`
   width: 60%;
+  @media (max-width: 600px){
+    width: 90%;
+  }
 `;
 const ParaGraph = styled.p`
   font-family: "Montserrat Alternates";
@@ -18,11 +24,23 @@ const ParaGraph = styled.p`
   line-height: 43px;
   letter-spacing: 0.04em;
   color: white;
+  @media (max-width: 600px){
+    font-size: 1rem;
+    line-height: 30px;
+  }
 `;
 const RightImgBox = styled.div`
   width: 40%;
+  @media (max-width: 600px){
+    width: 90%;
+    margin: 0px auto;
+  }
 `;
-const RightImg = styled.img``;
+const RightImg = styled.img`
+@media (max-width: 600px){
+  width: 100%;
+}
+`;
 const ParnterEnd = () => {
   return (
     <ParnterEndBox>

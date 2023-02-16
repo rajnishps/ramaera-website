@@ -23,11 +23,14 @@ export const Best = styled.div`
   border-radius: 20px;
   display: flex;
   margin-top: 70px;
+  @media (max-width: 600px){
+    flex-direction: column;
+  }
 `;
 
 //Left section css
 export const Left1 = styled.div`
-  /* width: 50%; */
+  /* width: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -84,12 +87,17 @@ export const ImgBg = styled.div`
   background-size: cover;
   width: 900px;
   height: 800px;
-  
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
+  @media (max-width: 600px){
+    width: 443px;
+    height: 300px;
+    border-radius: 0px 0px 20px 20px ;
+    
+  }
 `;
 export const Heading = styled.h2`
   font-family: "Zilap Orion Personal Use";

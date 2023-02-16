@@ -4,6 +4,10 @@ import styled from "styled-components";
 const Box = styled.div`
   width: 27%;
   height: 25vh;
+  @media (max-width: 600px){
+    width: 90%;
+    margin: 15% auto;
+  }
 `;
 const BoxHead = styled.h2`
   font-family: "Zilap Orion Personal Use";

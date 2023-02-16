@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import AboutTeam from "./AboutTeam/AboutTeam";
 import Trending from "./Trending";
 const AboutContainer = styled.div`
   width: 100%;
@@ -26,18 +27,53 @@ const AboutPara = styled.p`
   font-size: 1.4rem;
   line-height: 40px;
 `;
+const AboutEnd = styled.div`
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/background/AboutEnd.jpeg");
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+const EndTagline = styled.h1`
+  font-family: "Zilap Orion Personal Use";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7rem;
+  line-height: 154px;
+  /* or 120% */
+
+  text-align: center;
+  text-transform: uppercase;
+
+  background: linear-gradient(90deg, #FFE259 0%, #FFA751 100%);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+background-clip: text;
+text-fill-color: transparent;
+
+`;
 const About = () => {
   return (
-    <AboutContainer>
-      <AboutHead>GET TO KNOW US BETTER</AboutHead>
-      <AboutPara>
-        We are focused to endure transparency in each venture of ours as a
-        remark of our loyalty to Ramaera Family. We present you with all the
-        latest information and wholesome knowledge of operational ventures of
-        Ramaera Industries.
-      </AboutPara>
-      <Trending/>
-    </AboutContainer>
+    <>
+      <AboutContainer>
+        <AboutHead>GET TO KNOW US BETTER</AboutHead>
+        <AboutPara>
+          We are focused to endure transparency in each venture of ours as a
+          remark of our loyalty to Ramaera Family. We present you with all the
+          latest information and wholesome knowledge of operational ventures of
+          Ramaera Industries.
+        </AboutPara>
+        <Trending />
+        <AboutTeam />
+      </AboutContainer>
+      <AboutEnd>
+        <EndTagline>STANDING STRONG AS A FAMILY</EndTagline>
+      </AboutEnd>
+    </>
   );
 };
 

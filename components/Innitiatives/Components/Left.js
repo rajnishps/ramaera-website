@@ -1,9 +1,14 @@
 import styled from "styled-components";
 import { LeftHead, Left1, LeftMenu,MenuData,ArrowImg,MenuPara } from "../Components/style";
-
+const LeftContainer = styled.div`
+  width: 30%;
+  @media (max-width: 600px){
+    width: 100%;
+  }
+`
 const Left = () => {
   return (
-    <div style={{width:"30%"}}>
+    <LeftContainer>
       <Left1>
         <LeftHead>ONLY THE BEST</LeftHead>
         <LeftMenu>
@@ -41,7 +46,7 @@ const Left = () => {
           </MenuData>
         </LeftMenu>
       </Left1>
-    </div>
+    </LeftContainer>
   );
 };
 

@@ -15,6 +15,11 @@ const PartnerBoxContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media (max-width: 600px){
+    width: 95%;
+    margin: 0px auto;
+    flex-direction: column;
+  }
 `;
 
 const Partner = () => {

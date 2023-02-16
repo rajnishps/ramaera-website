@@ -6,11 +6,18 @@ export const ValueContainer = styled.div`
 export const ValParaContainer = styled.div`
   width: 60%;
   margin: 20px auto;
+  @media (max-width: 600px){
+    width: 80%;
+    
+  }
 `;
 export const ValuePara = styled.p`
   color: white;
   text-align: center;
   font-size: 1.5rem;
+  @media (max-width: 600px){
+    font-size: 1rem;
+  }
 `;
 
 export const InnovationDiv = styled.div`
@@ -19,6 +26,10 @@ export const InnovationDiv = styled.div`
   border: 2px solid white;
   border-radius: 20px;
   display: flex;
+  @media (max-width: 600px){
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 export const InnovationHead = styled.div`
   font-family: "Zilap Orion Personal Use";
@@ -33,6 +44,10 @@ export const InnovationHead = styled.div`
   text-fill-color: transparent;
   margin: 2rem;
   margin-bottom: 0;
+  @media (max-width: 600px){
+    font-size: 2.5rem;
+    margin: 20px auto;
+  }
 `;
 export const Img = styled.img`
   width: 350px;
@@ -45,10 +60,17 @@ export const InnovationLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (max-width: 600px){
+    width: 100%;
+  }
 `;
 export const InnoParaContainer = styled.div`
     width: 70%;
     border-left: 2px solid white;
+    @media (max-width: 600px){
+      width: 100%;
+      margin-bottom: 20px;
+    }
 `
 export const InnoPara = styled.p`
   font-family: "Montserrat Alternates";
@@ -59,6 +81,12 @@ export const InnoPara = styled.p`
   color: #ffffff;
   margin-left: 50px;
   width: 85%;
+  @media (max-width: 600px){
+    width: 100%;
+    font-size: 1rem;
+    line-height: 30px;
+    margin-left: 20px;
+  }
 `;
 export const InnovatinRight = styled.div`
   width: 60%;
