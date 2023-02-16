@@ -22,6 +22,9 @@ import Image from "next/image"
 const SmallSize = styled.div`
   transform: scale(80%);
 `
+const LinkTo = styled.a`
+  cursor: pointer;
+`
 const RotateTab = styled.div`
   @media only screen and (max-width: 768px) {
     /*  transform: scale(100%);
@@ -67,12 +70,12 @@ const index = ({ imageIndex }) => {
     }, 2200)
 
     return () => clearInterval(intervalId)
-  }, [imageNo[currentIndex]])
+  }, [imageNo[1]])
 
   return (
     <>
-      <PageLayout bgColor="#fff" Zindex="-2">
-        <div style={{ zIndex: "-2" }}>
+      <PageLayout bgColor="#fff" Zindex="">
+        <div style={{ zIndex: "" }}>
           <Image
             src={imageNo[currentIndex]}
             layout="fill"
@@ -99,8 +102,8 @@ const index = ({ imageIndex }) => {
                 mmargin=" 0 0 2rem 0"
               />
 
-              {contextNo[currentIndex]}
-              <div>
+              {contextNo[1]}
+              <LinkTo href={"#" + imageIndex}>
                 <Button
                   Text="Explore more"
                   secondary
@@ -108,7 +111,7 @@ const index = ({ imageIndex }) => {
                   height="60px"
                   m="2rem 0 0 0"
                 />
-              </div>
+              </LinkTo>
               <ImageHide>
                 <img
                   loading="lazy"

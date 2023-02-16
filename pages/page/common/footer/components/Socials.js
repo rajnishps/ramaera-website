@@ -23,19 +23,26 @@ const SocialContainer = styled.div`
     left: auto;
   }
 `
+const LinkTo = styled.a`
+  cursor: pointer;
+`
 const Socials = () => {
   return (
     <SocialContainer>
       <SocialHead>Let's Do it!</SocialHead>
-      <a href="#">
+      <LinkTo href="https://www.facebook.com/ramaeraindustries" target="_blank">
         <Image src="/content/social-5.png" />
-      </a>
-      <a href="#">
+      </LinkTo>
+      <LinkTo href="https://twitter.com/ramaeraltd" target="_blank">
         <Image src="/content/social-2.png" />
-      </a>
-      <a href="#">
+      </LinkTo>
+      <LinkTo
+        href="https://www.instagram.com/ramaeraindustries/"
+        target="_blank"
+      >
+        {" "}
         <Image src="/content/social.png" />
-      </a>
+      </LinkTo>
     </SocialContainer>
   )
 }

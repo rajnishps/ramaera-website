@@ -83,13 +83,13 @@ const Menu = ({ open, setOpen, ...props }) => {
             Contact
           </Link>
         </H>
-        <Button
+        {/* <Button
           nav
           height="2.75rem"
           Text="CONNECT WALLET"
           inheight="2.5rem"
           m="1rem 0 0 0"
-        />
+        /> */}
       </MenuItems>
     </StyledMenu>
   )

@@ -99,6 +99,7 @@ body {
   color: rgb(var(--foreground-rgb));
   background: rgb(0, 0, 0);
   background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgb(62, 62, 62) 100%);
+  scroll-behavior: smooth;
 }
 
 a {
@@ -155,14 +156,14 @@ a {
   width: 57px;
   background: #fff;
   position: absolute;
-
   left: 50%; /* position the left edge of the element at the middle of the parent */
 
   transform: translate(-50%, 0);
-  bottom: 0;
+  bottom: -5px;
 }
 
 .nav {
+  z-index: 2;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -234,7 +235,7 @@ a {
 }
 
 .list a:hover {
-  color: rgba(11, 200, 3, 0.45) !important;
+  color: #f1af1a !important;
 }
 
 @media (max-width: 1800px) {

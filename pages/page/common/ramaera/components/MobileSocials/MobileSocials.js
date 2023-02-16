@@ -37,7 +37,10 @@ const MobileSocials = () => {
           </svg>
         </div>
       </LinkTo>
-      <a href="https://www.instagram.com/ramaeraindustries/" target="_blank">
+      <LinkTo
+        href="https://www.instagram.com/ramaeraindustries/"
+        target="_blank"
+      >
         <svg
           width="25"
           height="26"
@@ -50,8 +53,8 @@ const MobileSocials = () => {
             fill="#FFFDFD"
           />
         </svg>
-      </a>
-      <a href="https://www.facebook.com/ramaeraindustries" target="_blank">
+      </LinkTo>
+      <LinkTo href="https://www.facebook.com/ramaeraindustries" target="_blank">
         <svg
           width="15"
           height="26"
@@ -64,7 +67,7 @@ const MobileSocials = () => {
             fill="#FFFDFD"
           />
         </svg>
-      </a>
+      </LinkTo>
     </StyledSocialMedia>
   )
 }
