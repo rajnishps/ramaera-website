@@ -23,7 +23,6 @@ const Contribution = () => {
         xmsize="6rem"
         xssize="10vw"
         msize="1.8rem"
-        align="center"
         mpadding="0"
         mmargin=" 0 0 2rem 0"
       />

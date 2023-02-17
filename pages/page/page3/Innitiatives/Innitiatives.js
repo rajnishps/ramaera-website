@@ -22,7 +22,6 @@ const Innitiatives = () => {
           msize="2rem"
           mpadding="0"
           mmargin=" 2rem 0 2rem 0"
-          align="center"
         />
       <Best>
        <Left/>

@@ -3,6 +3,7 @@ import styled from "styled-components";
 const NewsContainer = styled.div`
   width: 95%;
   margin: 20px auto;
+  overflow: scroll;
   @media (max-width: 600px){
     width: 90%;
     margin: 0px auto;
@@ -41,8 +42,8 @@ const NewsHead = styled.p`
   }
 `;
 const NewsImg = styled.img`
-  width: 200px;
-  height: 120px;
+  width: 180px;
+  height: 100px;
   background-image: url("/background/factory.jpeg");
   background-position: center;
   background-size: cover;
@@ -64,11 +65,11 @@ const NewsLater = styled.img`
     }
 `
 const Border = styled.div`
-    width: 200px;
-    height: 5px;
+    width: 420px;
+    height: 2px;
     background-color: white;
-    margin-left: 70px;
-    margin-top: 10px;
+    margin-left: 20px;
+    margin-top: 15px;
     border-radius: 20px;
     @media (max-width: 600px){
       margin-left: 30px;
@@ -81,13 +82,13 @@ const News = () => {
       <NewsBox>
           <div>
             <div style={{ display: "flex", alignItems: "center" }}>
-              <NewsIcon src={"/background/check.png"} />
+              {/* <NewsIcon src={"/background/check.png"} /> */}
               <NewsHead>
                 Rijeka begins year of European Capital of Culture 2020 with
                 opening ceremony
               </NewsHead>
             </div>
-            <div style={{display:"flex", justifyContent:"space-between", alignItems:"center",width:"70%", margin:"0px auto"}}>
+            <div style={{display:"flex", justifyContent:"space-between", alignItems:"center",width:"90%", margin:"0px auto"}}>
               <Newspara>Dec 30 2021</Newspara>
               <Newspara>Euro News</Newspara>
               <Newspara>4 min read</Newspara>

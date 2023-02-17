@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Text from "../../../../components/Text/Text";
 const ParnterEndBox = styled.div`
   width: 95%;
   margin: 20px auto;
@@ -14,19 +15,6 @@ const LeftPara = styled.div`
   width: 60%;
   @media (max-width: 600px){
     width: 90%;
-  }
-`;
-const ParaGraph = styled.p`
-  font-family: "Montserrat Alternates";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.4rem;
-  line-height: 43px;
-  letter-spacing: 0.04em;
-  color: white;
-  @media (max-width: 600px){
-    font-size: 1rem;
-    line-height: 30px;
   }
 `;
 const RightImgBox = styled.div`
@@ -45,19 +33,40 @@ const ParnterEnd = () => {
   return (
     <ParnterEndBox>
       <LeftPara>
-        <ParaGraph>
-          To make this investor relation transparent , we will provide complete
-          insights on the project gain and other relevant information. So what
-          are you waiting for, enrol yourself as a partner with successful
-          Ramaera Projects for a promised sustainable output today and tomorrow.
-        </ParaGraph>
-        <br />
-        <ParaGraph>
-          Ramaera Industries are bringing out collaborative opportunities where
-          you can become a part of a major Ramaera project by investing a
-          minimal amount. This investment will benefit you by providing a
-          monthly return on investment.
-        </ParaGraph>
+      <Text
+        Text=" To make this investor relation transparent , we will provide complete
+        insights on the project gain and other relevant information. So what
+        are you waiting for, enrol yourself as a partner with successful
+        Ramaera Projects for a promised sustainable output today and tomorrow."
+        fw="500"
+        size="23px"
+        lh="45px"
+        width="100%"
+        m="2rem 0 0 0"
+        xssize="18px"
+        mlh="25px"
+        msize="13px"
+        mwidth="85vw"
+        mta="center"
+        align="center"
+      />
+        <Text
+        Text="Ramaera Industries are bringing out collaborative opportunities where
+        you can become a part of a major Ramaera project by investing a
+        minimal amount. This investment will benefit you by providing a
+        monthly return on investment."
+        fw="500"
+        size="23px"
+        lh="45px"
+        width="100%"
+        m="0rem 0 0 0"
+        xssize="18px"
+        mlh="25px"
+        msize="13px"
+        mwidth="85vw"
+        mta="center"
+        align="center"
+      />
       </LeftPara>
       <RightImgBox>
         <RightImg src={"/background/Partner.gif"} />

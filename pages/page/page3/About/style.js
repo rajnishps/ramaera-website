@@ -54,21 +54,3 @@ export const TrendingHead = styled.h2`
     margin: 20px auto;
   }
 `;
-export const TrendingTop = styled.div`
-  width: 95%;
-  display: flex;
-  justify-content: space-between;
-`;
-export const TopIcons = styled.div`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`;
-export const IconImg = styled.img`
-  width: 20px;
-`;
-export const IconInfo = styled.p`
-  color: white;
-  font-size: 0.8rem;
-  margin-left: 5px;
-`;

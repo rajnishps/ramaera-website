@@ -5,6 +5,7 @@ const Text = (props) => {
   const StyledText = styled.p`
     font-size: ${props.size ? props.size : "22px"};
     color: ${props.color ? props.color : "#ffffff"};
+    border-bottom: ${props.bbottom ? props.bbottom : ""};
     text-align: ${props.align ? props.align : "left"};
     letter-spacing: ${props.ls ? props.ls : "0em"};
     line-height: ${props.lh ? props.lh : "25px"};

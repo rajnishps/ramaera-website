@@ -1,45 +1,35 @@
 import React from "react";
 import styled from "styled-components";
+import Text from "../../../../components/Text/Text";
 import Articles from "./Articles";
 import News from "./News/News";
-import { IconImg, IconInfo, TopIcons, TrendingContainer, TrendingHead, TrendingLeft, TrendingRight, TrendingTop } from "./style";
+import {TrendingContainer, TrendingHead, TrendingLeft, TrendingRight } from "./style";
 
 const Trending = () => {
   return (
     <TrendingContainer>
       <TrendingLeft className="scrollbar">
-        <TrendingHead>Trending</TrendingHead>
-        {/* <TrendingTop>
-          <div style={{ width: "30%" }}>
-            <p style={{ color: "white", marginLeft: "30px", fontSize: "25px" }}>
-              Today
-            </p>
-          </div>
-          <div
-            style={{
-              width: "70%",
-              display: "flex",
-              justifyContent: "space-between",
-            }}
-          >
-            {/* <TopIcons>
-              <IconImg src={"/background/Vector.png"} alt="" />
-              <IconInfo>Read Later</IconInfo>
-            </TopIcons>
-            <TopIcons>
-              <IconImg src={"/background/eye on.png"} alt="" />
-              <IconInfo>Hide</IconInfo>
-            </TopIcons>
-            <TopIcons>
-              <IconImg src={"/background/book open.png"} alt="" />
-              <IconInfo>Mark as read</IconInfo>
-            </TopIcons> */}
-            {/* <TopIcons>
-              <IconImg src={"/background/empty.png"} alt="" />
-              <IconInfo>Mark All</IconInfo>
-            </TopIcons> */}
-          {/* </div>
-        </TrendingTop> */} 
+      <Text
+          Text="Trending"
+          lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
+          font
+          size="2.5rem"
+          lh="90px"
+          width="17vw"
+          mwidth="100vw"
+          fw="500"
+          mlh="50px"
+          m="0 0 0 2rem"
+          // align="center"
+          xmsize="6rem"
+          xssize="10vw"
+          msize="2rem"
+          mpadding="0"
+          padding="0"
+          mmargin="0 0 0 0"
+          bbottom="4px solid white"
+        />
+        {/* <TrendingHead>Trending</TrendingHead> */}
           <News/>
           <News/>
           <News/>

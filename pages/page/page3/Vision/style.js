@@ -9,7 +9,7 @@ export const VisionBox = styled.div`
   box-sizing: border-box;
   @media (max-width: 600px){
     height: 360vh;
-    width: 100%;
+    width: 95%;
     margin:0px auto;
   }
 `;
@@ -38,26 +38,5 @@ export const VisionHead = styled.h1`
   padding-top: 70px;
   @media (max-width: 600px){
     font-size: 2rem;
-  }
-`;
-export const VisionPara = styled.p`
-  font-family: "Montserrat Alternates";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.7rem;
-  line-height: 45px;
-  margin-top: 30px;
-  /* or 156% */
-
-  background: linear-gradient(90deg, #ffffff 0%, #cfdef3 100%, #dadada 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-
-  @media (max-width: 600px){
-    font-size: 1rem;
-    line-height: 35px;
-    text-align: center;
   }
 `;
