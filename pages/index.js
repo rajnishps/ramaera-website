@@ -22,6 +22,7 @@ import Footer from "./page/common/footer"
 import Transforming from "./page/page1/transforming"
 import Faqs from "./page/page1/faqs"
 import Tomorrow from "./page/page1/tomorrow"
+import { useEffect } from "react"
 
 //const DynamicHeader = dynamic(() => import('../components/header'), {  loading: () => 'Loading...',})
 
