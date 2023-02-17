@@ -24,7 +24,14 @@ const TextContainer = () => {
         <div>
           <CustomText>Packaging industry for</CustomText>
           <CustomText>
-            <span style={{ color: "#EACDA3" }}> business growth</span>
+            <span
+              style={{
+                color: "#EACDA3",
+                marginRight: "15%",
+              }}
+            >
+              business growth
+            </span>
           </CustomText>
         </div>
         <svg

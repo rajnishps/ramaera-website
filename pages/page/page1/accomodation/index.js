@@ -62,7 +62,7 @@ const Buy = () => {
               style={{
                 position: "absolute",
                 top: "-200px",
-                width: "100%",
+                width: "90%",
                 height: "100%",
               }}
             />
