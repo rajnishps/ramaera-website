@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import Text from "../Text/Text";
+import Text from "../../../../components/Text/Text";
 import { ValParaContainer, ValuePara } from "../Values/Components/style";
 import Box1 from "./Common/Box1";
 import { MainContainer,BoxContainer } from "./style";
@@ -23,9 +23,9 @@ const Contribution = () => {
         xmsize="6rem"
         xssize="10vw"
         msize="1.8rem"
+        align="center"
         mpadding="0"
         mmargin=" 0 0 2rem 0"
-        align= "center"
       />
 
       <ValParaContainer>

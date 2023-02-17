@@ -2,7 +2,7 @@ import React from "react";
 import Left from "./Components/Left";
 import Right from "./Components/Right";
 import {InnitiativeHead, Best, Left1} from "./Components/style";
-import Text from "../Text/Text";
+import Text from "../../../../components/Text/Text";
 const Innitiatives = () => {
   return (
     <div>

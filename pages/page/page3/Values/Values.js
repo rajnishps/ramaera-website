@@ -13,7 +13,7 @@ import {
   Arrow,
 } from "./Components/style";
 
-import Text from "../Text/Text";
+import Text from "../../../../components/Text/Text";
 
 const Values = () => {
 
