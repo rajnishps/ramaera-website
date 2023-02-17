@@ -22,6 +22,8 @@ const Text = (props) => {
     opacity: 0.99;
     text-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
     padding: ${props.padding ? props.padding : "2vw"};
+
+    text-transform: ${props.ttransform ? props.ttransform : ""};
     &:hover {
       color: ${props.hoverColor ? props.hoverColor : null};
     }

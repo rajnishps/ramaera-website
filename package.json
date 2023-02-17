@@ -3,8 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "open": "yarns run open-browser && next dev",
-    "dev": "next dev",
+    "dev": "yarn run open-browser && next dev",
+    "open": "next dev",
     "open-browser": "open http://localhost:3000",
     "build": "next build",
     "start": "next start",
@@ -16,6 +16,7 @@
     "eslint": "8.31.0",
     "eslint-config-next": "13.1.1",
     "framer-motion": "^8.2.4",
+    "google-map-react": "^2.2.0",
     "next": "13.1.1",
     "nextjs-progressbar": "^0.0.16",
     "react": "18.2.0",

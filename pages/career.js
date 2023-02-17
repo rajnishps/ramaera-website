@@ -6,6 +6,8 @@ import Empower from "./page/page4/empower"
 import Dev from "./page/page4/dev"
 import Product from "./page/page4/product"
 import Marketing from "./page/page4/marketing"
+import Talent from "./page/page4/talent"
+import Family from "./page/page4/family"
 
 const career = () => {
   return (
@@ -16,6 +18,8 @@ const career = () => {
       <Marketing />
       <Dev />
       <Product />
+      <Talent />
+      <Family />
       <Empower />
       <Footer />
     </>

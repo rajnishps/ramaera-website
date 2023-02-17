@@ -20,15 +20,14 @@ const SocialMedia = () => {
       left: 20vw;
     }
   `
-  const RotateSvg = styled.a`
-    @media (max-width: 768px) {
-      transform: rotateZ(-90deg);
-    }
+
+  const LinkTo = styled.a`
+    cursor: pointer;
   `
 
   return (
     <StyledSocialMedia>
-      <RotateSvg>
+      <LinkTo href="https://twitter.com/ramaeraltd" target="_blank">
         <svg
           width="32"
           height="26"
@@ -41,8 +40,11 @@ const SocialMedia = () => {
             fill="#FFFDFD"
           />
         </svg>
-      </RotateSvg>
-      <RotateSvg>
+      </LinkTo>
+      <LinkTo
+        href="https://www.instagram.com/ramaeraindustries/"
+        target="_blank"
+      >
         <svg
           width="25"
           height="26"
@@ -55,8 +57,8 @@ const SocialMedia = () => {
             fill="#FFFDFD"
           />
         </svg>
-      </RotateSvg>
-      <RotateSvg>
+      </LinkTo>
+      <LinkTo href="https://www.facebook.com/ramaeraindustries" target="_blank">
         <svg
           width="15"
           height="26"
@@ -69,7 +71,7 @@ const SocialMedia = () => {
             fill="#FFFDFD"
           />
         </svg>
-      </RotateSvg>
+      </LinkTo>
     </StyledSocialMedia>
   )
 }

@@ -5,7 +5,7 @@ import Image from "next/image"
 const empower = "/background/empower.jpg"
 
 const index = () => (
-  <PageLayout mheight="30vh" bgColor="#f5f5f5">
+  <PageLayout mheight="fit-content" bgColor="#f5f5f5">
     <div style={{ zIndex: "-2" }}>
       <Image
         src={empower}

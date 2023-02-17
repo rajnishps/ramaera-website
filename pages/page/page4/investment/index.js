@@ -3,7 +3,7 @@ import Text from "../../../../components/Text/Text"
 
 const index = () => {
   return (
-    <>
+    <div id="3">
       <PageWidth full>
         <div
           data-aos="slide-up"
@@ -20,31 +20,28 @@ const index = () => {
             align="center"
             padding=" 10vh 10vw 0 10vw "
             lh="48px"
-            msize="3.2rem"
+            msize="1.8rem"
             mwidth="100vw"
-            mpadding="0"
-            mmargin=" 4rem 0 2rem 0"
+            mpadding="10vw"
+            mmargin="10vh 0 0 0 "
           />
           <Text
             Text="We are focused on developing comprehensively with our team as a whole. Mentoring and equipping with unmatched industrial exposure and exceptional skills is one of our goals. Ramaera Industries has a team of dedicated professionals pioneering in their respective domains."
             color="#FFF"
             size="20px"
             lh="32px"
-            fw="700"
+            fw="500"
             m="2rem 0 0 0"
             align="center"
             padding=" 0 20vw"
-            xmsize="2.2rem"
-            xssize="2rem"
-            msize="1.2rem"
+            msize="1.4rem"
             mta="center"
             mwidth="100vw"
-            mpadding="0"
-            mmargin=" 0 0 2rem 2rem"
+            mpadding="10vw"
           />
         </div>
       </PageWidth>
-    </>
+    </div>
   )
 }
 
