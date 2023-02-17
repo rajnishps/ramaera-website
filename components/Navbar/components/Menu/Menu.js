@@ -52,7 +52,13 @@ const H = styled.div`
 const Menu = ({ open, setOpen, ...props }) => {
   const isHidden = open ? true : false
   const tabIndex = isHidden ? 0 : -1
-
+  if (typeof window !== "undefined") {
+    if (open) {
+      document.body.classList.add("fixed-position")
+    } else if (!open) {
+      document.body.classList.remove("fixed-position")
+    }
+  }
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
       <Link1 to="home" spy={true} smooth={true}></Link1>
@@ -83,13 +89,13 @@ const Menu = ({ open, setOpen, ...props }) => {
             Contact
           </Link>
         </H>
-        <Button
+        {/* <Button
           nav
           height="2.75rem"
           Text="CONNECT WALLET"
           inheight="2.5rem"
           m="1rem 0 0 0"
-        />
+        /> */}
       </MenuItems>
     </StyledMenu>
   )

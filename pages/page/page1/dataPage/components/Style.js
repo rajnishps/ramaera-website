@@ -10,8 +10,9 @@ export const Container = styled.div`
   justify-content: center;
   padding: 2rem 0;
   @media (max-width: 768px) {
-    flex-direction: column;
-    gap: 50px;
+    pading-left: 200vw;
+    gap: 20vw;
+    overflow-y: scroll;
     opacity: 95%;
   }
 `

@@ -72,20 +72,4 @@ export default function Home() {
       <Footer />
     </>
   )
-} /* 
-Hero section heading { ramaera industries lh:reduce} 
-Social media icon niche
-Social media and tab icon niche’
-Sub heading width increase
-Explore more font size
-Heading upar 
-
-
-/// bg left 100 size less
-Sub semi bold
-Line gayab saari
-Line curve chota // opacity km upar bhi ayegi
-
-Icon upar jayega text renter 
-Sub heading width bdegi
- */
+}

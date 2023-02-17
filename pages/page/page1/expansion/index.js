@@ -21,7 +21,7 @@ const Image = styled.img`
 
 const Buy = () => {
   return (
-    <>
+    <div id="0">
       <PageLayout mtpadding="20vh" mheight="40vh">
         <PageWidth scale={"90%"} width="1500px">
           <div
@@ -63,7 +63,7 @@ const Buy = () => {
           <Image src={"/background/rightPoly.png"} alt="" />
         </PolyBg>
       </PageLayout>
-    </>
+    </div>
   )
 }
 

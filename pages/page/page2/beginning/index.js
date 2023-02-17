@@ -5,7 +5,7 @@ import Texts from "./components/Texts"
 
 const index = () => {
   return (
-    <>
+    <div id="1">
       <PageWidth Left={"left"} width="1500px">
         <div
           data-aos="slide-up"
@@ -63,7 +63,7 @@ const index = () => {
         ></div>
       </PageWidth>
       <Texts />
-    </>
+    </div>
   )
 }
 

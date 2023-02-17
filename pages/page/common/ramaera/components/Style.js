@@ -60,49 +60,49 @@ const txt3 = (
 )
 const txt4 = (
   <CustomText>
-    An <span style={{ color: "#E65C00" }}>incredible</span>
-    multi-industrial approach oriented towards financial independence, customer
-    focus and serving the best quality to the people.
+    An <span style={{ color: "#E65C00" }}>incredible</span> multi-industrial
+    approach oriented towards financial independence, customer focus and serving
+    the best quality to the people.
   </CustomText>
 )
 
 const txt5 = (
   <CustomText>
-    An <span style={{ color: "#E65C00" }}>incredible</span>
-    multi-industrial approach oriented towards financial independence, customer
-    focus and serving the best quality to the people.
+    An <span style={{ color: "#E65C00" }}>incredible</span> multi-industrial
+    approach oriented towards financial independence, customer focus and serving
+    the best quality to the people.
   </CustomText>
 )
 const txt6 = (
   <CustomText>
-    An <span style={{ color: "#E65C00" }}>incredible</span>
-    multi-industrial approach oriented towards financial independence, customer
-    focus and serving the best quality to the people.
+    An <span style={{ color: "#E65C00" }}>incredible</span> multi-industrial
+    approach oriented towards financial independence, customer focus and serving
+    the best quality to the people.
   </CustomText>
 )
 
 const txt7 = (
   <CustomText>
-    Being a <span style={{ color: "#E65C00" }}>Devoted</span>
-    to the nation by promoting education, business modelling and financial
-    stability, is our motto. We are focused on nation orientation, ethical
-    corporate values and benefiting the people.
+    Being a <span style={{ color: "#E65C00" }}>Devoted</span> to the nation by
+    promoting education, business modelling and financial stability, is our
+    motto. We are focused on nation orientation, ethical corporate values and
+    benefiting the people.
   </CustomText>
 )
 const txt8 = (
   <CustomText>
-    Being a <span style={{ color: "#E65C00" }}>Devoted</span>
-    to the nation by promoting education, business modelling and financial
-    stability, is our motto. We are focused on nation orientation, ethical
-    corporate values and benefiting the people.
+    Being a <span style={{ color: "#E65C00" }}>Devoted</span> to the nation by
+    promoting education, business modelling and financial stability, is our
+    motto. We are focused on nation orientation, ethical corporate values and
+    benefiting the people.
   </CustomText>
 )
 const txt9 = (
   <CustomText>
-    Being a <span style={{ color: "#E65C00" }}>Devoted</span>
-    to the nation by promoting education, business modelling and financial
-    stability, is our motto. We are focused on nation orientation, ethical
-    corporate values and benefiting the people.
+    Being a <span style={{ color: "#E65C00" }}>Devoted</span> to the nation by
+    promoting education, business modelling and financial stability, is our
+    motto. We are focused on nation orientation, ethical corporate values and
+    benefiting the people.
   </CustomText>
 )
 const txt10 = (
