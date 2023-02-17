@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
-import { Container,Heading, MapIcon,ImagePoint,MapBox} from "./style";
+import { Container,Heading, MapIcon,ImagePoint,MapBox,ImgPoint1,ImgPoint2,ImgPoint3,ImgPointMain} from "./style";
 
 const index=()=>{
-//utrytdbfv6b5yrdfb5r
     return (
         <>
         <Container >
@@ -19,11 +18,11 @@ const index=()=>{
         <MapIcon >
             <MapBox>
             <ImagePoint>
-                <img style={{position:"relative",left:"80px",top:"150px", height:"50px", width:"50px"}} src="/content/pointGrey.png" />
-                <img style={{position:"relative",left:"106px",top:"285px", height:"50px", width:"50px"}} src="/content/pointGrey.png" />
-                <img style={{position:"relative",left:"330px",top:"100px", height:"50px", width:"50px"}} src="/content/pointGrey.png" />
-               <a href="#" id="ramaera"><img  style={{position:"relative",left:"240px",top:"210px", height:"50px", width:"50px"}} src="/content/point.png" />
-               </a>
+                <ImgPoint1 style={{position:"relative",left:"80px",top:"150px", height:"50px", width:"50px"}} src="/content/pointGrey.png" />
+                <ImgPoint2 style={{position:"relative",left:"106px",top:"285px", height:"50px", width:"50px"}} src="/content/pointGrey.png" />
+                <ImgPoint3 style={{position:"relative",left:"330px",top:"100px", height:"50px", width:"50px"}} src="/content/pointGrey.png" />
+               <ImgPointMain href="#" id="ramaera"><img  src="/content/point.png" />
+               </ImgPointMain>
                 <h3>Ramaera Industries</h3>
                 </ImagePoint> 
             </MapBox>

@@ -49,6 +49,10 @@ line-height: 2;
 export const MapBox = styled.div`
 width:600px;
 height: 400px;
+@media (max-width: 600px){
+width:200px;
+height: 130px;
+}
 `
 export const MapIcon = styled.div`
 width:60%;
@@ -81,6 +85,45 @@ h3{
     #ramaera:hover~h3{
         display: block;
     }
+
+   
 `
 
+export const ImgPoint1 = styled.img`
+ @media (max-width: 600px){
+        display: none;
+       }
+`
+
+export const ImgPoint2 = styled.img`
+ @media (max-width: 600px){
+    display: none;
+
+       }
+`
+
+export const ImgPoint3 = styled.img`
+ @media (max-width: 600px){
+    display: none;
+
+       }
+`
+
+export const ImgPointMain = styled.a`
+
+img{
+position: relative;
+left: 240px;
+top: 210px;
+height: 50px;
+width: 50px;
+ @media (max-width: 600px){
+       height: 25px;
+       width: 25px;
+        top: 65px;
+        left: 122px;
+       }
+}
+
+`
 
