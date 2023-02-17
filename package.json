@@ -24,6 +24,7 @@
     "react-focus-lock": "^2.9.2",
     "react-spring": "9.3.2",
     "react-spring-3d-carousel": "1.2.1",
+    "simple-react-lightbox": "^3.6.9-0",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
