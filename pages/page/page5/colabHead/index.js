@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Container,Heading, MapIcon,ImagePoint,MapBox} from "./style";
 
 const index=()=>{
-
+//utrytdbfv6b5yrdfb5r
     return (
         <>
         <Container >
