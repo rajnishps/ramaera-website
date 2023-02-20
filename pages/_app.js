@@ -28,7 +28,13 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title key="title">Ramaera Industries</title>
+        <title key="title">Welcome to Ramaera Industries</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon" />
+        <meta
+          name="description"
+          content="An Integrated multi-industrial approach oriented towards financial independence, customer focus and serving the best quality to the people.
+"
+        />
       </Head>
       {/* <NextNProgress color="#F9D423" startPosition={0.4} height={3} /> */}
 
