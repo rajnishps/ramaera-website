@@ -3,9 +3,11 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
-
 module.exports = {
+  ...nextConfig,
+  images: {
+    unoptimized: true,
+  },
   async redirects() {
     return [
       {

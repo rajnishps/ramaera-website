@@ -6,7 +6,7 @@
     "open": "yarn run open-browser && next dev",
     "dev": "next dev",
     "open-browser": "open http://localhost:3000",
-    "build": "next build",
+    "build": "next build && next export -o build",
     "start": "next start",
     "lint": "next lint"
   },
