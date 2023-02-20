@@ -414,5 +414,9 @@ a {
   padding: 20px;
 }
 
-
-
+.activeLine {
+  color: blueviolet;
+  font-weight: bold;
+  border-bottom: 2px solid white;
+  margin-bottom: -12px;
+}

@@ -133,7 +133,7 @@ const Links = () => {
           <Link href="#">About Us</Link>
           <Link href="#">Careers</Link>
           <Link href="#">FAQs</Link>
-          <Link href="#">Teams</Link>
+          <Link href="/gallery">Teams</Link>
           <Link href="#">Contact Us</Link>
         </Div>
       </MobileDiv>

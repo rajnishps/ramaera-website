@@ -30,7 +30,6 @@
     "react-responsive-carousel": "^3.2.23",
     "react-spring": "^9.6.1",
     "react-spring-3d-carousel": "1.2.1",
-    "react-spring-carousel": "^2.0.19",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
