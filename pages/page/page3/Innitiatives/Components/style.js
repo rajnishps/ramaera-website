@@ -12,7 +12,7 @@ export const Best = styled.div`
   display: flex;
   margin-top: 70px;
   /* background:linear-gradient(181.16deg, #FF7917 -26.31%, #FFDD2D 128.88%);; */
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     flex-direction: column;
   }
 `;
@@ -27,9 +27,9 @@ export const Left1 = styled.div`
   border-right: 2px solid white;
   height: 100%;
   border-radius: 20px 20px 20px 20px;
- 
-  background:linear-gradient(181.16deg, #FF7917 -26.31%, #FFDD2D 128.88%);;
-  @media (max-width: 600px){
+
+  background: linear-gradient(181.16deg, #ff7917 -26.31%, #ffdd2d 128.88%);
+  @media (max-width: 600px) {
     border-right: none;
   }
 `;
@@ -80,7 +80,7 @@ export const ImgBg = styled.div`
     ),
     url("/background/Inn.jpeg");
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   width: 100%;
   height: 105vh;
   display: flex;
@@ -89,13 +89,12 @@ export const ImgBg = styled.div`
   align-items: center;
   position: relative;
   border-radius: 20px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 88vw;
     height: 50vh;
     margin: 0px auto;
 
-    border-radius: 0px 0px 20px 20px ;
-    
+    border-radius: 0px 0px 20px 20px;
   }
 `;
 export const Heading = styled.h2`
@@ -112,17 +111,16 @@ export const Heading = styled.h2`
   opacity: 0.99;
   text-align: center;
   text-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 1rem;
   }
-  
 `;
 
 export const ReverseText = styled.img`
   width: 300px;
   position: absolute;
   bottom: 7%;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 100px;
   }
 `;
@@ -132,30 +130,27 @@ export const Info = styled.div`
   justify-content: space-between;
   position: absolute;
   bottom: 20px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 90%;
     align-items: center;
     justify-content: center;
     margin: 0px auto;
-
   }
-
 `;
 export const InfoContainer = styled.div`
   display: flex;
   margin-bottom: 20px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 90%;
     margin: 0px auto;
     justify-content: center;
     align-items: center;
   }
-  
 `;
 export const InfoHead = styled.h2`
   color: white;
   text-align: center;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 1rem;
   }
 `;
@@ -164,7 +159,7 @@ export const InfoPara = styled.p`
   font-size: 0.7rem;
   color: white;
   margin-top: 7px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 0.5rem;
   }
 `;

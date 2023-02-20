@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Text from "../../../../components/Text/Text";
 import Articles from "./Articles";
 import News from "./News/News";
+import { NewsData } from "./News/NewsData";
 import {TrendingContainer, TrendingHead, TrendingLeft, TrendingRight } from "./style";
 
 const Trending = () => {
@@ -33,14 +34,19 @@ const Trending = () => {
         </div>
         {/* <TrendingHead>Trending</TrendingHead> */}
         <div data-aos="fade-up">
+          {/* <News/>
           <News/>
           <News/>
           <News/>
           <News/>
           <News/>
           <News/>
-          <News/>
-          <News/>
+          <News/> */}
+          {NewsData.map((item)=>{
+            return(
+              <News item={item}/>
+            )
+          })}
           </div>
       </TrendingLeft>
       <TrendingRight>
