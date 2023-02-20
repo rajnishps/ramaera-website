@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const MainContainer = styled.div`
   width: 100%;
-`;
+`
 //ugy7uyfyth
 export const BoxContainer = styled.div`
   width: 80%;
@@ -13,13 +13,12 @@ export const BoxContainer = styled.div`
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-around;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 95%;
     margin: 0px auto;
     flex-direction: column;
   }
-`;
-
+`
 
 export const Box = styled.div`
   width: 390px;
@@ -42,14 +41,13 @@ export const Box = styled.div`
     border: 2px solid white;
   }
 
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 80%;
-      height: 60%;
-      margin: 20px auto;
-      padding-top:20px;
+    height: 60%;
+    margin: 20px auto;
+    padding-top: 20px;
   }
-`;
-
+`
 
 export const YellowDiv = styled.div`
   width: 55px;
@@ -60,10 +58,10 @@ export const YellowDiv = styled.div`
   ${Box}:hover & {
     background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
   }
-`;
+`
 export const WhiteDiv = styled.div`
   width: 55px;
-height: 55px;
+  height: 55px;
   background-image: url("/background/white.png");
   border-radius: 15px;
   background-size: cover;
@@ -74,7 +72,7 @@ height: 55px;
   display: flex;
   justify-content: center;
   align-items: center;
-`;
+`
 
 export const Head = styled.p`
   font-family: "Zilap Orion Personal Use";
@@ -98,10 +96,10 @@ export const Head = styled.p`
     background-clip: text;
     text-fill-color: transparent;
   }
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 1rem;
   }
-`;
+`
 
 export const Para = styled.p`
   font-family: "Montserrat Alternates";
@@ -125,11 +123,17 @@ export const Para = styled.p`
     background-clip: text;
     text-fill-color: transparent;
   }
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 1rem;
     line-height: 25px;
   }
-`;
+`
 export const Icon = styled.img`
   width: 35px;
-`;
+`
+
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

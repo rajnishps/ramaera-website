@@ -1,8 +1,8 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const InnitiveContainer = styled.div`
   width: 100%;
-`;
+`
 
 export const Best = styled.div`
   width: 90%;
@@ -12,10 +12,10 @@ export const Best = styled.div`
   display: flex;
   margin-top: 70px;
   /* background:linear-gradient(181.16deg, #FF7917 -26.31%, #FFDD2D 128.88%);; */
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     flex-direction: column;
   }
-`;
+`
 
 //Left section css
 export const Left1 = styled.div`
@@ -27,12 +27,12 @@ export const Left1 = styled.div`
   border-right: 2px solid white;
   height: 100%;
   border-radius: 20px 20px 20px 20px;
- 
-  background:linear-gradient(181.16deg, #FF7917 -26.31%, #FFDD2D 128.88%);;
-  @media (max-width: 600px){
+
+  background: linear-gradient(181.16deg, #ff7917 -26.31%, #ffdd2d 128.88%);
+  @media (max-width: 600px) {
     border-right: none;
   }
-`;
+`
 export const LeftHead = styled.h3`
   font-family: "Zilap Orion Personal Use";
   font-style: normal;
@@ -44,34 +44,34 @@ export const LeftHead = styled.h3`
   border-bottom: 3px solid #fafaf8;
   margin-top: 20px;
   margin-right: 50px;
-`;
+`
 export const LeftMenu = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   margin: 0px auto;
-`;
+`
 export const MenuData = styled.div`
   display: flex;
   width: 100%;
   margin: 20px auto;
-`;
+`
 export const ArrowImg = styled.img`
   width: 22px;
-`;
+`
 export const MenuPara = styled.p`
   color: white;
   font-weight: 600;
   font-size: 0.8rem;
   margin-left: 5px;
-`;
+`
 
 //Right section css
 export const RightContainer = styled.div`
   width: 100%;
   height: 100%;
-`;
+`
 export const ImgBg = styled.div`
   background-image: linear-gradient(
       0deg,
@@ -80,7 +80,7 @@ export const ImgBg = styled.div`
     ),
     url("/background/Inn.jpeg");
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   width: 100%;
   height: 105vh;
   display: flex;
@@ -89,15 +89,14 @@ export const ImgBg = styled.div`
   align-items: center;
   position: relative;
   border-radius: 20px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 88vw;
     height: 50vh;
     margin: 0px auto;
 
-    border-radius: 0px 0px 20px 20px ;
-    
+    border-radius: 0px 0px 20px 20px;
   }
-`;
+`
 export const Heading = styled.h2`
   font-family: "Zilap Orion Personal Use";
   font-style: normal;
@@ -112,59 +111,61 @@ export const Heading = styled.h2`
   opacity: 0.99;
   text-align: center;
   text-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 1rem;
   }
-  
-`;
+`
 
 export const ReverseText = styled.img`
   width: 300px;
   position: absolute;
   bottom: 7%;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 100px;
   }
-`;
+`
 export const Info = styled.div`
   display: flex;
   width: 90%;
   justify-content: space-between;
   position: absolute;
   bottom: 20px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 90%;
     align-items: center;
     justify-content: center;
     margin: 0px auto;
-
   }
-
-`;
+`
 export const InfoContainer = styled.div`
   display: flex;
   margin-bottom: 20px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 90%;
     margin: 0px auto;
     justify-content: center;
     align-items: center;
   }
-  
-`;
+`
 export const InfoHead = styled.h2`
   color: white;
   text-align: center;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 1rem;
   }
-`;
+`
 
 export const InfoPara = styled.p`
   font-size: 0.7rem;
   color: white;
   margin-top: 7px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 0.5rem;
   }
-`;
+`
+
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

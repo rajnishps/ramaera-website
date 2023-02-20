@@ -6,7 +6,7 @@ const Carousel = dynamic(() => import("react-spring-3d-carousel"), {
 })
 
 export default function Carroussel(props) {
-  const table = props.cards.map((element, index) => {
+  const table = (props.cards ?? []).map((element, index) => {
     return { ...element, onClick: () => setGoToSlide(index) }
   })
 
