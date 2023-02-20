@@ -11,6 +11,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.9",
+    "@mui/material": "^5.11.9",
     "@next/font": "13.1.1",
     "aos": "^2.3.4",
     "eslint": "8.31.0",
@@ -22,9 +26,8 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-focus-lock": "^2.9.2",
-    "react-spring": "9.3.2",
+    "react-spring": "^9.6.1",
     "react-spring-3d-carousel": "1.2.1",
-    "simple-react-lightbox": "^3.6.9-0",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {

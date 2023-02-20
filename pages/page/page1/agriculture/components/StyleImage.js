@@ -1,9 +1,10 @@
 import styled from "styled-components"
 
 export const Image = styled.div`
-  height: 25rem;
+  height: 30rem;
   width: 35rem;
   @media only screen and (max-width: 1200px) {
+    height: 25rem;
     transform: scale(90%);
   }
   @media only screen and (max-width: 1000px) {

@@ -46,6 +46,7 @@ const PageLayout = ({
       min-height: 100vh;
       min-height: ${mheight ? mheight : ""};
       padding-top: ${mtpadding ? mtpadding : "calc(1rem + 1rem)"};
+      overflow: visible;
     }
   `
 

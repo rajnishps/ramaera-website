@@ -34,6 +34,7 @@ const Flex = ({
       flex-direction: ${column || lcolumn || mcolumn || scolumn
         ? "column"
         : "row"};
+      flex-direction: ${column || lcolumn || mrcolumn ? "column-reverse" : ""};
     }
   `
 

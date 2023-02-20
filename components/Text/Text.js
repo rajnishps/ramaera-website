@@ -5,6 +5,7 @@ const Text = (props) => {
   const StyledText = styled.p`
     font-size: ${props.size ? props.size : "22px"};
     color: ${props.color ? props.color : "#ffffff"};
+    border-bottom: ${props.bbottom ? props.bbottom : ""};
     text-align: ${props.align ? props.align : "left"};
     letter-spacing: ${props.ls ? props.ls : "0em"};
     line-height: ${props.lh ? props.lh : "25px"};
@@ -28,12 +29,12 @@ const Text = (props) => {
       color: ${props.hoverColor ? props.hoverColor : null};
     }
 
-    @media only screen and (max-width: 1200px) {
+    /*     @media only screen and (max-width: 1200px) {
       font-size: ${props.xmsize ? props.xmsize : "20px"};
     }
     @media only screen and (max-width: 1000px) {
       font-size: ${props.xssize ? props.xssize : "18px"};
-    }
+    } */
 
     @media only screen and (max-width: 768px) {
       font-size: ${props.msize ? props.msize : "17px"};
