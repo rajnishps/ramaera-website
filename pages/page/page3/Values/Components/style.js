@@ -25,6 +25,7 @@ export const InnovationDiv = styled.div`
     height: 100vh;
   }
 `;
+
 export const InnovationHead = styled.div`
   font-family: "Zilap Orion Personal Use";
   font-style: normal;
@@ -43,6 +44,7 @@ export const InnovationHead = styled.div`
     margin: 20px auto;
   }
 `;
+
 export const Img = styled.img`
   width: 100px;
   margin: 20px;

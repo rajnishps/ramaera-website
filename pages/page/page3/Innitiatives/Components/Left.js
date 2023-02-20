@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { LeftHead, Left1, LeftMenu,MenuData,ArrowImg,MenuPara } from "../Components/style";
+import {MdOutlineDoubleArrow} from "react-icons/md"
 const LeftContainer = styled.div`
   width: 30%;
   @media (max-width: 600px){
@@ -17,36 +18,38 @@ const Left = () => {
         </div>
         <div data-aos="fade-right">
         <LeftMenu>
-          <MenuData>
-            <ArrowImg src={"/background/arrowImg.png"} />
+          <MenuData >
+            {/* <ArrowImg src={"/background/arrowImg.png"} /> */}
+            <MdOutlineDoubleArrow style={{color:"white"}}/>
+            
             <MenuPara>Health & sanitation</MenuPara>
           </MenuData>
           <MenuData>
-            <ArrowImg src={"/background/arrowImg.png"} />
+          <MdOutlineDoubleArrow style={{color:"white"}}/>
             <MenuPara>Primary Education</MenuPara>
           </MenuData>
           <MenuData>
-            <ArrowImg src={"/background/arrowImg.png"} />
+             <MdOutlineDoubleArrow style={{color:"white"}}/>
             <MenuPara>Livestock Development</MenuPara>
           </MenuData>
           <MenuData>
-            <ArrowImg src={"/background/arrowImg.png"} />
+             <MdOutlineDoubleArrow style={{color:"white"}}/>
             <MenuPara>Solid Waste Management</MenuPara>
           </MenuData>
           <MenuData>
-            <ArrowImg src={"/background/arrowImg.png"} />
+             <MdOutlineDoubleArrow style={{color:"white"}}/>
             <MenuPara>Skilling & Vocational Training</MenuPara>
           </MenuData>
           <MenuData>
-            <ArrowImg src={"/background/arrowImg.png"} />
+             <MdOutlineDoubleArrow style={{color:"white"}}/>
             <MenuPara>Women Empowerment</MenuPara>
           </MenuData>
           <MenuData>
-            <ArrowImg src={"/background/arrowImg.png"} />
+             <MdOutlineDoubleArrow style={{color:"white"}}/>
             <MenuPara>Watershed Development Programme</MenuPara>
           </MenuData>
           <MenuData>
-            <ArrowImg src={"/background/arrowImg.png"} />
+             <MdOutlineDoubleArrow style={{color:"white"}}/>
             <MenuPara>Afforestation Programme</MenuPara>
           </MenuData>
         </LeftMenu>

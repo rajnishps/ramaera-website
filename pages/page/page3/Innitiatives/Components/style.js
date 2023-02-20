@@ -11,6 +11,7 @@ export const Best = styled.div`
   border-radius: 20px;
   display: flex;
   margin-top: 70px;
+  /* background:linear-gradient(181.16deg, #FF7917 -26.31%, #FFDD2D 128.88%);; */
   @media (max-width: 600px){
     flex-direction: column;
   }
@@ -25,6 +26,9 @@ export const Left1 = styled.div`
   align-items: center;
   border-right: 2px solid white;
   height: 100%;
+  border-radius: 20px 20px 20px 20px;
+ 
+  background:linear-gradient(181.16deg, #FF7917 -26.31%, #FFDD2D 128.88%);;
   @media (max-width: 600px){
     border-right: none;
   }
@@ -37,7 +41,7 @@ export const LeftHead = styled.h3`
   line-height: 50px;
   text-align: left;
   color: #ffffff;
-  border-bottom: 2px solid #ffe259;
+  border-bottom: 3px solid #fafaf8;
   margin-top: 20px;
   margin-right: 50px;
 `;
@@ -58,6 +62,7 @@ export const ArrowImg = styled.img`
 `;
 export const MenuPara = styled.p`
   color: white;
+  font-weight: 600;
   font-size: 0.8rem;
   margin-left: 5px;
 `;
@@ -75,9 +80,9 @@ export const ImgBg = styled.div`
     ),
     url("/background/Inn.jpeg");
   background-position: center;
-  background-size: cover;
+  background-size:cover;
   width: 100%;
-  height: 95vh;
+  height: 105vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,7 +102,7 @@ export const Heading = styled.h2`
   font-family: "Zilap Orion Personal Use";
   font-style: normal;
   font-weight: 400;
-  font-size: 30px;
+  font-size: 37px;
   line-height: 117%;
   background: linear-gradient(90deg, #e65c00 0%, #f9d423 100%);
   -webkit-background-clip: text;
@@ -114,9 +119,9 @@ export const Heading = styled.h2`
 `;
 
 export const ReverseText = styled.img`
-  width: 220px;
+  width: 300px;
   position: absolute;
-  bottom: 11%;
+  bottom: 7%;
   @media (max-width: 600px){
     width: 100px;
   }
@@ -138,6 +143,7 @@ export const Info = styled.div`
 `;
 export const InfoContainer = styled.div`
   display: flex;
+  margin-bottom: 20px;
   @media (max-width: 600px){
     width: 90%;
     margin: 0px auto;
