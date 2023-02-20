@@ -103,11 +103,11 @@ const index = () => {
               </div>
             </Container>
             <FamilyPhoto>
-              <img src={"/content/family1.png"} />
-              <img src={"/content/family2.png"} />
-              <img src={"/content/family3.png"} />
-              <img src={"/content/family4.png"} />
-              <img src={"/content/family5.png"} />
+              <img loading="lazy" src={"/content/family1.png"} />
+              <img loading="lazy" src={"/content/family2.png"} />
+              <img loading="lazy" src={"/content/family3.png"} />
+              <img loading="lazy" src={"/content/family4.png"} />
+              <img loading="lazy" src={"/content/family5.png"} />
             </FamilyPhoto>
             <FamilyText>
               <p>Ricky Aprilia</p>
