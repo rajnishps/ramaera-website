@@ -29,12 +29,20 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title key="title">Welcome to Ramaera Industries</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="/favicon" />
+        <link rel="icon" type="image/png" sizes="32x32" href="public/favicon" />
+        <meta charset="utf-8" />
+        <meta itemprop="name" content="Welcome to Ramaera Industries}" />
+        <meta
+          itemprop="description"
+          content="An Integrated multi-industrial approach oriented towards financial independence, customer focus and serving the best quality to the people."
+        />
+        <meta itemprop="image" content="public/logo/logo.png" />
         <meta
           name="description"
           content="An Integrated multi-industrial approach oriented towards financial independence, customer focus and serving the best quality to the people.
 "
         />
+        <meta property="og:image" content="public/logo/logo.png" />
       </Head>
       {/* <NextNProgress color="#F9D423" startPosition={0.4} height={3} /> */}
 
