@@ -18,9 +18,11 @@ export const InnovationDiv = styled.div`
   border: 2px solid white;
   border-radius: 20px;
   display: flex;
+  height: 80vh;
   @media (max-width: 600px){
     flex-direction: column;
     align-items: center;
+    height: 100vh;
   }
 `;
 export const InnovationHead = styled.div`
@@ -28,7 +30,7 @@ export const InnovationHead = styled.div`
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
-  line-height: 30px;
+  line-height: 60px;
   background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -37,14 +39,19 @@ export const InnovationHead = styled.div`
   margin: 2rem;
   margin-bottom: 0;
   @media (max-width: 600px){
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 20px auto;
   }
 `;
 export const Img = styled.img`
-  width: 350px;
-  height: 350px;
+  width: 100px;
   margin: 20px;
+  object-fit: contain;
+  @media (max-width: 600px){
+    width: 50%;
+    height: 50%;
+  }
+
 `;
 export const InnovationLeft = styled.div`
   width: 40%;
@@ -52,12 +59,13 @@ export const InnovationLeft = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding-left: 5%;
   @media (max-width: 600px){
     width: 100%;
   }
 `;
 export const InnoParaContainer = styled.div`
-    width: 70%;
+    width: 50%;
     border-left: 2px solid white;
     @media (max-width: 600px){
       width: 100%;
@@ -65,7 +73,7 @@ export const InnoParaContainer = styled.div`
     }
 `
 export const InnovatinRight = styled.div`
-  width: 60%;
+  width: 50%;
   display: flex;
   justify-content: center;
   align-items: center;

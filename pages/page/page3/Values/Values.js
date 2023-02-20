@@ -14,6 +14,7 @@ import {
 } from "./Components/style";
 
 import Text from "../../../../components/Text/Text";
+import Slider from "./Components/Slider";
 
 const Values = () => {
 
@@ -59,7 +60,7 @@ const Values = () => {
       />
       </div>
       </ValParaContainer>
-      <InnovationDiv>
+      {/* <InnovationDiv>
         <InnovationLeft>
           <InnovationHead>Innovation</InnovationHead>
           <Img src={"/background/InnoGif.gif"}></Img>
@@ -86,10 +87,11 @@ const Values = () => {
               INNOVATION Redefining excellence and the magnitude of Innovation
               to realise the convenience today and tomorrow
             </InnoPara> */}
-          </InnoParaContainer>
-          <Arrow src={"/background/arrow.png"} />
-        </InnovatinRight>
-      </InnovationDiv>
+          {/* </InnoParaContainer>
+          <Arrow src={"/background/arrow.png"} /> */}
+      {/* //   </InnovatinRight> */}
+       {/* </InnovationDiv> */} 
+       <Slider/>
     </ValueContainer>
   );
 };

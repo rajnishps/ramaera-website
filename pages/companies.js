@@ -8,6 +8,7 @@ import Contribution from "./page/page3/Contribution/Contribution"
 import Partner from "./page/page3/Partner/Partner"
 import Vision from "./page/page3/Vision/Vision"
 import About from "./page/page3/About/About"
+import Slider from "./page/page3/Values/Components/Slider"
 // import Values2 from "../page/page3/Values/Values2"
 
 const companies = () => {
