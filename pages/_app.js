@@ -29,7 +29,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title key="title">Welcome to Ramaera Industries</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="public/favicon" />
+        <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
         <meta charset="utf-8" />
         <meta itemprop="name" content="Welcome to Ramaera Industries}" />
         <meta
