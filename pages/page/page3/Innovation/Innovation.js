@@ -80,7 +80,10 @@ const Innovation = () => {
         </ParaContainer>
 
         <Polygon>
+        <div data-aos="fade-left"
+        data-aos-anchor-placement="top-bottom">
           <PolyGonImg src={"/background/polygon.png"} />
+          </div>
         </Polygon>
       </MainContainer>
     </>
