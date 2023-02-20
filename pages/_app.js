@@ -36,13 +36,13 @@ export default function App({ Component, pageProps }) {
           itemprop="description"
           content="An Integrated multi-industrial approach oriented towards financial independence, customer focus and serving the best quality to the people."
         />
-        <meta itemprop="image" content="public/logo/logo.png" />
+        <meta itemprop="image" content="logo/logo.png" />
         <meta
           name="description"
           content="An Integrated multi-industrial approach oriented towards financial independence, customer focus and serving the best quality to the people.
 "
         />
-        <meta property="og:image" content="public/logo/logo.png" />
+        <meta property="og:image" content="logo/logo.png" />
       </Head>
       {/* <NextNProgress color="#F9D423" startPosition={0.4} height={3} /> */}
 
