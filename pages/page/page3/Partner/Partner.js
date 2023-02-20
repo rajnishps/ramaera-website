@@ -25,6 +25,7 @@ const PartnerBoxContainer = styled.div`
 const Partner = () => {
   return (
     <MainContainer>
+      <div data-aos="fade-right">
       <Text
         Text="Become a partner with Ramaera"
         lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
@@ -42,7 +43,9 @@ const Partner = () => {
         mpadding="0"
         mmargin=" 0 0 2rem 0"
       />
+      </div>
       <ValParaContainer>
+      <div data-aos="fade-left">
       <Text
         Text="Join us on our entrepreneurial venture by becoming a trustee and
         embark on the journey of success"
@@ -59,8 +62,10 @@ const Partner = () => {
         mta="center"
         align="center"
       />
+      </div>
       </ValParaContainer>
       <PartnerBoxContainer>
+        
         <PartnerBox Heading={"INVESTMENT SHARE PERCENTAGE"} Para ={"We believe in honesty and fair share and hence, a percentage will be allotted to each and every project investor depending on the investment they do. They will also receive a monthly return of investment along with various other benefits."}/>
 
         <PartnerBox Heading={"COMPLETE OPERATIONAL TRANSPARENCY"} Para={"All our investors in the Ramaera industry will be fairly aware of all the operations and revenue based management. They will have information about each and every penny utilised out of their investment."}/>

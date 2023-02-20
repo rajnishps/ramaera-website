@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Text from "../../../../../../components/Text/Text";
 import TeamBox, { ImageBox } from "./TeamBox";
 
 const PillerContainer = styled.div`
@@ -8,34 +9,6 @@ const PillerContainer = styled.div`
   @media (max-width: 600px){
     width: 90%;
     margin: 0px auto;
-  }
-`;
-const PillerHead = styled.h2`
-  font-family: "Zilap Orion Personal Use";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3rem;
-  line-height: 65px;
-  background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  text-align: center;
-  @media (max-width: 600px) {
-    font-size: 2rem;
-    line-height: 50px;
-  }
-`;
-const PillerPara = styled.p`
-  color: white;
-  font-size: 1.7rem;
-  width: 60%;
-  margin: 20px auto;
-  text-align: center;
-  @media (max-width: 600px) {
-    width: 90%;
-    font-size: 1.1rem;
   }
 `;
 
@@ -72,7 +45,7 @@ const TextContainer = styled.div`
     display: none;
   }
   @media (max-width: 600px){
-    font-size: 1rem;
+    font-size: 0.8rem;
     width: 70%;
   }
 
@@ -81,11 +54,47 @@ const TextContainer = styled.div`
 const Pillers = () => {
   return (
     <PillerContainer>
-      <PillerHead>Meet the pillars of Ramaera</PillerHead>
-      <PillerPara>
-        The Ramaera Management is the foundation pillar of the organisation and
-        the reason of our scalability and success.
-      </PillerPara>
+      <div data-aos="fade-right">
+      <Text
+          Text="Meet the pillars of Ramaera"
+          lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
+          font
+          size="3rem"
+          lh="30px"
+          width="100%"
+          align = "center"
+          mwidth="100%"
+          fw="500"
+          mlh="45px"
+          m="0 0 0 0rem"
+          // align="center"
+          xmsize="6rem"
+          xssize="10vw"
+          msize="2rem"
+          mpadding="0"
+          padding="0"
+          mmargin="0 0 0 0"
+        />
+        </div>
+        <div data-aos="fade-left">
+         <Text
+        Text="The Ramaera Management is the foundation pillar of the organisation and
+        the reason of our scalability and success."
+        fw="400"
+        size="25px"
+        lh="40px"
+        width="100%"
+        m="2rem 0 0 0"
+        xssize="18px"
+        mlh="25px"
+        msize="13px"
+        mwidth="100%"
+        mta="center"
+        align="center"
+        padding="0 13vw"
+        mmargin="0px"
+      />
+      </div>
       <ImageContainer>
         <TextContainer>
           <p style={{ width: "70%" }}>

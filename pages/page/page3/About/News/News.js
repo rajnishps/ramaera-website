@@ -18,6 +18,7 @@ const NewsBox = styled.div`
    flex-direction: column;
    align-items: center;
    margin-top: 20px;
+   width: 95%;
   }
 `;
 const NewsIcon = styled.img`
@@ -36,9 +37,12 @@ const NewsHead = styled.p`
   background-clip: text;
   text-fill-color: transparent;
   @media (max-width: 600px){
-    font-size: 0.9rem;
-    line-height: 23px;
+    font-size: 0.8rem;
+    line-height: 20px;
     margin-bottom: 10px;
+    width: 90%;
+    margin: 0px auto;
+    text-align: center;
   }
 `;
 const NewsImg = styled.img`
@@ -53,15 +57,29 @@ const NewsImg = styled.img`
    margin: 0px auto;
   }
 `;
+const NewsParaContainer = styled.div`
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0px auto;
+  @media (max-width: 600px){
+    justify-content: space-between;
+  }
+
+`
 const Newspara = styled.p`
     color: white;
     font-size: .6rem;
+    @media (max-width: 600px){
+      margin-top: 10px;
+    }
 `
 const NewsLater = styled.img`
     width: 15px;
     @media (max-width: 600px){
       width: 10px;
       margin-left: 5px;
+      margin-top: 10px;
     }
 `
 const Border = styled.div`
@@ -72,12 +90,14 @@ const Border = styled.div`
     margin-top: 15px;
     border-radius: 20px;
     @media (max-width: 600px){
-      margin-left: 30px;
+      margin-left: 0px;
       margin-bottom: 20px;
+      width: 250px;
     }
 `
 const News = () => {
   return (
+    
     <NewsContainer>
       <NewsBox>
           <div>
@@ -88,14 +108,14 @@ const News = () => {
                 opening ceremony
               </NewsHead>
             </div>
-            <div style={{display:"flex", justifyContent:"space-between", alignItems:"center",width:"90%", margin:"0px auto"}}>
+            <NewsParaContainer>
               <Newspara>Dec 30 2021</Newspara>
               <Newspara>Euro News</Newspara>
               <Newspara>4 min read</Newspara>
               <NewsLater src="/background/smallbook.png" alt="" />
               <NewsLater src="/background/share.png" alt="" />
               <NewsLater src="/background/more.png" alt="" />
-            </div>
+            </NewsParaContainer>
             <Border/>
           </div>
           <div>

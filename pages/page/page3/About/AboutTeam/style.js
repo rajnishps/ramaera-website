@@ -16,24 +16,6 @@ export const TeamContainer = styled.div`
     width: 90%;
   }
 `;
-export const TeamHead = styled.h1`
-  font-family: "Zilap Orion Personal Use";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3rem;
-  line-height: 70px;
-  background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  text-align: center;
-  padding-top: 20px;
-  @media (max-width: 600px){
-    font-size: 2rem;
-    line-height: 50px;
-  }
-`;
 
 export const LeftTeam = styled.div`
   width: 50%;
@@ -91,8 +73,9 @@ export const RightPara = styled.p`
 export const Dots = styled.img`
     position: absolute;
     width: 90px;
-    bottom: -7%;
+    bottom: -10%;
     left: 3%;
+    z-index: -1;
     @media (max-width: 600px){
       width: 50px;
       bottom: -2%;

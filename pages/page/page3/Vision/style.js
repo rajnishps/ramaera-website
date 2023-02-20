@@ -8,7 +8,7 @@ export const VisionBox = styled.div`
   background-position: center;
   box-sizing: border-box;
   @media (max-width: 600px){
-    height: 360vh;
+    height: 250vh;
     width: 95%;
     margin:0px auto;
   }

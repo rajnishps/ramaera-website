@@ -19,6 +19,7 @@ const Values = () => {
 
   return (
     <ValueContainer>
+       <div data-aos="fade-right">
       <Text
         Text="THE VALUES OF RAMAERA"
         lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
@@ -36,7 +37,9 @@ const Values = () => {
         mpadding="0"
         mmargin=" 0 0 0rem 0"
       />
+      </div>
       <ValParaContainer>
+      <div data-aos="fade-left">
       <Text
         Text="The Love and the trust of our Ramaera Family has been the foundation
         of our growth and has helped us to strengthen our core values as an
@@ -54,6 +57,7 @@ const Values = () => {
         align="center"
         padding="0 15vw"
       />
+      </div>
       </ValParaContainer>
       <InnovationDiv>
         <InnovationLeft>

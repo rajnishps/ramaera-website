@@ -45,8 +45,13 @@ const BoxPara = styled.p`
 const PartnerBox = ({ Heading, Para }) => {
   return (
     <Box>
+      <div data-aos="fade-up">
       <BoxHead>{Heading}</BoxHead>
+      </div>
+      <div data-aos="fade-down">
       <BoxPara>{Para}</BoxPara>
+      </div>
+     
     </Box>
   );
 };

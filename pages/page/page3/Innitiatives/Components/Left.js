@@ -9,8 +9,13 @@ const LeftContainer = styled.div`
 const Left = () => {
   return (
     <LeftContainer>
+      
       <Left1>
+      <div data-aos="fade-right"
+      data-aos-anchor-placement="top-bottom">
         <LeftHead>ONLY THE BEST</LeftHead>
+        </div>
+        <div data-aos="fade-right">
         <LeftMenu>
           <MenuData>
             <ArrowImg src={"/background/arrowImg.png"} />
@@ -45,7 +50,9 @@ const Left = () => {
             <MenuPara>Afforestation Programme</MenuPara>
           </MenuData>
         </LeftMenu>
+        </div>
       </Left1>
+      
     </LeftContainer>
   );
 };

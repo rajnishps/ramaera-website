@@ -12,7 +12,6 @@ const Box1 = ({ Heading, ParaGraph, percent,source  }) => {
       </WhiteDiv>
       </div>
       <Head>
-        {" "}
         <span>{percent}</span>
         {Heading}
       </Head>

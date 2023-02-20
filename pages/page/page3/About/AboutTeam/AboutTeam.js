@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Text from "../../../../../components/Text/Text";
 import Pillers from "./Pillers/Pillers";
 import {
   Dots,
@@ -10,7 +11,6 @@ import {
   RightPara,
   RightTeam,
   TeamContainer,
-  TeamHead,
 } from "./style";
 const TeamBoxContainer = styled.div`
   display: flex;
@@ -24,7 +24,24 @@ const AboutTeam = () => {
   return (
     <>
       <TeamContainer>
-        <TeamHead>About the Ramaera Team</TeamHead>
+      <Text
+          Text="About the Ramaera Team"
+          lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
+          font
+          size="3rem"
+          lh="30px"
+          width="100%"
+          mwidth="100%"
+          fw="500"
+          mlh="50px"
+          m="0rem 0 0 0"
+          align="center"
+          xmsize="6rem"
+          xssize="10vw"
+          msize="2rem"
+          mpadding="0"
+          mmargin="0 0 0 0"
+        />
         <TeamBoxContainer>
           <LeftTeam>
             <ParaBox>

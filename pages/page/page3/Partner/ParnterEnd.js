@@ -33,6 +33,7 @@ const ParnterEnd = () => {
   return (
     <ParnterEndBox>
       <LeftPara>
+      <div data-aos="fade-up-right">
       <Text
         Text=" To make this investor relation transparent , we will provide complete
         insights on the project gain and other relevant information. So what
@@ -50,6 +51,8 @@ const ParnterEnd = () => {
         mta="center"
         align="center"
       />
+      </div>
+      <div data-aos="fade-up-right">
         <Text
         Text="Ramaera Industries are bringing out collaborative opportunities where
         you can become a part of a major Ramaera project by investing a
@@ -67,9 +70,12 @@ const ParnterEnd = () => {
         mta="center"
         align="center"
       />
+      </div>
       </LeftPara>
       <RightImgBox>
+      <div data-aos="fade-up-left"> 
         <RightImg src={"/background/Partner.gif"} />
+        </div>
       </RightImgBox>
     </ParnterEndBox>
   );
