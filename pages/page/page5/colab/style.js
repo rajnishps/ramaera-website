@@ -160,6 +160,7 @@ export const Fline3 = styled.div`
   background: white;
   padding: 20px 0;
   textarea {
+    background: white;
     width: 100%;
     padding: 10px;
     border-radius: 10px;
