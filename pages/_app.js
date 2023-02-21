@@ -28,21 +28,24 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title key="title">Welcome to Ramaera Industries</title>
-        <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico" />
+        <title key="title">Ramaera Industries</title>
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
+        <link rel="manifest" href="/site.webmanifest" />
         <meta charset="utf-8" />
-        <meta itemprop="name" content="Welcome to Ramaera Industries}" />
+        <meta itemprop="name" content="Ramaera Industries}" />
         <meta
           itemprop="description"
           content="An Integrated multi-industrial approach oriented towards financial independence, customer focus and serving the best quality to the people."
         />
-        <meta itemprop="image" content="logo/logo.png" />
+        <meta itemprop="image" content="/logo/logo.png" />
         <meta
           name="description"
           content="An Integrated multi-industrial approach oriented towards financial independence, customer focus and serving the best quality to the people.
 "
         />
-        <meta property="og:image" content="logo/logo.png" />
+        <meta property="og:image" content="/logo/logo.png" />
       </Head>
       {/* <NextNProgress color="#F9D423" startPosition={0.4} height={3} /> */}
 

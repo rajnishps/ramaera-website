@@ -29,17 +29,15 @@ const index = () => {
               {" "}
               <div>
                 {" "}
-                <img src="/content/icon (2).png" />
+                <img src="/content/mailIcon.png" />
                 <b>Mail us</b>{" "}
               </div>
               <p>suport@gmail.com</p>
             </HeaderIcon1>
             <HeaderIcon2>
-              {" "}
               <div>
-                {" "}
-                <img src="/content/icon (1).png" /> <b>Contact us</b>
-              </div>{" "}
+                <img src="/content/phoneIcon.png" /> <b>Contact us</b>
+              </div>
               <p>01199936737</p>
             </HeaderIcon2>
           </HeaderIcon>
