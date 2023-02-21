@@ -32,24 +32,8 @@ export const Left1 = styled.div`
   @media (max-width: 600px) {
     border-right: none;
   }
-<<<<<<< HEAD
-`;
+`
 
-=======
-`
-export const LeftHead = styled.h3`
-  font-family: "Zilap Orion Personal Use";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 50px;
-  text-align: left;
-  color: #ffffff;
-  border-bottom: 3px solid #fafaf8;
-  margin-top: 20px;
-  margin-right: 50px;
-`
->>>>>>> beta
 export const LeftMenu = styled.div`
   display: flex;
   flex-direction: column;
@@ -101,29 +85,7 @@ export const ImgBg = styled.div`
 
     border-radius: 0px 0px 20px 20px;
   }
-<<<<<<< HEAD
-`;
-=======
 `
-export const Heading = styled.h2`
-  font-family: "Zilap Orion Personal Use";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 37px;
-  line-height: 117%;
-  background: linear-gradient(90deg, #e65c00 0%, #f9d423 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  opacity: 0.99;
-  text-align: center;
-  text-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
-  @media (max-width: 600px) {
-    font-size: 1rem;
-  }
-`
->>>>>>> beta
 
 export const ReverseText = styled.img`
   width: 300px;
@@ -145,11 +107,7 @@ export const Info = styled.div`
     justify-content: center;
     margin: 0px auto;
   }
-<<<<<<< HEAD
-`;
-=======
 `
->>>>>>> beta
 export const InfoContainer = styled.div`
   display: flex;
   margin-bottom: 20px;
@@ -159,11 +117,7 @@ export const InfoContainer = styled.div`
     justify-content: center;
     align-items: center;
   }
-<<<<<<< HEAD
-`;
-=======
 `
->>>>>>> beta
 export const InfoHead = styled.h2`
   color: white;
   text-align: center;

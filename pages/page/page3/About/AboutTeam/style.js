@@ -82,13 +82,9 @@ export const Dots = styled.img`
     bottom: -2%;
     left: 4%;
   }
-<<<<<<< HEAD
-`;
-=======
 `
 const StyleImage = () => {
   return <div>StyleImage</div>
 }
 
 export default StyleImage
->>>>>>> beta

@@ -53,11 +53,7 @@ export const Img = styled.img`
     width: 50%;
     height: 50%;
   }
-<<<<<<< HEAD
-`;
-=======
 `
->>>>>>> beta
 export const InnovationLeft = styled.div`
   width: 40%;
   display: flex;
@@ -76,11 +72,7 @@ export const InnoParaContainer = styled.div`
     width: 100%;
     margin-bottom: 20px;
   }
-<<<<<<< HEAD
-`;
-=======
 `
->>>>>>> beta
 export const InnovatinRight = styled.div`
   width: 50%;
   display: flex;
@@ -97,20 +89,8 @@ export const Arrow = styled.img`
   z-index: -10;
   @media (max-width: 600px) {
     width: 40px;
-<<<<<<< HEAD
     top: 160%;
     left: -20%;
     display: none;
   }
-`;
-=======
-    top: 90%;
-    left: -20%;
-  }
 `
-const StyleImage = () => {
-  return <div>StyleImage</div>
-}
-
-export default StyleImage
->>>>>>> beta

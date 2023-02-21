@@ -18,11 +18,7 @@ export const BoxContainer = styled.div`
     margin: 0px auto;
     flex-direction: column;
   }
-<<<<<<< HEAD
-`;
-=======
 `
->>>>>>> beta
 
 export const Box = styled.div`
   width: 390px;
@@ -50,14 +46,9 @@ export const Box = styled.div`
     height: 60%;
     margin: 20px auto;
     padding-top: 20px;
-<<<<<<< HEAD
     border: 2px solid white;
   }
-`;
-=======
-  }
 `
->>>>>>> beta
 
 export const YellowDiv = styled.div`
   width: 55px;
@@ -68,14 +59,10 @@ export const YellowDiv = styled.div`
   ${Box}:hover & {
     background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
   }
-<<<<<<< HEAD
   @media (max-width: 600px) {
     background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
   }
-`;
-=======
 `
->>>>>>> beta
 export const WhiteDiv = styled.div`
   width: 55px;
   height: 55px;
@@ -114,14 +101,11 @@ export const Head = styled.p`
     text-fill-color: transparent;
   }
   @media (max-width: 600px) {
-<<<<<<< HEAD
     background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     text-fill-color: transparent;
-=======
->>>>>>> beta
     font-size: 1rem;
   }
 `
