@@ -24,7 +24,7 @@ export const VisionBG = styled.div`
   margin: auto;
 `;
 export const VisionHead = styled.h1`
-      font-family: "personal" 
+  font-family: "personal";
 
   font-style: normal;
   font-weight: 400;
@@ -37,7 +37,7 @@ export const VisionHead = styled.h1`
   text-fill-color: transparent;
   text-align: center;
   padding-top: 70px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 2rem;
   }
 `;

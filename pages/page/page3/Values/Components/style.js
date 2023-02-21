@@ -26,7 +26,7 @@ export const InnovationDiv = styled.div`
 `;
 
 export const InnovationHead = styled.div`
-      font-family: "personal" 
+  font-family: "personal";
 
   font-style: normal;
   font-weight: 400;
@@ -39,7 +39,7 @@ export const InnovationHead = styled.div`
   text-fill-color: transparent;
   margin: 2rem;
   margin-bottom: 0;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 2rem;
     margin: 20px auto;
   }

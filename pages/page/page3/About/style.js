@@ -39,7 +39,7 @@ export const TrendingRight = styled.div`
   }
 `;
 export const TrendingHead = styled.h2`
-      font-family: "personal" 
+  font-family: "personal";
 
   font-style: normal;
   font-weight: 400;
@@ -54,7 +54,7 @@ export const TrendingHead = styled.h2`
   padding-bottom: 15px;
   border-bottom: 4px solid white;
   width: 235px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 30px;
     width: 190px;
     margin: 20px auto;

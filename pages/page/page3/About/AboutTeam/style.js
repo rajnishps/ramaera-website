@@ -57,10 +57,10 @@ export const RightTeam = styled.div`
 export const RightHead = styled.h3`
   color: white;
   margin-top: 10px;
-      font-family: "personal" 
+  font-family: "personal";
 
   font-size: 1rem;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 90%;
   }
 `;

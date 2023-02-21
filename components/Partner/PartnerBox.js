@@ -10,7 +10,7 @@ const Box = styled.div`
   }
 `;
 const BoxHead = styled.h2`
-      font-family: "personal" 
+  font-family: "personal";
 
   font-style: normal;
   font-weight: 400;
@@ -21,7 +21,7 @@ const BoxHead = styled.h2`
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 1rem;
     line-height: 25px;
   }
