@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Text from '../../../../components/Text/Text'
 import Analytics from './Analytics'
 const ArticlesContainer = styled.div`
     width: 80%;
@@ -23,7 +24,24 @@ margin-left: 30px;
 const Articles = () => {
   return (
     <ArticlesContainer>
-        <ArticlesHead>Latest Articles</ArticlesHead>
+       <Text
+            Text="Latest Articles"
+            lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
+            font
+            size="25px"
+            lh="2px"
+            width="20rem"
+            mwidth="100%"
+            fw="500"
+            mlh="30px"
+            xmsize="6rem"
+            xssize="10vw"
+            msize="1.3rem"
+            mpadding="0"
+            mmargin=" 2rem 0 2rem 1rem"
+            m="1rem 0 0 0"
+          />
+        {/* <ArticlesHead>Latest Articles</ArticlesHead> */}
         <Analytics/>
         <Analytics/>
         <Analytics/>

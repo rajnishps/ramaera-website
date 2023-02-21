@@ -3,14 +3,6 @@ import React from "react";
 import {
   ValueContainer,
   ValParaContainer,
-  InnovationDiv,
-  InnovationLeft,
-  InnovationHead,
-  InnovatinRight,
-  InnoPara,
-  Img,
-  InnoParaContainer,
-  Arrow,
 } from "./Components/style";
 
 import Text from "../../../../components/Text/Text";
@@ -60,37 +52,6 @@ const Values = () => {
       />
       </div>
       </ValParaContainer>
-      {/* <InnovationDiv>
-        <InnovationLeft>
-          <InnovationHead>Innovation</InnovationHead>
-          <Img src={"/background/InnoGif.gif"}></Img>
-        </InnovationLeft>
-        <InnovatinRight>
-          <InnoParaContainer>
-          <Text
-        Text="INNOVATION Redefining excellence and the magnitude of Innovation
-        to realise the convenience today and tomorrow"
-        fw="500"
-        size="25px"
-        lh="40px"
-        width="27rem"
-        m="0rem 0 0 1rem"
-        xssize="18px"
-        mlh="20px"
-        msize="13px"
-        mwidth="50vw"
-        mta="center"
-        // align="center"
-      />
-
-            {/* <InnoPara>
-              INNOVATION Redefining excellence and the magnitude of Innovation
-              to realise the convenience today and tomorrow
-            </InnoPara> */}
-          {/* </InnoParaContainer>
-          <Arrow src={"/background/arrow.png"} /> */}
-      {/* //   </InnovatinRight> */}
-       {/* </InnovationDiv> */} 
        <Slider/>
     </ValueContainer>
   );

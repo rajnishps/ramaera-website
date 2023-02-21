@@ -90,8 +90,9 @@ export const Arrow = styled.img`
     z-index: -10;
     @media (max-width: 600px){
       width: 40px;
-      top: 90%;
+      top:160%;
       left: -20%;
+      display: none;
     }
     
 `

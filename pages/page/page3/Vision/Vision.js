@@ -8,7 +8,25 @@ const Vision = () => {
     <VisionBox>
       <VisionBG>
       <div data-aos="zoom-in">
-        <VisionHead>ramaera vision</VisionHead>
+      <Text
+            Text="ramaera vision"
+            lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
+            font
+            size="2.5rem"
+            lh="90px"
+            width="100%"
+            mwidth="100%"
+            fw="500"
+            mlh="50px"
+            align="center"
+            xmsize="6rem"
+            xssize="10vw"
+            msize="1.7rem"
+            mpadding="4rem 0 0 0 "
+            padding="4rem 0 0 0"
+            mmargin="0 0 0 0"
+          />
+        {/* <VisionHead>ramaera vision</VisionHead> */}
         </div>
         <div data-aos="fade-right">
         <Text

@@ -13,13 +13,12 @@ export const BoxContainer = styled.div`
   background-repeat: no-repeat;
   display: flex;
   justify-content: space-around;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 95%;
     margin: 0px auto;
     flex-direction: column;
   }
 `;
-
 
 export const Box = styled.div`
   width: 390px;
@@ -42,14 +41,13 @@ export const Box = styled.div`
     border: 2px solid white;
   }
 
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 80%;
-      height: 60%;
-      margin: 20px auto;
-      padding-top:20px;
+    height: 60%;
+    margin: 20px auto;
+    padding-top: 20px;
   }
 `;
-
 
 export const YellowDiv = styled.div`
   width: 55px;
@@ -63,7 +61,7 @@ export const YellowDiv = styled.div`
 `;
 export const WhiteDiv = styled.div`
   width: 55px;
-height: 55px;
+  height: 55px;
   background-image: url("/background/white.png");
   border-radius: 15px;
   background-size: cover;
@@ -77,7 +75,7 @@ height: 55px;
 `;
 
 export const Head = styled.p`
-  font-family: "Zilap Orion Personal Use";
+  font-family: "personal";
   font-style: normal;
   font-weight: 400;
   font-size: 1.3rem;
@@ -98,7 +96,7 @@ export const Head = styled.p`
     background-clip: text;
     text-fill-color: transparent;
   }
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 1rem;
   }
 `;
@@ -125,7 +123,7 @@ export const Para = styled.p`
     background-clip: text;
     text-fill-color: transparent;
   }
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 1rem;
     line-height: 25px;
   }

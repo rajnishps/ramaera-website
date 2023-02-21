@@ -16,7 +16,7 @@ const TeamBoxContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     flex-direction: column;
   }
 `;
@@ -24,7 +24,7 @@ const AboutTeam = () => {
   return (
     <>
       <TeamContainer>
-      <Text
+        <Text
           Text="About the Ramaera Team"
           lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
           font
@@ -54,17 +54,74 @@ const AboutTeam = () => {
             </ParaBox>
           </LeftTeam>
           <RightTeam>
-            <RightHead>Transparency</RightHead>
+            <Text
+              Text="TRANSPARENCY"
+              lg="white"
+              font
+              size="20px"
+              lh="0px"
+              width="90%"
+              mwidth="100%"
+              fw="500"
+              mlh="50px"
+              align="left"
+              m="0 0 0 0"
+              padding="1.5vw 1vw 1.2vw 0"
+              xmsize="6rem"
+              xssize="10vw"
+              msize="1.2rem"
+              mpadding="0"
+              mmargin=" 0 0 0rem 0"
+            />
+            {/* <RightHead>Transparency</RightHead> */}
             <RightPara>
               Accountability: The Ramaera team is am epitome of commitment ,
               preservence and dedication towards their work.
             </RightPara>
-            <RightHead>Accountability</RightHead>
+            <Text
+              Text="Accountability"
+              lg="white"
+              font
+              size="20px"
+              lh="0px"
+              width="90%"
+              mwidth="100%"
+              fw="500"
+              mlh="50px"
+              align="left"
+              m="0 0 0 0"
+              padding="1.5vw 1vw 1.2vw 0"
+              xmsize="6rem"
+              xssize="10vw"
+              msize="1.2rem"
+              mpadding="0"
+              mmargin=" 0 0 0rem 0"
+            />
+            {/* <RightHead>Accountability</RightHead> */}
             <RightPara>
               Our team members adhere to transparency to maintain cooperation
               and smooth functioning.
             </RightPara>
-            <RightHead>Empowerment</RightHead>
+            <Text
+              Text="Empowerment"
+              lg="white"
+              font
+              size="20px"
+              lh="0px"
+              width="90%"
+              mwidth="100%"
+              fw="500"
+              mlh="50px"
+              align="left"
+              
+              padding="1.5vw 1vw 1.2vw 0"
+              xmsize="6rem"
+              xssize="10vw"
+              msize="1.2rem"
+              mpadding="0"
+              mmargin=" 0 0 0rem 0"
+            />
+            {/* <RightHead>Empowerment</RightHead> */}
             <RightPara>
               Ramaera team is dedciated to the empowerment of the Ramaera Family
               and aims at continuous improvements.

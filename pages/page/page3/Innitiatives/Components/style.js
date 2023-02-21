@@ -33,18 +33,7 @@ export const Left1 = styled.div`
     border-right: none;
   }
 `;
-export const LeftHead = styled.h3`
-  font-family: "Zilap Orion Personal Use";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 50px;
-  text-align: left;
-  color: #ffffff;
-  border-bottom: 3px solid #fafaf8;
-  margin-top: 20px;
-  margin-right: 50px;
-`;
+
 export const LeftMenu = styled.div`
   display: flex;
   flex-direction: column;
@@ -95,24 +84,6 @@ export const ImgBg = styled.div`
     margin: 0px auto;
 
     border-radius: 0px 0px 20px 20px;
-  }
-`;
-export const Heading = styled.h2`
-  font-family: "Zilap Orion Personal Use";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 37px;
-  line-height: 117%;
-  background: linear-gradient(90deg, #e65c00 0%, #f9d423 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  opacity: 0.99;
-  text-align: center;
-  text-shadow: 0px 20px 20px rgba(0, 0, 0, 0.5);
-  @media (max-width: 600px) {
-    font-size: 1rem;
   }
 `;
 
