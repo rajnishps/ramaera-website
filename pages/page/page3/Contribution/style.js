@@ -46,6 +46,7 @@ export const Box = styled.div`
     height: 60%;
     margin: 20px auto;
     padding-top: 20px;
+    border: 2px solid white;
   }
 `;
 
@@ -56,6 +57,9 @@ export const YellowDiv = styled.div`
   border-radius: 15px;
 
   ${Box}:hover & {
+    background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
+  }
+  @media (max-width: 600px){
     background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
   }
 `;
@@ -97,6 +101,11 @@ export const Head = styled.p`
     text-fill-color: transparent;
   }
   @media (max-width: 600px) {
+    background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
     font-size: 1rem;
   }
 `;
@@ -126,6 +135,11 @@ export const Para = styled.p`
   @media (max-width: 600px) {
     font-size: 1rem;
     line-height: 25px;
+    background: linear-gradient(90deg, #fdfdfd 0%, #fefdfd 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
   }
 `;
 export const Icon = styled.img`
