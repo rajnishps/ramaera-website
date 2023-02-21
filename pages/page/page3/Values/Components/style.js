@@ -94,3 +94,9 @@ export const Arrow = styled.img`
     display: none;
   }
 `
+
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

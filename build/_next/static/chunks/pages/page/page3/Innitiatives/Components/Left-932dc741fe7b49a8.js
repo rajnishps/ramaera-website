@@ -1,1 +1,0 @@
-(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2728],{6299:function(n,_,e){(window.__NEXT_P=window.__NEXT_P||[]).push(["/page/page3/Innitiatives/Components/Left",function(){return e(1905)}])}},function(n){n.O(0,[1228,3698,9774,2888,179],function(){return n(n.s=6299)}),_N_E=n.O()}]);

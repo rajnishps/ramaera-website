@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 const NewsContainer = styled.div`
   width: 95%;
   margin: 20px auto;
@@ -8,7 +8,7 @@ const NewsContainer = styled.div`
     width: 90%;
     margin: 0px auto;
   }
-`;
+`
 const NewsBox = styled.div`
   display: flex;
   justify-content: space-between;
@@ -18,11 +18,11 @@ const NewsBox = styled.div`
     margin-top: 20px;
     width: 95%;
   }
-`;
+`
 const NewsIcon = styled.img`
   width: 20px;
   height: 20px;
-`;
+`
 const NewsHead = styled.p`
   width: 90%;
   margin-left: 20px;
@@ -42,11 +42,11 @@ const NewsHead = styled.p`
     margin: 0px auto;
     text-align: center;
   }
-`;
+`
 const NewsImg = styled.img`
   width: 180px;
   height: 100px;
-  background-image: url(${props=>props.bg});
+  background-image: url(${(props) => props.bg});
   background-position: center;
   background-size: cover;
   border: 1px solid white;
@@ -54,7 +54,7 @@ const NewsImg = styled.img`
   @media (max-width: 600px) {
     margin: 0px auto;
   }
-`;
+`
 const NewsParaContainer = styled.div`
   width: 90%;
   display: flex;
@@ -63,14 +63,14 @@ const NewsParaContainer = styled.div`
   @media (max-width: 600px) {
     justify-content: space-between;
   }
-`;
+`
 const Newspara = styled.p`
   color: white;
   font-size: 0.6rem;
   @media (max-width: 600px) {
     margin-top: 10px;
   }
-`;
+`
 const NewsLater = styled.img`
   width: 15px;
   @media (max-width: 600px) {
@@ -78,7 +78,7 @@ const NewsLater = styled.img`
     margin-left: 5px;
     margin-top: 10px;
   }
-`;
+`
 const Border = styled.div`
   width: 420px;
   height: 2px;
@@ -91,17 +91,15 @@ const Border = styled.div`
     margin-bottom: 20px;
     width: 250px;
   }
-`;
-const News = ({item}) => {
+`
+const News = ({ item = [] }) => {
   return (
     <NewsContainer>
       <NewsBox>
         <div>
           <div style={{ display: "flex", alignItems: "center" }}>
             {/* <NewsIcon src={"/background/check.png"} /> */}
-            <NewsHead>
-             {item.headline}
-            </NewsHead>
+            <NewsHead>{item.headline}</NewsHead>
           </div>
           <NewsParaContainer>
             <Newspara>Dec 30 2021</Newspara>
@@ -114,11 +112,11 @@ const News = ({item}) => {
           <Border />
         </div>
         <div>
-          <NewsImg bg={item.img}/>
+          <NewsImg bg={item.img} />
         </div>
       </NewsBox>
     </NewsContainer>
-  );
-};
+  )
+}
 
-export default News;
+export default News
