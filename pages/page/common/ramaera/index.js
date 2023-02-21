@@ -97,8 +97,7 @@ const index = ({ imageIndex }) => {
                 align="center"
                 xmsize="6rem"
                 xssize="10vw"
-                msize="3.8rem"
-                mpadding="0"
+                msize="13vmin"
                 mmargin=" 0 0 2rem 0"
               />
 

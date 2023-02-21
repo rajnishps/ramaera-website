@@ -16,6 +16,12 @@ const StyleTextContainer = styled.div`
     margin: 0 0 -30vh 0;
   }
 `
+const SpanColor = styled.div`
+  color: #eacda3;
+  @media only screen and (max-width: 768px) {
+    margin-right: 15%;
+  }
+`
 
 const TextContainer = () => {
   return (
@@ -24,7 +30,7 @@ const TextContainer = () => {
         <div>
           <CustomText>Packaging industry for</CustomText>
           <CustomText>
-            <span style={{ color: "#EACDA3" }}> business growth</span>
+            <SpanColor>business growth</SpanColor>
           </CustomText>
         </div>
         <svg

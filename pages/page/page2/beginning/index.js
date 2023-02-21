@@ -24,9 +24,9 @@ const index = () => {
             xmsize="4rem"
             xssize="4rem"
             msize="3.2rem"
-            mwidth="100vw"
+            mwidth="100%"
             mpadding="0"
-            mmargin=" 4rem 0 2rem 0"
+            mmargin=" 2rem 0 2rem 0"
           />
           <Text
             Text="has begun with the primary motive of nation orientation and strengthening the vision of a sustainable and prosperous nation. With the idea of encompassing and emboldening our presence in industrial sectors such as FMCG, Hotels, Packaging, Agriculture & IT Businesses. We are consistent in serving you the best with due honesty and world class standards."
@@ -40,11 +40,11 @@ const index = () => {
             xmsize="2.2rem"
             xssize="2rem"
             msize="1.2rem"
-            mta="left"
+            mta="center"
             padding=" 0 10vw 0 2vw"
-            mwidth="100vw"
-            mpadding="0"
-            mmargin=" 0 0 2rem 2rem"
+            mwidth="90%"
+            mpadding="5vw"
+            mmargin=" 2rem"
           />
         </div>
 
