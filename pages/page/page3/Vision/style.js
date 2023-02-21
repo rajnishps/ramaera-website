@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const VisionBox = styled.div`
   background: url("/background/Rectangle.svg");
@@ -12,7 +12,7 @@ export const VisionBox = styled.div`
     width: 95%;
     margin: 0px auto;
   }
-`;
+`
 export const VisionBG = styled.div`
   width: 95%;
   margin: 50px auto;
@@ -22,7 +22,7 @@ export const VisionBG = styled.div`
   background-size: contain;
   background-repeat: no-repeat;
   margin: auto;
-`;
+`
 export const VisionHead = styled.h1`
   font-family: "personal";
 
@@ -40,4 +40,10 @@ export const VisionHead = styled.h1`
   @media (max-width: 600px) {
     font-size: 2rem;
   }
-`;
+`
+
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

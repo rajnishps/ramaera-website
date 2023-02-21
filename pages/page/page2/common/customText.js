@@ -24,3 +24,8 @@ export const CustomText = styled.p`
 export const ParaWrapper = styled.div`
   margin: ${(props) => (props.margin ? props.margin : "2rem 0")};
 `
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

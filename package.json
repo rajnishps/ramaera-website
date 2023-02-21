@@ -6,7 +6,7 @@
     "open": "yarn run open-browser && next dev",
     "dev": "next dev",
     "open-browser": "open http://localhost:3000",
-    "build": "next build",
+    "build": "next build && next export -o build",
     "start": "next start",
     "lint": "next lint"
   },
@@ -30,7 +30,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-spring": "^9.6.1",
     "react-spring-3d-carousel": "1.2.1",
-    "react-spring-carousel": "^2.0.19",
+    "simple-react-lightbox": "^3.6.9-0",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {

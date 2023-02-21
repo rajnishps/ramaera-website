@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 export const TrendingContainer = styled.div`
   width: 80%;
   margin: 50px auto;
@@ -7,7 +7,7 @@ export const TrendingContainer = styled.div`
   @media (max-width: 600px) {
     flex-direction: column;
   }
-`;
+`
 export const TrendingLeft = styled.div`
   width: 60%;
   height: 90vh;
@@ -26,7 +26,7 @@ export const TrendingLeft = styled.div`
     width: 100%;
     background: none;
   }
-`;
+`
 export const TrendingRight = styled.div`
   width: 30%;
   border: 1px solid white;
@@ -37,7 +37,7 @@ export const TrendingRight = styled.div`
     margin-top: 20px;
     height: 120vh;
   }
-`;
+`
 export const TrendingHead = styled.h2`
   font-family: "personal";
 
@@ -59,4 +59,10 @@ export const TrendingHead = styled.h2`
     width: 190px;
     margin: 20px auto;
   }
-`;
+`
+
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

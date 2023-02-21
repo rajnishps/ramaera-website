@@ -6,6 +6,8 @@ import Button from "../../../../components/Button/Button"
 import SocialMedia from "./components/SocialMedia/SocialMedia"
 import MobileSocials from "./components/MobileSocials/MobileSocials"
 import MobileTab from "./components/MobileTab/MobileTab"
+import { Fragment } from "react"
+
 import {
   images,
   text,
@@ -55,7 +57,7 @@ const ImageHide = styled.div`
 
 const pageNo = [images, images2, images3, images4]
 const textNo = [text, text2, text3, text4]
-const index = ({ imageIndex }) => {
+const index = ({ imageIndex = 0 }) => {
   const [currentIndex, setCurrentIndex] = useState(0)
   const [imageNo, setImageNo] = useState(pageNo[imageIndex])
   const [contextNo, setContextNo] = useState(textNo[imageIndex])
@@ -67,13 +69,13 @@ const index = ({ imageIndex }) => {
       } else {
         setCurrentIndex(currentIndex + 1)
       }
-    }, 2200)
+    }, 5000)
 
     return () => clearInterval(intervalId)
   }, [imageNo[currentIndex]])
 
   return (
-    <>
+    <Fragment>
       <PageLayout bgColor="#fff">
         <div>
           <Image
@@ -137,7 +139,7 @@ const index = ({ imageIndex }) => {
       <TabsWrapper>
         <MobileTab currentIndex={currentIndex} />
       </TabsWrapper>
-    </>
+    </Fragment>
   )
 }
 

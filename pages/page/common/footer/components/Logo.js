@@ -1,3 +1,4 @@
+import Link from "next/link"
 import styled from "styled-components"
 import Text from "../../../../../components/Text/Text"
 
@@ -17,16 +18,18 @@ const Image = styled.img`
 `
 const Logo = () => {
   return (
-    <Div>
-      <Image src="/logo/logo.png" />
-      <Text
-        Text="Ramaera Industries"
-        lg="linear-gradient(90deg, #E65C00 0%, #F9D423 100%)"
-        font
-        size="16px"
-        align="center"
-      />
-    </Div>
+    <Link href="/">
+      <Div>
+        <Image src="/logo/logo.png" />
+        <Text
+          Text="Ramaera Industries"
+          lg="linear-gradient(90deg, #E65C00 0%, #F9D423 100%)"
+          font
+          size="16px"
+          align="center"
+        />
+      </Div>
+    </Link>
   )
 }
 
