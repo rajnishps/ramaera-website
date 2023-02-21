@@ -296,26 +296,23 @@ a {
   .none {
     display: none;
   }
-  .fixed-position {
-    position: fixed;
-  }
   .list {
     display: none;
   }
   /* .Logo{
-      width: 37px;
-      height: 50px;
-      transition:  0.5s linear;
-      
+    width: 37px;
+    height: 50px;
+    transition:  0.5s linear;
+    
   }
-
+  
   .LogoActive{
     width: 37px;
     height: 50px;
     transition:  0.5s linear;
-   
-} */
-
+    
+  } */
+  
   .RightContainer {
     background: none;
     backdrop-filter: none;
@@ -329,7 +326,7 @@ a {
     transition: 0.5s linear;
     margin: 0 0 0 2vw;
   }
-
+  
   .LogoActive {
     transition: 0.5s linear;
     margin: 0;
@@ -414,9 +411,12 @@ a {
   padding: 20px;
 }
 
-.activeLine{
+.activeLine {
   color: blueviolet;
   font-weight: bold;
-	border-bottom: 2px solid white;
+  border-bottom: 2px solid white;
   margin-bottom: -12px;
+}
+.fixed-position {
+  position: fixed;
 }
