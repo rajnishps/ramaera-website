@@ -5,6 +5,24 @@ import { Burger, Menu } from "./components"
 import FocusLock from "react-focus-lock"
 import Link from "next/link"
 
+const ImageHolder = styled.img`
+  transform: scale(90%);
+  @media (max-width: 1000px) {
+    transform: scale(85%);
+  }
+  @media (max-width: 768px) {
+    transform: scale(80%);
+  }
+  @media (max-width: 600px) {
+    transform: scale(70%);
+  }
+  @media (max-width: 500px) {
+    transform: scale(60%);
+  }
+  @media (max-width: 400px) {
+    transform: scale(50%);
+  }
+`
 const Link2 = styled.div`
   display: flex;
   margin: 0;
@@ -52,7 +70,7 @@ const Navbar = ({ selectedTab }) => {
     <nav className="nav">
       <div>
         <Link href="/" spy={true} smooth={true}>
-          <img loading="lazy" src={logo} alt="Logo" className="Logo" />
+          <ImageHolder loading="lazy" src={logo} alt="Logo" className="Logo" />
         </Link>
       </div>
       <div className="RightContainer">
