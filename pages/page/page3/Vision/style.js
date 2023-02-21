@@ -7,10 +7,10 @@ export const VisionBox = styled.div`
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     height: 250vh;
     width: 95%;
-    margin:0px auto;
+    margin: 0px auto;
   }
 `;
 export const VisionBG = styled.div`
@@ -24,7 +24,8 @@ export const VisionBG = styled.div`
   margin: auto;
 `;
 export const VisionHead = styled.h1`
-  font-family: "Zilap Orion Personal Use";
+      font-family: "personal" 
+
   font-style: normal;
   font-weight: 400;
   font-size: 2.5rem;

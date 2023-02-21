@@ -6,9 +6,8 @@ export const ValueContainer = styled.div`
 export const ValParaContainer = styled.div`
   width: 100%;
   margin: 20px auto;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 80%;
-    
   }
 `;
 
@@ -19,7 +18,7 @@ export const InnovationDiv = styled.div`
   border-radius: 20px;
   display: flex;
   height: 80vh;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     flex-direction: column;
     align-items: center;
     height: 100vh;
@@ -27,7 +26,8 @@ export const InnovationDiv = styled.div`
 `;
 
 export const InnovationHead = styled.div`
-  font-family: "Zilap Orion Personal Use";
+      font-family: "personal" 
+
   font-style: normal;
   font-weight: 400;
   font-size: 50px;
@@ -49,11 +49,10 @@ export const Img = styled.img`
   width: 100px;
   margin: 20px;
   object-fit: contain;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 50%;
     height: 50%;
   }
-
 `;
 export const InnovationLeft = styled.div`
   width: 40%;
@@ -62,18 +61,18 @@ export const InnovationLeft = styled.div`
   justify-content: center;
   align-items: center;
   padding-left: 5%;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 100%;
   }
 `;
 export const InnoParaContainer = styled.div`
-    width: 50%;
-    border-left: 2px solid white;
-    @media (max-width: 600px){
-      width: 100%;
-      margin-bottom: 20px;
-    }
-`
+  width: 50%;
+  border-left: 2px solid white;
+  @media (max-width: 600px) {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+`;
 export const InnovatinRight = styled.div`
   width: 50%;
   display: flex;
@@ -83,16 +82,15 @@ export const InnovatinRight = styled.div`
 `;
 
 export const Arrow = styled.img`
-    width: 70px;
-    position: absolute;
-    top: -30px;
-    right: 40px;
-    z-index: -10;
-    @media (max-width: 600px){
-      width: 40px;
-      top:160%;
-      left: -20%;
-      display: none;
-    }
-    
-`
+  width: 70px;
+  position: absolute;
+  top: -30px;
+  right: 40px;
+  z-index: -10;
+  @media (max-width: 600px) {
+    width: 40px;
+    top: 160%;
+    left: -20%;
+    display: none;
+  }
+`;

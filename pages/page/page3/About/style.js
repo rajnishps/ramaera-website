@@ -4,7 +4,7 @@ export const TrendingContainer = styled.div`
   margin: 50px auto;
   display: flex;
   justify-content: space-between;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     flex-direction: column;
   }
 `;
@@ -14,10 +14,15 @@ export const TrendingLeft = styled.div`
   border: 1px solid white;
   border-radius: 20px;
   overflow: scroll;
-  background:linear-gradient(180.93deg, #222222 -91.95%, rgba(65, 65, 65, 0) 99.2%),url("/background/Left Column (1).png");
+  background: linear-gradient(
+      180.93deg,
+      #222222 -91.95%,
+      rgba(65, 65, 65, 0) 99.2%
+    ),
+    url("/background/Left Column (1).png");
   background-position: right;
   background-repeat: no-repeat;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 100%;
     background: none;
   }
@@ -27,14 +32,15 @@ export const TrendingRight = styled.div`
   border: 1px solid white;
   height: 90vh;
   border-radius: 20px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 100%;
     margin-top: 20px;
     height: 120vh;
   }
 `;
 export const TrendingHead = styled.h2`
-  font-family: "Zilap Orion Personal Use";
+      font-family: "personal" 
+
   font-style: normal;
   font-weight: 400;
   font-size: 38px;

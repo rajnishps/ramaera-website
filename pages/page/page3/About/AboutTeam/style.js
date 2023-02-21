@@ -12,14 +12,14 @@ export const TeamContainer = styled.div`
   border-radius: 20px;
   position: relative;
   padding: 3rem;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 90%;
   }
 `;
 
 export const LeftTeam = styled.div`
   width: 50%;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 100%;
   }
 `;
@@ -33,7 +33,7 @@ export const ParaBox = styled.div`
   /* align-items: center; */
   margin-top: 60px;
   border-left: 4px solid white;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 90%;
   }
 `;
@@ -43,21 +43,22 @@ export const LeftPara = styled.p`
   font-weight: 600;
   line-height: 25px;
   margin-left: 20px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 0.9rem;
   }
 `;
 export const RightTeam = styled.div`
   width: 35%;
   margin-top: 40px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 90%;
   }
 `;
 export const RightHead = styled.h3`
   color: white;
   margin-top: 10px;
-  font-family: "Zilap Orion Personal Use";
+      font-family: "personal" 
+
   font-size: 1rem;
   @media (max-width: 600px){
     font-size: 90%;
@@ -66,19 +67,19 @@ export const RightHead = styled.h3`
 export const RightPara = styled.p`
   color: white;
   font-size: 0.8rem;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     line-height: 20px;
   }
 `;
 export const Dots = styled.img`
-    position: absolute;
-    width: 90px;
-    bottom: -10%;
-    left: 3%;
-    z-index: -1;
-    @media (max-width: 600px){
-      width: 50px;
-      bottom: -2%;
-      left: 4%;
-    }
-`
+  position: absolute;
+  width: 90px;
+  bottom: -10%;
+  left: 3%;
+  z-index: -1;
+  @media (max-width: 600px) {
+    width: 50px;
+    bottom: -2%;
+    left: 4%;
+  }
+`;

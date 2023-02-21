@@ -4,13 +4,14 @@ import styled from "styled-components";
 const Box = styled.div`
   width: 27%;
   height: 25vh;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 80%;
     margin: 15% auto;
   }
 `;
 const BoxHead = styled.h2`
-  font-family: "Zilap Orion Personal Use";
+      font-family: "personal" 
+
   font-style: normal;
   font-weight: 400;
   font-size: 1.3rem;
@@ -37,7 +38,7 @@ const BoxPara = styled.p`
   letter-spacing: 0.04em;
 
   color: #ffffff;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 0.7rem;
     line-height: 20px;
   }
