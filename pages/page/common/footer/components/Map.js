@@ -6,7 +6,7 @@ const MapContainer = styled.a`
   align-items: center;
   flex-direction: column;
   width: 20vw;
-  margin-left: 2rem;
+  /*   margin-left: 2rem;*/
   margin-bottom: 100px;
 `
 const Image = styled.iframe`
