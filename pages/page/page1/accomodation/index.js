@@ -27,7 +27,7 @@ const Buy = () => {
             <img
               loading="lazy"
               src="/content/LineY.png"
-              alt=""
+              alt="Line"
               style={{ width: "100%", height: "10rem" }}
             />
           </Line>
@@ -44,7 +44,7 @@ const Buy = () => {
             <img
               loading="lazy"
               src="/content/LineY.png"
-              alt=""
+              alt="line"
               style={{ width: "100%", height: "10rem" }}
             />
           </Line>
@@ -58,7 +58,7 @@ const Buy = () => {
             <img
               loading="lazy"
               src="/content/hotel.gif"
-              alt=""
+              alt="line"
               style={{
                 position: "absolute",
                 top: "-200px",

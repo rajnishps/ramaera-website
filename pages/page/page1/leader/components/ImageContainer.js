@@ -120,7 +120,7 @@ const Imagecontainer = () => {
         >
           <img
             src="/content/p.png"
-            alt=""
+            alt="line"
             style={{ width: "100%", height: "100%" }}
           />
         </MainImg>
@@ -130,7 +130,7 @@ const Imagecontainer = () => {
         >
           <img
             src="/content/t.png"
-            alt=""
+            alt="line"
             style={{ width: "100%", height: "100%" }}
           />
         </TeamImg>

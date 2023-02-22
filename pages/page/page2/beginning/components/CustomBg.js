@@ -54,7 +54,11 @@ const CustomBg = () => {
             data-aos-anchor-placement="top-bottom"
           >
             <div>
-              <AgriPos loading="lazy" src="/content/tech.gif" alt="" />
+              <AgriPos
+                loading="lazy"
+                src="/content/tech.gif"
+                alt="technology gif"
+              />
             </div>
           </div>
           <Txt>
@@ -87,7 +91,7 @@ const CustomBg = () => {
         }}
       >
         <PolyBg>
-          <Image src={"/background/p2poly.png"} alt="" />
+          <Image src={"/background/p2poly.png"} alt="polygon background" />
         </PolyBg>
       </div>
     </>

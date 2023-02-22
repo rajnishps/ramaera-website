@@ -105,9 +105,9 @@ const News = ({ item = [] }) => {
             <Newspara>Dec 30 2021</Newspara>
             <Newspara>Euro News</Newspara>
             <Newspara>4 min read</Newspara>
-            <NewsLater src="/background/smallbook.png" alt="" />
-            <NewsLater src="/background/share.png" alt="" />
-            <NewsLater src="/background/more.png" alt="" />
+            <NewsLater src="/background/smallbook.png" alt="small book" />
+            <NewsLater src="/background/share.png" alt="share it" />
+            <NewsLater src="/background/more.png" alt="learn more" />
           </NewsParaContainer>
           <Border />
         </div>

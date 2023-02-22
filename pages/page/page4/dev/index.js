@@ -24,6 +24,7 @@ const index = () => {
           src={"/content/right-c1.png"}
           layout="fill"
           objectFit="contain"
+          alt="right c1"
           objectPosition="center"
         />
       </div> */}

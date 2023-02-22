@@ -21,7 +21,7 @@ const Roadmap = () => {
         <img
           loading="lazy"
           src="/content/r.png"
-          alt=""
+          alt="line"
           styled={{ width: "100%", height: "3rem" }}
         />
         <Flex jc="space-between">
@@ -101,7 +101,7 @@ const Roadmap = () => {
         <img
           loading="lazy"
           src="/content/r.png"
-          alt=""
+          alt="line"
           styled={{ width: "100%", height: "3rem" }}
         />
         <Flex jc="space-between">

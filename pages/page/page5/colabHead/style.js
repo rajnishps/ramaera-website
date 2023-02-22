@@ -14,7 +14,7 @@ export const Heading = styled.div`
     width: 50%;
   }
 
-  h1 {
+  h2 {
     font-size: 4rem;
     font-family: personal;
     background: #ffb76b;

@@ -53,7 +53,10 @@ const index = () => {
         data-aos-anchor-placement="center-bottom"
       >
         <PolyBg>
-          <Image src={"/background/leftPoly.png"} alt="" />
+          <Image
+            src={"/background/leftPoly.png"}
+            alt="left polygon background"
+          />
         </PolyBg>
       </div>
     </PageLayout>

@@ -80,7 +80,7 @@ const candidate = ({ href, id, sub1, txt1, gif, sub2, txt2, txt3, number }) => {
                 msize="1rem"
               />
               <LeftContent>{txt1}</LeftContent>
-              <Image loading="lazy" src={gif} />
+              <Image loading="lazy" alt="gifs" src={gif} />
             </div>
           </LeftDiv>
           <RightDiv>

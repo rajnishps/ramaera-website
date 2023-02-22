@@ -108,7 +108,7 @@ const Review = ({ avatar, profileName, profileTitle, profileReview }) => {
       <BottomHalf>
         <Profile>
           <Avatar>
-            <Image src={avatar} height={110} width={110} />
+            <Image src={avatar} alt="profile photo" height={110} width={110} />
           </Avatar>
           <NameDiv>
             <Text

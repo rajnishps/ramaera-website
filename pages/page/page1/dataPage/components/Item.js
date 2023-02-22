@@ -18,7 +18,7 @@ const Item = (props) => {
       <img
         loading="lazy"
         src={props.img ? props.img : ""}
-        alt=""
+        alt={props.img}
         style={{ height: "4rem", width: "4.25rem" }}
       />
       <Heading

@@ -23,7 +23,7 @@ const index = () => {
           <img src="/content/Background.png" />
         </Main>
         <Container>
-          <h1>GET IN TOUCH TODAYS</h1>
+          <h2>GET IN TOUCH TODAYS</h2>
           <HeaderIcon>
             <HeaderIcon1>
               {" "}

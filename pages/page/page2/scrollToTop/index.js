@@ -27,7 +27,11 @@ const Output = () => {
     <>
       <PageWidth Left={"left"} width="1500px">
         <CustomHeight>
-          <Image onClick={scrollUp} src={"/content/toTop.png"} alt="" />{" "}
+          <Image
+            onClick={scrollUp}
+            src={"/content/toTop.png"}
+            alt="scroll up"
+          />{" "}
         </CustomHeight>
       </PageWidth>
     </>

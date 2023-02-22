@@ -71,7 +71,7 @@ const index = () => {
                     <img
                       style={{ marginRight: "100%" }}
                       src={"/content/quoteOne.png"}
-                      alt=""
+                      alt="open quote"
                       srcset=""
                     />{" "}
                     <br />
@@ -95,7 +95,7 @@ const index = () => {
                     <img
                       style={{ marginLeft: "100%" }}
                       src={"/content/quoteTwo.png"}
-                      alt=""
+                      alt="close quote"
                       srcset=""
                     />{" "}
                   </TextContainer>

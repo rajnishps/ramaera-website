@@ -23,6 +23,7 @@ const index = () => {
       >
         <Image
           src={"/content/left-c2.png"}
+          alt="left c2"
           layout="fill"
           objectFit="contain"
           objectPosition="center"

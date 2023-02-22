@@ -10,6 +10,7 @@ const index = () => (
     <div style={{ zIndex: "-2" }}>
       <Image
         src={factory}
+        alt="factory"
         layout="fill"
         objectFit="cover"
         objectPosition="center"
