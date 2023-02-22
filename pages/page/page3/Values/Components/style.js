@@ -25,26 +25,6 @@ export const InnovationDiv = styled.div`
   }
 `
 
-export const InnovationHead = styled.div`
-  font-family: "personal";
-
-  font-style: normal;
-  font-weight: 400;
-  font-size: 50px;
-  line-height: 60px;
-  background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  margin: 2rem;
-  margin-bottom: 0;
-  @media (max-width: 600px) {
-    font-size: 2rem;
-    margin: 20px auto;
-  }
-`
-
 export const Img = styled.img`
   width: 100px;
   margin: 20px;

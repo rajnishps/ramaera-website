@@ -102,10 +102,12 @@ const Textcontainer = () => {
           lh="60px"
           color="#FFF"
           fw="500"
+          mlh ="40px"
           padding=" 0 0 0 0 "
           xmsize="2rem"
           xssize="3vw"
           msize="1.8rem"
+          mwidth="100"
         />
       </ResHeading>
       <ResSub>

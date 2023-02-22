@@ -18,6 +18,7 @@ const Line = styled.div`
   }
 `
 
+
 const Buy = () => {
   return (
     <PageLayout>
