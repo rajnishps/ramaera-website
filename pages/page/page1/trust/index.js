@@ -335,7 +335,7 @@ const index = () => {
           >
             <BgRectangle />
             <Section>
-              <Dots src="/content/Dots.png" />
+              <Dots src="/content/Dots.png" alt="dots" />
               <Wrapper style={setSliderStyles()}>{renderSlides()}</Wrapper>
               {renderArrows()}
               <DotsContainer>{renderDots()}</DotsContainer>

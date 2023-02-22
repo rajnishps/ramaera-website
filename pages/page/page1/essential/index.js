@@ -50,6 +50,9 @@ const Buy = () => {
           data-aos-anchor-placement="top-bottom"
         >
           <Image>
+            {/* <video autoPlay loop muted>
+              <source src="/content/e-commerce.webm" type="video/webm" />
+            </video> */}
             <img
               loading="lazy"
               src="/content/e-commerce.gif"

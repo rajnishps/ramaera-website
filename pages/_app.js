@@ -6,7 +6,7 @@ import Loader from "../components/Loader/Loader"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import Head from "next/head"
-
+import { Html } from "next/document"
 export default function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(false)
 
@@ -42,7 +42,7 @@ export default function App({ Component, pageProps }) {
         <meta
           name="description"
           content="An Integrated multi-industrial approach oriented towards financial independence, customer focus and serving the best quality to the people.
-"
+          "
         />
         <meta property="og:image" content="/logo/logo.png" />
       </Head>

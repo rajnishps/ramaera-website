@@ -14,7 +14,7 @@ const index = () => {
           data-aos-duration="500"
           data-aos-anchor-placement="top-bottom"
         >
-          <img loading="lazy" src="/content/card.png" />
+          <img loading="lazy" src="/content/card.png" alt="card" />
         </div>
       </RotateImage>
       <FutureContainer>
