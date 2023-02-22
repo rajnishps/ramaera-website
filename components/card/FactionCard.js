@@ -103,7 +103,7 @@ const FactionCard = (props) => {
         <img
           loading="lazy"
           src={`${props.img ? props.img : ""}`}
-          alt=""
+          alt={props.img}
           style={{ width: "100%", height: "100%" }}
         />
       </Upper>
@@ -146,7 +146,7 @@ const FactionCard = (props) => {
             <img
               loading="lazy"
               src={wp}
-              alt=""
+              alt={wp}
               style={{
                 height: "1.25rem",
                 width: "1.25rem",

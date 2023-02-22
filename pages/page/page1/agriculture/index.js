@@ -30,14 +30,18 @@ const Buy = () => {
           }}
         >
           <Image>
-            <AgriPos loading="lazy" src="/content/agri.gif" alt="" />
+            <AgriPos
+              loading="lazy"
+              src="/content/agri.gif"
+              alt="agriculture gif"
+            />
           </Image>
         </div>
         <div style={{ width: "100%" }}>
           <img
             loading="lazy"
             src="/background/Line.png"
-            alt=""
+            alt="line"
             style={{ position: "absolute", width: "100%", height: "10rem" }}
           />
           <div
@@ -53,7 +57,7 @@ const Buy = () => {
           <img
             loading="lazy"
             src="/background/Line.png"
-            alt=""
+            alt="line"
             style={{ position: "absolute", width: "100%", height: "10rem" }}
           />
         </div>

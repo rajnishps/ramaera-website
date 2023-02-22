@@ -25,7 +25,7 @@ const TextContainer = () => {
         <img
           loading="lazy"
           src="/content/y.png"
-          alt=""
+          alt="line"
           style={{
             height: "6.75rem",
             width: "7rem",

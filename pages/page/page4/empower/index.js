@@ -9,6 +9,7 @@ const index = () => (
     <div style={{ zIndex: "-2" }}>
       <Image
         src={empower}
+        alt="empowering"
         layout="fill"
         objectFit="cover"
         objectPosition="center"

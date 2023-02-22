@@ -10,7 +10,7 @@ const Image = styled.img`
   }
 `
 const Circle = () => {
-  return <Image src="/content/promtCircle.png" alt="" />
+  return <Image src="/content/promtCircle.png" alt="circle background" />
 }
 
 export default Circle

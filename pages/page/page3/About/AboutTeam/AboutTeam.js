@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import Text from "../../../../../components/Text/Text";
-import Pillers from "./Pillers/Pillers";
+import React from "react"
+import styled from "styled-components"
+import Text from "../../../../../components/Text/Text"
+import Pillers from "./Pillers/Pillers"
 import {
   Dots,
   LeftPara,
@@ -11,7 +11,7 @@ import {
   RightPara,
   RightTeam,
   TeamContainer,
-} from "./style";
+} from "./style"
 const TeamBoxContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -19,7 +19,7 @@ const TeamBoxContainer = styled.div`
   @media (max-width: 600px) {
     flex-direction: column;
   }
-`;
+`
 const AboutTeam = () => {
   return (
     <>
@@ -113,7 +113,6 @@ const AboutTeam = () => {
               fw="500"
               mlh="50px"
               align="left"
-              
               padding="1.5vw 1vw 1.2vw 0"
               xmsize="6rem"
               xssize="10vw"
@@ -128,11 +127,11 @@ const AboutTeam = () => {
             </RightPara>
           </RightTeam>
         </TeamBoxContainer>
-        <Dots src="/background/Dots.png" alt="" width={"90px"} />
+        <Dots src="/background/Dots.png" alt="dots background" width={"90px"} />
       </TeamContainer>
       <Pillers />
     </>
-  );
-};
+  )
+}
 
-export default AboutTeam;
+export default AboutTeam

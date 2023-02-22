@@ -31,17 +31,17 @@ const Socials = () => {
     <SocialContainer>
       <SocialHead>Let's Do it!</SocialHead>
       <LinkTo href="https://www.facebook.com/ramaeraindustries" target="_blank">
-        <Image src="/content/social-5.png" />
+        <Image src="/content/social-5.png" alt="facebook icon" />
       </LinkTo>
       <LinkTo href="https://twitter.com/ramaeraltd" target="_blank">
-        <Image src="/content/social-2.png" />
+        <Image src="/content/social-2.png" alt="twitter icon" />
       </LinkTo>
       <LinkTo
         href="https://www.instagram.com/ramaeraindustries/"
         target="_blank"
       >
         {" "}
-        <Image src="/content/social.png" />
+        <Image src="/content/social.png" alt="instagram icon" />
       </LinkTo>
     </SocialContainer>
   )

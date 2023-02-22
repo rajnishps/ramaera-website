@@ -24,7 +24,7 @@ const Buy = () => {
           <img
             loading="lazy"
             src="/content/LineY.png"
-            alt=""
+            alt="line"
             style={{ width: "100%", height: "10rem" }}
           />
           <div
@@ -39,7 +39,7 @@ const Buy = () => {
           <img
             loading="lazy"
             src="/content/LineY.png"
-            alt=""
+            alt="line"
             style={{ width: "100%", height: "10rem" }}
           />
         </div>
@@ -50,10 +50,13 @@ const Buy = () => {
           data-aos-anchor-placement="top-bottom"
         >
           <Image>
+            {/* <video autoPlay loop muted>
+              <source src="/content/e-commerce.webm" type="video/webm" />
+            </video> */}
             <img
               loading="lazy"
               src="/content/e-commerce.gif"
-              alt=""
+              alt="e commerce gif"
               style={{ width: "90%", height: "100%" }}
             />
           </Image>

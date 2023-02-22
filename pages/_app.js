@@ -6,7 +6,7 @@ import Loader from "../components/Loader/Loader"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import Head from "next/head"
-
+import { Html } from "next/document"
 export default function App({ Component, pageProps }) {
   const [loading, setLoading] = useState(false)
 
@@ -32,7 +32,6 @@ export default function App({ Component, pageProps }) {
         <link rel="icon" type="image/png" sizes="32x32" href="/favicon.ico" />
         <link rel="apple-touch-icon" sizes="180x180" href="/favicon.ico" />
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon.ico" />
-        <link rel="manifest" href="/site.webmanifest" />
         <meta charset="utf-8" />
         <meta itemprop="name" content="Ramaera Industries}" />
         <meta
@@ -43,7 +42,7 @@ export default function App({ Component, pageProps }) {
         <meta
           name="description"
           content="An Integrated multi-industrial approach oriented towards financial independence, customer focus and serving the best quality to the people.
-"
+          "
         />
         <meta property="og:image" content="/logo/logo.png" />
       </Head>

@@ -20,7 +20,7 @@ const Logo = () => {
   return (
     <Link href="/">
       <Div>
-        <Image src="/logo/logo.png" />
+        <Image src="/logo/logo.png" alt="logo" />
         <Text
           Text="Ramaera Industries"
           lg="linear-gradient(90deg, #E65C00 0%, #F9D423 100%)"

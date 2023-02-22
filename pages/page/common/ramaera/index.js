@@ -80,6 +80,7 @@ const index = ({ imageIndex = 0 }) => {
         <div>
           <Image
             src={imageNo[currentIndex]}
+            alt="background image"
             layout="fill"
             objectFit="cover"
             objectPosition="center"
@@ -117,7 +118,7 @@ const index = ({ imageIndex = 0 }) => {
                 <img
                   loading="lazy"
                   src="/background/bottom.png"
-                  alt=""
+                  alt="background bottom"
                   style={{
                     height: "7rem",
                     width: "9.5rem",

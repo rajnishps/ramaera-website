@@ -45,7 +45,7 @@ const index = () => {
               <img
                 loading="lazy"
                 src={stock}
-                alt=""
+                alt={stock}
                 style={{ width: "100%", height: "100%" }}
               />
             </StockImage>

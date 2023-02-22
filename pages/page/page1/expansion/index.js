@@ -60,7 +60,10 @@ const Buy = () => {
           </div>
         </PageWidth>
         <PolyBg>
-          <Image src={"/background/rightPoly.png"} alt="" />
+          <Image
+            src={"/background/rightPoly.png"}
+            alt="right polygon background"
+          />
         </PolyBg>
       </PageLayout>
     </div>
