@@ -1,6 +1,5 @@
 import React, { useState } from "react";
-import styled from "styled-components";
-import { AiFillCloseSquare } from "react-icons/ai";
+import Cards from "react-animated-3d-card";
 
 import {
   CardContainer,
@@ -14,10 +13,10 @@ import {
   Modal,
   Overlay,
   ModalContent,
-  CloseModal,
   ZoomName,
   ZoomTitle,
   ZoomAbout,
+  CloseImg,
 } from "./style.js";
 
 const Card = ({ image }) => {
@@ -36,60 +35,66 @@ const Card = ({ image }) => {
   console.log(modal);
   return (
     <>
-      <CardContainer>
-        <CardImg key={image.id} onClick={toggleModal}>
-          <img src={image.imageName} alt="" />
-
-          <CardDetails>
-            <Name>{image.name}</Name>
-            <Title>{image.title}</Title>
-          </CardDetails>
-        </CardImg>
+      <CardContainer
+        onClick={() => {
+          toggleModal();
+        }}
+      >
+        <Cards
+          style={{
+            backgroundImage: `url(${image.imageName})`,
+            backgroundPosition: "center",
+            backgroundSize: "cover",
+            opacity: "0.8",
+          }}
+          shineStrength={0.75}
+        >
+          <CardImg key={image.id}>
+            <CardDetails>
+              <Name>{image.name}</Name>
+              <Title>{image.title}</Title>
+            </CardDetails>
+          </CardImg>
+        </Cards>
       </CardContainer>
+
       {/* Popup box Open */}
       <ZoomIn
         style={{
-          zIndex: modal ? "3" : "-1",
+          zIndex: modal ? "100" : "-1",
         }}
       >
         {modal && (
-          <Modal>
-            <Overlay></Overlay>
-            <ModalContent>
-              <ZoomImage style={{ width: image.title ? "50%" : "100%" }}>
-                <img src={image.imageName} alt="" />
-              </ZoomImage>
-              <ZoomDetails
-                style={{
-                  width: image.title ? "50%" : "0%",
-                  display: image.title ? "block" : "none",
-                }}
-              >
-                {image.title ? (
-                  <>
-                    <ZoomName>{image.name}</ZoomName>
-                    <ZoomTitle>{image.title}</ZoomTitle>
-                    <ZoomAbout>{image.about}</ZoomAbout>
-                  </>
-                ) : (
-                  <div> </div>
-                )}
-              </ZoomDetails>
-              <CloseModal onClick={toggleModal}>
-                <img
-                  src="/content/closeIcon.png"
+          <div>
+            <Modal>
+              <ModalContent>
+                <ZoomImage style={{ width: image.title ? "50%" : "100%" }}>
+                  <img
+                    style={{ objectFit: "cover" }}
+                    src={image.imageName}
+                    alt=""
+                  />
+                </ZoomImage>
+                <ZoomDetails
                   style={{
-                    fontSize: "5px",
-                    color: "orange",
-                    background: "white ",
-                    position: "absolute",
-                    top: "-15px",
-                    right: "-15px",
+                    width: image.title ? "50%" : "0%",
+                    display: image.title ? "block" : "none",
                   }}
-                />
-              </CloseModal>
-            </ModalContent>
-          </Modal>
+                >
+                  {image.title ? (
+                    <>
+                      <ZoomName>{image.name}</ZoomName>
+                      <ZoomTitle>{image.title}</ZoomTitle>
+                      <ZoomAbout>{image.about}</ZoomAbout>
+                    </>
+                  ) : (
+                    <div> </div>
+                  )}
+                </ZoomDetails>
+              </ModalContent>
+            </Modal>
+            <CloseImg src="/content/closeIcon.png" onClick={toggleModal} />
+          </div>
         )}
       </ZoomIn>
     </>

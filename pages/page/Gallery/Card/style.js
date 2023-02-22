@@ -7,24 +7,18 @@ export const CardContainer = styled.div`
 
 export const CardImg = styled.div`
   color: #efefef;
-  display: inline-block;
-  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 20vw;
   height: 38vh;
-  min-width: 230px;
+  min-width: 250px;
   min-height: 230px;
   overflow: hidden;
   position: relative;
   text-align: center;
-  //background: linear-gradient(rgba(0, 0, 0, 0.728), rgba(0, 0, 0, 0.5));
-  opacity: 0.5;
   transition: all 0.3s;
   cursor: pointer;
-  :hover {
-    opacity: unset;
-    transform: scale(1.1);
-    border-radius: 20px;
-  }
 
   img {
     width: 100%;
@@ -88,13 +82,14 @@ export const ZoomImage = styled.div`
     width: 100%;
     height: 100%;
     vertical-align: top;
-    z-index: 3;
-    border-radius: 20px;
+    border-radius: 15px;
+    background-size: cover;
   }
 `;
 
 export const ZoomDetails = styled.div`
   padding: 0 100px 0 50px;
+  overflow-y: scroll;
   @media (max-width: 600px) {
     width: 100% !important;
     padding: 0;
@@ -127,22 +122,10 @@ export const Modal = styled.div`
   right: 0;
   bottom: 0;
   position: fixed;
-  z-index: 9999;
   @media (max-width: 600px) {
     position: sticky;
     height: auto;
   }
-`;
-
-export const Overlay = styled.div`
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-  z-index: 9999;
 `;
 
 export const ModalContent = styled.div`
@@ -151,13 +134,9 @@ export const ModalContent = styled.div`
   left: 10%;
   line-height: 1.4;
   padding: 14px 28px;
-  border-radius: 3px;
   width: 80%;
   height: 75%;
-  z-index: 9999;
-  /* box-shadow: inset 1px 1px 10px 1px #303030; */
   padding: 50px;
-  border-radius: 10px;
   display: flex;
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.15);
@@ -174,15 +153,19 @@ export const ModalContent = styled.div`
     height: auto;
     width: 90%;
     margin: 20px;
+    max-height: 95svh;
   }
 `;
 
-export const CloseModal = styled.div`
-  /* position: absolute;
-  top: -15px;
-  right: -15px; */
-  /* width: 50px;
-  height: 50px;
-  text-align: center; */
+export const CloseImg = styled.img`
+  position: relative;
+  top: 30px;
+  left: 86%;
+  width: 40px;
+  border-radius: 10px;
   cursor: pointer;
+  @media (max-width: 600px) {
+    top: 8px;
+    left: 88%;
+  }
 `;

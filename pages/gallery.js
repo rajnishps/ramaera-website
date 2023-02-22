@@ -1,11 +1,14 @@
-import React from 'react'
-import Head from "./page/Gallery/Head/index"
+import React from "react";
+import Head from "./page/Gallery/Head/index";
+import Footer from "./page/common/footer";
+
 const gallery = () => {
   return (
     <>
-     <Head/> 
+      <Head />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default gallery; 
+export default gallery;

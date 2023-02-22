@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Gallery = styled.div`
   height: 65vh;
+  width: 100vw;
 `;
 
 export const ContainerTop = styled.div`
@@ -79,17 +80,20 @@ export const DisplayHeading = styled.h1`
 
 export const DisplayWrapper = styled.div`
   display: flex;
+  padding-bottom: 30px;
 `;
 
 export const ImageWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  gap: 2rem;
+  padding-bottom: 100px;
+  box-shadow: inset 0 -100px 100px 1px rgb(0 0 0 / 100%);
 `;
 
 export const DisplayCard = styled.div`
   display: flex;
-  flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   align-items: center;
