@@ -41,12 +41,12 @@ const Text = (props) => {
       background-clip: ${props.headHover ? "text" : ""};
       text-fill-color: ${props.headHover ? "transparent" : ""};
     }
-    /*     @media only screen and (max-width: 1200px) {
+    @media only screen and (max-width: 1200px) {
       font-size: ${props.xmsize ? props.xmsize : "20px"};
     }
     @media only screen and (max-width: 1000px) {
       font-size: ${props.xssize ? props.xssize : "18px"};
-    } */
+    }
 
     @media only screen and (max-width: 768px) {
       font-size: ${props.msize ? props.msize : "17px"};

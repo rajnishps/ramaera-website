@@ -1,7 +1,7 @@
-import PageWidth from "../../../../components/Width/PageWidth"
-import Text from "../../../../components/Text/Text"
-import CustomBg from "./components/CustomBg"
-import Texts from "./components/Texts"
+import PageWidth from "../../../../components/Width/PageWidth";
+import Text from "../../../../components/Text/Text";
+import CustomBg from "./components/CustomBg";
+import Texts from "./components/Texts";
 
 const index = () => {
   return (
@@ -64,7 +64,7 @@ const index = () => {
       </PageWidth>
       <Texts />
     </div>
-  )
-}
+  );
+};
 
-export default index
+export default index;

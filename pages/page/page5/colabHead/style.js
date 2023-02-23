@@ -1,75 +1,50 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Container = styled.div`
   padding: 3rem 0 5rem 0;
   display: flex;
-`
+`;
 
 export const Heading = styled.div`
   justify-content: center;
-  width: 40%;
+  width: 50%;
   margin: auto;
-  padding-left: 1rem;
-  @media (max-width: 1000px) {
-    width: 50%;
+  padding: 0 0 0 2rem;
+  @media (max-width: 800px) {
+    padding: 0 1rem;
+    margin: 0;
+    width: 100%;
+    position: absolute;
   }
+`;
 
-  h2 {
-    font-size: 4rem;
-    font-family: personal;
-    background: #ffb76b;
-    background: linear-gradient(to right, #ffa73d, gold);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    @media (max-width: 1280px) {
-      font-size: 3rem;
-    }
-    @media (max-width: 768px) {
-      font-size: 2.5rem;
-    }
-    @media (max-width: 540px) {
-      font-size: 1.8rem;
-    }
-    @media (max-width: 420px) {
-      font-size: 1rem;
-    }
+export const MapIcon = styled.div`
+  width: 50%;
+  @media (max-width: 1000px) {
+    width: 100%;
   }
-  h3 {
-    font-size: 1rem;
-    color: white;
-    line-height: 2;
-    @media (max-width: 420px) {
-      font-size: 0.5rem;
-      line-height: 2;
-    }
-  }
-`
+`;
 
 export const MapBox = styled.div`
-  width: 600px;
+  width: 100%;
   height: 400px;
   @media (max-width: 600px) {
-    width: 200px;
-    height: 130px;
+    padding: 0 20px;
+    height: 200px;
   }
-`
-export const MapIcon = styled.div`
-  width: 60%;
-  @media (max-width: 1000px) {
-    width: 50%;
-  }
-`
+`;
 
 export const ImagePoint = styled.div`
   background-image: url("/content/map.png");
   height: 100%;
   width: 100%;
   background-size: contain;
+  background-repeat: no-repeat;
 
   h3 {
     display: none;
     position: relative;
-    left: 374px;
+    left: 284px;
     top: 184px;
     height: 50px;
     font-family: personal;
@@ -82,25 +57,25 @@ export const ImagePoint = styled.div`
   #ramaera:hover ~ h3 {
     display: block;
   }
-`
+`;
 
 export const ImgPoint1 = styled.img`
   @media (max-width: 600px) {
     display: none;
   }
-`
+`;
 
 export const ImgPoint2 = styled.img`
   @media (max-width: 600px) {
     display: none;
   }
-`
+`;
 
 export const ImgPoint3 = styled.img`
   @media (max-width: 600px) {
     display: none;
   }
-`
+`;
 
 export const ImgPointMain = styled.a`
   img {
@@ -116,10 +91,10 @@ export const ImgPointMain = styled.a`
       left: 122px;
     }
   }
-`
+`;
 
 const StyleImage = () => {
-  return <div>StyleImage</div>
-}
+  return <div>StyleImage</div>;
+};
 
-export default StyleImage
+export default StyleImage;
