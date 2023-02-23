@@ -4,7 +4,11 @@ export const Image = styled.div`
   height: 27rem;
   width: 30rem;
   @media only screen and (max-width: 768px) {
-    margin-left: 5vw;
+    margin-left: 40px;
+
+
+    width: 23rem;
+    height: 22rem;
   }
 `
 export const Responsive = styled.div`

@@ -42,7 +42,7 @@ function Card({ imagen, onDate, title, subTitle }) {
   return (
     <animated.div>
       <CardContainer>
-        <Image src={imagen} alt="" />
+        <Image src={imagen} alt={title} />
         <TextContainer>
           <Date>{onDate}</Date>
           <Heading>{title}</Heading>

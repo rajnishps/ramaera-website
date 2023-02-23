@@ -56,8 +56,16 @@ function Holder() {
   ]
   return (
     <div>
-      <Image style={{ left: 0 }} src={"/content/left.png"} />
-      <Image style={{ right: 0 }} src={"/content/right.png"} />
+      <Image
+        style={{ left: 0 }}
+        src={"/content/left.png"}
+        alt="left background"
+      />
+      <Image
+        style={{ right: 0 }}
+        src={"/content/right.png"}
+        alt="right background"
+      />
       <Carousel
         showArrows={true}
         cards={cards}

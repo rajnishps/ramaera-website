@@ -7,7 +7,28 @@ const Vision = () => {
   return (
     <VisionBox>
       <VisionBG>
-        <VisionHead>ramaera vision</VisionHead>
+      <div data-aos="zoom-in">
+      <Text
+            Text="ramaera vision"
+            lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
+            font
+            size="2.5rem"
+            lh="90px"
+            width="100%"
+            mwidth="100%"
+            fw="500"
+            mlh="50px"
+            align="center"
+            xmsize="6rem"
+            xssize="10vw"
+            msize="1.7rem"
+            mpadding="4rem 0 0 0 "
+            padding="4rem 0 0 0"
+            mmargin="0 0 0 0"
+          />
+        {/* <VisionHead>ramaera vision</VisionHead> */}
+        </div>
+        <div data-aos="fade-right">
         <Text
           Text="“Ramaera Industries has begun with the primary motive of nation
         orientation and strengthening the vision of a sustainable and
@@ -30,7 +51,9 @@ const Vision = () => {
           mta="center"
           align="center"
         />
+        </div>
         <br />
+        <div data-aos="fade-left">
         <Text
           Text="“Ramaera Industries plans to redefine the existing industrial sector by
           abiding on the principles of transparency, trusteeship and empowerment
@@ -48,6 +71,8 @@ const Vision = () => {
           mwidth="90vw"
           mta="center"
         />
+        </div>
+        <div data-aos="fade-right">
         <Text
           Text="“ Our belief of revolutionising the traditional industries by merging
           them to the world of decentralisation keeps us a step further and
@@ -63,7 +88,8 @@ const Vision = () => {
           mwidth="90vw"
           mta="center"
         />
-
+        </div>
+        <div data-aos="fade-left">
         <Text
           Text="“Keeping pace with the advancements of technology , we thrive to exceed
           the expectations of our customer base on prices, delivery and
@@ -81,6 +107,8 @@ const Vision = () => {
           mwidth="90vw"
           mta="center"
         />
+        </div>
+        <div data-aos="fade-right">
         <Text
           Text="“ Ramaera Industries aims to make a mark in all of the most popular
           industrial sectors and provide employment to thousands of diligent
@@ -102,6 +130,7 @@ const Vision = () => {
           mwidth="90vw"
           mta="center"
         />
+        </div>
       </VisionBG>
     </VisionBox>
   );

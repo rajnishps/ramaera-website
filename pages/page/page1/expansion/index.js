@@ -22,7 +22,7 @@ const Image = styled.img`
 const Buy = () => {
   return (
     <div id="0">
-      <PageLayout mtpadding="20vh" mheight="40vh">
+      <PageLayout mtpadding="5vh" mheight="40vh">
         <PageWidth scale={"90%"} width="1500px">
           <div
             data-aos="fade-up"
@@ -36,7 +36,7 @@ const Buy = () => {
               size="65px"
               fw="400"
               align="center"
-              lh="70px"
+              lh="60px"
               xmsize="4rem"
               xssize="4rem"
               msize="3.2rem"
@@ -47,12 +47,12 @@ const Buy = () => {
               size="30px"
               lh="50px"
               fw="400"
-              m="2rem 0 0 0"
+              m="2rem 0 3rem 0"
               align="center"
               width="1100px"
               xmsize="2.2rem"
               xssize="2rem"
-              msize="1.6rem"
+              msize="1.3rem"
               mta="center"
               mwidth="100vw"
               mlh="40px"
@@ -60,7 +60,10 @@ const Buy = () => {
           </div>
         </PageWidth>
         <PolyBg>
-          <Image src={"/background/rightPoly.png"} alt="" />
+          <Image
+            src={"/background/rightPoly.png"}
+            alt="right polygon background"
+          />
         </PolyBg>
       </PageLayout>
     </div>

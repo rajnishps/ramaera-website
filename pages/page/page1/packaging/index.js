@@ -33,7 +33,7 @@ const Buy = () => {
             <img
               loading="lazy"
               src="/content/Packaging.gif"
-              alt=""
+              alt="packaging gif"
               style={{ width: "100%", height: "100%" }}
             />
           </Image>
@@ -43,7 +43,7 @@ const Buy = () => {
             <img
               loading="lazy"
               src="/background/Line.png"
-              alt=""
+              alt="line"
               style={{ position: "absolute", width: "100%", height: "10rem" }}
             />
           </Line>
@@ -61,7 +61,7 @@ const Buy = () => {
             <img
               loading="lazy"
               src="/background/Line.png"
-              alt=""
+              alt="line"
               style={{ position: "absolute", width: "100%", height: "10rem" }}
             />
           </Line>

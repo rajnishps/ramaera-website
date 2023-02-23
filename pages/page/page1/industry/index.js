@@ -38,7 +38,7 @@ const Buy = () => {
             <img
               loading="lazy"
               src="/content/LineY.png"
-              alt=""
+              alt="line"
               style={{ width: "100%", height: "10rem" }}
             />
           </Line>
@@ -55,7 +55,7 @@ const Buy = () => {
             <img
               loading="lazy"
               src="/content/LineY.png"
-              alt=""
+              alt="line"
               style={{ width: "100%", height: "10rem" }}
             />
           </Line>
@@ -69,7 +69,7 @@ const Buy = () => {
             <img
               loading="lazy"
               src="/content/fmcg.gif"
-              alt=""
+              alt="industry gif"
               style={{ width: "100%", height: "100%" }}
             />
           </Image>

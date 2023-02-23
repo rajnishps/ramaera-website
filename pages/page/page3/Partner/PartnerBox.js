@@ -1,52 +1,63 @@
 import React from "react";
 import styled from "styled-components";
+import Text from "../../../../components/Text/Text";
 
 const Box = styled.div`
-  width: 27%;
-  height: 25vh;
+  width: 32%;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0px auto;
   @media (max-width: 600px){
     width: 80%;
     margin: 15% auto;
-  }
-`;
-const BoxHead = styled.h2`
-  font-family: "Zilap Orion Personal Use";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.3rem;
-  line-height: 36px;
-  background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  @media (max-width: 600px){
-    font-size: 1rem;
-    line-height: 25px;
-  }
-`;
-
-const BoxPara = styled.p`
-  font-family: "Montserrat Alternates";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 0.9rem;
-  line-height: 23px;
-  /* or 135% */
-
-  letter-spacing: 0.04em;
-
-  color: #ffffff;
-  @media (max-width: 600px){
-    font-size: 0.7rem;
-    line-height: 20px;
+    height: 20vh;
   }
 `;
 const PartnerBox = ({ Heading, Para }) => {
   return (
     <Box>
-      <BoxHead>{Heading}</BoxHead>
-      <BoxPara>{Para}</BoxPara>
+      <div data-aos="fade-up">
+      <Text
+            Text={Heading}
+            lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
+            font
+            size="1.4rem"
+            lh="35px"
+            width="100%"
+            mwidth="100%"
+            fw="500"
+            mlh="30px"
+            xmsize="6rem"
+            xssize="10vw"
+            msize="1rem"
+            mpadding="0rem 0 0 0 "
+            padding="4rem 0 0 0"
+            mmargin="1rem 0 0 0"
+            align="center"
+          /> 
+      {/* <BoxHead>{Heading}</BoxHead> */}
+      </div>
+      <div data-aos="fade-down">
+      <Text
+          Text={Para}
+          fw="400"
+          size="0.9rem"
+          lh="23px"
+          width="100%"
+          m="0px auto"
+          xssize="18px"
+          mlh="25px"
+          msize="13px"
+          mwidth="90vw"
+          mta="center"
+          align="center"
+        /> 
+      {/* <BoxPara>{Para}</BoxPara> */}
+      </div>
+     
     </Box>
   );
 };

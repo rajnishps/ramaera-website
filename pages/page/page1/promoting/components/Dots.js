@@ -10,7 +10,7 @@ const Image = styled.img`
   }
 `
 const Dots = () => {
-  return <Image src="/content/promtDots.png" alt="" />
+  return <Image src="/content/promtDots.png" alt="dots background" />
 }
 
 export default Dots

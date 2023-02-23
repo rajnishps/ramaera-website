@@ -34,7 +34,7 @@ const Buy = () => {
             <NextImage
               loading="lazy"
               src="/content/tech.gif"
-              alt=""
+              alt="technology gif"
               width={100}
               height={100}
               style={{
@@ -51,7 +51,7 @@ const Buy = () => {
             <img
               loading="lazy"
               src="/background/Line.png"
-              alt=""
+              alt="line"
               style={{ position: "absolute", width: "100%", height: "10rem" }}
             />
           </Line>
@@ -68,7 +68,7 @@ const Buy = () => {
             <img
               loading="lazy"
               src="/background/Line.png"
-              alt=""
+              alt="line"
               style={{ position: "absolute", width: "100%", height: "10rem" }}
             />
           </Line>

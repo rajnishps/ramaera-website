@@ -61,7 +61,7 @@ const Menu = ({ open, setOpen, ...props }) => {
   }
   return (
     <StyledMenu open={open} aria-hidden={!isHidden} {...props}>
-      <Link1 to="home" spy={true} smooth={true}></Link1>
+      <Link1 spy={true} smooth={true}></Link1>
 
       <MenuItems>
         <H>

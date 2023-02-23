@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const TeamContainer = styled.div`
   width: 70%;
@@ -12,35 +12,17 @@ export const TeamContainer = styled.div`
   border-radius: 20px;
   position: relative;
   padding: 3rem;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 90%;
   }
-`;
-export const TeamHead = styled.h1`
-  font-family: "Zilap Orion Personal Use";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 3rem;
-  line-height: 70px;
-  background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-fill-color: transparent;
-  text-align: center;
-  padding-top: 20px;
-  @media (max-width: 600px){
-    font-size: 2rem;
-    line-height: 50px;
-  }
-`;
+`
 
 export const LeftTeam = styled.div`
   width: 50%;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 100%;
   }
-`;
+`
 export const ParaBox = styled.div`
   width: 50%;
   height: 20vh;
@@ -51,51 +33,58 @@ export const ParaBox = styled.div`
   /* align-items: center; */
   margin-top: 60px;
   border-left: 4px solid white;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 90%;
   }
-`;
+`
 export const LeftPara = styled.p`
   color: white;
   font-size: 1.15rem;
   font-weight: 600;
   line-height: 25px;
   margin-left: 20px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 0.9rem;
   }
-`;
+`
 export const RightTeam = styled.div`
   width: 35%;
   margin-top: 40px;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     width: 90%;
   }
-`;
+`
 export const RightHead = styled.h3`
   color: white;
   margin-top: 10px;
-  font-family: "Zilap Orion Personal Use";
+  font-family: "personal";
+
   font-size: 1rem;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     font-size: 90%;
   }
-`;
+`
 export const RightPara = styled.p`
   color: white;
   font-size: 0.8rem;
-  @media (max-width: 600px){
+  @media (max-width: 600px) {
     line-height: 20px;
   }
-`;
-export const Dots = styled.img`
-    position: absolute;
-    width: 90px;
-    bottom: -7%;
-    left: 3%;
-    @media (max-width: 600px){
-      width: 50px;
-      bottom: -2%;
-      left: 4%;
-    }
 `
+export const Dots = styled.img`
+  position: absolute;
+  width: 90px;
+  bottom: -10%;
+  left: 3%;
+  z-index: -1;
+  @media (max-width: 600px) {
+    width: 50px;
+    bottom: -2%;
+    left: 4%;
+  }
+`
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

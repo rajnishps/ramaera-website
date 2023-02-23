@@ -21,11 +21,11 @@ const Roadmap = () => {
         <img
           loading="lazy"
           src="/content/r.png"
-          alt=""
+          alt="line"
           styled={{ width: "100%", height: "3rem" }}
         />
         <Flex jc="space-between">
-          <div style={{ margin: "0 0 0 4rem" }}>
+          <div style={{ margin: "0 0 0 0" }}>
             <Text
               Text="End of 2025"
               color="#fff"
@@ -43,7 +43,7 @@ const Roadmap = () => {
               fw="400"
               m="0.75rem 0 0 0"
               xssize="2.4vw"
-              msize="1.2rem"
+              msize="1rem"
             />
           </div>
           <div
@@ -71,7 +71,7 @@ const Roadmap = () => {
               fw="400"
               m="0.75rem 0 0 0"
               xssize="2.4vw"
-              msize="1.2rem"
+              msize="1rem"
             />
           </div>
           <div style={{ margin: "0 2rem 0 0" }}>
@@ -83,6 +83,7 @@ const Roadmap = () => {
               align="center"
               xssize="3vw"
               msize="1.8rem"
+              // mmargin="0 0 0 5rem"
             />
             <Text
               Text="FMCG Upcoming Mother Brands"
@@ -92,7 +93,8 @@ const Roadmap = () => {
               fw="400"
               m="0.75rem 0 0 0"
               xssize="2.4vw"
-              msize="1.2rem"
+              msize="1rem"
+              // mmargin= "0 0 0 2rem"
             />
           </div>
         </Flex>
@@ -101,11 +103,11 @@ const Roadmap = () => {
         <img
           loading="lazy"
           src="/content/r.png"
-          alt=""
+          alt="line"
           styled={{ width: "100%", height: "3rem" }}
         />
         <Flex jc="space-between">
-          <div style={{ margin: "0 0 0 3.5rem" }}>
+          <div style={{ margin: "0 0 0 1rem" }}>
             <Text
               Text="End of 2023"
               color="#fff"
@@ -123,7 +125,7 @@ const Roadmap = () => {
               fw="400"
               m="0.75rem 0 0 0"
               xssize="2.4vw"
-              msize="1.2rem"
+              msize="1rem"
             />
           </div>
           <div
@@ -151,10 +153,10 @@ const Roadmap = () => {
               fw="400"
               m="0.75rem 0 0 0"
               xssize="2.4vw"
-              msize="1.2rem"
+              msize="1rem"
             />
           </div>
-          <div style={{ margin: "0 3.75rem 0 0" }}>
+          <div style={{ margin: "0 0rem 0 0" }}>
             <Text
               Text="10000+"
               color="#fff"
@@ -172,7 +174,8 @@ const Roadmap = () => {
               fw="400"
               m="0.75rem 0 0 0"
               xssize="2.4vw"
-              msize="1.2rem"
+              msize="1rem"
+            
             />
           </div>
         </Flex>

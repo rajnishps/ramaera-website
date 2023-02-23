@@ -94,7 +94,7 @@ const Textcontainer = () => {
   const [isActive, setisActive] = useState(false)
   return (
     <StyledTextContainer onMouseLeave={() => setisActive(false)}>
-      <Quote src="/content/quote.png" />
+      <Quote src="/content/quote.png" alt="quote" />
       <ResHeading>
         <Text
           Text="Inflation a serious challenge for India`s economic growth: Devendra Mishra`"
@@ -102,10 +102,12 @@ const Textcontainer = () => {
           lh="60px"
           color="#FFF"
           fw="500"
+          mlh ="40px"
           padding=" 0 0 0 0 "
           xmsize="2rem"
           xssize="3vw"
           msize="1.8rem"
+          mwidth="100"
         />
       </ResHeading>
       <ResSub>
@@ -139,11 +141,11 @@ const Textcontainer = () => {
       ) : null}
       <Stars>
         <div>
-          <Star />
-          <Star />
-          <Star />
-          <Star />
-          <Star />
+          <Star alt="star 1" />
+          <Star alt="star 2" />
+          <Star alt="star 3" />
+          <Star alt="star 4" />
+          <Star alt="star 5" />
         </div>
         <Text
           Text="Financial Express"

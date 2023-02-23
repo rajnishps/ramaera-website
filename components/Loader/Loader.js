@@ -72,7 +72,12 @@ const Loader = () => {
   return (
     <Comp>
       <LoaderWrapper>
-        <Image src={"/content/loader.png"} width={70} height={70} />
+        <Image
+          src={"/content/loader.png"}
+          alt="loader"
+          width={70}
+          height={70}
+        />
       </LoaderWrapper>
     </Comp>
   )

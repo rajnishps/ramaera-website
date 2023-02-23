@@ -9,7 +9,8 @@ const StyledSocialMedia = styled.div`
     gap: 60px;
     height: 10vh;
     width: 100vw;
-    bottom: 3%;
+    bottom: 1%;
+    align-items: flex-end;
     left: 0;
   }
 `
