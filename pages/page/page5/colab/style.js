@@ -1,17 +1,19 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Box = styled.div`
   padding-bottom: 18%;
-`
+`;
 
-export const Main = styled.div`
+export const BackgroundImg = styled.img`
   z-index: 1;
   position: absolute;
-  img {
-    object-fit: contain;
-    width: 100vw;
+  object-fit: contain;
+  width: 100vw;
+  @media (max-width: 768px) {
+    height: 100vh;
+    object-fit: cover;
   }
-`
+`;
 
 export const Container = styled.div`
   position: relative;
@@ -20,31 +22,16 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  h2 {
-    font-weight: 100;
-    padding-top: 30px;
-    font-size: 3rem;
-    font-family: personal;
-    color: white;
-    @media (max-width: 420px) {
-      font-size: 1.8rem;
-    }
-  }
-`
-/**** 
- * width:100vw;
-height:100vh; 
-background-image: url("/content/Background.png");
-*/
+`;
 
 export const HeaderIcon = styled.div`
   display: flex;
-  padding: 5px 0 15px 0;
+  padding: 5px 0 30px 0;
 
   @media (max-width: 768px) {
     flex-direction: column;
   }
-`
+`;
 
 export const HeaderIcon1 = styled.div`
   display: flex;
@@ -60,8 +47,15 @@ export const HeaderIcon1 = styled.div`
     width: 100%;
     margin: 10px auto;
   }
+  b {
+    margin-right: 15px;
+  }
   p {
     margin-left: 10px;
+    color: grey;
+    @media (max-width: 768px) {
+      margin-left: 0px;
+    }
   }
   div {
     align-items: center;
@@ -72,7 +66,7 @@ export const HeaderIcon1 = styled.div`
     height: 45px;
     padding-right: 10px;
   }
-`
+`;
 
 export const HeaderIcon2 = styled.div`
   display: flex;
@@ -90,6 +84,10 @@ export const HeaderIcon2 = styled.div`
   }
   p {
     margin-left: 10px;
+    color: grey;
+    @media (max-width: 768px) {
+      margin-left: 0px;
+    }
   }
   div {
     align-items: center;
@@ -100,10 +98,9 @@ export const HeaderIcon2 = styled.div`
     height: 45px;
     padding-right: 10px;
   }
-`
+`;
 
 export const Form = styled.div`
-  //margin-top:20px;
   background: white;
   padding: 2.5rem;
   border-radius: 35px;
@@ -113,7 +110,7 @@ export const Form = styled.div`
     width: 90%;
     padding: 1rem;
   }
-`
+`;
 
 export const Fline1 = styled.div`
   display: flex;
@@ -125,7 +122,7 @@ export const Fline1 = styled.div`
   @media (max-width: 540px) {
     flex-direction: column;
   }
-`
+`;
 
 export const Input = styled.input`
   background: white;
@@ -142,7 +139,7 @@ export const Input = styled.input`
     width: 80vw;
     margin: 10px 0;
   }
-`
+`;
 
 export const Fline2 = styled.div`
   display: flex;
@@ -154,7 +151,7 @@ export const Fline2 = styled.div`
   @media (max-width: 540px) {
     flex-direction: column;
   }
-`
+`;
 
 export const Fline3 = styled.div`
   background: white;
@@ -167,28 +164,20 @@ export const Fline3 = styled.div`
     border: 1px solid lightgrey;
     margin-top: 10px;
   }
-`
+`;
 export const TextArea = styled.textarea`
   background: white;
-`
+`;
 
-export const Button = styled.div`
-  button {
-    display: flex;
-    flex-direction: row;
-    background: linear-gradient(to left, #fdc830, #f37335);
-    text-align: center;
-    padding: 15px 30px;
-    border-radius: 50px;
-    margin: 3rem auto;
-    cursor: pointer;
-    color: white;
-    border: none;
-  }
-`
+export const ButtonHolder = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 3rem auto;
+`;
 
 const StyleImage = () => {
-  return <div>StyleImage</div>
-}
+  return <div>StyleImage</div>;
+};
 
-export default StyleImage
+export default StyleImage;

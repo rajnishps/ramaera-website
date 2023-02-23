@@ -1,6 +1,10 @@
-import React from "react"
+import React from "react";
+import Text from "../../../../components/Text/Text";
+import Button from "../../../../components/Button/Button";
+
 import {
   Box,
+  BackgroundImg,
   Input,
   Container,
   HeaderIcon,
@@ -9,34 +13,41 @@ import {
   Form,
   Fline1,
   Fline2,
-  Button,
+  ButtonHolder,
   Fline3,
-  Main,
   TextArea,
-} from "./style"
+} from "./style";
 
 const index = () => {
   return (
     <>
       <Box>
-        <Main>
-          <img src="/content/Background.png" />
-        </Main>
+        <BackgroundImg src="/content/Background.png" />
         <Container>
-          <h2>GET IN TOUCH TODAYS</h2>
+          <Text
+            Text="GET IN TOUCH TODAYS"
+            font
+            size="3rem"
+            fw="100"
+            lh="70px"
+            xmsize="4rem"
+            xssize="3rem"
+            msize="1.5rem"
+            padding="0"
+            mpadding="0"
+          />
           <HeaderIcon>
             <HeaderIcon1>
-              {" "}
               <div>
-                {" "}
                 <img src="/content/mailIcon.png" />
-                <b>Mail us</b>{" "}
+                <b>Mail us</b>
               </div>
-              <p>suport@gmail.com</p>
+              <p>support@gmail.com</p>
             </HeaderIcon1>
             <HeaderIcon2>
               <div>
-                <img src="/content/phoneIcon.png" /> <b>Contact us</b>
+                <img src="/content/phoneIcon.png" />
+                <b>Contact us</b>
               </div>
               <p>01199936737</p>
             </HeaderIcon2>
@@ -45,7 +56,7 @@ const index = () => {
           <Form>
             <Fline1>
               <div>
-                <label>Full Name*</label>
+                <label>Full Name</label>
                 <br />
                 <Input type="text" placeholder="Enter Your Name" required />
               </div>
@@ -59,7 +70,7 @@ const index = () => {
 
             <Fline2>
               <div>
-                <label>Company *</label>
+                <label>Company</label>
                 <br />
                 <Input
                   type="text"
@@ -76,25 +87,34 @@ const index = () => {
             </Fline2>
 
             <Fline3>
-              <label>Message*</label>
+              <label>Message</label>
               <br />
               <TextArea
                 type="textarea"
                 rows={10}
                 cols={35}
-                placeholder="hellow there!!!!!!"
+                placeholder="Hello there,I would like to talk about how to..."
                 required
               />
             </Fline3>
-
-            <Button>
-              <button>Message Send</button>
-            </Button>
+            <ButtonHolder>
+              <Button
+                br="999px"
+                bg="linear-gradient(to left,#ffd456,#ff9765)"
+                width="20px"
+                height="50px"
+                Text="Send Message "
+                fontSize="1rem"
+                padding="10px 30px"
+                fw="500"
+                sh
+              />
+            </ButtonHolder>
           </Form>
         </Container>
       </Box>
     </>
-  )
-}
+  );
+};
 
-export default index
+export default index;
