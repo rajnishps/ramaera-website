@@ -21,7 +21,7 @@ const Bg = styled.div`
     flex-direction: column-reverse;
   }
 `
-const AgriPos = styled.img`
+const AgriPos = styled.video`
   height: 75vh;
   @media only screen and (max-width: 768px) {
     height: 50vh;
@@ -42,11 +42,14 @@ const CustomBg = () => {
           data-aos-anchor-placement="top-bottom"
         >
           <div>
-            <AgriPos
+            <AgriPos autoPlay loop muted>
+              <source src="/content/e-commerce.webm" type="video/webm" />
+            </AgriPos>
+            {/* <AgriPos
               loading="lazy"
               src="/content/e-commerce.gif"
               alt="e commerce gif"
-            />
+            /> */}
           </div>
         </div>
         <Txt>

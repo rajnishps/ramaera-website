@@ -25,13 +25,11 @@ export const InnovationDiv = styled.div`
   }
 `
 
-export const Img = styled.img`
-  width: 100px;
+export const Img = styled.video`
+  width: 100%;
   margin: 20px;
   object-fit: contain;
   @media (max-width: 600px) {
-    width: 50%;
-    height: 50%;
   }
 `
 export const InnovationLeft = styled.div`

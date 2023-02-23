@@ -66,12 +66,14 @@ const Buy = () => {
           data-aos-anchor-placement="top-bottom"
         >
           <Image>
-            <img
-              loading="lazy"
-              src="/content/fmcg.gif"
-              alt="industry gif"
+            <video
+              autoPlay
+              loop
+              muted
               style={{ width: "100%", height: "100%" }}
-            />
+            >
+              <source src="/content/fmcg.webm" type="video/webm" />
+            </video>
           </Image>
         </Animdiv>
       </PageWidth>

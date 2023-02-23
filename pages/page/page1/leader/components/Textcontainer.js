@@ -102,7 +102,7 @@ const Textcontainer = () => {
           lh="60px"
           color="#FFF"
           fw="500"
-          mlh ="40px"
+          mlh="40px"
           padding=" 0 0 0 0 "
           xmsize="2rem"
           xssize="3vw"

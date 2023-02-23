@@ -18,7 +18,6 @@ const Line = styled.div`
   }
 `
 
-
 const Buy = () => {
   return (
     <PageLayout>
@@ -56,17 +55,19 @@ const Buy = () => {
           data-aos-anchor-placement="top-bottom"
         >
           <Image>
-            <img
-              loading="lazy"
-              src="/content/hotel.gif"
-              alt="line"
+            <video
+              autoPlay
+              loop
+              muted
               style={{
                 position: "absolute",
                 top: "-200px",
-                width: "95%",
+                width: "100%",
                 height: "100%",
               }}
-            />
+            >
+              <source src="/content/hotel.webm" type="video/webm" />
+            </video>
           </Image>
         </Animdiv>
       </PageWidth>

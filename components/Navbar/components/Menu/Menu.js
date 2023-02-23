@@ -89,13 +89,15 @@ const Menu = ({ open, setOpen, ...props }) => {
             Contact
           </Link>
         </H>
-        {/* <Button
-          nav
-          height="2.75rem"
-          Text="CONNECT WALLET"
-          inheight="2.5rem"
-          m="1rem 0 0 0"
-        /> */}
+        <Link target="_blank" href="https://ramaera.com/Kyc-login.aspx">
+          <Button
+            nav
+            width="20px"
+            height="2.75rem"
+            Text="KYC"
+            inheight="2.5rem"
+          />
+        </Link>
       </MenuItems>
     </StyledMenu>
   )

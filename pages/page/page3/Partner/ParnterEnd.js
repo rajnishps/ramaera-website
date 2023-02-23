@@ -29,6 +29,11 @@ const RightImg = styled.img`
     width: 100%;
   }
 `
+const RightVideo = styled.video`
+  @media (max-width: 600px) {
+    width: 100%;
+  }
+`
 const ParnterEnd = () => {
   return (
     <ParnterEndBox>
@@ -74,10 +79,11 @@ const ParnterEnd = () => {
       </LeftPara>
       <RightImgBox>
         <div data-aos="fade-up-left">
-          {/* <video autoPlay loop muted>
+          <RightVideo autoPlay loop muted>
             <source src="/background/Partner.webm" type="video/webm" />
-          </video> */}
-          <RightImg src={"/background/Partner.gif"} />
+          </RightVideo>
+          {/*           <RightImg src={"/background/Partner.gif"} />
+           */}{" "}
         </div>
       </RightImgBox>
     </ParnterEndBox>

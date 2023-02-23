@@ -5,14 +5,16 @@ import TextContainer from "./components/TextContainer"
 import { Image, Responsive } from "./components/StyleImage"
 import styled from "styled-components"
 
-const AgriPos = styled.img`
+const AgriPos = styled.video`
   position: absolute;
   width: 100%;
   height: 110%;
   left: -5vh;
   top: 10vh;
   @media only screen and (max-width: 768px) {
+    width: 110vw;
     top: -55vh;
+    margin: 0 auto;
   }
 `
 const Buy = () => {
@@ -30,11 +32,9 @@ const Buy = () => {
           }}
         >
           <Image>
-            <AgriPos
-              loading="lazy"
-              src="/content/agri.gif"
-              alt="agriculture gif"
-            />
+            <AgriPos autoPlay loop muted>
+              <source src="/content/agri.webm" type="video/webm" />
+            </AgriPos>
           </Image>
         </div>
         <div style={{ width: "100%" }}>

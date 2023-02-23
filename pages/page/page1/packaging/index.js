@@ -30,12 +30,20 @@ const Buy = () => {
           data-aos-anchor-placement="center-bottom"
         >
           <Image>
-            <img
+            <video
+              autoPlay
+              loop
+              muted
+              style={{ width: "100%", height: "100%" }}
+            >
+              <source src="/content/Packaging.webm" type="video/webm" />
+            </video>
+            {/*  <img
               loading="lazy"
               src="/content/Packaging.gif"
               alt="packaging gif"
               style={{ width: "100%", height: "100%" }}
-            />
+            /> */}
           </Image>
         </Animdiv>
         <div style={{ width: "100%" }}>
