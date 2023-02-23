@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Gallery = styled.div`
   height: 65vh;
   width: 100vw;
-`;
+`
 
 export const ContainerTop = styled.div`
   position: relative;
@@ -11,7 +11,7 @@ export const ContainerTop = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: flex-end;
-`;
+`
 
 export const Image = styled.div`
   background-image: url("content/galleryImg.jpg");
@@ -24,7 +24,7 @@ export const Image = styled.div`
   background-attachment: fixed;
   background-position: center bottom;
   box-shadow: inset 0 -100px 100px 1px rgb(0 0 0 / 100%);
-`;
+`
 
 export const Heading = styled.div`
   position: absolute;
@@ -38,7 +38,7 @@ export const Heading = styled.div`
     font-weight: 400;
     font-size: 2.5rem;
   }
-`;
+`
 
 export const Tags = styled.div`
   position: absolute;
@@ -48,7 +48,7 @@ export const Tags = styled.div`
   border-bottom: 1px solid grey;
   -ms-flex-pack: justify;
   padding-bottom: 10.5px;
-`;
+`
 
 export const Button = styled.p`
   padding: 15px 40px;
@@ -57,16 +57,16 @@ export const Button = styled.p`
   @media (max-width: 600px) {
     padding: 15px;
   }
-`;
+`
 
 export const Display = styled.div`
   background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(62, 62, 62) 100%);
-`;
+`
 
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
-`;
+`
 
 export const DisplayHeading = styled.h1`
   margin: 20px;
@@ -76,12 +76,12 @@ export const DisplayHeading = styled.h1`
     font-size: 15px;
     font-weight: 100;
   }
-`;
+`
 
 export const DisplayWrapper = styled.div`
   display: flex;
   padding-bottom: 30px;
-`;
+`
 
 export const ImageWrapper = styled.div`
   display: flex;
@@ -90,7 +90,7 @@ export const ImageWrapper = styled.div`
   gap: 2rem;
   padding-bottom: 100px;
   box-shadow: inset 0 -100px 100px 1px rgb(0 0 0 / 100%);
-`;
+`
 
 export const DisplayCard = styled.div`
   display: flex;
@@ -98,4 +98,10 @@ export const DisplayCard = styled.div`
   flex-wrap: wrap;
   align-items: center;
   color: red;
-`;
+`
+
+const Style = () => {
+  return <div>StyleImage</div>
+}
+
+export default Style

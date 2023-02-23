@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react"
 import {
   Gallery,
   ContainerTop,
@@ -12,22 +12,22 @@ import {
   DisplayCard,
   DisplayWrapper,
   ImageWrapper,
-} from "./style";
-import images from "./../Collection/data";
-import { SRLWrapper } from "simple-react-lightbox";
-import Card from "./../Card/index";
+} from "./style"
+import { images } from "./../Collection/data"
+import { SRLWrapper } from "simple-react-lightbox"
+import Card from "./../Card/index"
 
 const options = {
   // settings: {
-};
+}
 
 const index = () => {
-  const [tag, setTag] = useState("lead");
-  const [filteredImages, setFilteredImages] = useState(["lead"]);
+  const [tag, setTag] = useState("lead")
+  const [filteredImages, setFilteredImages] = useState(["lead"])
 
   useEffect(() => {
-    setFilteredImages(images.filter((image) => image.tag === tag));
-  }, [tag]);
+    setFilteredImages(images.filter((image) => image.tag === tag))
+  }, [tag])
 
   const filterData = () =>
     filteredImages.map((image) => (
@@ -36,7 +36,7 @@ const index = () => {
           <Card image={image} key={image.id} />
         </DisplayCard>
       </DisplayWrapper>
-    ));
+    ))
 
   return (
     <>
@@ -83,8 +83,8 @@ const index = () => {
         </SRLWrapper>
       </Display>
     </>
-  );
-};
+  )
+}
 
 const TagButton = ({ name, handleSetTag, tagActive }) => {
   return (
@@ -94,7 +94,7 @@ const TagButton = ({ name, handleSetTag, tagActive }) => {
     >
       {name.toUpperCase()}
     </Button>
-  );
-};
+  )
+}
 
-export default index;
+export default index
