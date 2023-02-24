@@ -1,8 +1,9 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Box = styled.div`
   padding-bottom: 18%;
-`;
+  color: black;
+`
 
 export const BackgroundImg = styled.img`
   z-index: 1;
@@ -13,7 +14,7 @@ export const BackgroundImg = styled.img`
     height: 100vh;
     object-fit: cover;
   }
-`;
+`
 
 export const Container = styled.div`
   position: relative;
@@ -22,7 +23,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-`;
+`
 
 export const HeaderIcon = styled.div`
   display: flex;
@@ -31,7 +32,7 @@ export const HeaderIcon = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
-`;
+`
 
 export const HeaderIcon1 = styled.div`
   display: flex;
@@ -66,7 +67,7 @@ export const HeaderIcon1 = styled.div`
     height: 45px;
     padding-right: 10px;
   }
-`;
+`
 
 export const HeaderIcon2 = styled.div`
   display: flex;
@@ -98,7 +99,7 @@ export const HeaderIcon2 = styled.div`
     height: 45px;
     padding-right: 10px;
   }
-`;
+`
 
 export const Form = styled.div`
   background: white;
@@ -110,7 +111,7 @@ export const Form = styled.div`
     width: 90%;
     padding: 1rem;
   }
-`;
+`
 
 export const Fline1 = styled.div`
   display: flex;
@@ -122,10 +123,12 @@ export const Fline1 = styled.div`
   @media (max-width: 540px) {
     flex-direction: column;
   }
-`;
+`
 
 export const Input = styled.input`
   background: white;
+  color: black;
+
   ::placeholder,
   ::-webkit-input-placeholder {
     text-align: left;
@@ -139,7 +142,7 @@ export const Input = styled.input`
     width: 80vw;
     margin: 10px 0;
   }
-`;
+`
 
 export const Fline2 = styled.div`
   display: flex;
@@ -151,7 +154,7 @@ export const Fline2 = styled.div`
   @media (max-width: 540px) {
     flex-direction: column;
   }
-`;
+`
 
 export const Fline3 = styled.div`
   background: white;
@@ -164,20 +167,22 @@ export const Fline3 = styled.div`
     border: 1px solid lightgrey;
     margin-top: 10px;
   }
-`;
+`
 export const TextArea = styled.textarea`
+  color: black;
+
   background: white;
-`;
+`
 
 export const ButtonHolder = styled.div`
   display: flex;
   width: 100%;
   justify-content: center;
   margin: 3rem auto;
-`;
+`
 
 const StyleImage = () => {
-  return <div>StyleImage</div>;
-};
+  return <div>StyleImage</div>
+}
 
-export default StyleImage;
+export default StyleImage
