@@ -157,7 +157,7 @@ const Navbar = ({ selectedTab }) => {
             </Link2> */}
           </Link>
           <Link2>
-            <Link target="_blank" href="https://ramaera.com/Kyc-login.aspx">
+            <Link target="_blank" href="https://kyc.ramaera.com/Kyc-login.aspx">
               <Button
                 nav
                 width="20px"
