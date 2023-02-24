@@ -167,6 +167,8 @@ export const Fline3 = styled.div`
 `;
 export const TextArea = styled.textarea`
   background: white;
+  max-width: 100%;
+  min-height: 220px;
 `;
 
 export const ButtonHolder = styled.div`

@@ -7,7 +7,7 @@ export const Container = styled.div`
 
 export const Heading = styled.div`
   justify-content: center;
-  width: 50%;
+  //width: 50%;
   margin: auto;
   padding: 0 0 0 2rem;
   @media (max-width: 800px) {
@@ -19,7 +19,7 @@ export const Heading = styled.div`
 `;
 
 export const MapIcon = styled.div`
-  width: 50%;
+  width: 100vw;
   @media (max-width: 1000px) {
     width: 100%;
   }
@@ -35,61 +35,30 @@ export const MapBox = styled.div`
 `;
 
 export const ImagePoint = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-image: url("/content/map.png");
+  background-position: center;
   height: 100%;
   width: 100%;
   background-size: contain;
   background-repeat: no-repeat;
-
-  h3 {
-    display: none;
-    position: relative;
-    left: 284px;
-    top: 184px;
-    height: 50px;
-    font-family: personal;
-    background: #ffb76b;
-    background: linear-gradient(to right, #ffa73d, gold);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-  }
-
-  #ramaera:hover ~ h3 {
-    display: block;
-  }
 `;
 
-export const ImgPoint1 = styled.img`
-  @media (max-width: 600px) {
-    display: none;
-  }
-`;
-
-export const ImgPoint2 = styled.img`
-  @media (max-width: 600px) {
-    display: none;
-  }
-`;
-
-export const ImgPoint3 = styled.img`
-  @media (max-width: 600px) {
-    display: none;
-  }
-`;
-
-export const ImgPointMain = styled.a`
-  img {
-    position: relative;
-    left: 240px;
-    top: 210px;
-    height: 50px;
-    width: 50px;
-    @media (max-width: 600px) {
-      height: 25px;
-      width: 25px;
-      top: 65px;
-      left: 122px;
-    }
+export const HoverText = styled.div`
+  opacity: 0;
+  padding-top: 2%;
+  margin: 25% 0% 0% 40%;
+  height: 150px;
+  width: 250px;
+  font-family: personal;
+  background: #ffb76b;
+  background: linear-gradient(to right, #ffa73d, gold);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  &:hover {
+    opacity: 100;
   }
 `;
 
