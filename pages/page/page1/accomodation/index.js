@@ -68,7 +68,6 @@ const Buy = () => {
             >
               <source src="/content/hotel.webm" type="video/webm" />
             </video>
-            {""}
           </Image>
         </Animdiv>
       </PageWidth>

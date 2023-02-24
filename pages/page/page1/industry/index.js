@@ -22,8 +22,6 @@ const Line = styled.div`
   }
 `
 const Image = styled.div`
-  height: 27rem;
-  width: 31rem;
   @media only screen and (max-width: 768px) {
     margin-top: -25%;
   }
