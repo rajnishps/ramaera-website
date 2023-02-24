@@ -74,9 +74,10 @@ export const ZoomIn = styled.div`
 `;
 
 export const ZoomImage = styled.div`
+  width: ${(props) => (props.title ? "50%" : "100%")};
   @media (max-width: 600px) {
     width: 100% !important;
-    height: 400px;
+    height: ${(props) => (props.title ? "50vh" : "100vh")};
   }
   img {
     width: 100%;
@@ -104,11 +105,13 @@ export const ZoomName = styled.h3`
   font-weight: 400;
   font-size: 2.2rem;
 `;
+
 export const ZoomTitle = styled.h5`
   font-size: 1.5rem;
   font-weight: 400;
   color: #a58e7c;
 `;
+
 export const ZoomAbout = styled.p`
   color: white;
   margin: 20px 0;
@@ -122,10 +125,7 @@ export const Modal = styled.div`
   right: 0;
   bottom: 0;
   position: fixed;
-  @media (max-width: 600px) {
-    position: sticky;
-    height: auto;
-  }
+  background: rgba(0, 0, 0, 0.6);
 `;
 
 export const ModalContent = styled.div`
@@ -145,6 +145,7 @@ export const ModalContent = styled.div`
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   @media (max-width: 600px) {
+    position: fixed;
     display: flex;
     flex-direction: column;
     padding: 10px;
@@ -158,13 +159,14 @@ export const ModalContent = styled.div`
 `;
 
 export const CloseImg = styled.img`
-  position: relative;
-  top: 30px;
-  left: 86%;
+  position: inherit;
+  top: 65px;
+  left: 88%;
   width: 40px;
   border-radius: 10px;
   cursor: pointer;
   @media (max-width: 600px) {
+    position: fixed;
     top: 8px;
     left: 88%;
   }

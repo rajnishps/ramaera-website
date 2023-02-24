@@ -25,13 +25,13 @@ const Card = ({ image }) => {
   const toggleModal = () => {
     setModal(!modal);
   };
-  if (typeof window !== "undefined") {
-    if (modal) {
-      document.body.classList.add("fixed-position");
-    } else if (!modal) {
-      document.body.classList.remove("fixed-position");
-    }
-  }
+  // if (typeof window !== "undefined") {
+  //   if (modal) {
+  //     document.body.classList.add("fixed-position");
+  //   } else if (!modal) {
+  //     document.body.classList.remove("fixed-position");
+  //   }
+  // }
   console.log(modal);
   return (
     <>
@@ -68,7 +68,7 @@ const Card = ({ image }) => {
           <div>
             <Modal>
               <ModalContent>
-                <ZoomImage style={{ width: image.title ? "50%" : "100%" }}>
+                <ZoomImage title={image.title}>
                   <img
                     style={{ objectFit: "cover" }}
                     src={image.imageName}
@@ -87,13 +87,11 @@ const Card = ({ image }) => {
                       <ZoomTitle>{image.title}</ZoomTitle>
                       <ZoomAbout>{image.about}</ZoomAbout>
                     </>
-                  ) : (
-                    <div> </div>
-                  )}
+                  ) : null}
                 </ZoomDetails>
               </ModalContent>
+              <CloseImg src="/content/closeIcon.png" onClick={toggleModal} />
             </Modal>
-            <CloseImg src="/content/closeIcon.png" onClick={toggleModal} />
           </div>
         )}
       </ZoomIn>

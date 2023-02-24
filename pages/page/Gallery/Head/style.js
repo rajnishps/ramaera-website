@@ -29,15 +29,7 @@ export const Image = styled.div`
 export const Heading = styled.div`
   position: absolute;
   margin: auto;
-  top: 25vh;
-  h1 {
-    background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-family: personal !important;
-    font-weight: 400;
-    font-size: 2.5rem;
-  }
+  top: 30vh;
 `;
 
 export const Tags = styled.div`

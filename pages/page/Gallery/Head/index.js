@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import Text from "../../../../components/Text/Text";
+
 import {
   Gallery,
   ContainerTop,
@@ -44,7 +46,19 @@ const index = () => {
         <ContainerTop>
           <Image></Image>
           <Heading>
-            <h1>Gallery</h1>
+            <Text
+              Text="Gallery"
+              font
+              lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
+              size="2.5rem"
+              fw="400"
+              lh
+              xmsize="3rem"
+              xssize="3rem"
+              msize="2.5rem"
+              padding="0"
+              mpadding="0"
+            />
           </Heading>
           <Tags className="tags ">
             <TagButton
