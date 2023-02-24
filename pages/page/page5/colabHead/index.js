@@ -54,7 +54,7 @@ const index = () => {
             mta="left"
             mlh="unset"
           />
-          <Text
+          {/* <Text
             Text="Lorem Ipsum is simply dummy text of the printing ."
             mta="left"
             padding="2vh 0"
@@ -62,7 +62,7 @@ const index = () => {
             fw="300"
             mwidth="unset"
             lh="2"
-          />
+          /> */}
         </Heading>
 
         <MapIcon>

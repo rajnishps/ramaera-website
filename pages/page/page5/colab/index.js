@@ -42,14 +42,14 @@ const index = () => {
                 <img src="/content/mailIcon.png" />
                 <b>Mail us</b>
               </div>
-              <p>support@gmail.com</p>
+              <p>support@ramaera.com</p>
             </HeaderIcon1>
             <HeaderIcon2>
               <div>
                 <img src="/content/phoneIcon.png" />
                 <b>Contact us</b>
               </div>
-              <p>01199936737</p>
+              <p>0120-4152818</p>
             </HeaderIcon2>
           </HeaderIcon>
 
