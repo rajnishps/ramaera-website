@@ -1,7 +1,8 @@
-import styled from "styled-components"
-import Text from "../../../../components/Text/Text"
+import styled from "styled-components";
+import Text from "../../../../components/Text/Text";
 
 const Wrapper = styled.div`
+  color: white;
   height: 100%;
   padding: 0 5vw;
   scroll-snap-align: center;
@@ -9,35 +10,35 @@ const Wrapper = styled.div`
     padding: 0;
     transform: scale(75%);
   }
-`
+`;
 const Container = styled.div`
   display: flex;
   @media only screen and (max-width: 500px) {
     flex-direction: column;
   }
-`
+`;
 const Image = styled.img`
   height: 60vh;
-`
+`;
 const LeftDiv = styled.div`
   display: flex;
-`
+`;
 const Content = styled.p`
   font-size: 1rem;
   margin-top: 20px;
-`
+`;
 const LeftContent = styled.p`
   font-size: 1.6rem;
-`
+`;
 const NumDiv = styled.div`
   margin-right: auto;
   font-size: 5rem;
   opacity: 60%;
   font-weight: 500;
-`
+`;
 const Link = styled.a`
   cursor: pointer;
-`
+`;
 const RightDiv = styled.div`
   display: flex;
   flex-direction: column;
@@ -46,7 +47,7 @@ const RightDiv = styled.div`
   p {
     text-align: left;
   }
-`
+`;
 const candidate = ({ href, id, sub1, txt1, gif, sub2, txt2, txt3, number }) => {
   return (
     <Wrapper>
@@ -104,7 +105,7 @@ const candidate = ({ href, id, sub1, txt1, gif, sub2, txt2, txt3, number }) => {
         </Container>
       </Link>
     </Wrapper>
-  )
-}
+  );
+};
 
-export default candidate
+export default candidate;

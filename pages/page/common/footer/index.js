@@ -1,13 +1,13 @@
-import React from "react"
-import PageLayout from "../../../../components/PageLayout/PageLayout"
-import PageWidth from "../../../../components/Width/PageWidth"
-import { Responsive } from "./components/Style"
-import Links from "./components/Links"
-import Logo from "./components/Logo"
-import Map from "./components/Map"
-import Socials from "./components/Socials"
-import Foot from "./components/Foot"
-import { Sub, SubText, SubHeading, Input, DispFlex } from "./components/Links"
+import React from "react";
+import PageLayout from "../../../../components/PageLayout/PageLayout";
+import PageWidth from "../../../../components/Width/PageWidth";
+import { Responsive } from "./components/Style";
+import Links from "./components/Links";
+import Logo from "./components/Logo";
+import Map from "./components/Map";
+import Socials from "./components/Socials";
+import Foot from "./components/Foot";
+import { Sub, SubText, SubHeading, Input, DispFlex } from "./components/Links";
 
 const index = () => (
   <PageLayout bgColor="#000000" height="40vh">
@@ -15,7 +15,7 @@ const index = () => (
       <Responsive>
         <DispFlex>
           <Logo />
-          <Sub>
+          {/* <Sub>
             <SubHeading>Subscribe</SubHeading>
             <form action="">
               <Input placeholder="Email Adddress" />
@@ -25,7 +25,7 @@ const index = () => (
               effects from revolutionizing how companies engage with their
               clients & their team.
             </SubText>
-          </Sub>
+          </Sub> */}
           {/* <Links /> */}
           <Map />
         </DispFlex>
@@ -34,6 +34,6 @@ const index = () => (
       </Responsive>
     </PageWidth>
   </PageLayout>
-)
+);
 
-export default index
+export default index;
