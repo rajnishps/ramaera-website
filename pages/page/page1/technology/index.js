@@ -38,8 +38,6 @@ const Buy = () => {
               style={{
                 position: "absolute",
                 top: "35vh",
-                width: "100%",
-                height: "100%",
               }}
             >
               <source src="/content/tech.webm" type="video/webm" />

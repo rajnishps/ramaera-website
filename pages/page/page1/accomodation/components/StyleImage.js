@@ -1,14 +1,10 @@
 import styled from "styled-components"
 
 export const Image = styled.div`
-  height: 27rem;
-  width: 30rem;
+  height: 35rem;
+  width: 35rem;
   @media only screen and (max-width: 768px) {
-    margin-left: 40px;
-
-
-    width: 23rem;
-    height: 22rem;
+    width: 95vw;
   }
 `
 export const Responsive = styled.div`

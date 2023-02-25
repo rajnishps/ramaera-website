@@ -1,4 +1,4 @@
-export default [
+export const images = [
   {
     id: "1",
     heading: "Our Leader",
@@ -185,4 +185,10 @@ export default [
       "https://images.pexels.com/photos/532006/pexels-photo-532006.jpeg?auto=compress&cs=tinysrgb&w=1600",
     tag: "fest",
   },
-];
+]
+
+const Style = () => {
+  return <div>StyleImage</div>
+}
+
+export default Style

@@ -1,9 +1,9 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const CardContainer = styled.div`
   /* height: 50vh;
    */
-`;
+`
 
 export const CardImg = styled.div`
   color: #efefef;
@@ -25,7 +25,7 @@ export const CardImg = styled.div`
     height: 100%;
     vertical-align: top;
   }
-`;
+`
 
 export const CardDetails = styled.div`
   position: absolute;
@@ -43,7 +43,7 @@ export const CardDetails = styled.div`
   justify-content: flex-end;
   text-align: left;
   padding: 0 0px 10px 15px;
-`;
+`
 
 export const Name = styled.div`
   color: #a58e7c;
@@ -52,12 +52,12 @@ export const Name = styled.div`
   letter-spacing: 1px;
   margin: 3px 0;
   font-size: 25px;
-`;
+`
 
 export const Title = styled.div`
   font-weight: 300;
   font-size: 20px;
-`;
+`
 
 export const ZoomIn = styled.div`
   position: absolute;
@@ -71,7 +71,7 @@ export const ZoomIn = styled.div`
   @media (max-width: 600px) {
     margin: 0;
   }
-`;
+`
 
 export const ZoomImage = styled.div`
   width: ${(props) => (props.title ? "50%" : "100%")};
@@ -86,7 +86,7 @@ export const ZoomImage = styled.div`
     border-radius: 15px;
     background-size: cover;
   }
-`;
+`
 
 export const ZoomDetails = styled.div`
   padding: 0 100px 0 50px;
@@ -95,7 +95,7 @@ export const ZoomDetails = styled.div`
     width: 100% !important;
     padding: 0;
   }
-`;
+`
 
 export const ZoomName = styled.h3`
   background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
@@ -104,18 +104,18 @@ export const ZoomName = styled.h3`
   font-family: personal !important;
   font-weight: 400;
   font-size: 2.2rem;
-`;
+`
 
 export const ZoomTitle = styled.h5`
   font-size: 1.5rem;
   font-weight: 400;
   color: #a58e7c;
-`;
+`
 
 export const ZoomAbout = styled.p`
   color: white;
   margin: 20px 0;
-`;
+`
 
 export const Modal = styled.div`
   width: 100vw;
@@ -126,7 +126,7 @@ export const Modal = styled.div`
   bottom: 0;
   position: fixed;
   background: rgba(0, 0, 0, 0.6);
-`;
+`
 
 export const ModalContent = styled.div`
   position: absolute;
@@ -156,7 +156,7 @@ export const ModalContent = styled.div`
     margin: 20px;
     max-height: 95svh;
   }
-`;
+`
 
 export const CloseImg = styled.img`
   position: inherit;
@@ -170,4 +170,9 @@ export const CloseImg = styled.img`
     top: 8px;
     left: 88%;
   }
-`;
+`
+const Style = () => {
+  return <div>StyleImage</div>
+}
+
+export default Style

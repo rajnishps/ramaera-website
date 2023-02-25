@@ -89,7 +89,7 @@ const Menu = ({ open, setOpen, ...props }) => {
             Contact
           </Link>
         </H>
-        <Link target="_blank" href="https://ramaera.com/Kyc-login.aspx">
+        <Link target="_blank" href="https://kyc.ramaera.com/Kyc-login.aspx">
           <Button
             nav
             width="20px"

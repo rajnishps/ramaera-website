@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Cards from "react-animated-3d-card";
+import React, { useState } from "react"
+import Cards from "react-animated-3d-card"
 
 import {
   CardContainer,
@@ -17,14 +17,14 @@ import {
   ZoomTitle,
   ZoomAbout,
   CloseImg,
-} from "./style.js";
+} from "./style.js"
 
-const Card = ({ image }) => {
-  const [modal, setModal] = useState(false);
+const Card = ({ image = [] }) => {
+  const [modal, setModal] = useState(false)
 
   const toggleModal = () => {
-    setModal(!modal);
-  };
+    setModal(!modal)
+  }
   // if (typeof window !== "undefined") {
   //   if (modal) {
   //     document.body.classList.add("fixed-position");
@@ -32,12 +32,12 @@ const Card = ({ image }) => {
   //     document.body.classList.remove("fixed-position");
   //   }
   // }
-  console.log(modal);
+  console.log(modal)
   return (
     <>
       <CardContainer
         onClick={() => {
-          toggleModal();
+          toggleModal()
         }}
       >
         <Cards
@@ -96,7 +96,7 @@ const Card = ({ image }) => {
         )}
       </ZoomIn>
     </>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card

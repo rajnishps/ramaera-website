@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const MapContainer = styled.a`
   display: flex;
@@ -7,13 +7,14 @@ const MapContainer = styled.a`
   flex-direction: column;
   width: 20vw;
   /*   margin-left: 2rem;*/
+
   margin-bottom: 100px;
-`
+`;
 const Image = styled.iframe`
   border: 3px solid #959595;
   border-radius: 20px;
   overflow: hidden;
-`
+`;
 
 const Map = () => {
   return (
@@ -27,7 +28,7 @@ const Map = () => {
 
       {/* width={310} height={250} style={{"marginTop":"10","border":"0"}} */}
     </MapContainer>
-  )
-}
+  );
+};
 
-export default Map
+export default Map;

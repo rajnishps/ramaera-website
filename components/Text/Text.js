@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
 const Text = (props) => {
   const StyledText = styled.p`
@@ -21,9 +21,7 @@ const Text = (props) => {
     font-family: ${props.font ? "personal" : ""} !important;
     width: ${props.width ? props.width : ""};
     opacity: 0.99;
-    text-shadow: ${props.tsdo
-      ? props.tsdo
-      : "0px 20px 20px rgba(0, 0, 0, 0.5)"};
+    text-shadow: ${props.tsdo ? props.tsdo : ""};
 
     padding: ${props.padding ? props.padding : "2vw"};
 
@@ -56,8 +54,8 @@ const Text = (props) => {
       padding: ${props.mpadding ? props.mpadding : "2vw"};
       margin: ${props.mmargin ? props.mmargin : ""};
     }
-  `;
-  return <StyledText>{props.Text ? props.Text : "Default Text"}</StyledText>;
-};
+  `
+  return <StyledText>{props.Text ? props.Text : "Default Text"}</StyledText>
+}
 
-export default Text;
+export default Text
