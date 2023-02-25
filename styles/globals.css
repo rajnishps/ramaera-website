@@ -141,7 +141,7 @@ a {
   width: 45rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 .RightNav {
@@ -250,7 +250,6 @@ a {
     width: 80vw;
   }
 }
-
 @media (max-width: 1400px) {
   .list {
     margin: 0 1rem 0 0;
@@ -260,6 +259,13 @@ a {
   }
   .LeftNav {
     width: 40rem;
+  }
+  .left-nav-font {
+    font-size: 1.2rem;
+  }
+  .right-nav-font {
+    display: block;
+    font-size: 0.75rem;
   }
 }
 
@@ -273,6 +279,15 @@ a {
 
   .LogoActive {
     margin: 0 0 0 2rem;
+  }
+
+  .list {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 32rem;
+    text-decoration: none;
+    margin: 0 1rem 0 0;
   }
 }
 
@@ -310,7 +325,7 @@ a {
     transition:  0.5s linear;
     
   } */
-  
+
   .RightContainer {
     background: none;
     backdrop-filter: none;
@@ -324,7 +339,7 @@ a {
     transition: 0.5s linear;
     margin: 0 0 0 2vw;
   }
-  
+
   .LogoActive {
     transition: 0.5s linear;
     margin: 0;
@@ -409,7 +424,7 @@ a {
   padding: 20px;
 }
 
-.activeLine  {
+.activeLine {
   color: blueviolet;
   font-weight: bold;
   border-bottom: 2px solid white;

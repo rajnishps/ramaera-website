@@ -2,6 +2,7 @@ import React from "react"
 import Text from "../../../../components/Text/Text"
 import { Responsive } from "./components/Style"
 import Holder from "./components/Holder"
+import styled from "styled-components"
 
 const index = () => (
   <Responsive>

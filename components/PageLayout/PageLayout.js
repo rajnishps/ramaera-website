@@ -14,6 +14,7 @@ const PageLayout = ({
   resTr,
   mheight,
   mtpadding,
+  hideO,
 }) => {
   const StyledPageLayout = styled.section`
     //min-width: 100vh;
@@ -34,10 +35,12 @@ const PageLayout = ({
     position: relative;
     background-position: center center;
     overflow-x: hidden;
-    overflow-y: ${Y ? "hidden" : ""};
+    overflow: ${hideO ? hideO : ""};
+    overflow-y: ${Y ? Y : ""};
     z-index: ${Zindex ? Zindex : "1"};
 
     @media (max-width: 1200px) {
+      min-height: 110vh;
       background-size: ${adjustBg ? "100% auto" : "auto 100%"};
       background-position: ${adjustBg ? "center center" : "center top"};
     }

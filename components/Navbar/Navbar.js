@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react"
 //import './Navbar.css';
-import styled from "styled-components";
-import { Burger, Menu } from "./components";
-import FocusLock from "react-focus-lock";
-import Link from "next/link";
-import Button from "../Button/Button";
+import styled from "styled-components"
+import { Burger, Menu } from "./components"
+import FocusLock from "react-focus-lock"
+import Link from "next/link"
+import Button from "../Button/Button"
 
 const ImageHolder = styled.img`
   transform: scale(90%);
@@ -23,7 +23,7 @@ const ImageHolder = styled.img`
   @media (max-width: 400px) {
     transform: scale(50%);
   }
-`;
+`
 const Link2 = styled.div`
   display: flex;
   margin: 0 10px;
@@ -44,27 +44,27 @@ const Link2 = styled.div`
 
     text-transform: uppercase;
   }
-`;
+`
 
-const logo = "/logo/logo.png";
+const logo = "/logo/logo.png"
 const Navbar = ({ selectedTab }) => {
-  const [open, setOpen] = useState(false);
-  const node = useRef();
-  const menuId = "main-menu";
+  const [open, setOpen] = useState(false)
+  const node = useRef()
+  const menuId = "main-menu"
 
-  const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(false)
   const changeBackground = () => {
     if (window.scrollY >= 50) {
-      setNavbar(true);
+      setNavbar(true)
     } else {
-      setNavbar(false);
+      setNavbar(false)
     }
-  };
+  }
 
   useEffect(() => {
-    changeBackground();
-    window.addEventListener("scroll", changeBackground);
-  });
+    changeBackground()
+    window.addEventListener("scroll", changeBackground)
+  })
 
   return (
     <nav className="nav">
@@ -77,7 +77,7 @@ const Navbar = ({ selectedTab }) => {
         <div className="PC LeftNav">
           <ul className="list">
             <Link2>
-              <Link href="/">
+              <Link href="/" className="left-nav-font">
                 HOME
                 <div
                   className="Line"
@@ -89,7 +89,7 @@ const Navbar = ({ selectedTab }) => {
             </Link2>
 
             <Link2>
-              <Link href="/industries">
+              <Link href="/industries" className="left-nav-font">
                 OUR INDUSTRIES
                 <div
                   className="Line"
@@ -101,7 +101,7 @@ const Navbar = ({ selectedTab }) => {
             </Link2>
 
             <Link2>
-              <Link href="/companies">
+              <Link href="/companies" className="left-nav-font">
                 OUR COMPANIES
                 <div
                   className="Line"
@@ -116,25 +116,13 @@ const Navbar = ({ selectedTab }) => {
 
         <div className="PC RightNav">
           <Link2>
-            <Link
-              href="/career"
-              style={{
-                display: "block",
-                fontSize: "0.9rem",
-              }}
-            >
+            <Link href="/career" className="right-nav-font">
               Career
             </Link>
           </Link2>
 
           <Link2>
-            <Link
-              href="/contact"
-              style={{
-                display: "block",
-                fontSize: "0.9rem",
-              }}
-            >
+            <Link href="/contact" className="right-nav-font">
               Contact
             </Link>
           </Link2>
@@ -159,7 +147,6 @@ const Navbar = ({ selectedTab }) => {
           <Link2>
             <Link target="_blank" href="https://kyc.ramaera.com/Kyc-login.aspx">
               <Button
-                nav
                 width="20px"
                 height="2.75rem"
                 Text="KYC"
@@ -177,7 +164,7 @@ const Navbar = ({ selectedTab }) => {
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar

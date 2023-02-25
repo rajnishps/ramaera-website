@@ -11,6 +11,7 @@ const PageWidth = ({
   width,
   position,
   scale,
+  overflow,
 }) => {
   const StyledWidth = styled.section`
     transform: ${scale ? `scale(${scale})` : ""};
@@ -23,6 +24,7 @@ const PageWidth = ({
     padding: ${padding ? padding : "0"};
     margin: ${margin ? margin : "0"};
     position: ${position ? position : "static"};
+    overflow: ${overflow ? overflow : ""};
 
     @media only screen and (max-width: 1600px) {
       width: ${full ? "100%" : "95%"};

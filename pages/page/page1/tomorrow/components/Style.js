@@ -13,6 +13,7 @@ export const Responsive = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
+  margin-bottom: 20vh;
 `
 
 const Style = () => {
