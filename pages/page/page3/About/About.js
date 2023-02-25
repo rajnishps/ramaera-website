@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import Text from "../../../../components/Text/Text";
-import AboutTeam from "./AboutTeam/AboutTeam";
-import Trending from "./Trending";
+import React from "react"
+import styled from "styled-components"
+import Text from "../../../../components/Text/Text"
+import AboutTeam from "./AboutTeam/AboutTeam"
+import Trending from "./Trending"
 const AboutContainer = styled.div`
   width: 100%;
-`;
+`
 const AboutEnd = styled.div`
   width: 100%;
   height: 100vh;
@@ -21,7 +21,7 @@ const AboutEnd = styled.div`
     background-repeat: no-repeat;
     height: 80vh;
   }
-`;
+`
 
 const About = () => {
   return (
@@ -40,8 +40,8 @@ const About = () => {
             mlh="50px"
             m="5rem 0 0 0"
             align="center"
-            xmsize="6rem"
-            xssize="10vw"
+            xmsize="2rem"
+            xssize="4vw"
             msize="2rem"
             mpadding="0"
             mmargin="0 0 0 0"
@@ -75,7 +75,7 @@ const About = () => {
         </div>
       </AboutContainer>
       <AboutEnd>
-      <div data-aos="fade-up">
+        <div data-aos="fade-up">
           <Text
             Text="STANDING STRONG AS A FAMILY"
             lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
@@ -97,7 +97,7 @@ const About = () => {
         </div>
       </AboutEnd>
     </>
-  );
-};
+  )
+}
 
-export default About;
+export default About

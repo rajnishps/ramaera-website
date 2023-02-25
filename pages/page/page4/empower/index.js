@@ -25,7 +25,7 @@ const index = () => (
             fw="400"
             align="center"
             lh="105px"
-            xmsize="6rem"
+            xmsize="2rem"
             xssize="10vw"
             msize="2.4rem"
             mmargin="0 0 10vh 0"
