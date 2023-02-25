@@ -2,7 +2,7 @@ import styled from "styled-components"
 import Candidate from "../common/candidate"
 
 const TalentWrapper = styled.div`
-  transform: scale(95%);
+  transform: scale(0.95);
   margin: 0 10vw;
   height: 100vh;
   overflow-y: scroll;

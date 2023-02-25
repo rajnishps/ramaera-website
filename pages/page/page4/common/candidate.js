@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   scroll-snap-align: center;
   @media only screen and (max-width: 500px) {
     padding: 0;
-    transform: scale(75%);
+    transform: scale(0.75);
   }
 `
 const Container = styled.div`

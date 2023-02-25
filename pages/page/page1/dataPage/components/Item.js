@@ -10,7 +10,7 @@ const StyledItem = styled.div`
   justify-content: center;
   width: 15rem;
   height: 8rem;
-  transform: scale(80%);
+  transform: scale(0.8);
 `
 const Item = (props) => {
   return (

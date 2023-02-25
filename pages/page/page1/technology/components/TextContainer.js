@@ -22,7 +22,7 @@ const StyleTextContainer = styled.div`
 `
 const IconDiv = styled.div`
   @media only screen and (max-width: 768px) {
-    transform: scale(100%);
+    transform: scale(1);
   }
 `
 

@@ -4,7 +4,7 @@ export const Image = styled.div`
   height: 35rem;
   width: 40rem;
   @media only screen and (max-width: 768px) {
-    transform: scale(90%);
+    transform: scale(0.9);
   }
 `
 export const Responsive = styled.div`

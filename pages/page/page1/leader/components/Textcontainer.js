@@ -11,7 +11,7 @@ const StyledTextContainer = styled.div`
   @media (max-width: 768px) {
     width: 100vw;
     position: absolute;
-    transform: scale(70%);
+    transform: scale(0.7);
   }
 `
 const ResHeading = styled.div`

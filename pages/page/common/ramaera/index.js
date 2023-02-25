@@ -22,14 +22,14 @@ import Tab from "./components/Tab/Tab"
 import styled from "styled-components"
 import Image from "next/image"
 const SmallSize = styled.div`
-  transform: scale(80%);
+  transform: scale(0.8);
 `
 const LinkTo = styled.a`
   cursor: pointer;
 `
 const RotateTab = styled.div`
   @media only screen and (max-width: 768px) {
-    /*  transform: scale(100%);
+    /*  transform: scale(1);
     transform: rotateZ(90deg);
     margin-right: auto;
     margin-left: auto; */
@@ -38,7 +38,7 @@ const RotateTab = styled.div`
 `
 const TabsWrapper = styled.div`
   @media only screen and (max-width: 768px) {
-    transform: scale(70%);
+    transform: scale(0.7);
   }
 `
 const RotateSocials = styled.div`

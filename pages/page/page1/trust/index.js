@@ -54,7 +54,7 @@ export const ArrowLeft = styled.button`
   transition: ease 0.3s all;
   outline: none;
   &:hover {
-    transform: scale(115%);
+    transform: scale(1.15);
   }
   @media only screen and (max-width: 768px) {
     left: 30vw;
@@ -70,14 +70,14 @@ export const ArrowRight = styled.button`
   transition: ease 0.3s all;
   outline: none;
   &:hover {
-    transform: scale(115%);
+    transform: scale(1.15);
   }
   @media only screen and (max-width: 768px) {
     right: 30vw;
   }
 `
 const Slide = styled.div`
-  transform: scale(120%);
+  transform: scale(1.2);
   width: 100vw;
   height: 100vh;
   float: left;
@@ -103,7 +103,7 @@ const Dots = styled.img`
   position: absolute;
   top: 200px;
   left: -120px;
-  transform: scale(25%);
+  transform: scale(0.25);
 `
 const ArrowsHover = styled.div``
 const DotsContainer = styled.ul`

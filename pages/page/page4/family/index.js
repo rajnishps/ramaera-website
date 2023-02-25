@@ -8,7 +8,7 @@ const Container = styled.div`
 `
 const Wrapper = styled.div`
   @media only screen and (max-width: 768px) {
-    transform: scale(80%);
+    transform: scale(0.8);
   }
 `
 const FamilyPhoto = styled.div`

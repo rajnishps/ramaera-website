@@ -3,12 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "open": "yarn run open-browser && next dev",
     "dev": "next dev",
+    "open": "yarn run open-browser && next dev",
     "open-browser": "open http://localhost:3000",
-    "build": " next build && next export -o build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "next build && next export -o build",
+    "start": "next start"
   },
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -29,13 +28,13 @@
     "react-focus-lock": "^2.9.2",
     "react-icons": "^4.7.1",
     "react-responsive-carousel": "^3.2.23",
-    "react-icons": "^4.7.1",
     "react-spring": "^9.6.1",
     "react-spring-3d-carousel": "1.2.1",
     "simple-react-lightbox": "^3.6.9-0",
     "styled-components": "^5.3.6"
   },
   "devDependencies": {
-    "prettier": "2.8.3"
+    "eslint-config-prettier": "^8.6.0",
+    "prettier": "^2.8.4"
   }
 }
