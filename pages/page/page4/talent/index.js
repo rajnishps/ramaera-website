@@ -2,11 +2,17 @@ import styled from "styled-components"
 import Candidate from "../common/candidate"
 
 const TalentWrapper = styled.div`
+  transform: scale(95%);
+  margin: 0 10vw;
   height: 100vh;
-  padding: 0 10vw;
-  overflow: scroll;
+  overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
 `
 const index = () => {
   return (

@@ -29,7 +29,7 @@ const AboutTeam = () => {
           lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
           font
           size="3rem"
-          lh="30px"
+          lh="60px"
           width="100%"
           mwidth="100%"
           fw="500"
@@ -129,7 +129,7 @@ const AboutTeam = () => {
         </TeamBoxContainer>
         <Dots src="/background/Dots.png" alt="dots background" width={"90px"} />
       </TeamContainer>
-      <Pillers />
+      {/*  <Pillers /> */}
     </>
   )
 }

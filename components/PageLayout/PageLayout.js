@@ -40,7 +40,8 @@ const PageLayout = ({
     z-index: ${Zindex ? Zindex : "1"};
 
     @media (max-width: 1200px) {
-      min-height: 110vh;
+      min-height: 100vh;
+      overflow-y: hidden;
       background-size: ${adjustBg ? "100% auto" : "auto 100%"};
       background-position: ${adjustBg ? "center center" : "center top"};
     }

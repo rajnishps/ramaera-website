@@ -33,8 +33,8 @@ const index = () => {
           padding: "5vw",
         }}
         data-aos="fade-up"
-        data-aos-duration="500"
-        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="1500"
+        data-aos-anchor-placement="top-bottom"
       >
         <Heading>
           <Text

@@ -1,15 +1,15 @@
-import React from "react";
-import styled from "styled-components";
-import Text from "../../../../components/Text/Text";
-import Articles from "./Articles";
-import News from "./News/News";
-import { NewsData } from "./News/NewsData";
+import React from "react"
+import styled from "styled-components"
+import Text from "../../../../components/Text/Text"
+import Articles from "./Articles"
+import News from "./News/News"
+import { NewsData } from "./News/NewsData"
 import {
   TrendingContainer,
   TrendingHead,
   TrendingLeft,
   TrendingRight,
-} from "./style";
+} from "./style"
 
 const Trending = () => {
   return (
@@ -22,7 +22,7 @@ const Trending = () => {
             font
             size="2.5rem"
             lh="90px"
-            width="17vw"
+            width="40%"
             mwidth="80vw"
             fw="500"
             mlh="50px"
@@ -40,7 +40,7 @@ const Trending = () => {
         {/* <TrendingHead>Trending</TrendingHead> */}
         <div data-aos="fade-up">
           {NewsData.map((item) => {
-            return <News item={item} />;
+            return <News item={item} />
           })}
         </div>
       </TrendingLeft>
@@ -50,7 +50,7 @@ const Trending = () => {
         </div>
       </TrendingRight>
     </TrendingContainer>
-  );
-};
+  )
+}
 
-export default Trending;
+export default Trending
