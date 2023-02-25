@@ -1,7 +1,7 @@
-import dynamic from "next/dynamic";
+/* import dynamic from "next/dynamic";
 import Image from "next/image";
 import { Inter } from "@next/font/google";
-import styles from "../styles/Home.module.css";
+import styles from "../styles/Home.module.css"; */
 
 import Ramaera from "./page/common/ramaera";
 import Navbar from "../components/Navbar/Navbar";

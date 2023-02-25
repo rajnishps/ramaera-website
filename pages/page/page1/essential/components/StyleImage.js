@@ -4,7 +4,7 @@ export const Image = styled.div`
   height: 25rem;
   width: 35rem;
   @media only screen and (max-width: 768px) {
-    transform: scale(65%);
+    transform: scale(0.65);
     width: 90%;
     height: 100%;
     margin-top: -25%;

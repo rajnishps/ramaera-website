@@ -1,8 +1,8 @@
-import React from "react";
-import Left from "./Components/Left";
-import Right from "./Components/Right";
-import { InnitiativeHead, Best, Left1 } from "./Components/style";
-import Text from "../../../../components/Text/Text";
+import React from "react"
+import Left from "./Components/Left"
+import Right from "./Components/Right"
+import { InnitiativeHead, Best, Left1 } from "./Components/style"
+import Text from "../../../../components/Text/Text"
 const Innitiatives = () => {
   return (
     <div>
@@ -19,8 +19,8 @@ const Innitiatives = () => {
           fw="500"
           mlh="50px"
           align="center"
-          xmsize="6rem"
-          xssize="10vw"
+          xmsize="2rem"
+          xssize="4vw"
           msize="2rem"
           mpadding="0"
           mmargin=" 2rem 0 2rem 0"
@@ -31,7 +31,7 @@ const Innitiatives = () => {
         <Right />
       </Best>
     </div>
-  );
-};
+  )
+}
 
-export default Innitiatives;
+export default Innitiatives

@@ -12,13 +12,13 @@ export const StockImage = styled.div`
 export const RotateImage = styled(motion.div)`
   width: 100vw;
   position: absolute;
-  transform: scale(140%);
+  transform: scale(1.4);
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: -1;
   @media only screen and (max-width: 768px) {
-    transform: scale(120%);
+    transform: scale(1.2);
   }
 `
 export const FutureContainer = styled.div`

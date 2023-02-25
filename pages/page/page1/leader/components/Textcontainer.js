@@ -1,3 +1,4 @@
+import Link from "next/link"
 import React, { useState } from "react"
 import styled from "styled-components"
 import Text from "../../../../../components/Text/Text"
@@ -11,7 +12,7 @@ const StyledTextContainer = styled.div`
   @media (max-width: 768px) {
     width: 100vw;
     position: absolute;
-    transform: scale(70%);
+    transform: scale(0.7);
   }
 `
 const ResHeading = styled.div`
@@ -113,33 +114,18 @@ const Textcontainer = () => {
       <ResSub>
         <CustomText>
           Ramaera Chairman,{" "}
-          <span
-            style={{ color: "#FFE259" }}
-            onMouseMove={() => setisActive(true)}
+          <Link
+            target="_blank"
+            href="https://in.linkedin.com/in/devendra-kumar-mishra-b2109518"
           >
-            Devendra Mishra{" "}
-          </span>{" "}
+            <span style={{ color: "#FFE259" }}>Devendra Mishra </span>{" "}
+          </Link>
           said that for India to stay on the growth trajectory, a triple decker
           strategy focused on employment generation...
         </CustomText>
       </ResSub>
-      {isActive ? (
-        <Bg>
-          <div onMouseMove={() => setisActive(false)}>
-            <Text
-              Text="Devendra Mishra"
-              lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
-              font
-              size="75px"
-              fw="400"
-              align="center"
-              lh="55px"
-              msize="60px"
-            />
-          </div>
-        </Bg>
-      ) : null}
-      <Stars>
+
+      {/*  <Stars>
         <div>
           <Star alt="star 1" />
           <Star alt="star 2" />
@@ -154,7 +140,7 @@ const Textcontainer = () => {
           color="#FFF"
           fw="500"
         />
-      </Stars>
+      </Stars> */}
     </StyledTextContainer>
   )
 }

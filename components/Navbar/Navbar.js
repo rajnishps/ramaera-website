@@ -7,21 +7,22 @@ import Link from "next/link"
 import Button from "../Button/Button"
 
 const ImageHolder = styled.img`
-  transform: scale(90%);
+  transform: scale(0.9);
   @media (max-width: 1000px) {
-    transform: scale(85%);
+    transform: scale(0.85);
   }
   @media (max-width: 768px) {
-    transform: scale(80%);
+    transform: scale(0.8);
   }
   @media (max-width: 600px) {
-    transform: scale(70%);
+    transform: scale(0.7);
   }
+
   @media (max-width: 500px) {
-    transform: scale(60%);
+    transform: scale(0.6);
   }
   @media (max-width: 400px) {
-    transform: scale(50%);
+    transform: scale(0.5);
   }
 `
 const Link2 = styled.div`

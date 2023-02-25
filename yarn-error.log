@@ -1,5 +1,5 @@
 Arguments: 
-  /usr/local/bin/node /usr/local/bin/yarn add @types/react-animated-3d-card
+  /usr/local/bin/node /usr/local/bin/yarn init @eslint/config
 
 PATH: 
   /usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
@@ -8,23 +8,23 @@ Yarn version:
   1.22.19
 
 Node version: 
-  18.14.0
+  16.16.0
 
 Platform: 
   darwin x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@types%2freact-animated-3d-card: Not found
-      at params.callback [as _callback] (/usr/local/lib/node_modules/yarn/lib/cli.js:66145:18)
-      at self.callback (/usr/local/lib/node_modules/yarn/lib/cli.js:140890:22)
-      at Request.emit (node:events:513:28)
-      at Request.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141862:10)
-      at Request.emit (node:events:513:28)
-      at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:141784:12)
-      at Object.onceWrapper (node:events:627:28)
-      at IncomingMessage.emit (node:events:525:35)
-      at endReadableNT (node:internal/streams/readable:1359:12)
-      at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
+  Error: canceled
+      at Interface.<anonymous> (/usr/local/lib/node_modules/yarn/lib/cli.js:137150:13)
+      at Interface.emit (node:events:527:28)
+      at Interface._ttyWrite (node:readline:1081:16)
+      at ReadStream.onkeypress (node:readline:288:10)
+      at ReadStream.emit (node:events:527:28)
+      at emitKeys (node:internal/readline/utils:358:14)
+      at emitKeys.next (<anonymous>)
+      at ReadStream.onData (node:internal/readline/emitKeypressEvents:61:36)
+      at ReadStream.emit (node:events:527:28)
+      at addChunk (node:internal/streams/readable:315:12)
 
 npm manifest: 
   {
@@ -32,10 +32,10 @@ npm manifest:
     "version": "0.1.0",
     "private": true,
     "scripts": {
-      "open": "yarn run open-browser && next dev",
       "dev": "next dev",
+      "open": "yarn run open-browser && next dev",
       "open-browser": "open http://localhost:3000",
-      "build": "next build",
+      "build": "next build && next export -o build",
       "start": "next start",
       "lint": "next lint"
     },
@@ -57,13 +57,15 @@ npm manifest:
       "react-dom": "18.2.0",
       "react-focus-lock": "^2.9.2",
       "react-icons": "^4.7.1",
+      "react-responsive-carousel": "^3.2.23",
       "react-spring": "^9.6.1",
       "react-spring-3d-carousel": "1.2.1",
       "simple-react-lightbox": "^3.6.9-0",
       "styled-components": "^5.3.6"
     },
     "devDependencies": {
-      "prettier": "2.8.3"
+      "eslint-config-prettier": "^8.6.0",
+      "prettier": "^2.8.4"
     }
   }
 
@@ -1233,6 +1235,11 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/classlist-polyfill/-/classlist-polyfill-1.2.0.tgz#935bc2dfd9458a876b279617514638bcaa964a2e"
     integrity sha512-GzIjNdcEtH4ieA2S8NmrSxv7DfEV5fmixQeyTmqmRmRJPGpRBaSnA2a0VrCjyT8iW8JjEdMbKzDotAJf+ajgaQ==
   
+  classnames@^2.2.5:
+    version "2.3.2"
+    resolved "https://registry.yarnpkg.com/classnames/-/classnames-2.3.2.tgz#351d813bf0137fcc6a76a16b88208d2560a0d924"
+    integrity sha512-CSbhY4cFEJRe6/GQzIk5qXZ4Jeg5pcsP7b5peFSDpffpe1cqjASH/n9UTjBwOp6XpMSTwQ8Za2K5V02ueA7Tmw==
+  
   client-only@0.0.1:
     version "0.0.1"
     resolved "https://registry.yarnpkg.com/client-only/-/client-only-0.0.1.tgz#38bba5d403c41ab150bff64a95c85013cf73bca1"
@@ -1551,6 +1558,11 @@ Lockfile:
       eslint-plugin-jsx-a11y "^6.5.1"
       eslint-plugin-react "^7.31.7"
       eslint-plugin-react-hooks "^4.5.0"
+  
+  eslint-config-prettier@^8.6.0:
+    version "8.6.0"
+    resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-8.6.0.tgz#dec1d29ab728f4fa63061774e1672ac4e363d207"
+    integrity sha512-bAF0eLpLVqP5oEVUFKpMA+NnRFICwn9X8B5jrR9FcqnYBuPbqWEjTEspPWMj5ye6czoSLDweCzSo3Ko7gGrZaA==
   
   eslint-import-resolver-node@^0.3.6:
     version "0.3.6"
@@ -2732,10 +2744,10 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/prelude-ls/-/prelude-ls-1.2.1.tgz#debc6489d7a6e6b0e7611888cec880337d316396"
     integrity sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==
   
-  prettier@2.8.3:
-    version "2.8.3"
-    resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.3.tgz#ab697b1d3dd46fb4626fbe2f543afe0cc98d8632"
-    integrity sha512-tJ/oJ4amDihPoufT5sM0Z1SKEuKay8LfVAMlbbhnnkvt6BUserZylqo2PN+p9KeljLr0OHa2rXHU1T8reeoTrw==
+  prettier@^2.8.4:
+    version "2.8.4"
+    resolved "https://registry.yarnpkg.com/prettier/-/prettier-2.8.4.tgz#34dd2595629bfbb79d344ac4a91ff948694463c3"
+    integrity sha512-vIS4Rlc2FNh0BySk3Wkd6xmwxB0FpOndW5fisM5H8hsZSxU2VWVB5CWIkIjWvrHjIhxk2g3bfMKM87zNTrZddw==
   
   prop-types@^15.5.8, prop-types@^15.6.2, prop-types@^15.7.2, prop-types@^15.8.1:
     version "15.8.1"
@@ -2776,6 +2788,13 @@ Lockfile:
       loose-envify "^1.1.0"
       scheduler "^0.23.0"
   
+  react-easy-swipe@^0.0.21:
+    version "0.0.21"
+    resolved "https://registry.yarnpkg.com/react-easy-swipe/-/react-easy-swipe-0.0.21.tgz#ce9384d576f7a8529dc2ca377c1bf03920bac8eb"
+    integrity sha512-OeR2jAxdoqUMHIn/nS9fgreI5hSpgGoL5ezdal4+oO7YSSgJR8ga+PkYGJrSrJ9MKlPcQjMQXnketrD7WNmNsg==
+    dependencies:
+      prop-types "^15.5.8"
+  
   react-focus-lock@^2.9.2:
     version "2.9.2"
     resolved "https://registry.yarnpkg.com/react-focus-lock/-/react-focus-lock-2.9.2.tgz#a57dfd7c493e5a030d87f161c96ffd082bd920f2"
@@ -2802,6 +2821,15 @@ Lockfile:
     version "18.2.0"
     resolved "https://registry.yarnpkg.com/react-is/-/react-is-18.2.0.tgz#199431eeaaa2e09f86427efbb4f1473edb47609b"
     integrity sha512-xWGDIW6x921xtzPkhiULtthJHoJvBbF3q26fzloPCK0hsvxtPVelvftw3zjbHWSkR2km9Z+4uxbDDK/6Zw9B8w==
+  
+  react-responsive-carousel@^3.2.23:
+    version "3.2.23"
+    resolved "https://registry.yarnpkg.com/react-responsive-carousel/-/react-responsive-carousel-3.2.23.tgz#4c0016ff54603e604bb5c1f9e7ef2d1eda133f1d"
+    integrity sha512-pqJLsBaKHWJhw/ItODgbVoziR2z4lpcJg+YwmRlSk4rKH32VE633mAtZZ9kDXjy4wFO+pgUZmDKPsPe1fPmHCg==
+    dependencies:
+      classnames "^2.2.5"
+      prop-types "^15.5.8"
+      react-easy-swipe "^0.0.21"
   
   react-spring-3d-carousel@1.2.1:
     version "1.2.1"

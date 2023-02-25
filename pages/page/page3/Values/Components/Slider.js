@@ -29,7 +29,7 @@ const Slider = () => {
               fw="500"
               mlh="50px"
               align="center"
-              xmsize="6rem"
+              xmsize="2rem"
               xssize="10vw"
               msize="2rem"
               mpadding="0"

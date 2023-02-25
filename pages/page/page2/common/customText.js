@@ -4,8 +4,8 @@ export const CustomText = styled.p`
   width: 100vw;
   font-size: 1.8rem;
   color: #fff;
-  text-align: left;
-  padding: 0 2rem;
+  text-align: justify;
+  padding: 0 10vw;
   font-weight: 200;
   @media (max-width: 1200px) {
     width: 100vw;

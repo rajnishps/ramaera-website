@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import Text from "../../../../components/Text/Text";
+import React from "react"
+import styled from "styled-components"
+import Text from "../../../../components/Text/Text"
 
 const MainContainer = styled.div`
   display: flex;
@@ -9,18 +9,18 @@ const MainContainer = styled.div`
   width: 100%;
   position: relative;
   flex-direction: column;
-`;
+`
 export const ParaContainer = styled.div`
   margin-top: 20px;
   width: 85%;
-`;
+`
 const Polygon = styled.div`
   width: 100%;
   display: flex;
   position: absolute;
   justify-content: flex-end;
   top: 5%;
-`;
+`
 const PolyGonImg = styled.img`
   width: 18rem;
   height: 45rem;
@@ -30,9 +30,8 @@ const PolyGonImg = styled.img`
     width: 8rem;
     height: 22rem;
     opacity: 70%;
-    
   }
-`;
+`
 const Innovation = () => {
   return (
     <>
@@ -49,8 +48,8 @@ const Innovation = () => {
             fw="500"
             mlh="50px"
             align="center"
-            xmsize="6rem"
-            xssize="10vw"
+            xmsize="2rem"
+            xssize="4vw"
             msize="2rem"
             mpadding="0"
             mmargin=" 2rem 0 2rem 0"
@@ -80,14 +79,13 @@ const Innovation = () => {
         </ParaContainer>
 
         <Polygon>
-        <div data-aos="fade-left"
-        data-aos-anchor-placement="top-bottom">
-          <PolyGonImg src={"/background/polygon.png"} />
+          <div data-aos="fade-left" data-aos-anchor-placement="top-bottom">
+            <PolyGonImg src={"/background/polygon.png"} />
           </div>
         </Polygon>
       </MainContainer>
     </>
-  );
-};
+  )
+}
 
-export default Innovation;
+export default Innovation

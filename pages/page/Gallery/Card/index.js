@@ -1,6 +1,6 @@
+import Image from "next/image"
 import React, { useState } from "react"
 import Cards from "react-animated-3d-card"
-
 import {
   CardContainer,
   CardImg,
@@ -69,10 +69,13 @@ const Card = ({ image = [] }) => {
             <Modal>
               <ModalContent>
                 <ZoomImage title={image.title}>
-                  <img
+                  <Image
                     style={{ objectFit: "cover" }}
                     src={image.imageName}
-                    alt=""
+                    alt={image.title}
+                    layout="fill"
+                    objectFit="cover"
+                    objectPosition="center"
                   />
                 </ZoomImage>
                 <ZoomDetails

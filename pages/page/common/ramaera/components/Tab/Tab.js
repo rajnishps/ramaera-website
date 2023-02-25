@@ -14,7 +14,7 @@ const Tab = (props) => {
     right: 5rem; /* position the left edge of the element at the middle of the parent */
     transform: translate(0, -40%);
     @media only screen and (max-width: 768px) {
-      transform: scale(70%);
+      transform: scale(0.7);
       width: 20px;
       top: -35vw;
       right: 40vw;

@@ -16,7 +16,7 @@ const SocialMedia = () => {
       left: 2rem;
     }
     @media (max-width: 768px) {
-      transform: scale(80%);
+      transform: scale(0.8);
       left: 20vw;
     }
   `

@@ -11,7 +11,7 @@ export const CustomText = styled.h1`
   margin: 3rem 0;
 `
 export const Responsive = styled.div`
-  transform: scale(80%);
+  transform: scale(0.8);
   width: 100%;
   margin: 0 0 0 0;
 `

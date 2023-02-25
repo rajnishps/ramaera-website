@@ -6,7 +6,7 @@ import { images } from "./Style"
 const Image = styled.img`
   padding: 13.5rem 2rem;
   position: absolute;
-  transform: scale(60%);
+  transform: scale(0.6);
   @media only screen and (max-width: 1000px) {
     opacity: 0;
   }
