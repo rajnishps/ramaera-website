@@ -29,20 +29,12 @@ const index = () => {
           <Container>
             <Item
               img={svg1}
-              number="1600000+"
+              number="200+"
               desc="Ramaera Group Direct Employees"
             />
-            <Item
-              img={svg2}
-              number="20000"
-              desc="FMCG Upcoming Mother Brands"
-            />
-            <Item img={svg3} number="10000+" desc="Hotels across pan India" />
-            <Item
-              img={svg4}
-              number="5 Million"
-              desc="Sustainable Livelihoods"
-            />
+            <Item img={svg2} number="1000" desc="FMCG Upcoming Mother Brands" />
+            <Item img={svg3} number="15000+" desc="Community Members" />
+            <Item img={svg4} number="15" desc="States Reach" />
           </Container>
         </div>
       </PageWidth>

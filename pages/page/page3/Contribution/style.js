@@ -36,7 +36,8 @@ export const Box = styled.div`
   -webkit-transition: all 0.5s ease-in-out;
   -moz-transition: all 0.5s ease-in-out;
   -o-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  border: 0.5px solid white;
+  transition: all 0.2s ease;
   &:hover {
     border: 2px solid white;
   }
@@ -87,7 +88,7 @@ export const Head = styled.p`
   width: 80%;
   /* margin-top: 20px; */
   text-align: center;
-  background: linear-gradient(90deg, #595a5b 0%, #535354 100%);
+  background: linear-gradient(90deg, #9a9a9a 0%, #9a9a9a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -117,7 +118,7 @@ export const Para = styled.p`
   font-size: 1.1rem;
   line-height: 30px;
   text-align: center;
-  background: linear-gradient(90deg, #595a5b 0%, #535354 100%);
+  background: linear-gradient(90deg, #9a9a9a 0%, #9a9a9a 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;

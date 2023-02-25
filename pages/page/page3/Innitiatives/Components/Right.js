@@ -47,28 +47,28 @@ const Right = () => {
               <InfoContainer>
                 <div style={{ margin: "0px 20px" }}>
                   <div data-aos="fade-right">
-                    <InfoHead>1600000+</InfoHead>
+                    <InfoHead>200+</InfoHead>
                     <InfoPara>Ramaera Group Direct Employees</InfoPara>
                   </div>
                 </div>
                 <div>
                   <div data-aos="fade-right">
-                    <InfoHead>24</InfoHead>
-                    <InfoPara>Field Workers</InfoPara>
+                    <InfoHead>1000</InfoHead>
+                    <InfoPara>MCG Upcoming Mother Brands</InfoPara>
                   </div>
                 </div>
               </InfoContainer>
               <InfoContainer>
                 <div style={{ margin: "0px 20px" }}>
                   <div data-aos="fade-left">
-                    <InfoHead>12</InfoHead>
-                    <InfoPara>Years Stablished</InfoPara>
+                    <InfoHead>15000+</InfoHead>
+                    <InfoPara>Community Members</InfoPara>
                   </div>
                 </div>
                 <div>
                   <div data-aos="fade-left">
-                    <InfoHead>250</InfoHead>
-                    <InfoPara>Complete Projects</InfoPara>
+                    <InfoHead>15</InfoHead>
+                    <InfoPara>tates Reach</InfoPara>
                   </div>
                 </div>
               </InfoContainer>

@@ -1,7 +1,7 @@
-import PageWidth from "../../../../components/Width/PageWidth";
-import Text from "../../../../components/Text/Text";
-import CustomBg from "./components/CustomBg";
-import Texts from "./components/Texts";
+import PageWidth from "../../../../components/Width/PageWidth"
+import Text from "../../../../components/Text/Text"
+import CustomBg from "./components/CustomBg"
+import Texts from "./components/Texts"
 
 const index = () => {
   return (
@@ -26,6 +26,7 @@ const index = () => {
             msize="3.2rem"
             mwidth="100%"
             mpadding="0"
+            padding="5vh 0 0 10vw"
             mmargin=" 2rem 0 2rem 0"
           />
           <Text
@@ -41,7 +42,7 @@ const index = () => {
             xssize="2rem"
             msize="1.2rem"
             mta="center"
-            padding=" 0 10vw 0 2vw"
+            padding=" 0 10vw"
             mwidth="90%"
             mpadding="5vw"
             mmargin=" 2rem"
@@ -64,7 +65,7 @@ const index = () => {
       </PageWidth>
       <Texts />
     </div>
-  );
-};
+  )
+}
 
-export default index;
+export default index

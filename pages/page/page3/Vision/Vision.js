@@ -12,7 +12,7 @@ const Vision = () => {
             Text="ramaera vision"
             lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
             font
-            size="2.5rem"
+            size="2rem"
             lh="90px"
             width="100%"
             mwidth="100%"
@@ -28,6 +28,7 @@ const Vision = () => {
           />
           {/* <VisionHead>ramaera vision</VisionHead> */}
         </div>
+        <br />
         <div data-aos="fade-right">
           <Text
             Text="“Ramaera Industries has begun with the primary motive of nation
@@ -40,7 +41,7 @@ const Vision = () => {
         uphold the core values of establishing sustainability along with
         excellence and innovation in customer services."
             fw="300"
-            size="25px"
+            size="22px"
             lh="40px"
             width="100%"
             m="0px auto"
@@ -49,6 +50,7 @@ const Vision = () => {
             msize="13px"
             mwidth="90vw"
             mta="center"
+            padding="0 10vw"
             align="center"
           />
         </div>
@@ -62,16 +64,20 @@ const Vision = () => {
           establishing financial stability through our numerous investment
           policies ."
             fw="300"
-            size="25px"
+            size="22px"
             lh="40px"
             width="100%"
+            m="0px auto"
             xssize="18px"
-            mlh="30px"
+            mlh="25px"
             msize="13px"
             mwidth="90vw"
             mta="center"
+            padding="0 10vw"
+            align="center"
           />
         </div>
+        <br />
         <div data-aos="fade-right">
           <Text
             Text="“ Our belief of revolutionising the traditional industries by merging
@@ -79,16 +85,20 @@ const Vision = () => {
           hence, we are one of the most trusted and loved industrial enterprises
           in India."
             fw="300"
-            size="25px"
+            size="22px"
             lh="40px"
             width="100%"
+            m="0px auto"
             xssize="18px"
             mlh="25px"
             msize="13px"
             mwidth="90vw"
             mta="center"
+            padding="0 10vw"
+            align="center"
           />
         </div>
+        <br />
         <div data-aos="fade-left">
           <Text
             Text="“Keeping pace with the advancements of technology , we thrive to exceed
@@ -98,16 +108,20 @@ const Vision = () => {
           technology is helping us to carry out various policies that contribute
           to the upliftment of the society for a better tomorrow."
             fw="300"
-            size="25px"
+            size="22px"
             lh="40px"
             width="100%"
+            m="0px auto"
             xssize="18px"
             mlh="25px"
             msize="13px"
             mwidth="90vw"
             mta="center"
+            padding="0 10vw"
+            align="center"
           />
         </div>
+        <br />
         <div data-aos="fade-right">
           <Text
             Text="“ Ramaera Industries aims to make a mark in all of the most popular
@@ -121,14 +135,17 @@ const Vision = () => {
           creating a resourceful Ramaera community and delivering the best with
           ethical industrial practices."
             fw="300"
-            size="25px"
+            size="22px"
             lh="40px"
             width="100%"
+            m="0px auto"
             xssize="18px"
             mlh="25px"
             msize="13px"
             mwidth="90vw"
             mta="center"
+            padding="0 10vw"
+            align="center"
           />
         </div>
       </VisionBG>

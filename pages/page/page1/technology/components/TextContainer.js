@@ -14,6 +14,7 @@ const StyleTextContainer = styled.div`
   bottom: -10vh;
   width: 50rem;
   margin: -6rem 0 4rem 0;
+  overflow: visible;
   @media only screen and (max-width: 768px) {
     margin: 0;
     width: 100vw;

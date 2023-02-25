@@ -15,6 +15,11 @@ module.exports = {
         destination: "/",
         permanent: true,
       },
+      {
+        source: "/Kyc-login.aspx",
+        destination: "https://kyc.ramaera.com/Kyc-login.aspx",
+        permanent: true,
+      },
     ]
   },
 }
