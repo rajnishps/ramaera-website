@@ -29,13 +29,14 @@ export const TrendingLeft = styled.div`
 `
 export const TrendingRight = styled.div`
   width: 30%;
+  overflow-y: scroll;
   border: 1px solid white;
   height: 90vh;
   border-radius: 20px;
   @media (max-width: 600px) {
     width: 100%;
     margin-top: 20px;
-    height: 120vh;
+    height: 80vh;
   }
 `
 export const TrendingHead = styled.h2`

@@ -30,6 +30,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-spring": "^9.6.1",
     "react-spring-3d-carousel": "1.2.1",
+    "react-twitter-embed": "^4.0.4",
     "simple-react-lightbox": "^3.6.9-0",
     "styled-components": "^5.3.6"
   },
