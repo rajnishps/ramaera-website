@@ -1,26 +1,18 @@
 import React, { useEffect, useState } from "react";
 import Text from "../../../../components/Text/Text";
 import data from "./../Collection/data";
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 
-import {
-  Wrapper,
-  TabsList,
-  Ul,
-  Li,
-  TabsContent,
-  TabBody,
-  TabItem,
-  TabDetails,
-} from "./style";
+import { Wrapper, TabsContent, TabBody, TabItem, TabDetails } from "./style";
 
 const index = () => {
   return (
     <>
-      <Wrapper style={{ color: "white" }}>
-        <TabsList>
-          <Ul>
+      <Tabs>
+        <Wrapper style={{ color: "white" }}>
+          <TabList className="tablist">
             {data.map((head) => (
-              <Li>
+              <Tab className="focusChange">
                 <Text
                   Text={head.heading}
                   font
@@ -36,58 +28,62 @@ const index = () => {
                   mwidth="unset"
                   mpadding="0"
                 />
-              </Li>
+              </Tab>
             ))}
-          </Ul>
-        </TabsList>
-        <TabsContent>
-          {/* <Text
-            Text="Privacy and Policy "
-            font
-            lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
-            size="2.5rem"
-            fw="400"
-            lh
-            align="center"
-            xmsize="2.3rem"
-            xssize="2rem"
-            msize="1.5rem"
-            padding="1vw"
-            mwidth="unset"
-          /> */}
+          </TabList>
+          {/* <div style={{ opacity: "0.5" }}> */}
+          <TabsContent>
+            <Text
+              Text="Privacy and Policy "
+              font
+              lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
+              size="2.5rem"
+              fw="400"
+              lh
+              align="center"
+              xmsize="2.3rem"
+              xssize="2rem"
+              msize="1.5rem"
+              padding="4vw"
+              mwidth="unset"
+            />
 
-          <TabBody>
-            <TabItem>
-              {data.map((data1) => (
-                <div>
-                  <Text
-                    Text={data1.heading}
-                    font
-                    lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
-                    size="1.5rem"
-                    fw="200"
-                    lh
-                    align
-                    mta="left"
-                    xmsize="1.2rem"
-                    xssize="1.1rem"
-                    msize="1rem"
-                    padding="2vw 0"
-                    mwidth="unset"
-                    mpadding="0"
-                  />
+            <TabBody>
+              <TabItem>
+                {data.map((data1) => (
+                  <div>
+                    <TabPanel>
+                      <Text
+                        Text={data1.heading}
+                        font
+                        lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
+                        size="1.5rem"
+                        fw="200"
+                        lh
+                        align
+                        mta="left"
+                        xmsize="1.2rem"
+                        xssize="1.1rem"
+                        msize="1rem"
+                        padding="2vw 0"
+                        mwidth="unset"
+                        mpadding="0"
+                      />
 
-                  <TabDetails>
-                    {data1.para.map((para1) => (
-                      <p>{para1}</p>
-                    ))}
-                  </TabDetails>
-                </div>
-              ))}
-            </TabItem>
-          </TabBody>
-        </TabsContent>
-      </Wrapper>
+                      <TabDetails>
+                        {data1.para.map((para1) => (
+                          <p>{para1}</p>
+                        ))}
+                      </TabDetails>
+                    </TabPanel>
+                  </div>
+                ))}
+              </TabItem>
+            </TabBody>
+          </TabsContent>
+          {/* </div> */}
+        </Wrapper>
+      </Tabs>
     </>
   );
 };

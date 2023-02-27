@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from "react";
 import Text from "../../../../components/Text/Text";
 
-import { Gallery, ContainerTop, Image, Heading } from "./style";
+import { Head, ContainerTop, Image, Heading } from "./style";
 
 const index = () => {
   return (
     <>
-      <Gallery>
+      <Head>
         <ContainerTop>
           <Image></Image>
           <Heading>
@@ -25,7 +25,7 @@ const index = () => {
             />
           </Heading>
         </ContainerTop>
-      </Gallery>
+      </Head>
     </>
   );
 };

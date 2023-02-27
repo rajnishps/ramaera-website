@@ -433,3 +433,30 @@ a {
 .fixed-position {
   position: fixed;
 }
+
+.tablist{
+  width: 22vw;
+  height: 100%;
+  padding-top: 12vh ;
+  background: linear-gradient(181.16deg, #ff7917 -26.31%, #ffdd2d 128.88%);
+}
+
+  @media (max-width: 768px) {
+    .tablist{ min-width: 28vw;}
+    }
+  @media (max-width: 600px) {
+    .tablist{ min-width: 40vw;}
+    }
+  
+.react-tabs__tab--selected {
+  background:black;
+  color: white;
+  border-left: 8px solid white;
+
+}
+
+.focusChange {
+  cursor: pointer;
+  padding: 20px ;
+  outline:none;
+}

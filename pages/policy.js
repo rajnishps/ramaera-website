@@ -5,7 +5,7 @@ import Section from "./page/Policy/Section/index";
 const policy = () => {
   return (
     <>
-      <Head />
+      {/* <Head /> */}
       <Section />
     </>
   );

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Gallery = styled.div`
+export const Head = styled.div`
   height: 20vh;
   width: 100vw;
 `;
@@ -14,18 +14,20 @@ export const ContainerTop = styled.div`
 `;
 
 export const Image = styled.div`
-  /* background-image: url("content/galleryImg.jpg"); */
-
+  background-image: url("content/privacy.jpg");
   height: 20vh;
   width: 100%;
-  object-fit: contain;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
-  background-position: center bottom;
+  background-position: center;
+  opacity: 0.2;
 `;
 
 export const Heading = styled.div`
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   position: absolute;
   margin: auto;
 `;
