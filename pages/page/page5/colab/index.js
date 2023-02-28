@@ -1,6 +1,6 @@
-import React from "react";
-import Text from "../../../../components/Text/Text";
-import Button from "../../../../components/Button/Button";
+import React from "react"
+import Text from "../../../../components/Text/Text"
+import Button from "../../../../components/Button/Button"
 
 import {
   Box,
@@ -16,7 +16,7 @@ import {
   ButtonHolder,
   Fline3,
   TextArea,
-} from "./style";
+} from "./style"
 
 const index = () => {
   return (
@@ -39,14 +39,14 @@ const index = () => {
           <HeaderIcon>
             <HeaderIcon1>
               <div>
-                <img src="/content/mailIcon.png" />
+                <img src="/content/mailIcon.png" alt="mail Icon" />
                 <b>Mail us</b>
               </div>
               <p>support@ramaera.com</p>
             </HeaderIcon1>
             <HeaderIcon2>
               <div>
-                <img src="/content/phoneIcon.png" />
+                <img src="/content/phoneIcon.png" alt="phone Icon" />
                 <b>Contact us</b>
               </div>
               <p>0120-4152818</p>
@@ -114,7 +114,7 @@ const index = () => {
         </Container>
       </Box>
     </>
-  );
-};
+  )
+}
 
-export default index;
+export default index

@@ -10,10 +10,14 @@ import Vision from "./page/page3/Vision/Vision"
 import About from "./page/page3/About/About"
 import Slider from "./page/page3/Values/Components/Slider"
 // import Values2 from "../page/page3/Values/Values2"
+import Head from "next/head"
 
 const companies = () => {
   return (
     <>
+      <Head>
+        <title>Ramaera Industries - Our Companies</title>
+      </Head>
       <Navbar selectedTab={"companies"} />
       <Ramaera imageIndex={2} />
       <Innovation />
