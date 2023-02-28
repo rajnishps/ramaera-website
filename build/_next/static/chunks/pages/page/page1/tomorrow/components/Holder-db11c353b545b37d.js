@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2049],{3169:function(n,o,_){(window.__NEXT_P=window.__NEXT_P||[]).push(["/page/page1/tomorrow/components/Holder",function(){return _(3372)}])}},function(n){n.O(0,[1102,9920,3372,9774,2888,179],function(){return n(n.s=3169)}),_N_E=n.O()}]);
