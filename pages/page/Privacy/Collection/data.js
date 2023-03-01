@@ -1,7 +1,7 @@
 const data = [
   {
     id: "1",
-    heading: "Terms of use",
+    heading: "Terms of use rights",
     icon: "./content/bolt.png",
     para: [
       " Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi",
@@ -49,7 +49,7 @@ const data = [
   },
   {
     id: "5",
-    heading: "Terms of use",
+    heading: "Terms of use rights",
     icon: "./content/chat.png",
     para: [
       " Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi",

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Gallery = styled.div`
-  height: 65vh;
+  height: 55vh;
   width: 100vw;
 `;
 
@@ -14,8 +14,8 @@ export const ContainerTop = styled.div`
 `;
 
 export const Image = styled.div`
-  background-image: url("content/privacy.png");
-  height: 65vh;
+  background-image: url("./content/mntns.png");
+  height: 55vh;
   width: 100%;
   box-shadow: inset 0 0 50px 20px rgba(0, 0, 0, 0.5);
   object-fit: contain;
@@ -29,12 +29,23 @@ export const Image = styled.div`
 export const Heading = styled.div`
   position: absolute;
   margin: auto;
-  top: 30vh;
+  top: 20vh;
   display: flex;
   text-align: center;
   align-items: center;
   flex-direction: column;
   padding: 0 2rem;
+  @media (max-width: 600px) {
+    top: 2vh;
+  }
+`;
+
+export const SubHeading = styled.p`
+  color: white;
+  margin: 1rem 8rem;
+  @media (max-width: 600px) {
+    margin: 1rem;
+  }
 `;
 
 export const Tags = styled.div`

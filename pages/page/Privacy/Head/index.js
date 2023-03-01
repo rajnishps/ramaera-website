@@ -1,22 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Text from "../../../../components/Text/Text";
+import Button from "../../../../components/Button/Button";
 
-import {
-  Gallery,
-  ContainerTop,
-  Tags,
-  Button,
-  Heading,
-  Display,
-  Container,
-  Image,
-  DisplayHeading,
-  DisplayCard,
-  DisplayWrapper,
-  ImageWrapper,
-} from "./style";
-import { images } from "./../Collection/data";
-import Card from "./../Card/index";
+import { Gallery, ContainerTop, Heading, SubHeading, Image } from "./style";
 
 const index = () => {
   return (
@@ -38,13 +24,23 @@ const index = () => {
               padding="0"
               mpadding="0"
             />
-            <p style={{ color: "white" }}>
+            <SubHeading>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit
               praesentium reiciendis aut debitis minima earum fugiat quam
               aspernatur qui. Labore, aliquam iste. A quasi ut accusantium
               laboriosam eius sequi.
-            </p>
-            <button>Explore</button>
+            </SubHeading>
+            <a href="#policy">
+              <Button
+                Text="Explore"
+                secondary
+                lightborder
+                height="60px"
+                m="2rem 0 0 0"
+                padding="10px 30px"
+                width="150px"
+              />
+            </a>
           </Heading>
         </ContainerTop>
       </Gallery>

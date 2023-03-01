@@ -1,5 +1,6 @@
-import Image from "next/image";
 import React, { useState } from "react";
+import Button from "../../../../components/Button/Button";
+
 import {
   Section,
   Item,
@@ -19,7 +20,7 @@ import {
 
 import data from "./../Collection/data";
 
-const Card = ({ image = [] }) => {
+const Card = () => {
   const [modal, setModal] = useState(false);
 
   const toggleModal = () => {
@@ -28,7 +29,7 @@ const Card = ({ image = [] }) => {
 
   return (
     <>
-      <div>
+      <div id="policy">
         <Section>
           {data.map((image) => (
             <Item>
@@ -36,14 +37,22 @@ const Card = ({ image = [] }) => {
                 <Vector src={image.icon} />
               </Icon>
               <Title>{image.heading}</Title>
-              <Text>{image.para[0].slice(0, 100)}....</Text>
-              <button
+              <Text>{image.para[0].slice(0, 150)} . . . . . </Text>
+
+              <Button
+                br="5px"
+                bg="linear-gradient(90deg,#FFE259 0%,#FFA751 100%);"
+                width="20px"
+                height="45px"
+                Text="Read More "
+                fontSize="1rem"
+                padding="10px 20px"
+                fw="500"
+                sh
                 onClick={() => {
                   toggleModal();
                 }}
-              >
-                More
-              </button>
+              />
             </Item>
           ))}
         </Section>
@@ -64,7 +73,11 @@ const Card = ({ image = [] }) => {
                         {image.heading} {console.log(image.heading)}
                       </ZoomName>
                       <ZoomTitle>{image.heading}</ZoomTitle>
-                      <ZoomAbout>{image.para}</ZoomAbout>
+                      <ZoomAbout>
+                        {image.para.map((para1) => (
+                          <p style={{ paddingBottom: "10px" }}>{para1}</p>
+                        ))}
+                      </ZoomAbout>
                     </ZoomDetails>
                   </ModalContent>
                   <CloseImg

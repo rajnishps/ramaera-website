@@ -1,56 +1,57 @@
 import styled from "styled-components";
 
 export const Section = styled.div`
-  background-image: url("./content/mntns.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   text-align: center;
   width: 100%;
   padding-top: 50px;
-  // background: darkgray;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  box-shadow: inset 0 100px 100px 1px rgb(0 0 0);
 `;
 
 export const Item = styled.div`
-  border: 2px solid black;
   padding: 50px 40px;
-  background-color: #ffffff;
-  margin: 5px;
+  margin: 2rem;
   margin-bottom: 3rem;
   width: 300px;
   height: 350px;
   padding: 30px;
   border-radius: 5px;
   position: relative;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.1), 0px 10px 10px 0 rgba(0, 0, 0, 0.1);
-  background: rgba(255, 255, 255, 0.2);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border-radius: 10px;
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 0px 0 white, 0px 0px 4px white, 0px 0px 4px white,
+    0px 0px 10px white;
+
+  &:hover {
+    box-shadow: 0px 0px 0 white, 0px 0px 10px white, 0px 0px 10px white,
+      0px 0px 10px white;
+    transform: scale(1.05);
+  }
 `;
 
 export const Title = styled.h3`
-  font-size: 22px;
-  font-weight: 600;
-  margin: 0;
-  color: #0e224a;
   margin-top: 1rem;
+  background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: personal !important;
+  text-overflow: ellipsis;
 `;
 
 export const Text = styled.p`
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5rem;
-  padding: 5px;
-  margin-top: 10px;
+  padding: 15px 0;
+  color: whitesmoke;
+  text-align: left;
+  word-break: break-all;
 `;
 
 export const Icon = styled.div`
-  background: gold;
   display: "flex";
   justify-content: "center";
   align-items: "center";
@@ -62,10 +63,11 @@ export const Icon = styled.div`
   left: 50%;
   transform: translateX(-50%);
   overflow-x: visible;
+  box-shadow: 0 0 0.2em 0.2em white;
 `;
 
 export const Vector = styled.img`
-  width: 2.5rem;
+  width: 100%;
 `;
 
 export const ZoomIn = styled.div`
@@ -118,7 +120,7 @@ export const Modal = styled.div`
   right: 0;
   bottom: 0;
   position: fixed;
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.2);
 `;
 
 export const ModalContent = styled.div`
@@ -133,8 +135,8 @@ export const ModalContent = styled.div`
   display: flex;
   justify-content: space-between;
   background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
   border-radius: 10px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   @media (max-width: 600px) {
