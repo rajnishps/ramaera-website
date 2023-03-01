@@ -460,3 +460,32 @@ a {
   padding: 20px ;
   outline:none;
 }
+
+.btn-hamburger{ 
+  margin-top: 4vw;
+  background-repeat: no-repeat;
+  background-image: url("/content/hamburger.png");
+  background-size: contain;
+  display: none;
+  height: 20px;
+  width: 20px;
+}
+
+@media (max-width: 600px) {
+  .btn-hamburger{ 
+    display: block;
+  }
+}
+
+.active{
+  width: 0px;
+  min-width: 0px;
+}
+@media (min-width: 769px) {
+  .active{
+    width: 22vw;
+  min-width: 22vw;}
+  }
+.tabscontent.active{
+  width: 100vw;
+}

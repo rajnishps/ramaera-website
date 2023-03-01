@@ -14,7 +14,7 @@ export const TabsContent = styled.div`
   overflow-y: scroll;
   padding: 0 5vw;
   justify-content: center;
-  background-image: url("content/privacy.png");
+  background-image: url("./content/mntns.png");
   background-size: cover;
   background-position: center;
 `;

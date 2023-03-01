@@ -6,11 +6,17 @@ import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import { Wrapper, TabsContent, TabBody, TabItem, TabDetails } from "./style";
 
 const index = () => {
+  const [isOpen, setIsopen] = useState(true);
+
+  const ToggleSidebar = () => {
+    isOpen === true ? setIsopen(false) : setIsopen(true);
+  };
+
   return (
     <>
       <Tabs>
         <Wrapper style={{ color: "white" }}>
-          <TabList className="tablist">
+          <TabList className={`tablist ${isOpen === true ? "active" : ""}`}>
             {data.map((head) => (
               <Tab className="focusChange">
                 <Text
@@ -31,22 +37,26 @@ const index = () => {
               </Tab>
             ))}
           </TabList>
-          {/* <div style={{ opacity: "0.5" }}> */}
-          <TabsContent>
-            <Text
-              Text="Privacy and Policy "
-              font
-              lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
-              size="2.5rem"
-              fw="400"
-              lh
-              align="center"
-              xmsize="2.3rem"
-              xssize="2rem"
-              msize="1.5rem"
-              padding="4vw"
-              mwidth="unset"
-            />
+          <TabsContent
+            className={`tabscontent ${isOpen == true ? "active" : ""}`}
+          >
+            <div style={{ display: "flex" }}>
+              <div className="btn-hamburger" onClick={ToggleSidebar}></div>
+              <Text
+                Text="Privacy and Policy "
+                font
+                lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
+                size="2.5rem"
+                fw="400"
+                lh
+                align="center"
+                xmsize="2.3rem"
+                xssize="2rem"
+                msize="1.5rem"
+                padding="4vw"
+                mwidth=""
+              />
+            </div>
 
             <TabBody>
               <TabItem>
@@ -81,7 +91,6 @@ const index = () => {
               </TabItem>
             </TabBody>
           </TabsContent>
-          {/* </div> */}
         </Wrapper>
       </Tabs>
     </>
