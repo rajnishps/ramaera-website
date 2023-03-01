@@ -51,6 +51,12 @@ export const InnoParaContainer = styled.div`
     margin-bottom: 20px;
   }
 `
+export const CarouselWrapper = styled.div`
+  @media (max-width: 600px) {
+    /* height: 70vh;
+    overflow: hidden; */
+  }
+`
 export const InnovatinRight = styled.div`
   width: 50%;
   display: flex;

@@ -8,7 +8,7 @@ import Slider from "./Components/Slider"
 const Values = () => {
   return (
     <ValueContainer>
-      <div data-aos="fade-right">
+      <div data-aos="fade-right" data-aos-anchor-placement="top-bottom">
         <Text
           Text="THE VALUES OF RAMAERA"
           lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
@@ -28,7 +28,7 @@ const Values = () => {
         />
       </div>
       <ValParaContainer>
-        <div data-aos="fade-left">
+        <div data-aos="fade-left" data-aos-anchor-placement="top-bottom">
           <Text
             Text="The Love and the trust of our Ramaera Family has been the foundation
         of our growth and has helped us to strengthen our core values as an

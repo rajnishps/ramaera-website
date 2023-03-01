@@ -36,9 +36,8 @@ const Texts = () => {
               }}
             >
               Ramaera Industries has launched its very own Ramaera super-mart
-              that gives you &nbsp;
+              that gives you everything you need right in one place.&nbsp;
             </span>
-            <br />
             <span
               style={{
                 background:
@@ -47,9 +46,7 @@ const Texts = () => {
                 WebkitTextFillColor: "transparent",
                 fontWeight: "500",
               }}
-            >
-              everything you need right in one place. &nbsp;
-            </span>
+            ></span>
             Get all your essentials without wandering here and there at the most
             reasonable prices and in the comfort of your homes, saving your time
             and making your management easier. Ramaera Super-mart gives you the

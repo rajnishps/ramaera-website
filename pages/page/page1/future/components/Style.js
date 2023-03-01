@@ -6,7 +6,7 @@ export const stock = "/content/im.png"
 export const curve = "/content/rect.png"
 
 export const StockImage = styled.div`
-  width: 90%;
+  width: 100%;
   height: 42rem;
 `
 export const RotateImage = styled(motion.div)`
@@ -21,6 +21,25 @@ export const RotateImage = styled(motion.div)`
     transform: scale(1.2);
   }
 `
+export const TimelineWrapper = styled.div`
+  width: 90vw;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  transition: transform 5s linear;
+  &:hover {
+    transform: translateY(calc(-100%));
+    transition: transform 20s linear;
+  }
+  @media only screen and (max-width: 768px) {
+  }
+`
+export const TimelineContainer = styled.div`
+  width: 90vw;
+  height: 50vh;
+  overflow-y: hidden;
+`
+
 export const FutureContainer = styled.div`
   width: 100%;
   min-height: 50rem;
