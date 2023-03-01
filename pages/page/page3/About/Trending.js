@@ -10,12 +10,17 @@ import {
   TrendingLeft,
   TrendingRight,
 } from "./style"
+import { YouTubeEmbed } from "react-social-media-embed"
 
 const Trending = () => {
   return (
     <TrendingContainer>
-      <TrendingLeft className="scrollbar">
-        <div data-aos="fade-right">
+      <TrendingLeft>
+        <YouTubeEmbed
+          width="100%"
+          url="https://www.youtube.com/watch?v=s7Spqmyp_fc"
+        />
+        {/* <div data-aos="fade-right">
           <Text
             Text="Trending"
             lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
@@ -37,12 +42,11 @@ const Trending = () => {
             bbottom="4px solid white"
           />
         </div>
-        {/* <TrendingHead>Trending</TrendingHead> */}
         <div data-aos="fade-up">
           {NewsData.map((item) => {
             return <News item={item} />
           })}
-        </div>
+        </div> */}
       </TrendingLeft>
       <TrendingRight>
         <div data-aos="fade-left">

@@ -23,7 +23,7 @@ const index = () => {
             lh="70px"
             xmsize="4rem"
             xssize="4rem"
-            msize="3.2rem"
+            msize="2.8rem"
             mwidth="100%"
             mpadding="0"
             padding="5vh 0 0 10vw"

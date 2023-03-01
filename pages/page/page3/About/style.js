@@ -9,17 +9,19 @@ export const TrendingContainer = styled.div`
   }
 `
 export const TrendingLeft = styled.div`
+  display: flex;
+  align-items: center;
   width: 60%;
-  height: 90vh;
+  height: fit-content;
   border: 1px solid white;
   border-radius: 20px;
   overflow: scroll;
-  background: linear-gradient(
+  /* background: linear-gradient(
       180.93deg,
       #222222 -91.95%,
       rgba(65, 65, 65, 0) 99.2%
     ),
-    url("/background/Left Column (1).png");
+    url("/background/Left Column (1).png"); */
   background-position: right;
   background-repeat: no-repeat;
   @media (max-width: 600px) {
