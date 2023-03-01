@@ -35,24 +35,25 @@ const TextContainer = () => {
               height: "6.75rem",
               width: "7rem",
               borderRadius: "50%",
-              margin: "0 2rem 0 0",
+              margin: "0",
             }}
           />
         </IconDiv>
 
         <div>
           <Text
-            Text="Get all your essentials in"
+            Text="Get all your essentials"
             size="42px"
             color="#FFF"
-            lh="15px"
+            lh="50px"
             mlh="30px"
             msize="1.6rem"
             mta="center"
             mwidth="100vw"
+            padding="1vw 2.5vw"
           />
           <Text
-            Text="one place"
+            Text="in one place"
             size="42px"
             lg="linear-gradient(90deg, #B4DFFD 3.93%, #EFB79B 36.17%),linear-gradient(0deg, #FFFFFF, #FFFFFF)"
             lh="15px"
@@ -60,6 +61,7 @@ const TextContainer = () => {
             msize="2rem"
             mta="center"
             mwidth="100vw"
+            padding="1vw  2.5vw"
           />
         </div>
       </Flex>
@@ -75,6 +77,7 @@ const TextContainer = () => {
         msize="18px"
         mwidth="100vw"
         mta="center"
+        padding="0 0 0 5vw"
       />
     </StyleTextContainer>
   )

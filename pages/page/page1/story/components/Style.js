@@ -7,7 +7,7 @@ export const hover = "/content/im2.png"
 
 export const StockImage = styled.div`
   width: 100%;
-  height: 42rem;
+  padding: 0 10vw;
   @media (max-width: 768px) {
     width: 100%;
     height: 100%;

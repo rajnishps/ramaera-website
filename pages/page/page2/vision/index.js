@@ -9,7 +9,7 @@ const index = () => (
     <PageWidth width="1500px" margin="8rem 0 0 0">
       <div data-aos="fade-up" data-aos-anchor-placement="center-bottom">
         <Text
-          Text="tREALISING THE VISION OF SUCCESS"
+          Text="REALISING THE VISION OF SUCCESS"
           lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
           font
           size="105px"

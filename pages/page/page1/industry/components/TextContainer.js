@@ -130,6 +130,7 @@ const TextContainer = () => {
             msize="2rem"
             mta="center"
             mwidth="100vw"
+            padding="0 10vw 0 0"
           />
         </div>
       </Flex>
@@ -145,6 +146,7 @@ const TextContainer = () => {
         msize="18px"
         mwidth="100vw"
         mta="center"
+        padding="0 0 0 5vw"
       />
     </StyleTextContainer>
   )
