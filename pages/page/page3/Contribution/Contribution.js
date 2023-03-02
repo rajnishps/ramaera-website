@@ -10,7 +10,7 @@ const Contribution = () => {
     <MainContainer>
       <div data-aos="fade-right">
         <Text
-          Text="Contribution of the environment"
+          Text="Contribution to the environment"
           lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
           font
           size="40px"
@@ -30,7 +30,7 @@ const Contribution = () => {
       <ValParaContainer>
         <div data-aos="fade-left">
           <Text
-            Text="“Ramaera Industry is thriving for to protect and conserve the
+            Text="“Ramaera Industry is thriving to protect and conserve the
         environment and hence most of its ventures are constructed on the
         principles of sustainability and conservation."
             fw="500"

@@ -22,7 +22,8 @@ const career = () => {
       <Dev />
       <Product />
       <Talent />
-      <Family />
+      {/*       <Family />
+       */}{" "}
       <Empower />
       <Footer />
     </>

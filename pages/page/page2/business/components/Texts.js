@@ -19,21 +19,9 @@ const Texts = () => {
                 fontWeight: "500",
               }}
             >
-              Agribusiness is one of the most flourishing sectors of the
-              industry and Ramaera Industries &nbsp;
-            </span>
-            <br />
-            <span
-              style={{
-                background:
-                  "linear-gradient(to right, #6EC28F 0%, #B6AB6B 100%)",
-                WebkitBackgroundClip: "text",
-                WebkitTextFillColor: "transparent",
-                fontWeight: "500",
-              }}
-            >
-              are planning to set forth its foot in this industry as well.
-              &nbsp;
+              Agri business is one of the most flourishing sectors of the
+              industry and Ramaera Industries are planning to set forth its foot
+              in this industry as well.&nbsp;
             </span>
             We plan to play the role of the input providers, producers,
             processors as well as service providers in agribusiness. The

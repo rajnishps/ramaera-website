@@ -58,12 +58,12 @@ function Holder() {
     <div>
       <Image
         style={{ left: 0 }}
-        src={"/content/left.png"}
+        src={"/content/right.png"}
         alt="left background"
       />
       <Image
         style={{ right: 0 }}
-        src={"/content/right.png"}
+        src={"/content/left.png"}
         alt="right background"
       />
       <Carousel

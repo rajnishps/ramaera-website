@@ -54,7 +54,7 @@ const Right = () => {
                 <div>
                   <div data-aos="fade-right">
                     <InfoHead>1000</InfoHead>
-                    <InfoPara>MCG Upcoming Mother Brands</InfoPara>
+                    <InfoPara>FMCG Upcoming Mother Brands</InfoPara>
                   </div>
                 </div>
               </InfoContainer>
@@ -68,7 +68,7 @@ const Right = () => {
                 <div>
                   <div data-aos="fade-left">
                     <InfoHead>15</InfoHead>
-                    <InfoPara>tates Reach</InfoPara>
+                    <InfoPara>States Reach</InfoPara>
                   </div>
                 </div>
               </InfoContainer>
