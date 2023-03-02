@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import Flex from "../../../../../components/Styling/Flex"
-import Text from "../../../../../components/Text/Text"
+import React from "react";
+import styled from "styled-components";
+import Flex from "../../../../../components/Styling/Flex";
+import Text from "../../../../../components/Text/Text";
 
 const StyleTextContainer = styled.div`
   display: flex;
@@ -12,19 +12,19 @@ const StyleTextContainer = styled.div`
   bottom: 0;
   bottom: -10vh;
   width: 50rem;
-  margin: -6rem 0 4rem 0;
+  margin: 0rem 0 6rem 0;
   overflow: visible;
   @media only screen and (max-width: 768px) {
     margin: 0;
     width: 100vw;
     bottom: -50vh;
   }
-`
+`;
 const IconDiv = styled.div`
   @media only screen and (max-width: 768px) {
     transform: scale(1);
   }
-`
+`;
 
 const TextContainer = () => {
   return (
@@ -165,7 +165,7 @@ const TextContainer = () => {
         padding="0 5vw 0 0 "
       />
     </StyleTextContainer>
-  )
-}
+  );
+};
 
-export default TextContainer
+export default TextContainer;

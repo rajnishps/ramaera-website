@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import Flex from "../../../../../components/Styling/Flex"
-import Text from "../../../../../components/Text/Text"
+import React from "react";
+import styled from "styled-components";
+import Flex from "../../../../../components/Styling/Flex";
+import Text from "../../../../../components/Text/Text";
 
 const StyleTextContainer = styled.div`
   display: flex;
@@ -9,7 +9,7 @@ const StyleTextContainer = styled.div`
   flex-direction: column;
   // background: red;
   width: 50rem;
-  margin: 5rem 0 -5rem 0;
+  margin: 1rem 0 -1rem 0;
   @media only screen and (max-width: 768px) {
     position: absolute;
     margin: 0;
@@ -17,11 +17,11 @@ const StyleTextContainer = styled.div`
     top: 5vh;
     overflow: hidden;
   }
-`
+`;
 const IconDiv = styled.div`
   @media only screen and (max-width: 768px) {
   }
-`
+`;
 const TextContainer = () => {
   return (
     <StyleTextContainer>
@@ -71,7 +71,7 @@ const TextContainer = () => {
         size="23px"
         lh="45px"
         width="40rem"
-        m="2rem 0 0 0"
+        m="1rem 0 0 0"
         xssize="18px"
         mlh="30px"
         msize="18px"
@@ -80,7 +80,7 @@ const TextContainer = () => {
         padding="0 0 0 5vw"
       />
     </StyleTextContainer>
-  )
-}
+  );
+};
 
-export default TextContainer
+export default TextContainer;

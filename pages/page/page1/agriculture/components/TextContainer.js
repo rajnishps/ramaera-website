@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import Flex from "../../../../../components/Styling/Flex"
-import Text from "../../../../../components/Text/Text"
+import styled from "styled-components";
+import Flex from "../../../../../components/Styling/Flex";
+import Text from "../../../../../components/Text/Text";
 
 const StyleTextContainer = styled.div`
   display: flex;
@@ -9,18 +9,18 @@ const StyleTextContainer = styled.div`
   flex-direction: column;
   // background: red;
   width: 50rem;
-  margin: -6rem 0 4rem 0;
+  margin: 2rem 0 2rem 0;
   @media only screen and (max-width: 768px) {
     position: absolute;
     margin: 0;
     top: 10%;
     width: 90vw;
   }
-`
+`;
 const IconDiv = styled.div`
   @media only screen and (max-width: 768px) {
   }
-`
+`;
 const TextContainer = () => {
   return (
     <StyleTextContainer>
@@ -161,7 +161,7 @@ const TextContainer = () => {
         padding="0 5vw 0 0 "
       />
     </StyleTextContainer>
-  )
-}
+  );
+};
 
-export default TextContainer
+export default TextContainer;

@@ -1,9 +1,9 @@
-import PageLayout from "../../../../components/PageLayout/PageLayout"
-import PageWidth from "../../../../components/Width/PageWidth"
-import TextContainer from "./components/TextContainer"
-import { Image, Responsive } from "./components/StyleImage"
-import styled from "styled-components"
-import NextImage from "next/image"
+import PageLayout from "../../../../components/PageLayout/PageLayout";
+import PageWidth from "../../../../components/Width/PageWidth";
+import TextContainer from "./components/TextContainer";
+import { Image, Responsive } from "./components/StyleImage";
+import styled from "styled-components";
+import NextImage from "next/image";
 
 const Animdiv = styled.div`
   position: absolute;
@@ -14,12 +14,12 @@ const Animdiv = styled.div`
     right: auto;
     bottom: 30vh;
   }
-`
+`;
 const Line = styled.div`
   @media only screen and (max-width: 768px) {
     display: none;
   }
-`
+`;
 
 const Buy = () => {
   return (
@@ -51,7 +51,7 @@ const Buy = () => {
               muted
               style={{
                 position: "absolute",
-                top: "35vh",
+                top: "16vh",
               }}
             >
               <source src="/content/tech.webm" type="video/webm" />
@@ -83,7 +83,7 @@ const Buy = () => {
         </div>
       </PageWidth>
     </PageLayout>
-  )
-}
+  );
+};
 
-export default Buy
+export default Buy;

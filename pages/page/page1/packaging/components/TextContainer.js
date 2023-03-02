@@ -1,8 +1,8 @@
-import React from "react"
-import styled from "styled-components"
-import Flex from "../../../../../components/Styling/Flex"
-import Text from "../../../../../components/Text/Text"
-import { CustomText } from "./StyleImage"
+import React from "react";
+import styled from "styled-components";
+import Flex from "../../../../../components/Styling/Flex";
+import Text from "../../../../../components/Text/Text";
+import { CustomText } from "./StyleImage";
 
 const StyleTextContainer = styled.div`
   display: flex;
@@ -11,17 +11,17 @@ const StyleTextContainer = styled.div`
   flex-direction: column;
   // background: red;
   width: 50rem;
-  margin: -6rem 0 4rem 0;
+  margin: 1rem 0 6rem 0;
   @media only screen and (max-width: 768px) {
     margin: 0 0 -30vh 0;
   }
-`
+`;
 const SpanColor = styled.div`
   color: #eacda3;
   @media only screen and (max-width: 768px) {
     margin-right: 15%;
   }
-`
+`;
 
 const TextContainer = () => {
   return (
@@ -140,7 +140,7 @@ const TextContainer = () => {
         padding="0 5vw 0 0 "
       />
     </StyleTextContainer>
-  )
-}
+  );
+};
 
-export default TextContainer
+export default TextContainer;
