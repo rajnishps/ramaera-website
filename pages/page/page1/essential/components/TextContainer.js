@@ -70,9 +70,9 @@ const TextContainer = () => {
       <Text
         Text="Ramaera Supermart is an online customer oriented marketplace to motivated to provide everything you need right at one place under the comfort of your homes."
         fw="500"
-        size="23px"
+        size="20px"
         lh="45px"
-        width="40rem"
+        width="32rem"
         m="1rem 0 0 0"
         xssize="18px"
         mlh="30px"
@@ -80,18 +80,18 @@ const TextContainer = () => {
         ƒ
         mwidth="100vw"
         mta="center"
-        padding="0 0 0 5vw"
+        padding="0 0 0 0vw"
       />
-      <div style={{ padding: " 2vh 17.5vw 0 0 " }}>
+      <div style={{ padding: " 2vh 21vw 0 0 " }}>
         <Link href="/industries#ecom">
           <TransparentButton
             Text="Read more"
             border="solid #9796F0 2px"
-            height="60px"
+            height="50px"
             m="2rem 0 0 0"
-            br="1.5rem"
+            br="1.3rem"
             fw="300"
-            fontSize="1.2rem"
+            fontSize="1rem"
           />
         </Link>
       </div>

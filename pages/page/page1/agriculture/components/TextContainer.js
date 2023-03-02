@@ -55,8 +55,8 @@ const TextContainer = () => {
         </div>
         <IconDiv>
           <svg
-            width="150"
-            height="150"
+            width="120"
+            height="120"
             viewBox="0 0 150 150"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -149,29 +149,29 @@ const TextContainer = () => {
         </IconDiv>
       </Flex>
       <Text
-        Text="We provide packaging solutions to help your business flourish with boosted outreach. Ensuring the protection, containment, and communication of packaged projects is our foremost priority."
+        Text="Our Agri-business industry is established to get you fresh and organic fruits and vegetables with the blessed with the touch of nature."
         align="right"
         fw="500"
-        size="23px"
+        size="20px"
         lh="45px"
-        width="40rem"
+        width="32.5rem"
         xssize="18px"
         mlh="30px"
         msize="18px"
         mwidth="100vw"
         mta="center"
-        padding="0 5vw 0 0 "
+        padding="0 0vw 0 0 "
       />
-      <div style={{ padding: " 2vh 0 0 17.5vw" }}>
+      <div style={{ padding: " 2vh 0 0 20vw" }}>
         <Link href="/industries#argiculture">
           <TransparentButton
             Text="Read more"
             border="solid #579181 2px"
-            height="60px"
+            height="50px"
             m="2rem 0 0 0"
-            br="1.5rem"
+            br="1.3rem"
             fw="300"
-            fontSize="1.2rem"
+            fontSize="1rem"
           />
         </Link>
       </div>
