@@ -14,7 +14,7 @@ const StyleTextContainer = styled.div`
   bottom: 0;
   bottom: -10vh;
   width: 50rem;
-  margin: 0rem 0 6rem 0;
+  margin: 2rem 0 6.5rem 0;
   overflow: visible;
   @media only screen and (max-width: 768px) {
     margin: 0;
@@ -41,7 +41,7 @@ const TextContainer = () => {
             xm="3vw"
             mta="left"
             ms="1.4rem"
-            size="2.6rem"
+            size="2.2rem"
             padding="0"
           />
           <Text
@@ -156,7 +156,7 @@ const TextContainer = () => {
         Text="We believe in innovation and excellence hence , our approach in the field of technology is focused to relish incredible customer experience and stabilising business models for tomorrow."
         align="right"
         fw="500"
-        size="23px"
+        size="22px"
         lh="45px"
         width="40rem"
         xssize="18px"
@@ -171,9 +171,11 @@ const TextContainer = () => {
           <TransparentButton
             border="solid #bf5ae0 2px"
             Text="Read more"
-            br="2rem"
             height="60px"
             m="2rem 0 0 0"
+            br="1.5rem"
+            fw="300"
+            fontSize="1.2rem"
           />
         </Link>
       </div>

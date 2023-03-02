@@ -1,9 +1,9 @@
-import React from "react"
-import PageLayout from "../../../../components/PageLayout/PageLayout"
-import PageWidth from "../../../../components/Width/PageWidth"
-import TextContainer from "./components/TextContainer"
-import { Image, Responsive } from "./components/StyleImage"
-import styled from "styled-components"
+import React from "react";
+import PageLayout from "../../../../components/PageLayout/PageLayout";
+import PageWidth from "../../../../components/Width/PageWidth";
+import TextContainer from "./components/TextContainer";
+import { Image, Responsive } from "./components/StyleImage";
+import styled from "styled-components";
 
 const AgriPos = styled.video`
   position: absolute;
@@ -16,11 +16,11 @@ const AgriPos = styled.video`
     top: -55vh;
     margin: 0 auto;
   }
-`
+`;
 const Buy = () => {
   return (
-    <PageLayout>
-      <PageWidth scale={"90%"} width="1500px" position="relative">
+    <PageLayout height="100vh">
+      <PageWidth scale={"95%"} width="1500px" position="relative">
         <div
           data-aos="slide-right"
           data-aos-duration="500"
@@ -63,7 +63,7 @@ const Buy = () => {
         </div>
       </PageWidth>
     </PageLayout>
-  )
-}
+  );
+};
 
-export default Buy
+export default Buy;

@@ -11,7 +11,7 @@ const StyleTextContainer = styled.div`
   flex-direction: column;
   // background: red;
   width: 50rem;
-  margin: 2rem 0 2rem 0;
+  margin: 1rem 0 2rem 0;
   @media only screen and (max-width: 768px) {
     position: absolute;
     margin: 0;
@@ -167,9 +167,11 @@ const TextContainer = () => {
           <TransparentButton
             Text="Read more"
             border="solid #579181 2px"
-            br="2rem"
             height="60px"
             m="2rem 0 0 0"
+            br="1.5rem"
+            fw="300"
+            fontSize="1.2rem"
           />
         </Link>
       </div>

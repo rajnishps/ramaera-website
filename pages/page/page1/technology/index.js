@@ -23,7 +23,7 @@ const Line = styled.div`
 
 const Buy = () => {
   return (
-    <PageLayout height="100vh">
+    <PageLayout height="105vh">
       <Line>
         <img
           loading="lazy"
@@ -38,10 +38,10 @@ const Buy = () => {
           }}
         />
       </Line>
-      <PageWidth scale={"90%"} width="1500px" position="relative">
+      <PageWidth width="1500px" position="relative">
         <Animdiv
           data-aos="slide-right"
-          data-aos-anchor-placement="center-center"
+          data-aos-anchor-placement="bottom-bottom"
           data-aos-duration="500"
         >
           <Image>
@@ -58,6 +58,7 @@ const Buy = () => {
             </video>
           </Image>
         </Animdiv>
+
         <div style={{ width: "100%" }}>
           <Line>
             <img
@@ -73,7 +74,7 @@ const Buy = () => {
           </Line>
           <div
             data-aos="slide-left"
-            data-aos-anchor-placement="bottom-bottom"
+            data-aos-anchor-placement="top-bottom"
             data-aos-duration="500"
           >
             <Responsive>

@@ -4,8 +4,8 @@ export const Image = styled.div`
   height: 25rem;
   width: 35rem;
   video {
-    height: 130%;
-    width: 130%;
+    height: 120%;
+    width: 120%;
   }
   @media only screen and (max-width: 768px) {
     transform: scale(0.65);

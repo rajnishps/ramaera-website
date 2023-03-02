@@ -20,8 +20,8 @@ const Line = styled.div`
 
 const Buy = () => {
   return (
-    <PageLayout>
-      <PageWidth sp="0" scale={"90%"} width="1500px" position="relative">
+    <PageLayout padding="0" height="10vh">
+      <PageWidth sp="0" scale={"95%"} width="1500px" position="relative">
         <div style={{ width: "100%" }}>
           <Line>
             <img

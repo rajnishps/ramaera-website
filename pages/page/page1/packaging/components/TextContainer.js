@@ -12,7 +12,7 @@ const StyleTextContainer = styled.div`
   flex-direction: column;
   // background: red;
   width: 50rem;
-  margin: 1rem 0 6rem 0;
+  margin: 2rem 0 2rem 0;
   @media only screen and (max-width: 768px) {
     margin: 0 0 -30vh 0;
   }
@@ -130,7 +130,7 @@ const TextContainer = () => {
         Text="We provide packaging solutions to help your business flourish with boosted outreach. Ensuring the protection, containment, and communication of packaged projects is our foremost priority."
         align="right"
         fw="500"
-        size="23px"
+        size="22px"
         lh="45px"
         width="40rem"
         xssize="18px"
@@ -146,9 +146,11 @@ const TextContainer = () => {
           <TransparentButton
             Text="Read more"
             border="solid #EACDA3 2px"
-            br="2rem"
             height="60px"
             m="2rem 0 0 0"
+            br="1.5rem"
+            fw="300"
+            fontSize="1.2rem"
           />
         </Link>
       </div>

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const PageWidth = ({
   children,
@@ -30,15 +30,15 @@ const PageWidth = ({
       width: ${full ? "100%" : "95%"};
     }
     @media only screen and (max-width: 1400px) {
-      width: ${full ? "100%" : "98%"};
+      width: ${full ? "100%" : "100%"};
     }
     @media only screen and (max-width: 540px) {
       width: 100%;
       padding: ${sp ? sp : "0 1rem"};
     }
-  `
+  `;
 
-  return <StyledWidth>{children}</StyledWidth>
-}
+  return <StyledWidth>{children}</StyledWidth>;
+};
 
-export default PageWidth
+export default PageWidth;

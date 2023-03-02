@@ -1,8 +1,7 @@
-import React, { useEffect } from "react"
-import PageLayout from "../../../../components/PageLayout/PageLayout"
-import PageWidth from "../../../../components/Width/PageWidth"
-import Text from "../../../../components/Text/Text"
-import styled from "styled-components"
+import PageLayout from "../../../../components/PageLayout/PageLayout";
+import PageWidth from "../../../../components/Width/PageWidth";
+import Text from "../../../../components/Text/Text";
+import styled from "styled-components";
 
 const PolyBg = styled.div`
   left: 0;
@@ -11,19 +10,20 @@ const PolyBg = styled.div`
   @media only screen and (max-width: 1000px) {
     opacity: 50%;
   }
-`
+`;
 const Image = styled.img`
-  height: 70vh;
+  height: 100%;
+  width: 75%;
   @media only screen and (max-width: 1000px) {
     height: 80vw;
   }
-`
+`;
 
 const Buy = () => {
   return (
     <div id="0">
-      <PageLayout mtpadding="5vh" mheight="40vh">
-        <PageWidth scale={"90%"} width="1500px">
+      <PageLayout padding="0" mtpadding="5vh" mheight="40vh">
+        <PageWidth scale={"100%"} width="1500px">
           <div
             data-aos="fade-up"
             data-aos-easing="fade-down"
@@ -33,7 +33,7 @@ const Buy = () => {
               Text="The Ramaera Expansion"
               lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
               font
-              size="4rem"
+              size="3.5rem"
               fw="400"
               align="center"
               lh="60px"
@@ -44,9 +44,9 @@ const Buy = () => {
             />
             <Text
               Text="We are aiming to be a part of the major industrialisation drive in India and embarking our presence in every significant industrial domain including IT."
-              padding="0"
+              padding="0 2vw "
               color="#FFF"
-              size="2.2rem"
+              size="2.1rem"
               lh="50px"
               fw="400"
               m="2rem 0 3rem 0"
@@ -69,7 +69,7 @@ const Buy = () => {
         </PolyBg>
       </PageLayout>
     </div>
-  )
-}
+  );
+};
 
-export default Buy
+export default Buy;
