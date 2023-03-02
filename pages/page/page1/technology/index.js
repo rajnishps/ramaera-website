@@ -23,7 +23,7 @@ const Line = styled.div`
 const Buy = () => {
   return (
     <>
-      <PageLayout height="120vh">
+      <PageLayout height="125vh">
         <PageWidth scale={"95%"} width="1500px" position="relative">
           <Animdiv
             data-aos="slide-right"

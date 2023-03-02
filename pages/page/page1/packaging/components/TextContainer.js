@@ -131,7 +131,7 @@ const TextContainer = () => {
         fw="500"
         size="20px"
         lh="45px"
-        width="32.5rem"
+        width="34rem"
         xssize="18px"
         mlh="30px"
         msize="18px"
@@ -140,7 +140,7 @@ const TextContainer = () => {
         padding="0 0vw 0 0 "
       />
 
-      <div style={{ padding: " 2vh 0 0 20vw" }}>
+      <div style={{ padding: " 2vh 0 0 22vw" }}>
         <Link href="/industries#packaging">
           <TransparentButton
             Text="Read more"

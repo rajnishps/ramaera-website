@@ -3,12 +3,15 @@ import styled from "styled-components"
 export const Image = styled.div`
   height: 35rem;
   width: 40rem;
+  video {
+    margin-top: -80px;
+  }
   @media only screen and (max-width: 768px) {
     transform: scale(0.9);
   }
 `
 export const CustomText = styled.h1`
-  font-size: 42px;
+  font-size: 40px;
   line-height: 55px;
   color: #fff;
   text-align: right;

@@ -1,8 +1,8 @@
-import styled from "styled-components";
-import Flex from "../../../../../components/Styling/Flex";
-import Text from "../../../../../components/Text/Text";
-import Link from "next/link";
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
+import styled from "styled-components"
+import Flex from "../../../../../components/Styling/Flex"
+import Text from "../../../../../components/Text/Text"
+import Link from "next/link"
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
 
 const StyleTextContainer = styled.div`
   display: flex;
@@ -18,12 +18,12 @@ const StyleTextContainer = styled.div`
     top: 10%;
     width: 90vw;
   }
-`;
+`
 const IconDiv = styled.div`
   @media only screen and (max-width: 768px) {
   }
-`;
-const TextContainer = () => {
+`
+const TextContainer = (right) => {
   return (
     <StyleTextContainer>
       <Flex jc="flex-end" mrcolumn>
@@ -154,7 +154,7 @@ const TextContainer = () => {
         fw="500"
         size="20px"
         lh="45px"
-        width="32.5rem"
+        width="34rem"
         xssize="18px"
         mlh="30px"
         msize="18px"
@@ -162,7 +162,7 @@ const TextContainer = () => {
         mta="center"
         padding="0 0vw 0 0 "
       />
-      <div style={{ padding: " 2vh 0 0 20vw" }}>
+      <div style={{ padding: " 2vh 0 0 22vw" }}>
         <Link href="/industries#argiculture">
           <TransparentButton
             Text="Read more"
@@ -176,7 +176,7 @@ const TextContainer = () => {
         </Link>
       </div>
     </StyleTextContainer>
-  );
-};
+  )
+}
 
-export default TextContainer;
+export default TextContainer

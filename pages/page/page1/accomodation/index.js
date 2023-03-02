@@ -20,7 +20,7 @@ const Line = styled.div`
 
 const Buy = () => {
   return (
-    <PageLayout height="70vh">
+    <PageLayout height="90vh">
       <PageWidth sp="0" scale={"95%"} width="1500px" position="relative">
         <div style={{ width: "100%" }}>
           <Line>
