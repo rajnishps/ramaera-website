@@ -24,7 +24,7 @@ const Text = (props) => {
     text-shadow: ${props.tsdo ? props.tsdo : ""};
 
     padding: ${props.padding ? props.padding : "2vw"};
-
+    overflow-y: ${props.overflowY ? props.overflowY : ""};
     text-transform: ${props.ttransform ? props.ttransform : ""};
     &:hover {
       color: ${props.hoverColor ? props.hoverColor : null};

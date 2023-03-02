@@ -8,10 +8,13 @@ import Product from "./page/page4/product"
 import Marketing from "./page/page4/marketing"
 import Talent from "./page/page4/talent"
 import Family from "./page/page4/family"
-
+import Head from "next/head"
 const career = () => {
   return (
     <>
+      <Head>
+        <title>Ramaera Industries - Career</title>
+      </Head>
       <Navbar selectedTab={"career"} />
       <Ramaera imageIndex={3} />
       <Investment />
@@ -19,7 +22,8 @@ const career = () => {
       <Dev />
       <Product />
       <Talent />
-      <Family />
+      {/*       <Family />
+       */}{" "}
       <Empower />
       <Footer />
     </>

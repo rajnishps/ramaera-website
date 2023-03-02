@@ -12,6 +12,9 @@ const Texts = styled.div`
 `
 const ButtonContainer = styled.div`
   margin-left: 50vw;
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
 `
 const PromtContainer1 = () => {
   return (
@@ -24,7 +27,8 @@ const PromtContainer1 = () => {
         align="left"
         fw="700"
         m="0 0 0 0"
-        mta="right"
+        mta="center"
+        mpadding="0 10vw 0 20vw"
       />
       <Text
         Text="India is the hub of entrepreneurial talent and we plan to provide these young talents the right resources. Ramaera Industries aims to give wings to the dreams of the CEOs of tomorrow"
@@ -35,8 +39,9 @@ const PromtContainer1 = () => {
         fw="200"
         m="0 4rem 0 0"
         msize="12px"
-        mta="right"
-        mpadding="0  0 0 40vw"
+        mta="center"
+        mwidth="100vw"
+        mpadding="0 10vw 0 20vw"
       />
       <ButtonContainer>
         <Button Text="Read More" m="0" lightborder fontSize="12px" bg="none" />

@@ -1,6 +1,6 @@
-import React from "react";
-import Text from "../../../../components/Text/Text";
-import Button from "../../../../components/Button/Button";
+import React from "react"
+import Text from "../../../../components/Text/Text"
+import Button from "../../../../components/Button/Button"
 
 import {
   Box,
@@ -16,7 +16,7 @@ import {
   ButtonHolder,
   Fline3,
   TextArea,
-} from "./style";
+} from "./style"
 
 const index = () => {
   return (
@@ -25,7 +25,7 @@ const index = () => {
         <BackgroundImg src="/content/Background.png" />
         <Container>
           <Text
-            Text="GET IN TOUCH TODAYS"
+            Text="GET IN TOUCH TODAY"
             font
             size="3rem"
             fw="100"
@@ -39,14 +39,14 @@ const index = () => {
           <HeaderIcon>
             <HeaderIcon1>
               <div>
-                <img src="/content/mailIcon.png" />
+                <img src="/content/mailIcon.png" alt="mail Icon" />
                 <b>Mail us</b>
               </div>
               <p>support@ramaera.com</p>
             </HeaderIcon1>
             <HeaderIcon2>
               <div>
-                <img src="/content/phoneIcon.png" />
+                <img src="/content/phoneIcon.png" alt="phone Icon" />
                 <b>Contact us</b>
               </div>
               <p>0120-4152818</p>
@@ -93,7 +93,7 @@ const index = () => {
                 type="textarea"
                 rows={10}
                 cols={35}
-                placeholder="Hello there,I would like to talk about how to..."
+                placeholder="Hello there ,I would like to talk about..."
                 required
               />
             </Fline3>
@@ -114,7 +114,7 @@ const index = () => {
         </Container>
       </Box>
     </>
-  );
-};
+  )
+}
 
-export default index;
+export default index

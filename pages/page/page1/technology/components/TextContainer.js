@@ -1,6 +1,5 @@
 import React from "react"
 import styled from "styled-components"
-import Heading from "../../../../../components/Heading/Heading"
 import Flex from "../../../../../components/Styling/Flex"
 import Text from "../../../../../components/Text/Text"
 
@@ -32,20 +31,22 @@ const TextContainer = () => {
     <StyleTextContainer>
       <Flex jc="flex-end" mrcolumn>
         <div>
-          <Heading
+          <Text
             Text="Unleashing the strength of"
             align="right"
-            size="42px"
-            lh=""
+            lh="50px"
             color="#FFF"
             xm="3vw"
             mta="left"
             ms="1.4rem"
+            size="2.6rem"
+            padding="0"
           />
           <Text
+            padding="0"
             Text="Technology"
             align="right"
-            size="42px"
+            size="3rem"
             lg="linear-gradient(90deg, #BF5AE0 0%, #A811DA 100%),linear-gradient(0deg, #FFFFFF, #FFFFFF)"
             lh="55px"
             mlh="30px"
@@ -161,6 +162,7 @@ const TextContainer = () => {
         msize="18px"
         mwidth="100vw"
         mta="center"
+        padding="0 5vw 0 0 "
       />
     </StyleTextContainer>
   )

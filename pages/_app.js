@@ -1,28 +1,14 @@
-import { useState, useEffect } from "react"
-import Router from "next/router"
+import { useEffect } from "react"
 import "../styles/globals.css"
-import Loader from "../components/Loader/Loader"
 import AOS from "aos"
 import "aos/dist/aos.css"
 import Head from "next/head"
+import NextNProgress from "nextjs-progressbar"
 export default function App({ Component, pageProps }) {
-  const [loading, setLoading] = useState(false)
-
   useEffect(() => {
     AOS.init()
     AOS.refresh()
-  }, [])/* 
-
-  useEffect(() => {
-    Router.events.on("routeChangeStart", () => setLoading(true))
-    Router.events.on("routeChangeComplete", () => setLoading(false))
-    Router.events.on("routeChangeError", () => setLoading(false))
-    return () => {
-      Router.events.off("routeChangeStart", () => setLoading(true))
-      Router.events.off("routeChangeComplete", () => setLoading(false))
-      Router.events.off("routeChangeError", () => setLoading(false))
-    }
-  }, [Router.events]) */
+  }, [])
   return (
     <>
       <Head>
@@ -54,9 +40,9 @@ export default function App({ Component, pageProps }) {
         ></meta>
         <meta property="og:image" content="/logo/logo.png"></meta>
       </Head>
-      {/* <NextNProgress color="#F9D423" startPosition={0.4} height={3} /> */}
+      <NextNProgress color="#f9d5239b" startPosition={0.4} height={3} />
 
-      {loading ? <Loader /> : <Component {...pageProps} />}
+      {<Component {...pageProps} />}
     </>
   )
 }

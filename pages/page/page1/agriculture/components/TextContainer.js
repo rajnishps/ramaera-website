@@ -1,5 +1,4 @@
 import styled from "styled-components"
-import Heading from "../../../../../components/Heading/Heading"
 import Flex from "../../../../../components/Styling/Flex"
 import Text from "../../../../../components/Text/Text"
 
@@ -27,15 +26,16 @@ const TextContainer = () => {
     <StyleTextContainer>
       <Flex jc="flex-end" mrcolumn>
         <div>
-          <Heading
+          <Text
             Text="Agri-business to bestow"
             align="right"
-            size="42px"
-            lh=""
+            lh="50px"
             color="#FFF"
             xm="3vw"
             mta="left"
             ms="1.2rem"
+            size="2.6rem"
+            padding="0"
           />
           <Text
             Text="Nature's Love"
@@ -48,6 +48,7 @@ const TextContainer = () => {
             xssize="3vw"
             msize="2rem"
             mta="center"
+            padding="0"
           />
         </div>
         <IconDiv>
@@ -157,6 +158,7 @@ const TextContainer = () => {
         msize="18px"
         mwidth="100vw"
         mta="center"
+        padding="0 5vw 0 0 "
       />
     </StyleTextContainer>
   )

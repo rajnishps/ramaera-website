@@ -9,10 +9,14 @@ import Ecom from "./page/page2/ecom"
 import Vision from "./page/page2/vision"
 import ScrollToTop from "./page/page2/scrollToTop"
 import Footer from "./page/common/footer"
+import Head from "next/head"
 
 const industries = () => {
   return (
     <>
+      <Head>
+        <title>Ramaera Industries - Our Industries</title>
+      </Head>
       <Navbar selectedTab={"industries"} />
       <Ramaera imageIndex={1} />
       <Beginning />

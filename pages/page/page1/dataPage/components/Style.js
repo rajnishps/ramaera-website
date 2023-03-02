@@ -8,10 +8,11 @@ export const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem 0;
+  padding: 3.6rem 0 2rem 0;
   @media (max-width: 768px) {
+    flex-direction: column;
     pading-left: 200vw;
-    gap: 20vw;
+    gap: 10vw;
     overflow-y: scroll;
     opacity: 95%;
   }

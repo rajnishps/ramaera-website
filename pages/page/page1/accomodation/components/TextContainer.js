@@ -30,13 +30,12 @@ const TextContainer = () => {
             height: "6.75rem",
             width: "7rem",
             borderRadius: "50%",
-            margin: "0 2rem 0 0",
           }}
         />
         <div>
           <Text
             Text="Making"
-            size="42px"
+            size="3.2rem"
             lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%);"
             lh="0px"
             mlh="30px"
@@ -46,7 +45,7 @@ const TextContainer = () => {
           />
           <Text
             Text="accommodations easier"
-            size="42px"
+            size="2.6rem"
             lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%);"
             lh="10px"
             mlh="30px"
@@ -68,6 +67,7 @@ const TextContainer = () => {
         msize="18px"
         mwidth="100vw"
         mta="center"
+        padding="0 0 0 5vw "
       />
     </StyleTextContainer>
   )

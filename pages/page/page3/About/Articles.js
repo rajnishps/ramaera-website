@@ -1,11 +1,23 @@
 import React from "react"
 import styled from "styled-components"
+import {
+  TwitterTimelineEmbed,
+  EmbedToggler,
+  TwitterEmbed,
+} from "react-twitter-embed"
+
 import Text from "../../../../components/Text/Text"
 import Analytics from "./Analytics"
 const ArticlesContainer = styled.div`
-  width: 80%;
+  height: 90vh;
+  width: 100%;
+  border-radius: 19px;
+  overflow-y: scroll;
+  @media (max-width: 600px) {
+    height: 80vh;
+  }
 `
-const ArticlesHead = styled.h2`
+/* const ArticlesHead = styled.h2`
   background: linear-gradient(90deg, #ffe259 0%, #ffa751 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -19,11 +31,11 @@ const ArticlesHead = styled.h2`
   @media (max-width: 600px) {
     font-size: 2rem;
   }
-`
+` */
 const Articles = () => {
   return (
     <ArticlesContainer>
-      <Text
+      {/* <Text
         Text="Latest Articles"
         lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
         font
@@ -40,10 +52,19 @@ const Articles = () => {
         mmargin=" 2rem 0 2rem 1rem"
         m="1rem 0 0 0"
       />
-      {/* <ArticlesHead>Latest Articles</ArticlesHead> */}
+
       <Analytics />
       <Analytics />
-      <Analytics />
+      <Analytics /> */}
+      <TwitterTimelineEmbed
+        sourceType="profile"
+        screenName="/ramaeraltd"
+        autoHeight="true"
+        theme="dark"
+        placeholder="loading..."
+        noScrollbar="true"
+        tweetLimit="5"
+      />
     </ArticlesContainer>
   )
 }

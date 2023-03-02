@@ -33,18 +33,20 @@ const Buy = () => {
               Text="The Ramaera Expansion"
               lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
               font
-              size="65px"
+              size="4rem"
               fw="400"
               align="center"
               lh="60px"
               xmsize="4rem"
               xssize="4rem"
               msize="3.2rem"
+              padding="0"
             />
             <Text
               Text="We are aiming to be a part of the major industrialisation drive in India and embarking our presence in every significant industrial domain including IT."
+              padding="0"
               color="#FFF"
-              size="30px"
+              size="2.2rem"
               lh="50px"
               fw="400"
               m="2rem 0 3rem 0"

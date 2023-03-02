@@ -24,6 +24,20 @@ const Line = styled.div`
 const Buy = () => {
   return (
     <PageLayout height="100vh">
+      <Line>
+        <img
+          loading="lazy"
+          src="/background/Line.png"
+          alt="line"
+          style={{
+            position: "absolute",
+            width: "100%",
+            height: "10rem",
+            left: "0",
+            top: "0",
+          }}
+        />
+      </Line>
       <PageWidth scale={"90%"} width="1500px" position="relative">
         <Animdiv
           data-aos="slide-right"
@@ -50,7 +64,11 @@ const Buy = () => {
               loading="lazy"
               src="/background/Line.png"
               alt="line"
-              style={{ position: "absolute", width: "100%", height: "10rem" }}
+              style={{
+                position: "absolute",
+                width: "100%",
+                height: "10rem",
+              }}
             />
           </Line>
           <div
@@ -62,14 +80,6 @@ const Buy = () => {
               <TextContainer />
             </Responsive>
           </div>
-          <Line>
-            <img
-              loading="lazy"
-              src="/background/Line.png"
-              alt="line"
-              style={{ position: "absolute", width: "100%", height: "10rem" }}
-            />
-          </Line>
         </div>
       </PageWidth>
     </PageLayout>
