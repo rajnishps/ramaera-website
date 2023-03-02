@@ -60,8 +60,8 @@ const TextContainer = () => {
         </div>
         <IconDiv>
           <svg
-            width="155"
-            height="155"
+            width="120"
+            height="120"
             viewBox="0 0 155 155"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -156,26 +156,26 @@ const TextContainer = () => {
         Text="We believe in innovation and excellence hence , our approach in the field of technology is focused to relish incredible customer experience and stabilising business models for tomorrow."
         align="right"
         fw="500"
-        size="22px"
+        size="20px"
         lh="45px"
-        width="40rem"
+        width="34rem"
         xssize="18px"
         mlh="30px"
         msize="18px"
         mwidth="100vw"
         mta="center"
-        padding="0 5vw 0 0 "
+        padding="0 0vw 0 0 "
       />
-      <div style={{ padding: " 2vh 0 0 17.5vw" }}>
+      <div style={{ padding: " 2vh 0 0 20vw" }}>
         <Link href="/industries#technology">
           <TransparentButton
             border="solid #bf5ae0 2px"
             Text="Read more"
-            height="60px"
             m="2rem 0 0 0"
-            br="1.5rem"
+            height="50px"
+            br="1.3rem"
             fw="300"
-            fontSize="1.2rem"
+            fontSize="1rem"
           />
         </Link>
       </div>

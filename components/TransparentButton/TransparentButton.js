@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import { motion } from "framer-motion"
-import Spinner from "../Spinner"
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import Spinner from "../Spinner";
 
 const StyledButton = styled(motion.button)`
   color: ${(props) => (props.color ? props.color : "#FFFFFF")};
@@ -18,7 +18,7 @@ const StyledButton = styled(motion.button)`
       ? props.width
       : props.secondaryWidth
       ? props.secondaryWidth
-      : "15rem"};
+      : "13rem"};
   background: transparent;
   height: ${(props) => (props.height ? props.height : "")};
   box-shadow: ${(props) =>
@@ -40,16 +40,16 @@ const StyledButton = styled(motion.button)`
   @media (max-width: 450px) {
     margin: ${(props) => (props.sm ? props.sm : "")};
   }
-`
+`;
 
 const TransparentButton = (props) => {
   const renderContent = () => {
     if (props.loading) {
-      return <Spinner />
+      return <Spinner />;
     }
 
-    return props.Text
-  }
+    return props.Text;
+  };
 
   return (
     <StyledButton
@@ -65,6 +65,6 @@ const TransparentButton = (props) => {
             : */}
       {renderContent()}
     </StyledButton>
-  )
-}
-export default TransparentButton
+  );
+};
+export default TransparentButton;

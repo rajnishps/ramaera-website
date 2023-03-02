@@ -35,8 +35,8 @@ const TextContainer = () => {
           </CustomText>
         </div>
         <svg
-          width="155"
-          height="155"
+          width="130"
+          height="130"
           viewBox="0 0 155 155"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -130,27 +130,28 @@ const TextContainer = () => {
         Text="We provide packaging solutions to help your business flourish with boosted outreach. Ensuring the protection, containment, and communication of packaged projects is our foremost priority."
         align="right"
         fw="500"
-        size="22px"
+        size="20px"
         lh="45px"
-        width="40rem"
+        width="32.5rem"
         xssize="18px"
         mlh="30px"
         msize="18px"
         mwidth="100vw"
         mta="center"
-        padding="0 5vw 0 0 "
+        padding="0 0vw 0 0 "
       />
 
-      <div style={{ padding: " 2vh 0 0 17.5vw" }}>
+      <div style={{ padding: " 2vh 0 0 20vw" }}>
         <Link href="/industries#packaging">
           <TransparentButton
             Text="Read more"
             border="solid #EACDA3 2px"
-            height="60px"
+            height="50px"
             m="2rem 0 0 0"
-            br="1.5rem"
+            br="1.3rem"
             fw="300"
-            fontSize="1.2rem"
+            fontSize="1rem"
+            ß
           />
         </Link>
       </div>

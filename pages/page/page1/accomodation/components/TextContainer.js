@@ -29,8 +29,8 @@ const TextContainer = () => {
           src="/content/y.png"
           alt="line"
           style={{
-            height: "6.75rem",
-            width: "7rem",
+            height: "6.50rem",
+            width: "6.75rem",
             borderRadius: "50%",
           }}
         />
@@ -60,27 +60,27 @@ const TextContainer = () => {
       <Text
         Text="Introducing capsule hotels in places of extreme need such as examination centres and hospitals to provide comfortable and convenient accommodation at pocket friendly prices ."
         fw="500"
-        size="23px"
+        size="20px"
         lh="45px"
-        width="40rem"
+        width="32.5rem"
         m="1rem 0 0 0"
         xssize="18px"
         mlh="30px"
         msize="18px"
         mwidth="100vw"
         mta="center"
-        padding="0 0 0 5vw "
+        padding="0 0 0 0vw "
       />
-      <div style={{ padding: " 2vh 17.5vw 0 0" }}>
+      <div style={{ padding: " 2vh 21vw 0 0" }}>
         <Link href="/industries#hotel">
           <TransparentButton
             Text="Read more"
             border="solid #FFE259 2px"
-            height="60px"
+            height="50px"
             m="2rem 0 0 0"
-            br="1.5rem"
+            br="1.3rem"
             fw="300"
-            fontSize="1.2rem"
+            fontSize="1rem"
           />
         </Link>
       </div>
