@@ -1,16 +1,16 @@
-import React, { useEffect, useState } from "react";
-import Text from "../../../../components/Text/Text";
-import data from "./../Collection/data";
-import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
+import React, { useEffect, useState } from "react"
+import Text from "../../../../components/Text/Text"
+import { data } from "./../Collection/data"
+import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 
-import { Wrapper, TabsContent, TabBody, TabItem, TabDetails } from "./style";
+import { Wrapper, TabsContent, TabBody, TabItem, TabDetails } from "./style"
 
 const index = () => {
-  const [isOpen, setIsopen] = useState(true);
+  const [isOpen, setIsopen] = useState(true)
 
   const ToggleSidebar = () => {
-    isOpen === true ? setIsopen(false) : setIsopen(true);
-  };
+    isOpen === true ? setIsopen(false) : setIsopen(true)
+  }
 
   return (
     <>
@@ -94,7 +94,7 @@ const index = () => {
         </Wrapper>
       </Tabs>
     </>
-  );
-};
+  )
+}
 
-export default index;
+export default index

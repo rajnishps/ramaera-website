@@ -1,4 +1,4 @@
-const data = [
+export const data = [
   {
     id: "1",
     heading: "Terms of use",
@@ -54,6 +54,10 @@ const data = [
       " Lorem ipsum dolor sit amet, consectetur adipisicing elit. At fugit praesentium reiciendis aut debitis minima earum fugiat quam aspernatur qui. Labore, aliquam iste. A quasi ut accusantium laboriosam eius sequi",
     ],
   },
-];
+]
 
-export default data;
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

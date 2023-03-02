@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Button from "../../../../components/Button/Button";
+import React, { useState } from "react"
+import Button from "../../../../components/Button/Button"
 
 import {
   Section,
@@ -16,16 +16,16 @@ import {
   ZoomTitle,
   ZoomAbout,
   CloseImg,
-} from "./style.js";
+} from "./style.js"
 
-import data from "./../Collection/data";
+import { data } from "./../Collection/data"
 
 const Card = () => {
-  const [modal, setModal] = useState(false);
+  const [modal, setModal] = useState(false)
 
   const toggleModal = () => {
-    setModal(!modal);
-  };
+    setModal(!modal)
+  }
 
   return (
     <>
@@ -50,7 +50,7 @@ const Card = () => {
                 fw="500"
                 sh
                 onClick={() => {
-                  toggleModal();
+                  toggleModal()
                 }}
               />
             </Item>
@@ -91,7 +91,7 @@ const Card = () => {
         </ZoomIn>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Card;
+export default Card

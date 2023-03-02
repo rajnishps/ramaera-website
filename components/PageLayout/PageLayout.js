@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from "react"
+import styled from "styled-components"
 
 const PageLayout = ({
   children,
@@ -23,7 +23,7 @@ const PageLayout = ({
     align-items: center;
     justify-content: ${start ? "flex-start" : "center"};
     flex-direction: column;
-    // padding-top: ${padding ? padding : "calc(1rem + 1rem)"};
+    /*     padding-top: ${padding ? padding : "calc(1rem + 1rem)"};*/
     padding-top: ${padding ? padding : "0"};
     background: linear-gradient(
       90deg,
@@ -53,9 +53,9 @@ const PageLayout = ({
       padding-top: ${mtpadding ? mtpadding : "calc(1rem + 1rem)"};
       overflow: visible;
     }
-  `;
+  `
 
-  return <StyledPageLayout>{children}</StyledPageLayout>;
-};
+  return <StyledPageLayout>{children}</StyledPageLayout>
+}
 
-export default PageLayout;
+export default PageLayout
