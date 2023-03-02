@@ -41,7 +41,7 @@ const Image = styled.img`
 `
 const CustomBg = () => {
   return (
-    <>
+    <div id="technology">
       <div
         data-aos="slide-left"
         data-aos-duration="200"
@@ -97,7 +97,7 @@ const CustomBg = () => {
           <Image src={"/background/p2poly.png"} alt="polygon background" />
         </PolyBg>
       </div>
-    </>
+    </div>
   )
 }
 

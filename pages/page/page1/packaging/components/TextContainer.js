@@ -3,7 +3,8 @@ import styled from "styled-components"
 import Flex from "../../../../../components/Styling/Flex"
 import Text from "../../../../../components/Text/Text"
 import { CustomText } from "./StyleImage"
-
+import Link from "next/link"
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
 const StyleTextContainer = styled.div`
   display: flex;
   align-items: center;
@@ -139,6 +140,18 @@ const TextContainer = () => {
         mta="center"
         padding="0 5vw 0 0 "
       />
+
+      <div style={{ padding: " 2vh 0 0 17.5vw" }}>
+        <Link href="/industries#packaging">
+          <TransparentButton
+            Text="Read more"
+            border="solid #EACDA3 2px"
+            br="2rem"
+            height="60px"
+            m="2rem 0 0 0"
+          />
+        </Link>
+      </div>
     </StyleTextContainer>
   )
 }
