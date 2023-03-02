@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 const PageWidth = ({
   children,
@@ -16,7 +16,7 @@ const PageWidth = ({
   const StyledWidth = styled.section`
     transform: ${scale ? `scale(${scale})` : ""};
     width: ${full ? "100%" : width ? width : "1400px"};
-    height: auto;
+    height: ${height ? height : "auto"};
     display: flex;
     align-items: ${Left ? "left" : "center"};
     justify-content: space-between;
@@ -36,9 +36,9 @@ const PageWidth = ({
       width: 100%;
       padding: ${sp ? sp : "0 1rem"};
     }
-  `;
+  `
 
-  return <StyledWidth>{children}</StyledWidth>;
-};
+  return <StyledWidth>{children}</StyledWidth>
+}
 
-export default PageWidth;
+export default PageWidth

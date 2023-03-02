@@ -23,7 +23,8 @@ const PageLayout = ({
     align-items: center;
     justify-content: ${start ? "flex-start" : "center"};
     flex-direction: column;
-    /*     padding-top: ${padding ? padding : "calc(1rem + 1rem)"};*/
+    /*     padding-top: ${padding ? padding : "calc(1rem + 1rem)"};
+ */
     padding-top: ${padding ? padding : "0"};
     background: linear-gradient(
       90deg,

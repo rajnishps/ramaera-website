@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Image = styled.div`
   height: 35rem;
@@ -6,7 +6,18 @@ export const Image = styled.div`
   @media only screen and (max-width: 768px) {
     transform: scale(0.9);
   }
-`;
+`
+export const CustomText = styled.h1`
+  font-size: 42px;
+  line-height: 55px;
+  color: #fff;
+  text-align: right;
+  font-weight: 700;
+
+  @media only screen and (max-width: 768px) {
+    font-size: 1.6rem;
+  }
+`
 export const Responsive = styled.div`
   display: flex;
   align-items: center;
@@ -15,9 +26,9 @@ export const Responsive = styled.div`
     justify-content: center;
     margin-top: 20px;
   }
-`;
+`
 const StyleImage = () => {
-  return <div>StyleImage</div>;
-};
+  return <div>StyleImage</div>
+}
 
-export default StyleImage;
+export default StyleImage

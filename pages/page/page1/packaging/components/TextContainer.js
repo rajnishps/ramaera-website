@@ -1,28 +1,27 @@
-import React from "react";
-import styled from "styled-components";
-import Flex from "../../../../../components/Styling/Flex";
-import Text from "../../../../../components/Text/Text";
-import { CustomText } from "./StyleImage";
-import Link from "next/link";
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
+import React from "react"
+import styled from "styled-components"
+import Flex from "../../../../../components/Styling/Flex"
+import Text from "../../../../../components/Text/Text"
+import { CustomText } from "./StyleImage"
+import Link from "next/link"
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
 const StyleTextContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
-  // background: red;
   width: 50rem;
   margin: 2rem 0 2rem 0;
   @media only screen and (max-width: 768px) {
     margin: 0 0 -30vh 0;
   }
-`;
+`
 const SpanColor = styled.div`
   color: #eacda3;
   @media only screen and (max-width: 768px) {
     margin-right: 15%;
   }
-`;
+`
 
 const TextContainer = () => {
   return (
@@ -155,7 +154,7 @@ const TextContainer = () => {
         </Link>
       </div>
     </StyleTextContainer>
-  );
-};
+  )
+}
 
-export default TextContainer;
+export default TextContainer
