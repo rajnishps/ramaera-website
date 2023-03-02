@@ -2,6 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import Flex from "../../../../../components/Styling/Flex";
 import Text from "../../../../../components/Text/Text";
+import Link from "next/link";
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
 
 const StyleTextContainer = styled.div`
   display: flex;
@@ -164,6 +166,17 @@ const TextContainer = () => {
         mta="center"
         padding="0 5vw 0 0 "
       />
+      <div style={{ padding: " 2vh 0 0 17.5vw" }}>
+        <Link href="/industries#technology">
+          <TransparentButton
+            border="solid #bf5ae0 2px"
+            Text="Read more"
+            br="2rem"
+            height="60px"
+            m="2rem 0 0 0"
+          />
+        </Link>
+      </div>
     </StyleTextContainer>
   );
 };
