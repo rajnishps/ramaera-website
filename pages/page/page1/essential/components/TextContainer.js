@@ -55,10 +55,11 @@ const TextContainer = () => {
             color="#FFF"
             lh="50px"
             mlh="30px"
-            msize="1.6rem"
+            msize="2rem"
             mta="center"
             mwidth="100vw"
             padding="1vw 2.5vw"
+            mmsize="1.6rem"
           />
           <Text
             Text="in one place"

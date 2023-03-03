@@ -1,4 +1,3 @@
-import React from "react"
 import styled from "styled-components"
 
 const PageLayout = ({
@@ -13,6 +12,7 @@ const PageLayout = ({
   Y,
   resTr,
   mheight,
+  mmheight,
   mtpadding,
   hideO,
 }) => {
@@ -53,6 +53,9 @@ const PageLayout = ({
       min-height: ${mheight ? mheight : ""};
       padding-top: ${mtpadding ? mtpadding : "calc(1rem + 1rem)"};
       overflow: visible;
+    }
+    @media (max-width: 400px) {
+      min-height: ${mmheight ? mmheight : ""};
     }
   `
 

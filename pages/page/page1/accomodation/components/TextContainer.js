@@ -22,8 +22,18 @@ const StyleTextContainer = styled.div`
 `
 const ButtonWrapper = styled.div`
   padding: 2vh 21vw 0 0;
+
   @media only screen and (max-width: 768px) {
     padding: 2vh 0;
+  }
+`
+const ImageTag = styled.img`
+  width: 225px;
+  transition: 200ms;
+  &:hover {
+    transform: scale(1.05);
+  }
+  @media only screen and (max-width: 768px) {
   }
 `
 const TextContainer = () => {
@@ -58,8 +68,9 @@ const TextContainer = () => {
             lh="10px"
             mlh="30px"
             xssize="3vw"
-            msize="1.6rem"
+            msize="2rem"
             mta="center"
+            mmsize="1.6rem"
           />
         </div>
       </Flex>
@@ -79,15 +90,7 @@ const TextContainer = () => {
       />
       <ButtonWrapper>
         <Link href="/industries#hotel">
-          <TransparentButton
-            Text="Read more"
-            border="solid #FFE259 2px"
-            height="50px"
-            m="2rem 0 0 0"
-            br="1.3rem"
-            fw="300"
-            fontSize="1rem"
-          />
+          <ImageTag alt="industry" src="./content/button5.png" />
         </Link>
       </ButtonWrapper>
     </StyleTextContainer>

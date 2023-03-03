@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Image = styled.div`
   height: 35rem;
@@ -8,9 +8,19 @@ export const Image = styled.div`
     margin-left: -100px;
   }
   @media only screen and (max-width: 768px) {
-    transform: scale(0.9);
+    video {
+      margin-top: 0px;
+      margin-left: -40px;
+    }
   }
-`;
+  @media only screen and (max-width: 400px) {
+    video {
+      margin-top: -50px;
+      margin-left: -40px;
+      transform: scale(0.8);
+    }
+  }
+`
 export const CustomText = styled.h1`
   font-size: 40px;
   line-height: 55px;
@@ -19,9 +29,13 @@ export const CustomText = styled.h1`
   font-weight: 700;
 
   @media only screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: 400px) {
     font-size: 1.6rem;
   }
-`;
+`
 export const Responsive = styled.div`
   display: flex;
   align-items: center;
@@ -30,9 +44,9 @@ export const Responsive = styled.div`
     justify-content: center;
     margin-top: 20px;
   }
-`;
+`
 const StyleImage = () => {
-  return <div>StyleImage</div>;
-};
+  return <div>StyleImage</div>
+}
 
-export default StyleImage;
+export default StyleImage

@@ -44,7 +44,8 @@ const TextContainer = (right) => {
             size="2.6rem"
             padding="0"
             mta="center"
-            msize="1.6rem"
+            msize="2rem"
+            mmsize="1.6rem"
           />
           <Text
             Text="Nature's Love"
