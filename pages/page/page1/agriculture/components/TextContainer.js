@@ -19,6 +19,12 @@ const StyleTextContainer = styled.div`
     width: 90vw;
   }
 `
+const ButtonWrapper = styled.div`
+  padding: 2vh 0 0 22vw;
+  @media only screen and (max-width: 768px) {
+    padding: 2vh 0;
+  }
+`
 const IconDiv = styled.div`
   @media only screen and (max-width: 768px) {
   }
@@ -34,10 +40,11 @@ const TextContainer = (right) => {
             lh="50px"
             color="#FFF"
             xm="3vw"
-            mta="left"
             ms="1.2rem"
             size="2.6rem"
             padding="0"
+            mta="center"
+            msize="1.6rem"
           />
           <Text
             Text="Nature's Love"
@@ -162,7 +169,7 @@ const TextContainer = (right) => {
         mta="center"
         padding="0 0vw 0 0 "
       />
-      <div style={{ padding: " 2vh 0 0 22vw" }}>
+      <ButtonWrapper>
         <Link href="/industries#argiculture">
           <TransparentButton
             Text="Read more"
@@ -174,7 +181,7 @@ const TextContainer = (right) => {
             fontSize="1rem"
           />
         </Link>
-      </div>
+      </ButtonWrapper>
     </StyleTextContainer>
   )
 }
