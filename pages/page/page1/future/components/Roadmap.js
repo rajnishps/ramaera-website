@@ -36,7 +36,7 @@ const Roadmap = () => {
               msize="1.8rem"
             />
             <Text
-              Text="10000 Industry"
+              Text="10000 Industry "
               color="#fff"
               size="13px"
               lh="16.8px"
