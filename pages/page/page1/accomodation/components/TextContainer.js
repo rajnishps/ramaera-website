@@ -37,7 +37,7 @@ const TextContainer = () => {
         <div>
           <Text
             Text="Making"
-            size="3.2rem"
+            size="3rem"
             lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%);"
             lh="0px"
             mlh="30px"

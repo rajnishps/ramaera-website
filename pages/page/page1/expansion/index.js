@@ -1,23 +1,24 @@
-import PageLayout from "../../../../components/PageLayout/PageLayout"
-import PageWidth from "../../../../components/Width/PageWidth"
-import Text from "../../../../components/Text/Text"
-import styled from "styled-components"
+import PageLayout from "../../../../components/PageLayout/PageLayout";
+import PageWidth from "../../../../components/Width/PageWidth";
+import Text from "../../../../components/Text/Text";
+import styled from "styled-components";
 
 const PolyBg = styled.div`
   position: absolute;
   left: 0;
   z-index: -1;
+  margin-top: -10vh;
   @media only screen and (max-width: 1000px) {
     opacity: 50%;
   }
-`
+`;
 const Image = styled.img`
   height: 100%;
   width: 75%;
   @media only screen and (max-width: 1000px) {
     height: 80vw;
   }
-`
+`;
 
 const Buy = () => {
   return (
@@ -46,10 +47,10 @@ const Buy = () => {
               Text="We are aiming to be a part of the major industrialisation drive in India and embarking our presence in every significant industrial domain including IT."
               padding="0 10vw "
               color="#FFF"
-              size="2.1rem"
+              size="2rem"
               lh="50px"
               fw="400"
-              m="2rem 0 3rem 0"
+              m="1rem 0 3rem 0"
               align="center"
               xmsize="2.2rem"
               xssize="2rem"
@@ -68,7 +69,7 @@ const Buy = () => {
         </PolyBg>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Buy
+export default Buy;
