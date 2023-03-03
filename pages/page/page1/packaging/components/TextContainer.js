@@ -22,6 +22,12 @@ const SpanColor = styled.div`
     margin-right: 15%;
   }
 `
+const ButtonWrapper = styled.div`
+  padding: 2vh 0 0 22vw;
+  @media only screen and (max-width: 768px) {
+    padding: 2vh 0;
+  }
+`
 
 const TextContainer = () => {
   return (
@@ -140,7 +146,7 @@ const TextContainer = () => {
         padding="0 0vw 0 0 "
       />
 
-      <div style={{ padding: " 2vh 0 0 22vw" }}>
+      <ButtonWrapper>
         <Link href="/industries#packaging">
           <TransparentButton
             Text="Read more"
@@ -153,7 +159,7 @@ const TextContainer = () => {
             ß
           />
         </Link>
-      </div>
+      </ButtonWrapper>
     </StyleTextContainer>
   )
 }

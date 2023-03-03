@@ -1,10 +1,10 @@
-import React from "react";
-import styled from "styled-components";
-import Flex from "../../../../../components/Styling/Flex";
-import Text from "../../../../../components/Text/Text";
-import Link from "next/link";
-import { CustomText } from "./StyleImage";
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
+import React from "react"
+import styled from "styled-components"
+import Flex from "../../../../../components/Styling/Flex"
+import Text from "../../../../../components/Text/Text"
+import Link from "next/link"
+import { CustomText } from "./StyleImage"
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
 const StyleTextContainer = styled.div`
   display: flex;
   align-items: center;
@@ -15,13 +15,20 @@ const StyleTextContainer = styled.div`
   @media only screen and (max-width: 768px) {
     margin: 0 0 -30vh 0;
   }
-`;
+`
+const ButtonWrapper = styled.div`
+  padding: 2vh 0 0 22vw;
+  @media only screen and (max-width: 768px) {
+    padding: 2vh 0;
+  }
+`
 const SpanColor = styled.div`
   color: #bf5ae0;
   @media only screen and (max-width: 768px) {
-    margin-right: 15%;
+    font-size: 2.2rem;
+    text-align: center;
   }
-`;
+`
 
 const TextContainer = () => {
   return (
@@ -139,7 +146,7 @@ const TextContainer = () => {
         mta="center"
         padding="0 0vw 0 0 "
       />
-      <div style={{ padding: " 2vh 0 0 22vw" }}>
+      <ButtonWrapper>
         <Link href="/industries#technology">
           <TransparentButton
             border="solid #bf5ae0 2px"
@@ -151,9 +158,9 @@ const TextContainer = () => {
             fontSize="1rem"
           />
         </Link>
-      </div>
+      </ButtonWrapper>
     </StyleTextContainer>
-  );
-};
+  )
+}
 
-export default TextContainer;
+export default TextContainer

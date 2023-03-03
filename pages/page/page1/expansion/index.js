@@ -1,7 +1,6 @@
-import PageLayout from "../../../../components/PageLayout/PageLayout";
-import PageWidth from "../../../../components/Width/PageWidth";
-import Text from "../../../../components/Text/Text";
-import styled from "styled-components";
+import PageWidth from "../../../../components/Width/PageWidth"
+import Text from "../../../../components/Text/Text"
+import styled from "styled-components"
 
 const PolyBg = styled.div`
   position: absolute;
@@ -11,19 +10,31 @@ const PolyBg = styled.div`
   @media only screen and (max-width: 1000px) {
     opacity: 50%;
   }
-`;
+`
 const Image = styled.img`
   height: 100%;
   width: 75%;
   @media only screen and (max-width: 1000px) {
     height: 80vw;
   }
-`;
+`
+const PageLayout = styled.div`
+  height: 60vh;
+  width: 100%;
+  padding: 35vh 5vw;
+  @media only screen and (max-width: 768px) {
+    padding: 25vh 5vw;
+    margin: 0 0 20vh 0;
+  }
+  @media only screen and (max-width: 400px) {
+    margin: 0 0 50vh 0;
+  }
+`
 
 const Buy = () => {
   return (
     <div id="0">
-      <div style={{ height: "60vh", width: "100vw", padding: "35vh 5vw" }}>
+      <PageLayout>
         <PageWidth height="100%" scale={"100%"} full>
           <div
             data-aos="fade-up"
@@ -67,9 +78,9 @@ const Buy = () => {
             alt="right polygon background"
           />
         </PolyBg>
-      </div>
+      </PageLayout>
     </div>
-  );
-};
+  )
+}
 
-export default Buy;
+export default Buy
