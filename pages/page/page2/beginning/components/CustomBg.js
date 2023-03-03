@@ -23,7 +23,9 @@ const Bg = styled.div`
 `
 const AgriPos = styled.video`
   height: 75vh;
+  margin-left: -80px;
   @media only screen and (max-width: 768px) {
+    margin-left: 0;
     height: 50vh;
   }
 `
@@ -68,7 +70,7 @@ const CustomBg = () => {
             <Text
               Text="Information Technology"
               font
-              align="right"
+              align="left"
               size="42px"
               lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
               lh="55px"

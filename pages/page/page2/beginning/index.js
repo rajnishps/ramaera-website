@@ -17,7 +17,7 @@ const index = () => {
             Text="Ramaera Industries "
             lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
             font
-            size="56px"
+            size="3.6rem"
             fw="400"
             align="left"
             lh="70px"
@@ -32,12 +32,12 @@ const index = () => {
           <Text
             Text="has begun with the primary motive of nation orientation and strengthening the vision of a sustainable and prosperous nation. With the idea of encompassing and emboldening our presence in industrial sectors such as FMCG, Hotels, Packaging, Agriculture & IT Businesses. We are consistent in serving you the best with due honesty and world class standards."
             color="#FFF"
-            size="24px"
+            size="1.8rem"
             lh="42px"
             fw="400"
             m="2rem 0 0 0"
             align="left"
-            width="1100px"
+            width="85vw"
             xmsize="2.2rem"
             xssize="2rem"
             msize="1.2rem"
