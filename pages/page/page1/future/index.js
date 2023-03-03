@@ -2,17 +2,11 @@ import PageLayout from "../../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../../components/Width/PageWidth"
 import Text from "../../../../components/Text/Text"
 import {
- 
   bg,
- 
   RotateImage,
   TimelineWrapper,
- 
-  TimelineWrapper,
   FutureContainer,
- ,
   TimelineContainer,
-TimelineContainer,
 } from "./components/Style"
 import Roadmap from "./components/Roadmap"
 import Timeline from "./components/Timeline"
@@ -79,7 +73,7 @@ const index = () => {
             lh="31px"
             width="80vw"
           />
-          <Roadmap /> 
+          <Roadmap />
           {/* <TimelineContainer>
             <TimelineWrapper>
               <Timeline />
