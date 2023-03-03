@@ -21,9 +21,7 @@ function Holder() {
           imagen={images[0]}
           onDate={"19 JUNE, 2019 | Blog"}
           title={"Ramaera Narmada - an ode to the Grandeur of Gujarat"}
-          subTitle={
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas minima accusantium odio autem tempore veritatis fugit distinctio veniam. Saepe, ducimus!"
-          }
+          subTitle={""}
         />
       ),
     },
@@ -34,9 +32,7 @@ function Holder() {
           imagen={images[1]}
           onDate={"19 JUNE, 2019 | Blog"}
           title={"Ramaera Narmada - an ode to the Grandeur of Gujarat"}
-          subTitle={
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas minima accusantium odio autem tempore veritatis fugit distinctio veniam. Saepe, ducimus!"
-          }
+          subTitle={""}
         />
       ),
     },
@@ -47,9 +43,7 @@ function Holder() {
           imagen={images[2]}
           onDate={"19 JUNE, 2019 | Blog"}
           title={"Ramaera Narmada - an ode to the Grandeur of Gujarat"}
-          subTitle={
-            "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptas minima accusantium odio autem tempore veritatis fugit distinctio veniam. Saepe, ducimus!"
-          }
+          subTitle={""}
         />
       ),
     },
