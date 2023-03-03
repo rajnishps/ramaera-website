@@ -19,7 +19,7 @@ const Texts = () => {
                 fontWeight: "500",
               }}
             >
-              Agribusiness is one of the most flourishing sectors of the
+              Agri business is one of the most flourishing sectors of the
               industry and Ramaera Industries are planning to set forth its foot
               in this industry as well.&nbsp;
             </span>

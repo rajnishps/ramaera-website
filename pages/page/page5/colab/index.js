@@ -25,7 +25,7 @@ const index = () => {
         <BackgroundImg src="/content/Background.png" />
         <Container>
           <Text
-            Text="GET IN TOUCH TODAYS"
+            Text="GET IN TOUCH TODAY"
             font
             size="3rem"
             fw="100"
@@ -93,7 +93,7 @@ const index = () => {
                 type="textarea"
                 rows={10}
                 cols={35}
-                placeholder="Hello there,I would like to talk about how to..."
+                placeholder="Hello there ,I would like to talk about..."
                 required
               />
             </Fline3>

@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { motion } from "framer-motion";
-import Spinner from "../Spinner";
+import React from "react"
+import styled from "styled-components"
+import { motion } from "framer-motion"
+import Spinner from "../Spinner"
 
 const StyledButton = styled(motion.button)`
   color: ${(props) => (props.color ? props.color : "#FFFFFF")};
@@ -12,7 +12,7 @@ const StyledButton = styled(motion.button)`
   padding: ${(props) =>
     props.secondary ? "2px" : props.padding ? props.padding : "0.85rem 2rem"};
   border-radius: ${(props) =>
-    props.br ? props.br : props.secondary ? "1.45rem" : "0.55rem"};
+    props.br ? props.br : props.secondary ? "1.2rem" : "0.8rem"};
   border: ${(props) => (props.lightBorder ? "2px solid #FFFFFF" : "none")};
   cursor: pointer;
   min-width: ${(props) =>
@@ -46,7 +46,7 @@ const StyledButton = styled(motion.button)`
   @media (max-width: 450px) {
     margin: ${(props) => (props.sm ? props.sm : "")};
   }
-`;
+`
 const ButtonInside = styled.div`
   background: ${(props) => (props.secondaryBg ? props.secondaryBg : "#13132F")};
   display: flex;
@@ -66,16 +66,16 @@ const ButtonInside = styled.div`
         ? props.secondaryP
         : "0 2rem"};
   }
-`;
+`
 
 const Button = (props) => {
   const renderContent = () => {
     if (props.loading) {
-      return <Spinner />;
+      return <Spinner />
     }
 
-    return props.Text;
-  };
+    return props.Text
+  }
 
   return (
     <StyledButton
@@ -91,6 +91,6 @@ const Button = (props) => {
             : */}
       {renderContent()}
     </StyledButton>
-  );
-};
-export default Button;
+  )
+}
+export default Button

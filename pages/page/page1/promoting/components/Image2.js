@@ -4,6 +4,8 @@ const Image = styled.div`
   transform: scale(0.75);
   @media only screen and (max-width: 768px) {
     transform: scale(0.5);
+    width: 100vw;
+    padding: 0 10vw 0 0;
   }
 `
 const Image2 = () => {

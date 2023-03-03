@@ -16,7 +16,7 @@ const PageWidth = ({
   const StyledWidth = styled.section`
     transform: ${scale ? `scale(${scale})` : ""};
     width: ${full ? "100%" : width ? width : "1400px"};
-    height: auto;
+    height: ${height ? height : "auto"};
     display: flex;
     align-items: ${Left ? "left" : "center"};
     justify-content: space-between;
@@ -30,7 +30,7 @@ const PageWidth = ({
       width: ${full ? "100%" : "95%"};
     }
     @media only screen and (max-width: 1400px) {
-      width: ${full ? "100%" : "98%"};
+      width: ${full ? "100%" : "100%"};
     }
     @media only screen and (max-width: 540px) {
       width: 100%;

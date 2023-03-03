@@ -152,14 +152,14 @@ a {
 }
 
 .Line {
-  height: 3px;
-  width: 57px;
+  height: 2px;
+  width: 50px;
   background: #fff;
   position: absolute;
   left: 50%; /* position the left edge of the element at the middle of the parent */
-
+  border-radius: 999px;
   transform: translate(-50%, 0);
-  bottom: -5px;
+  bottom: -10px;
 }
 
 .nav {
@@ -172,7 +172,7 @@ a {
   top: 0;
   transition: 0.5s linear;
   width: 1800px;
-  left: 50%;
+  left: 47.5%;
   transform: translate(-50%, 0);
   margin: 2.5rem 0 0 0;
 }
@@ -211,7 +211,7 @@ a {
   font-size: 22px;
   padding: 0 !important;
   margin: 0 !important;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 .list li {
@@ -265,7 +265,7 @@ a {
   }
   .right-nav-font {
     display: block;
-    font-size: 0.75rem;
+    font-size: 0.6rem;
   }
 }
 
@@ -432,4 +432,60 @@ a {
 }
 .fixed-position {
   position: fixed;
+}
+
+.tablist{
+  width: 22vw;
+  height: 100%;
+  padding-top: 12vh ;
+  background: linear-gradient(181.16deg, #ff7917 -26.31%, #ffdd2d 128.88%);
+}
+
+  @media (max-width: 768px) {
+    .tablist{ min-width: 28vw;}
+    }
+  @media (max-width: 600px) {
+    .tablist{ min-width: 40vw;}
+    }
+  
+.react-tabs__tab--selected {
+  background:black;
+  color: white;
+  border-left: 8px solid white;
+
+}
+
+.focusChange {
+  cursor: pointer;
+  padding: 20px ;
+  outline:none;
+}
+
+.btn-hamburger{ 
+  margin-top: 4vw;
+  background-repeat: no-repeat;
+  background-image: url("/content/hamburger.png");
+  background-size: contain;
+  display: none;
+  height: 20px;
+  width: 20px;
+}
+
+@media (max-width: 600px) {
+  .btn-hamburger{ 
+    display: block;
+  }
+}
+
+.active{
+  width: 0px;
+  min-width: 0px;
+}
+@media (min-width: 769px) {
+  .active{
+    width: 22vw;
+  min-width: 22vw;}
+  }
+.tabscontent.active{
+  width: 100vw;
 }

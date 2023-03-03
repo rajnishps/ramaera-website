@@ -21,7 +21,7 @@ const Vision = () => {
             align="center"
             xmsize="2rem"
             xssize="10vw"
-            msize="1.7rem"
+            msize="2rem"
             mpadding="4rem 0 0 0 "
             padding="4rem 0 0 0"
             mmargin="0 0 0 0"

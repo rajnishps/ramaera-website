@@ -10,16 +10,19 @@ const Animdiv = styled.div`
   @media only screen and (max-width: 768px) {
     padding: 0 0 0 5vh;
     margin: 0;
-    top: -20vh;
+    top: -40vh;
     left: auto;
     right: auto;
+  }
+  @media only screen and (max-width: 400px) {
+    top: -20vh;
   }
 `
 
 const Buy = () => {
   return (
-    <PageLayout>
-      <PageWidth scale={"90%"} width="1500px" position="relative">
+    <PageLayout mmheight="110vh" height="100vh">
+      <PageWidth scale={"95%"} width="1500px" position="relative">
         <div style={{ width: "100%" }}>
           <img
             loading="lazy"

@@ -117,13 +117,21 @@ const Navbar = ({ selectedTab }) => {
 
         <div className="PC RightNav">
           <Link2>
-            <Link href="/career" className="right-nav-font">
+            <Link
+              href="/career"
+              className="right-nav-font"
+              style={{ fontWeight: "300" }}
+            >
               Career
             </Link>
           </Link2>
 
           <Link2>
-            <Link href="/contact" className="right-nav-font">
+            <Link
+              href="/contact"
+              className="right-nav-font"
+              style={{ fontWeight: "300" }}
+            >
               Contact
             </Link>
           </Link2>

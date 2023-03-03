@@ -2,6 +2,8 @@ import React from "react"
 import styled from "styled-components"
 import Flex from "../../../../../components/Styling/Flex"
 import Text from "../../../../../components/Text/Text"
+import Link from "next/link"
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
 
 const StyleTextContainer = styled.div`
   display: flex;
@@ -9,13 +11,19 @@ const StyleTextContainer = styled.div`
   flex-direction: column;
   // background: red;
   width: 50rem;
-  margin: 5rem 0 -5rem 0;
+  margin: 1rem 0 -7.5rem 0;
   @media only screen and (max-width: 768px) {
     position: absolute;
     margin: 0;
     width: 100vw;
     top: 0vh;
     overflow: hidden;
+  }
+`
+const ButtonWrapper = styled.div`
+  padding: 2vh 21vw 0 0;
+  @media only screen and (max-width: 768px) {
+    padding: 2vh 0;
   }
 `
 const IconDiv = styled.div`
@@ -29,8 +37,8 @@ const TextContainer = () => {
       <Flex mcolumn>
         <IconDiv>
           <svg
-            width="155"
-            height="154"
+            width="130"
+            height="130"
             viewBox="0 0 155 154"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -130,22 +138,37 @@ const TextContainer = () => {
             msize="2rem"
             mta="center"
             mwidth="100vw"
+            padding="0 10vw 0 0"
           />
         </div>
       </Flex>
       <Text
         Text="Ramaera FMCG industry has commenced an extensive range of FMCG to make your days more than ordinary. We plan to offer you nothing less than the best."
         fw="500"
-        size="23px"
+        size="20px"
         lh="45px"
-        width="40rem"
-        m="2rem 0 0 0"
+        width="32.5rem"
+        m=" 0"
         xssize="18px"
         mlh="30px"
         msize="18px"
         mwidth="100vw"
         mta="center"
+        padding="0 0 0 0vw"
       />
+      <ButtonWrapper>
+        <Link href="/industries#goods">
+          <TransparentButton
+            Text="Read more"
+            border="solid #F2EFD3 2px"
+            height="50px"
+            m="2rem 0 0 0"
+            br="1.3rem"
+            fw="300"
+            fontSize="1rem"
+          />
+        </Link>
+      </ButtonWrapper>
     </StyleTextContainer>
   )
 }

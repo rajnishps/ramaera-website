@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const CustomText = styled.p`
-  font-size: 32px;
+  font-size: 2.5rem;
   line-height: 62px;
   color: #fff;
   width: 60rem;
@@ -85,24 +85,27 @@ const txt7 = (
   <CustomText>
     Being a <span style={{ color: "#E65C00" }}>Devoted</span> to the nation by
     promoting education, business modelling and financial stability, is our
-    motto. We are focused on nation orientation, ethical corporate values and
-    benefiting the people.
+    motto.{" "}
+    {/* We are focused on nation orientation, ethical corporate values and
+    benefiting the people. */}
   </CustomText>
 )
 const txt8 = (
   <CustomText>
     Being a <span style={{ color: "#E65C00" }}>Devoted</span> to the nation by
     promoting education, business modelling and financial stability, is our
-    motto. We are focused on nation orientation, ethical corporate values and
-    benefiting the people.
+    motto.
+    {/*  We are focused on nation orientation, ethical corporate values and
+    benefiting the people. */}
   </CustomText>
 )
 const txt9 = (
   <CustomText>
     Being a <span style={{ color: "#E65C00" }}>Devoted</span> to the nation by
     promoting education, business modelling and financial stability, is our
-    motto. We are focused on nation orientation, ethical corporate values and
-    benefiting the people.
+    motto.
+    {/*  We are focused on nation orientation, ethical corporate values and
+    benefiting the people. */}
   </CustomText>
 )
 const txt10 = (

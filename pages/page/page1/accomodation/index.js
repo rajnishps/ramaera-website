@@ -20,8 +20,8 @@ const Line = styled.div`
 
 const Buy = () => {
   return (
-    <PageLayout>
-      <PageWidth sp="0" scale={"90%"} width="1500px" position="relative">
+    <PageLayout height="90vh">
+      <PageWidth sp="0" scale={"95%"} width="1500px" position="relative">
         <div style={{ width: "100%" }}>
           <Line>
             <img
@@ -61,7 +61,7 @@ const Buy = () => {
               muted
               style={{
                 position: "absolute",
-                top: "-200px",
+                top: "-150px",
                 width: "100%",
                 height: "100%",
               }}

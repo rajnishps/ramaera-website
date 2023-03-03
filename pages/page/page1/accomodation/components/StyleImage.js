@@ -1,12 +1,12 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Image = styled.div`
-  height: 35rem;
-  width: 35rem;
+  height: 32rem;
+  width: 33rem;
   @media only screen and (max-width: 768px) {
     width: 95vw;
   }
-`
+`;
 export const Responsive = styled.div`
   display: flex;
   align-items: center;
@@ -14,10 +14,10 @@ export const Responsive = styled.div`
   @media only screen and (max-width: 768px) {
     justify-content: center;
   }
-`
+`;
 
 const StyleImage = () => {
-  return <div>StyleImage</div>
-}
+  return <div>StyleImage</div>;
+};
 
-export default StyleImage
+export default StyleImage;

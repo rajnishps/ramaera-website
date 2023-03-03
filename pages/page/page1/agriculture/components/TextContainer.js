@@ -1,7 +1,8 @@
 import styled from "styled-components"
-import Heading from "../../../../../components/Heading/Heading"
 import Flex from "../../../../../components/Styling/Flex"
 import Text from "../../../../../components/Text/Text"
+import Link from "next/link"
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
 
 const StyleTextContainer = styled.div`
   display: flex;
@@ -10,7 +11,7 @@ const StyleTextContainer = styled.div`
   flex-direction: column;
   // background: red;
   width: 50rem;
-  margin: -6rem 0 4rem 0;
+  margin: 1rem 0 2rem 0;
   @media only screen and (max-width: 768px) {
     position: absolute;
     margin: 0;
@@ -18,24 +19,33 @@ const StyleTextContainer = styled.div`
     width: 90vw;
   }
 `
+const ButtonWrapper = styled.div`
+  padding: 2vh 0 0 22vw;
+  @media only screen and (max-width: 768px) {
+    padding: 2vh 0;
+  }
+`
 const IconDiv = styled.div`
   @media only screen and (max-width: 768px) {
   }
 `
-const TextContainer = () => {
+const TextContainer = (right) => {
   return (
     <StyleTextContainer>
       <Flex jc="flex-end" mrcolumn>
         <div>
-          <Heading
+          <Text
             Text="Agri-business to bestow"
             align="right"
-            size="42px"
-            lh=""
+            lh="50px"
             color="#FFF"
             xm="3vw"
-            mta="left"
             ms="1.2rem"
+            size="2.6rem"
+            padding="0"
+            mta="center"
+            msize="2rem"
+            mmsize="1.6rem"
           />
           <Text
             Text="Nature's Love"
@@ -48,12 +58,13 @@ const TextContainer = () => {
             xssize="3vw"
             msize="2rem"
             mta="center"
+            padding="0"
           />
         </div>
         <IconDiv>
           <svg
-            width="150"
-            height="150"
+            width="120"
+            height="120"
             viewBox="0 0 150 150"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -146,18 +157,32 @@ const TextContainer = () => {
         </IconDiv>
       </Flex>
       <Text
-        Text="We provide packaging solutions to help your business flourish with boosted outreach. Ensuring the protection, containment, and communication of packaged projects is our foremost priority."
+        Text="Our Agri-business industry is established to get you fresh and organic fruits and vegetables with the blessed with the touch of nature."
         align="right"
         fw="500"
-        size="23px"
+        size="20px"
         lh="45px"
-        width="40rem"
+        width="34rem"
         xssize="18px"
         mlh="30px"
         msize="18px"
         mwidth="100vw"
         mta="center"
+        padding="0 0vw 0 0 "
       />
+      <ButtonWrapper>
+        <Link href="/industries#argiculture">
+          <TransparentButton
+            Text="Read more"
+            border="solid #579181 2px"
+            height="50px"
+            m="2rem 0 0 0"
+            br="1.3rem"
+            fw="300"
+            fontSize="1rem"
+          />
+        </Link>
+      </ButtonWrapper>
     </StyleTextContainer>
   )
 }

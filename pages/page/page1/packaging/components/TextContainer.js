@@ -3,15 +3,15 @@ import styled from "styled-components"
 import Flex from "../../../../../components/Styling/Flex"
 import Text from "../../../../../components/Text/Text"
 import { CustomText } from "./StyleImage"
-
+import Link from "next/link"
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
 const StyleTextContainer = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
   flex-direction: column;
-  // background: red;
   width: 50rem;
-  margin: -6rem 0 4rem 0;
+  margin: 2rem 0 2rem 0;
   @media only screen and (max-width: 768px) {
     margin: 0 0 -30vh 0;
   }
@@ -20,6 +20,12 @@ const SpanColor = styled.div`
   color: #eacda3;
   @media only screen and (max-width: 768px) {
     margin-right: 15%;
+  }
+`
+const ButtonWrapper = styled.div`
+  padding: 2vh 0 0 22vw;
+  @media only screen and (max-width: 768px) {
+    padding: 2vh 0;
   }
 `
 
@@ -34,8 +40,8 @@ const TextContainer = () => {
           </CustomText>
         </div>
         <svg
-          width="155"
-          height="155"
+          width="130"
+          height="130"
           viewBox="0 0 155 155"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
@@ -129,15 +135,31 @@ const TextContainer = () => {
         Text="We provide packaging solutions to help your business flourish with boosted outreach. Ensuring the protection, containment, and communication of packaged projects is our foremost priority."
         align="right"
         fw="500"
-        size="23px"
+        size="20px"
         lh="45px"
-        width="40rem"
+        width="34rem"
         xssize="18px"
         mlh="30px"
         msize="18px"
         mwidth="100vw"
         mta="center"
+        padding="0 0vw 0 0 "
       />
+
+      <ButtonWrapper>
+        <Link href="/industries#packaging">
+          <TransparentButton
+            Text="Read more"
+            border="solid #EACDA3 2px"
+            height="50px"
+            m="2rem 0 0 0"
+            br="1.3rem"
+            fw="300"
+            fontSize="1rem"
+            ß
+          />
+        </Link>
+      </ButtonWrapper>
     </StyleTextContainer>
   )
 }

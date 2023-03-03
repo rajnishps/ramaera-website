@@ -1,4 +1,3 @@
-import React from "react"
 import styled from "styled-components"
 
 const PageLayout = ({
@@ -13,6 +12,7 @@ const PageLayout = ({
   Y,
   resTr,
   mheight,
+  mmheight,
   mtpadding,
   hideO,
 }) => {
@@ -23,7 +23,9 @@ const PageLayout = ({
     align-items: center;
     justify-content: ${start ? "flex-start" : "center"};
     flex-direction: column;
-    padding-top: ${padding ? padding : "calc(1rem + 1rem)"};
+    /*     padding-top: ${padding ? padding : "calc(1rem + 1rem)"};
+ */
+    padding-top: ${padding ? padding : "0"};
     background: linear-gradient(
       90deg,
       rgb(var(--background-start-rgb)) 0%,
@@ -51,6 +53,9 @@ const PageLayout = ({
       min-height: ${mheight ? mheight : ""};
       padding-top: ${mtpadding ? mtpadding : "calc(1rem + 1rem)"};
       overflow: visible;
+    }
+    @media (max-width: 400px) {
+      min-height: ${mmheight ? mmheight : ""};
     }
   `
 

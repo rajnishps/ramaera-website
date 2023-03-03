@@ -2,11 +2,17 @@ import PageLayout from "../../../../components/PageLayout/PageLayout"
 import PageWidth from "../../../../components/Width/PageWidth"
 import Text from "../../../../components/Text/Text"
 import {
+ 
   bg,
+ 
   RotateImage,
   TimelineWrapper,
+ 
+  TimelineWrapper,
   FutureContainer,
+ ,
   TimelineContainer,
+TimelineContainer,
 } from "./components/Style"
 import Roadmap from "./components/Roadmap"
 import Timeline from "./components/Timeline"
@@ -63,7 +69,7 @@ const index = () => {
             xssize="6vw"
             msize="2.4rem"
           />
-          {/* <Text
+          <Text
             Text="A vision for the success of millions and national integration requires a fundamentally worthy and promising roadmap ."
             color="#fff"
             size="16px"
@@ -73,12 +79,12 @@ const index = () => {
             lh="31px"
             width="80vw"
           />
-          <Roadmap /> */}
-          <TimelineContainer>
+          <Roadmap /> 
+          {/* <TimelineContainer>
             <TimelineWrapper>
               <Timeline />
             </TimelineWrapper>
-          </TimelineContainer>
+          </TimelineContainer> */}
         </PageWidth>
       </FutureContainer>
     </PageLayout>

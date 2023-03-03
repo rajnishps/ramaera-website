@@ -24,7 +24,7 @@ const Text = (props) => {
     text-shadow: ${props.tsdo ? props.tsdo : ""};
 
     padding: ${props.padding ? props.padding : "2vw"};
-
+    overflow-y: ${props.overflowY ? props.overflowY : ""};
     text-transform: ${props.ttransform ? props.ttransform : ""};
     &:hover {
       color: ${props.hoverColor ? props.hoverColor : null};
@@ -53,6 +53,9 @@ const Text = (props) => {
       line-height: ${props.mlh && props.mlh};
       padding: ${props.mpadding ? props.mpadding : "2vw"};
       margin: ${props.mmargin ? props.mmargin : ""};
+    }
+    @media only screen and (max-width: 400px) {
+      font-size: ${props.mmsize ? props.mmsize : ""};
     }
   `
   return <StyledText>{props.Text ? props.Text : "Default Text"}</StyledText>

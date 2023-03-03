@@ -1,12 +1,12 @@
-import styled from "styled-components"
-import Text from "../../../../../components/Text/Text"
+import styled from "styled-components";
+import Text from "../../../../../components/Text/Text";
 
 const Txt = styled.div`
   height: 100%;
   text-transform: uppercase;
   margin-top: auto;
   margin-bottom: auto;
-`
+`;
 const Bg = styled.div`
   display: flex;
   background-image: url("/background/bg1p2.png");
@@ -20,13 +20,16 @@ const Bg = styled.div`
     background: transparent;
     flex-direction: column-reverse;
   }
-`
+`;
 const AgriPos = styled.video`
+  padding-bottom: 50px;
+  transform: scale(0.9);
   height: 75vh;
   @media only screen and (max-width: 768px) {
     height: 50vh;
+    padding-bottom: 0px;
   }
-`
+`;
 
 const CustomBg = () => {
   return (
@@ -68,7 +71,7 @@ const CustomBg = () => {
         </Txt>
       </Bg>
     </div>
-  )
-}
+  );
+};
 
-export default CustomBg
+export default CustomBg;

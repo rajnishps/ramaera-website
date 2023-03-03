@@ -7,6 +7,7 @@ const Image = styled.img`
     position: absolute;
     top: -200px;
     transform: scale(0.75);
+    display: none;
   }
 `
 const Dots = () => {

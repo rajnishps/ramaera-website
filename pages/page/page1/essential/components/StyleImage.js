@@ -3,11 +3,21 @@ import styled from "styled-components"
 export const Image = styled.div`
   height: 25rem;
   width: 35rem;
+  video {
+    height: 120%;
+    width: 120%;
+  }
   @media only screen and (max-width: 768px) {
-    transform: scale(0.65);
-    width: 90%;
-    height: 100%;
-    margin-top: -25%;
+    video {
+      height: 120%;
+      width: 100%;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    video {
+      height: 100%;
+      width: 100%;
+    }
   }
 `
 export const Responsive = styled.div`

@@ -22,6 +22,9 @@ export const CustomText = styled.h1`
   font-weight: 700;
 
   @media only screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: 400px) {
     font-size: 1.6rem;
   }
 `

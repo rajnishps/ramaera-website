@@ -3,8 +3,37 @@ import styled from "styled-components"
 export const Image = styled.div`
   height: 35rem;
   width: 40rem;
+  video {
+    margin-top: -80px;
+    margin-left: -100px;
+  }
   @media only screen and (max-width: 768px) {
-    transform: scale(0.9);
+    video {
+      margin-top: 0px;
+      margin-left: -40px;
+    }
+  }
+  @media only screen and (max-width: 400px) {
+    video {
+      margin-top: -50px;
+      margin-left: -40px;
+      transform: scale(0.8);
+    }
+  }
+`
+export const CustomText = styled.h1`
+  font-size: 40px;
+  line-height: 55px;
+  color: #fff;
+  text-align: right;
+  font-weight: 700;
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    font-size: 2rem;
+  }
+  @media only screen and (max-width: 400px) {
+    font-size: 1.6rem;
   }
 `
 export const Responsive = styled.div`
