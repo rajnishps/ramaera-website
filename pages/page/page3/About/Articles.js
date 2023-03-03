@@ -9,7 +9,7 @@ import {
 import Text from "../../../../components/Text/Text"
 import Analytics from "./Analytics"
 const ArticlesContainer = styled.div`
-  height: 90vh;
+  height: 45vh;
   width: 100%;
   border-radius: 19px;
   overflow-y: scroll;

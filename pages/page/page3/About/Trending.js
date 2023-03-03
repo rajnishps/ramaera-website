@@ -10,31 +10,27 @@ import {
   TrendingLeft,
   TrendingRight,
   TrendingContainer1,
-  TrendingHead1,
   TrendingLeft1,
-  TrendingRight1,
 } from "./style"
 import { YouTubeEmbed } from "react-social-media-embed"
 
 const Trending = () => {
   return (
     <>
-      {/* <TrendingContainer1>
-      <TrendingLeft1>
-         <YouTubeEmbed
-          width="100%"
-          url="https://www.youtube.com/watch?v=s7Spqmyp_fc"
-        /> 
-        
-        
-      </TrendingLeft1>
-      <TrendingRight1>
-        <div data-aos="fade-left">
-          <Articles />
-        </div>
-      </TrendingRight1>
-    </TrendingContainer1> */}
-      <TrendingContainer>
+      <TrendingContainer1>
+        <TrendingLeft1>
+          <YouTubeEmbed
+            width="100%"
+            url="https://www.youtube.com/watch?v=s7Spqmyp_fc"
+          />
+        </TrendingLeft1>
+        <TrendingRight>
+          <div data-aos="fade-left">
+            <Articles />
+          </div>
+        </TrendingRight>
+      </TrendingContainer1>
+      {/* <TrendingContainer>
         <TrendingLeft className="scrollbar">
           <div data-aos="fade-right">
             <Text
@@ -48,7 +44,6 @@ const Trending = () => {
               fw="500"
               mlh="50px"
               m="0 0 0 2rem"
-              // align="center"
               xmsize="6rem"
               xssize="10vw"
               msize="2rem"
@@ -58,7 +53,6 @@ const Trending = () => {
               bbottom="4px solid white"
             />
           </div>
-          {/* <TrendingHead>Trending</TrendingHead> */}
           <div data-aos="fade-up">
             {NewsData.map((item) => {
               return <News item={item} />
@@ -70,7 +64,7 @@ const Trending = () => {
             <Articles />
           </div>
         </TrendingRight>
-      </TrendingContainer>
+      </TrendingContainer> */}
     </>
   )
 }

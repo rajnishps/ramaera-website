@@ -33,7 +33,7 @@ export const TrendingRight = styled.div`
   width: 30%;
   overflow-y: scroll;
   border: 1px solid white;
-  height: 90vh;
+  height: 45vh;
   border-radius: 20px;
   @media (max-width: 600px) {
     width: 100%;
