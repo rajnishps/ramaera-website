@@ -1,10 +1,12 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const TeamContainer = styled.div`
   width: 70%;
   margin: 10% auto;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
-    url("/background/Team.jpeg");
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)),
+    url("/content/hajipur1.JPG");
+  /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("/background/Team.jpeg"); */
   /* height: 60vh; */
   background-position: center;
   background-size: cover;
@@ -15,14 +17,14 @@ export const TeamContainer = styled.div`
   @media (max-width: 600px) {
     width: 90%;
   }
-`
+`;
 
 export const LeftTeam = styled.div`
   width: 50%;
   @media (max-width: 600px) {
     width: 100%;
   }
-`
+`;
 export const ParaBox = styled.div`
   width: 50%;
   height: 20vh;
@@ -36,7 +38,7 @@ export const ParaBox = styled.div`
   @media (max-width: 600px) {
     width: 90%;
   }
-`
+`;
 export const LeftPara = styled.p`
   color: white;
   font-size: 1.15rem;
@@ -46,14 +48,14 @@ export const LeftPara = styled.p`
   @media (max-width: 600px) {
     font-size: 0.9rem;
   }
-`
+`;
 export const RightTeam = styled.div`
   width: 35%;
   margin-top: 40px;
   @media (max-width: 600px) {
     width: 90%;
   }
-`
+`;
 export const RightHead = styled.h3`
   color: white;
   margin-top: 10px;
@@ -63,14 +65,14 @@ export const RightHead = styled.h3`
   @media (max-width: 600px) {
     font-size: 90%;
   }
-`
+`;
 export const RightPara = styled.p`
   color: white;
   font-size: 0.8rem;
   @media (max-width: 600px) {
     line-height: 20px;
   }
-`
+`;
 export const Dots = styled.img`
   position: absolute;
   width: 90px;
@@ -82,9 +84,9 @@ export const Dots = styled.img`
     bottom: -2%;
     left: 4%;
   }
-`
+`;
 const StyleImage = () => {
-  return <div>StyleImage</div>
-}
+  return <div>StyleImage</div>;
+};
 
-export default StyleImage
+export default StyleImage;

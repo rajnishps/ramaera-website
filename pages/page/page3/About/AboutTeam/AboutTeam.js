@@ -1,7 +1,7 @@
-import React from "react"
-import styled from "styled-components"
-import Text from "../../../../../components/Text/Text"
-import Pillers from "./Pillers/Pillers"
+import React from "react";
+import styled from "styled-components";
+import Text from "../../../../../components/Text/Text";
+import Pillers from "./Pillers/Pillers";
 import {
   Dots,
   LeftPara,
@@ -11,7 +11,7 @@ import {
   RightPara,
   RightTeam,
   TeamContainer,
-} from "./style"
+} from "./style";
 const TeamBoxContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -19,7 +19,7 @@ const TeamBoxContainer = styled.div`
   @media (max-width: 600px) {
     flex-direction: column;
   }
-`
+`;
 const AboutTeam = () => {
   return (
     <>
@@ -76,7 +76,7 @@ const AboutTeam = () => {
             {/* <RightHead>Transparency</RightHead> */}
             <RightPara>
               Accountability: The Ramaera team is am epitome of commitment ,
-              preservence and dedication towards their work.
+              perseverance and dedicated towards their work.
             </RightPara>
             <Text
               Text="Accountability"
@@ -131,7 +131,7 @@ const AboutTeam = () => {
       </TeamContainer>
       {/*  <Pillers /> */}
     </>
-  )
-}
+  );
+};
 
-export default AboutTeam
+export default AboutTeam;

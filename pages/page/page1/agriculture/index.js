@@ -20,7 +20,7 @@ const AgriPos = styled.video`
 const Buy = () => {
   return (
     <PageLayout height="100vh">
-      <PageWidth scale={"95%"} width="1500px" position="relative">
+      <PageWidth full scale={"95%"} width="1500px" position="relative">
         <div
           data-aos="slide-right"
           data-aos-duration="500"

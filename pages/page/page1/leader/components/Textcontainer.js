@@ -1,8 +1,8 @@
-import Link from "next/link"
-import React, { useState } from "react"
-import styled from "styled-components"
-import Text from "../../../../../components/Text/Text"
-import { CustomText } from "./Style"
+import Link from "next/link";
+import React, { useState } from "react";
+import styled from "styled-components";
+import Text from "../../../../../components/Text/Text";
+import { CustomText } from "./Style";
 
 const StyledTextContainer = styled.div`
   width: 50rem;
@@ -14,7 +14,7 @@ const StyledTextContainer = styled.div`
     position: absolute;
     transform: scale(0.7);
   }
-`
+`;
 const ResHeading = styled.div`
   margin: 0;
   padding: 0;
@@ -25,13 +25,13 @@ const ResHeading = styled.div`
     left: auto;
     right: auto;
   }
-`
+`;
 const ResSub = styled.div`
   @media (max-width: 768px) {
     position: absolute;
     top: 35vh;
   }
-`
+`;
 const Stars = styled.div`
   display: flex;
   flex-direction: column;
@@ -40,12 +40,12 @@ const Stars = styled.div`
   @media (max-width: 768px) {
     opacity: 0;
   }
-`
+`;
 const Star = styled.img`
   height: 16px;
   margin-right: 2px;
   content: url(/content/star.png);
-`
+`;
 
 const Bg = styled.div`
   width: 100vw;
@@ -81,7 +81,7 @@ const Bg = styled.div`
   @media (max-width: 768px) {
     width: 0;
   }
-`
+`;
 const Quote = styled.img`
   position: absolute;
   top: 220px;
@@ -89,16 +89,16 @@ const Quote = styled.img`
   @media (max-width: 768px) {
     opacity: 0;
   }
-`
+`;
 
 const Textcontainer = () => {
-  const [isActive, setisActive] = useState(false)
+  const [isActive, setisActive] = useState(false);
   return (
     <StyledTextContainer onMouseLeave={() => setisActive(false)}>
       <Quote src="/content/quote.png" alt="quote" />
       <ResHeading>
         <Text
-          Text="Inflation a serious challenge for India`s economic growth: Devendra Mishra`"
+          Text="Inflation a serious challenge for India's economic growth: Devendra Mishra"
           size="44px"
           lh="60px"
           color="#FFF"
@@ -142,7 +142,7 @@ const Textcontainer = () => {
         />
       </Stars> */}
     </StyledTextContainer>
-  )
-}
+  );
+};
 
-export default Textcontainer
+export default Textcontainer;

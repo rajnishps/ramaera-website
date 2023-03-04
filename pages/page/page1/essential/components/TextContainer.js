@@ -1,9 +1,9 @@
-import Link from "next/link"
-import React from "react"
-import styled from "styled-components"
-import Flex from "../../../../../components/Styling/Flex"
-import Text from "../../../../../components/Text/Text"
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
+import Link from "next/link";
+import React from "react";
+import styled from "styled-components";
+import Flex from "../../../../../components/Styling/Flex";
+import Text from "../../../../../components/Text/Text";
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
 
 const StyleTextContainer = styled.div`
   display: flex;
@@ -19,17 +19,17 @@ const StyleTextContainer = styled.div`
     top: 5vh;
     overflow: hidden;
   }
-`
+`;
 const ButtonWrapper = styled.div`
-  padding: 2vh 21vw 0 0;
+  padding: 2vh 23vw 0 0;
   @media only screen and (max-width: 768px) {
     padding: 2vh 0;
   }
-`
+`;
 const IconDiv = styled.div`
   @media only screen and (max-width: 768px) {
   }
-`
+`;
 const TextContainer = () => {
   return (
     <StyleTextContainer>
@@ -93,17 +93,17 @@ const TextContainer = () => {
         <Link href="/industries#ecom">
           <TransparentButton
             Text="Read more"
-            border="solid #9796F0 2px"
-            height="50px"
+            border="solid #9796F0 1.6px"
+            height="48px"
             m="2rem 0 0 0"
-            br="1.3rem"
+            br="1.1rem"
             fw="300"
-            fontSize="1rem"
+            fontSize="14px"
           />
         </Link>
       </ButtonWrapper>
     </StyleTextContainer>
-  )
-}
+  );
+};
 
-export default TextContainer
+export default TextContainer;

@@ -34,7 +34,7 @@ const Image = styled.div`
 const Buy = () => {
   return (
     <PageLayout mtpadding="0" padding="20vh" height="100vh">
-      <PageWidth scale={"95%"} width="1500px" position="relative">
+      <PageWidth full scale={"95%"} width="1500px" position="relative">
         <div style={{ width: "100%" }}>
           <Line>
             <img

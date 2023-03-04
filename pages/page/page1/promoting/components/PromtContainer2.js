@@ -1,6 +1,6 @@
-import styled from "styled-components"
-import Text from "../../../../../components/Text/Text"
-import Button from "../../../../../components/Button/Button"
+import styled from "styled-components";
+import Text from "../../../../../components/Text/Text";
+import Button from "../../../../../components/Button/Button";
 
 const Texts = styled.div`
   width: 35vw;
@@ -9,13 +9,13 @@ const Texts = styled.div`
     left: -20vw;
     top: 30vh;
   }
-`
+`;
 const ButtonContainer = styled.div`
   margin-right: 50vw;
   @media only screen and (max-width: 768px) {
     display: none;
   }
-`
+`;
 const PromtContainer2 = () => {
   return (
     <Texts>
@@ -44,11 +44,11 @@ const PromtContainer2 = () => {
         mwidth="100vw"
         mpadding="0 15vw 0 10vw"
       />
-      <ButtonContainer>
+      {/* <ButtonContainer>
         <Button Text="Read More" m="0" lightborder fontSize="12px" bg="none" />
-      </ButtonContainer>
+      </ButtonContainer> */}
     </Texts>
-  )
-}
+  );
+};
 
-export default PromtContainer2
+export default PromtContainer2;
