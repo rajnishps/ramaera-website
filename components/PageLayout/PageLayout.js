@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const PageLayout = ({
   children,
@@ -57,9 +57,9 @@ const PageLayout = ({
     @media (max-width: 400px) {
       min-height: ${mmheight ? mmheight : ""};
     }
-  `
+  `;
 
-  return <StyledPageLayout>{children}</StyledPageLayout>
-}
+  return <StyledPageLayout>{children}</StyledPageLayout>;
+};
 
-export default PageLayout
+export default PageLayout;

@@ -1,10 +1,10 @@
-import React from "react"
-import styled from "styled-components"
-import Flex from "../../../../../components/Styling/Flex"
-import Text from "../../../../../components/Text/Text"
-import Link from "next/link"
-import { CustomText } from "./StyleImage"
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
+import React from "react";
+import styled from "styled-components";
+import Flex from "../../../../../components/Styling/Flex";
+import Text from "../../../../../components/Text/Text";
+import Link from "next/link";
+import { CustomText } from "./StyleImage";
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
 const StyleTextContainer = styled.div`
   display: flex;
   align-items: center;
@@ -15,20 +15,20 @@ const StyleTextContainer = styled.div`
   @media only screen and (max-width: 768px) {
     margin: 0 0 -30vh 0;
   }
-`
+`;
 const ButtonWrapper = styled.div`
-  padding: 2vh 0 0 22vw;
+  padding: 2vh 0 0 23vw;
   @media only screen and (max-width: 768px) {
     padding: 2vh 0;
   }
-`
+`;
 const SpanColor = styled.div`
   color: #bf5ae0;
   @media only screen and (max-width: 768px) {
     font-size: 2.2rem;
     text-align: center;
   }
-`
+`;
 
 const TextContainer = () => {
   return (
@@ -133,34 +133,34 @@ const TextContainer = () => {
         </svg>
       </Flex>
       <Text
-        Text="We believe in innovation and excellence hence , our approach in the field of technology is focused to relish incredible customer experience and stabilising business models for tomorrow."
+        Text="We believe in innovation and excellence, hence our approach in the field of technology is focused to relish incredible customer experience and stabilising business models for tomorrow."
         align="right"
-        fw="500"
-        size="20px"
-        lh="45px"
+        fw="400"
+        size="20.5px"
+        lh="43px"
         width="34rem"
         xssize="18px"
         mlh="30px"
         msize="18px"
         mwidth="100vw"
         mta="center"
-        padding="0 0vw 0 0 "
+        padding="0 0vw 0 40px "
       />
       <ButtonWrapper>
         <Link href="/industries#technology">
           <TransparentButton
-            border="solid #bf5ae0 2px"
+            border="solid #bf5ae0 1.6px"
             Text="Read more"
             m="2rem 0 0 0"
-            height="50px"
-            br="1.3rem"
+            height="48px"
+            br="1.1rem"
             fw="300"
-            fontSize="1rem"
+            fontSize="14px"
           />
         </Link>
       </ButtonWrapper>
     </StyleTextContainer>
-  )
-}
+  );
+};
 
-export default TextContainer
+export default TextContainer;

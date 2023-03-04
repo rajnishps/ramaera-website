@@ -1,9 +1,9 @@
-import React from "react"
-import styled from "styled-components"
-import Flex from "../../../../../components/Styling/Flex"
-import Text from "../../../../../components/Text/Text"
-import Link from "next/link"
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
+import React from "react";
+import styled from "styled-components";
+import Flex from "../../../../../components/Styling/Flex";
+import Text from "../../../../../components/Text/Text";
+import Link from "next/link";
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
 
 const StyleTextContainer = styled.div`
   display: flex;
@@ -19,17 +19,17 @@ const StyleTextContainer = styled.div`
     top: 0vh;
     overflow: hidden;
   }
-`
+`;
 const ButtonWrapper = styled.div`
-  padding: 2vh 21vw 0 0;
+  padding: 2vh 23vw 0 0;
   @media only screen and (max-width: 768px) {
     padding: 2vh 0;
   }
-`
+`;
 const IconDiv = styled.div`
   @media only screen and (max-width: 768px) {
   }
-`
+`;
 
 const TextContainer = () => {
   return (
@@ -37,8 +37,8 @@ const TextContainer = () => {
       <Flex mcolumn>
         <IconDiv>
           <svg
-            width="130"
-            height="130"
+            width="120"
+            height="120"
             viewBox="0 0 155 154"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -160,17 +160,17 @@ const TextContainer = () => {
         <Link href="/industries#goods">
           <TransparentButton
             Text="Read more"
-            border="solid #F2EFD3 2px"
-            height="50px"
+            border="solid #F2EFD3 1.6px"
+            height="48px"
             m="2rem 0 0 0"
-            br="1.3rem"
+            br="1.1rem"
             fw="300"
-            fontSize="1rem"
+            fontSize="14px"
           />
         </Link>
       </ButtonWrapper>
     </StyleTextContainer>
-  )
-}
+  );
+};
 
-export default TextContainer
+export default TextContainer;

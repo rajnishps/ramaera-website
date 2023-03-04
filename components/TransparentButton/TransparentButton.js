@@ -1,18 +1,21 @@
-import styled from "styled-components"
-import { motion } from "framer-motion"
-import Spinner from "../Spinner"
+import styled from "styled-components";
+import { motion } from "framer-motion";
+import Spinner from "../Spinner";
 
 const CircleWrapper = styled.div`
   position: absolute;
   top: 10px;
-  left: 195px;
-`
+  left: 180px;
+  img {
+    transform: scale(0.8);
+  }
+`;
 const WholeDiv = styled.div`
   transition: 200ms;
   &:hover {
     transform: scale(1.05);
   }
-`
+`;
 const StyledButton = styled(motion.button)`
   color: ${(props) => (props.color ? props.color : "#FFFFFF")};
   font-size: ${(props) => (props.fontSize ? props.fontSize : "20px")};
@@ -20,7 +23,7 @@ const StyledButton = styled(motion.button)`
   line-height: ${(props) => (props.noLineHeight ? "1" : "18px")};
   letter-spacing: ${(props) => (props.ls ? props.ls : "0em")};
   padding: ${(props) =>
-    props.secondary ? "2px" : props.padding ? props.padding : "0.85rem 2rem"};
+    props.secondary ? "2px" : props.padding ? props.padding : "0.85rem 3.5rem"};
   border-radius: ${(props) => (props.br ? props.br : "0.8rem")};
   border: ${(props) => (props.border ? props.border : "none")};
   cursor: pointer;
@@ -30,7 +33,7 @@ const StyledButton = styled(motion.button)`
       ? props.width
       : props.secondaryWidth
       ? props.secondaryWidth
-      : "13rem"};
+      : "10rem"};
   background: transparent;
   height: ${(props) => (props.height ? props.height : "")};
   box-shadow: ${(props) =>
@@ -52,16 +55,16 @@ const StyledButton = styled(motion.button)`
   @media (max-width: 450px) {
     margin: ${(props) => (props.sm ? props.sm : "")};
   }
-`
+`;
 
 const TransparentButton = (props) => {
   const renderContent = () => {
     if (props.loading) {
-      return <Spinner />
+      return <Spinner />;
     }
 
-    return props.Text
-  }
+    return props.Text;
+  };
 
   return (
     <WholeDiv>
@@ -72,6 +75,6 @@ const TransparentButton = (props) => {
       </div>
       <StyledButton {...props}>{renderContent()}</StyledButton>
     </WholeDiv>
-  )
-}
-export default TransparentButton
+  );
+};
+export default TransparentButton;

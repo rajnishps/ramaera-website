@@ -1,6 +1,6 @@
-import PageWidth from "../../../../components/Width/PageWidth"
-import Text from "../../../../components/Text/Text"
-import styled from "styled-components"
+import PageWidth from "../../../../components/Width/PageWidth";
+import Text from "../../../../components/Text/Text";
+import styled from "styled-components";
 
 const PolyBg = styled.div`
   position: absolute;
@@ -10,14 +10,14 @@ const PolyBg = styled.div`
   @media only screen and (max-width: 1000px) {
     opacity: 50%;
   }
-`
+`;
 const Image = styled.img`
   height: 100%;
   width: 75%;
   @media only screen and (max-width: 1000px) {
     height: 80vw;
   }
-`
+`;
 const PageLayout = styled.div`
   height: 60vh;
   width: 100%;
@@ -29,7 +29,7 @@ const PageLayout = styled.div`
   @media only screen and (max-width: 400px) {
     margin: 0 0 50vh 0;
   }
-`
+`;
 
 const Buy = () => {
   return (
@@ -55,7 +55,7 @@ const Buy = () => {
               padding="0"
             />
             <Text
-              Text="We are aiming to be a part of the major industrialisation drive in India and embarking our presence in every significant industrial domain including IT."
+              Text="We are aiming to be a part of the major industrialisation drive in India and embarking our presence in every significant industrial domain, including IT."
               padding="0 10vw "
               color="#FFF"
               size="2rem"
@@ -80,7 +80,7 @@ const Buy = () => {
         </PolyBg>
       </PageLayout>
     </div>
-  )
-}
+  );
+};
 
-export default Buy
+export default Buy;
