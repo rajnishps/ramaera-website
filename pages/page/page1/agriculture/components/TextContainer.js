@@ -1,66 +1,44 @@
-import styled from "styled-components";
-import Flex from "../../../../../components/Styling/Flex";
-import Text from "../../../../../components/Text/Text";
-import Link from "next/link";
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
+import React from "react"
+import styled from "styled-components"
+import Flex from "../../../../../components/Styling/Flex"
+import Text from "../../../../../components/Text/Text"
+import Link from "next/link"
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
 
 const StyleTextContainer = styled.div`
   display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  align-items: flex-end;
   flex-direction: column;
-  // background: red;
   width: 50rem;
-  margin: 1rem 0 2rem 0;
+  margin: 1rem 130px -7.5rem 0;
   @media only screen and (max-width: 768px) {
     position: absolute;
     margin: 0;
-    top: 10%;
-    width: 90vw;
+    width: 100vw;
+    top: 0vh;
+    overflow: hidden;
   }
-`;
+`
 const ButtonWrapper = styled.div`
-  padding: 2vh 0 0 23vw;
+  padding: 2vh 0 0 0;
   @media only screen and (max-width: 768px) {
-    padding: 2vh 0;
+    padding: 2vh 30vw 2vh 30vw;
   }
-`;
+  @media only screen and (max-width: 400px) {
+    padding: 2vh 25vw 2vh 25vw;
+  }
+`
 const IconDiv = styled.div`
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    right: -130px;
   }
-`;
-const TextContainer = (right) => {
+`
+
+const TextContainer = () => {
   return (
     <StyleTextContainer>
-      <Flex jc="flex-end" mrcolumn>
-        <div>
-          <Text
-            Text="Agri-business to bestow"
-            align="right"
-            lh="50px"
-            color="#FFF"
-            xm="3vw"
-            ms="1.2rem"
-            size="2.6rem"
-            padding="0"
-            mta="center"
-            msize="2rem"
-            mmsize="1.6rem"
-          />
-          <Text
-            Text="Nature's Love"
-            align="right"
-            size="42px"
-            lg="linear-gradient(90deg, #F7941E 0%, #72C6EF 50%, #00A651 100%),linear-gradient(0deg, #FFFFFF, #FFFFFF)"
-            lh="55px"
-            mlh="30px"
-            xmsize="2rem"
-            xssize="3vw"
-            msize="2rem"
-            mta="center"
-            padding="0"
-          />
-        </div>
+      <Flex jc="end" mcolumn>
         <IconDiv>
           <svg
             width="120"
@@ -155,20 +133,52 @@ const TextContainer = (right) => {
             </defs>
           </svg>
         </IconDiv>
+        <div>
+          <Text
+            Text="Agri-business to bestow"
+            align="right"
+            size="42px"
+            lh="55px"
+            mlh="30px"
+            xmsize="2rem"
+            xssize="3vw"
+            msize="2rem"
+            mta="center"
+            width="100%"
+            margin="0"
+            padding="0"
+          />
+          <Text
+            Text="Nature's Love"
+            lg="linear-gradient(90deg, #F7941E 0%, #72C6EF 50%, #00A651 100%),linear-gradient(0deg, #FFFFFF, #FFFFFF)"
+            align="right"
+            size="42px"
+            lh="55px"
+            width="100%"
+            mlh="30px"
+            xmsize="2rem"
+            xssize="3vw"
+            msize="2rem"
+            margin="0"
+            mta="center"
+            padding="0"
+          />
+        </div>
       </Flex>
       <Text
         Text="Our Agri-business industry is established to get you fresh and organic fruits and vegetables with the blessed with the touch of nature."
-        align="right"
         fw="500"
+        align="right"
         size="20px"
         lh="45px"
-        width="34rem"
+        width="32.5rem"
+        m=" 0"
         xssize="18px"
         mlh="30px"
         msize="18px"
         mwidth="100vw"
         mta="center"
-        padding="0 0vw 0 0 "
+        padding="0 0 0 0vw"
       />
       <ButtonWrapper>
         <Link href="/industries#argiculture">
@@ -184,7 +194,7 @@ const TextContainer = (right) => {
         </Link>
       </ButtonWrapper>
     </StyleTextContainer>
-  );
-};
+  )
+}
 
-export default TextContainer;
+export default TextContainer

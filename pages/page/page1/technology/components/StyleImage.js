@@ -9,15 +9,10 @@ export const Image = styled.div`
   }
   @media only screen and (max-width: 768px) {
     video {
-      margin-top: 0px;
-      margin-left: -40px;
-    }
-  }
-  @media only screen and (max-width: 400px) {
-    video {
-      margin-top: -50px;
-      margin-left: -40px;
-      transform: scale(0.8);
+      margin-top: 200px;
+      margin-left: -20px;
+      height: 100%;
+      width: 100%;
     }
   }
 `

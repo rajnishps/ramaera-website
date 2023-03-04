@@ -1,17 +1,17 @@
-import React from "react";
-import styled from "styled-components";
-import Flex from "../../../../../components/Styling/Flex";
-import Text from "../../../../../components/Text/Text";
-import Link from "next/link";
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
+import React from "react"
+import styled from "styled-components"
+import Flex from "../../../../../components/Styling/Flex"
+import Text from "../../../../../components/Text/Text"
+import Link from "next/link"
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
 
 const StyleTextContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   // background: red;
   width: 50rem;
-  margin: 2rem 0 -8rem 0;
+  margin: 1rem 0 -7.5rem 130px;
   @media only screen and (max-width: 768px) {
     position: absolute;
     margin: 0;
@@ -19,14 +19,17 @@ const StyleTextContainer = styled.div`
     top: 0vh;
     overflow: hidden;
   }
-`;
+`
 const ButtonWrapper = styled.div`
   padding: 2vh 22vw 0 0;
 
   @media only screen and (max-width: 768px) {
-    padding: 2vh 0;
+    padding: 2vh 30vw 2vh 30vw;
   }
-`;
+  @media only screen and (max-width: 400px) {
+    padding: 2vh 25vw 2vh 25vw;
+  }
+`
 const ImageTag = styled.img`
   width: 200px;
   transition: 200ms;
@@ -35,42 +38,55 @@ const ImageTag = styled.img`
   }
   @media only screen and (max-width: 768px) {
   }
-`;
+`
+const IconDiv = styled.div`
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    left: -120px;
+  }
+`
 const TextContainer = () => {
   return (
     <StyleTextContainer>
       <Flex mcolumn>
-        <img
-          loading="lazy"
-          src="/content/y.png"
-          alt="line"
-          style={{
-            height: "6.50rem",
-            width: "6.75rem",
-            borderRadius: "50%",
-          }}
-        />
+        <IconDiv>
+          <img
+            loading="lazy"
+            src="/content/y.png"
+            alt="line"
+            style={{
+              height: "6.50rem",
+              width: "6.75rem",
+              borderRadius: "50%",
+            }}
+          />
+        </IconDiv>
         <div>
           <Text
             Text="Making"
-            size="2.8rem"
             lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%);"
-            lh="0px"
+            align="left"
+            size="42px"
+            lh="55px"
             mlh="30px"
+            xmsize="2rem"
             xssize="3vw"
             msize="2rem"
             mta="center"
+            padding="0"
           />
           <Text
             Text="accommodations easier"
-            size="2.6rem"
             lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%);"
-            lh="0px"
+            align="left"
+            size="42px"
+            lh="55px"
             mlh="30px"
+            xmsize="2rem"
             xssize="3vw"
             msize="2rem"
             mta="center"
-            mmsize="1.6rem"
+            padding="0"
           />
         </div>
       </Flex>
@@ -94,7 +110,7 @@ const TextContainer = () => {
         </Link>
       </ButtonWrapper>
     </StyleTextContainer>
-  );
-};
+  )
+}
 
-export default TextContainer;
+export default TextContainer

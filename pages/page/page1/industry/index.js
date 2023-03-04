@@ -1,9 +1,9 @@
-import React from "react";
-import PageLayout from "../../../../components/PageLayout/PageLayout";
-import PageWidth from "../../../../components/Width/PageWidth";
-import TextContainer from "./components/TextContainer";
-import { Responsive } from "./components/StyleImage";
-import styled from "styled-components";
+import React from "react"
+import PageLayout from "../../../../components/PageLayout/PageLayout"
+import PageWidth from "../../../../components/Width/PageWidth"
+import TextContainer from "./components/TextContainer"
+import { Responsive } from "./components/StyleImage"
+import styled from "styled-components"
 
 const Animdiv = styled.div`
   position: absolute;
@@ -15,21 +15,27 @@ const Animdiv = styled.div`
     left: auto;
     right: auto;
   }
-`;
+`
 const Line = styled.div`
   @media only screen and (max-width: 768px) {
     display: none;
   }
-`;
+`
 const Image = styled.div`
-  height: 32rem;
+  height: 30rem;
   width: 40rem;
-  margin-right: -100px;
-
-  @media only screen and (max-width: 768px) {
-    margin-top: -25%;
+  video {
+    height: 120%;
+    width: 120%;
   }
-`;
+  @media only screen and (max-width: 768px) {
+    video {
+      margin-top: -100px;
+      height: 120%;
+      width: 100%;
+    }
+  }
+`
 
 const Buy = () => {
   return (
@@ -80,7 +86,7 @@ const Buy = () => {
         </Animdiv>
       </PageWidth>
     </PageLayout>
-  );
-};
+  )
+}
 
-export default Buy;
+export default Buy

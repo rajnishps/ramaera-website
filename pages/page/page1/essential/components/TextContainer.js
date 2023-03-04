@@ -1,17 +1,17 @@
-import Link from "next/link";
-import React from "react";
-import styled from "styled-components";
-import Flex from "../../../../../components/Styling/Flex";
-import Text from "../../../../../components/Text/Text";
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
+import Link from "next/link"
+import React from "react"
+import styled from "styled-components"
+import Flex from "../../../../../components/Styling/Flex"
+import Text from "../../../../../components/Text/Text"
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
 
 const StyleTextContainer = styled.div`
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   // background: red;
   width: 50rem;
-  margin: 1rem 0 -8.5rem 0;
+  margin: 1rem 0 -7.5rem 130px;
   @media only screen and (max-width: 768px) {
     position: absolute;
     margin: 0;
@@ -19,17 +19,22 @@ const StyleTextContainer = styled.div`
     top: 5vh;
     overflow: hidden;
   }
-`;
+`
 const ButtonWrapper = styled.div`
   padding: 2vh 23vw 0 0;
   @media only screen and (max-width: 768px) {
-    padding: 2vh 0;
+    padding: 2vh 30vw 2vh 30vw;
   }
-`;
+  @media only screen and (max-width: 400px) {
+    padding: 2vh 25vw 2vh 25vw;
+  }
+`
 const IconDiv = styled.div`
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-width: 768px) {
+    position: absolute;
+    left: -120px;
   }
-`;
+`
 const TextContainer = () => {
   return (
     <StyleTextContainer>
@@ -51,26 +56,28 @@ const TextContainer = () => {
         <div>
           <Text
             Text="Get all your essentials"
+            align="left"
             size="42px"
-            color="#FFF"
-            lh="50px"
+            lh="55px"
             mlh="30px"
+            xmsize="2rem"
+            xssize="3vw"
             msize="2rem"
             mta="center"
-            mwidth="100vw"
-            padding="1vw 2.5vw"
-            mmsize="1.6rem"
+            padding="0"
           />
           <Text
             Text="in one place"
-            size="42px"
             lg="linear-gradient(90deg, #B4DFFD 3.93%, #EFB79B 36.17%),linear-gradient(0deg, #FFFFFF, #FFFFFF)"
-            lh="15px"
+            align="left"
+            size="42px"
+            lh="55px"
             mlh="30px"
+            xmsize="2rem"
+            xssize="3vw"
             msize="2rem"
             mta="center"
-            mwidth="100vw"
-            padding="1vw  2.5vw"
+            padding="0"
           />
         </div>
       </Flex>
@@ -103,7 +110,7 @@ const TextContainer = () => {
         </Link>
       </ButtonWrapper>
     </StyleTextContainer>
-  );
-};
+  )
+}
 
-export default TextContainer;
+export default TextContainer

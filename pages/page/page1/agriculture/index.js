@@ -1,69 +1,89 @@
-import React from "react";
-import PageLayout from "../../../../components/PageLayout/PageLayout";
-import PageWidth from "../../../../components/Width/PageWidth";
-import TextContainer from "./components/TextContainer";
-import { Image, Responsive } from "./components/StyleImage";
-import styled from "styled-components";
+import PageLayout from "../../../../components/PageLayout/PageLayout"
+import PageWidth from "../../../../components/Width/PageWidth"
+import TextContainer from "./components/TextContainer"
+import { Image, Responsive } from "./components/StyleImage"
+import styled from "styled-components"
 
-const AgriPos = styled.video`
+const Animdiv = styled.div`
   position: absolute;
-  width: 100%;
-  height: 110%;
-  left: -5vh;
-  top: 10vh;
+  left: 0;
+  margin: 10vh 0 0 0;
   @media only screen and (max-width: 768px) {
-    width: 110vw;
-    top: -55vh;
-    margin: 0 auto;
+    left: auto;
+    right: auto;
+    bottom: 20vh;
   }
-`;
+`
+const Line = styled.div`
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+`
+
 const Buy = () => {
   return (
-    <PageLayout height="100vh">
-      <PageWidth full scale={"95%"} width="1500px" position="relative">
-        <div
-          data-aos="slide-right"
-          data-aos-duration="500"
-          data-aos-anchor-placement="top-bottom"
-          style={{
-            position: "absolute",
-            left: "0",
-            margin: "0 0 0 0",
-          }}
-        >
-          <Image>
-            <AgriPos autoPlay loop muted>
-              <source src="/content/agri.webm" type="video/webm" />
-            </AgriPos>
-          </Image>
-        </div>
-        <div style={{ width: "100%" }}>
-          <img
-            loading="lazy"
-            src="/background/Line.png"
-            alt="line"
-            style={{ position: "absolute", width: "100%", height: "10rem" }}
-          />
-          <div
-            data-aos="slide-left"
-            // data-aos-offset="2000"
+    <>
+      <PageLayout mheight="100vh" height="125vh">
+        <PageWidth full scale={"95%"} width="1500px" position="relative">
+          <Animdiv
+            data-aos="slide-right"
             data-aos-duration="500"
-            data-aos-anchor-placement="top-bottom"
+            data-aos-anchor-placement="center-bottom"
           >
-            <Responsive>
-              <TextContainer />
-            </Responsive>
+            <Image>
+              <video
+                autoPlay
+                loop
+                muted
+                style={{ width: "115%", height: "110%" }}
+              >
+                <source src="/content/agri.webm" type="video/webm" />
+              </video>
+            </Image>
+          </Animdiv>
+          <div style={{ width: "100%" }}>
+            <Line>
+              <img
+                loading="lazy"
+                src="/background/Line.png"
+                alt="line"
+                style={{
+                  position: "absolute",
+                  marginTop: "-50px",
+                  width: "100%",
+                  height: "10rem",
+                }}
+              />
+            </Line>
+            <div
+              data-aos="slide-left"
+              // data-aos-offset="2000"
+              data-aos-duration="500"
+              data-aos-anchor-placement="top-bottom"
+            >
+              <Responsive>
+                <TextContainer />
+              </Responsive>
+            </div>
+            <Line>
+              <img
+                loading="lazy"
+                src="/background/Line.png"
+                alt="line"
+                style={{
+                  position: "absolute",
+                  marginTop: "150px",
+                  width: "100%",
+                  height: "10rem",
+                }}
+              />
+            </Line>
           </div>
-          <img
-            loading="lazy"
-            src="/background/Line.png"
-            alt="line"
-            style={{ position: "absolute", width: "100%", height: "10rem" }}
-          />
-        </div>
-      </PageWidth>
-    </PageLayout>
-  );
-};
+        </PageWidth>
+      </PageLayout>
+      <div style={{ marginBottom: "15vh" }}></div>
+    </>
+  )
+}
 
-export default Buy;
+export default Buy

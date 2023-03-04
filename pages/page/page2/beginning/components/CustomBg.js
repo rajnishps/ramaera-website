@@ -12,7 +12,7 @@ const Bg = styled.div`
   background-image: url("/background/bg1p2.png");
   background-repeat: no-repeat;
   background-size: 100vw;
-  height: 100%;
+  height: 100vh;
   width: 100vw;
   margin-top: 20vh;
   z-index: -1;

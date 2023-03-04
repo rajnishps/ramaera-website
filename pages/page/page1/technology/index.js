@@ -1,8 +1,8 @@
-import PageLayout from "../../../../components/PageLayout/PageLayout";
-import PageWidth from "../../../../components/Width/PageWidth";
-import TextContainer from "./components/TextContainer";
-import { Image, Responsive } from "./components/StyleImage";
-import styled from "styled-components";
+import PageLayout from "../../../../components/PageLayout/PageLayout"
+import PageWidth from "../../../../components/Width/PageWidth"
+import TextContainer from "./components/TextContainer"
+import { Image, Responsive } from "./components/StyleImage"
+import styled from "styled-components"
 
 const Animdiv = styled.div`
   position: absolute;
@@ -13,17 +13,17 @@ const Animdiv = styled.div`
     right: auto;
     bottom: 20vh;
   }
-`;
+`
 const Line = styled.div`
   @media only screen and (max-width: 768px) {
     display: none;
   }
-`;
+`
 
 const Buy = () => {
   return (
     <>
-      <PageLayout mheight="80vh" height="125vh">
+      <PageLayout mheight="100vh" height="120vh">
         <PageWidth full scale={"95%"} width="1500px" position="relative">
           <Animdiv
             data-aos="slide-right"
@@ -47,7 +47,12 @@ const Buy = () => {
                 loading="lazy"
                 src="/background/Line.png"
                 alt="line"
-                style={{ position: "absolute", width: "100%", height: "10rem" }}
+                style={{
+                  position: "absolute",
+                  marginTop: "-50px",
+                  width: "100%",
+                  height: "10rem",
+                }}
               />
             </Line>
             <div
@@ -65,14 +70,20 @@ const Buy = () => {
                 loading="lazy"
                 src="/background/Line.png"
                 alt="line"
-                style={{ position: "absolute", width: "100%", height: "10rem" }}
+                style={{
+                  position: "absolute",
+                  marginTop: "150px",
+                  width: "100%",
+                  height: "10rem",
+                }}
               />
             </Line>
           </div>
         </PageWidth>
       </PageLayout>
+      <div style={{ marginBottom: "25vh" }}></div>
     </>
-  );
-};
+  )
+}
 
-export default Buy;
+export default Buy
