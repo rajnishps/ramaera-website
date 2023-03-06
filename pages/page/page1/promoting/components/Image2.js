@@ -7,6 +7,9 @@ const Image = styled.div`
     width: 100vw;
     padding: 0 10vw 0 0;
   }
+  @media only screen and (max-width: 450px) {
+    display: none;
+  }
 `
 const Image2 = () => {
   return (

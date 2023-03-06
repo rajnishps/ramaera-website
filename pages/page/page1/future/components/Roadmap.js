@@ -13,6 +13,9 @@ const StyledRoadmap = styled.div`
     margin: 1rem 0 0 0;
     transform: scale(0.6);
   }
+  @media only screen and (max-width: 450px) {
+    transform: scale(0.42);
+  }
 `
 const Roadmap = () => {
   return (

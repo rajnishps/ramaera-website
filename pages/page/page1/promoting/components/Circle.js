@@ -6,7 +6,7 @@ const Image = styled.img`
   top: 280px;
   left: 100px;
   @media only screen and (max-width: 768px) {
-    left: 20px;
+    display: none;
   }
 `
 const Circle = () => {

@@ -55,6 +55,7 @@ const Text = (props) => {
       margin: ${props.mmargin ? props.mmargin : ""};
     }
     @media only screen and (max-width: 400px) {
+      width: ${props.mmwidth ? props.mmwidth : "100vw;"};
       font-size: ${props.mmsize ? props.mmsize : ""};
     }
   `

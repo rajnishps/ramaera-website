@@ -16,6 +16,9 @@ const FootContainer = styled.div`
     right: auto;
     gap: 20px;
   }
+  @media only screen and (max-width: 450px) {
+    gap: 10px;
+  }
 `
 const Link = styled.a`
   font-size: 10px;

@@ -15,6 +15,9 @@ export const CustomText = styled.h1`
     padding: 0;
     margin: 0;
   }
+  @media only screen and (max-width: 450px) {
+    transform: scale(0.9);
+  }
 `
 export const Responsive = styled.div`
   width: 100%;

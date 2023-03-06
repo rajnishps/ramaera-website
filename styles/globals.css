@@ -172,7 +172,7 @@ a {
   top: 0;
   transition: 0.5s linear;
   width: 1800px;
-  left: 47.5%;
+  left: 50%;
   transform: translate(-50%, 0);
   margin: 2.5rem 0 0 0;
 }
@@ -434,34 +434,37 @@ a {
   position: fixed;
 }
 
-.tablist{
+.tablist {
   width: 22vw;
   height: 100%;
-  padding-top: 12vh ;
+  padding-top: 12vh;
   background: linear-gradient(181.16deg, #ff7917 -26.31%, #ffdd2d 128.88%);
 }
 
-  @media (max-width: 768px) {
-    .tablist{ min-width: 28vw;}
-    }
-  @media (max-width: 600px) {
-    .tablist{ min-width: 40vw;}
-    }
-  
+@media (max-width: 768px) {
+  .tablist {
+    min-width: 28vw;
+  }
+}
+@media (max-width: 600px) {
+  .tablist {
+    min-width: 40vw;
+  }
+}
+
 .react-tabs__tab--selected {
-  background:black;
+  background: black;
   color: white;
   border-left: 8px solid white;
-
 }
 
 .focusChange {
   cursor: pointer;
-  padding: 20px ;
-  outline:none;
+  padding: 20px;
+  outline: none;
 }
 
-.btn-hamburger{ 
+.btn-hamburger {
   margin-top: 4vw;
   background-repeat: no-repeat;
   background-image: url("/content/hamburger.png");
@@ -472,20 +475,21 @@ a {
 }
 
 @media (max-width: 600px) {
-  .btn-hamburger{ 
+  .btn-hamburger {
     display: block;
   }
 }
 
-.active{
+.active {
   width: 0px;
   min-width: 0px;
 }
 @media (min-width: 769px) {
-  .active{
+  .active {
     width: 22vw;
-  min-width: 22vw;}
+    min-width: 22vw;
   }
-.tabscontent.active{
+}
+.tabscontent.active {
   width: 100vw;
 }
