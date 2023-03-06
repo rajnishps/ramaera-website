@@ -9,6 +9,9 @@ const CircleWrapper = styled.div`
   img {
     transform: scale(0.8);
   }
+  @media (max-width: 450px) {
+    left: 187px;
+  }
 `;
 const WholeDiv = styled.div`
   transition: 200ms;
@@ -54,6 +57,12 @@ const StyledButton = styled(motion.button)`
 
   @media (max-width: 450px) {
     margin: ${(props) => (props.sm ? props.sm : "")};
+    min-width: ${(props) =>
+      props.width
+        ? props.width
+        : props.secondaryWidth
+        ? props.secondaryWidth
+        : "12.5rem"};
   }
 `;
 

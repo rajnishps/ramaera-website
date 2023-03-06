@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const PageLayout = ({
   children,
@@ -29,7 +29,7 @@ const PageLayout = ({
       justify-content: ${start ? "flex-start" : "center"};
       flex-direction: column;
       /*     padding-top: ${padding ? padding : "calc(1rem + 1rem)"};
-     */
+      */
       padding-top: ${padding ? padding : "0"};
       background: linear-gradient(
         90deg,
@@ -57,11 +57,11 @@ const PageLayout = ({
       overflow: visible;
     }
     @media (max-width: 400px) {
-      min-height: ${mmheight ? mmheight : ""};
+      height: ${mmheight ? mmheight : "100vh"};
     }
-  `
+  `;
 
-  return <StyledPageLayout>{children}</StyledPageLayout>
-}
+  return <StyledPageLayout>{children}</StyledPageLayout>;
+};
 
-export default PageLayout
+export default PageLayout;

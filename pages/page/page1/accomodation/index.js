@@ -1,8 +1,8 @@
-import PageLayout from "../../../../components/PageLayout/PageLay"
-import PageWidth from "../../../../components/Width/PageWidth"
-import TextContainer from "./components/TextContainer"
-import { Image, Responsive } from "./components/StyleImage"
-import styled from "styled-components"
+import PageLayout from "../../../../components/PageLayout/PageLay";
+import PageWidth from "../../../../components/Width/PageWidth";
+import TextContainer from "./components/TextContainer";
+import { Image, Responsive } from "./components/StyleImage";
+import styled from "styled-components";
 const Animdiv = styled.div`
   position: absolute;
   right: 0;
@@ -13,16 +13,22 @@ const Animdiv = styled.div`
     left: auto;
     right: auto;
   }
-`
+`;
 const Line = styled.div`
   @media only screen and (max-width: 768px) {
     display: none;
   }
-`
+`;
 
 const Buy = () => {
   return (
-    <PageLayout bg="red" paddingBottom="200px" mtpadding="0" height="90vh">
+    <PageLayout
+      mmheight="150vh"
+      bg="red"
+      paddingBottom="200px"
+      mtpadding="0"
+      height="90vh"
+    >
       <PageWidth full sp="0" scale={"95%"} width="1500px" position="relative">
         <div style={{ width: "100%" }}>
           <Line>
@@ -64,7 +70,7 @@ const Buy = () => {
         </Animdiv>
       </PageWidth>
     </PageLayout>
-  )
-}
+  );
+};
 
-export default Buy
+export default Buy;
