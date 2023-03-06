@@ -1,16 +1,16 @@
-import React from "react"
-import styled from "styled-components"
-import Flex from "../../../../../components/Styling/Flex"
-import Text from "../../../../../components/Text/Text"
-import Link from "next/link"
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
+import React from "react";
+import styled from "styled-components";
+import Flex from "../../../../../components/Styling/Flex";
+import Text from "../../../../../components/Text/Text";
+import Link from "next/link";
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
 
 const StyleTextContainer = styled.div`
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   width: 50rem;
-  margin: 1rem 0 -7.5rem 130px;
+  margin: 1rem 0 -7.5rem 100px;
   @media only screen and (max-width: 768px) {
     position: absolute;
     margin: 0;
@@ -18,7 +18,10 @@ const StyleTextContainer = styled.div`
     top: 0vh;
     overflow: hidden;
   }
-`
+  /* @media only screen and (max-width: 400px) {
+    padding: 550px 0;
+  } */
+`;
 const ButtonWrapper = styled.div`
   padding: 2vh 23vw 0 0;
   @media only screen and (max-width: 768px) {
@@ -27,13 +30,13 @@ const ButtonWrapper = styled.div`
   @media only screen and (max-width: 400px) {
     padding: 2vh 25vw 2vh 25vw;
   }
-`
+`;
 const IconDiv = styled.div`
   @media only screen and (min-width: 768px) {
     position: absolute;
     left: -120px;
   }
-`
+`;
 
 const TextContainer = () => {
   return (
@@ -41,8 +44,8 @@ const TextContainer = () => {
       <Flex mcolumn>
         <IconDiv>
           <svg
-            width="120"
-            height="120"
+            width="123"
+            height="123"
             viewBox="0 0 155 154"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -135,7 +138,21 @@ const TextContainer = () => {
         </IconDiv>
         <div>
           <Text
-            Text="Offering the best with FMCG industry"
+            Text="Offering the best with"
+            lg="linear-gradient(90deg, #F2EFD3 0%, #358D82 100%)"
+            align="left"
+            size="42px"
+            lh="55px"
+            width="50vw"
+            mlh="30px"
+            xmsize="2rem"
+            xssize="3vw"
+            msize="2rem"
+            mta="center"
+            padding="0"
+          />
+          <Text
+            Text="FMCG industry"
             lg="linear-gradient(90deg, #F2EFD3 0%, #358D82 100%)"
             align="left"
             size="42px"
@@ -179,7 +196,7 @@ const TextContainer = () => {
         </Link>
       </ButtonWrapper>
     </StyleTextContainer>
-  )
-}
+  );
+};
 
-export default TextContainer
+export default TextContainer;

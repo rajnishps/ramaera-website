@@ -1,9 +1,9 @@
-import Link from "next/link"
-import React from "react"
-import styled from "styled-components"
-import Flex from "../../../../../components/Styling/Flex"
-import Text from "../../../../../components/Text/Text"
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
+import Link from "next/link";
+import React from "react";
+import styled from "styled-components";
+import Flex from "../../../../../components/Styling/Flex";
+import Text from "../../../../../components/Text/Text";
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
 
 const StyleTextContainer = styled.div`
   display: flex;
@@ -19,7 +19,7 @@ const StyleTextContainer = styled.div`
     top: 5vh;
     overflow: hidden;
   }
-`
+`;
 const ButtonWrapper = styled.div`
   padding: 2vh 23vw 0 0;
   @media only screen and (max-width: 768px) {
@@ -28,13 +28,13 @@ const ButtonWrapper = styled.div`
   @media only screen and (max-width: 400px) {
     padding: 2vh 25vw 2vh 25vw;
   }
-`
+`;
 const IconDiv = styled.div`
   @media only screen and (min-width: 768px) {
     position: absolute;
     left: -120px;
   }
-`
+`;
 const TextContainer = () => {
   return (
     <StyleTextContainer>
@@ -45,8 +45,8 @@ const TextContainer = () => {
             src="/content/h.png"
             alt="line"
             style={{
-              height: "6.75rem",
-              width: "7rem",
+              height: "6.2rem",
+              width: "6.2rem",
               borderRadius: "50%",
               margin: "0",
             }}
@@ -86,7 +86,7 @@ const TextContainer = () => {
         fw="500"
         size="20px"
         lh="45px"
-        width="32rem"
+        width="31rem"
         m="1rem 0 0 0"
         xssize="18px"
         mlh="30px"
@@ -111,7 +111,7 @@ const TextContainer = () => {
         </Link>
       </ButtonWrapper>
     </StyleTextContainer>
-  )
-}
+  );
+};
 
-export default TextContainer
+export default TextContainer;

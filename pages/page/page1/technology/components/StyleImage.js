@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Image = styled.div`
   height: 35rem;
@@ -9,13 +9,13 @@ export const Image = styled.div`
   }
   @media only screen and (max-width: 768px) {
     video {
-      margin-top: 200px;
+      margin-top: 130px;
       margin-left: -20px;
       height: 100%;
       width: 100%;
     }
   }
-`
+`;
 export const CustomText = styled.h1`
   font-size: 40px;
   line-height: 55px;
@@ -30,7 +30,7 @@ export const CustomText = styled.h1`
   @media only screen and (max-width: 400px) {
     font-size: 1.6rem;
   }
-`
+`;
 export const Responsive = styled.div`
   display: flex;
   align-items: center;
@@ -39,9 +39,9 @@ export const Responsive = styled.div`
     justify-content: center;
     margin-top: 20px;
   }
-`
+`;
 const StyleImage = () => {
-  return <div>StyleImage</div>
-}
+  return <div>StyleImage</div>;
+};
 
-export default StyleImage
+export default StyleImage;

@@ -1,9 +1,9 @@
-import React from "react"
-import PageLayout from "../../../../components/PageLayout/PageLayout"
-import Text from "../../../../components/Text/Text"
-import { factory, Responsive } from "./components/Style"
-import PageWidth from "../../../../components/Width/PageWidth"
-import Image from "next/image"
+import React from "react";
+import PageLayout from "../../../../components/PageLayout/PageLayout";
+import Text from "../../../../components/Text/Text";
+import { factory, Responsive } from "./components/Style";
+import PageWidth from "../../../../components/Width/PageWidth";
+import Image from "next/image";
 
 const index = () => (
   <PageLayout mheight="30vh" bgColor="#f5f5f5">
@@ -28,7 +28,7 @@ const index = () => (
             lh="105px"
             xmsize="6rem"
             xssize="10vw"
-            msize="3.2rem"
+            msize="2.4rem"
             mmargin="0 0 10vh 0"
           />
         </div>
@@ -36,6 +36,6 @@ const index = () => (
       </PageWidth>
     </div>
   </PageLayout>
-)
+);
 
-export default index
+export default index;

@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 export const Image = styled.div`
   height: 25rem;
@@ -10,8 +10,8 @@ export const Image = styled.div`
   }
   @media only screen and (max-width: 768px) {
     video {
-      padding-right: 0;
-      margin-top: 200px;
+      padding-right: 20px;
+      margin-top: 280px;
       height: 100%;
       width: 100%;
     }
@@ -22,16 +22,16 @@ export const Image = styled.div`
       width: 100%;
     }
   }
-`
+`;
 export const Responsive = styled.div`
   display: flex;
   align-items: center;
   @media only screen and (max-width: 768px) {
     justify-content: center;
   }
-`
+`;
 const StyleImage = () => {
-  return <div>StyleImage</div>
-}
+  return <div>StyleImage</div>;
+};
 
-export default StyleImage
+export default StyleImage;

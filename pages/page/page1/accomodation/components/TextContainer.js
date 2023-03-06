@@ -1,9 +1,9 @@
-import React from "react"
-import styled from "styled-components"
-import Flex from "../../../../../components/Styling/Flex"
-import Text from "../../../../../components/Text/Text"
-import Link from "next/link"
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
+import React from "react";
+import styled from "styled-components";
+import Flex from "../../../../../components/Styling/Flex";
+import Text from "../../../../../components/Text/Text";
+import Link from "next/link";
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
 
 const StyleTextContainer = styled.div`
   display: flex;
@@ -11,15 +11,22 @@ const StyleTextContainer = styled.div`
   flex-direction: column;
   // background: red;
   width: 50rem;
-  margin: 1rem 0 -7.5rem 130px;
+  margin: 1rem 0 -7.5rem 100px;
   @media only screen and (max-width: 768px) {
     position: absolute;
     margin: 0;
+    margin-top: 100px;
     width: 100vw;
     top: 0vh;
     overflow: hidden;
   }
-`
+  /* @media only screen and (max-width: 400px) {
+    padding: 200px 0;
+  } */
+  //@media only screen and (max-width: 400px) {
+  //margin-top: 250px;
+  //  }
+`;
 const ButtonWrapper = styled.div`
   padding: 2vh 22vw 0 0;
 
@@ -29,22 +36,20 @@ const ButtonWrapper = styled.div`
   @media only screen and (max-width: 400px) {
     padding: 2vh 25vw 2vh 25vw;
   }
-`
+`;
 const ImageTag = styled.img`
   width: 200px;
   transition: 200ms;
   &:hover {
     transform: scale(1.05);
   }
-  @media only screen and (max-width: 768px) {
-  }
-`
+`;
 const IconDiv = styled.div`
   @media only screen and (min-width: 768px) {
     position: absolute;
     left: -120px;
   }
-`
+`;
 const TextContainer = () => {
   return (
     <StyleTextContainer>
@@ -55,8 +60,8 @@ const TextContainer = () => {
             src="/content/y.png"
             alt="line"
             style={{
-              height: "6.50rem",
-              width: "6.75rem",
+              height: "6.2rem",
+              width: "6.4rem",
               borderRadius: "50%",
             }}
           />
@@ -119,7 +124,7 @@ const TextContainer = () => {
         </Link>
       </ButtonWrapper>
     </StyleTextContainer>
-  )
-}
+  );
+};
 
-export default TextContainer
+export default TextContainer;

@@ -1,16 +1,16 @@
-import React from "react"
-import styled from "styled-components"
-import Flex from "../../../../../components/Styling/Flex"
-import Text from "../../../../../components/Text/Text"
-import Link from "next/link"
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
+import React from "react";
+import styled from "styled-components";
+import Flex from "../../../../../components/Styling/Flex";
+import Text from "../../../../../components/Text/Text";
+import Link from "next/link";
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
 
 const StyleTextContainer = styled.div`
   display: flex;
   align-items: flex-end;
   flex-direction: column;
   width: 50rem;
-  margin: 1rem 130px -7.5rem 0;
+  margin: 1rem 100px -7.5rem 0;
   @media only screen and (max-width: 768px) {
     position: absolute;
     margin: 0;
@@ -18,7 +18,7 @@ const StyleTextContainer = styled.div`
     top: 0vh;
     overflow: hidden;
   }
-`
+`;
 const ButtonWrapper = styled.div`
   padding: 2vh 0 0 0;
   @media only screen and (max-width: 768px) {
@@ -27,13 +27,13 @@ const ButtonWrapper = styled.div`
   @media only screen and (max-width: 400px) {
     padding: 2vh 25vw 2vh 25vw;
   }
-`
+`;
 const IconDiv = styled.div`
   @media only screen and (min-width: 768px) {
     position: absolute;
     right: -130px;
   }
-`
+`;
 
 const TextContainer = () => {
   return (
@@ -41,8 +41,8 @@ const TextContainer = () => {
       <Flex jc="end" mcolumn>
         <IconDiv>
           <svg
-            width="120"
-            height="120"
+            width="123"
+            height="123"
             viewBox="0 0 150 150"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -195,7 +195,7 @@ const TextContainer = () => {
         </Link>
       </ButtonWrapper>
     </StyleTextContainer>
-  )
-}
+  );
+};
 
-export default TextContainer
+export default TextContainer;
