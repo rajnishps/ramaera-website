@@ -184,7 +184,8 @@ const TextContainer = () => {
         <Link href="/industries#argiculture">
           <TransparentButton
             Text="Read more"
-            border="solid #579181 1.6px"
+            border="solid #00A651 1.6px"
+            bg="linear-gradient(90deg, #72C6EF 0%, #00A651 100%)"
             height="48px"
             m="2rem 0 0 0"
             br="1.1rem"

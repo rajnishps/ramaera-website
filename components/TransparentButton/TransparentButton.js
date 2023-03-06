@@ -1,6 +1,6 @@
-import styled from "styled-components";
-import { motion } from "framer-motion";
-import Spinner from "../Spinner";
+import styled from "styled-components"
+import { motion } from "framer-motion"
+import Spinner from "../Spinner"
 
 const CircleWrapper = styled.div`
   position: absolute;
@@ -9,13 +9,13 @@ const CircleWrapper = styled.div`
   img {
     transform: scale(0.8);
   }
-`;
+`
 const WholeDiv = styled.div`
   transition: 200ms;
   &:hover {
     transform: scale(1.05);
   }
-`;
+`
 const StyledButton = styled(motion.button)`
   color: ${(props) => (props.color ? props.color : "#FFFFFF")};
   font-size: ${(props) => (props.fontSize ? props.fontSize : "20px")};
@@ -27,6 +27,11 @@ const StyledButton = styled(motion.button)`
   border-radius: ${(props) => (props.br ? props.br : "0.8rem")};
   border: ${(props) => (props.border ? props.border : "none")};
   cursor: pointer;
+  background: transparent;
+  &:hover {
+    border: solid #fff 1.6px;
+    background: ${(props) => (props.bg ? props.bg : "")};
+  }
 
   min-width: ${(props) =>
     props.width
@@ -34,7 +39,6 @@ const StyledButton = styled(motion.button)`
       : props.secondaryWidth
       ? props.secondaryWidth
       : "10rem"};
-  background: transparent;
   height: ${(props) => (props.height ? props.height : "")};
   box-shadow: ${(props) =>
     props.sh
@@ -55,16 +59,16 @@ const StyledButton = styled(motion.button)`
   @media (max-width: 450px) {
     margin: ${(props) => (props.sm ? props.sm : "")};
   }
-`;
+`
 
 const TransparentButton = (props) => {
   const renderContent = () => {
     if (props.loading) {
-      return <Spinner />;
+      return <Spinner />
     }
 
-    return props.Text;
-  };
+    return props.Text
+  }
 
   return (
     <WholeDiv>
@@ -75,6 +79,6 @@ const TransparentButton = (props) => {
       </div>
       <StyledButton {...props}>{renderContent()}</StyledButton>
     </WholeDiv>
-  );
-};
-export default TransparentButton;
+  )
+}
+export default TransparentButton

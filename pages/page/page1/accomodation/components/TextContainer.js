@@ -106,7 +106,16 @@ const TextContainer = () => {
       />
       <ButtonWrapper>
         <Link href="/industries#hotel">
-          <ImageTag alt="industry" src="./content/button5.png" />
+          <TransparentButton
+            Text="Read more"
+            border="solid #FFE259 1.6px"
+            bg="linear-gradient(180deg, #FFE259 0%, #FFA751 100%);"
+            height="48px"
+            m="2rem 0 0 0"
+            br="1.1rem"
+            fw="300"
+            fontSize="14px"
+          />
         </Link>
       </ButtonWrapper>
     </StyleTextContainer>

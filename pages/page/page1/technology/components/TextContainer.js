@@ -182,10 +182,11 @@ const TextContainer = () => {
       <ButtonWrapper>
         <Link href="/industries#technology">
           <TransparentButton
-            border="solid #bf5ae0 1.6px"
             Text="Read more"
-            m="2rem 0 0 0"
+            border="solid #A811DA 1.6px"
+            bg="linear-gradient(180deg, #BF5AE0 0%, #A811DA 100%);"
             height="48px"
+            m="2rem 0 0 0"
             br="1.1rem"
             fw="300"
             fontSize="14px"

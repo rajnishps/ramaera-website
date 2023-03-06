@@ -169,6 +169,7 @@ const TextContainer = () => {
           <TransparentButton
             Text="Read more"
             border="solid #F2EFD3 1.6px"
+            bg="linear-gradient(90deg, #F2EFD3 0%, #358D82 100%)"
             height="48px"
             m="2rem 0 0 0"
             br="1.1rem"

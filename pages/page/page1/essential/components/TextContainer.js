@@ -100,7 +100,8 @@ const TextContainer = () => {
         <Link href="/industries#ecom">
           <TransparentButton
             Text="Read more"
-            border="solid #9796F0 1.6px"
+            border="solid #B4DFFD 1.6px"
+            bg="linear-gradient(90deg, #B4DFFD 0%, #EFB79B 100%)"
             height="48px"
             m="2rem 0 0 0"
             br="1.1rem"
