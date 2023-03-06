@@ -1,8 +1,8 @@
 import React from "react"
-import PageLayout from "../../../../components/PageLayout/PageLayout"
+import PageLayout from "../../../../components/PageLayout/PageLay"
 import PageWidth from "../../../../components/Width/PageWidth"
 import TextContainer from "./components/TextContainer"
-import { Responsive } from "./components/StyleImage"
+import { Image, Responsive } from "./components/StyleImage"
 import styled from "styled-components"
 
 const Animdiv = styled.div`
@@ -21,25 +21,10 @@ const Line = styled.div`
     display: none;
   }
 `
-const Image = styled.div`
-  height: 30rem;
-  width: 40rem;
-  video {
-    height: 120%;
-    width: 120%;
-  }
-  @media only screen and (max-width: 768px) {
-    video {
-      margin-top: -100px;
-      height: 120%;
-      width: 100%;
-    }
-  }
-`
 
 const Buy = () => {
   return (
-    <PageLayout mtpadding="0" padding="20vh" height="100vh">
+    <PageLayout paddingBottom="200px" mtpadding="0" height="100vh">
       <PageWidth full scale={"95%"} width="1500px" position="relative">
         <div style={{ width: "100%" }}>
           <Line>

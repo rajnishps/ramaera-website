@@ -1,4 +1,4 @@
-import PageLayout from "../../../../components/PageLayout/PageLayout"
+import PageLayout from "../../../../components/PageLayout/PageLay"
 import PageWidth from "../../../../components/Width/PageWidth"
 import TextContainer from "./components/TextContainer"
 import { Image, Responsive } from "./components/StyleImage"
@@ -21,8 +21,13 @@ const Animdiv = styled.div`
 
 const Buy = () => {
   return (
-    <PageLayout mtpadding="0" mmheight="110vh" height="100vh">
-      <PageWidth full scale={"95%"} width="1500px" position="relative">
+    <PageLayout
+      paddingBottom="200px"
+      mtpadding="0"
+      mmheight="110vh"
+      height="100vh"
+    >
+      <PageWidth full>
         <div style={{ width: "100%" }}>
           <img
             loading="lazy"

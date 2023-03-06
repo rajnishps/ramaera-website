@@ -1,15 +1,17 @@
-import PageLayout from "../../../../components/PageLayout/PageLayout"
+import PageLayout from "../../../../components/PageLayout/PageLay"
 import PageWidth from "../../../../components/Width/PageWidth"
 import TextContainer from "./components/TextContainer"
 import { Image, Responsive } from "./components/StyleImage"
 import styled from "styled-components"
-
 const Animdiv = styled.div`
   position: absolute;
   right: 0;
-  top: 15vh;
   @media only screen and (max-width: 768px) {
+    padding: 0;
+    margin: 0;
     top: -30vh;
+    left: auto;
+    right: auto;
   }
 `
 const Line = styled.div`
@@ -20,7 +22,7 @@ const Line = styled.div`
 
 const Buy = () => {
   return (
-    <PageLayout mtpadding="0" height="90vh">
+    <PageLayout bg="red" paddingBottom="200px" mtpadding="0" height="90vh">
       <PageWidth full sp="0" scale={"95%"} width="1500px" position="relative">
         <div style={{ width: "100%" }}>
           <Line>
@@ -55,17 +57,7 @@ const Buy = () => {
           data-aos-anchor-placement="top-bottom"
         >
           <Image>
-            <video
-              autoPlay
-              loop
-              muted
-              style={{
-                position: "absolute",
-                top: "-150px",
-                width: "100%",
-                height: "100%",
-              }}
-            >
+            <video autoPlay loop muted>
               <source src="/content/hotel.webm" type="video/webm" />
             </video>
           </Image>

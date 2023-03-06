@@ -6,11 +6,13 @@ export const Image = styled.div`
   video {
     height: 120%;
     width: 120%;
+    padding-right: 200px;
   }
   @media only screen and (max-width: 768px) {
     video {
-      margin-top: -100px;
-      height: 120%;
+      padding-right: 0;
+      margin-top: 200px;
+      height: 100%;
       width: 100%;
     }
   }

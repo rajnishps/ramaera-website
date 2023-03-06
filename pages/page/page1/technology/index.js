@@ -1,4 +1,4 @@
-import PageLayout from "../../../../components/PageLayout/PageLayout"
+import PageLayout from "../../../../components/PageLayout/PageLay"
 import PageWidth from "../../../../components/Width/PageWidth"
 import TextContainer from "./components/TextContainer"
 import { Image, Responsive } from "./components/StyleImage"
@@ -23,7 +23,12 @@ const Line = styled.div`
 const Buy = () => {
   return (
     <>
-      <PageLayout mheight="100vh" height="120vh">
+      <PageLayout
+        paddingTop="200px"
+        paddingBottom="450px"
+        mheight="100vh"
+        height="120vh"
+      >
         <PageWidth full scale={"95%"} width="1500px" position="relative">
           <Animdiv
             data-aos="slide-right"
@@ -81,7 +86,6 @@ const Buy = () => {
           </div>
         </PageWidth>
       </PageLayout>
-      <div style={{ marginBottom: "25vh" }}></div>
     </>
   )
 }
