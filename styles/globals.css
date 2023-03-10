@@ -126,7 +126,7 @@ a {
 .RightContainer {
   display: flex;
   align-items: center;
-  margin: 0 2vw 0 0;
+  margin: 0 3vw 0 0;
   border-radius: 20px;
   backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.1);
@@ -243,11 +243,11 @@ a {
   .Logo {
     width: 130px;
     height: 130px;
-    margin: 0 0 0 5vw;
+    /* margin: 0 0 0 5vw; */
   }
 
   .RightContainer {
-    width: 80vw;
+    width: 85vw;
   }
 }
 @media (max-width: 1400px) {
@@ -255,7 +255,7 @@ a {
     margin: 0 1rem 0 0;
   }
   .Logo {
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 1rem;
   }
   .LeftNav {
     width: 40rem;
@@ -274,7 +274,7 @@ a {
     margin: 0 1rem 0 0;
   }
   .Logo {
-    margin: 0 0 0 2rem;
+    margin: 0 0 0 1rem;
   }
 
   .LogoActive {

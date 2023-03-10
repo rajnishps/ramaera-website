@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react"
-import PageLayout from "../../../../components/PageLayout/PageLayout"
-import PageWidth from "../../../../components/Width/PageWidth"
-import Text from "../../../../components/Text/Text"
-import Button from "../../../../components/Button/Button"
-import SocialMedia from "./components/SocialMedia/SocialMedia"
-import MobileSocials from "./components/MobileSocials/MobileSocials"
-import MobileTab from "./components/MobileTab/MobileTab"
-import { Fragment } from "react"
+import React, { useState, useEffect } from "react";
+import PageLayout from "../../../../components/PageLayout/PageLayout";
+import PageWidth from "../../../../components/Width/PageWidth";
+import Text from "../../../../components/Text/Text";
+import Button from "../../../../components/Button/Button";
+import SocialMedia from "./components/SocialMedia/SocialMedia";
+import MobileSocials from "./components/MobileSocials/MobileSocials";
+import MobileTab from "./components/MobileTab/MobileTab";
+import { Fragment } from "react";
 
 import {
   images,
@@ -17,16 +17,16 @@ import {
   text3,
   images4,
   text4,
-} from "./components/Style"
-import Tab from "./components/Tab/Tab"
-import styled from "styled-components"
-import Image from "next/image"
+} from "./components/Style";
+import Tab from "./components/Tab/Tab";
+import styled from "styled-components";
+import Image from "next/image";
 const SmallSize = styled.div`
   transform: scale(0.8);
-`
+`;
 const LinkTo = styled.a`
   cursor: pointer;
-`
+`;
 const RotateTab = styled.div`
   @media only screen and (max-width: 768px) {
     /*  transform: scale(1);
@@ -35,12 +35,12 @@ const RotateTab = styled.div`
     margin-left: auto; */
     display: none;
   }
-`
+`;
 const TabsWrapper = styled.div`
   @media only screen and (max-width: 768px) {
     transform: scale(0.7);
   }
-`
+`;
 const RotateSocials = styled.div`
   @media only screen and (max-width: 768px) {
     /*  transform: rotateZ(90deg);
@@ -48,31 +48,31 @@ const RotateSocials = styled.div`
     margin-top: 0vh; */
     display: none;
   }
-`
+`;
 const ImageHide = styled.div`
   @media only screen and (max-width: 768px) {
     display: none;
   }
-`
+`;
 
-const pageNo = [images, images2, images3, images4]
-const textNo = [text, text2, text3, text4]
+const pageNo = [images, images2, images3, images4];
+const textNo = [text, text2, text3, text4];
 const index = ({ imageIndex = 0 }) => {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [imageNo, setImageNo] = useState(pageNo[imageIndex])
-  const [contextNo, setContextNo] = useState(textNo[imageIndex])
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [imageNo, setImageNo] = useState(pageNo[imageIndex]);
+  const [contextNo, setContextNo] = useState(textNo[imageIndex]);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
       if (currentIndex === imageNo.length - 1) {
-        setCurrentIndex(0)
+        setCurrentIndex(0);
       } else {
-        setCurrentIndex(currentIndex + 1)
+        setCurrentIndex(currentIndex + 1);
       }
-    }, 50000)
+    }, 50000);
 
-    return () => clearInterval(intervalId)
-  }, [imageNo[currentIndex]])
+    return () => clearInterval(intervalId);
+  }, [imageNo[currentIndex]]);
 
   return (
     <Fragment>
@@ -112,6 +112,7 @@ const index = ({ imageIndex = 0 }) => {
                   lightborder
                   height="60px"
                   m="2rem 0 0 0"
+                  bborder="2px solid white"
                 />
               </LinkTo>
               <ImageHide>
@@ -141,7 +142,7 @@ const index = ({ imageIndex = 0 }) => {
         <MobileTab currentIndex={currentIndex} />
       </TabsWrapper>
     </Fragment>
-  )
-}
+  );
+};
 
-export default index
+export default index;
