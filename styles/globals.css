@@ -241,9 +241,9 @@ a {
     width: 100%;
   }
   .Logo {
-    width: 130px;
-    height: 130px;
-    /* margin: 0 0 0 5vw; */
+    width: 150px;
+    height: 140px;
+    margin: 0 2vw 0 1vw; 
   }
 
   .RightContainer {
@@ -255,7 +255,7 @@ a {
     margin: 0 1rem 0 0;
   }
   .Logo {
-    margin: 0 0 0 1rem;
+    margin: 0 1rem 0 1rem;
   }
   .LeftNav {
     width: 40rem;
@@ -275,7 +275,7 @@ a {
     margin: 0 1rem 0 0;
   }
   .Logo {
-    margin: 0 0 0 1rem;
+    margin: 0 1rem 0 1rem;
   }
 
   .LogoActive {

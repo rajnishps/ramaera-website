@@ -61,7 +61,7 @@ const TextContainer = () => {
             alt="line"
             style={{
               height: "6.2rem",
-              width: "6.4rem",
+              width: "6.6rem",
               borderRadius: "50%",
             }}
           />

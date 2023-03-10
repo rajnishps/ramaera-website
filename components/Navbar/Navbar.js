@@ -46,12 +46,12 @@ const Link2 = styled.div`
     text-transform: uppercase;
   }
 `;
-const LinkTo = styled.div`
+const LinkTo = styled.a`
   font-weight: 300;
   line-height: 20px;
   width: 50px;
   @media (min-width: 1200px) {
-    width: 120px;
+    width: 100px;
   }
 `;
 
