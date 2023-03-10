@@ -46,6 +46,14 @@ const Link2 = styled.div`
     text-transform: uppercase;
   }
 `;
+const LinkTo = styled.div`
+  font-weight: 300;
+  line-height: 20px;
+  width: 50px;
+  @media (min-width: 1200px) {
+    width: 120px;
+  }
+`;
 
 const logo = "/logo/logo.png";
 const Navbar = ({ selectedTab }) => {
@@ -117,6 +125,16 @@ const Navbar = ({ selectedTab }) => {
 
         <div className="PC RightNav">
           <Link2>
+            <LinkTo
+              href="https://www.planetway.io/index.aspx"
+              target="_blank"
+              className="right-nav-font "
+            >
+              Submit Ideas
+              <div />
+            </LinkTo>
+          </Link2>
+          <Link2>
             <Link
               href="/career"
               className="right-nav-font"
@@ -135,6 +153,7 @@ const Navbar = ({ selectedTab }) => {
               Contact
             </Link>
           </Link2>
+
           <Link href="/">
             {/* <Link2>
               <svg

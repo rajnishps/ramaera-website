@@ -117,7 +117,7 @@ a {
 .PC {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 .Mobile {
   display: none;
@@ -131,21 +131,21 @@ a {
   backdrop-filter: blur(20px);
   background-color: rgba(255, 255, 255, 0.1);
   border: 2px solid #fff;
-  padding: 0 3rem;
+  padding: 0 1rem;
   height: 80px;
   width: 72vw;
-  justify-content: space-between;
-}
-
-.LeftNav {
-  width: 45rem;
-  display: flex;
-  align-items: center;
   justify-content: space-around;
 }
 
+.LeftNav {
+  width: 55%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .RightNav {
-  width: 15rem;
+  width: 35%;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -165,7 +165,7 @@ a {
 .nav {
   z-index: 2;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 6rem;
   position: absolute;
@@ -247,7 +247,7 @@ a {
   }
 
   .RightContainer {
-    width: 85vw;
+    width: 83vw;
   }
 }
 @media (max-width: 1400px) {
@@ -266,6 +266,7 @@ a {
   .right-nav-font {
     display: block;
     font-size: 0.6rem;
+  
   }
 }
 
