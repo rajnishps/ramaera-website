@@ -5,32 +5,26 @@ const Txt = styled.div`
   height: 100%;
   text-transform: uppercase;
   padding-top: 28vh;
-  @media only screen and (max-width: 1100px) {
-    padding-top: 28vh;
-  }
-  @media only screen and (max-width: 1000px) {
-    padding-top: 28vh;
-  }
-  @media only screen and (max-width: 900px) {
-    padding-top: 28vh;
-  }
-  @media only screen and (max-width: 800px) {
-    padding-top: 28vh;
-  }
-  @media only screen and (max-width: 700px) {
-    padding-top: 28vh;
+
+  @media only screen and (max-width: 768px) {
+    padding-top: 0;
+    height: unset;
   }
 `;
 const Bg = styled.div`
   display: flex;
-  background-image: url("/background/bg1p2.png");
+  background-image: url("/background/bg-tech.png");
   background-repeat: no-repeat;
   background-size: 100vw;
   height: 100vh;
+  min-height: 500px;
   width: 100vw;
   margin-top: 20vh;
   z-index: -1;
   @media only screen and (max-width: 768px) {
+    height: auto;
+    margin-top: 0;
+    width: 100%;
     background: transparent;
     flex-direction: column-reverse;
   }
@@ -38,9 +32,11 @@ const Bg = styled.div`
 const AgriPos = styled.video`
   height: 75vh;
   margin-left: -80px;
+  min-height: 400px;
   @media only screen and (max-width: 768px) {
     margin-left: 0;
     height: 50vh;
+    min-height: unset;
   }
 `;
 
@@ -80,7 +76,7 @@ const CustomBg = () => {
               /> */}
             </div>
           </div>
-          <Txt>
+          <Txt className="mobText">
             <Text
               Text="Information Technology"
               font
@@ -94,6 +90,7 @@ const CustomBg = () => {
               xmsize="2rem"
               xssize="3vw"
               msize="2.4rem"
+              mmwidth="100%"
             />
           </Txt>
         </Bg>

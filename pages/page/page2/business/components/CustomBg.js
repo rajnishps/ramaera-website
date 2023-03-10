@@ -9,14 +9,18 @@ const Txt = styled.div`
 `;
 const Bg = styled.div`
   display: flex;
-  background-image: url("/background/bg1p2.png");
+  background-image: url("/background/bg-agri.png");
   background-repeat: no-repeat;
   background-size: 100vw;
-  height: 100%;
+  height: 100vh;
+  min-height: 500px;
   width: 100vw;
   margin-top: 20vh;
   z-index: -1;
   @media only screen and (max-width: 768px) {
+    height: auto;
+    margin-top: 0;
+    width: 100%;
     background: transparent;
     flex-direction: column-reverse;
   }
@@ -25,9 +29,11 @@ const AgriPos = styled.video`
   padding-bottom: 50px;
   transform: scale(0.8);
   height: 75vh;
+  min-height: 400px;
   @media only screen and (max-width: 768px) {
     height: 50vh;
     padding-bottom: 0px;
+    min-height: unset;
   }
 `;
 
@@ -55,7 +61,7 @@ const CustomBg = () => {
             /> */}
           </div>
         </div>
-        <Txt>
+        <Txt className="mobText">
           <Text
             Text="Agri business"
             font
@@ -67,6 +73,7 @@ const CustomBg = () => {
             xmsize="2rem"
             xssize="3vw"
             msize="2.4rem"
+            mmwidth="100%"
           />
         </Txt>
       </Bg>

@@ -493,3 +493,9 @@ a {
 .tabscontent.active {
   width: 100vw;
 }
+
+
+@media (min-width: 768px) {
+  .mobText {
+    display: none;
+  }}

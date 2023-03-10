@@ -9,23 +9,29 @@ const Txt = styled.div`
 `;
 const Bg = styled.div`
   display: flex;
-  background-image: url("/background/bg1p2.png");
+  background-image: url("/background/bg-capsule.png");
   background-repeat: no-repeat;
   background-size: 100vw;
-  height: 100%;
+  height: 100vh;
+  min-height: 500px;
   width: 100vw;
   margin-top: 20vh;
   z-index: -1;
   @media only screen and (max-width: 768px) {
     background: transparent;
     flex-direction: column-reverse;
+    height: auto;
+    margin-top: 0;
+    width: 100%;
   }
 `;
 const AgriPos = styled.video`
   transform: scale(0.7);
   height: 75vh;
+  min-height: 400px;
   @media only screen and (max-width: 768px) {
     height: 50vh;
+    min-height: unset;
   }
 `;
 
@@ -49,7 +55,7 @@ const CustomBg = () => {
             {/*  <AgriPos loading="lazy" src="/content/hotel.gif" alt="hotel gif" /> */}
           </div>
         </div>
-        <Txt>
+        <Txt className="mobText">
           <Text
             Text="HOTEL CAPSULE"
             font
@@ -61,6 +67,7 @@ const CustomBg = () => {
             xmsize="2rem"
             xssize="3vw"
             msize="2.4rem"
+            mmwidth="100%"
           />
         </Txt>
       </Bg>

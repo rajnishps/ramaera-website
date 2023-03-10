@@ -1,7 +1,7 @@
-import PageWidth from "../../../../components/Width/PageWidth"
-import Text from "../../../../components/Text/Text"
-import CustomBg from "./components/CustomBg"
-import Texts from "./components/Texts"
+import PageWidth from "../../../../components/Width/PageWidth";
+import Text from "../../../../components/Text/Text";
+import CustomBg from "./components/CustomBg";
+import Texts from "./components/Texts";
 
 const index = () => {
   return (
@@ -28,6 +28,7 @@ const index = () => {
             mpadding="0"
             padding="5vh 0 0 10vw"
             mmargin=" 2rem 0 2rem 0"
+            mmwidth="100%"
           />
           <Text
             Text="has begun with the primary motive of nation orientation and strengthening the vision of a sustainable and prosperous nation. With the idea of encompassing and emboldening our presence in industrial sectors such as FMCG, Hotels, Packaging, Agriculture & IT Businesses. We are consistent in serving you the best with due honesty and world class standards."
@@ -43,9 +44,11 @@ const index = () => {
             msize="1.2rem"
             mta="center"
             padding=" 0 10vw"
-            mwidth="90%"
+            mwidth="60%"
             mpadding="5vw"
             mmargin=" 2rem"
+            mmwidth="100%"
+            mm="unset"
           />
         </div>
 
@@ -65,7 +68,7 @@ const index = () => {
       </PageWidth>
       <Texts />
     </div>
-  )
-}
+  );
+};
 
-export default index
+export default index;
