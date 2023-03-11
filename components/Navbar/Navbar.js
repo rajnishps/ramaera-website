@@ -49,9 +49,9 @@ const Link2 = styled.div`
 const LinkTo = styled.a`
   font-weight: 300;
   line-height: 20px;
-  width: 50px;
+  //width: 50px;
   @media (min-width: 1200px) {
-    width: 100px;
+    width: 11vw;
   }
 `;
 
@@ -130,7 +130,7 @@ const Navbar = ({ selectedTab }) => {
               target="_blank"
               className="right-nav-font "
             >
-              Submit Ideas
+              Submit Your Ideas
               <div />
             </LinkTo>
           </Link2>

@@ -145,7 +145,7 @@ a {
 }
 
 .RightNav {
-  width: 35%;
+  width: 28rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -259,6 +259,9 @@ a {
   }
   .LeftNav {
     width: 40rem;
+  }
+  .RightNav{
+    width: 30rem;
   }
   .left-nav-font {
     font-size: 1.2rem;
