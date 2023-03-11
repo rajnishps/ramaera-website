@@ -1,8 +1,8 @@
-import { useState } from "react";
-import { AddressForm } from "./page/Ideas/AddressForm";
-import { AccountForm } from "./page/Ideas/AccountForm";
-import { useMultistepForm } from "./page/Ideas/useMultistepForm";
-import { UserForm } from "./page/Ideas/UserForm";
+import { useState } from "react"
+import { AddressForm } from "./page/Ideas/AddressForm"
+import { AccountForm } from "./page/Ideas/AccountForm"
+import { useMultistepForm } from "./page/Ideas/useMultistepForm"
+import { UserForm } from "./page/Ideas/UserForm"
 const INITIAL_DATA = {
   firstName: "",
   lastName: "",
@@ -13,25 +13,25 @@ const INITIAL_DATA = {
   zip: "",
   email: "",
   password: "",
-};
-const ideas = () => {
-  const [data, setData] = useState(INITIAL_DATA);
+}
+const Ideas = () => {
+  const [data, setData] = useState(INITIAL_DATA)
   function updateFields(fields) {
     setData((prev) => {
-      return { ...prev, ...fields };
-    });
+      return { ...prev, ...fields }
+    })
   }
   const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } =
     useMultistepForm([
       <UserForm {...data} updateFields={updateFields} />,
       <AddressForm {...data} updateFields={updateFields} />,
       <AccountForm {...data} updateFields={updateFields} />,
-    ]);
+    ])
 
   function onSubmit(e) {
-    e.preventDefault();
-    if (!isLastStep) return next();
-    alert("Successful Account Creation");
+    e.preventDefault()
+    if (!isLastStep) return next()
+    alert("Successful Account Creation")
   }
 
   return (
@@ -45,6 +45,7 @@ const ideas = () => {
         borderRadius: ".5rem",
         fontFamily: "Arial",
         maxWidth: "max-content",
+        color: "black",
       }}
     >
       <form onSubmit={onSubmit}>
@@ -69,7 +70,7 @@ const ideas = () => {
         </div>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default ideas;
+export default Ideas

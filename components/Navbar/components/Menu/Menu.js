@@ -1,15 +1,15 @@
-import React, { useState } from "react";
-import { bool } from "prop-types";
-import { StyledMenu } from "./Menu.styled";
-import styled from "styled-components";
-import Link from "next/link";
-import Button from "../../../Button/Button";
+import React, { useState } from "react"
+import { bool } from "prop-types"
+import { StyledMenu } from "./Menu.styled"
+import styled from "styled-components"
+import Link from "next/link"
+import Button from "../../../Button/Button"
 
 const MenuItems = styled.div`
   display: grid;
   place-items: center;
   margin-top: 5rem;
-`;
+`
 
 const Link1 = styled.div`
   display: flex;
@@ -21,14 +21,14 @@ const Link1 = styled.div`
   left: 2rem;
   top: 1rem;
   width: 3rem;
-`;
+`
 
 const Right = styled.div`
   display: flex;
   flex-direction: column;
   margin: 0 0 2rem 0;
   align-items: center;
-`;
+`
 
 const T = styled.p`
   color: #fff;
@@ -39,7 +39,7 @@ const T = styled.p`
     font-weight: 510;
     font-size: 1rem;
   }
-`;
+`
 
 const H = styled.div`
   font-size: 1.5rem;
@@ -47,16 +47,16 @@ const H = styled.div`
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
   color: #000;
-`;
+`
 
 const Menu = ({ open, setOpen, ...props }) => {
-  const isHidden = open ? true : false;
-  const tabIndex = isHidden ? 0 : -1;
+  const isHidden = open ? true : false
+  const tabIndex = isHidden ? 0 : -1
   if (typeof window !== "undefined") {
     if (open) {
-      document.body.classList.add("fixed-position");
+      document.body.classList.add("fixed-position")
     } else if (!open) {
-      document.body.classList.remove("fixed-position");
+      document.body.classList.remove("fixed-position")
     }
   }
   return (
@@ -80,9 +80,7 @@ const Menu = ({ open, setOpen, ...props }) => {
           </Link>
         </H>
         <H>
-          <a href="https://forms.gle/S11Bv68Rg6ZKv1RV9" target="_blank">
-            Submit Your Ideas
-          </a>{" "}
+          <Link href="/idea"> Submit Your Ideas</Link>
         </H>
         <H>
           <Link href="/career" onClick={() => setOpen(false)}>
@@ -105,11 +103,11 @@ const Menu = ({ open, setOpen, ...props }) => {
         </Link>
       </MenuItems>
     </StyledMenu>
-  );
-};
+  )
+}
 
 Menu.propTypes = {
   open: bool.isRequired,
-};
+}
 
-export default Menu;
+export default Menu
