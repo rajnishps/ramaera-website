@@ -1,4 +1,4 @@
-import { FormWrapper } from "./FormWrapper";
+import { FormWrapper } from "./FormWrapper"
 
 export function AddressForm({
   youAre,
@@ -29,7 +29,7 @@ export function AddressForm({
   fundingDate,
 }) {
   return (
-    <FormWrapper title="Address">
+    <FormWrapper title="Campaign Details">
       <label>Your Project Type</label>
       <input
         autoFocus
@@ -113,5 +113,5 @@ export function AddressForm({
       <label>Funding Date</label>
       <input required type="text" value={fundingDate} />
     </FormWrapper>
-  );
+  )
 }

@@ -1,4 +1,4 @@
-import { FormWrapper } from "./FormWrapper";
+import { FormWrapper } from "./FormWrapper"
 
 export function UserForm({
   yourName,
@@ -10,7 +10,7 @@ export function UserForm({
   contact,
 }) {
   return (
-    <FormWrapper title="User Details">
+    <FormWrapper title="Basic Details">
       <label>Your Name</label>
       <input autoFocus required type="text" value={yourName} />
       <label>Country</label>
@@ -25,12 +25,14 @@ export function UserForm({
       <input required type="text" value={states} />
       <label>City</label>
       <input required type="text" value={citys} />
+
       <label>Date Of Birth</label>
       <input required min={1} type="number" value={dob} />
       <label>Your Occupation</label>
       <input required type="text" value={occupation} />
+
       <label>Contact No</label>
       <input required type="number" value={contact} />
     </FormWrapper>
-  );
+  )
 }

@@ -1,8 +1,8 @@
-import { FormWrapper } from "./FormWrapper";
+import { FormWrapper } from "./FormWrapper"
 
 export function AccountForm({ email, password, updateFields }) {
   return (
-    <FormWrapper title="Account Creation">
+    <FormWrapper title="Finish Setup">
       <label>Email</label>
       <input
         autoFocus
@@ -19,5 +19,5 @@ export function AccountForm({ email, password, updateFields }) {
         onChange={(e) => updateFields({ password: e.target.value })}
       />
     </FormWrapper>
-  );
+  )
 }
