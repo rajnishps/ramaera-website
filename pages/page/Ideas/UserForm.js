@@ -1,6 +1,14 @@
 import { FormWrapper } from "./FormWrapper";
 
-export function UserForm({ firstName, lastName, age, updateFields }) {
+export function UserForm({
+  yourName,
+  country,
+  state,
+  city,
+  dob,
+  occupation,
+  contact,
+}) {
   return (
     <FormWrapper title="User Details">
       <label>Your Name</label>
@@ -8,29 +16,29 @@ export function UserForm({ firstName, lastName, age, updateFields }) {
         autoFocus
         required
         type="text"
-        value={firstName}
-        onChange={(e) => updateFields({ firstName: e.target.value })}
+        value={yourName}
+        onChange={(e) => updateFields({ yourName: e.target.value })}
       />
       <label>Country</label>
       <input
         required
         type="text"
         value={country}
-        onChange={(e) => updateFields({ lastName: e.target.value })}
+        onChange={(e) => updateFields({ country: e.target.value })}
       />
       <label>State</label>
       <input
         required
         type="text"
         value={state}
-        onChange={(e) => updateFields({ lastName: e.target.value })}
+        onChange={(e) => updateFields({ state: e.target.value })}
       />
       <label>City</label>
       <input
         required
         type="text"
         value={city}
-        onChange={(e) => updateFields({ lastName: e.target.value })}
+        onChange={(e) => updateFields({ city: e.target.value })}
       />
       <label>Date Of Birth</label>
       <input
@@ -44,8 +52,15 @@ export function UserForm({ firstName, lastName, age, updateFields }) {
       <input
         required
         type="text"
-        value={o}
-        onChange={(e) => updateFields({ lastName: e.target.value })}
+        value={occupation}
+        onChange={(e) => updateFields({ occupation: e.target.value })}
+      />
+      <label>Contact No</label>
+      <input
+        required
+        type="text"
+        value={contact}
+        onChange={(e) => updateFields({ contact: e.target.value })}
       />
     </FormWrapper>
   );
