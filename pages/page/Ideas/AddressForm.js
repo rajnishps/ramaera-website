@@ -22,6 +22,11 @@ export function AddressForm({
   equityStructure,
   exitOption,
   projectType,
+  fundraisingType,
+  fundraisingStage,
+  fundingType,
+  fundingAmount,
+  fundingDate,
 }) {
   return (
     <FormWrapper title="Address">
@@ -92,6 +97,21 @@ export function AddressForm({
 
       <label>Exit Option</label>
       <input required type="text" value={exitOption} />
+
+      <label>Select Fundraising Type</label>
+      <input required type="text" value={fundraisingType} />
+
+      <label>Select Fundraising Stage</label>
+      <input required type="text" value={fundraisingStage} />
+
+      <label>Select Funding Type</label>
+      <input required type="text" value={fundingType} />
+
+      <label>Funding Amount</label>
+      <input required type="text" value={fundingAmount} />
+
+      <label>Funding Date</label>
+      <input required type="text" value={fundingDate} />
     </FormWrapper>
   );
 }
