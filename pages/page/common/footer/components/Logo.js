@@ -4,11 +4,12 @@ import Text from "../../../../../components/Text/Text"
 
 const Div = styled.div`
   display: flex;
-  margin-bottom: 300px;
   align-items: center;
   flex-direction: column;
   width: 10vw;
+  margin: 50px 50px;
   @media only screen and (max-width: 1000px) {
+    margin: 0 0 0 0;
     margin-bottom: 20px;
   }
 `
