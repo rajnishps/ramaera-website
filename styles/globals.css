@@ -243,7 +243,7 @@ a {
   .Logo {
     width: 150px;
     height: 140px;
-    margin: 0 2vw 0 1vw; 
+    margin: 0 2vw 0 1vw;
   }
 
   .RightContainer {
@@ -260,7 +260,7 @@ a {
   .LeftNav {
     width: 40rem;
   }
-  .RightNav{
+  .RightNav {
     width: 30rem;
   }
   .left-nav-font {
@@ -269,7 +269,6 @@ a {
   .right-nav-font {
     display: block;
     font-size: 0.6rem;
-  
   }
 }
 
@@ -498,8 +497,12 @@ a {
   width: 100vw;
 }
 
-
 @media (min-width: 768px) {
   .mobText {
     display: none;
-  }}
+  }
+}
+
+input {
+  background-color: #fff;
+}

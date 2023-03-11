@@ -1,10 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef } from "react"
 //import './Navbar.css';
-import styled from "styled-components";
-import { Burger, Menu } from "./components";
-import FocusLock from "react-focus-lock";
-import Link from "next/link";
-import Button from "../Button/Button";
+import styled from "styled-components"
+import { Burger, Menu } from "./components"
+import FocusLock from "react-focus-lock"
+import Link from "next/link"
+import Button from "../Button/Button"
 
 const ImageHolder = styled.img`
   transform: scale(0.9);
@@ -24,7 +24,7 @@ const ImageHolder = styled.img`
   @media (max-width: 400px) {
     transform: scale(0.5);
   }
-`;
+`
 const Link2 = styled.div`
   display: flex;
   margin: 0 10px;
@@ -45,35 +45,35 @@ const Link2 = styled.div`
 
     text-transform: uppercase;
   }
-`;
-const LinkTo = styled.a`
+`
+const LinkTo = styled.div`
   font-weight: 300;
   line-height: 20px;
   //width: 50px;
   @media (min-width: 1200px) {
     width: 11vw;
   }
-`;
+`
 
-const logo = "/logo/logo.png";
+const logo = "/logo/logo.png"
 const Navbar = ({ selectedTab }) => {
-  const [open, setOpen] = useState(false);
-  const node = useRef();
-  const menuId = "main-menu";
+  const [open, setOpen] = useState(false)
+  const node = useRef()
+  const menuId = "main-menu"
 
-  const [navbar, setNavbar] = useState(false);
+  const [navbar, setNavbar] = useState(false)
   const changeBackground = () => {
     if (window.scrollY >= 50) {
-      setNavbar(true);
+      setNavbar(true)
     } else {
-      setNavbar(false);
+      setNavbar(false)
     }
-  };
+  }
 
   useEffect(() => {
-    changeBackground();
-    window.addEventListener("scroll", changeBackground);
-  });
+    changeBackground()
+    window.addEventListener("scroll", changeBackground)
+  })
 
   return (
     <nav className="nav">
@@ -124,16 +124,14 @@ const Navbar = ({ selectedTab }) => {
         </div>
 
         <div className="PC RightNav">
-          <Link2>
-            <LinkTo
-              href="https://forms.gle/S11Bv68Rg6ZKv1RV9"
-              target="_blank"
-              className="right-nav-font "
-            >
-              Submit Your Ideas
-              <div />
-            </LinkTo>
-          </Link2>
+          <Link href="/idea">
+            <Link2>
+              <LinkTo className="right-nav-font ">
+                Submit Your Ideas
+                <div />
+              </LinkTo>
+            </Link2>
+          </Link>
           <Link2>
             <Link
               href="/career"
@@ -193,7 +191,7 @@ const Navbar = ({ selectedTab }) => {
         </div>
       </div>
     </nav>
-  );
-};
+  )
+}
 
-export default Navbar;
+export default Navbar
