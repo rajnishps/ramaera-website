@@ -42,6 +42,7 @@ const Ideas = () => {
         border: "1px solid black",
         padding: "2rem",
         margin: "1rem",
+        marginTop: "150px",
         borderRadius: ".5rem",
         fontFamily: "Arial",
         maxWidth: "max-content",
@@ -62,11 +63,36 @@ const Ideas = () => {
           }}
         >
           {!isFirstStep && (
-            <button type="button" onClick={back}>
+            <button
+              style={{
+                height: "50px",
+                width: "100px",
+                borderRadius: "999px",
+                background: "maroon",
+              }}
+              style={{
+                height: "50px",
+                width: "100px",
+                borderRadius: "999px",
+                background: "maroon",
+              }}
+              type="button"
+              onClick={back}
+            >
               Back
             </button>
           )}
-          <button type="submit">{isLastStep ? "Finish" : "Next"}</button>
+          <button
+            style={{
+              height: "50px",
+              width: "100px",
+              borderRadius: "999px",
+              background: "maroon",
+            }}
+            type="submit"
+          >
+            {isLastStep ? "Finish" : "Next"}
+          </button>
         </div>
       </form>
     </div>
