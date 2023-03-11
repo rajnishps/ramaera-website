@@ -36,7 +36,7 @@ const PageLayout = ({
     background-repeat: no-repeat;
     position: relative;
     background-position: center center;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     overflow: ${hideO ? hideO : ""};
     overflow-y: ${Y ? Y : ""};
     z-index: ${Zindex ? Zindex : "1"};

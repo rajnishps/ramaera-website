@@ -1,6 +1,6 @@
-import Link from "next/link"
-import styled from "styled-components"
-import Text from "../../../../../components/Text/Text"
+import Link from "next/link";
+import styled from "styled-components";
+import Text from "../../../../../components/Text/Text";
 
 const Div = styled.div`
   display: flex;
@@ -12,11 +12,11 @@ const Div = styled.div`
     margin: 0 0 0 0;
     margin-bottom: 20px;
   }
-`
+`;
 const Image = styled.img`
   height: 100px;
-  width: 100px;
-`
+  width: 115px;
+`;
 const Logo = () => {
   return (
     <Link href="/">
@@ -31,7 +31,7 @@ const Logo = () => {
         />
       </Div>
     </Link>
-  )
-}
+  );
+};
 
-export default Logo
+export default Logo;
