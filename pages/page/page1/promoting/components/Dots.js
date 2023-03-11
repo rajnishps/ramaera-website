@@ -1,4 +1,4 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
 const Image = styled.img`
   left: 125px;
@@ -9,9 +9,9 @@ const Image = styled.img`
     transform: scale(0.75);
     display: none;
   }
-`
+`;
 const Dots = () => {
-  return <Image src="/content/promtDots.png" alt="dots background" />
-}
+  return <Image src="/content/promtDots.png" alt="dots background" />;
+};
 
-export default Dots
+export default Dots;
