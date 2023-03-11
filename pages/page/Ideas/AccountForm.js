@@ -1,6 +1,7 @@
 import { FormWrapper } from "./FormWrapper";
 
 export function AccountForm({
+  linkedinProfile,
   facebookProfile,
   twitterProfile,
   instagramProfile,
@@ -14,7 +15,7 @@ export function AccountForm({
       <input
         autoFocus
         required
-        type="email"
+        type="text"
         value={linkedinProfile}
         // onChange={(e) => updateFields({ email: e.target.value })}
       />
