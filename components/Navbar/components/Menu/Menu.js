@@ -80,7 +80,7 @@ const Menu = ({ open, setOpen, ...props }) => {
           </Link>
         </H>
         <H>
-          <a href="https://www.planetway.io/index.aspx" target="_blank">
+          <a href="https://forms.gle/S11Bv68Rg6ZKv1RV9" target="_blank">
             Submit Your Ideas
           </a>{" "}
         </H>

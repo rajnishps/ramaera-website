@@ -126,7 +126,7 @@ const Navbar = ({ selectedTab }) => {
         <div className="PC RightNav">
           <Link2>
             <LinkTo
-              href="https://www.planetway.io/index.aspx"
+              href="https://forms.gle/S11Bv68Rg6ZKv1RV9"
               target="_blank"
               className="right-nav-font "
             >
