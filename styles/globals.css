@@ -506,7 +506,18 @@ label {
   margin-top: 20px;
   font-size: 0.8rem;
 }
-input {
+textarea {
+  padding: 10px;
+  max-width: 450px;
+  min-height: 100px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  margin-top: 10px;
+}
+input,
+select {
   height: 40px;
   padding: 0 10px;
   color: #000;
@@ -527,7 +538,6 @@ input::placeholder,
   }
 }
 
-
-input[type=number]::-webkit-inner-spin-button { 
+input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
