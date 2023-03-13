@@ -1,7 +1,7 @@
 import Navbar from "../components/Navbar/Navbar"
 import PageLayout from "../components/PageLayout/PageLayout"
 import PageWidth from "../components/Width/PageWidth"
-import Ideas from "./ideas"
+import Ideas from "./page/Ideas/allIdea"
 
 const idea = () => {
   return (

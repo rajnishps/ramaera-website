@@ -1,9 +1,9 @@
 import { useState } from "react"
-import { AddressForm } from "./page/Ideas/AddressForm"
-import { AccountForm } from "./page/Ideas/AccountForm"
-import { useMultistepForm } from "./page/Ideas/useMultistepForm"
-import { UserForm } from "./page/Ideas/UserForm"
-import Button from "../components/Button/SubmitButton"
+import { AddressForm } from "./AddressForm"
+import { AccountForm } from "./AccountForm"
+import { useMultistepForm } from "./useMultistepForm"
+import { UserForm } from "./UserForm"
+import Button from "../../../components/Button/SubmitButton"
 
 const INITIAL_DATA = {
   firstName: "",
