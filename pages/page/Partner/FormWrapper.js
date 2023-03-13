@@ -3,10 +3,10 @@ export function FormWrapper({ title, children }) {
   return (
     <>
       <Text
-        Text="Ramaera Industries"
+        Text="Ramaera Industries LIMITED"
         lg="linear-gradient(to right, #ffa73d, gold)"
         font
-        size="clamp(3.6rem, 1.5vw, 2rem)"
+        size="clamp(3rem, 1.5vw, 2rem)"
         fw="400"
         align="center"
         lh="50px"
@@ -24,7 +24,7 @@ export function FormWrapper({ title, children }) {
         Text={"Become " + title}
         lg="linear-gradient(to right, #000, #000)"
         font
-        size="clamp(2.4rem, 1.5vw, 2rem)"
+        size="clamp(1.4rem, 1.5vw, 2rem)"
         fw="200"
         align="center"
         lh="50px"
@@ -41,7 +41,7 @@ export function FormWrapper({ title, children }) {
       <div
         style={{
           display: "grid",
-          gap: "1rem .5rem",
+          gap: "1rem 0",
           justifyContent: "flex-start",
           gridTemplateColumns: "auto minmax(auto, 400px)",
         }}

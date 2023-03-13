@@ -62,17 +62,6 @@ const Ideas = () => {
             justifyContent: "flex-end",
           }}
         >
-          {!isFirstStep && (
-            <div style={{ background: "none", border: "none" }} onClick={back}>
-              <Button
-                nav
-                width="20px"
-                height="2.75rem"
-                Text="Back"
-                inheight="2.5rem"
-              />
-            </div>
-          )}
           <button style={{ background: "none", border: "none" }} type="submit">
             <Button
               nav
