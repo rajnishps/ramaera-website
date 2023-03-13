@@ -6,13 +6,9 @@ import Ideas from "./ideas"
 const idea = () => {
   return (
     <>
-      <PageLayout
-        paddingTop="200px"
-        paddingBottom="450px"
-        mheight="100vh"
-        height="120vh"
-      >
+      <PageLayout mheight="100vh" height="120vh">
         <Navbar />
+        <div style={{ height: "200px" }}></div>
         <PageWidth full scale={"95%"} width="1500px" position="relative">
           <Ideas />
         </PageWidth>

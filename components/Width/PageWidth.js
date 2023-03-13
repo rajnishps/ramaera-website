@@ -12,12 +12,14 @@ const PageWidth = ({
   position,
   scale,
   overflow,
+  df,
 }) => {
   const StyledWidth = styled.section`
     transform: ${scale ? `scale(${scale})` : ""};
     width: ${full ? "100%" : width ? width : "1400px"};
     height: ${height ? height : "auto"};
     display: flex;
+    display: ${df ? df : "flex"};
     align-items: ${Left ? "left" : "center"};
     justify-content: space-between;
     flex-direction: column;

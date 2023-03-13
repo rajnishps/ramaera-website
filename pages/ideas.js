@@ -3,6 +3,8 @@ import { AddressForm } from "./page/Ideas/AddressForm"
 import { AccountForm } from "./page/Ideas/AccountForm"
 import { useMultistepForm } from "./page/Ideas/useMultistepForm"
 import { UserForm } from "./page/Ideas/UserForm"
+import Button from "../components/Button/SubmitButton"
+
 const INITIAL_DATA = {
   firstName: "",
   lastName: "",
@@ -31,7 +33,7 @@ const Ideas = () => {
   function onSubmit(e) {
     e.preventDefault()
     if (!isLastStep) return next()
-    alert("Successful Account Creation")
+    alert("Successfully Submitted")
   }
 
   return (
@@ -39,18 +41,22 @@ const Ideas = () => {
       style={{
         position: "relative",
         background: "white",
-        border: "1px solid black",
         padding: "2rem",
         margin: "1rem",
-        marginTop: "150px",
         borderRadius: ".5rem",
-        fontFamily: "Arial",
         maxWidth: "max-content",
         color: "black",
       }}
     >
       <form onSubmit={onSubmit}>
-        <div style={{ position: "absolute", top: ".5rem", right: ".5rem" }}>
+        <div
+          style={{
+            position: "absolute",
+            top: ".5rem",
+            right: ".5rem",
+            fontSize: ".8rem",
+          }}
+        >
           {currentStepIndex + 1} / {steps.length}
         </div>
         {step}
@@ -63,35 +69,24 @@ const Ideas = () => {
           }}
         >
           {!isFirstStep && (
-            <button
-              style={{
-                height: "50px",
-                width: "100px",
-                borderRadius: "999px",
-                background: "maroon",
-              }}
-              style={{
-                height: "50px",
-                width: "100px",
-                borderRadius: "999px",
-                background: "maroon",
-              }}
-              type="button"
-              onClick={back}
-            >
-              Back
-            </button>
+            <div style={{ background: "none", border: "none" }} onClick={back}>
+              <Button
+                nav
+                width="20px"
+                height="2.75rem"
+                Text="Back"
+                inheight="2.5rem"
+              />
+            </div>
           )}
-          <button
-            style={{
-              height: "50px",
-              width: "100px",
-              borderRadius: "999px",
-              background: "maroon",
-            }}
-            type="submit"
-          >
-            {isLastStep ? "Finish" : "Next"}
+          <button style={{ background: "none", border: "none" }} type="submit">
+            <Button
+              nav
+              width="20px"
+              height="2.75rem"
+              Text={isLastStep ? "Finish" : "Next"}
+              inheight="2.5rem"
+            />
           </button>
         </div>
       </form>

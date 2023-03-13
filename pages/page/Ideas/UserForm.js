@@ -11,28 +11,46 @@ export function UserForm({
 }) {
   return (
     <FormWrapper title="Basic Details">
-      <label>Your Name</label>
-      <input autoFocus required type="text" value={yourName} />
-      <label>Country</label>
-      <input
-        required
-        type="text"
-        value={country}
-        // onChange={(e) => updateFields({ country: e.target.value })}
-      />
-
-      <label>State</label>
-      <input required type="text" value={states} />
-      <label>City</label>
-      <input required type="text" value={citys} />
-
-      <label>Date Of Birth</label>
-      <input required min={1} type="number" value={dob} />
-      <label>Your Occupation</label>
-      <input required type="text" value={occupation} />
-
-      <label>Contact No</label>
-      <input required type="number" value={contact} />
+      <div style={{ width: "500px" }}>
+        <label>Your Name</label>
+        <br />
+        <input autoFocus required type="text" value={yourName} />
+      </div>
+      <div style={{ width: "450px" }}>
+        <label>Country</label>
+        <br />
+        <input
+          required
+          type="text"
+          value={country}
+          // onChange={(e) => updateFields({ country: e.target.value })}
+        />
+      </div>
+      <div>
+        <label>State</label>
+        <br />
+        <input required type="text" value={states} />
+      </div>
+      <div>
+        <label>City</label>
+        <br />
+        <input required type="text" value={citys} />
+      </div>
+      <div>
+        <label>Date Of Birth</label>
+        <br />
+        <input required min={1} type="number" value={dob} />
+      </div>
+      <div>
+        <label>Your Occupation</label>
+        <br />
+        <input required type="text" value={occupation} />
+      </div>
+      <div>
+        <label>Contact No</label>
+        <br />
+        <input required type="number" value={contact} />
+      </div>
     </FormWrapper>
   )
 }

@@ -31,88 +31,144 @@ export function AddressForm({
   return (
     <>
       <FormWrapper title="Project Details">
-        <label>Your Project Type</label>
-        <input
-          autoFocus
-          required
-          type="text"
-          value={projectType}
-          // onChange={(e) => updateFields({ street: e.target.value })}
-        />
-        <label>You Are ?</label>
-        <input required type="text" value={youAre} />
-
-        <label>Type Of Partnership !!</label>
-        <input required type="text" value={partnership} />
-
-        <label>Funding Type</label>
-        <input required type="text" value={funding} />
-
-        <label>Contribution Receiving Mode</label>
-        <input required type="text" value={contribution} />
-
-        <label>Goal (INR)</label>
-        <input required type="text" value={goal} />
-
-        <label>Target For</label>
-        <input required type="text" value={target} />
-
-        <label>Per Person Amount</label>
-        <input required type="text" value={personAmount} />
-
-        <label>Your Project Title</label>
-        <input required type="text" value={projectTitle} />
-
-        <label>Brief about yourself & experience (minimum 30 character)*</label>
-        <input required type="text" value={brief} />
-
-        <label>Market Problem</label>
-        <input required type="text" value={marketProblem} />
-
-        <label>Solution</label>
-        <input required type="text" value={solution} />
-
-        <label>Your Product</label>
-        <input required type="text" value={yourProduct} />
-
-        <label>Business Model</label>
-        <input required type="text" value={businessModel} />
-
-        <label>Size of Market</label>
-        <input required type="text" value={sizeMarket} />
-
-        <label>Current Trasaction</label>
-        <input required type="text" value={currentTrasaction} />
-
-        <label>Competitive Landscape</label>
-        <input required type="text" value={competitiveLandscape} />
-
-        <label>Financial Projection</label>
-        <input required type="text" value={financialProjection} />
-
-        <label>Fund Need & Use</label>
-        <input required type="text" value={fundNeed} />
-
-        <label>Equity Structure</label>
-        <input required type="text" value={equityStructure} />
-
-        <label>Exit Option</label>
-        <input required type="text" value={exitOption} />
-
-        <label>Select Fundraising Type</label>
-        <input required type="text" value={fundraisingType} />
-
-        <label>Select Fundraising Stage</label>
-        <input required type="text" value={fundraisingStage} />
-
-        <label>Select Funding Type</label>
-        <input required type="text" value={fundingType} />
-
-        <label>Funding Amount</label>
-        <input required type="text" value={fundingAmount} />
-
-        <label>Funding Date</label>
-        <input required type="text" value={fundingDate} />
+        <div style={{ width: "500px" }}>
+          <label>Your Project Type</label>
+          <br />
+          <input
+            autoFocus
+            required
+            type="text"
+            value={projectType}
+            // onChange={(e) => updateFields({ street: e.target.value })}
+          />
+        </div>
+        <div style={{ width: "450px" }}>
+          <label>You Are ?</label>
+          <br />
+          <input required type="text" value={youAre} />
+        </div>
+        <div style={{ width: "500px" }}>
+          <label>Type Of Partnership !!</label>
+          <br />
+          <input required type="text" value={partnership} />
+        </div>
+        <div style={{ width: "450px" }}>
+          <label>Funding Type</label>
+          <br />
+          <input required type="text" value={funding} />
+        </div>
+        <div style={{ width: "500px" }}>
+          <label>Contribution Receiving Mode</label>
+          <br />
+          <input required type="text" value={contribution} />
+        </div>
+        <div style={{ width: "450px" }}>
+          <label>Goal (INR)</label>
+          <br />
+          <input required type="text" value={goal} />
+        </div>
+        <div style={{ width: "500px" }}>
+          <label>Target For</label>
+          <br />
+          <input required type="text" value={target} />
+        </div>
+        <div style={{ width: "450px" }}>
+          <label>Per Person Amount</label>
+          <br />
+          <input required type="text" value={personAmount} />
+        </div>
+        <div style={{ width: "500px" }}>
+          <label>Your Project Title</label>
+          <br />
+          <input required type="text" value={projectTitle} />
+        </div>
+        <div style={{ width: "450px" }}>
+          <label>
+            Brief about yourself & experience (minimum 30 character)*
+          </label>
+          <br />
+          <input required type="text" value={brief} />
+        </div>
+        <div style={{ width: "500px" }}>
+          <label>Market Problem</label>
+          <br />
+          <input required type="text" value={marketProblem} />
+        </div>
+        <div style={{ width: "450px" }}>
+          <label>Solution</label>
+          <br />
+          <input required type="text" value={solution} />
+        </div>
+        <div style={{ width: "500px" }}>
+          <label>Your Product</label>
+          <br />
+          <input required type="text" value={yourProduct} />
+        </div>
+        <div style={{ width: "450px" }}>
+          <label>Business Model</label>
+          <br />
+          <input required type="text" value={businessModel} />
+        </div>
+        <div style={{ width: "500px" }}>
+          <label>Size of Market</label>
+          <br />
+          <input required type="text" value={sizeMarket} />
+        </div>
+        <div style={{ width: "450px" }}>
+          <label>Current Trasaction</label>
+          <br />
+          <input required type="text" value={currentTrasaction} />
+        </div>
+        <div style={{ width: "500px" }}>
+          <label>Competitive Landscape</label>
+          <br />
+          <input required type="text" value={competitiveLandscape} />
+        </div>
+        <div style={{ width: "450px" }}>
+          <label>Financial Projection</label>
+          <br />
+          <input required type="text" value={financialProjection} />
+        </div>
+        <div style={{ width: "500px" }}>
+          <label>Fund Need & Use</label>
+          <br />
+          <input required type="text" value={fundNeed} />
+        </div>
+        <div style={{ width: "450px" }}>
+          <label>Equity Structure</label>
+          <br />
+          <input required type="text" value={equityStructure} />
+        </div>
+        <div style={{ width: "500px" }}>
+          <label>Exit Option</label>
+          <br />
+          <input required type="text" value={exitOption} />
+        </div>
+        <div style={{ width: "450px" }}>
+          <label>Select Fundraising Type</label>
+          <br />
+          <input required type="text" value={fundraisingType} />
+        </div>
+        <div style={{ width: "500px" }}>
+          <label>Select Fundraising Stage</label>
+          <br />
+          <input required type="text" value={fundraisingStage} />
+        </div>
+        <div style={{ width: "450px" }}>
+          <label>Select Funding Type</label>
+          <br />
+          <input required type="text" value={fundingType} />
+        </div>
+        <div style={{ width: "500px" }}>
+          <label>Funding Amount</label>
+          <br />
+          <input required type="text" value={fundingAmount} />
+        </div>
+        <div style={{ width: "450px" }}>
+          <label>Funding Date</label>
+          <br />
+          <input required type="text" value={fundingDate} />
+        </div>
       </FormWrapper>
     </>
   )

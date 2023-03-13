@@ -503,11 +503,26 @@ a {
   }
 }
 label {
+  margin-top: 20px;
+  font-size: 0.8rem;
 }
 input {
   height: 40px;
   padding: 0 10px;
   color: #000;
-
   background-color: #fff;
+  width: 31vw;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  margin-top: 10px;
+}
+input::placeholder,
+::-webkit-input-placeholder {
+  text-align: left;
+}
+@media (max-width: 540px) {
+  input {
+    width: 80vw;
+    margin: 10px 0;
+  }
 }
