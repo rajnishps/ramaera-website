@@ -1,9 +1,9 @@
-import { useState } from "react"
-import { AddressForm } from "./AddressForm"
-import { AccountForm } from "./AccountForm"
-import { useMultistepForm } from "./useMultistepForm"
-import { UserForm } from "./UserForm"
-import Button from "../../../components/Button/SubmitButton"
+import { useState } from "react";
+import { AddressForm } from "./AddressForm";
+import { AccountForm } from "./AccountForm";
+import { useMultistepForm } from "./useMultistepForm";
+import { UserForm } from "./UserForm";
+import Button from "../../../components/Button/SubmitButton";
 
 const INITIAL_DATA = {
   firstName: "",
@@ -15,25 +15,25 @@ const INITIAL_DATA = {
   zip: "",
   email: "",
   password: "",
-}
+};
 const Ideas = () => {
-  const [data, setData] = useState(INITIAL_DATA)
+  const [data, setData] = useState(INITIAL_DATA);
   function updateFields(fields) {
     setData((prev) => {
-      return { ...prev, ...fields }
-    })
+      return { ...prev, ...fields };
+    });
   }
   const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } =
     useMultistepForm([
       <UserForm {...data} updateFields={updateFields} />,
       <AddressForm {...data} updateFields={updateFields} />,
       <AccountForm {...data} updateFields={updateFields} />,
-    ])
+    ]);
 
   function onSubmit(e) {
-    e.preventDefault()
-    if (!isLastStep) return next()
-    alert("Successfully Submitted")
+    e.preventDefault();
+    if (!isLastStep) return next();
+    alert("Successfully Submitted");
   }
 
   return (
@@ -57,7 +57,7 @@ const Ideas = () => {
             fontSize: ".8rem",
           }}
         >
-          {currentStepIndex + 1} / {steps.length}
+          {/* {currentStepIndex + 1} / {steps.length} */}
         </div>
         {step}
         <div
@@ -91,7 +91,7 @@ const Ideas = () => {
         </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default Ideas
+export default Ideas;
