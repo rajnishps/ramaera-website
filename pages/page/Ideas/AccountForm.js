@@ -1,4 +1,4 @@
-import { FormWrapper } from "./FormWrapper"
+import { FormWrapper } from "./FormWrapper";
 export function AccountForm({
   linkedinProfile,
   facebookProfile,
@@ -9,7 +9,7 @@ export function AccountForm({
   thanksNote,
 }) {
   return (
-    <FormWrapper title="Finish Details">
+    <FormWrapper number={2} title="Finish Details">
       <div style={{ width: "500px" }}>
         <label>Your Linked-in Profile</label>
         <br />
@@ -62,7 +62,7 @@ export function AccountForm({
         />
       </div>
 
-      <div style={{ width: "500px" }}>
+      <div style={{ width: "450px" }}>
         <label>Thanks Note</label>
         <br />
         <input
@@ -73,5 +73,5 @@ export function AccountForm({
         />
       </div>
     </FormWrapper>
-  )
+  );
 }

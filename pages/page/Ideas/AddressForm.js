@@ -1,4 +1,4 @@
-import { FormWrapper } from "./FormWrapper"
+import { FormWrapper } from "./FormWrapper";
 
 export function AddressForm({
   youAre,
@@ -30,7 +30,7 @@ export function AddressForm({
 }) {
   return (
     <>
-      <FormWrapper title="Project Details">
+      <FormWrapper number={1} title="Project Details">
         <div style={{ width: "500px" }}>
           <label>Your Project Type</label>
           <br />
@@ -294,5 +294,5 @@ export function AddressForm({
         </div>
       </FormWrapper>
     </>
-  )
+  );
 }
