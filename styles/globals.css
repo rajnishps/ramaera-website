@@ -526,3 +526,8 @@ input::placeholder,
     margin: 10px 0;
   }
 }
+
+
+input[type=number]::-webkit-inner-spin-button { 
+  -webkit-appearance: none;
+}
