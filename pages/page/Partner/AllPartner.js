@@ -1,7 +1,7 @@
-import { useState } from "react"
-import { useMultistepForm } from "./useMultistepForm"
-import { UserForm } from "./UserForm"
-import Button from "../../../components/Button/SubmitButton"
+import { useState } from "react";
+import { useMultistepForm } from "./useMultistepForm";
+import { UserForm } from "./UserForm";
+import Button from "../../../components/Button/SubmitButton";
 
 const INITIAL_DATA = {
   firstName: "",
@@ -13,21 +13,21 @@ const INITIAL_DATA = {
   zip: "",
   email: "",
   password: "",
-}
+};
 const Ideas = () => {
-  const [data, setData] = useState(INITIAL_DATA)
+  const [data, setData] = useState(INITIAL_DATA);
   function updateFields(fields) {
     setData((prev) => {
-      return { ...prev, ...fields }
-    })
+      return { ...prev, ...fields };
+    });
   }
   const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } =
-    useMultistepForm([<UserForm {...data} updateFields={updateFields} />])
+    useMultistepForm([<UserForm {...data} updateFields={updateFields} />]);
 
   function onSubmit(e) {
-    e.preventDefault()
-    if (!isLastStep) return next()
-    alert("Successfully Submitted")
+    e.preventDefault();
+    if (!isLastStep) return next();
+    alert("Successfully Submitted");
   }
 
   return (
@@ -65,7 +65,7 @@ const Ideas = () => {
           <button style={{ background: "none", border: "none" }} type="submit">
             <Button
               nav
-              width="20px"
+              width="140px"
               height="2.75rem"
               Text="Submit"
               inheight="2.5rem"
@@ -74,7 +74,7 @@ const Ideas = () => {
         </div>
       </form>
     </div>
-  )
-}
+  );
+};
 
-export default Ideas
+export default Ideas;

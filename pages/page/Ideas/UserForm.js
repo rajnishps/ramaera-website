@@ -118,16 +118,33 @@ export function UserForm({ yourName, citys, dob, occupation, contact }) {
             <input autoFocus type="text" />
           </div>
         )}
-        <div onClick={() => changeButtonCount(1)}>
-          <Button
-            width="150px"
-            padding="0.85rem 1rem"
-            height="2.75rem"
-            Text="Add more"
-            inheight="2rem"
-            sh="none"
-          />
-        </div>
+
+        {buttonCount >= 3 && (
+          <div style={{ width: "500px" }}>
+            <label>Director Name</label>
+            <br />
+            <input autoFocus type="text" placeholder="Type your name" />
+          </div>
+        )}
+        {buttonCount >= 3 && (
+          <div style={{ width: "450px" }}>
+            <label>Basic introduction with experience </label>
+            <br />
+            <input autoFocus type="text" />
+          </div>
+        )}
+        {buttonCount === 3 ? null : (
+          <div onClick={() => changeButtonCount(1)}>
+            <Button
+              width="150px"
+              padding="0.85rem 1rem"
+              height="2.75rem"
+              Text="Add more"
+              inheight="2rem"
+              sh="none"
+            />
+          </div>
+        )}
       </FormWrapper>
     </>
   );
