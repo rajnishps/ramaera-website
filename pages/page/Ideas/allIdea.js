@@ -72,7 +72,7 @@ const Ideas = () => {
             <div style={{ background: "none", border: "none" }} onClick={back}>
               <Button
                 nav
-                width="20px"
+                width="140px"
                 height="2.75rem"
                 Text="Back"
                 inheight="2.5rem"
@@ -82,7 +82,7 @@ const Ideas = () => {
           <button style={{ background: "none", border: "none" }} type="submit">
             <Button
               nav
-              width="20px"
+              width="140px"
               height="2.75rem"
               Text={isLastStep ? "Finish" : "Next"}
               inheight="2.5rem"
