@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { FormWrapper } from "./FormWrapper";
 
 export function AddressForm({
@@ -28,6 +29,7 @@ export function AddressForm({
   fundingAmount,
   fundingDate,
 }) {
+  const [show, setShow] = useState(false);
   return (
     <>
       <FormWrapper number={1} title="Project Details">
@@ -68,7 +70,7 @@ export function AddressForm({
         <div style={{ width: "450px" }}>
           <label>Funding Type</label>
           <br />
-          <input required type="text" value={funding} />
+          <input type="text" value={funding} />
         </div>
         <div style={{ width: "500px" }}>
           <label>Contribution Receiving Mode</label>
@@ -84,7 +86,6 @@ export function AddressForm({
           <label>Goal (INR)</label>
           <br />
           <input
-            required
             type="number"
             value={goal}
             placeholder="Numerical value only"
@@ -94,7 +95,6 @@ export function AddressForm({
           <label>Target For</label>
           <br />
           <input
-            required
             type="number"
             value={target}
             placeholder="Number of Partners"
@@ -103,13 +103,12 @@ export function AddressForm({
         <div style={{ width: "450px" }}>
           <label>Per Person Amount</label>
           <br />
-          <input required type="text" value={personAmount} />
+          <input type="text" value={personAmount} />
         </div>
         <div style={{ width: "500px" }}>
           <label>Your Project Title</label>
           <br />
           <input
-            required
             type="text"
             value={projectTitle}
             placeholder="I am offering for Partnership"
@@ -121,7 +120,6 @@ export function AddressForm({
           </label>
           <br />
           <textarea
-            required
             value={brief}
             rows={5}
             cols={60}
@@ -132,7 +130,6 @@ export function AddressForm({
           <label>Market Problem</label>
           <br />
           <textarea
-            required
             value={marketProblem}
             rows={5}
             cols={60}
@@ -143,7 +140,6 @@ export function AddressForm({
           <label>Solution</label>
           <br />
           <textarea
-            required
             value={solution}
             rows={5}
             cols={60}
@@ -154,7 +150,6 @@ export function AddressForm({
           <label>Your Product</label>
           <br />
           <textarea
-            required
             value={yourProduct}
             rows={5}
             cols={60}
@@ -165,51 +160,46 @@ export function AddressForm({
           <label>Business Model</label>
           <br />
           <textarea
-            required
             value={businessModel}
             rows={5}
             cols={60}
-            placeholder="Discribe here ..."
+            placeholder="Describe here ..."
           />
         </div>
         <div style={{ width: "500px" }}>
           <label>Size of Market</label>
           <br />
           <textarea
-            required
             value={sizeMarket}
             rows={5}
             cols={60}
-            placeholder="Discribe here size of the market you are targeting"
+            placeholder="Describe here size of the market you are targeting"
           />
         </div>
         <div style={{ width: "450px" }}>
           <label>Current Trasaction</label>
           <br />
           <textarea
-            required
             value={currentTrasaction}
             rows={5}
             cols={60}
-            placeholder="Please discribe the current traction if any achivement you have already accomplished"
+            placeholder="Please describe the current traction if any achivement you have already accomplished"
           />
         </div>
         <div style={{ width: "500px" }}>
           <label>Competitive Landscape</label>
           <br />
           <textarea
-            required
             rows={5}
             cols={60}
             value={competitiveLandscape}
-            placeholder="Discribe here your compatitors landscape"
+            placeholder="Describe here your compatitors landscape"
           />
         </div>
         <div style={{ width: "450px" }}>
           <label>Financial Projection</label>
           <br />
           <textarea
-            required
             rows={5}
             cols={60}
             value={financialProjection}
@@ -220,7 +210,6 @@ export function AddressForm({
           <label>Fund Need & Use</label>
           <br />
           <textarea
-            required
             rows={5}
             cols={60}
             value={fundNeed}
@@ -231,22 +220,20 @@ export function AddressForm({
           <label>Equity Structure</label>
           <br />
           <textarea
-            required
             rows={5}
             cols={60}
             value={equityStructure}
-            placeholder="Please discribe the Percentage (Funders %, Your %) after all expanses"
+            placeholder="Please describe the Percentage (Funders %, Your %) after all expanses"
           />
         </div>
         <div style={{ width: "500px" }}>
           <label>Exit Option</label>
           <br />
           <textarea
-            required
             rows={5}
             cols={60}
             value={exitOption}
-            placeholder="Discribe here ..."
+            placeholder="Describe here ..."
           />
         </div>
         <div style={{ width: "450px" }}>
@@ -254,44 +241,99 @@ export function AddressForm({
           <select>
             <option disabled selected>
               Select Mode
-              <br />
             </option>
             <option value={fundraisingType}>Equity Base</option>
             <option value={fundraisingType}>Bank Loan</option>
           </select>
         </div>
-        <div style={{ width: "500px" }}>
-          <label>Select Fundraising Stage</label>
-          <select>
-            <br />
-            <option disabled selected>
-              Select Stage
-            </option>
-            <option value={fundraisingStage}>Pre-Seed</option>
-            <option value={fundraisingStage}>Seed</option>
-          </select>
+
+        <div
+          style={{
+            display: "flex",
+            width: "500px",
+            flexDirection: "column",
+          }}
+        >
+          <h5 style={{ padding: "10px 0" }}>
+            Previous Raised History if any = Select "YES"
+          </h5>
+          <div
+            style={{
+              display: "flex",
+              width: "200px",
+            }}
+          >
+            <div
+              style={{
+                display: "flex",
+              }}
+            >
+              <input
+                type="radio"
+                value="yes"
+                name="gender"
+                onClick={() => setShow(true)}
+              />{" "}
+              <label>Yes</label>
+            </div>
+            <div
+              style={{
+                display: "flex",
+              }}
+            >
+              <input
+                type="radio"
+                value="no"
+                name="gender"
+                onClick={() => setShow(false)}
+              />{" "}
+              <label>No</label>
+            </div>
+          </div>
         </div>
-        <div style={{ width: "450px" }}>
-          <label>Select Funding Type</label>
-          <select>
-            <option disabled selected>
-              Select Stage
+
+        <div style={{ width: "450px" }}></div>
+
+        {show && (
+          <div style={{ width: "500px" }}>
+            <label>Select Fundraising Stage</label>
+            <select>
               <br />
-            </option>
-            <option value={fundingType}>Equity</option>
-            <option value={fundingType}>Debt</option>
-          </select>
-        </div>
-        <div style={{ width: "500px" }}>
-          <label>Funding Amount</label>
-          <br />
-          <input required type="text" value={fundingAmount} />
-        </div>
-        <div style={{ width: "450px" }}>
-          <label>Funding Date</label>
-          <br />
-          <input required type="date" value={fundingDate} />
-        </div>
+              <option disabled selected>
+                Select Stage
+              </option>
+              <option value={fundraisingStage}>Pre-Seed</option>
+              <option value={fundraisingStage}>Seed</option>
+            </select>
+          </div>
+        )}
+        {show && (
+          <div style={{ width: "450px" }}>
+            <label>Select Funding Type</label>
+            <select>
+              <option disabled selected>
+                Select Stage
+                <br />
+              </option>
+              <option value={fundingType}>Equity</option>
+              <option value={fundingType}>Debt</option>
+            </select>
+          </div>
+        )}
+        {show && (
+          <div style={{ width: "500px" }}>
+            <label>Funding Amount</label>
+            <br />
+            <input type="text" value={fundingAmount} />
+          </div>
+        )}
+        {show && (
+          <div style={{ width: "450px" }}>
+            <label>Funding Date</label>
+            <br />
+            <input type="date" value={fundingDate} />
+          </div>
+        )}
       </FormWrapper>
     </>
   );

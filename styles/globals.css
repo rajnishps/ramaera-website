@@ -541,3 +541,15 @@ input::placeholder,
 input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
+
+
+input[type="radio"] {
+  height: 40px;
+  padding: 0 10px;
+  color: #000;
+  background-color: #fff;
+width: 100px;
+  border-radius: 10px;
+  border: 1px solid lightgrey;
+  margin-top: 10px;
+}

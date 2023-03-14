@@ -79,7 +79,7 @@ export function FormWrapper({ number, title, children }) {
       <div
         style={{
           display: "grid",
-          gap: "1rem .5rem",
+          gap: "1rem 0 ",
           justifyContent: "flex-start",
           gridTemplateColumns: "auto minmax(auto, 400px)",
         }}

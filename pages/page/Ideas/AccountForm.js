@@ -11,7 +11,7 @@ export function AccountForm({
   return (
     <FormWrapper number={2} title="Finish Details">
       <div style={{ width: "500px" }}>
-        <label>Your Linked-in Profile</label>
+        <label>Your LinkedIn Profile</label>
         <br />
         <input
           autoFocus
@@ -69,7 +69,7 @@ export function AccountForm({
           required
           type="text"
           value={thanksNote}
-          placeholder=" Type your message to Donor's"
+          placeholder=" Type your message"
         />
       </div>
     </FormWrapper>
