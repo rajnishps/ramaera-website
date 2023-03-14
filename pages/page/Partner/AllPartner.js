@@ -1,34 +1,73 @@
-import { useState } from "react"
-import { useMultistepForm } from "./useMultistepForm"
+import { useEffect, useState } from "react"
 import { UserForm } from "./UserForm"
 import Button from "../../../components/Button/SubmitButton"
 import { CreateApplications } from "../../../apollo/queries/index"
 import { useMutation } from "@apollo/client"
-const INITIAL_DATA = {
-  firstName: "",
-  lastName: "",
-  age: "",
-  street: "",
-  city: "",
-  state: "",
-  zip: "",
-  email: "",
-  password: "",
-}
+import { useSelector } from "react-redux"
+
 const Ideas = () => {
-  const [data, setData] = useState(INITIAL_DATA)
-  const [createApp] = useMutation(CreateApplications)
-  function updateFields(fields) {
-    setData((prev) => {
-      return { ...prev, ...fields }
+  const [{ data, loading, error }] = useMutation(CreateApplications)
+  const [finalData, setFinalData] = useState({})
+  console.log("vreating", data)
+  console.log("error===========>", error)
+  const name = useSelector((state) => state.application.name)
+  const applicantType = useSelector((state) => state.application.applicantType)
+  const applicantAddress = useSelector(
+    (state) => state.application.applicantAddress
+  )
+  const email = useSelector((state) => state.application.email)
+  const firmName = useSelector((state) => state.application.firmName)
+  const mobileNumber = useSelector((state) => state.application.mobileNumber)
+  const District = useSelector((state) => state.application.District)
+  const State = useSelector((state) => state.application.State)
+
+  const changeFinalData = (e) => {
+    e.preventDefault()
+    setFinalData({
+      name: name,
+      applicantType: applicantType,
+      applicantAddress: applicantAddress,
+      email: email,
+      firmName: firmName,
+      mobileNumber: mobileNumber,
+      District: District,
+      State: State,
     })
+    console.log(finalData)
   }
-  const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } =
-    useMultistepForm([<UserForm updateFields={updateFields} />])
+  /*   useEffect(() => {
+    changeFinalData()
+  }, [
+    name,
+    applicantType,
+    applicantAddress,
+    email,
+    firmName,
+    mobileNumber,
+    District,
+    State,
+  ]) */
 
   const handleSubmit = (e) => {
     e.preventDefault()
-    console.log(data)
+  }
+  const submitMe = async () => {
+    try {
+      await data({
+        variables: {
+          name: name,
+          applicantType: applicantType,
+          applicantAddress: applicantAddress,
+          email: email,
+          firmName: firmName,
+          mobileNumber: mobileNumber,
+          District: District,
+          State: State,
+        },
+      })
+    } catch (err) {
+      console.log("error", err)
+    }
   }
 
   return (
@@ -43,7 +82,7 @@ const Ideas = () => {
         color: "black",
       }}
     >
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={(e) => changeFinalData(e)}>
         <div
           style={{
             position: "absolute",
@@ -51,10 +90,8 @@ const Ideas = () => {
             right: ".5rem",
             fontSize: ".8rem",
           }}
-        >
-          {/*{currentStepIndex + 1} / {steps.length}*/}
-        </div>
-        {step}
+        ></div>
+        <UserForm />
         <div
           style={{
             marginTop: "1rem",
@@ -63,7 +100,11 @@ const Ideas = () => {
             justifyContent: "flex-end",
           }}
         >
-          <button style={{ background: "none", border: "none" }} type="submit">
+          <button
+            style={{ background: "none", border: "none" }}
+            onClick={() => submitMe()}
+            type="submit"
+          >
             <Button
               nav
               width="140px"
