@@ -4,6 +4,7 @@ import AOS from "aos"
 import "aos/dist/aos.css"
 import Head from "next/head"
 import NextNProgress from "nextjs-progressbar"
+import { ApolloProvider } from "@apollo/client"
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init()
@@ -42,7 +43,11 @@ export default function App({ Component, pageProps }) {
       </Head>
       <NextNProgress color="#f9d5239b" startPosition={0.4} height={3} />
 
-      {<Component {...pageProps} />}
+      {
+        <ApolloProvider client={true}>
+          <Component {...pageProps} />
+        </ApolloProvider>
+      }
     </>
   )
 }

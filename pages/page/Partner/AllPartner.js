@@ -1,8 +1,9 @@
-import { useState } from "react";
-import { useMultistepForm } from "./useMultistepForm";
-import { UserForm } from "./UserForm";
-import Button from "../../../components/Button/SubmitButton";
-
+import { useState } from "react"
+import { useMultistepForm } from "./useMultistepForm"
+import { UserForm } from "./UserForm"
+import Button from "../../../components/Button/SubmitButton"
+import { CreateApplications } from "../../../apollo/queries/index"
+import { useMutation } from "@apollo/client"
 const INITIAL_DATA = {
   firstName: "",
   lastName: "",
@@ -13,21 +14,21 @@ const INITIAL_DATA = {
   zip: "",
   email: "",
   password: "",
-};
+}
 const Ideas = () => {
-  const [data, setData] = useState(INITIAL_DATA);
+  const [data, setData] = useState(INITIAL_DATA)
+  const [createApp] = useMutation(CreateApplications)
   function updateFields(fields) {
     setData((prev) => {
-      return { ...prev, ...fields };
-    });
+      return { ...prev, ...fields }
+    })
   }
   const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } =
-    useMultistepForm([<UserForm {...data} updateFields={updateFields} />]);
+    useMultistepForm([<UserForm updateFields={updateFields} />])
 
-  function onSubmit(e) {
-    e.preventDefault();
-    if (!isLastStep) return next();
-    alert("Successfully Submitted");
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    console.log(data)
   }
 
   return (
@@ -42,7 +43,7 @@ const Ideas = () => {
         color: "black",
       }}
     >
-      <form onSubmit={onSubmit}>
+      <form onSubmit={handleSubmit}>
         <div
           style={{
             position: "absolute",
@@ -74,7 +75,7 @@ const Ideas = () => {
         </div>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default Ideas;
+export default Ideas
