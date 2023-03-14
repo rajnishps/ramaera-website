@@ -5,6 +5,9 @@ import "aos/dist/aos.css"
 import Head from "next/head"
 import NextNProgress from "nextjs-progressbar"
 import { ApolloProvider } from "@apollo/client"
+import { store } from "../state/store"
+import { Provider } from "react-redux"
+
 export default function App({ Component, pageProps }) {
   useEffect(() => {
     AOS.init()
@@ -45,7 +48,9 @@ export default function App({ Component, pageProps }) {
 
       {
         <ApolloProvider client={true}>
-          <Component {...pageProps} />
+          <Provider store={store}>
+            <Component {...pageProps} />
+          </Provider>
         </ApolloProvider>
       }
     </>

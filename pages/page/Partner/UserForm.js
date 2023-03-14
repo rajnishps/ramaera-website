@@ -1,20 +1,22 @@
 import { FormWrapper } from "./FormWrapper"
 import { useState } from "react"
-// todo move state above,, firm name optional,, more detail,, delete dob ( applicant address)
-
-export function UserForm({
-  yourName,
-  dob,
-  yourEmail,
-  application,
-  address,
-  partnerType,
-  contact,
-}) {
+import { useDispatch } from "react-redux"
+import {
+  changeName,
+  changeApplicantType,
+  changeApplicantAddress,
+  changeEmail,
+  changeFirmName,
+  changeMobileNumber,
+  changeDistrict,
+  changeState,
+} from "../../../state/slice/applicationSlice"
+export function UserForm({}) {
   const [partner, setPartner] = useState("")
   const [stateIndia, setStateIndia] = useState("")
   const [isFirm, setIsFirm] = useState(false)
   const [district, setDistrict] = useState("")
+  const dispatch = useDispatch()
   const changeHandler = (val) => {
     setPartner(val)
     setDistrict("")
@@ -29,9 +31,7 @@ export function UserForm({
   const changeFirm = () => {
     setIsFirm(!isFirm)
   }
-  const dataChangeHandler = (data) => {
-    console.log(data)
-  }
+
   return (
     <FormWrapper title="a PART OF OUR DISTRIBUTION SYSTEM">
       <div style={{ width: "500px", marginTop: "30px" }}>
@@ -47,10 +47,9 @@ export function UserForm({
         <br />
         <input
           autoFocus
-          required
+          //required
           type="text"
-          value={yourName}
-          onChange={(e) => dataChangeHandler({ name: e.target.value })}
+          onChange={(e) => dispatch(changeName(e.target.value))}
           placeholder="Type your name (अपना नाम लिखो)"
         />
       </div>
@@ -59,10 +58,9 @@ export function UserForm({
         <br />
         <input
           autoFocus
-          required
+          //required
           type="email"
-          value={yourEmail}
-          onChange={(e) => dataChangeHandler({ email: e.target.value })}
+          onChange={(e) => dispatch(changeEmail(e.target.value))}
           placeholder="Type your email (अपना ईमेल लिखो)"
         />
       </div>
@@ -71,12 +69,9 @@ export function UserForm({
         <br />
         <input
           autoFocus
-          required
+          //required
           type="text"
-          value={address}
-          onChange={(e) =>
-            dataChangeHandler({ applicantAddress: e.target.value })
-          }
+          onChange={(e) => dispatch(changeApplicantAddress(e.target.value))}
           placeholder="Type your address"
         />
       </div>
@@ -85,12 +80,9 @@ export function UserForm({
         <br />
         <input
           autoFocus
-          required
+          //required
           type="text"
-          value={address}
-          onChange={(e) =>
-            dataChangeHandler({ applicantAddress: e.target.value })
-          }
+          // onChange={(e) => dispatch(changeApplicantAddress(e.target.value))}
           placeholder="Type your state"
         />
       </div>
@@ -99,12 +91,9 @@ export function UserForm({
         <br />
         <input
           autoFocus
-          required
+          //required
           type="number"
-          value={address}
-          onChange={(e) =>
-            dataChangeHandler({ applicantAddress: e.target.value })
-          }
+          // onChange={(e) => dispatch(changeApplicantAddress(e.target.value))}
           placeholder="Type your pincode"
         />
       </div>
@@ -112,10 +101,9 @@ export function UserForm({
         <label>Applicant's Mobile No. (आवेदक मोबाइल नं.)</label>
         <br />
         <input
-          required
+          //required
           type="number"
-          onChange={(e) => dataChangeHandler({ mobileNumber: e.target.value })}
-          value={contact}
+          onChange={(e) => dispatch(changeMobileNumber(e.target.value))}
           placeholder="Type Contact No."
         />
       </div>
@@ -133,7 +121,7 @@ export function UserForm({
         <select
           onChange={(e) => {
             changeHandler(e.target.value)
-            dataChangeHandler({ applicantAddress: e.target.value })
+            dispatch(changeApplicantType(e.target.value))
           }}
         >
           <option disabled selected>
@@ -167,10 +155,9 @@ export function UserForm({
           <label>Firm Name (फर्म का नाम)</label>
           <br />
           <input
-            required
+            //required
             type="text"
-            value={contact}
-            onChange={(e) => dataChangeHandler({ firmName: e.target.value })}
+            onChange={(e) => dispatch(changeFirmName(e.target.value))}
             placeholder="Type Firm's Name"
           />
         </div>
@@ -190,15 +177,15 @@ export function UserForm({
       </div> */}
       {/* {partner && (
         <div style={{ width: "500px", marginTop: "30px" }}>
-          <label
-            style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
-          >
-            More Details
-          </label>
+        <label
+        style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
+        >
+        More Details
+        </label>
         </div>
-      )}
-      {partner && <div style={{ width: "450px" }}></div>}
-      {partner && <hr />}
+        )}
+        {partner && <div style={{ width: "450px" }}></div>}
+        {partner && <hr />}
       {partner && <hr />} */}
       {partner && (
         <div style={{ width: "500px" }}>
@@ -207,7 +194,7 @@ export function UserForm({
           <select
             onChange={(e) => {
               changeStateIndia(e.target.value)
-              dataChangeHandler({ State: e.target.value })
+              dispatch(changeState(e.target.value))
             }}
           >
             <option disabled selected>
@@ -227,7 +214,7 @@ export function UserForm({
             <select
               onChange={(e) => {
                 changeDistrict(e.target.value)
-                dataChangeHandler({ District: e.target.value })
+                dispatch(changeDistrict(e.target.value))
               }}
             >
               <option disabled selected>
@@ -256,7 +243,7 @@ export function UserForm({
             <select
               onChange={(e) => {
                 changeDistrict(e.target.value)
-                dataChangeHandler({ District: e.target.value })
+                dispatch(changeDistrict(e.target.value))
               }}
             >
               <option disabled selected>
@@ -274,7 +261,7 @@ export function UserForm({
             <select
               onChange={(e) => {
                 changeDistrict(e.target.value)
-                dataChangeHandler({ District: e.target.value })
+                dispatch(changeDistrict(e.target.value))
               }}
             >
               <option disabled selected>
@@ -308,7 +295,7 @@ export function UserForm({
             <select
               onChange={(e) => {
                 changeDistrict(e.target.value)
-                dataChangeHandler({ District: e.target.value })
+                dispatch(changeDistrict(e.target.value))
               }}
             >
               <option disabled selected>
