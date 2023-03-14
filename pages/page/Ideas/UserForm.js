@@ -54,7 +54,7 @@ export function UserForm({ yourName, citys, dob, occupation, contact }) {
         <div style={{ width: "450px" }}>
           <label>City</label>
           <br />
-          <input type="text" value={citys} />
+          <input type="text" value={citys} placeholder="Type City name" />
         </div>
         <div style={{ width: "500px" }}>
           <label>Date Of Birth</label>
