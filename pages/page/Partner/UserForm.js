@@ -1,16 +1,18 @@
 import { FormWrapper } from "./FormWrapper"
 import { useState } from "react"
-
+// todo move state above,, firm name optional,, more detail,, delete dob ( applicant address)
 export function UserForm({
   yourName,
   dob,
   yourEmail,
   application,
+  address,
   partnerType,
   contact,
 }) {
   const [partner, setPartner] = useState("")
   const [stateIndia, setStateIndia] = useState("")
+  const [isFirm, setIsFirm] = useState(false)
   const [district, setDistrict] = useState("")
   const changeHandler = (val) => {
     setPartner(val)
@@ -23,11 +25,14 @@ export function UserForm({
   const changeDistrict = (val) => {
     setDistrict(val)
   }
+  const changeFirm = () => {
+    setIsFirm(!isFirm)
+  }
   return (
     <FormWrapper title="a PART OF OUR DISTRIBUTION SYSTEM">
       <div style={{ width: "500px", marginTop: "30px" }}>
         <label style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}>
-          Basic Details
+          Personal Details
         </label>
       </div>
       <div style={{ width: "450px" }}></div>
@@ -56,9 +61,37 @@ export function UserForm({
         />
       </div>
       <div style={{ width: "500px" }}>
-        <label>Date Of Birth</label>
+        <label>Address</label>
         <br />
-        <input required type="date" value={dob} />
+        <input
+          autoFocus
+          required
+          type="text"
+          value={address}
+          placeholder="Type your address"
+        />
+      </div>
+      <div style={{ width: "450px" }}>
+        <label>State</label>
+        <br />
+        <input
+          autoFocus
+          required
+          type="text"
+          value={address}
+          placeholder="Type your state"
+        />
+      </div>
+      <div style={{ width: "500px" }}>
+        <label>Pincode</label>
+        <br />
+        <input
+          autoFocus
+          required
+          type="number"
+          value={address}
+          placeholder="Type your pincode"
+        />
       </div>
       <div style={{ width: "450px" }}>
         <label>Applicant's Mobile No. (आवेदक मोबाइल नं.)</label>
@@ -72,7 +105,7 @@ export function UserForm({
       </div>
       <div style={{ width: "500px", marginTop: "30px" }}>
         <label style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}>
-          Partner Details
+          Application Details
         </label>
       </div>
       <div style={{ width: "450px" }}></div>
@@ -98,16 +131,32 @@ export function UserForm({
             <option value={application}>Other (अन्य)</option> */}
         </select>
       </div>
-      <div style={{ width: "450px" }}>
-        <label>Firm Name (फर्म का नाम)</label>
-        <br />
-        <input
-          required
-          type="text"
-          value={contact}
-          placeholder="Type Firm's Name"
-        />
-      </div>
+      {!isFirm && (
+        <div style={{ width: "450px" }}>
+          <label>Do you have a firm?</label>
+          <br />
+          <button
+            style={{ padding: "5px", margin: "15px 0 0 0" }}
+            onClick={() => {
+              changeFirm()
+            }}
+          >
+            Yes
+          </button>
+        </div>
+      )}
+      {isFirm && (
+        <div style={{ width: "450px" }}>
+          <label>Firm Name (फर्म का नाम)</label>
+          <br />
+          <input
+            required
+            type="text"
+            value={contact}
+            placeholder="Type Firm's Name"
+          />
+        </div>
+      )}
       {/* <div style={{ width: "500px" }}>
         <label>Partner Type (साथी का प्रकार)</label>
         <br />
@@ -121,7 +170,7 @@ export function UserForm({
         
         </select>
       </div> */}
-      {partner && (
+      {/* {partner && (
         <div style={{ width: "500px", marginTop: "30px" }}>
           <label
             style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
@@ -132,7 +181,7 @@ export function UserForm({
       )}
       {partner && <div style={{ width: "450px" }}></div>}
       {partner && <hr />}
-      {partner && <hr />}
+      {partner && <hr />} */}
       {partner && (
         <div style={{ width: "500px" }}>
           <label>State (राज्य)</label>
@@ -255,23 +304,43 @@ export function UserForm({
           </p>
         </div>
       )}
+      {partner === "stockist" && district && (
+        <div style={{ width: "450px" }}></div>
+      )}
       {partner === "distributor" && district && (
         <div style={{ width: "500px" }}>
           <p style={{ padding: " 10px 0" }}>
-            Security Deposit : 50 Thousand<sup>*</sup>{" "}
+            Security Deposit :<strong> 50 Thousand</strong>
+            <sup> *</sup>{" "}
           </p>
 
           <p style={{ padding: " 10px 0" }}>
-            Minimum Order Amount : 1.5 Lacs<sup>*</sup>
+            Minimum Order Amount : <strong>1.5 Lacs</strong>
+            <sup> *</sup>
           </p>
         </div>
       )}
-      <div style={{ width: "450px" }}></div>
       {partner === "distributor" && district && (
+        <div style={{ width: "450px" }}></div>
+      )}
+      <div style={{ width: "500px", paddingTop: "7px", fontSize: "16px" }}>
+        <br />
+        <strong>Contact us:</strong>
+        <br />
+        E-Mail: sales@ramaera.in | Phone: +91-0120-4152818
+      </div>
+      <div style={{ width: "450px", fontSize: "16px" }}>
+        <br />
+        <strong>संपर्क करें:</strong>
+        <br />
+        ई-मेल: sales@ramaera.in | फोन: +91-120-4152818
+      </div>
+      {partner && district && (
         <div style={{ width: "500px" }}>
-          <p style={{ fontSize: "10px" }}>
-            <sup>*</sup>All Data for the proposal purpose only, It would be
-            final as per demand and supply basis
+          <p style={{ fontSize: "12px" }}>
+            <sup>*</sup>All Data for the proposal purpose only,
+            <br />
+            It would be final as per demand and supply basis
           </p>
         </div>
       )}
