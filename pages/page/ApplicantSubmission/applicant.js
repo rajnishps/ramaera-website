@@ -1,7 +1,6 @@
 import { DataGrid } from "@mui/x-data-grid"
 import Box from "@mui/material/Box"
 import Text from "../../../components/Text/Text"
-import { dataa } from "./../ApplicantSubmission/Collection/data"
 import { GetApplications } from "../../../apollo/queries"
 import { useQuery } from "@apollo/client"
 import { Container } from "./style"
@@ -11,10 +10,9 @@ const Applicant = () => {
   if (loading) return "Loading..."
   if (error) return `Error! ${error.message}`
   if (data) {
-    console.log(data)
+    console.log(data.applicants)
   }
   const columns = [
-    { field: "id", headerName: "ID", width: 90 },
     {
       field: "name",
       headerName: " Name",
@@ -22,18 +20,18 @@ const Applicant = () => {
       //editable: true,
     },
     {
-      field: "email",
-      headerName: "Email",
+      field: "State",
+      headerName: "State",
       width: 150,
     },
     {
-      field: "application",
-      headerName: "Application",
+      field: "District",
+      headerName: "District",
       width: 110,
     },
     {
-      field: "firm",
-      headerName: "Firm",
+      field: "applicantType",
+      headerName: "Applicant Type",
       description: "This column has a value getter and is not sortable.",
       sortable: false,
       width: 160,
@@ -45,10 +43,11 @@ const Applicant = () => {
   if (data) {
     data.applicants.forEach((item) => {
       rows.push({
+        id: item.mobileNumber,
         name: item.name,
-        email: item.email,
-        application: item.application,
-        firm: item.firm,
+        State: item.State,
+        District: item.District,
+        applicantType: item.applicantType,
       })
     })
   }
