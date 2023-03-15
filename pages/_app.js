@@ -7,6 +7,7 @@ import NextNProgress from "nextjs-progressbar"
 import { ApolloProvider } from "@apollo/client"
 import { store } from "../state/store"
 import { Provider } from "react-redux"
+import client from "../apollo/index"
 
 export default function App({ Component, pageProps }) {
   useEffect(() => {
@@ -47,7 +48,7 @@ export default function App({ Component, pageProps }) {
       <NextNProgress color="#f9d5239b" startPosition={0.4} height={3} />
 
       {
-        <ApolloProvider client={true}>
+        <ApolloProvider client={client}>
           <Provider store={store}>
             <Component {...pageProps} />
           </Provider>

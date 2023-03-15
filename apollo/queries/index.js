@@ -8,7 +8,7 @@ $applicantType: ApplicantType!,
 $email: String!,
 $firmName: String!,
 $mobileNumber: String!,
-$name: String,
+$name: String!,
 ){createApplication(
     data: {name: $name
       applicantType: $applicantType
