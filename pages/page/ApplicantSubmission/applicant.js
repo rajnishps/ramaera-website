@@ -110,6 +110,7 @@ const Applicant = () => {
             right: "100px",
             top: "20px",
             position: "absolute",
+            cursor: "pointer",
           }}
         />
 
@@ -129,7 +130,9 @@ const Applicant = () => {
           onClose={handleClose}
         >
           <MenuItem onClick={handleClose}>Name</MenuItem>
-          <MenuItem onClick={handleClose}>Change Password</MenuItem>
+          <a href="/passwordChange">
+            <MenuItem onClick={handleClose}>Change Password</MenuItem>
+          </a>
           <MenuItem onClick={handleClose}>Logout</MenuItem>
         </Menu>
 
