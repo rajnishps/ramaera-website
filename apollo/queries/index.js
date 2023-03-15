@@ -38,3 +38,17 @@ $password: String!,
       accessToken
     }
 }`)
+export const GetApplications = gql(`
+
+  query getAllApps{
+  applicants{
+    name
+    email
+    District
+    State
+    applicantType
+    applicantAddress
+    firmName
+    mobileNumber
+  }
+}`)

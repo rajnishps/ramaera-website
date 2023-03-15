@@ -1,4 +1,4 @@
-export const data = [
+export const dataa = [
   {
     id: "1",
     name: "kabir",
@@ -54,10 +54,10 @@ export const data = [
     state: "Bihar",
     district: "Banka",
   },
-];
+]
 
 const StyleImage = () => {
-  return <div>StyleImage</div>;
-};
+  return <div>StyleImage</div>
+}
 
-export default StyleImage;
+export default StyleImage

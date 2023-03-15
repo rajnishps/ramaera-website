@@ -1,13 +1,18 @@
-import { DataGrid } from "@mui/x-data-grid";
-import Box from "@mui/material/Box";
-import Text from "../../../components/Text/Text";
-//import { Link } from "react-router-dom";
-//import LaunchIcon from "@material-ui/icons/Launch";
-import { data } from "./../ApplicantSubmission/Collection/data";
-
-import { Container } from "./style";
+import { DataGrid } from "@mui/x-data-grid"
+import Box from "@mui/material/Box"
+import Text from "../../../components/Text/Text"
+import { dataa } from "./../ApplicantSubmission/Collection/data"
+import { GetApplications } from "../../../apollo/queries"
+import { useQuery } from "@apollo/client"
+import { Container } from "./style"
 
 const Applicant = () => {
+  const { loading, error, data } = useQuery(GetApplications)
+  if (loading) return "Loading..."
+  if (error) return `Error! ${error.message}`
+  if (data) {
+    console.log(data)
+  }
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
@@ -33,20 +38,20 @@ const Applicant = () => {
       sortable: false,
       width: 160,
     },
-  ];
+  ]
 
-  const rows = [];
+  const rows = []
 
-  data &&
-    data.forEach((item, index) => {
+  if (data) {
+    data.applicants.forEach((item) => {
       rows.push({
-        id: item.id,
         name: item.name,
         email: item.email,
         application: item.application,
         firm: item.firm,
-      });
-    });
+      })
+    })
+  }
 
   return (
     <>
@@ -97,7 +102,7 @@ const Applicant = () => {
         </Box>
       </Container>
     </>
-  );
-};
+  )
+}
 
-export default Applicant;
+export default Applicant
