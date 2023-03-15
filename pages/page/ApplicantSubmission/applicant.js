@@ -1,50 +1,101 @@
-//import FilterableTable from "react-filterable-table";
-const FilterableTable = require("react-filterable-table");
+import { DataGrid } from "@mui/x-data-grid";
+import Box from "@mui/material/Box";
+import Text from "../../../components/Text/Text";
+//import { Link } from "react-router-dom";
+//import LaunchIcon from "@material-ui/icons/Launch";
+import { data } from "./../ApplicantSubmission/Collection/data";
+
+import { Container } from "./style";
 
 const Applicant = () => {
-  const datafield = [
-    { name: "Steve", age: 27, job: "Sandwich Eater" },
-    { name: "Gary", age: 35, job: "Falafeler" },
-    { name: "Greg", age: 24, job: "Jelly Bean Juggler" },
-    { name: "Jeb", age: 39, job: "Burrito Racer" },
-    { name: "Jeff", age: 48, job: "Hot Dog Wrangler" },
+  const columns = [
+    { field: "id", headerName: "ID", width: 90 },
+    {
+      field: "name",
+      headerName: " Name",
+      width: 150,
+      //editable: true,
+    },
+    {
+      field: "email",
+      headerName: "Email",
+      width: 150,
+    },
+    {
+      field: "application",
+      headerName: "Application",
+      width: 110,
+    },
+    {
+      field: "firm",
+      headerName: "Firm",
+      description: "This column has a value getter and is not sortable.",
+      sortable: false,
+      width: 160,
+    },
   ];
 
-  const fields = [
-    {
-      name: "name",
-      displayName: "Name",
-      inputFilterable: true,
-      sortable: true,
-    },
-    {
-      name: "age",
-      displayName: "Age",
-      inputFilterable: true,
-      exactFilterable: true,
-      sortable: true,
-    },
-    {
-      name: "job",
-      displayName: "Occupation",
-      inputFilterable: true,
-      exactFilterable: true,
-      sortable: true,
-    },
-  ];
+  const rows = [];
+
+  data &&
+    data.forEach((item, index) => {
+      rows.push({
+        id: item.id,
+        name: item.name,
+        email: item.email,
+        application: item.application,
+        firm: item.firm,
+      });
+    });
 
   return (
     <>
-      <div>
-        <FilterableTable
-          namespace="People"
-          initialSort="name"
-          data={data}
-          fields={fields}
-          noRecordsMessage="There are no people to display"
-          noFilteredRecordsMessage="No people match your filters!"
+      <Container>
+        <Text
+          Text="Applicant List"
+          lg="linear-gradient(to right, #ffa73d, gold)"
+          font
+          size="clamp(2.2rem, 1.2vw, 1.5rem)"
+          fw="400"
+          align="center"
+          lh="50px"
+          m="0 0 1rem 0"
+          xmsize="clamp(2.4rem, 1.5vw, 2rem)"
+          xssize="clamp(2.4rem, 1.5vw, 2rem)"
+          msize="2rem"
+          mwidth="100%"
+          padding="0"
+          mpadding="0"
+          mta="center"
+          mlh="unset"
         />
-      </div>
+        <Box
+          sx={{
+            height: "80vh",
+            width: "90%",
+            margin: "auto",
+            background: "white",
+            padding: "20px",
+            borderRadius: "20px",
+            marginBottom: "50px",
+          }}
+        >
+          <DataGrid
+            rows={rows}
+            columns={columns}
+            initialState={{
+              pagination: {
+                paginationModel: {
+                  pageSize: 8,
+                },
+              },
+            }}
+            pageSizeOptions={[8]}
+            checkboxSelection
+            disableRowSelectionOnClick
+          />
+        </Box>
+      </Container>
     </>
   );
 };

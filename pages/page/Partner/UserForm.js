@@ -1,5 +1,5 @@
-import { FormWrapper } from "./FormWrapper"
-import { useState } from "react"
+import { FormWrapper } from "./FormWrapper";
+import { useState } from "react";
 // todo move state above,, firm name optional,, more detail,, delete dob ( applicant address)
 export function UserForm({
   yourName,
@@ -10,24 +10,24 @@ export function UserForm({
   partnerType,
   contact,
 }) {
-  const [partner, setPartner] = useState("")
-  const [stateIndia, setStateIndia] = useState("")
-  const [isFirm, setIsFirm] = useState(false)
-  const [district, setDistrict] = useState("")
+  const [partner, setPartner] = useState("");
+  const [stateIndia, setStateIndia] = useState("");
+  const [isFirm, setIsFirm] = useState(false);
+  const [district, setDistrict] = useState("");
   const changeHandler = (val) => {
-    setPartner(val)
-    setDistrict("")
-  }
+    setPartner(val);
+    setDistrict("");
+  };
   const changeStateIndia = (val) => {
-    setStateIndia(val)
-    setDistrict("")
-  }
+    setStateIndia(val);
+    setDistrict("");
+  };
   const changeDistrict = (val) => {
-    setDistrict(val)
-  }
+    setDistrict(val);
+  };
   const changeFirm = () => {
-    setIsFirm(!isFirm)
-  }
+    setIsFirm(!isFirm);
+  };
   return (
     <FormWrapper title="a PART OF OUR DISTRIBUTION SYSTEM">
       <div style={{ width: "500px", marginTop: "30px" }}>
@@ -61,36 +61,36 @@ export function UserForm({
         />
       </div>
       <div style={{ width: "500px" }}>
-        <label>Address</label>
+        <label>Address (पता)</label>
         <br />
         <input
           autoFocus
           required
           type="text"
           value={address}
-          placeholder="Type your address"
+          placeholder="Type your address (अपना पता लिखो)"
         />
       </div>
       <div style={{ width: "450px" }}>
-        <label>State</label>
+        <label>State (राज्य)</label>
         <br />
         <input
           autoFocus
           required
           type="text"
           value={address}
-          placeholder="Type your state"
+          placeholder="Type your state (अपना राज्य लिखो)"
         />
       </div>
       <div style={{ width: "500px" }}>
-        <label>Pincode</label>
+        <label>Pincode (पिन कोड)</label>
         <br />
         <input
           autoFocus
           required
           type="number"
           value={address}
-          placeholder="Type your pincode"
+          placeholder="Type your pincode (अपना पिन कोड लिखो)"
         />
       </div>
       <div style={{ width: "450px" }}>
@@ -100,7 +100,7 @@ export function UserForm({
           required
           type="number"
           value={contact}
-          placeholder="Type Contact No."
+          placeholder="Type Contact No. (अपना संपर्क नं. लिखो)"
         />
       </div>
       <div style={{ width: "500px", marginTop: "30px" }}>
@@ -116,7 +116,7 @@ export function UserForm({
         <br />
         <select
           onChange={(e) => {
-            changeHandler(e.target.value)
+            changeHandler(e.target.value);
           }}
         >
           <option disabled selected>
@@ -133,12 +133,12 @@ export function UserForm({
       </div>
       {!isFirm && (
         <div style={{ width: "450px" }}>
-          <label>Do you have a firm?</label>
+          <label>Do you have a firm? (क्या आपके पास फर्म है?)</label>
           <br />
           <button
             style={{ padding: "5px", margin: "15px 0 0 0" }}
             onClick={() => {
-              changeFirm()
+              changeFirm();
             }}
           >
             Yes
@@ -153,7 +153,7 @@ export function UserForm({
             required
             type="text"
             value={contact}
-            placeholder="Type Firm's Name"
+            placeholder="Type Firm's Name (अपना फर्म का नाम लिखो)"
           />
         </div>
       )}
@@ -188,7 +188,7 @@ export function UserForm({
           <br />
           <select
             onChange={(e) => {
-              changeStateIndia(e.target.value)
+              changeStateIndia(e.target.value);
             }}
           >
             <option disabled selected>
@@ -206,7 +206,7 @@ export function UserForm({
             <br />
             <select
               onChange={(e) => {
-                changeDistrict(e.target.value)
+                changeDistrict(e.target.value);
               }}
             >
               <option disabled selected>
@@ -234,7 +234,7 @@ export function UserForm({
             <br />
             <select
               onChange={(e) => {
-                changeDistrict(e.target.value)
+                changeDistrict(e.target.value);
               }}
             >
               <option disabled selected>
@@ -251,7 +251,7 @@ export function UserForm({
             <br />
             <select
               onChange={(e) => {
-                changeDistrict(e.target.value)
+                changeDistrict(e.target.value);
               }}
             >
               <option disabled selected>
@@ -284,7 +284,7 @@ export function UserForm({
             <br />
             <select
               onChange={(e) => {
-                changeDistrict(e.target.value)
+                changeDistrict(e.target.value);
               }}
             >
               <option disabled selected>
@@ -345,5 +345,5 @@ export function UserForm({
         </div>
       )}
     </FormWrapper>
-  )
+  );
 }
