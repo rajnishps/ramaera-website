@@ -25,7 +25,7 @@ export function UserForm({}) {
     setStateIndia(val)
     setDistrict("")
   }
-  const changeDistrict = (val) => {
+  const changeDistricts = (val) => {
     setDistrict(val)
   }
   const changeFirm = () => {
@@ -213,7 +213,7 @@ export function UserForm({}) {
             <br />
             <select
               onChange={(e) => {
-                changeDistrict(e.target.value)
+                changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
               }}
             >
@@ -242,7 +242,7 @@ export function UserForm({}) {
             <br />
             <select
               onChange={(e) => {
-                changeDistrict(e.target.value)
+                changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
               }}
             >
@@ -260,7 +260,7 @@ export function UserForm({}) {
             <br />
             <select
               onChange={(e) => {
-                changeDistrict(e.target.value)
+                changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
               }}
             >
@@ -294,7 +294,7 @@ export function UserForm({}) {
             <br />
             <select
               onChange={(e) => {
-                changeDistrict(e.target.value)
+                changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
               }}
             >

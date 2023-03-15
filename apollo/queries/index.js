@@ -10,7 +10,8 @@ $firmName: String!,
 $mobileNumber: String!,
 $name: String!,
 ){createApplication(
-    data: {name: $name
+    data: {
+      name: $name
       applicantType: $applicantType
       applicantAddress: $applicantAddress
       email: $email
@@ -18,8 +19,22 @@ $name: String!,
       mobileNumber: $mobileNumber
       District: $District
       State: $State
-    }) {
+    }) 
+    {
       name
     }
-  
+}`)
+
+export const LogIn = gql(`
+mutation loginUser (
+$email: String!,
+$password: String!,
+){login(
+    data: {
+      email: $email
+      password: $password
+    }) 
+    {
+      accessToken
+    }
 }`)

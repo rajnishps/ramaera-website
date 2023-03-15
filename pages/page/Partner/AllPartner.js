@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import { UserForm } from "./UserForm"
 import Button from "../../../components/Button/SubmitButton"
 import { CreateApplications } from "../../../apollo/queries/index"
@@ -18,33 +17,6 @@ const Ideas = () => {
   const mobileNumber1 = useSelector((state) => state.application.mobileNumber)
   const District1 = useSelector((state) => state.application.District)
   const State1 = useSelector((state) => state.application.State)
-
-  /* const changeFinalData = (e) => {
-    e.preventDefault()
-    setFinalData({
-      name: name,
-      applicantType: applicantType,
-      applicantAddress: applicantAddress,
-      email: email,
-      firmName: firmName,
-      mobileNumber: mobileNumber,
-      District: District,
-      State: State,
-    })
-    console.log(finalData)
-  } */
-  /*   useEffect(() => {
-    changeFinalData()
-  }, [
-    name,
-    applicantType,
-    applicantAddress,
-    email,
-    firmName,
-    mobileNumber,
-    District,
-    State,
-  ]) */
 
   const handleSubmit = (e) => {
     e.preventDefault()
