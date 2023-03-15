@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react"
 import { UserForm } from "./UserForm"
 import Button from "../../../components/Button/SubmitButton"
 import { CreateApplications } from "../../../apollo/queries/index"
@@ -6,68 +5,33 @@ import { useMutation } from "@apollo/client"
 import { useSelector } from "react-redux"
 
 const Ideas = () => {
-  const [{ data, loading, error }] = useMutation(CreateApplications)
-  const [finalData, setFinalData] = useState({})
-  console.log("vreating", data)
-  console.log("error===========>", error)
-  const name = useSelector((state) => state.application.name)
-  const applicantType = useSelector((state) => state.application.applicantType)
-  const applicantAddress = useSelector(
+  const [createApplication, { data, loading, error }] =
+    useMutation(CreateApplications)
+  const name1 = useSelector((state) => state.application.name)
+  const applicantType1 = useSelector((state) => state.application.applicantType)
+  const applicantAddress1 = useSelector(
     (state) => state.application.applicantAddress
   )
-  const email = useSelector((state) => state.application.email)
-  const firmName = useSelector((state) => state.application.firmName)
-  const mobileNumber = useSelector((state) => state.application.mobileNumber)
-  const District = useSelector((state) => state.application.District)
-  const State = useSelector((state) => state.application.State)
-
-  const changeFinalData = (e) => {
-    e.preventDefault()
-    setFinalData({
-      name: name,
-      applicantType: applicantType,
-      applicantAddress: applicantAddress,
-      email: email,
-      firmName: firmName,
-      mobileNumber: mobileNumber,
-      District: District,
-      State: State,
-    })
-    console.log(finalData)
-  }
-  /*   useEffect(() => {
-    changeFinalData()
-  }, [
-    name,
-    applicantType,
-    applicantAddress,
-    email,
-    firmName,
-    mobileNumber,
-    District,
-    State,
-  ]) */
+  const email1 = useSelector((state) => state.application.email)
+  const firmName1 = useSelector((state) => state.application.firmName)
+  const mobileNumber1 = useSelector((state) => state.application.mobileNumber)
+  const District1 = useSelector((state) => state.application.District)
+  const State1 = useSelector((state) => state.application.State)
 
   const handleSubmit = (e) => {
     e.preventDefault()
-  }
-  const submitMe = async () => {
-    try {
-      await data({
-        variables: {
-          name: name,
-          applicantType: applicantType,
-          applicantAddress: applicantAddress,
-          email: email,
-          firmName: firmName,
-          mobileNumber: mobileNumber,
-          District: District,
-          State: State,
-        },
-      })
-    } catch (err) {
-      console.log("error", err)
-    }
+    createApplication({
+      variables: {
+        name: name1,
+        applicantType: applicantType1,
+        applicantAddress: applicantAddress1,
+        email: email1,
+        firmName: firmName1,
+        mobileNumber: mobileNumber1,
+        District: District1,
+        State: State1,
+      },
+    })
   }
 
   return (
@@ -82,7 +46,7 @@ const Ideas = () => {
         color: "black",
       }}
     >
-      <form onSubmit={(e) => changeFinalData(e)}>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <div
           style={{
             position: "absolute",
@@ -100,11 +64,7 @@ const Ideas = () => {
             justifyContent: "flex-end",
           }}
         >
-          <button
-            style={{ background: "none", border: "none" }}
-            onClick={() => submitMe()}
-            type="submit"
-          >
+          <button style={{ background: "none", border: "none" }} type="submit">
             <Button
               nav
               width="140px"

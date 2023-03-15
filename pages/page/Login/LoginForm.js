@@ -1,25 +1,38 @@
-import Text from "../../../components/Text/Text";
-import Button from "../../../components/Button/SubmitButton";
-import EmailIcon from "@mui/icons-material/Email";
-import LockIcon from "@mui/icons-material/Lock";
-import {
-  Container,
-  FormBox,
-  HeaderForm,
-  Social,
-  LoginContainer,
-  LoginTitle,
-} from "./style";
-import { margin } from "@mui/system";
+import Text from "../../../components/Text/Text"
+import Button from "../../../components/Button/SubmitButton"
+import EmailIcon from "@mui/icons-material/Email"
+import LockIcon from "@mui/icons-material/Lock"
+import { LogIn } from "../../../apollo/queries/index"
+import { useMutation } from "@apollo/client"
+import { useSelector, useDispatch } from "react-redux"
 
-function onSubmit(e) {
-  e.preventDefault();
-}
+import { Container, FormBox, LoginContainer, LoginTitle } from "./style"
+import { getEmail, getPassword } from "../../../state/slice/userSlice"
 
 const LoginForm = () => {
+  const [loginUser, { data, loading, error }] = useMutation(LogIn)
+  const password1 = useSelector((state) => state.logInUser.password)
+  const email1 = useSelector((state) => state.logInUser.email)
+  const dispatch = useDispatch()
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    try {
+      console.log("accesstoken=======>", data)
+      await loginUser({
+        variables: {
+          email: email1,
+          password: password1,
+        },
+      })
+    } catch (err) {
+      console.log("login error=======>", err)
+    }
+  }
+
   return (
     <Container>
-      <FormBox onSubmit={onSubmit}>
+      <FormBox onSubmit={(e) => handleSubmit(e)}>
         <Text
           Text="EMPLOYEE"
           lg="linear-gradient(to right, #ffa73d, gold)"
@@ -72,6 +85,7 @@ const LoginForm = () => {
               type="email"
               placeholder="Email Id"
               required
+              onChange={(e) => dispatch(getEmail(e.target.value))}
               style={{
                 width: "380px",
                 height: "45px",
@@ -94,6 +108,7 @@ const LoginForm = () => {
               type="password"
               placeholder="Password"
               required
+              onChange={(e) => dispatch(getPassword(e.target.value))}
               style={{
                 width: "380px",
                 height: "45px",
@@ -116,7 +131,7 @@ const LoginForm = () => {
         </LoginContainer>
       </FormBox>
     </Container>
-  );
-};
+  )
+}
 
-export default LoginForm;
+export default LoginForm
