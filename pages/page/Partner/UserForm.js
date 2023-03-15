@@ -65,7 +65,7 @@ export function UserForm({}) {
         />
       </div>
       <div style={{ width: "500px" }}>
-        <label>Address</label>
+        <label>Address (पता)</label>
         <br />
         <input
           autoFocus
@@ -76,7 +76,7 @@ export function UserForm({}) {
         />
       </div>
       <div style={{ width: "450px" }}>
-        <label>State</label>
+        <label>State (राज्य)</label>
         <br />
         <input
           autoFocus
@@ -87,7 +87,7 @@ export function UserForm({}) {
         />
       </div>
       <div style={{ width: "500px" }}>
-        <label>Pincode</label>
+        <label>Pincode (पिन कोड)</label>
         <br />
         <input
           autoFocus
@@ -138,7 +138,7 @@ export function UserForm({}) {
       </div>
       {!isFirm && (
         <div style={{ width: "450px" }}>
-          <label>Do you have a firm?</label>
+          <label>Do you have a firm? (क्या आपके पास फर्म है?)</label>
           <br />
           <button
             style={{ padding: "5px", margin: "15px 0 0 0" }}
