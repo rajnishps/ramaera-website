@@ -3,7 +3,7 @@ import Applicant from "./page/ApplicantSubmission/applicant"
 const applicants = () => {
   return (
     <>
-      <Applicant />
+      <Applicant style={{ marginTop: "1000px" }} />
     </>
   )
 }

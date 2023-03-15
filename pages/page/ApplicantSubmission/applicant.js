@@ -1,42 +1,68 @@
-import { DataGrid } from "@mui/x-data-grid"
-import Box from "@mui/material/Box"
-import Text from "../../../components/Text/Text"
-import { GetApplications } from "../../../apollo/queries"
-import { useQuery } from "@apollo/client"
-import { Container } from "./style"
+import React, { useState } from "react";
+import { DataGrid } from "@mui/x-data-grid";
+import Box from "@mui/material/Box";
+import Text from "../../../components/Text/Text";
+import { Link } from "react-router-dom";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
+import { data } from "./../ApplicantSubmission/Collection/data";
+import { Container } from "./style";
 
 const Applicant = () => {
-  const { loading, error, data } = useQuery(GetApplications)
-  if (loading) return "Loading..."
-  if (error) return `Error! ${error.message}`
-  if (data) {
-    console.log(data.applicants)
-  }
+  const routeChange = () => {
+    <a href="/applicantDetail" />;
+  };
+
+  const [anchorEl, setAnchorEl] = useState(false);
+
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   const columns = [
     {
       field: "name",
       headerName: " Name",
       width: 150,
-      //editable: true,
+      editable: false,
+      selection: false,
     },
     {
-      field: "State",
-      headerName: "State",
+      field: "email",
+      headerName: "Email",
+      width: 200,
+    },
+    {
+      field: "applicatant",
+      headerName: "Applicatant",
       width: 150,
     },
     {
-      field: "District",
-      headerName: "District",
-      width: 110,
-    },
-    {
-      field: "applicantType",
-      headerName: "Applicant Type",
+      field: "state",
+      headerName: "State",
       description: "This column has a value getter and is not sortable.",
       sortable: false,
       width: 160,
     },
-  ]
+    {
+      field: "district",
+      headerName: "District",
+      description: "This column has a value getter and is not sortable.",
+      sortable: false,
+      width: 160,
+    },
+    {
+      field: "status",
+      headerName: "Status",
+      minWidth: 150,
+      flex: 0.3,
+    },
+  ];
 
   const rows = []
 
@@ -45,12 +71,13 @@ const Applicant = () => {
       rows.push({
         id: item.mobileNumber,
         name: item.name,
-        State: item.State,
-        District: item.District,
-        applicantType: item.applicantType,
-      })
-    })
-  }
+        email: item.email,
+        applicatant: item.applicatant,
+        state: item.state,
+        district: item.district,
+        status: item.status,
+      });
+    });
 
   return (
     <>
@@ -73,6 +100,41 @@ const Applicant = () => {
           mta="center"
           mlh="unset"
         />
+
+        <AccountCircleIcon
+          onClick={handleMenu}
+          style={{
+            color: "white",
+            fontSize: "50px",
+            right: "100px",
+            top: "20px",
+            position: "absolute",
+            cursor: "pointer",
+          }}
+        />
+
+        <Menu
+          id="menu-appbar"
+          anchorEl={anchorEl}
+          anchorOrigin={{
+            vertical: "top",
+            horizontal: "right",
+          }}
+          keepMounted
+          transformOrigin={{
+            vertical: "top",
+            horizontal: "right",
+          }}
+          open={Boolean(anchorEl)}
+          onClose={handleClose}
+        >
+          <MenuItem onClick={handleClose}>Name</MenuItem>
+          <a href="/passwordChange">
+            <MenuItem onClick={handleClose}>Change Password</MenuItem>
+          </a>
+          <MenuItem onClick={handleClose}>Logout</MenuItem>
+        </Menu>
+
         <Box
           sx={{
             height: "80vh",
@@ -95,8 +157,10 @@ const Applicant = () => {
               },
             }}
             pageSizeOptions={[8]}
-            checkboxSelection
+            disablecolumnSelectionOnClick
+            displayRowCheckbox={false}
             disableRowSelectionOnClick
+            onClick={routeChange}
           />
         </Box>
       </Container>
