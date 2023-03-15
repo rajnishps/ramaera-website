@@ -1,10 +1,14 @@
-import React, { useState } from "react";
-import { DataGrid } from "@mui/x-data-grid";
-import Box from "@mui/material/Box";
-import Text from "../../../components/Text/Text";
-import { data } from "./Collection/data";
+import React, { useState } from "react"
+import { DataGrid } from "@mui/x-data-grid"
+import Box from "@mui/material/Box"
+import Text from "../../../components/Text/Text"
+import { data } from "./Collection/data"
+import { useQuery } from "@apollo/client"
+import { GetContactResponses } from "../../../apollo/queries"
 
 const ContactInfo = () => {
+  const { loading, error, data } = useQuery(GetContactResponses)
+
   const columns = [
     {
       field: "name",
@@ -37,21 +41,21 @@ const ContactInfo = () => {
       sortable: false,
       width: 450,
     },
-  ];
+  ]
 
-  const rows = [];
-
-  data &&
-    data.forEach((item, index) => {
+  const rows = []
+  if (data) {
+    data.contactUsRepsonses.forEach((item) => {
       rows.push({
         id: item.name,
         name: item.name,
         email: item.email,
         company: item.company,
-        subject: item.subject,
+        subject: item.Subject,
         message: item.message,
-      });
-    });
+      })
+    })
+  }
 
   return (
     <>
@@ -104,7 +108,7 @@ const ContactInfo = () => {
         </Box>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default ContactInfo;
+export default ContactInfo

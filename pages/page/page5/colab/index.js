@@ -44,11 +44,7 @@ const index = () => {
   }
   const clearForm = () => {
     alert("Successfully Submitted, Thank You!")
-    setName("")
-    setEmail("")
-    setCompany("")
-    setSubject("")
-    setMessage("")
+    location.reload()
   }
   return (
     <>
