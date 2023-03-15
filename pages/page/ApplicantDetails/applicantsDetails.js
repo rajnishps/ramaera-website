@@ -1,6 +1,6 @@
-import { FormWrapper } from "../ApplicantDetails/FormWrapper";
+import { FormWrapper } from "../ApplicantDetails/FormWrapper"
 
-const applicantsDetails = () => {
+const applicantsDetails = (props) => {
   return (
     <>
       <div
@@ -28,32 +28,32 @@ const applicantsDetails = () => {
           <div style={{ width: "500px" }}>
             <label>Applicant's Name </label>
             <br />
-            <p>Name</p>
+            <p>{props.name}</p>
           </div>
           <div style={{ width: "450px" }}>
             <label>Applicant's Email </label>
             <br />
-            <p>Email</p>
+            <p>{props.email}</p>
           </div>
           <div style={{ width: "500px" }}>
             <label>Address</label>
             <br />
-            <p>Address</p>
+            <p>{props.applicantAddress}</p>
           </div>
           <div style={{ width: "450px" }}>
             <label>State </label>
             <br />
-            <p>State</p>
+            <p>{props.applicantState} </p>
           </div>
           <div style={{ width: "500px" }}>
             <label>Pincode </label>
             <br />
-            <p>Pincode</p>
+            <p>{props.applicantPin} </p>
           </div>
           <div style={{ width: "450px" }}>
             <label>Applicant's Mobile No. </label>
             <br />
-            <p>Mobile</p>
+            <p>{props.mobileNumber}</p>
           </div>
           <div style={{ width: "500px", marginTop: "30px" }}>
             <label
@@ -68,22 +68,22 @@ const applicantsDetails = () => {
           <div style={{ width: "500px" }}>
             <label>Application </label>
             <br />
-            <p>Application</p>
+            <p>{props.applicantType}</p>
           </div>
           <div style={{ width: "450px" }}>
             <label>Firm Name</label>
             <br />
-            <p>Firm Name</p>
+            <p>{props.applicantType}</p>
           </div>
           <div style={{ width: "500px" }}>
             <label>State</label>
             <br />
-            <p>State</p>
+            <p>{props.State}</p>
           </div>
           <div style={{ width: "450px" }}>
             <label>District</label>
             <br />
-            <p>District</p>
+            <p>{props.District}</p>
           </div>
 
           <div style={{ width: "450px" }}>
@@ -105,7 +105,7 @@ const applicantsDetails = () => {
         </FormWrapper>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default applicantsDetails;
+export default applicantsDetails

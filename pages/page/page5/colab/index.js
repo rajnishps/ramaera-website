@@ -1,7 +1,8 @@
-import React from "react"
+import { useState } from "react"
 import Text from "../../../../components/Text/Text"
-import Button from "../../../../components/Button/Button"
-
+import Button from "../../../../components/Button/SubmitButton"
+import { CreateContactResponse } from "../../../../apollo/queries/index"
+import { useMutation } from "@apollo/client"
 import {
   Box,
   BackgroundImg,
@@ -19,6 +20,36 @@ import {
 } from "./style"
 
 const index = () => {
+  const [createContactUsResponse, { data, loading, error }] = useMutation(
+    CreateContactResponse
+  )
+  const [name, setName] = useState("")
+  const [email, setEmail] = useState("")
+  const [company, setCompany] = useState("")
+  const [Subject, setSubject] = useState("")
+  const [message, setMessage] = useState("")
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    const darara = createContactUsResponse({
+      variables: {
+        name: name,
+        email: email,
+        company: company,
+        Subject: Subject,
+        message: message,
+      },
+    })
+    console.log("dayta========+>", darara)
+    clearForm()
+  }
+  const clearForm = () => {
+    alert("Successfully Submitted, Thank You!")
+    setName("")
+    setEmail("")
+    setCompany("")
+    setSubject("")
+    setMessage("")
+  }
   return (
     <>
       <Box>
@@ -52,64 +83,97 @@ const index = () => {
               <p>0120-4152818</p>
             </HeaderIcon2>
           </HeaderIcon>
-
           <Form>
-            <Fline1>
-              <div>
-                <label>Full Name</label>
-                <br />
-                <Input type="text" placeholder="Enter Your Name" required />
-              </div>
+            <form onSubmit={(e) => handleSubmit(e)}>
+              <Fline1>
+                <div>
+                  <label>Full Name</label>
+                  <br />
+                  <Input
+                    type="text"
+                    onChange={(e) => {
+                      setName(e.target.value)
+                    }}
+                    placeholder="Enter Your Name"
+                    required
+                  />
+                </div>
 
-              <div>
-                <label>Your Email</label>
-                <br />
-                <Input type="email" placeholder="Enter your email" required />
-              </div>
-            </Fline1>
+                <div>
+                  <label>Your Email</label>
+                  <br />
+                  <Input
+                    type="email"
+                    onChange={(e) => {
+                      setEmail(e.target.value)
+                    }}
+                    placeholder="Enter your email"
+                    required
+                  />
+                </div>
+              </Fline1>
 
-            <Fline2>
-              <div>
-                <label>Company</label>
+              <Fline2>
+                <div>
+                  <label>Company</label>
+                  <br />
+                  <Input
+                    type="text"
+                    placeholder="Enter Your Company Name"
+                    required
+                    onChange={(e) => {
+                      setCompany(e.target.value)
+                    }}
+                  />
+                </div>
+
+                <div>
+                  <label>Subject </label>
+                  <br />
+                  <Input
+                    type="text"
+                    onChange={(e) => {
+                      setSubject(e.target.value)
+                    }}
+                    placeholder="How can I help you"
+                    required
+                  />
+                </div>
+              </Fline2>
+
+              <Fline3>
+                <label>Message</label>
                 <br />
-                <Input
-                  type="text"
-                  placeholder="Enter Your Company Name"
+                <TextArea
+                  type="textarea"
+                  rows={10}
+                  cols={35}
+                  onChange={(e) => {
+                    setMessage(e.target.value)
+                  }}
+                  placeholder="Hello there ,I would like to talk about..."
                   required
                 />
-              </div>
-
-              <div>
-                <label>Subject </label>
-                <br />
-                <Input type="text" placeholder="How can I help you" required />
-              </div>
-            </Fline2>
-
-            <Fline3>
-              <label>Message</label>
-              <br />
-              <TextArea
-                type="textarea"
-                rows={10}
-                cols={35}
-                placeholder="Hello there ,I would like to talk about..."
-                required
-              />
-            </Fline3>
-            <ButtonHolder>
-              <Button
-                br="999px"
-                bg="linear-gradient(to left,#ffd456,#ff9765)"
-                width="20px"
-                height="50px"
-                Text="Send Message "
-                fontSize="1rem"
-                padding="10px 30px"
-                fw="500"
-                sh
-              />
-            </ButtonHolder>
+              </Fline3>
+              <ButtonHolder>
+                <button
+                  type="submit"
+                  style={{ background: "none", border: "none" }}
+                >
+                  <Button
+                    br="999px"
+                    bg="linear-gradient(to left,#ffd456,#ff9765)"
+                    width="200px"
+                    height="50px"
+                    Text="Send Message "
+                    fontSize="1rem"
+                    padding="10px 30px"
+                    fw="500"
+                    sh
+                  />
+                </button>
+              </ButtonHolder>
+            </form>
           </Form>
         </Container>
       </Box>

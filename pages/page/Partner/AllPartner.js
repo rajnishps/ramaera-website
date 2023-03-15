@@ -32,8 +32,28 @@ const Ideas = () => {
         State: State1,
       },
     })
+    clearForm()
   }
+  const clearForm = () => {
+    alert("Your Applicaion is Submitted, Thank You!")
 
+    // name1=''
+    // applicantType=''
+    // applicantAddress=''
+    // email=''
+    // firmName=''
+    // mobileNumber=''
+    // District=''
+    // State=''
+    // name1 = useSelector(() => "")
+    // applicantType1 = useSelector(() => "")
+    // applicantAddress1 = useSelector(() => "")
+    // email1 = useSelector(() => "")
+    // firmName1 = useSelector(() => "")
+    // mobileNumber1 = useSelector(() => "")
+    // District1 = useSelector(() => "")
+    // State1 = useSelector(() => "")
+  }
   return (
     <div
       style={{

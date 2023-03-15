@@ -8,17 +8,17 @@ import MenuItem from "@mui/material/MenuItem"
 import { Container } from "./style"
 import { useQuery } from "@apollo/client"
 import { GetApplications } from "../../../apollo/queries"
+import Link from "next/link"
 
 const Applicant = () => {
   const { loading, error, data } = useQuery(GetApplications)
+  const [anchorEl, setAnchorEl] = useState(false)
   if (loading) return "Loading..."
   if (error) return `Error! ${error.message}`
 
   const routeChange = () => {
     ;<a href="/applicantDetail" />
   }
-  /* 
-  const [anchorEl, setAnchorEl] = useState(false)
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget)
@@ -27,7 +27,7 @@ const Applicant = () => {
   const handleClose = () => {
     setAnchorEl(null)
   }
- */
+
   const columns = [
     {
       field: "name",
@@ -65,6 +65,21 @@ const Applicant = () => {
       headerName: "Status",
       minWidth: 150,
       flex: 0.3,
+    },
+    {
+      field: "actions",
+      flex: 1,
+      headerName: "Actions",
+      minWidth: 150,
+      type: "number",
+      sortable: false,
+      renderCell: (params) => {
+        return (
+          <Link href="/applicantDetail">
+            <button>View Details</button>
+          </Link>
+        )
+      },
     },
   ]
 
@@ -106,7 +121,7 @@ const Applicant = () => {
           />
 
           <AccountCircleIcon
-            //onClick={handleMenu}
+            onClick={handleMenu}
             style={{
               color: "white",
               fontSize: "50px",
@@ -119,7 +134,7 @@ const Applicant = () => {
 
           <Menu
             id="menu-appbar"
-            //anchorEl={anchorEl}
+            anchorEl={anchorEl}
             anchorOrigin={{
               vertical: "top",
               horizontal: "right",
@@ -129,26 +144,14 @@ const Applicant = () => {
               vertical: "top",
               horizontal: "right",
             }}
-            /*             //open={Boolean(anchorEl)}
-             */ //onClose={handleClose}
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
           >
-            <MenuItem
-            //onClick={handleClose}
-            >
-              Name
-            </MenuItem>
+            <MenuItem onClick={handleClose}>Name</MenuItem>
             <a href="/passwordChange">
-              <MenuItem
-              //onClick={handleClose}
-              >
-                Change Password
-              </MenuItem>
+              <MenuItem onClick={handleClose}>Change Password</MenuItem>
             </a>
-            <MenuItem
-            //</Menu>onClick={handleClose}
-            >
-              Logout
-            </MenuItem>
+            <MenuItem onClick={handleClose}>Logout</MenuItem>
           </Menu>
 
           <Box
@@ -172,10 +175,9 @@ const Applicant = () => {
                   },
                 },
               }}
-              pageSizeOptions={[8]}
+              pageSizeOptions={[5]}
               disablecolumnSelectionOnClick
               displayRowCheckbox={false}
-              disableRowSelectionOnClick
               onClick={routeChange}
             />
           </Box>
