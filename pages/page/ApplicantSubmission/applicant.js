@@ -1,37 +1,67 @@
+import React, { useState } from "react";
 import { DataGrid } from "@mui/x-data-grid";
 import Box from "@mui/material/Box";
 import Text from "../../../components/Text/Text";
-//import { Link } from "react-router-dom";
-//import LaunchIcon from "@material-ui/icons/Launch";
+import { Link } from "react-router-dom";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+import Menu from "@mui/material/Menu";
+import MenuItem from "@mui/material/MenuItem";
 import { data } from "./../ApplicantSubmission/Collection/data";
-
 import { Container } from "./style";
 
 const Applicant = () => {
+  const routeChange = () => {
+    <a href="/applicantDetail" />;
+  };
+
+  const [anchorEl, setAnchorEl] = useState(false);
+
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
   const columns = [
     { field: "id", headerName: "ID", width: 90 },
     {
       field: "name",
       headerName: " Name",
       width: 150,
-      //editable: true,
+      editable: false,
+      selection: false,
     },
     {
       field: "email",
       headerName: "Email",
+      width: 200,
+    },
+    {
+      field: "applicatant",
+      headerName: "Applicatant",
       width: 150,
     },
     {
-      field: "application",
-      headerName: "Application",
-      width: 110,
-    },
-    {
-      field: "firm",
-      headerName: "Firm",
+      field: "state",
+      headerName: "State",
       description: "This column has a value getter and is not sortable.",
       sortable: false,
       width: 160,
+    },
+    {
+      field: "district",
+      headerName: "District",
+      description: "This column has a value getter and is not sortable.",
+      sortable: false,
+      width: 160,
+    },
+    {
+      field: "status",
+      headerName: "Status",
+      minWidth: 150,
+      flex: 0.3,
     },
   ];
 
@@ -43,8 +73,10 @@ const Applicant = () => {
         id: item.id,
         name: item.name,
         email: item.email,
-        application: item.application,
-        firm: item.firm,
+        applicatant: item.applicatant,
+        state: item.state,
+        district: item.district,
+        status: item.status,
       });
     });
 
@@ -69,6 +101,38 @@ const Applicant = () => {
           mta="center"
           mlh="unset"
         />
+
+        <AccountCircleIcon
+          onClick={handleMenu}
+          style={{
+            color: "white",
+            fontSize: "50px",
+            right: "100px",
+            top: "20px",
+            position: "absolute",
+          }}
+        />
+
+        <Menu
+          id="menu-appbar"
+          anchorEl={anchorEl}
+          anchorOrigin={{
+            vertical: "top",
+            horizontal: "right",
+          }}
+          keepMounted
+          transformOrigin={{
+            vertical: "top",
+            horizontal: "right",
+          }}
+          open={Boolean(anchorEl)}
+          onClose={handleClose}
+        >
+          <MenuItem onClick={handleClose}>Name</MenuItem>
+          <MenuItem onClick={handleClose}>Change Password</MenuItem>
+          <MenuItem onClick={handleClose}>Logout</MenuItem>
+        </Menu>
+
         <Box
           sx={{
             height: "80vh",
@@ -91,8 +155,10 @@ const Applicant = () => {
               },
             }}
             pageSizeOptions={[8]}
-            checkboxSelection
+            disablecolumnSelectionOnClick
+            displayRowCheckbox={false}
             disableRowSelectionOnClick
+            onClick={routeChange}
           />
         </Box>
       </Container>

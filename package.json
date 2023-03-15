@@ -37,6 +37,7 @@
     "react-icons": "^4.7.1",
     "react-redux": "^8.0.5",
     "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.9.0",
     "react-social-media-embed": "^2.3.4",
     "react-spring": "^9.6.1",
     "react-spring-3d-carousel": "1.2.1",
