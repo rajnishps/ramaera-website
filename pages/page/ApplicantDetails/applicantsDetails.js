@@ -7,7 +7,7 @@ const applicantsDetails = () => {
         style={{
           position: "relative",
           background: "white",
-          padding: "2rem",
+          padding: "2rem 2rem 3.5rem 2rem",
           margin: "1rem",
           borderRadius: ".5rem",
           maxWidth: "max-content",
@@ -86,11 +86,21 @@ const applicantsDetails = () => {
             <p>District</p>
           </div>
 
-          <div style={{ width: "500px", paddingTop: "7px", fontSize: "16px" }}>
+          <div style={{ width: "450px" }}>
+            <label
+              style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
+            >
+              Status
+            </label>
             <br />
-            <strong>Status:</strong>
-            <br />
-            Accepted
+            <select>
+              <option disabled selected>
+                Select Status
+              </option>
+              <option value={"pending"}>Pending</option>
+              <option value={"approval"}>Approval </option>
+              <option value={"rejected"}>Rejected </option>
+            </select>
           </div>
         </FormWrapper>
       </div>
