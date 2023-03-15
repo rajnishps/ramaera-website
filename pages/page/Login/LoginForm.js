@@ -1,35 +1,55 @@
 import Text from "../../../components/Text/Text"
 import Button from "../../../components/Button/SubmitButton"
 import EmailIcon from "@mui/icons-material/Email"
+import { useEffect } from "react"
 import LockIcon from "@mui/icons-material/Lock"
 import { LogIn } from "../../../apollo/queries/index"
 import { useMutation } from "@apollo/client"
 import { useSelector, useDispatch } from "react-redux"
+import { useRouter } from "next/router"
 
 import { Container, FormBox, LoginContainer, LoginTitle } from "./style"
 import { getEmail, getPassword } from "../../../state/slice/userSlice"
-
+import Link from "next/link"
+//todo 1s delay
 const LoginForm = () => {
-  const [loginUser, { data, loading, error }] = useMutation(LogIn)
+  const router = useRouter()
+
+  const [loginUser] = useMutation(LogIn)
   const password1 = useSelector((state) => state.logInUser.password)
   const email1 = useSelector((state) => state.logInUser.email)
   const dispatch = useDispatch()
-
+  // useEffect(() => {
+  //   if (window.localStorage.getItem("accessToken")) {
+  //     console.log(window.localStorage.getItem("accessToken"))
+  //     router.push("/applicants")
+  //   }
+  // })
   const handleSubmit = async (e) => {
     e.preventDefault()
+    // console.log(data.login)
     try {
-      console.log("accesstoken=======>", data)
-      await loginUser({
+      //console.log(window.localStorage.getItem("access_token"))
+      const data1 = await loginUser({
         variables: {
           email: email1,
           password: password1,
         },
       })
+      window.localStorage.setItem("accessToken", data1.data.login.accessToken)
+      // setTimeout(myStopFunction, 2000)
+
+      router.push("/applicants")
     } catch (err) {
-      console.log("login error=======>", err)
+      if (err) {
+        alert(err.message)
+      }
     }
   }
 
+  /* function myStopFunction() {
+    router.push("/applicants")
+  } */
   return (
     <Container>
       <FormBox onSubmit={(e) => handleSubmit(e)}>

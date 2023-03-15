@@ -1,31 +1,34 @@
-import React, { useState } from "react";
-import { DataGrid } from "@mui/x-data-grid";
-import Box from "@mui/material/Box";
-import Text from "../../../components/Text/Text";
-import { Link } from "react-router-dom";
-import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import Menu from "@mui/material/Menu";
-import MenuItem from "@mui/material/MenuItem";
-import { data } from "./../ApplicantSubmission/Collection/data";
-import { Container } from "./style";
+import React, { useState } from "react"
+import { DataGrid } from "@mui/x-data-grid"
+import Box from "@mui/material/Box"
+import Text from "../../../components/Text/Text"
+import AccountCircleIcon from "@mui/icons-material/AccountCircle"
+import Menu from "@mui/material/Menu"
+import MenuItem from "@mui/material/MenuItem"
+import { Container } from "./style"
+import { useQuery } from "@apollo/client"
+import { GetApplications } from "../../../apollo/queries"
 
 const Applicant = () => {
-  const routeChange = () => {
-    <a href="/applicantDetail" />;
-  };
+  const { loading, error, data } = useQuery(GetApplications)
+  if (loading) return "Loading..."
+  if (error) return `Error! ${error.message}`
 
-  const [anchorEl, setAnchorEl] = useState(false);
+  const routeChange = () => {
+    ;<a href="/applicantDetail" />
+  }
+  /* 
+  const [anchorEl, setAnchorEl] = useState(false)
 
   const handleMenu = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
+    setAnchorEl(event.currentTarget)
+  }
 
   const handleClose = () => {
-    setAnchorEl(null);
-  };
-
+    setAnchorEl(null)
+  }
+ */
   const columns = [
-    { field: "id", headerName: "ID", width: 90 },
     {
       field: "name",
       headerName: " Name",
@@ -63,110 +66,123 @@ const Applicant = () => {
       minWidth: 150,
       flex: 0.3,
     },
-  ];
+  ]
 
-  const rows = [];
+  const rows = []
 
-  data &&
-    data.forEach((item, index) => {
+  if (data) {
+    data.applicants.forEach((item) => {
       rows.push({
-        id: item.id,
+        id: item.name,
         name: item.name,
         email: item.email,
-        applicatant: item.applicatant,
-        state: item.state,
-        district: item.district,
+        applicatant: item.applicantType,
+        state: item.State,
+        district: item.District,
         status: item.status,
-      });
-    });
+      })
+    })
 
-  return (
-    <>
-      <Container>
-        <Text
-          Text="Applicant List"
-          lg="linear-gradient(to right, #ffa73d, gold)"
-          font
-          size="clamp(2.2rem, 1.2vw, 1.5rem)"
-          fw="400"
-          align="center"
-          lh="50px"
-          m="0 0 1rem 0"
-          xmsize="clamp(2.4rem, 1.5vw, 2rem)"
-          xssize="clamp(2.4rem, 1.5vw, 2rem)"
-          msize="2rem"
-          mwidth="100%"
-          padding="0"
-          mpadding="0"
-          mta="center"
-          mlh="unset"
-        />
-
-        <AccountCircleIcon
-          onClick={handleMenu}
-          style={{
-            color: "white",
-            fontSize: "50px",
-            right: "100px",
-            top: "20px",
-            position: "absolute",
-            cursor: "pointer",
-          }}
-        />
-
-        <Menu
-          id="menu-appbar"
-          anchorEl={anchorEl}
-          anchorOrigin={{
-            vertical: "top",
-            horizontal: "right",
-          }}
-          keepMounted
-          transformOrigin={{
-            vertical: "top",
-            horizontal: "right",
-          }}
-          open={Boolean(anchorEl)}
-          onClose={handleClose}
-        >
-          <MenuItem onClick={handleClose}>Name</MenuItem>
-          <a href="/passwordChange">
-            <MenuItem onClick={handleClose}>Change Password</MenuItem>
-          </a>
-          <MenuItem onClick={handleClose}>Logout</MenuItem>
-        </Menu>
-
-        <Box
-          sx={{
-            height: "80vh",
-            width: "90%",
-            margin: "auto",
-            background: "white",
-            padding: "20px",
-            borderRadius: "20px",
-            marginBottom: "50px",
-          }}
-        >
-          <DataGrid
-            rows={rows}
-            columns={columns}
-            initialState={{
-              pagination: {
-                paginationModel: {
-                  pageSize: 8,
-                },
-              },
-            }}
-            pageSizeOptions={[8]}
-            disablecolumnSelectionOnClick
-            displayRowCheckbox={false}
-            disableRowSelectionOnClick
-            onClick={routeChange}
+    return (
+      <>
+        <Container>
+          <Text
+            Text="Applicant List"
+            lg="linear-gradient(to right, #ffa73d, gold)"
+            font
+            size="clamp(2.2rem, 1.2vw, 1.5rem)"
+            fw="400"
+            align="center"
+            lh="50px"
+            m="0 0 1rem 0"
+            xmsize="clamp(2.4rem, 1.5vw, 2rem)"
+            xssize="clamp(2.4rem, 1.5vw, 2rem)"
+            msize="2rem"
+            mwidth="100%"
+            padding="0"
+            mpadding="0"
+            mta="center"
+            mlh="unset"
           />
-        </Box>
-      </Container>
-    </>
-  );
-};
 
-export default Applicant;
+          <AccountCircleIcon
+            //onClick={handleMenu}
+            style={{
+              color: "white",
+              fontSize: "50px",
+              right: "100px",
+              top: "20px",
+              position: "absolute",
+              cursor: "pointer",
+            }}
+          />
+
+          <Menu
+            id="menu-appbar"
+            //anchorEl={anchorEl}
+            anchorOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            /*             //open={Boolean(anchorEl)}
+             */ //onClose={handleClose}
+          >
+            <MenuItem
+            //onClick={handleClose}
+            >
+              Name
+            </MenuItem>
+            <a href="/passwordChange">
+              <MenuItem
+              //onClick={handleClose}
+              >
+                Change Password
+              </MenuItem>
+            </a>
+            <MenuItem
+            //</Menu>onClick={handleClose}
+            >
+              Logout
+            </MenuItem>
+          </Menu>
+
+          <Box
+            sx={{
+              height: "80vh",
+              width: "90%",
+              margin: "auto",
+              background: "white",
+              padding: "20px",
+              borderRadius: "20px",
+              marginBottom: "50px",
+            }}
+          >
+            <DataGrid
+              rows={rows}
+              columns={columns}
+              initialState={{
+                pagination: {
+                  paginationModel: {
+                    pageSize: 8,
+                  },
+                },
+              }}
+              pageSizeOptions={[8]}
+              disablecolumnSelectionOnClick
+              displayRowCheckbox={false}
+              disableRowSelectionOnClick
+              onClick={routeChange}
+            />
+          </Box>
+        </Container>
+      </>
+    )
+  }
+}
+
+export default Applicant

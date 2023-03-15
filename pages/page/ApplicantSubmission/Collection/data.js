@@ -119,10 +119,10 @@ export const data = [
     district: "Banka",
     status: "Rejected",
   },
-];
+]
 
 const StyleImage = () => {
-  return <div>StyleImage</div>;
-};
+  return <div>StyleImage</div>
+}
 
-export default StyleImage;
+export default StyleImage
