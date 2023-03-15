@@ -11,9 +11,10 @@ export const Container = styled.div`
 
 export const FormBox = styled.form`
   background-color: whitesmoke;
-  width: 40vw;
+  width: 35vw;
   min-width: 400px;
-  height: 70vh;
+  height: 65vh;
+  min-height: 450px;
   box-sizing: border-box;
   overflow: hidden;
   border-radius: 2%;
