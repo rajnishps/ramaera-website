@@ -1,17 +1,18 @@
-import { FormWrapper } from "./FormWrapper";
-import { Country, State, City } from "country-state-city";
-import { useState } from "react";
-import Button from "../../../components/Button/SubmitButton";
+import { FormWrapper } from "./FormWrapper"
+import { Country, State } from "country-state-city"
+import { useState } from "react"
+import Button from "../../../components/Button/SubmitButton"
 
 export function UserForm({ yourName, citys, dob, occupation, contact }) {
-  const [state, setState] = useState();
-  const [country, setCountry] = useState("IN");
-  const [buttonCount, setButtonCount] = useState(1);
+  const [state, setState] = useState()
+  const [country, setCountry] = useState("IN")
+  const [buttonCount, setButtonCount] = useState(1)
 
   const changeButtonCount = (val) => {
-    setButtonCount(buttonCount + val);
-    console.log(buttonCount);
-  };
+    setButtonCount(buttonCount + val)
+    console.log(buttonCount)
+  }
+
   return (
     <>
       <FormWrapper number={0} title="Basic Details">
@@ -147,5 +148,5 @@ export function UserForm({ yourName, citys, dob, occupation, contact }) {
         )}
       </FormWrapper>
     </>
-  );
+  )
 }

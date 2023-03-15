@@ -1,19 +1,22 @@
 import { FormWrapper } from "./FormWrapper";
 import { useState } from "react";
-// todo move state above,, firm name optional,, more detail,, delete dob ( applicant address)
-export function UserForm({
-  yourName,
-  dob,
-  yourEmail,
-  application,
-  address,
-  partnerType,
-  contact,
-}) {
+import { useDispatch } from "react-redux";
+import {
+  changeName,
+  changeApplicantType,
+  changeApplicantAddress,
+  changeEmail,
+  changeFirmName,
+  changeMobileNumber,
+  changeDistrict,
+  changeState,
+} from "../../../state/slice/applicationSlice";
+export function UserForm({}) {
   const [partner, setPartner] = useState("");
   const [stateIndia, setStateIndia] = useState("");
   const [isFirm, setIsFirm] = useState(false);
   const [district, setDistrict] = useState("");
+  const dispatch = useDispatch();
   const changeHandler = (val) => {
     setPartner(val);
     setDistrict("");
@@ -28,6 +31,7 @@ export function UserForm({
   const changeFirm = () => {
     setIsFirm(!isFirm);
   };
+
   return (
     <FormWrapper title="a PART OF OUR DISTRIBUTION SYSTEM">
       <div style={{ width: "500px", marginTop: "30px" }}>
@@ -43,9 +47,9 @@ export function UserForm({
         <br />
         <input
           autoFocus
-          required
+          //required
           type="text"
-          value={yourName}
+          onChange={(e) => dispatch(changeName(e.target.value))}
           placeholder="Type your name (अपना नाम लिखो)"
         />
       </div>
@@ -54,9 +58,9 @@ export function UserForm({
         <br />
         <input
           autoFocus
-          required
+          //required
           type="email"
-          value={yourEmail}
+          onChange={(e) => dispatch(changeEmail(e.target.value))}
           placeholder="Type your email (अपना ईमेल लिखो)"
         />
       </div>
@@ -65,10 +69,10 @@ export function UserForm({
         <br />
         <input
           autoFocus
-          required
+          //required
           type="text"
-          value={address}
-          placeholder="Type your address (अपना पता लिखो)"
+          onChange={(e) => dispatch(changeApplicantAddress(e.target.value))}
+          placeholder="Type your address"
         />
       </div>
       <div style={{ width: "450px" }}>
@@ -76,10 +80,10 @@ export function UserForm({
         <br />
         <input
           autoFocus
-          required
+          //required
           type="text"
-          value={address}
-          placeholder="Type your state (अपना राज्य लिखो)"
+          // onChange={(e) => dispatch(changeApplicantAddress(e.target.value))}
+          placeholder="Type your state"
         />
       </div>
       <div style={{ width: "500px" }}>
@@ -87,20 +91,20 @@ export function UserForm({
         <br />
         <input
           autoFocus
-          required
+          //required
           type="number"
-          value={address}
-          placeholder="Type your pincode (अपना पिन कोड लिखो)"
+          // onChange={(e) => dispatch(changeApplicantAddress(e.target.value))}
+          placeholder="Type your pincode"
         />
       </div>
       <div style={{ width: "450px" }}>
         <label>Applicant's Mobile No. (आवेदक मोबाइल नं.)</label>
         <br />
         <input
-          required
+          //required
           type="number"
-          value={contact}
-          placeholder="Type Contact No. (अपना संपर्क नं. लिखो)"
+          onChange={(e) => dispatch(changeMobileNumber(e.target.value))}
+          placeholder="Type Contact No."
         />
       </div>
       <div style={{ width: "500px", marginTop: "30px" }}>
@@ -117,13 +121,14 @@ export function UserForm({
         <select
           onChange={(e) => {
             changeHandler(e.target.value);
+            dispatch(changeApplicantType(e.target.value));
           }}
         >
           <option disabled selected>
             Select Application (चुनें)
           </option>
-          <option value={"distributor"}>Distributor (डिस्ट्रीब्यूटर)</option>
-          <option value={"stockist"}>Stockist (स्टॉकिस्ट)</option>
+          <option value={"DISTRIBUTOR"}>Distributor (डिस्ट्रीब्यूटर)</option>
+          <option value={"STOCKIST"}>Stockist (स्टॉकिस्ट)</option>
           {/*  <option value={application}>
             I am Interested for SuperMart Project (मुझे सुपरमार्ट प्रोजेक्ट में
               दिलचस्पी है)
@@ -150,10 +155,10 @@ export function UserForm({
           <label>Firm Name (फर्म का नाम)</label>
           <br />
           <input
-            required
+            //required
             type="text"
-            value={contact}
-            placeholder="Type Firm's Name (अपना फर्म का नाम लिखो)"
+            onChange={(e) => dispatch(changeFirmName(e.target.value))}
+            placeholder="Type Firm's Name"
           />
         </div>
       )}
@@ -172,15 +177,15 @@ export function UserForm({
       </div> */}
       {/* {partner && (
         <div style={{ width: "500px", marginTop: "30px" }}>
-          <label
-            style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
-          >
-            More Details
-          </label>
+        <label
+        style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
+        >
+        More Details
+        </label>
         </div>
-      )}
-      {partner && <div style={{ width: "450px" }}></div>}
-      {partner && <hr />}
+        )}
+        {partner && <div style={{ width: "450px" }}></div>}
+        {partner && <hr />}
       {partner && <hr />} */}
       {partner && (
         <div style={{ width: "500px" }}>
@@ -189,17 +194,19 @@ export function UserForm({
           <select
             onChange={(e) => {
               changeStateIndia(e.target.value);
+              dispatch(changeState(e.target.value));
             }}
           >
             <option disabled selected>
               Select State (चुनें)
             </option>
+
             <option value={"Bihar"}>Bihar</option>
             <option value={"UP"}>Uttar Pradesh (UP)</option>
           </select>
         </div>
       )}
-      {partner === "stockist" &&
+      {partner === "STOCKIST" &&
         (stateIndia === "Bihar" ? (
           <div style={{ width: "450px" }}>
             <label>District (ज़िला)</label>
@@ -207,6 +214,7 @@ export function UserForm({
             <select
               onChange={(e) => {
                 changeDistrict(e.target.value);
+                dispatch(changeDistrict(e.target.value));
               }}
             >
               <option disabled selected>
@@ -235,6 +243,7 @@ export function UserForm({
             <select
               onChange={(e) => {
                 changeDistrict(e.target.value);
+                dispatch(changeDistrict(e.target.value));
               }}
             >
               <option disabled selected>
@@ -244,7 +253,7 @@ export function UserForm({
             </select>
           </div>
         ))}
-      {partner === "distributor" &&
+      {partner === "DISTRIBUTOR" &&
         (stateIndia === "Bihar" ? (
           <div style={{ width: "450px" }}>
             <label>District (ज़िला)</label>
@@ -252,6 +261,7 @@ export function UserForm({
             <select
               onChange={(e) => {
                 changeDistrict(e.target.value);
+                dispatch(changeDistrict(e.target.value));
               }}
             >
               <option disabled selected>
@@ -285,6 +295,7 @@ export function UserForm({
             <select
               onChange={(e) => {
                 changeDistrict(e.target.value);
+                dispatch(changeDistrict(e.target.value));
               }}
             >
               <option disabled selected>
@@ -294,7 +305,7 @@ export function UserForm({
             </select>
           </div>
         ))}
-      {partner === "stockist" && district && (
+      {partner === "STOCKIST" && district && (
         <div style={{ width: "500px" }}>
           <p style={{ padding: " 10px 0" }}>
             Security Deposit : 1.5 Lacs<sup>*</sup>
@@ -304,10 +315,10 @@ export function UserForm({
           </p>
         </div>
       )}
-      {partner === "stockist" && district && (
+      {partner === "STOCKIST" && district && (
         <div style={{ width: "450px" }}></div>
       )}
-      {partner === "distributor" && district && (
+      {partner === "DISTRIBUTOR" && district && (
         <div style={{ width: "500px" }}>
           <p style={{ padding: " 10px 0" }}>
             Security Deposit :<strong> 50 Thousand</strong>
@@ -320,7 +331,7 @@ export function UserForm({
           </p>
         </div>
       )}
-      {partner === "distributor" && district && (
+      {partner === "DISTRIBUTOR" && district && (
         <div style={{ width: "450px" }}></div>
       )}
       <div style={{ width: "500px", paddingTop: "7px", fontSize: "16px" }}>

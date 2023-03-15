@@ -1,9 +1,12 @@
-import { useState } from "react";
-import { AddressForm } from "./AddressForm";
-import { AccountForm } from "./AccountForm";
-import { useMultistepForm } from "./useMultistepForm";
-import { UserForm } from "./UserForm";
-import Button from "../../../components/Button/SubmitButton";
+import { useState } from "react"
+import { AddressForm } from "./AddressForm"
+import { AccountForm } from "./AccountForm"
+import { useMultistepForm } from "./useMultistepForm"
+import { UserForm } from "./UserForm"
+import Button from "../../../components/Button/SubmitButton"
+
+import { CreateApplications } from "../../../apollo/queries/index"
+import { useMutation } from "@apollo/client"
 
 const INITIAL_DATA = {
   firstName: "",
@@ -15,25 +18,46 @@ const INITIAL_DATA = {
   zip: "",
   email: "",
   password: "",
-};
+}
 const Ideas = () => {
-  const [data, setData] = useState(INITIAL_DATA);
+  const [data, setData] = useState(INITIAL_DATA)
   function updateFields(fields) {
     setData((prev) => {
-      return { ...prev, ...fields };
-    });
+      return { ...prev, ...fields }
+    })
   }
   const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } =
     useMultistepForm([
       <UserForm {...data} updateFields={updateFields} />,
       <AddressForm {...data} updateFields={updateFields} />,
       <AccountForm {...data} updateFields={updateFields} />,
-    ]);
+    ])
 
+  const handleSubmit = async () => {
+    const isValid = validateForm()
+    //setLoading(true);
+    if (isValid) {
+      try {
+        const resp = await login({
+          variables: {
+            pw_id: username,
+            password: password,
+          },
+        })
+        const data = resp.data.login
+        for (let key of Object.keys(data)) {
+          localStorage.setItem(key, data[key])
+        }
+        router.reload()
+      } catch (err) {
+        toast.error(err.message)
+      }
+    }
+  }
   function onSubmit(e) {
-    e.preventDefault();
-    if (!isLastStep) return next();
-    alert("Successfully Submitted");
+    e.preventDefault()
+    if (!isLastStep) return next()
+    alert("Successfully Submitted")
   }
 
   return (
@@ -91,7 +115,7 @@ const Ideas = () => {
         </div>
       </form>
     </div>
-  );
-};
+  )
+}
 
-export default Ideas;
+export default Ideas
