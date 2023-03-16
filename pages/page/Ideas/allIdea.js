@@ -1,63 +1,73 @@
-import { useState } from "react"
 import { AddressForm } from "./AddressForm"
 import { AccountForm } from "./AccountForm"
 import { useMultistepForm } from "./useMultistepForm"
 import { UserForm } from "./UserForm"
 import Button from "../../../components/Button/SubmitButton"
-
-import { CreateApplications } from "../../../apollo/queries/index"
+import { CreateProjectApplications } from "../../../apollo/queries/idea"
+import { CreateProjectField } from "../../../apollo/queries/idea"
 import { useMutation } from "@apollo/client"
+import { useSelector, useDispatch } from "react-redux"
+import { changeProjectId } from "../../../state/slice/projectSlice"
 
-const INITIAL_DATA = {
-  firstName: "",
-  lastName: "",
-  age: "",
-  street: "",
-  city: "",
-  state: "",
-  zip: "",
-  email: "",
-  password: "",
-}
 const Ideas = () => {
-  const [data, setData] = useState(INITIAL_DATA)
-  function updateFields(fields) {
-    setData((prev) => {
-      return { ...prev, ...fields }
-    })
-  }
-  const { steps, currentStepIndex, step, isFirstStep, isLastStep, back, next } =
-    useMultistepForm([
-      <UserForm {...data} updateFields={updateFields} />,
-      <AddressForm {...data} updateFields={updateFields} />,
-      <AccountForm {...data} updateFields={updateFields} />,
-    ])
+  const dispatch = useDispatch()
 
-  const handleSubmit = async () => {
-    const isValid = validateForm()
-    //setLoading(true);
-    if (isValid) {
-      try {
-        const resp = await login({
-          variables: {
-            pw_id: username,
-            password: password,
-          },
-        })
-        const data = resp.data.login
-        for (let key of Object.keys(data)) {
-          localStorage.setItem(key, data[key])
-        }
-        router.reload()
-      } catch (err) {
-        toast.error(err.message)
-      }
-    }
+  const [CreateProject, { data, loading, error }] = useMutation(
+    CreateProjectApplications
+  )
+  const [CreateProjectDataField] = useMutation(CreateProjectField)
+  const ProjectId = useSelector((state) => state.projectField.ProjectId)
+  const fieldName1 = "11122"
+  const FieldValue1 = "12"
+
+  const City1 = useSelector((state) => state.project.City)
+  const Country1 = useSelector((state) => state.project.Country)
+  const State1 = useSelector((state) => state.project.State)
+  const dob1 = useSelector((state) => state.project.dob)
+  const mobileNumber1 = useSelector((state) => state.project.mobileNumber)
+  const occupation1 = useSelector((state) => state.project.occupation)
+  const name1 = useSelector((state) => state.project.name)
+  const email1 = useSelector((state) => state.project.email)
+  const directorData1 = useSelector((state) => state.project.directorData)
+  if (data) {
+    dispatch(changeProjectId(data.CreateProject.id))
   }
-  function onSubmit(e) {
+
+  const { step, isFirstStep, isLastStep, back, next } = useMultistepForm([
+    <UserForm />,
+    <AddressForm />,
+    <AccountForm />,
+  ])
+
+  const handleSubmit = (e) => {
     e.preventDefault()
     if (!isLastStep) return next()
-    alert("Successfully Submitted")
+    CreateProject({
+      variables: {
+        City: City1,
+        Country: Country1,
+        State: State1,
+        dob: dob1,
+        mobileNumber: mobileNumber1,
+        occupation: occupation1,
+        name: name1,
+        email: email1,
+        director: directorData1,
+      },
+    })
+    const dataaaa = CreateProjectDataField({
+      variables: {
+        fieldName: fieldName1,
+        fieldValue: FieldValue1,
+        projectId: ProjectId,
+      },
+    })
+    console.log("iddddddddd====d=d=d==d=d=d=d=d====", data.CreateProject)
+    clearForm()
+  }
+  const clearForm = () => {
+    alert("Your Applicaion is Submitted, Thank You!")
+    // location.reload()
   }
 
   return (
@@ -72,7 +82,7 @@ const Ideas = () => {
         color: "black",
       }}
     >
-      <form onSubmit={onSubmit}>
+      <form onSubmit={(e) => handleSubmit(e)}>
         <div
           style={{
             position: "absolute",

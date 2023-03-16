@@ -1,34 +1,9 @@
 import { useState, useEffect } from "react"
 import { FormWrapper } from "./FormWrapper"
+import { useSelector } from "react-redux"
+import { CreateProjectField } from "../../../apollo/queries/idea"
 
-export function AddressForm({
-  youAre,
-  partnership,
-  funding,
-  contribution,
-  goal,
-  target,
-  personAmount,
-  projectTitle,
-  brief,
-  marketProblem,
-  solution,
-  yourProduct,
-  businessModel,
-  sizeMarket,
-  currentTrasaction,
-  competitiveLandscape,
-  financialProjection,
-  fundNeed,
-  equityStructure,
-  exitOption,
-  projectType,
-  fundraisingType,
-  fundraisingStage,
-  fundingType,
-  fundingAmount,
-  fundingDate,
-}) {
+export function AddressForm() {
   const [show, setShow] = useState(false)
   const [perPersonAmount, setPerPersonAmount] = useState(0)
   const [totalPeople, setTotalPeople] = useState(1)
@@ -41,7 +16,6 @@ export function AddressForm({
     setGoalAmount(val)
   }
   const changeAmount = () => {
-    console.log("total people", totalPeople, "goal amount", goalAmount)
     setPerPersonAmount(goalAmount / totalPeople)
   }
   useEffect(() => {
@@ -57,8 +31,8 @@ export function AddressForm({
             <option disabled selected>
               Select Project Type
             </option>
-            <option value={projectType}>Startup</option>
-            <option value={projectType}>Existing</option>
+            <option>Startup</option>
+            <option>Existing</option>
           </select>
         </div>
         <div style={{ width: "450px" }}>
@@ -68,9 +42,9 @@ export function AddressForm({
               Select
               <br />
             </option>
-            <option value={youAre}>Individual</option>
-            <option value={youAre}>Company</option>
-            <option value={youAre}>Registered NGO</option>
+            <option>Individual</option>
+            <option>Company</option>
+            <option>Registered NGO</option>
           </select>
         </div>
         <div style={{ width: "500px" }}>
@@ -80,14 +54,14 @@ export function AddressForm({
               Select Partnership
               <br />
             </option>
-            <option value={partnership}>Equity Base</option>
-            <option value={partnership}>Debt/Loan</option>
+            <option>Equity Base</option>
+            <option>Debt/Loan</option>
           </select>
         </div>
         <div style={{ width: "450px" }}>
           <label>Funding Type</label>
           <br />
-          <input type="text" value={funding} />
+          <input type="text" />
         </div>
         <div style={{ width: "500px" }}>
           <label>Contribution Receiving Mode</label>
@@ -96,7 +70,7 @@ export function AddressForm({
             <option disabled selected>
               Select Project Type
             </option>
-            <option value={contribution}>INR</option>
+            <option>INR</option>
           </select>
         </div>
         <div style={{ width: "450px" }}>
@@ -126,11 +100,7 @@ export function AddressForm({
         <div style={{ width: "500px" }}>
           <label>Your Project Title</label>
           <br />
-          <input
-            type="text"
-            value={projectTitle}
-            placeholder="I am offering for Partnership"
-          />
+          <input type="text" placeholder="I am offering for Partnership" />
         </div>
         <div style={{ width: "450px" }}></div>
         <div style={{ width: "500px" }}>
@@ -138,28 +108,17 @@ export function AddressForm({
             Brief about yourself & experience (minimum 30 character)*
           </label>
           <br />
-          <textarea
-            value={brief}
-            rows={5}
-            cols={60}
-            placeholder="Brief about yourself..."
-          />
+          <textarea rows={5} cols={60} placeholder="Brief about yourself..." />
         </div>
         <div style={{ width: "450px" }}>
           <label>Market Problem</label>
           <br />
-          <textarea
-            value={marketProblem}
-            rows={5}
-            cols={60}
-            placeholder="Describe here..."
-          />
+          <textarea rows={5} cols={60} placeholder="Describe here..." />
         </div>
         <div style={{ width: "500px" }}>
           <label>Solution</label>
           <br />
           <textarea
-            value={solution}
             rows={5}
             cols={60}
             placeholder="Brief Story about your Solution/Product.      (Minimum 100 character)*"
@@ -169,7 +128,6 @@ export function AddressForm({
           <label>Your Product</label>
           <br />
           <textarea
-            value={yourProduct}
             rows={5}
             cols={60}
             placeholder="How your Product help to peoples"
@@ -178,18 +136,12 @@ export function AddressForm({
         <div style={{ width: "500px" }}>
           <label>Business Model</label>
           <br />
-          <textarea
-            value={businessModel}
-            rows={5}
-            cols={60}
-            placeholder="Describe here ..."
-          />
+          <textarea rows={5} cols={60} placeholder="Describe here ..." />
         </div>
         <div style={{ width: "450px" }}>
           <label>Size of Market</label>
           <br />
           <textarea
-            value={sizeMarket}
             rows={5}
             cols={60}
             placeholder="Describe here size of the market you are targeting"
@@ -199,7 +151,6 @@ export function AddressForm({
           <label>Current Trasaction</label>
           <br />
           <textarea
-            value={currentTrasaction}
             rows={5}
             cols={60}
             placeholder="Please describe the current traction if any achivement you have already accomplished"
@@ -211,29 +162,18 @@ export function AddressForm({
           <textarea
             rows={5}
             cols={60}
-            value={competitiveLandscape}
             placeholder="Describe here your compatitors landscape"
           />
         </div>
         <div style={{ width: "500px" }}>
           <label>Financial Projection</label>
           <br />
-          <textarea
-            rows={5}
-            cols={60}
-            value={financialProjection}
-            placeholder="Capex , Opex , Revenue"
-          />
+          <textarea rows={5} cols={60} placeholder="Capex , Opex , Revenue" />
         </div>
         <div style={{ width: "450px" }}>
           <label>Fund Need & Use</label>
           <br />
-          <textarea
-            rows={5}
-            cols={60}
-            value={fundNeed}
-            placeholder="Goal , and Use of fund"
-          />
+          <textarea rows={5} cols={60} placeholder="Goal , and Use of fund" />
         </div>
         <div style={{ width: "500px" }}>
           <label>Equity Structure</label>
@@ -241,19 +181,13 @@ export function AddressForm({
           <textarea
             rows={5}
             cols={60}
-            value={equityStructure}
             placeholder="Please describe the Percentage (Funders %, Your %) after all expanses"
           />
         </div>
         <div style={{ width: "450px" }}>
           <label>Exit Option</label>
           <br />
-          <textarea
-            rows={5}
-            cols={60}
-            value={exitOption}
-            placeholder="Describe here ..."
-          />
+          <textarea rows={5} cols={60} placeholder="Describe here ..." />
         </div>
         <div style={{ width: "500px" }}>
           <label>Select Fundraising Type</label>
@@ -261,8 +195,8 @@ export function AddressForm({
             <option disabled selected>
               Select Mode
             </option>
-            <option value={fundraisingType}>Equity Base</option>
-            <option value={fundraisingType}>Bank Loan</option>
+            <option>Equity Base</option>
+            <option>Bank Loan</option>
           </select>
         </div>
         <div style={{ width: "450px" }}></div>
@@ -322,8 +256,8 @@ export function AddressForm({
               <option disabled selected>
                 Select Stage
               </option>
-              <option value={fundraisingStage}>Pre-Seed</option>
-              <option value={fundraisingStage}>Seed</option>
+              <option>Pre-Seed</option>
+              <option>Seed</option>
             </select>
           </div>
         )}
@@ -335,8 +269,8 @@ export function AddressForm({
                 Select Stage
                 <br />
               </option>
-              <option value={fundingType}>Equity</option>
-              <option value={fundingType}>Debt</option>
+              <option>Equity</option>
+              <option>Debt</option>
             </select>
           </div>
         )}
@@ -344,14 +278,14 @@ export function AddressForm({
           <div style={{ width: "500px" }}>
             <label>Funding Amount</label>
             <br />
-            <input type="text" value={fundingAmount} />
+            <input type="text" />
           </div>
         )}
         {show && (
           <div style={{ width: "450px" }}>
             <label>Funding Date</label>
             <br />
-            <input type="date" value={fundingDate} />
+            <input type="date" />
           </div>
         )}
       </FormWrapper>

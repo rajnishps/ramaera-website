@@ -39,7 +39,6 @@ const index = () => {
         message: message,
       },
     })
-    console.log("dayta========+>", darara)
     clearForm()
   }
   const clearForm = () => {
