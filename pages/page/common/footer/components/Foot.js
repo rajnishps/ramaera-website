@@ -59,10 +59,10 @@ const Foot = () => {
     <>
       <Hr />
       <FootContainer>
-        <Link href="#">Privacy Policy</Link>
-        <Link href="#">Terms of Use</Link>
-        <Link href="#">Sales and Refunds</Link>
-        <Link href="#">Legal</Link>
+        <Link href="/privacy">Privacy Policy</Link>
+        <Link href="/terms">Terms & Conditions</Link>
+        <Link href="#">Sales & Refunds</Link>
+        <Link href="/legal">Legal</Link>
         <Link href="#">Site Map</Link>
       </FootContainer>
       <CopyRight>© {year} All Rights Reserved</CopyRight>
