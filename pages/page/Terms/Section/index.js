@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
+import DoubleArrowIcon from '@mui/icons-material/DoubleArrow';
 import Text from "../../../../components/Text/Text"
-import { data } from "./../Collection/data"
+import { data } from "../Collection/data"
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs"
 
 import { Wrapper, TabsContent, TabBody, TabItem, TabDetails } from "./style"
@@ -15,7 +16,8 @@ const index = () => {
   return (
     <>
       <Tabs>
-        <Wrapper style={{ color: "white" }}>
+         <Wrapper style={{ color: "white" }}>
+         
           <TabList className={`tablist ${isOpen === true ? "active" : ""}`}>
             {data.map((head) => (
               <Tab className="focusChange">
@@ -43,7 +45,7 @@ const index = () => {
             <div style={{ display: "flex" }}>
               <div className="btn-hamburger" onClick={ToggleSidebar}></div>
               <Text
-                Text="Privacy and Policy "
+                Text="Terms and Conditions"
                 font
                 lg="linear-gradient(90deg, #FFE259 0%, #FFA751 100%)"
                 size="2.5rem"
@@ -91,7 +93,7 @@ const index = () => {
               </TabItem>
             </TabBody>
           </TabsContent>
-        </Wrapper>
+       </Wrapper>
       </Tabs>
     </>
   )

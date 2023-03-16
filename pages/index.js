@@ -18,6 +18,7 @@ import Transforming from "./page/page1/transforming"
 import Faqs from "./page/page1/faqs"
 import Tomorrow from "./page/page1/tomorrow"
 import Head from "next/head"
+import LegalSection from "./page/LegalPage/LegalSection"
 
 export default function Home() {
   return (
@@ -27,14 +28,16 @@ export default function Home() {
       </Head>
       <Navbar selectedTab={"home"} />
       <Ramaera imageIndex={0} />
+      
       <Expansion />
-      <Technology />
+       <Technology />
       <Accomodation />
       <Packaging />
       <Industry />
       <Agri />
       <Essential />
       <Data />
+     
       <Story />
       <Future />
       <Leader />
@@ -42,7 +45,7 @@ export default function Home() {
       <Promoting />
       <Tomorrow />
       {/* <Faqs /> */}
-      <Transforming />
+      {/* <Transforming /> */}
       <Footer />
     </>
   )
