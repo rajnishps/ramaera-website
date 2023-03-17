@@ -18,7 +18,6 @@ const Applicant = () => {
   const { loading, error, data } = useQuery(GetApplications)
   const [anchorEl, setAnchorEl] = useState(false)
   if (loading) return "Loading..."
-  console.log("allthe dataod=fapplicants", applicantdata)
   dispatch(changeAppData(data.applicants))
 
   const handleMenu = (event) => {
@@ -30,6 +29,18 @@ const Applicant = () => {
   }
 
   const columns = [
+    {
+      field: "number",
+      headerName: " Details",
+      width: 150,
+      editable: false,
+      selection: false,
+      renderCell: (params) => (
+        <Link href={`/applicantDetails/${params.value}`}>
+          <button>View Details</button>
+        </Link>
+      ),
+    },
     {
       field: "name",
       headerName: " Name",
@@ -75,9 +86,10 @@ const Applicant = () => {
   const rows = []
 
   if (applicantdata) {
-    applicantdata.forEach((item) => {
+    applicantdata.forEach((item, index) => {
       rows.push({
-        id: item.name,
+        id: index,
+        number: index + 1,
         name: item.name,
         email: item.email,
         applicatant: item.applicantType,

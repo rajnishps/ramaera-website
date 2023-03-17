@@ -1,4 +1,4 @@
-import { FormWrapper } from "../ApplicantDetails/FormWrapper"
+import { FormWrapper } from "./FormWrapper"
 
 const applicantsDetails = (props) => {
   return (
