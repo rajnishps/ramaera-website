@@ -6,6 +6,8 @@ import Button from "../../../components/Button/SubmitButton"
 import { CreateProjectApplications } from "../../../apollo/queries/idea"
 import { useMutation } from "@apollo/client"
 import { useSelector } from "react-redux"
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
 
 const Ideas = () => {
   const [CreateProject] = useMutation(CreateProjectApplications)
@@ -126,8 +128,19 @@ const Ideas = () => {
     clearForm()
   }
   const clearForm = () => {
-    alert("Your Applicaion is Submitted, Thank You!")
-    // location.reload()
+    toast.success("Thanks for Submission", {
+      position: "top-center",
+      autoClose: 2500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    })
+    setTimeout(() => {
+      location.reload()
+    }, "3200")
   }
 
   return (
@@ -143,6 +156,18 @@ const Ideas = () => {
       }}
     >
       <form onSubmit={(e) => handleSubmit(e)}>
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="dark"
+        />
         <div
           style={{
             position: "absolute",

@@ -3,6 +3,9 @@ import Text from "../../../../components/Text/Text"
 import Button from "../../../../components/Button/SubmitButton"
 import { CreateContactResponse } from "../../../../apollo/queries/index"
 import { useMutation } from "@apollo/client"
+import { ToastContainer, toast } from "react-toastify"
+import "react-toastify/dist/ReactToastify.css"
+
 import {
   Box,
   BackgroundImg,
@@ -42,8 +45,19 @@ const index = () => {
     clearForm()
   }
   const clearForm = () => {
-    alert("Successfully Submitted, Thank You!")
-    location.reload()
+    toast.success("Message Submitted!", {
+      position: "top-center",
+      autoClose: 2500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+    })
+    setTimeout(() => {
+      location.reload()
+    }, "3200")
   }
   return (
     <>
@@ -79,7 +93,24 @@ const index = () => {
             </HeaderIcon2>
           </HeaderIcon>
           <Form>
-            <form onSubmit={(e) => handleSubmit(e)}>
+            <form
+              onSubmit={(e) => {
+                handleSubmit(e)
+              }}
+            >
+              <ToastContainer
+                position="top-center"
+                autoClose={5000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
+                theme="dark"
+              />
+
               <Fline1>
                 <div>
                   <label>Full Name</label>
@@ -160,6 +191,7 @@ const index = () => {
                     bg="linear-gradient(to left,#ffd456,#ff9765)"
                     width="200px"
                     height="50px"
+                    noLineHeight
                     Text="Send Message "
                     fontSize="1rem"
                     padding="10px 30px"

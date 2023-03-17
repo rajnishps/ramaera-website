@@ -59,7 +59,7 @@ export function AddressForm() {
             required
             onChange={(e) => dispatch(changeyourProjectType(e.target.value))}
           >
-            <option disabled selected>
+            <option value={undefined} disabled selected>
               Select Project Type
             </option>
             <option>Startup</option>
@@ -72,7 +72,7 @@ export function AddressForm() {
             required
             onChange={(e) => dispatch(changeyouAre(e.target.value))}
           >
-            <option disabled selected>
+            <option value={""} disabled selected>
               Select
               <br />
             </option>
@@ -111,7 +111,7 @@ export function AddressForm() {
             onChange={(e) => dispatch(changereceivingMode(e.target.value))}
           >
             <br />
-            <option disabled selected>
+            <option value={""} disabled selected>
               Select Project Type
             </option>
             <option>INR</option>
@@ -131,7 +131,7 @@ export function AddressForm() {
             placeholder="Numerical value only"
           />
         </div>
-        <div style={{ width: "500px" }}>
+        {/* <div style={{ width: "500px" }}>
           <label>Target For</label>
           <br />
           <input
@@ -154,7 +154,7 @@ export function AddressForm() {
             onChange={() => dispatch(changeperPersonAmount(perPersonAmount))}
             type="text"
           />
-        </div>
+        </div> */}
         <div style={{ width: "500px" }}>
           <label>Your Project Title</label>
           <br />
@@ -310,7 +310,7 @@ export function AddressForm() {
             required
             onChange={(e) => dispatch(changeselectFundingType(e.target.value))}
           >
-            <option disabled selected>
+            <option value={""} disabled selected>
               Select Mode
             </option>
             <option>Equity Base</option>
@@ -375,7 +375,7 @@ export function AddressForm() {
               onChange={(e) => dispatch(changefundingStage(e.target.value))}
             >
               <br />
-              <option disabled selected>
+              <option value={""} disabled selected>
                 Select Stage
               </option>
               <option>Pre-Seed</option>
@@ -391,7 +391,7 @@ export function AddressForm() {
                 dispatch(changeselectFundingTypeAgain(e.target.value))
               }
             >
-              <option disabled selected>
+              <option value={""} disabled selected>
                 Select Stage
                 <br />
               </option>
@@ -424,3 +424,8 @@ export function AddressForm() {
     </>
   )
 }
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

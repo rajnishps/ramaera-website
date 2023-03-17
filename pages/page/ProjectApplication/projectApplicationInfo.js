@@ -1,13 +1,12 @@
-import React, { useState } from "react"
 import { DataGrid } from "@mui/x-data-grid"
 import Box from "@mui/material/Box"
 import Text from "../../../components/Text/Text"
- import { useQuery } from "@apollo/client"
- import { GetContactResponses } from "../../../apollo/queries"
+import { useQuery } from "@apollo/client"
+import { GetProjectApplications } from "../../../apollo/queries/idea"
 
 const ProjectApplicationInfo = () => {
-  const { loading, error, data } = useQuery(GetContactResponses)
-
+  const { loading, error, data } = useQuery(GetProjectApplications)
+  if (loading) return "loading..."
   const columns = [
     {
       field: "name",
@@ -44,13 +43,14 @@ const ProjectApplicationInfo = () => {
 
   const rows = []
   if (data) {
-    data.contactUsRepsonses.forEach((item) => {
+    console.log("alllllll prokjectssssssss", data.AllProjectDetails)
+    data.AllProjectDetails.forEach((item) => {
       rows.push({
         id: item.name,
         name: item.name,
         email: item.email,
-        contact: item.contact,
-        project: item.project,
+        contact: item.mobileNumber,
+        project: item.yourProduct,
         createdAt: item.createAt,
       })
     })

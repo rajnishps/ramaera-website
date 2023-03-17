@@ -61,7 +61,7 @@ const ContactInfo = () => {
     <>
       <div>
         <Text
-          Text="Contact Us List"
+          Text="Contact Us Page Submittions"
           lg="linear-gradient(to right, #ffa73d, gold)"
           font
           size="clamp(2.2rem, 1.2vw, 1.5rem)"

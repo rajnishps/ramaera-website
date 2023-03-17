@@ -51,3 +51,8 @@ export function FormWrapper({ title, children }) {
     </>
   )
 }
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

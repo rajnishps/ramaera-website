@@ -1,7 +1,7 @@
-import styled from "styled-components";
-
-const d = new Date();
-let year = d.getFullYear();
+import styled from "styled-components"
+import Text from "../../../../../components/Text/Text"
+const d = new Date()
+let year = d.getFullYear()
 const FootContainer = styled.div`
   position: absolute;
   bottom: 100px;
@@ -19,14 +19,14 @@ const FootContainer = styled.div`
   @media only screen and (max-width: 450px) {
     gap: 10px;
   }
-`;
+`
 const Link = styled.a`
   font-size: 10px;
   margin-bottom: 1rem;
   color: white;
   cursor: pointer;
   text-decoration: none;
-`;
+`
 const Hr = styled.hr`
   position: absolute;
   bottom: 160px;
@@ -35,7 +35,7 @@ const Hr = styled.hr`
   height: 2px;
   width: 80vw;
   background: #fff;
-`;
+`
 const CopyRight = styled.div`
   position: absolute;
   font-weight: 100;
@@ -53,21 +53,31 @@ const CopyRight = styled.div`
     right: auto;
     bottom: 80px;
   }
-`;
+`
 const Foot = () => {
   return (
     <>
       <Hr />
       <FootContainer>
-        <Link href="/privacy">Privacy Policy</Link>
-        <Link href="/terms">Terms & Conditions</Link>
-        <Link href="#">Sales & Refunds</Link>
-        <Link href="/legal">Legal</Link>
-        <Link href="#">Site Map</Link>
+        {/* <Link href="/privacy">Privacy Policy</Link> */}
+        {/* <Link href="/terms">Terms & Conditions</Link> */}
+        <Link href="/application">
+          <Text
+            Text="Become a part of Distribution Channel"
+            lg="linear-gradient(90deg, #E65C00 0%, #F9D423 100%)"
+            font
+            padding="20px 0 0 0 "
+            size="14px"
+            msize="10px"
+            align="center"
+          />
+        </Link>
+        {/* <Link href="/legal"></Link> */}
+        {/* <Link href="#">Site Map</Link> */}
       </FootContainer>
       <CopyRight>© {year} All Rights Reserved</CopyRight>
     </>
-  );
-};
+  )
+}
 
-export default Foot;
+export default Foot

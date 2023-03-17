@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
   display: flex;
@@ -6,7 +6,7 @@ export const Container = styled.div`
   justify-content: center;
   height: 100vh;
   margin-top: -25vh;
-`;
+`
 
 export const FormBox = styled.form`
   background-color: whitesmoke;
@@ -19,7 +19,7 @@ export const FormBox = styled.form`
   border-radius: 2%;
   box-shadow: 0 0 10px rgb(0 0 0 / 27%);
   padding: 2rem;
-`;
+`
 
 export const LoginContainer = styled.div`
   display: flex;
@@ -29,6 +29,12 @@ export const LoginContainer = styled.div`
   height: 70%;
   gap: 30px;
   transition: all 0.5s;
-`;
+`
 
-export const LoginTitle = styled.div``;
+export const LoginTitle = styled.div``
+
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

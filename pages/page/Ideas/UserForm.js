@@ -148,7 +148,6 @@ export function UserForm() {
             <label>Director Name</label>
             <br />
             <input
-              required
               autoFocus
               onChange={(e) => dispatch(changeDirectorData(e.target.value))}
               type="text"
@@ -160,26 +159,21 @@ export function UserForm() {
           <div style={{ width: "450px" }}>
             <label>Basic introduction with experience </label>
             <br />
-            <input required autoFocus type="text" />
+            <input autoFocus type="text" />
           </div>
         )}
         {buttonCount >= 2 && (
           <div style={{ width: "500px" }}>
             <label>Director Name</label>
             <br />
-            <input
-              required
-              autoFocus
-              type="text"
-              placeholder="Type your name"
-            />
+            <input autoFocus type="text" placeholder="Type your name" />
           </div>
         )}
         {buttonCount >= 2 && (
           <div style={{ width: "450px" }}>
             <label>Basic introduction with experience </label>
             <br />
-            <input required autoFocus type="text" />
+            <input autoFocus type="text" />
           </div>
         )}
 
@@ -187,19 +181,14 @@ export function UserForm() {
           <div style={{ width: "500px" }}>
             <label>Director Name</label>
             <br />
-            <input
-              required
-              autoFocus
-              type="text"
-              placeholder="Type your name"
-            />
+            <input autoFocus type="text" placeholder="Type your name" />
           </div>
         )}
         {buttonCount >= 3 && (
           <div style={{ width: "450px" }}>
             <label>Basic introduction with experience </label>
             <br />
-            <input required autoFocus type="text" />
+            <input autoFocus type="text" />
           </div>
         )}
         {buttonCount === 3 ? null : (
@@ -218,3 +207,8 @@ export function UserForm() {
     </>
   )
 }
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

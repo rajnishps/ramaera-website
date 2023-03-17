@@ -1,4 +1,4 @@
-import Text from "../../../components/Text/Text";
+import Text from "../../../components/Text/Text"
 export function FormWrapper({ title, children }) {
   return (
     <>
@@ -49,5 +49,10 @@ export function FormWrapper({ title, children }) {
         {children}
       </div>
     </>
-  );
+  )
 }
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

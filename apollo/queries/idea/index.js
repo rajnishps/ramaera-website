@@ -91,3 +91,51 @@ $director: [String!],
       name
     }
 }`)
+
+export const GetProjectApplications = gql(`
+
+query getProjectApplicants {
+  AllProjectDetails {
+    City
+    State
+    Country
+    dob
+    email
+    mobileNumber
+    occupation
+    name
+    yourProjectType
+    youAre
+    typeOfPartnership
+    fundingType
+    receivingMode
+    goal
+    targetFor
+    perPersonAmount
+    yourProjectTitle
+    brief
+    marketProblem
+    solution
+    yourProduct
+    businessModel
+    sizeOfMarket
+    currentTransaction
+    competitiveLandscape
+    financialProjection
+    fundNeed
+    equityStructure
+    exitOption
+    selectFundingType
+    fundingStage
+    selectFundingTypeAgain
+    fundingAmount
+    fundingDate
+    linkedinProfile
+    twitterProfile
+    facebookProfile
+    instagramProfile
+    websiteURL
+    thanksNote
+    director
+  }
+}`)

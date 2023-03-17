@@ -10,18 +10,18 @@ import { useQuery } from "@apollo/client"
 //import { GetApplications } from "../../../apollo/queries"
 import Link from "next/link"
 // import { useDispatch } from "react-redux";
- import { useSelector } from "react-redux"
+import { useSelector } from "react-redux"
 // import { applicantStorage } from "../../../state/slice/applicantDataSlice"
 
 const Applicant = () => {
-  const applicantdata = useSelector((state) => state.applicant.applicantDataStorage)
+  const applicantdata = []
   // const dispatch = useDispatch();
   // const { loading, error, data } = useQuery(GetApplications)
-  console.log("grdgrdhtdhtd",applicantdata)
+  console.log("grdgrdhtdhtd", applicantdata)
   // dispatch(applicantStorage(data));
   const [anchorEl, setAnchorEl] = useState(false)
- // if (loading) return "Loading..."
- // if (error) return `Error! ${error.message}`
+  // if (loading) return "Loading..."
+  // if (error) return `Error! ${error.message}`
 
   const routeChange = () => {
     ;<a href="/applicantDetail" />

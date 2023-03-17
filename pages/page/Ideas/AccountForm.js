@@ -78,3 +78,8 @@ export function AccountForm() {
     </FormWrapper>
   )
 }
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

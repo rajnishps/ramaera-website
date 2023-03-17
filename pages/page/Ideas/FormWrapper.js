@@ -1,5 +1,5 @@
-import Text from "../../../components/Text/Text";
-import StepperSteps from "./Stepper";
+import Text from "../../../components/Text/Text"
+import StepperSteps from "./Stepper"
 export function FormWrapper({ number, title, children }) {
   return (
     <>
@@ -87,5 +87,10 @@ export function FormWrapper({ number, title, children }) {
         {children}
       </div>
     </>
-  );
+  )
 }
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

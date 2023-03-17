@@ -28,16 +28,16 @@ export default function Home() {
       </Head>
       <Navbar selectedTab={"home"} />
       <Ramaera imageIndex={0} />
-      
+
       <Expansion />
-       <Technology />
+      <Technology />
       <Accomodation />
       <Packaging />
       <Industry />
       <Agri />
       <Essential />
       <Data />
-     
+
       <Story />
       <Future />
       <Leader />
@@ -45,7 +45,7 @@ export default function Home() {
       <Promoting />
       <Tomorrow />
       {/* <Faqs /> */}
-      {/* <Transforming /> */}
+      <Transforming />
       <Footer />
     </>
   )

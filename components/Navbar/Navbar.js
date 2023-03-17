@@ -173,10 +173,13 @@ const Navbar = ({ selectedTab }) => {
           <Link2>
             <Link target="_blank" href="https://kyc.ramaera.com/Kyc-login.aspx">
               <Button
+                padding="2px"
+                noLineHeight="12px"
+                fontSize="12px"
                 width="20px"
-                height="2.75rem"
-                Text="KYC"
-                inheight="2.5rem"
+                height="3.5rem"
+                Text="Ramaera Subscriber Login"
+                inheight="0.2rem"
                 bborder="1.5px solid white"
               />
             </Link>
