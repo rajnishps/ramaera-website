@@ -19,6 +19,7 @@ const Applicant = () => {
   const [anchorEl, setAnchorEl] = useState(false)
   if (loading) return "Loading..."
   dispatch(changeAppData(data.applicants))
+  console.log(applicantdata)
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget)
