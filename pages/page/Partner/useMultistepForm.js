@@ -32,3 +32,8 @@ export function useMultistepForm(steps) {
     back,
   }
 }
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

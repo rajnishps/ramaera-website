@@ -424,3 +424,8 @@ export function AddressForm() {
     </>
   )
 }
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

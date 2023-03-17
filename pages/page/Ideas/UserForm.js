@@ -218,3 +218,8 @@ export function UserForm() {
     </>
   )
 }
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

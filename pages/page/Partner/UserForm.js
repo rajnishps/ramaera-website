@@ -1,6 +1,6 @@
-import { FormWrapper } from "./FormWrapper";
-import { useState } from "react";
-import { useDispatch } from "react-redux";
+import { FormWrapper } from "./FormWrapper"
+import { useState } from "react"
+import { useDispatch } from "react-redux"
 import {
   changeName,
   changeApplicantType,
@@ -10,27 +10,27 @@ import {
   changeMobileNumber,
   changeDistrict,
   changeState,
-} from "../../../state/slice/applicationSlice";
+} from "../../../state/slice/applicationSlice"
 export function UserForm({}) {
-  const [partner, setPartner] = useState("");
-  const [stateIndia, setStateIndia] = useState("");
-  const [isFirm, setIsFirm] = useState(false);
-  const [district, setDistrict] = useState("");
-  const dispatch = useDispatch();
+  const [partner, setPartner] = useState("")
+  const [stateIndia, setStateIndia] = useState("")
+  const [isFirm, setIsFirm] = useState(false)
+  const [district, setDistrict] = useState("")
+  const dispatch = useDispatch()
   const changeHandler = (val) => {
-    setPartner(val);
-    setDistrict("");
-  };
+    setPartner(val)
+    setDistrict("")
+  }
   const changeStateIndia = (val) => {
-    setStateIndia(val);
-    setDistrict("");
-  };
+    setStateIndia(val)
+    setDistrict("")
+  }
   const changeDistricts = (val) => {
-    setDistrict(val);
-  };
+    setDistrict(val)
+  }
   const changeFirm = () => {
-    setIsFirm(!isFirm);
-  };
+    setIsFirm(!isFirm)
+  }
 
   return (
     <FormWrapper title="a PART OF OUR DISTRIBUTION SYSTEM">
@@ -136,8 +136,8 @@ export function UserForm({}) {
         <br />
         <select
           onChange={(e) => {
-            changeHandler(e.target.value);
-            dispatch(changeApplicantType(e.target.value));
+            changeHandler(e.target.value)
+            dispatch(changeApplicantType(e.target.value))
           }}
         >
           <option disabled selected>
@@ -159,7 +159,7 @@ export function UserForm({}) {
           <button
             style={{ padding: "5px", margin: "15px 0 0 0" }}
             onClick={() => {
-              changeFirm();
+              changeFirm()
             }}
           >
             Yes
@@ -209,8 +209,8 @@ export function UserForm({}) {
           <br />
           <select
             onChange={(e) => {
-              changeStateIndia(e.target.value);
-              dispatch(changeState(e.target.value));
+              changeStateIndia(e.target.value)
+              dispatch(changeState(e.target.value))
             }}
           >
             <option disabled selected>
@@ -229,8 +229,8 @@ export function UserForm({}) {
             <br />
             <select
               onChange={(e) => {
-                changeDistricts(e.target.value);
-                dispatch(changeDistrict(e.target.value));
+                changeDistricts(e.target.value)
+                dispatch(changeDistrict(e.target.value))
               }}
             >
               <option disabled selected>
@@ -258,8 +258,8 @@ export function UserForm({}) {
             <br />
             <select
               onChange={(e) => {
-                changeDistricts(e.target.value);
-                dispatch(changeDistrict(e.target.value));
+                changeDistricts(e.target.value)
+                dispatch(changeDistrict(e.target.value))
               }}
             >
               <option disabled selected>
@@ -276,8 +276,8 @@ export function UserForm({}) {
             <br />
             <select
               onChange={(e) => {
-                changeDistricts(e.target.value);
-                dispatch(changeDistrict(e.target.value));
+                changeDistricts(e.target.value)
+                dispatch(changeDistrict(e.target.value))
               }}
             >
               <option disabled selected>
@@ -310,8 +310,8 @@ export function UserForm({}) {
             <br />
             <select
               onChange={(e) => {
-                changeDistricts(e.target.value);
-                dispatch(changeDistrict(e.target.value));
+                changeDistricts(e.target.value)
+                dispatch(changeDistrict(e.target.value))
               }}
             >
               <option disabled selected>
@@ -372,5 +372,10 @@ export function UserForm({}) {
         </div>
       )}
     </FormWrapper>
-  );
+  )
 }
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage
