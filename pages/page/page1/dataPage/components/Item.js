@@ -8,7 +8,7 @@ const StyledItem = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 15rem;
+  width: 14rem;
   height: 8rem;
   transform: scale(0.8);
 `
@@ -19,7 +19,7 @@ const Item = (props) => {
         loading="lazy"
         src={props.img ? props.img : ""}
         alt={props.img}
-        style={{ height: "4rem", width: "4.25rem" }}
+        style={{ height: "4.6rem", width: "5rem" }}
       />
       <Heading
         Text={props.number ? props.number : ""}
@@ -34,6 +34,8 @@ const Item = (props) => {
         lh="17.07px"
         color="#FFF"
         align="center"
+        padding="0 2vw "
+        fw="300"
       />
     </StyledItem>
   )

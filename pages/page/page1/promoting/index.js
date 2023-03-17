@@ -15,7 +15,7 @@ const ResImage1 = styled.div`
   position: absolute;
   left: 0;
   top: 5vh;
-  margin: 120px 0 0 150px;
+  margin: 120px 0 0 200px;
   @media only screen and (max-width: 768px) {
     margin: 0;
     top: 2vh;
@@ -80,7 +80,7 @@ const index = () => {
             data-aos-easing="ease-in-back"
             style={{
               position: "absolute",
-              left: "120px",
+              left: "150px",
               top: "500px",
               margin: "0 0 0 0  ",
             }}
@@ -110,8 +110,8 @@ const index = () => {
             data-aos-anchor-placement="bottom-bottom"
             style={{
               position: "absolute",
-              right: "15vw",
-              top: "300px",
+              right: "12vw",
+              top: "320px",
               margin: " 0 10vh 0 0 ",
             }}
           >
@@ -123,8 +123,8 @@ const index = () => {
             data-aos-anchor-placement="top-bottom"
             style={{
               position: "absolute",
-              left: "25vw",
-              top: "680px",
+              left: "29vw",
+              top: "700px",
               margin: " 0 0 0 0 ",
             }}
           >

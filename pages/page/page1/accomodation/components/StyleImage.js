@@ -5,7 +5,7 @@ export const Image = styled.div`
   width: 33rem;
   video {
     position: absolute;
-    height: 90%;
+    height: 85%;
     width: 90%;
   }
   @media only screen and (max-width: 768px) {

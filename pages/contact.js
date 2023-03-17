@@ -9,6 +9,7 @@ import Head from "next/head"
 const contact = () => {
   return (
     <>
+    <Navbar/>
       <Head>
         <title>Ramaera Industries - Contact</title>
       </Head>
