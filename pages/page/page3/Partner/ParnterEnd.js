@@ -38,7 +38,12 @@ const ParnterEnd = () => {
   return (
     <ParnterEndBox>
       <LeftPara>
-        <div data-aos="fade-up-right">
+        <div 
+        //data-aos="fade-up-right"
+        data-aos="slide-right"
+        data-aos-duration="1000"
+        data-aos-anchor-placement="top-bottom"
+        >
           <Text
             Text=" To make this investor relation transparent , we will provide complete
         insights on the project gain and other relevant information. So what
@@ -55,9 +60,15 @@ const ParnterEnd = () => {
             mwidth="85vw"
             mta="center"
             align="center"
+            mmwidth="85vw"
           />
         </div>
-        <div data-aos="fade-up-right">
+        <div 
+       // data-aos="fade-up-right" data-aos="slide-right"
+       data-aos="slide-right"
+       data-aos-duration="1000"
+       data-aos-anchor-placement="top-bottom"
+        >
           <Text
             Text="Ramaera Industries are bringing out collaborative opportunities where
         you can become a part of a major Ramaera project by investing a
@@ -74,11 +85,17 @@ const ParnterEnd = () => {
             mwidth="85vw"
             mta="center"
             align="center"
+            mmwidth="85vw"
           />
         </div>
       </LeftPara>
       <RightImgBox>
-        <div data-aos="fade-up-left">
+        <div 
+        //data-aos="fade-up-left"
+        data-aos="slide-left"
+        data-aos-duration="2000"
+        data-aos-anchor-placement="top-bottom"
+        >
           <RightVideo autoPlay loop muted>
             <source src="/background/Partner.webm" type="video/webm" />
           </RightVideo>

@@ -74,6 +74,7 @@ const Innovation = () => {
               mwidth="85vw"
               mta="center"
               align="center"
+              mmwidth="85vw"
             />
           </div>
         </ParaContainer>

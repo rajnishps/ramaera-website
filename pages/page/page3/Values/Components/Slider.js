@@ -36,6 +36,7 @@ const Slider = () => {
                 msize="2rem"
                 mpadding="0"
                 mmargin=" 0 0 0 0"
+                mmwidth="80vw"
               />
               {/* <InnovationHead>{item.title}</InnovationHead> */}
               <Img autoPlay loop muted>
@@ -56,6 +57,7 @@ const Slider = () => {
                   msize="13px"
                   mwidth="50vw"
                   mta="center"
+                  mmwidth="60vw"
                 />
               </InnoParaContainer>
               <Arrow src={"/background/arrow.png"} style={{ width: "60px" }} />

@@ -23,7 +23,7 @@ const companies = () => {
       <Ramaera imageIndex={2} />
       <Innovation />
       <Innitiatives />
-      <Plantsera />
+      {/* <Plantsera /> */}
       <Values />
       <Contribution />
       <Partner />

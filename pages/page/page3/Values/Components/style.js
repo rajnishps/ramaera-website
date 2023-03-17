@@ -63,6 +63,9 @@ export const InnovatinRight = styled.div`
   justify-content: center;
   align-items: center;
   position: relative;
+  @media (max-width: 600px) {
+    width: 80%;
+  }
 `
 
 export const Arrow = styled.img`
