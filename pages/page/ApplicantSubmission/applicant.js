@@ -7,25 +7,19 @@ import Menu from "@mui/material/Menu"
 import MenuItem from "@mui/material/MenuItem"
 import { Container } from "./style"
 import { useQuery } from "@apollo/client"
-//import { GetApplications } from "../../../apollo/queries"
+import { GetApplications } from "../../../apollo/queries"
 import Link from "next/link"
-// import { useDispatch } from "react-redux";
-import { useSelector } from "react-redux"
-// import { applicantStorage } from "../../../state/slice/applicantDataSlice"
+import { useDispatch, useSelector } from "react-redux"
+import { changeAppData } from "../../../state/slice/applicantDataSlice"
 
 const Applicant = () => {
-  const applicantdata = []
-  // const dispatch = useDispatch();
-  // const { loading, error, data } = useQuery(GetApplications)
-  console.log("grdgrdhtdhtd", applicantdata)
-  // dispatch(applicantStorage(data));
+  const applicantdata = useSelector((state) => state.applicationData.appData)
+  const dispatch = useDispatch()
+  const { loading, error, data } = useQuery(GetApplications)
   const [anchorEl, setAnchorEl] = useState(false)
-  // if (loading) return "Loading..."
-  // if (error) return `Error! ${error.message}`
-
-  const routeChange = () => {
-    ;<a href="/applicantDetail" />
-  }
+  if (loading) return "Loading..."
+  console.log("allthe dataod=fapplicants", applicantdata)
+  dispatch(changeAppData(data.applicants))
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget)
@@ -42,6 +36,9 @@ const Applicant = () => {
       width: 150,
       editable: false,
       selection: false,
+      renderCell: (params) => (
+        <Link href={`/applicantDetail/${params.value}`}>{params.value}</Link>
+      ),
     },
     {
       field: "email",
@@ -72,21 +69,6 @@ const Applicant = () => {
       headerName: "Status",
       minWidth: 150,
       flex: 0.3,
-    },
-    {
-      field: "actions",
-      flex: 1,
-      headerName: "Actions",
-      minWidth: 150,
-      type: "number",
-      sortable: false,
-      renderCell: (params) => {
-        return (
-          <Link href="/applicantDetail">
-            <button>View Details</button>
-          </Link>
-        )
-      },
     },
   ]
 
@@ -185,7 +167,7 @@ const Applicant = () => {
               pageSizeOptions={[5]}
               disablecolumnSelectionOnClick
               displayRowCheckbox={false}
-              onClick={routeChange}
+              //onClick={routeChange}
             />
           </Box>
         </Container>
