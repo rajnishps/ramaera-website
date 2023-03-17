@@ -41,6 +41,7 @@ const AboutTeam = () => {
           msize="2rem"
           mpadding="0"
           mmargin="0 0 0 0"
+          mmwidth="auto"
         />
         <TeamBoxContainer>
           <LeftTeam>
@@ -72,6 +73,7 @@ const AboutTeam = () => {
               msize="1.2rem"
               mpadding="0"
               mmargin=" 0 0 0rem 0"
+              mmwidth="auto"
             />
             {/* <RightHead>Transparency</RightHead> */}
             <RightPara>
@@ -96,6 +98,7 @@ const AboutTeam = () => {
               msize="1.2rem"
               mpadding="0"
               mmargin=" 0 0 0rem 0"
+              mmwidth="auto"
             />
             {/* <RightHead>Accountability</RightHead> */}
             <RightPara>
@@ -119,6 +122,7 @@ const AboutTeam = () => {
               msize="1.2rem"
               mpadding="0"
               mmargin=" 0 0 0rem 0"
+              mmwidth="auto"
             />
             {/* <RightHead>Empowerment</RightHead> */}
             <RightPara>

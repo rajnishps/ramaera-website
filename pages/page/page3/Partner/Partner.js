@@ -61,6 +61,7 @@ const Partner = () => {
             mwidth="83vw"
             mta="center"
             align="center"
+            mmwidth="85vw"
           />
         </div>
       </ValParaContainer>

@@ -4,11 +4,13 @@ export const VisionBox = styled.div`
   background: url("/background/Rectangle.svg");
   width: 100%;
   height: 202.6vh;
+  min-height: 1500px;
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
   @media (max-width: 600px) {
     height: 250vh;
+    min-height: 2100px;
     width: 95%;
     margin: 0px auto;
   }

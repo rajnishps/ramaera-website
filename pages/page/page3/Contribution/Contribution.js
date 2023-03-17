@@ -45,6 +45,7 @@ const Contribution = () => {
             mta="center"
             align="center"
             padding="0 15vw"
+            mmwidth="85vw"
           />
         </div>
       </ValParaContainer>

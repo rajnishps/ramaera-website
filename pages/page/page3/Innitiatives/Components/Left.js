@@ -38,6 +38,7 @@ const Left = () => {
             mmargin="1rem 0 1rem 0"
             tsdo="none"
             bbottom="3px solid white"
+            mmwidth="90vw"
           />
           {/* <LeftHead>ONLY THE BEST</LeftHead> */}
         </div>

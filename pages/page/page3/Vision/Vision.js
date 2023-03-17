@@ -12,7 +12,7 @@ const Vision = () => {
             Text="ramaera vision"
             lg="linear-gradient(90deg, #ffe259 0%, #ffa751 100%)"
             font
-            size="2rem"
+            size="2.8rem"
             lh="90px"
             width="100%"
             mwidth="100%"
@@ -25,6 +25,7 @@ const Vision = () => {
             mpadding="4rem 0 0 0 "
             padding="4rem 0 0 0"
             mmargin="0 0 0 0"
+            mmwidth="auto"
           />
           {/* <VisionHead>ramaera vision</VisionHead> */}
         </div>
@@ -52,6 +53,7 @@ const Vision = () => {
             mta="center"
             padding="0 10vw"
             align="center"
+            mmwidth="auto"
           />
         </div>
         <br />
@@ -75,6 +77,7 @@ const Vision = () => {
             mta="center"
             padding="0 10vw"
             align="center"
+            mmwidth="auto"
           />
         </div>
         <br />
@@ -96,6 +99,7 @@ const Vision = () => {
             mta="center"
             padding="0 10vw"
             align="center"
+            mmwidth="auto"
           />
         </div>
         <br />
@@ -119,6 +123,7 @@ const Vision = () => {
             mta="center"
             padding="0 10vw"
             align="center"
+            mmwidth="auto"
           />
         </div>
         <br />
@@ -146,6 +151,7 @@ const Vision = () => {
             mta="center"
             padding="0 10vw"
             align="center"
+            mmwidth="auto"
           />
         </div>
       </VisionBG>
