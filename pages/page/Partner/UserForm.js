@@ -47,7 +47,7 @@ export function UserForm({}) {
         <br />
         <input
           autoFocus
-          //required
+          required
           type="text"
           onChange={(e) => dispatch(changeName(e.target.value))}
           placeholder="Type your name (अपना नाम लिखो)"
@@ -58,7 +58,7 @@ export function UserForm({}) {
         <br />
         <input
           autoFocus
-          //required
+          required
           type="email"
           onChange={(e) => dispatch(changeEmail(e.target.value))}
           placeholder="Type your email (अपना ईमेल लिखो)"
@@ -69,7 +69,7 @@ export function UserForm({}) {
         <br />
         <input
           autoFocus
-          //required
+          required
           type="text"
           onChange={(e) => dispatch(changeApplicantAddress(e.target.value))}
           placeholder="Type your address"
@@ -80,7 +80,7 @@ export function UserForm({}) {
         <br />
         <input
           autoFocus
-          //required
+          required
           type="text"
           // onChange={(e) => dispatch(changeApplicantAddress(e.target.value))}
           placeholder="Type your state"
@@ -91,7 +91,7 @@ export function UserForm({}) {
         <br />
         <input
           autoFocus
-          //required
+          required
           type="number"
           // onChange={(e) => dispatch(changeApplicantAddress(e.target.value))}
           placeholder="Type your pincode"
@@ -101,7 +101,7 @@ export function UserForm({}) {
         <label>Applicant's Mobile No. (आवेदक मोबाइल नं.)</label>
         <br />
         <input
-          //required
+          required
           type="number"
           onChange={(e) => dispatch(changeMobileNumber(e.target.value))}
           placeholder="Type Contact No."
@@ -112,6 +112,7 @@ export function UserForm({}) {
         <label>Extra Info (अतिरिक्त जानकारी)</label>
         <br />
         <textarea
+          required
           rows={5}
           cols={80}
           autoFocus
@@ -323,11 +324,15 @@ export function UserForm({}) {
         ))}
       {partner === "STOCKIST" && district && (
         <div style={{ width: "500px" }}>
+          <h3>Ecpected Charges:</h3>
           <p style={{ padding: " 10px 0" }}>
-            Security Deposit : 1.5 Lacs<sup>*</sup>
+            Security Deposit :<strong>₹1.5 Lacs</strong>
+            <sup> *</sup>{" "}
           </p>
+
           <p style={{ padding: " 10px 0" }}>
-            Minimum Order Amount : 5.5 Lacs<sup>*</sup>
+            Minimum Order Amount : <strong>₹5.5 Lacs</strong>
+            <sup> *</sup>
           </p>
         </div>
       )}
@@ -336,13 +341,14 @@ export function UserForm({}) {
       )}
       {partner === "DISTRIBUTOR" && district && (
         <div style={{ width: "500px" }}>
+          <h3>HI</h3>
           <p style={{ padding: " 10px 0" }}>
-            Security Deposit :<strong> 50 Thousand</strong>
+            Security Deposit :<strong> ₹50 Thousand</strong>
             <sup> *</sup>{" "}
           </p>
 
           <p style={{ padding: " 10px 0" }}>
-            Minimum Order Amount : <strong>1.5 Lacs</strong>
+            Minimum Order Amount : <strong>₹1.5 Lacs</strong>
             <sup> *</sup>
           </p>
         </div>
