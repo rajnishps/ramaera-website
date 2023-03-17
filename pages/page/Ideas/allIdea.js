@@ -4,21 +4,11 @@ import { useMultistepForm } from "./useMultistepForm"
 import { UserForm } from "./UserForm"
 import Button from "../../../components/Button/SubmitButton"
 import { CreateProjectApplications } from "../../../apollo/queries/idea"
-import { CreateProjectField } from "../../../apollo/queries/idea"
 import { useMutation } from "@apollo/client"
-import { useSelector, useDispatch } from "react-redux"
-import { changeProjectId } from "../../../state/slice/projectSlice"
+import { useSelector } from "react-redux"
 
 const Ideas = () => {
-  const dispatch = useDispatch()
-
-  const [CreateProject, { data, loading, error }] = useMutation(
-    CreateProjectApplications
-  )
-  const [CreateProjectDataField] = useMutation(CreateProjectField)
-  const ProjectId = useSelector((state) => state.projectField.ProjectId)
-  const fieldName1 = "11122"
-  const FieldValue1 = "12"
+  const [CreateProject] = useMutation(CreateProjectApplications)
 
   const City1 = useSelector((state) => state.project.City)
   const Country1 = useSelector((state) => state.project.Country)
@@ -29,9 +19,54 @@ const Ideas = () => {
   const name1 = useSelector((state) => state.project.name)
   const email1 = useSelector((state) => state.project.email)
   const directorData1 = useSelector((state) => state.project.directorData)
-  if (data) {
-    dispatch(changeProjectId(data.CreateProject.id))
-  }
+  const yourProjectType1 = useSelector((state) => state.project.yourProjectType)
+  const youAre1 = useSelector((state) => state.project.youAre)
+  const typeOfPartnership1 = useSelector(
+    (state) => state.project.typeOfPartnership
+  )
+  const fundingType1 = useSelector((state) => state.project.fundingType)
+  const receivingMode1 = useSelector((state) => state.project.receivingMode)
+  const goal1 = useSelector((state) => state.project.goal)
+  const targetFor1 = useSelector((state) => state.project.targetFor)
+  const perPersonAmount1 = useSelector((state) => state.project.perPersonAmount)
+  const yourProjectTitle1 = useSelector(
+    (state) => state.project.yourProjectTitle
+  )
+  const brief1 = useSelector((state) => state.project.brief)
+  const marketProblem1 = useSelector((state) => state.project.marketProblem)
+  const solution1 = useSelector((state) => state.project.solution)
+  const yourProduct1 = useSelector((state) => state.project.yourProduct)
+  const businessModel1 = useSelector((state) => state.project.businessModel)
+  const sizeOfMarket1 = useSelector((state) => state.project.sizeOfMarket)
+  const currentTransaction1 = useSelector(
+    (state) => state.project.currentTransaction
+  )
+  const competitiveLandscape1 = useSelector(
+    (state) => state.project.competitiveLandscape
+  )
+  const financialProjection1 = useSelector(
+    (state) => state.project.financialProjection
+  )
+  const fundNeed1 = useSelector((state) => state.project.fundNeed)
+  const equityStructure1 = useSelector((state) => state.project.equityStructure)
+  const exitOption1 = useSelector((state) => state.project.exitOption)
+  const selectFundingType1 = useSelector(
+    (state) => state.project.selectFundingType
+  )
+  const fundingStage1 = useSelector((state) => state.project.fundingStage)
+  const selectFundingTypeAgain1 = useSelector(
+    (state) => state.project.selectFundingTypeAgain
+  )
+  const fundingAmount1 = useSelector((state) => state.project.fundingAmount)
+  const fundingDate1 = useSelector((state) => state.project.fundingDate)
+  const linkedinProfile1 = useSelector((state) => state.project.linkedinProfile)
+  const twitterProfile1 = useSelector((state) => state.project.twitterProfile)
+  const facebookProfile1 = useSelector((state) => state.project.facebookProfile)
+  const instagramProfile1 = useSelector(
+    (state) => state.project.instagramProfile
+  )
+  const websiteURL1 = useSelector((state) => state.project.websiteURL)
+  const thanksNote1 = useSelector((state) => state.project.thanksNote)
 
   const { step, isFirstStep, isLastStep, back, next } = useMultistepForm([
     <UserForm />,
@@ -53,16 +88,41 @@ const Ideas = () => {
         name: name1,
         email: email1,
         director: directorData1,
+        yourProjectType: yourProjectType1,
+        youAre: youAre1,
+        typeOfPartnership: typeOfPartnership1,
+        fundingType: fundingType1,
+        receivingMode: receivingMode1,
+        goal: goal1,
+        targetFor: targetFor1,
+        perPersonAmount: perPersonAmount1,
+        yourProjectTitle: yourProjectTitle1,
+        brief: brief1,
+        marketProblem: marketProblem1,
+        solution: solution1,
+        yourProduct: yourProduct1,
+        businessModel: businessModel1,
+        sizeOfMarket: sizeOfMarket1,
+        currentTransaction: currentTransaction1,
+        competitiveLandscape: competitiveLandscape1,
+        financialProjection: financialProjection1,
+        fundNeed: fundNeed1,
+        equityStructure: equityStructure1,
+        exitOption: exitOption1,
+        selectFundingType: selectFundingType1,
+        fundingStage: fundingStage1,
+        selectFundingTypeAgain: selectFundingTypeAgain1,
+        fundingAmount: fundingAmount1,
+        fundingDate: fundingDate1,
+        linkedinProfile: linkedinProfile1,
+        twitterProfile: twitterProfile1,
+        facebookProfile: facebookProfile1,
+        instagramProfile: instagramProfile1,
+        websiteURL: websiteURL1,
+        thanksNote: thanksNote1,
       },
     })
-    const dataaaa = CreateProjectDataField({
-      variables: {
-        fieldName: fieldName1,
-        fieldValue: FieldValue1,
-        projectId: ProjectId,
-      },
-    })
-    console.log("iddddddddd====d=d=d==d=d=d=d=d====", data.CreateProject)
+
     clearForm()
   }
   const clearForm = () => {

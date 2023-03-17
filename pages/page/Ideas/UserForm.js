@@ -36,6 +36,7 @@ export function UserForm() {
           <label>Your Name</label>
           <br />
           <input
+            required
             autoFocus
             type="text"
             onChange={(e) => dispatch(changeName(e.target.value))}
@@ -46,6 +47,7 @@ export function UserForm() {
           <label>Country</label>
           <br />
           <select
+            required
             value={country}
             onChange={(e) => handleCountryChange(e.target.value)}
           >
@@ -62,6 +64,7 @@ export function UserForm() {
           <label>State</label>
           <br />
           <select
+            required
             value={state}
             onChange={(e) => dispatch(changeState(e.target.value))}
           >
@@ -78,6 +81,7 @@ export function UserForm() {
           <label>City</label>
           <br />
           <input
+            required
             type="text"
             onChange={(e) => dispatch(changeCity(e.target.value))}
             placeholder="Type City name"
@@ -87,6 +91,7 @@ export function UserForm() {
           <label>Date Of Birth</label>
           <br />
           <input
+            required
             type="date"
             onChange={(e) => dispatch(changeDob(e.target.value))}
           />
@@ -94,7 +99,10 @@ export function UserForm() {
         <div style={{ width: "450px" }}>
           <label>Your Occupation</label>
           <br />
-          <select onChange={(e) => dispatch(changeOccupation(e.target.value))}>
+          <select
+            required
+            onChange={(e) => dispatch(changeOccupation(e.target.value))}
+          >
             <option disabled selected>
               Select Occupation
             </option>
@@ -106,6 +114,7 @@ export function UserForm() {
           <label>Contact No</label>
           <br />
           <input
+            required
             type="number"
             onChange={(e) => dispatch(changeMobileNumber(e.target.value))}
             placeholder="Type Contact No."
@@ -115,6 +124,7 @@ export function UserForm() {
           <label>Email Id</label>
           <br />
           <input
+            required
             type="email"
             onChange={(e) => dispatch(changeEmail(e.target.value))}
             placeholder="Type Email Id"
@@ -138,6 +148,7 @@ export function UserForm() {
             <label>Director Name</label>
             <br />
             <input
+              required
               autoFocus
               onChange={(e) => dispatch(changeDirectorData(e.target.value))}
               type="text"
@@ -149,21 +160,26 @@ export function UserForm() {
           <div style={{ width: "450px" }}>
             <label>Basic introduction with experience </label>
             <br />
-            <input autoFocus type="text" />
+            <input required autoFocus type="text" />
           </div>
         )}
         {buttonCount >= 2 && (
           <div style={{ width: "500px" }}>
             <label>Director Name</label>
             <br />
-            <input autoFocus type="text" placeholder="Type your name" />
+            <input
+              required
+              autoFocus
+              type="text"
+              placeholder="Type your name"
+            />
           </div>
         )}
         {buttonCount >= 2 && (
           <div style={{ width: "450px" }}>
             <label>Basic introduction with experience </label>
             <br />
-            <input autoFocus type="text" />
+            <input required autoFocus type="text" />
           </div>
         )}
 
@@ -171,14 +187,19 @@ export function UserForm() {
           <div style={{ width: "500px" }}>
             <label>Director Name</label>
             <br />
-            <input autoFocus type="text" placeholder="Type your name" />
+            <input
+              required
+              autoFocus
+              type="text"
+              placeholder="Type your name"
+            />
           </div>
         )}
         {buttonCount >= 3 && (
           <div style={{ width: "450px" }}>
             <label>Basic introduction with experience </label>
             <br />
-            <input autoFocus type="text" />
+            <input required autoFocus type="text" />
           </div>
         )}
         {buttonCount === 3 ? null : (
