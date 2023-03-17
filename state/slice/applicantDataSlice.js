@@ -1,22 +1,19 @@
 import { createSlice } from "@reduxjs/toolkit"
 
 const initialState = {
- applicantDataStorage:[]
+  applicantDataStorage: [],
 }
 
 export const applicantDataSlice = createSlice({
   name: "applicant",
   initialState,
   reducers: {
-    applicantStorage: (state, action) => {
+    setApplicantStorage: (state, action) => {
       state.name = action.payload
     },
-  
   },
 })
 
-export const {
-    applicantStorage
-} = applicantDataSlice.actions
+export const { setApplicantStorage } = applicantDataSlice.actions
 
 export default applicantDataSlice.reducer
