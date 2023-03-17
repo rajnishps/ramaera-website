@@ -42,7 +42,7 @@ const LoginForm = () => {
       router.push("/applicants")
     } catch (err) {
       if (err) {
-        alert(err.message)
+        console.log(err.message)
       }
     }
   }
