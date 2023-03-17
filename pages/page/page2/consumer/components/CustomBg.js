@@ -12,14 +12,16 @@ const Bg = styled.div`
   background-image: url("/background/bg-consumer.png");
   background-repeat: no-repeat;
   background-size: 100vw;
-  height: 100vh;
+  height: 1000px;
   min-height: 500px;
   width: 100vw;
   margin-top: 20vh;
+  margin-bottom: -300px;
   z-index: -1;
   @media only screen and (max-width: 768px) {
     height: auto;
     margin-top: 0;
+    margin-bottom: unset;
     width: 100%;
     background: transparent;
     flex-direction: column-reverse;
@@ -28,7 +30,7 @@ const Bg = styled.div`
 const AgriPos = styled.video`
   transform: scale(0.8);
   height: 75vh;
-  min-height: 400px;
+  min-height: 450px;
   @media only screen and (max-width: 768px) {
     height: 50vh;
     min-height: unset;
