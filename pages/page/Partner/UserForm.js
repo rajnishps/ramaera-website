@@ -136,6 +136,7 @@ export function UserForm({}) {
         <label>Application (आवेदन)</label>
         <br />
         <select
+          required
           onChange={(e) => {
             changeHandler(e.target.value)
             dispatch(changeApplicantType(e.target.value))
@@ -209,6 +210,7 @@ export function UserForm({}) {
           <label>State (राज्य)</label>
           <br />
           <select
+            required
             onChange={(e) => {
               changeStateIndia(e.target.value)
               dispatch(changeState(e.target.value))
@@ -229,6 +231,7 @@ export function UserForm({}) {
             <label>District (ज़िला)</label>
             <br />
             <select
+              required
               onChange={(e) => {
                 changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
@@ -258,6 +261,7 @@ export function UserForm({}) {
             <label>District (ज़िला)</label>
             <br />
             <select
+              required
               onChange={(e) => {
                 changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
@@ -276,6 +280,7 @@ export function UserForm({}) {
             <label>District (ज़िला)</label>
             <br />
             <select
+              required
               onChange={(e) => {
                 changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
@@ -310,6 +315,7 @@ export function UserForm({}) {
             <label>District (ज़िला)</label>
             <br />
             <select
+              required
               onChange={(e) => {
                 changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
