@@ -26,20 +26,20 @@ const PromtContainer1 = () => {
       <Text
         Text="Empowering young talent and promoting entrepreneurship"
         color="#fff"
-        size="28px"
+        size="26px"
         lh="32px"
         align="left"
         fw="600"
         m="0 0 0 0"
         mta="center"
-        padding="2vw 0"
+        padding="1.5vw 0"
         mpadding="0"
         mmwidth="90vw"
       />
       <Text
         Text="India is the hub of entrepreneurial talent and we plan to provide these young talents the right resources. Ramaera Industries aims to give wings to the dreams of the CEOs of tomorrow."
         color="#fff"
-        size="15px"
+        size="14px"
         lh="23px"
         align="left"
         fw="200"
@@ -47,7 +47,7 @@ const PromtContainer1 = () => {
         msize="12px"
         mta="center"
         mwidth="100vw"
-        padding="1vw 6vw  1vw 0"
+        padding="1vw 8vw  1vw 0"
         mpadding="0"
         mmwidth="90vw"
       />

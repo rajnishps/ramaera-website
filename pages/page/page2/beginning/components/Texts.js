@@ -46,13 +46,15 @@ const Texts = () => {
                 fontWeight: "500",
               }}
             >
-              1. CONSUMER ORIENTATION: &nbsp;
+              1.CONSUMER ORIENTATION:&nbsp;
             </span>
             Ramaera consumers receive a series of loyalty points on every
             purchase they make. These loyalty points will help them get a
             monthly loyalty amount and hence, all these operations will be as
             the consumers can timely check their loyalty points and how they
-            received the amount. The consumers can also view how Ramaera manages
+            received the amount.
+            <br/>
+             The consumers can also view how Ramaera manages
             its products along with the various factors of production to gain
             insight that they are being served with due honesty and transparency
             through our devised software and apps.
@@ -75,7 +77,7 @@ const Texts = () => {
                 fontWeight: "500",
               }}
             >
-              2. INVESTOR RELATION: &nbsp;
+              2.INVESTOR RELATION:&nbsp;
             </span>
             Ramaera is a community-oriented industry aimed at nation orientation
             and financial stability, it also provides its consumers the
@@ -103,7 +105,7 @@ const Texts = () => {
                 fontWeight: "500",
               }}
             >
-              3.ENTREPRENEURIAL INTERVENTIONS: &nbsp;
+              3.ENTREPRENEURIAL INTERVENTIONS:&nbsp;
             </span>
             Ramaera Industries is dedicated towards community building and
             enlistment. We implement and execute various philanthropic drives
@@ -131,7 +133,7 @@ const Texts = () => {
                 fontWeight: "500",
               }}
             >
-              4. PHILANTHROPIC OPERATIONS: &nbsp;
+              4.PHILANTHROPIC OPERATIONS:&nbsp;
             </span>
             Ramaera industries acknowledges the undervalued entrepreneurial
             talent in the country and to promote self-sufficiency and the idea

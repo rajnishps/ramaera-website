@@ -2,11 +2,12 @@ import styled from "styled-components"
 
 export const CustomText = styled.p`
   width: 100vw;
-  font-size: 1.8rem;
+  font-size: 1.7rem;
   color: #fff;
   text-align: justify;
-  padding: 0 10vw;
-  font-weight: 200;
+  padding: 0 3vw;
+  line-height: 2.6rem;
+  font-weight: 300;
   @media (max-width: 1200px) {
     width: 100vw;
     font-size: 2rem;

@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 const Image = styled.img`
   position: absolute;
-  height: 300px;
-  top: 380px;
-  left: 120px;
+  height: 350px;
+  top: 340px;
+  left: 155px;
   @media only screen and (max-width: 768px) {
     display: none;
   }
