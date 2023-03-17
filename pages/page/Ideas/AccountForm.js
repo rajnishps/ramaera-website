@@ -1,4 +1,4 @@
-import { FormWrapper } from "./FormWrapper";
+import { FormWrapper } from "./FormWrapper"
 export function AccountForm({
   linkedinProfile,
   facebookProfile,
@@ -15,7 +15,6 @@ export function AccountForm({
         <br />
         <input
           autoFocus
-          required
           type="text"
           value={linkedinProfile}
           // onChange={(e) => updateFields({ email: e.target.value })}
@@ -25,7 +24,6 @@ export function AccountForm({
         <label>Your Facebook Profile</label>
         <br />
         <input
-          required
           type="text"
           value={facebookProfile}
           placeholder="paste or type  link here"
@@ -35,7 +33,6 @@ export function AccountForm({
         <label>Your Twitter Profile</label>
         <br />
         <input
-          required
           type="text"
           value={twitterProfile}
           placeholder="paste or type  link here"
@@ -45,7 +42,6 @@ export function AccountForm({
         <label>Your Instagram Profile</label>
         <br />
         <input
-          required
           type="text"
           value={instagramProfile}
           placeholder="paste or type  link here"
@@ -55,7 +51,6 @@ export function AccountForm({
         <label>Website URL if any</label>
         <br />
         <input
-          required
           type="text"
           value={websiteURL}
           placeholder="paste or type  link here"
@@ -66,12 +61,11 @@ export function AccountForm({
         <label>Thanks Note</label>
         <br />
         <input
-          required
           type="text"
           value={thanksNote}
           placeholder=" Type your message"
         />
       </div>
     </FormWrapper>
-  );
+  )
 }

@@ -1,17 +1,33 @@
-import { FormWrapper } from "./FormWrapper";
-import { Country, State } from "country-state-city";
-import { useState } from "react";
-import Button from "../../../components/Button/SubmitButton";
-
-export function UserForm({ yourName, citys, dob, occupation, contact }) {
-  const [state, setState] = useState();
-  const [country, setCountry] = useState("IN");
-  const [buttonCount, setButtonCount] = useState(1);
+import { FormWrapper } from "./FormWrapper"
+import { Country, State } from "country-state-city"
+import { useState } from "react"
+import Button from "../../../components/Button/SubmitButton"
+import { useDispatch } from "react-redux"
+import {
+  changeCity,
+  changeCountry,
+  changeState,
+  changeDob,
+  changeEmail,
+  changeMobileNumber,
+  changeDirectorData,
+  changeName,
+  changeOccupation,
+} from "../../../state/slice/projectSlice"
+export function UserForm() {
+  const dispatch = useDispatch()
+  const [state, setState] = useState()
+  const [country, setCountry] = useState()
+  const [buttonCount, setButtonCount] = useState(1)
 
   const changeButtonCount = (val) => {
-    setButtonCount(buttonCount + val);
-    console.log(buttonCount);
-  };
+    setButtonCount(buttonCount + val)
+    console.log(buttonCount)
+  }
+  const handleCountryChange = (val) => {
+    dispatch(changeCountry(val))
+    setCountry(val)
+  }
 
   return (
     <>
@@ -22,14 +38,17 @@ export function UserForm({ yourName, citys, dob, occupation, contact }) {
           <input
             autoFocus
             type="text"
-            value={yourName}
+            onChange={(e) => dispatch(changeName(e.target.value))}
             placeholder="Type your name"
           />
         </div>
         <div style={{ width: "450px" }}>
           <label>Country</label>
           <br />
-          <select value={country} onChange={(e) => setCountry(e.target.value)}>
+          <select
+            value={country}
+            onChange={(e) => handleCountryChange(e.target.value)}
+          >
             <option value="">Select Country Name</option>
             {Country &&
               Country.getAllCountries().map((item) => (
@@ -42,8 +61,11 @@ export function UserForm({ yourName, citys, dob, occupation, contact }) {
         <div style={{ width: "500px" }}>
           <label>State</label>
           <br />
-          <select value={state} onChange={(e) => setState(e.target.value)}>
-            <option value="">Select State Name</option>
+          <select
+            value={state}
+            onChange={(e) => dispatch(changeState(e.target.value))}
+          >
+            <option value="IN">Select State Name</option>
             {State &&
               State.getStatesOfCountry(country).map((item) => (
                 <option key={item.isoCode} value={item.isoCode}>
@@ -55,33 +77,48 @@ export function UserForm({ yourName, citys, dob, occupation, contact }) {
         <div style={{ width: "450px" }}>
           <label>City</label>
           <br />
-          <input type="text" value={citys} placeholder="Type City name" />
+          <input
+            type="text"
+            onChange={(e) => dispatch(changeCity(e.target.value))}
+            placeholder="Type City name"
+          />
         </div>
         <div style={{ width: "500px" }}>
           <label>Date Of Birth</label>
           <br />
-          <input type="date" value={dob} />
+          <input
+            type="date"
+            onChange={(e) => dispatch(changeDob(e.target.value))}
+          />
         </div>
         <div style={{ width: "450px" }}>
           <label>Your Occupation</label>
           <br />
-          <select>
+          <select onChange={(e) => dispatch(changeOccupation(e.target.value))}>
             <option disabled selected>
               Select Occupation
             </option>
-            <option value={occupation}>Job</option>
-            <option value={occupation}>Business</option>
+            <option value={"Job"}>Job</option>
+            <option value={"Business"}>Business</option>
           </select>
         </div>
         <div style={{ width: "500px" }}>
           <label>Contact No</label>
           <br />
-          <input type="number" value={contact} placeholder="Type Contact No." />
+          <input
+            type="number"
+            onChange={(e) => dispatch(changeMobileNumber(e.target.value))}
+            placeholder="Type Contact No."
+          />
         </div>
         <div style={{ width: "450px" }}>
           <label>Email Id</label>
           <br />
-          <input type="email" value={contact} placeholder="Type Email Id" />
+          <input
+            type="email"
+            onChange={(e) => dispatch(changeEmail(e.target.value))}
+            placeholder="Type Email Id"
+          />
         </div>
 
         <div style={{ width: "500px", marginTop: "30px" }}>
@@ -100,7 +137,12 @@ export function UserForm({ yourName, citys, dob, occupation, contact }) {
           <div style={{ width: "500px" }}>
             <label>Director Name</label>
             <br />
-            <input autoFocus type="text" placeholder="Type your name" />
+            <input
+              autoFocus
+              onChange={(e) => dispatch(changeDirectorData(e.target.value))}
+              type="text"
+              placeholder="Type your name"
+            />
           </div>
         )}
         {buttonCount >= 1 && (
@@ -153,5 +195,5 @@ export function UserForm({ yourName, citys, dob, occupation, contact }) {
         )}
       </FormWrapper>
     </>
-  );
+  )
 }
