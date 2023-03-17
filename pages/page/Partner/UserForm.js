@@ -142,7 +142,7 @@ export function UserForm({}) {
             dispatch(changeApplicantType(e.target.value))
           }}
         >
-          <option disabled selected>
+          <option value={""} disabled selected>
             Select Application (चुनें)
           </option>
           <option value={"DISTRIBUTOR"}>Distributor (डिस्ट्रीब्यूटर)</option>
@@ -184,7 +184,7 @@ export function UserForm({}) {
         <label>Partner Type (साथी का प्रकार)</label>
         <br />
         <select>
-        <option disabled selected>
+        <option  value={""} disabled selected>
         Select Type (चुनें)
         </option>
         <option value={partnerType}>Stockist</option>
@@ -216,7 +216,7 @@ export function UserForm({}) {
               dispatch(changeState(e.target.value))
             }}
           >
-            <option disabled selected>
+            <option disabled value={""} selected>
               Select State (चुनें)
             </option>
 
@@ -237,7 +237,7 @@ export function UserForm({}) {
                 dispatch(changeDistrict(e.target.value))
               }}
             >
-              <option disabled selected>
+              <option value={""} disabled selected>
                 Select District (चुनें)
               </option>
               <option value={"Patna"}>Patna</option>
@@ -267,7 +267,7 @@ export function UserForm({}) {
                 dispatch(changeDistrict(e.target.value))
               }}
             >
-              <option disabled selected>
+              <option value={""} disabled selected>
                 Select District (चुनें)
               </option>
               <option value={""}>..</option>
@@ -286,7 +286,7 @@ export function UserForm({}) {
                 dispatch(changeDistrict(e.target.value))
               }}
             >
-              <option disabled selected>
+              <option value={""} disabled selected>
                 Select District (चुनें)
               </option>
               <option value={"Jehanabad"}>Jehanabad</option>
@@ -321,7 +321,7 @@ export function UserForm({}) {
                 dispatch(changeDistrict(e.target.value))
               }}
             >
-              <option disabled selected>
+              <option value={""} disabled selected>
                 Select District (चुनें)
               </option>
               <option value={""}>..</option>
@@ -330,8 +330,10 @@ export function UserForm({}) {
         ))}
       {partner === "STOCKIST" && district && (
         <div style={{ width: "500px" }}>
-          <h3>Ecpected Charges:</h3>
           <p style={{ padding: " 10px 0" }}>
+            <strong> Expected Charges:</strong>
+            <br />
+            <br />
             Security Deposit :<strong>₹1.5 Lacs</strong>
             <sup> *</sup>{" "}
           </p>
@@ -347,8 +349,10 @@ export function UserForm({}) {
       )}
       {partner === "DISTRIBUTOR" && district && (
         <div style={{ width: "500px" }}>
-          <h3>HI</h3>
           <p style={{ padding: " 10px 0" }}>
+            <strong> Expected Charges:</strong>
+            <br />
+            <br />
             Security Deposit :<strong> ₹50 Thousand</strong>
             <sup> *</sup>{" "}
           </p>
