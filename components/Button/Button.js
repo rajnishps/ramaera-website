@@ -7,7 +7,7 @@ const StyledButton = styled(motion.button)`
   color: ${(props) => (props.color ? props.color : "#FFFFFF")};
   font-size: ${(props) => (props.fontSize ? props.fontSize : "20px")};
   font-weight: ${(props) => (props.fw ? props.fw : "600")};
-  line-height: ${(props) => (props.noLineHeight ? props.noLineHeight : "18px")};
+  line-height: ${(props) => (props.noLineHeight ? "1" : "18px")};
   letter-spacing: ${(props) => (props.ls ? props.ls : "0em")};
   padding: ${(props) =>
     props.secondary ? "2px" : props.padding ? props.padding : "0.85rem 2rem"};

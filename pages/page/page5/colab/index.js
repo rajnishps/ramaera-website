@@ -191,6 +191,7 @@ const index = () => {
                     bg="linear-gradient(to left,#ffd456,#ff9765)"
                     width="200px"
                     height="50px"
+                    noLineHeight
                     Text="Send Message "
                     fontSize="1rem"
                     padding="10px 30px"

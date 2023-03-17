@@ -33,7 +33,7 @@ export function UserForm({}) {
   }
 
   return (
-    <FormWrapper title="a PART OF OUR DISTRIBUTION SYSTEM">
+    <FormWrapper title="a PART OF OUR DISTRIBUTION CHANNEL">
       <div style={{ width: "500px", marginTop: "30px" }}>
         <label style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}>
           Personal Details
