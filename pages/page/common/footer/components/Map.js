@@ -7,8 +7,9 @@ const MapContainer = styled.a`
   flex-direction: column;
   //width: 20vw;
   /*   margin-left: 2rem;*/
+  margin-bottom: 100px;
   @media only screen and (max-width: 450px) {
-    margin-bottom: 0;
+    margin-bottom: 0px;
   }
 `
 const Image = styled.iframe`
