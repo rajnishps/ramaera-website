@@ -12,21 +12,21 @@ const DashSection = () => {
     <>
       <div className="container heading-container">
         <h1 className="heading-text">Dashboard Details </h1>
-        {/* <label class="dropdown"> */}
-        <div class="dd-button">Dropdown</div>
-        <AccountCircleIcon style={{ fontSize: "50px", color: "white" }} />
-        <input type="checkbox" class="dd-input" id="test" />
+        <label class="dropdown">
+          <div class="dd-button">Dropdown</div>
+          <AccountCircleIcon style={{ fontSize: "50px", color: "white" }} />
+          <input type="checkbox" class="dd-input" id="test" />
 
-        <ul class="dd-menu">
-          <li>Name</li>
-          <li class="divider"></li>
-          <li>Change Password</li>
-          <li class="divider"></li>
-          <li>Role</li>
-          <li className="divider"></li>
-          <li>Logout</li>
-        </ul>
-        {/* </label> */}
+          <ul class="dd-menu">
+            <li>Name</li>
+            <li class="divider"></li>
+            <li>Change Password</li>
+            <li class="divider"></li>
+            <li>Role</li>
+            <li className="divider"></li>
+            <li>Logout</li>
+          </ul>
+        </label>
       </div>
       <div className="container table-container">
         <div className="basis-2/12 table-2"></div>
