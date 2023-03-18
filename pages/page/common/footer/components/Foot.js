@@ -76,7 +76,7 @@ const Foot = () => {
     <>
       <Hr />
       <FootContainer>
-        <Link href="/application">
+        <Link href="/DistributionChannel">
           <div class="glow_button">
             <Text
               Text="Become a part of Distribution Channel"
