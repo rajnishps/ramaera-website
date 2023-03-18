@@ -17,7 +17,6 @@ const applicantDetail = () => {
         <Navbar />
         <div style={{ height: "200px" }}></div>
         <PageWidth full scale={"95%"} width="1500px" position="relative">
-          <Link href="/applicants">link</Link>
           <ApplicantsDetails />
         </PageWidth>
       </PageLayout>

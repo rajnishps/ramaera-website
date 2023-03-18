@@ -1,4 +1,3 @@
-import React from "react"
 import Navbar from "../components/Navbar/Navbar"
 import PageLayout from "../components/PageLayout/PageLayout"
 import PageWidth from "../components/Width/PageWidth"
