@@ -1,17 +1,15 @@
 import Text from "../../../components/Text/Text"
 import Button from "../../../components/Button/SubmitButton"
 import EmailIcon from "@mui/icons-material/Email"
-import { useEffect } from "react"
 import LockIcon from "@mui/icons-material/Lock"
 import { LogIn } from "../../../apollo/queries/index"
 import { useMutation } from "@apollo/client"
 import { useSelector, useDispatch } from "react-redux"
 import { useRouter } from "next/router"
-
+import { setAccessToken } from "../../../state/slice/accessTokenSlice"
 import { Container, FormBox, LoginContainer, LoginTitle } from "./style"
 import { getEmail, getPassword } from "../../../state/slice/userSlice"
-import Link from "next/link"
-//todo 1s delay
+
 const LoginForm = () => {
   const router = useRouter()
 
@@ -19,12 +17,7 @@ const LoginForm = () => {
   const password1 = useSelector((state) => state.logInUser.password)
   const email1 = useSelector((state) => state.logInUser.email)
   const dispatch = useDispatch()
-  // useEffect(() => {
-  //   if (window.localStorage.getItem("accessToken")) {
-  //     console.log(window.localStorage.getItem("accessToken"))
-  //     router.push("/applicants")
-  //   }
-  // })
+
   const handleSubmit = async (e) => {
     e.preventDefault()
     // console.log(data.login)
@@ -37,18 +30,21 @@ const LoginForm = () => {
         },
       })
       window.localStorage.setItem("accessToken", data1.data.login.accessToken)
+      //todo add accesstoken guards to protected links
+      dispatch(setAccessToken(data1.data.login.accessToken))
+
       // setTimeout(myStopFunction, 2000)
 
-      router.push("/applicants")
+      router.push("/DistributionChannelResponses")
     } catch (err) {
       if (err) {
-        console.log(err)
+        //console.log(err)
       }
     }
   }
 
   /* function myStopFunction() {
-    router.push("/applicants")
+    router.push("DistributionChannelResponses")
   } */
   return (
     <Container>

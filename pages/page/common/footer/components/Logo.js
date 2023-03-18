@@ -23,6 +23,9 @@ const Image = styled.img`
   /* height: 150px;
   width: 165px; */
   width: 80%;
+  @media only screen and (max-width: 1000px) {
+    width: auto;
+  }
 `;
 const Logo = () => {
   return (

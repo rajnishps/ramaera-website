@@ -8,7 +8,13 @@ import Map from "./components/Map"
 import Socials from "./components/Socials"
 import Foot from "./components/Foot"
 import { Sub, SubText, SubHeading, Input, DispFlex } from "./components/Links"
-
+import styled from "styled-components"
+const FooterHeight = styled.div`
+  height: 300px;
+  @media only screen and (min-width: 800px) {
+    display: none;
+  }
+`
 const index = () => (
   <PageLayout bgColor="#000000" height="40vh">
     <PageWidth width="1500px" margin="0 0 0 0">
@@ -32,6 +38,7 @@ const index = () => (
         </DispFlex>
         <Socials />
         <Foot />
+        <FooterHeight></FooterHeight>
       </Responsive>
     </PageWidth>
   </PageLayout>

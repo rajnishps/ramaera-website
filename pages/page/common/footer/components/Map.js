@@ -8,6 +8,9 @@ const MapContainer = styled.a`
   //width: 20vw;
   /*   margin-left: 2rem;*/
   margin-bottom: 100px;
+  @media only screen and (max-width: 450px) {
+    margin-bottom: 0px;
+  }
 `
 const Image = styled.iframe`
   border: 3px solid #959595;

@@ -17,9 +17,19 @@ const Applicant = () => {
   const dispatch = useDispatch()
   const { loading, error, data } = useQuery(GetApplications)
   const [anchorEl, setAnchorEl] = useState(false)
-  if (loading) return "Loading..."
-  dispatch(changeAppData(data.applicants))
-  console.log(applicantdata)
+  if (loading) {
+    return "Loading..."
+  }
+  ;(async () => {
+    console.log("async============>.>>>>>", data)
+    try {
+      dispatch(changeAppData(data.applicants))
+    } catch (err) {
+      console.log(err)
+    }
+  })()
+
+  //console.log(applicantdata)
 
   const handleMenu = (event) => {
     setAnchorEl(event.currentTarget)
@@ -37,7 +47,7 @@ const Applicant = () => {
       editable: false,
       selection: false,
       renderCell: (params) => (
-        <Link href={`/applicantDetails/${params.value}`}>
+        <Link href={`/DistributionChannelResponses/${params.value}`}>
           <button>View Details</button>
         </Link>
       ),
@@ -49,7 +59,9 @@ const Applicant = () => {
       editable: false,
       selection: false,
       renderCell: (params) => (
-        <Link href={`/applicantDetail/${params.value}`}>{params.value}</Link>
+        <Link href={`/DistributionChannelResponses/${params.value}`}>
+          {params.value}
+        </Link>
       ),
     },
     {
