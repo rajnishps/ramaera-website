@@ -34,7 +34,9 @@ const PromtContainer1 = () => {
         mta="center"
         padding="1.5vw 0"
         mpadding="0"
-        mmwidth="90vw"
+        mwidth="90vw"
+        mmwidth="85vw"
+        mm="20px 0 0 0"
       />
       <Text
         Text="India is the hub of entrepreneurial talent and we plan to provide these young talents the right resources. Ramaera Industries aims to give wings to the dreams of the CEOs of tomorrow."
@@ -46,10 +48,10 @@ const PromtContainer1 = () => {
         m="0 4rem 0 0"
         msize="12px"
         mta="center"
-        mwidth="100vw"
         padding="1vw 8vw  1vw 0"
         mpadding="0"
-        mmwidth="90vw"
+        mwidth="90vw"
+        mmwidth="85vw"
       />
       {/* <ButtonContainer>
         <Button Text="Read More" m="0" lightborder fontSize="12px" bg="none" />

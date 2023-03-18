@@ -89,6 +89,9 @@ const Quote = styled.img`
   position: absolute;
   top: 220px;
   left: 550px;
+  @media (max-width: 1200px) {
+  top: 210px;
+  left: 380px;  }
   @media (max-width: 768px) {
     opacity: 0;
   }
