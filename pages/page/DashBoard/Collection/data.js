@@ -1,0 +1,133 @@
+export const data = [
+  {
+    id: "1",
+    name: "Application Data",
+    renderCell: (params) => (
+     <button style={{backgroundColor:"#4CAF50",border: "none",
+     color: "white",width:"100px", height:"50px",
+     padding: "15px 32px",
+     textAlign: "center",
+     textDecoration: "none",
+     display: "inline-block",
+     fontSize: "16px"}}>View All</button>
+
+    )
+
+   
+    
+  },
+  {
+    id: "2",
+    name: "Contact Data",
+    email: "View All",
+    dob: "12/2/1990",
+    contact: "9876543210",
+    applicatant: "Stockist",
+    firm: "abc",
+    state: "UP",
+    district: "...",
+    status: "Rejected",
+  },
+  {
+    id: "3",
+    name: "Distributer Data",
+    email: "View All",
+    dob: "12/2/1990",
+    contact: "9876543210",
+    applicatant: "Stockist",
+    firm: "abc",
+    state: "Bihar",
+    district: "Banka",
+    status: "Accepted",
+  },
+  // {
+  //   id: "4",
+  //   name: "Xyz",
+  //   email: "kab@gmail.com",
+  //   dob: "12/2/1990",
+  //   contact: "9876543210",
+  //   applicatant: "Stockist",
+  //   firm: "abc",
+  //   state: "Bihar",
+  //   district: "Banka",
+  //   status: "Accepted",
+  // },
+  // {
+  //   id: "5",
+  //   name: "moh",
+  //   email: "kab@gmail.com",
+  //   dob: "12/2/1990",
+  //   contact: "9876543210",
+  //   applicatant: "Stockist",
+  //   firm: "abc",
+  //   state: "Bihar",
+  //   district: "Banka",
+  //   status: "Rejected",
+  // },
+  // {
+  //   id: "6",
+  //   name: "moh",
+  //   email: "kab@gmail.com",
+  //   dob: "12/2/1990",
+  //   contact: "9876543210",
+  //   applicatant: "Stockist",
+  //   firm: "abc",
+  //   state: "Bihar",
+  //   district: "Banka",
+  //   status: "Rejected",
+  // },
+  // {
+  //   id: "7",
+  //   name: "moh",
+  //   email: "kab@gmail.com",
+  //   dob: "12/2/1990",
+  //   contact: "9876543210",
+  //   applicatant: "Stockist",
+  //   firm: "abc",
+  //   state: "Bihar",
+  //   district: "Banka",
+  //   status: "Rejected",
+  // },
+  // {
+  //   id: "8",
+  //   name: "moh",
+  //   email: "kab@gmail.com",
+  //   dob: "12/2/1990",
+  //   contact: "9876543210",
+  //   applicatant: "Stockist",
+  //   firm: "abc",
+  //   state: "Bihar",
+  //   district: "Banka",
+  //   status: "Rejected",
+  // },
+  // {
+  //   id: "9",
+  //   name: "moh",
+  //   email: "kab@gmail.com",
+  //   dob: "12/2/1990",
+  //   contact: "9876543210",
+  //   applicatant: "Stockist",
+  //   firm: "abc",
+  //   state: "Bihar",
+  //   district: "Banka",
+  //   status: "Rejected",
+  // },
+  // {
+  //   id: "10",
+  //   name: "moh",
+  //   email: "kab@gmail.com",
+  //   dob: "12/2/1990",
+  //   contact: "9876543210",
+  //   applicatant: "Stockist",
+  //   firm: "abc",
+  //   state: "Bihar",
+  //   district: "Banka",
+  //   status: "Rejected",
+  // },
+]
+
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage
