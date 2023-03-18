@@ -22,7 +22,7 @@ export function UserForm() {
 
   const changeButtonCount = (val) => {
     setButtonCount(buttonCount + val)
-    console.log(buttonCount)
+    //console.log(buttonCount)
   }
   const handleCountryChange = (val) => {
     dispatch(changeCountry(val))

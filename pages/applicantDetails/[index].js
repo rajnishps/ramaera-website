@@ -10,7 +10,7 @@ const applicantDetail = () => {
   const applicantdata = useSelector((state) => state.applicationData.appData)
   const router = useRouter()
   const { index } = router.query
-  console.log(applicantdata[index - 1])
+  //console.log(applicantdata[index - 1])
   return (
     <>
       <PageLayout mheight="100vh" height="120vh">

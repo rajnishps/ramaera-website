@@ -43,7 +43,7 @@ const ProjectApplicationInfo = () => {
 
   const rows = []
   if (data) {
-    console.log("alllllll prokjectssssssss", data.AllProjectDetails)
+    //console.log("alllllll prokjectssssssss", data.AllProjectDetails)
     data.AllProjectDetails.forEach((item) => {
       rows.push({
         id: item.name,
