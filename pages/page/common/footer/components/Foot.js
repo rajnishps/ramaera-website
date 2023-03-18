@@ -1,5 +1,7 @@
 import styled from "styled-components"
 import Text from "../../../../../components/Text/Text"
+import NextLink from "next/link"
+
 const d = new Date()
 let year = d.getFullYear()
 const FootContainer = styled.div`
@@ -26,7 +28,7 @@ const FootContainer = styled.div`
     gap: 10px;
   }
 `
-const Link = styled.a`
+const Link = styled(NextLink)`
   font-size: 10px;
   margin-bottom: 1rem;
   color: white;
@@ -67,8 +69,8 @@ const Foot = () => {
       <FootContainer>
         <Link href="/privacy">Privacy Policy</Link>
         <Link href="/terms">Terms & Conditions</Link>
-        <Link href="/application">
-          <div class="glow_button">
+        <Link href="/DistributionChannel">
+          <div className="glow_button">
             <Text
               Text="Become a part of Distribution Channel"
               lg="linear-gradient(90deg, white 0%, white 100%)"

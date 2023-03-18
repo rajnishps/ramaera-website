@@ -80,7 +80,7 @@ const Menu = ({ open, setOpen, ...props }) => {
           </Link>
         </H>
         <H>
-          <Link href="/idea"> Submit Your Ideas</Link>
+          <Link href="/SubmitProject"> Submit Your Ideas</Link>
         </H>
         <H>
           <Link href="/career" onClick={() => setOpen(false)}>

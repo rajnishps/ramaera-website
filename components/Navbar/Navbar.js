@@ -124,7 +124,7 @@ const Navbar = ({ selectedTab }) => {
         </div>
 
         <div className="PC RightNav">
-          <Link href="/idea">
+          <Link href="/SubmitProject">
             <Link2>
               <LinkTo className="right-nav-font ">
                 Submit Your Ideas
@@ -144,7 +144,7 @@ const Navbar = ({ selectedTab }) => {
 
           <Link2>
             <Link
-              href="/contact"
+              href="/ContactUs"
               className="right-nav-font"
               style={{ fontWeight: "300" }}
             >
