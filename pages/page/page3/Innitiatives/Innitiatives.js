@@ -15,6 +15,7 @@ const Innitiatives = () => {
           lh="90px"
           width="90rem"
           mwidth="100vw"
+          miwidth="100vw"
           m="10rem 0 0 0"
           fw="500"
           mlh="50px"

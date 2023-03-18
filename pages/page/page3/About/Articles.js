@@ -13,8 +13,12 @@ const ArticlesContainer = styled.div`
   width: 100%;
   border-radius: 19px;
   overflow-y: scroll;
+   @media (max-width: 1200px) {
+    height: 60vh;
+  } 
   @media (max-width: 600px) {
     height: 80vh;
+    max-height: 100%;
   }
 `
 /* const ArticlesHead = styled.h2`

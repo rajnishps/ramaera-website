@@ -41,6 +41,8 @@ const Text = (props) => {
     }
     @media only screen and (max-width: 1200px) {
       font-size: ${props.xmsize ? props.xmsize : "20px"};
+      width: ${props.miwidth ? props.miwidth : ""};
+    //  margin: ${props.mimargin ? props.mimargin : ""};
     }
     @media only screen and (max-width: 1000px) {
       font-size: ${props.xssize ? props.xssize : "18px"};
