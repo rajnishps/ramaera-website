@@ -9,8 +9,11 @@ const Bg = styled.div`
   width: 100vw;
   z-index: -1;
   @media only screen and (max-width: 1200px) {
-    height: 100vh;
+   // height: 100vh;
     background: transparent;
+  }
+  @media only screen and (max-width: 450px) {
+   height: 650px;
   }
 `;
 const CustomBg = () => {

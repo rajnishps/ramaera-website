@@ -32,6 +32,8 @@ const index = () => (
         </DispFlex>
         <Socials />
         <Foot />
+        <div style={{ height:"300px"}}>
+          </div>
       </Responsive>
     </PageWidth>
   </PageLayout>

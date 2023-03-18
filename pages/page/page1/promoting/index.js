@@ -47,7 +47,7 @@ const index = () => {
             size="55px"
             fw="400"
             align="center"
-            lh="45px"
+            lh="55px"
             xmsize="4rem"
             xssize="6vw"
             msize="1.6rem"
@@ -104,7 +104,8 @@ const index = () => {
             <Image2 />
           </ResImage2>
 
-          <div
+          <div 
+            className="container1"
             data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
             data-aos-anchor-placement="bottom-bottom"
@@ -118,6 +119,7 @@ const index = () => {
             <PromtContainer1 />
           </div>
           <div
+            className="container2"
             data-aos="fade-zoom-in"
             data-aos-easing="ease-in-back"
             data-aos-anchor-placement="top-bottom"

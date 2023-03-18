@@ -15,7 +15,7 @@ const SocialHead = styled.h4`
 `
 const SocialContainer = styled.div`
   position: absolute;
-  bottom: 80px;
+  bottom: 100px;
   right: 150px;
   @media only screen and (max-width: 1200px) {
     bottom: 20px;

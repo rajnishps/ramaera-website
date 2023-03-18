@@ -16,8 +16,14 @@ export const Image = styled.div`
       width: 100%;
     }
   }
+  @media only screen and (max-width: 450px) {
+    video {
+      margin-top: 400px;
+    }
+  }
   @media only screen and (max-width: 400px) {
     video {
+      margin-top: 280px;
       height: 100%;
       width: 100%;
     }

@@ -13,6 +13,7 @@ const FootContainer = styled.div`
   bottom: 100px;
   left: 10vw;
   color: white;
+  align-items: center;
   @media only screen and (max-width: 1200px) {
     left: auto;
     right: auto;
@@ -26,6 +27,11 @@ const FootContainer = styled.div`
   }
   @media only screen and (max-width: 450px) {
     gap: 10px;
+    width: 85vw;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
 `
 const Link = styled(NextLink)`
@@ -34,6 +40,9 @@ const Link = styled(NextLink)`
   color: white;
   cursor: pointer;
   text-decoration: none;
+  @media only screen and (max-width: 450px) {
+    margin: 1rem;
+  }
 `
 const Hr = styled.hr`
   position: absolute;
@@ -50,7 +59,7 @@ const CopyRight = styled.div`
   bottom: 110px;
   left: 900px;
   color: white;
-  height: 2px;
+  height: 13px;
   width: 80vw;
   font-size: 10px;
   margin-bottom: 1rem;
@@ -67,10 +76,8 @@ const Foot = () => {
     <>
       <Hr />
       <FootContainer>
-        <Link href="/privacy">Privacy Policy</Link>
-        <Link href="/terms">Terms & Conditions</Link>
-        <Link href="/DistributionChannel">
-          <div className="glow_button">
+        <Link href="/application">
+          <div class="glow_button">
             <Text
               Text="Become a part of Distribution Channel"
               lg="linear-gradient(90deg, white 0%, white 100%)"
@@ -79,10 +86,14 @@ const Foot = () => {
               size="14px"
               msize="14px"
               align="center"
+              mpadding="1vw"
             />
           </div>
         </Link>
+        <Link href="/privacy">Privacy Policy</Link>
+        <Link href="/terms">Terms & Conditions</Link>
         <Link href="/legal">Legal</Link>
+
         {/* <Link href="#">Site Map</Link> */}
       </FootContainer>
       <CopyRight>© {year} All Rights Reserved</CopyRight>

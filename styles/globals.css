@@ -794,3 +794,20 @@ h3 {
     box-shadow: 0 0 3px #e65c00;
   }
 }
+
+@media screen and (max-width: 1200px){
+  .container1{
+    right: 0 ;
+    width:20vw;
+    top: 250px !important;
+  }
+  .container2{
+    width:20vw;
+    left: 0;
+  }
+}
+/* @media (min-width: 1200px) {
+  .container1{
+    right: 0 ;
+  }
+} */
