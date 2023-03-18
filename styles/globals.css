@@ -998,14 +998,14 @@ a:hover {
   }
 }
 
-@media screen and (max-width: 1200px){
-  .container1{
-    right: 0 ;
-    width:20vw;
+@media screen and (max-width: 1200px) {
+  .container1 {
+    right: 0;
+    width: 20vw;
     top: 250px !important;
   }
-  .container2{
-    width:20vw;
+  .container2 {
+    width: 20vw;
     left: 0;
   }
 }
