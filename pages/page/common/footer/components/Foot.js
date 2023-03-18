@@ -16,6 +16,12 @@ const FootContainer = styled.div`
     right: auto;
     gap: 20px;
   }
+  @media only screen and (max-width: 768px) {
+    position: static;
+    height: 10px;
+    flex-direction: column;
+    margin: 0 auto;
+  }
   @media only screen and (max-width: 450px) {
     gap: 10px;
   }
@@ -59,20 +65,22 @@ const Foot = () => {
     <>
       <Hr />
       <FootContainer>
-        {/* <Link href="/privacy">Privacy Policy</Link> */}
-        {/* <Link href="/terms">Terms & Conditions</Link> */}
+        <Link href="/privacy">Privacy Policy</Link>
+        <Link href="/terms">Terms & Conditions</Link>
         <Link href="/application">
-          <Text
-            Text="Become a part of Distribution Channel"
-            lg="linear-gradient(90deg, #E65C00 0%, #F9D423 100%)"
-            font
-            padding="20px 0 0 0 "
-            size="14px"
-            msize="10px"
-            align="center"
-          />
+          <div class="glow_button">
+            <Text
+              Text="Become a part of Distribution Channel"
+              lg="linear-gradient(90deg, white 0%, white 100%)"
+              font
+              padding=" 0 "
+              size="14px"
+              msize="14px"
+              align="center"
+            />
+          </div>
         </Link>
-        {/* <Link href="/legal"></Link> */}
+        <Link href="/legal">Legal</Link>
         {/* <Link href="#">Site Map</Link> */}
       </FootContainer>
       <CopyRight>© {year} All Rights Reserved</CopyRight>
