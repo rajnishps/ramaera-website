@@ -24,6 +24,7 @@ export const TrendingLeft1 = styled.div`
     url("/background/Left Column (1).png"); */
   background-position: right;
   background-repeat: no-repeat;
+  
   @media (max-width: 600px) {
     width: 100%;
     background: none;
@@ -35,10 +36,15 @@ export const TrendingRight = styled.div`
   border: 1px solid white;
   height: 45vh;
   border-radius: 20px;
+  @media (max-width: 1200px) {
+    height: 60vh;
+    width: 37%;
+  } 
   @media (max-width: 600px) {
     width: 100%;
     margin-top: 20px;
-    height: 80vh;
+    height: 60vh;
+    max-height: 100%;
   }
 `
 export const TrendingHead1 = styled.h2`

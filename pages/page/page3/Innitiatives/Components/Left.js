@@ -30,7 +30,7 @@ const Left = () => {
             mwidth="100%"
             fw="500"
             mlh="30px"
-            xmsize="2rem"
+            xmsize="1.7rem"
             xssize="4vw"
             msize="1.5rem"
             mpadding="0rem 0 1rem 0 "

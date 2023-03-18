@@ -5,11 +5,12 @@ if (typeof window !== "undefined") {
   ACCESSTOKEN = localStorage.getItem("accessToken")
 }
 const client = new ApolloClient({
-  uri: "http://192.168.29.51:3000/graphql",
-  //uri: "http://192.46.210.85:5655/graphql",
+  //uri: "https://192.46.210.85:5655/graphql",
+  uri: "https://ramaerawebsitebackend-production.up.railway.app/graphql",
   //uri: "http://localhost:3000/graphql",
   headers: {
-    authorization: `Bearer ${ACCESSTOKEN}` || "",
+    authorization: ACCESSTOKEN ? `Bearer ${ACCESSTOKEN}` : "",
+    //authorization: `Bearer ${ACCESSTOKEN}` || "",
   },
   cache: new InMemoryCache(),
 })

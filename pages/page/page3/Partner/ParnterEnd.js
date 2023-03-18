@@ -19,6 +19,9 @@ const LeftPara = styled.div`
 `
 const RightImgBox = styled.div`
   width: 40%;
+  @media (max-width: 1200px) {
+    margin: 0px 15vw 0  0;
+  }
   @media (max-width: 600px) {
     width: 90%;
     margin: 0px auto;

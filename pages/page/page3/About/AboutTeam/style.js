@@ -35,6 +35,9 @@ export const ParaBox = styled.div`
   /* align-items: center; */
   margin-top: 60px;
   border-left: 4px solid white;
+  @media (max-width: 1200px) {
+    width: 70%;
+  }
   @media (max-width: 600px) {
     width: 90%;
   }
@@ -52,6 +55,9 @@ export const LeftPara = styled.p`
 export const RightTeam = styled.div`
   width: 35%;
   margin-top: 40px;
+  @media (max-width: 1200px) {
+    width: 50%;
+  }
   @media (max-width: 600px) {
     width: 90%;
   }

@@ -13,6 +13,12 @@ const MainContainer = styled.div`
 export const ParaContainer = styled.div`
   margin-top: 20px;
   width: 85%;
+  @media (max-width: 1200px) {
+    width: 100%;
+  }
+  @media (max-width: 600px) {
+    width: 85%;
+  }
 `
 const Polygon = styled.div`
   width: 100%;
@@ -71,6 +77,7 @@ const Innovation = () => {
               xssize="18px"
               mlh="30px"
               msize="18px"
+              miwidth="100vw"
               mwidth="85vw"
               mta="center"
               align="center"
