@@ -15,6 +15,9 @@ const PartnerBoxContainer = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  @media (max-width: 1200px) {
+   margin: 100px auto;
+  }
   @media (max-width: 600px) {
     width: 90%;
     margin: 0px auto;

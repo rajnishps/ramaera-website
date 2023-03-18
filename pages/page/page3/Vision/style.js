@@ -8,13 +8,20 @@ export const VisionBox = styled.div`
   background-size: cover;
   background-position: center;
   box-sizing: border-box;
+  @media (max-width: 1200px) {
+    min-height: 1600px;
+  }
   @media (max-width: 600px) {
-    height: 250vh;
-    min-height: 2100px;
+    height: 220vh;
+    min-height: 1800px;
     width: 95%;
     margin: 0px auto;
   }
+  @media (max-width: 400px) {
+  min-height: 2100px;
+}
 `
+
 export const VisionBG = styled.div`
   width: 95%;
   margin: 50px auto;
