@@ -81,7 +81,7 @@ const Card = () => {
 
        </div>
      
-      
+      <div style={{height:"100px"}}></div>
     </>
   )
 }
