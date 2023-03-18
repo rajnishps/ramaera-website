@@ -331,15 +331,21 @@ export function UserForm({}) {
       {partner === "STOCKIST" && district && (
         <div style={{ width: "500px" }}>
           <p style={{ padding: " 10px 0" }}>
+            <strong style={{ textDecoration: "underline" }}>
+              {" "}
+              Terms and Conditions
+            </strong>
+            <br />
+            <br />
             <strong> Expected Charges:</strong>
             <br />
             <br />
-            Security Deposit :<strong>₹1.5 Lacs</strong>
+            Security Deposit (Refundable): <strong>₹1.5 Lacs</strong>
             <sup> *</sup>{" "}
           </p>
 
           <p style={{ padding: " 10px 0" }}>
-            Minimum Order Amount : <strong>₹5.5 Lacs</strong>
+            Minimum Purchase Amount : <strong>₹5.5 Lacs</strong>
             <sup> *</sup>
           </p>
         </div>
@@ -350,15 +356,21 @@ export function UserForm({}) {
       {partner === "DISTRIBUTOR" && district && (
         <div style={{ width: "500px" }}>
           <p style={{ padding: " 10px 0" }}>
+            <strong style={{ textDecoration: "underline" }}>
+              {" "}
+              Terms and Conditions
+            </strong>
+            <br />
+            <br />
             <strong> Expected Charges:</strong>
             <br />
             <br />
-            Security Deposit :<strong> ₹50 Thousand</strong>
+            Security Deposit (Refundable): <strong> ₹50 Thousand</strong>
             <sup> *</sup>{" "}
           </p>
 
           <p style={{ padding: " 10px 0" }}>
-            Minimum Order Amount : <strong>₹1.5 Lacs</strong>
+            Minimum Purchase Amount : <strong>₹1.5 Lacs</strong>
             <sup> *</sup>
           </p>
         </div>
