@@ -9,9 +9,9 @@ import Head from "next/head"
 const contact = () => {
   return (
     <>
-    <Navbar/>
+      <Navbar />
       <Head>
-        <title>Ramaera Industries - Contact</title>
+        <title>Ramaera Industries - Contact Us</title>
       </Head>
       <ColabHead />
       <Colab />

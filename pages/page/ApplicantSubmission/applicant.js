@@ -47,7 +47,7 @@ const Applicant = () => {
       editable: false,
       selection: false,
       renderCell: (params) => (
-        <Link href={`/applicantDetails/${params.value}`}>
+        <Link href={`/DistributionChannelResponses/${params.value}`}>
           <button>View Details</button>
         </Link>
       ),
@@ -59,7 +59,9 @@ const Applicant = () => {
       editable: false,
       selection: false,
       renderCell: (params) => (
-        <Link href={`/applicantDetail/${params.value}`}>{params.value}</Link>
+        <Link href={`/DistributionChannelResponses/${params.value}`}>
+          {params.value}
+        </Link>
       ),
     },
     {
