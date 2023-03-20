@@ -96,8 +96,8 @@ const Menu = ({ open, setOpen, ...props }) => {
           <Button
             nav
             width="20px"
-            height="2.75rem"
-            Text="KYC"
+            height="4rem"
+            Text="Ramaera Subscriber Login"
             inheight="2.5rem"
           />
         </Link>
