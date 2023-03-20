@@ -91,7 +91,7 @@ const Ideas = () => {
     e.preventDefault()
 
     if (!isLastStep) return next()
-    console.log("hi")
+    console.log("hisfdesd")
     /* 
       CreateProject({
         variables: {
