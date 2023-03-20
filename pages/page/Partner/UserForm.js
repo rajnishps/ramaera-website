@@ -1014,12 +1014,16 @@ export function UserForm({}) {
             <strong> Expected Charges:</strong>
             <br />
             <br />
-            Security Deposit (Refundable): <strong>₹1.5 Lacs</strong>
+            Security Deposit (Refundable):
+            <br />
+            <strong>₹1.5 Lacs</strong>
             <sup> *</sup>{" "}
           </p>
 
           <p style={{ padding: " 10px 0" }}>
-            Minimum Purchase Amount : <strong>₹5.5 Lacs</strong>
+            Minimum Purchase Amount :
+            <br />
+            <strong>₹5.5 Lacs</strong>
             <sup> *</sup>
           </p>
         </div>
@@ -1039,12 +1043,16 @@ export function UserForm({}) {
             <strong> Expected Charges:</strong>
             <br />
             <br />
-            Security Deposit (Refundable): <strong> ₹50 Thousand</strong>
+            Security Deposit (Refundable):
+            <br />
+            <strong> ₹50 Thousand</strong>
             <sup> *</sup>{" "}
           </p>
 
           <p style={{ padding: " 10px 0" }}>
-            Minimum Purchase Amount : <strong>₹1.5 Lacs</strong>
+            Minimum Purchase Amount :
+            <br />
+            <strong>₹1.5 Lacs</strong>
             <sup> *</sup>
           </p>
         </div>
@@ -1056,13 +1064,15 @@ export function UserForm({}) {
             Area Coverage:
             <br />
             <br />
-            {location.map((loc) => {
-              return (
-                <>
-                  <strong>{loc}, </strong>
-                </>
-              )
-            })}
+            <p style={{ width: "300px", padding: "20px" }}>
+              {location.map((loc) => {
+                return (
+                  <>
+                    <strong style={{ overflowWrap: "wrap" }}>{loc}, </strong>
+                  </>
+                )
+              })}
+            </p>
           </p>
         </div>
       )}
