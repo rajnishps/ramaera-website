@@ -18,7 +18,7 @@ export function AccountForm() {
         <label>Your LinkedIn Profile</label>
         <br />
         <input
-          //required
+          required
           autoFocus
           type="text"
           onChange={(e) => dispatch(changelinkedinProfile(e.target.value))}
@@ -28,7 +28,7 @@ export function AccountForm() {
         <label>Your Facebook Profile</label>
         <br />
         <input
-          //required
+          required
           type="text"
           onChange={(e) => dispatch(changefacebookProfile(e.target.value))}
           placeholder="paste or type  link here"
@@ -38,7 +38,7 @@ export function AccountForm() {
         <label>Your Twitter Profile</label>
         <br />
         <input
-          //required
+          required
           type="text"
           onChange={(e) => dispatch(changetwitterProfile(e.target.value))}
           placeholder="paste or type  link here"
@@ -48,7 +48,7 @@ export function AccountForm() {
         <label>Your Instagram Profile</label>
         <br />
         <input
-          //required
+          required
           type="text"
           onChange={(e) => dispatch(changeinstagramProfile(e.target.value))}
           placeholder="paste or type  link here"
@@ -58,7 +58,7 @@ export function AccountForm() {
         <label>Website URL if any</label>
         <br />
         <input
-          //required
+          required
           type="text"
           onChange={(e) => dispatch(changewebsiteURL(e.target.value))}
           placeholder="paste or type  link here"
@@ -69,7 +69,7 @@ export function AccountForm() {
         <label>Thanks Note</label>
         <br />
         <input
-          //required
+          required
           type="text"
           onChange={(e) => dispatch(changethanksNote(e.target.value))}
           placeholder=" Type your message"

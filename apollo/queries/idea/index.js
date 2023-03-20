@@ -42,7 +42,7 @@ $facebookProfile: String!,
 $instagramProfile: String!,
 $websiteURL: String!,
 $thanksNote: String!,
-$director: [String!],
+$director: [String!]!,
 ){CreateProject(
     data: {
       City: $City
@@ -92,7 +92,7 @@ $director: [String!],
     }
 }`)
 
-export const GetProjectApplications = gql(`
+export const hGetProjectApplications = gql(`
 
 query getProjectApplicants {
   AllProjectDetails {
@@ -117,6 +117,42 @@ query getProjectApplicants {
     marketProblem
     solution
     yourProduct
+    businessModel
+    sizeOfMarket
+    currentTransaction
+    competitiveLandscape
+    financialProjection
+    fundNeed
+    equityStructure
+    exitOption
+    selectFundingType
+    fundingStage
+    selectFundingTypeAgain
+    fundingAmount
+    fundingDate
+    linkedinProfile
+    twitterProfile
+    facebookProfile
+    instagramProfile
+    websiteURL
+    thanksNote
+    director
+  }
+}`)
+export const GetProjectApplications = gql(`
+
+query getProjectApplicants {
+  AllProjectDetails {
+    name
+    typeOfPartnership
+    fundingType
+    receivingMode
+    goal
+    targetFor
+    perPersonAmount
+    brief
+    marketProblem
+    solution
     businessModel
     sizeOfMarket
     currentTransaction

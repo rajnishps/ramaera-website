@@ -505,6 +505,7 @@ a {
 label {
   margin-top: 20px;
   font-size: 0.8rem;
+  color: #000;
 }
 textarea {
   padding: 10px;
@@ -533,7 +534,9 @@ input::placeholder,
   text-align: left;
 }
 @media (max-width: 540px) {
-  input,select ,textarea{
+  input,
+  select,
+  textarea {
     width: 88vw;
     margin: 10px 0;
   }
@@ -1016,48 +1019,47 @@ a:hover {
   }
 } */
 
-.formWrapper{
+.formWrapper {
   display: grid;
-  gap: 1rem 0 ;
+  gap: 1rem 0;
   justify-content: flex-start;
   grid-template-columns: auto minmax(auto, 400px);
 }
 
 @media (max-width: 450px) {
-  .formWrapper{
-    grid-template-columns: auto ;
+  .formWrapper {
+    grid-template-columns: auto;
   }
 }
 
 @media (max-width: 450px) {
-.lineHr1{
-  width: 90vw;
-}
+  .lineHr1 {
+    width: 90vw;
+  }
 }
 @media (max-width: 450px) {
-.lineHr2{
-  display: none;
-}
+  .lineHr2 {
+    display: none;
+  }
 }
 
-
-.navSpace{
+.navSpace {
   height: 200px;
 }
-@media (max-width: 450px){
-  .navSpace{
-    height:80px
+@media (max-width: 450px) {
+  .navSpace {
+    height: 80px;
   }
 }
 
-@media (max-width: 450px){
-.detailContact{
-  width: 60vw !important;
-}
+@media (max-width: 450px) {
+  .detailContact {
+    width: 60vw !important;
+  }
 }
 
-@media (max-width: 450px){
-  .loginInput{
+@media (max-width: 450px) {
+  .loginInput {
     width: 80vw !important;
   }
 }

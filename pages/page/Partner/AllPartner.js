@@ -5,11 +5,10 @@ import { useMutation } from "@apollo/client"
 import { useSelector } from "react-redux"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
-import {Container,ButtonContainer} from "./allPartnerStyle.js"
+import { Container, ButtonContainer } from "./allPartnerStyle.js"
 
 const Ideas = () => {
-  const [createApplication, { data, loading, error }] =
-    useMutation(CreateApplications)
+  const [createApplication] = useMutation(CreateApplications)
   const name1 = useSelector((state) => state.application.name)
   const applicantType1 = useSelector((state) => state.application.applicantType)
   const applicantAddress1 = useSelector(

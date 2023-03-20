@@ -91,53 +91,52 @@ const Ideas = () => {
     e.preventDefault()
 
     if (!isLastStep) return next()
-    console.log("hisfdesd")
-    /* 
-      CreateProject({
-        variables: {
-          City: CityVar,
-          Country: CountryVar,
-          State: StateVar,
-          dob: dobVar,
-          mobileNumber: mobileNumberVar,
-          occupation: occupationVar,
-          name: nameVar,
-          email: emailVar,
-          director: directorDataVar,
-          yourProjectType: yourProjectTypeVar,
-          youAre: youAreVar,
-          typeOfPartnership: typeOfPartnershipVar,
-          fundingType: fundingTypeVar,
-          receivingMode: receivingModeVar,
-          goal: goalVar,
-          targetFor: targetForVar,
-          perPersonAmount: perPersonAmountVar,
-          yourProjectTitle: yourProjectTitleVar,
-          brief: briefVar,
-          marketProblem: marketProblemVar,
-          solution: solutionVar,
-          yourProduct: yourProductVar,
-          businessModel: businessModelVar,
-          sizeOfMarket: sizeOfMarketVar,
-          currentTransaction: currentTransactionVar,
-          competitiveLandscape: competitiveLandscapeVar,
-          financialProjection: financialProjectionVar,
-          fundNeed: fundNeedVar,
-          equityStructure: equityStructureVar,
-          exitOption: exitOptionVar,
-          selectFundingType: selectFundingTypeVar,
-          fundingStage: fundingStageVar,
-          selectFundingTypeAgain: selectFundingTypeAgainVar,
-          fundingAmount: fundingAmountVar,
-          fundingDate: fundingDateVar,
-          linkedinProfile: linkedinProfileVar,
-          twitterProfile: twitterProfileVar,
-          facebookProfile: facebookProfileVar,
-          instagramProfile: instagramProfileVar,
-          websiteURL: websiteURLVar,
-          thanksNote: thanksNoteVar,
-        },
-      }) */
+
+    CreateProject({
+      variables: {
+        City: CityVar,
+        Country: CountryVar,
+        State: StateVar,
+        dob: dobVar,
+        mobileNumber: mobileNumberVar,
+        occupation: occupationVar,
+        name: nameVar,
+        email: emailVar,
+        director: directorDataVar,
+        yourProjectType: yourProjectTypeVar,
+        youAre: youAreVar,
+        typeOfPartnership: typeOfPartnershipVar,
+        fundingType: fundingTypeVar,
+        receivingMode: receivingModeVar,
+        goal: goalVar,
+        targetFor: targetForVar,
+        perPersonAmount: perPersonAmountVar,
+        yourProjectTitle: yourProjectTitleVar,
+        brief: briefVar,
+        marketProblem: marketProblemVar,
+        solution: solutionVar,
+        yourProduct: yourProductVar,
+        businessModel: businessModelVar,
+        sizeOfMarket: sizeOfMarketVar,
+        currentTransaction: currentTransactionVar,
+        competitiveLandscape: competitiveLandscapeVar,
+        financialProjection: financialProjectionVar,
+        fundNeed: fundNeedVar,
+        equityStructure: equityStructureVar,
+        exitOption: exitOptionVar,
+        selectFundingType: selectFundingTypeVar,
+        fundingStage: fundingStageVar,
+        selectFundingTypeAgain: selectFundingTypeAgainVar,
+        fundingAmount: fundingAmountVar,
+        fundingDate: fundingDateVar,
+        linkedinProfile: linkedinProfileVar,
+        twitterProfile: twitterProfileVar,
+        facebookProfile: facebookProfileVar,
+        instagramProfile: instagramProfileVar,
+        websiteURL: websiteURLVar,
+        thanksNote: thanksNoteVar,
+      },
+    })
 
     clearForm()
   }
@@ -152,9 +151,10 @@ const Ideas = () => {
       progress: undefined,
       theme: "light",
     })
+    //todo
     setTimeout(() => {
       location.reload()
-    }, "320000")
+    }, "3200")
   }
 
   return (

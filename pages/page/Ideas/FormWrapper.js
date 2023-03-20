@@ -26,12 +26,12 @@ export function FormWrapper({ number, title, children }) {
       <Text
         Text="We assist in the development,expansion, and support of"
         lg="linear-gradient(to right, #000, #000)"
-        size="clamp(1.2rem, 1vw, 1.1rem)"
+        size="clamp(1.2rem, 0.5vw, 1.1rem)"
         fw="400"
         align="center"
         lh="30px"
-        xmsize="clamp(2.4rem, 1.5vw, 2rem)"
-        xssize="clamp(2.4rem, 1.5vw, 2rem)"
+        xmsize="clamp(1.2rem, 0.5vw, 1.1rem)"
+        xssize="clamp(1.2rem, 0.5vw, 1.1rem)"
         msize="1.6rem"
         mmsize="1.6rem"
         mwidth="100%"
@@ -51,8 +51,8 @@ export function FormWrapper({ number, title, children }) {
         align="center"
         lh="30px"
         m="0 0 1rem 0"
-        xmsize="clamp(2.4rem, 1.5vw, 2rem)"
-        xssize="clamp(2.4rem, 1.5vw, 2rem)"
+        xmsize="clamp(1.2rem, 1vw, 1.1rem)"
+        xssize="clamp(1.2rem, 1vw, 1.1rem)"
         msize="1.6rem"
         mmsize="1.6rem"
         mwidth="100%"
@@ -83,9 +83,7 @@ export function FormWrapper({ number, title, children }) {
         mlh="unset"
       />
       <StepperSteps activeStep={number} />
-      <div className="formWrapper">
-        {children}
-      </div>
+      <div className="formWrapper">{children}</div>
     </>
   )
 }

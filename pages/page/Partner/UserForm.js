@@ -655,7 +655,7 @@ export function UserForm({}) {
   }
 
   return (
-    <FormWrapper title="a PART OF OUR DISTRIBUTION CHANNEL">
+    <FormWrapper title="BECOME A PART OF OUR DISTRIBUTION CHANNEL">
       <div style={{ width: "500px", marginTop: "30px" }}>
         <label style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}>
           Personal Details
@@ -1003,7 +1003,7 @@ export function UserForm({}) {
           </div>
         ))}
       {partner === "STOCKIST" && district && (
-        <div style={{ width: "500px" }}>
+        <div style={{ width: "500px", color: "black" }}>
           <p style={{ padding: " 10px 0" }}>
             <strong style={{ textDecoration: "underline" }}>
               {" "}
@@ -1032,7 +1032,7 @@ export function UserForm({}) {
         <div style={{ width: "450px" }}></div>
       )}
       {partner === "DISTRIBUTOR" && district && (
-        <div style={{ width: "500px" }}>
+        <div style={{ width: "500px", color: "black" }}>
           <p style={{ padding: " 10px 0" }}>
             <strong style={{ textDecoration: "underline" }}>
               {" "}
@@ -1058,13 +1058,12 @@ export function UserForm({}) {
         </div>
       )}
       {partner === "DISTRIBUTOR" && district && (
-        <div style={{ width: "450px" }}>
+        <div style={{ width: "450px", color: "black" }}>
           <p style={{ padding: " 10px 0" }}>
-            <br />
             Area Coverage:
             <br />
             <br />
-            <p style={{ width: "300px", padding: "20px" }}>
+            <p style={{ width: "350px", padding: "0px" }}>
               {location.map((loc) => {
                 return (
                   <>
@@ -1078,7 +1077,12 @@ export function UserForm({}) {
       )}
       <div
         className="detailContact"
-        style={{ width: "500px", paddingTop: "7px", fontSize: "16px" }}
+        style={{
+          width: "500px",
+          paddingTop: "7px",
+          fontSize: "16px",
+          color: "black",
+        }}
       >
         <br />
         <strong>Contact us:</strong>
@@ -1087,7 +1091,7 @@ export function UserForm({}) {
       </div>
       <div
         className="detailContact"
-        style={{ width: "450px", fontSize: "16px" }}
+        style={{ width: "450px", fontSize: "16px", color: "black" }}
       >
         <br />
         <strong>संपर्क करें:</strong>
@@ -1095,7 +1099,7 @@ export function UserForm({}) {
         ई-मेल: sales@ramaera.in | फोन: +91-120-4152818
       </div>
       {partner && district && (
-        <div style={{ width: "500px" }}>
+        <div style={{ width: "500px", color: "black" }}>
           <p style={{ fontSize: "12px" }}>
             <sup>*</sup>All Data for the proposal purpose only,
             <br />

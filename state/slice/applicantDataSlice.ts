@@ -13,7 +13,7 @@ export const applicantDataSlice = createSlice({
       state.appData = action.payload
     },
     changeProjectData: (state, action) => {
-      state.appData = action.payload
+      state.projectData = action.payload
     },
   },
 })

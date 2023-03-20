@@ -20,14 +20,30 @@ const Applicant = () => {
   if (loading) {
     return "Loading..."
   }
-  ;(async () => {
-    console.log("async============>.>>>>>", data)
+
+  const ACCESSTOKEN = window.localStorage.getItem("accessToken")
+  if (!ACCESSTOKEN) {
+    return (
+      <>
+        <Link
+          style={{
+            color: "white",
+          }}
+          href="/login"
+        >
+          Login to continue
+        </Link>
+      </>
+    )
+  }
+
+  const dataPush = async () => {
     try {
       dispatch(changeAppData(data.applicants))
     } catch (err) {
       console.log(err)
     }
-  })()
+  }
 
   //console.log(applicantdata)
 
@@ -58,11 +74,6 @@ const Applicant = () => {
       width: 150,
       editable: false,
       selection: false,
-      renderCell: (params) => (
-        <Link href={`/DistributionChannelResponses/${params.value}`}>
-          {params.value}
-        </Link>
-      ),
     },
     {
       field: "email",
@@ -98,7 +109,8 @@ const Applicant = () => {
 
   const rows = []
 
-  if (applicantdata) {
+  if (data) {
+    dataPush()
     data.applicants.forEach((item, index) => {
       rows.push({
         id: index,
@@ -111,7 +123,6 @@ const Applicant = () => {
         status: item.status,
       })
     })
-
     return (
       <>
         <Container>
@@ -198,6 +209,8 @@ const Applicant = () => {
         </Container>
       </>
     )
+  } else {
+    return <div onClick={location.reload()}></div>
   }
 }
 
