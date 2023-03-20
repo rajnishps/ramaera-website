@@ -14,8 +14,8 @@ const applicantsDetails = (props) => {
             </label>
           </div>
           <div style={{ width: "450px" }}></div>
-          <hr />
-          <hr />
+          <hr className="lineHr1"/>
+          <hr className="lineHr2"/>
           <div style={{ width: "500px" }}>
             <label>Applicant's Name </label>
             <br />
@@ -54,8 +54,8 @@ const applicantsDetails = (props) => {
             </label>
           </div>
           <div style={{ width: "450px" }}></div>
-          <hr />
-          <hr />
+          <hr  className="lineHr1"/>
+          <hr className="lineHr2"/>
           <div style={{ width: "500px" }}>
             <label>Application </label>
             <br />
