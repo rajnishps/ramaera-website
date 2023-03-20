@@ -1,19 +1,10 @@
 import { FormWrapper } from "./FormWrapper"
+import {Container} from "./applicantsDetailsStyle"
 
 const applicantsDetails = (props) => {
   return (
     <>
-      <div
-        style={{
-          position: "relative",
-          background: "white",
-          padding: "2rem 2rem 3.5rem 2rem",
-          margin: "1rem",
-          borderRadius: ".5rem",
-          maxWidth: "max-content",
-          color: "black",
-        }}
-      >
+      <Container>
         <FormWrapper>
           <div style={{ width: "500px", marginTop: "30px" }}>
             <label
@@ -103,7 +94,7 @@ const applicantsDetails = (props) => {
             </select>
           </div>
         </FormWrapper>
-      </div>
+      </Container>
     </>
   )
 }
