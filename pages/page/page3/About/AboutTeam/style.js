@@ -8,7 +8,7 @@ export const TeamContainer = styled.div`
   /* background: linear-gradient(0deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
     url("/background/Team.jpeg"); */
   /* height: 60vh; */
-  background-position: center;
+  background-position: top;
   background-size: cover;
   border: 3px solid white;
   border-radius: 20px;
@@ -26,7 +26,7 @@ export const LeftTeam = styled.div`
   }
 `;
 export const ParaBox = styled.div`
-  width: 50%;
+  width: 70%;
   height: 20vh;
   display: flex;
   margin: 20px auto;
@@ -40,6 +40,7 @@ export const ParaBox = styled.div`
   }
   @media (max-width: 600px) {
     width: 90%;
+    margin-top: 130px;
   }
 `;
 export const LeftPara = styled.p`
@@ -53,7 +54,7 @@ export const LeftPara = styled.p`
   }
 `;
 export const RightTeam = styled.div`
-  width: 35%;
+  width: 40%;
   margin-top: 40px;
   @media (max-width: 1200px) {
     width: 50%;
