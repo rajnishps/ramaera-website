@@ -131,6 +131,7 @@ const LoginForm = () => {
                 paddingLeft: "60px",
                 marginTop: "0",
               }}
+              className="loginInput"
             />
           </LoginTitle>
           <button type="submit" style={{ background: "none", border: "none" }}>

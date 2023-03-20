@@ -1055,3 +1055,9 @@ a:hover {
   width: 60vw !important;
 }
 }
+
+@media (max-width: 450px){
+  .loginInput{
+    width: 300px !important;
+  }
+  }
