@@ -176,7 +176,7 @@ const Ideas = () => {
             <div style={{ background: "none", border: "none" }} onClick={back}>
               <Button
                 nav
-                width="140px"
+                width="150px"
                 height="2.75rem"
                 Text="⬅ Back"
                 inheight="2.5rem"
