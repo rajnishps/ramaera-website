@@ -23,3 +23,9 @@ export const ButtonContainer = styled.div`
         gap: 3rem;
      }
 `;
+
+const StyleImage = () => {
+        return <div>StyleImage</div>
+      }
+      
+      export default StyleImage

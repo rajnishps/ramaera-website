@@ -1,6 +1,12 @@
 import { FormWrapper } from "./FormWrapper"
 import { useRouter } from "next/router"
 const applicantsDetails = ({ AppData }) => {
+  return (
+    <h2>'</h2>
+  )
+}
+
+/* const applicantsDetails = ({ AppData }) => {
   const router = useRouter()
 
   if (!AppData) {
@@ -116,6 +122,6 @@ const applicantsDetails = ({ AppData }) => {
   } catch {
     return
   }
-}
+} */
 
 export default applicantsDetails

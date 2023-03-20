@@ -23,3 +23,9 @@ export const ButtonContainer = styled.div`
         justify-content: center;
      }
 `;
+
+const StyleImage = () => {
+        return <div>StyleImage</div>
+      }
+      
+      export default StyleImage
