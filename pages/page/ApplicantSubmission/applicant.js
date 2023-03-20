@@ -99,7 +99,7 @@ const Applicant = () => {
   const rows = []
 
   if (applicantdata) {
-    applicantdata.forEach((item, index) => {
+    data.applicants.forEach((item, index) => {
       rows.push({
         id: index,
         number: index + 1,

@@ -1,6 +1,12 @@
 import { FormWrapper } from "./FormWrapper"
-
+import { useRouter } from "next/router"
 const applicantsDetails = ({ AppData }) => {
+  const router = useRouter()
+
+  if (!AppData) {
+    console.log("not working")
+    router.push("/DistributionChannel")
+  }
   try {
     return (
       <>
@@ -108,7 +114,7 @@ const applicantsDetails = ({ AppData }) => {
       </>
     )
   } catch {
-    return "404 Error"
+    return
   }
 }
 

@@ -3,10 +3,26 @@ import Box from "@mui/material/Box"
 import Text from "../../../components/Text/Text"
 import { useQuery } from "@apollo/client"
 import { GetProjectApplications } from "../../../apollo/queries/idea"
+import { useDispatch, useSelector } from "react-redux"
+import { changeProjectData } from "../../../state/slice/applicantDataSlice"
 
 const ProjectApplicationInfo = () => {
+  const applicantdata = useSelector(
+    (state) => state.applicationData.projectData
+  )
+  const dispatch = useDispatch()
   const { loading, error, data } = useQuery(GetProjectApplications)
-  if (loading) return "loading..."
+  if (loading) {
+    return "Loading..."
+  }
+  ;(async () => {
+    console.log("async============>.>>>>>", data)
+    try {
+      dispatch(changeAppData(data.applicants))
+    } catch (err) {
+      console.log(err)
+    }
+  })()
   const columns = [
     {
       field: "name",
@@ -42,8 +58,7 @@ const ProjectApplicationInfo = () => {
   ]
 
   const rows = []
-  if (data) {
-    //console.log("alllllll prokjectssssssss", data.AllProjectDetails)
+  if (applicantdata) {
     data.AllProjectDetails.forEach((item) => {
       rows.push({
         id: item.name,
