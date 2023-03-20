@@ -68,6 +68,7 @@ export function AddressForm() {
         </div>
         <div style={{ width: "450px" }}>
           <label>You Are ?</label>
+          <br />
           <select
             required
             onChange={(e) => dispatch(changeyouAre(e.target.value))}
@@ -83,6 +84,7 @@ export function AddressForm() {
         </div>
         <div style={{ width: "500px" }}>
           <label>Type Of Partnership !!</label>
+          <br />
           <select
             required
             onChange={(e) => dispatch(changetypeOfPartnership(e.target.value))}
@@ -168,7 +170,7 @@ export function AddressForm() {
         <div style={{ width: "450px" }}></div>
         <div style={{ width: "500px" }}>
           <label>
-            Brief about yourself & experience (minimum 30 character)*
+            Brief about yourself & experience
           </label>
           <br />
           <textarea
@@ -176,7 +178,7 @@ export function AddressForm() {
             onChange={(e) => dispatch(changebrief(e.target.value))}
             rows={5}
             cols={60}
-            placeholder="Brief about yourself..."
+            placeholder="Brief about yourself (minimum 30 character)*"
           />
         </div>
         <div style={{ width: "450px" }}>
@@ -306,6 +308,7 @@ export function AddressForm() {
         </div>
         <div style={{ width: "500px" }}>
           <label>Select Fundraising Type</label>
+          <br />
           <select
             required
             onChange={(e) => dispatch(changeselectFundingType(e.target.value))}
@@ -371,6 +374,7 @@ export function AddressForm() {
         {show && (
           <div style={{ width: "500px" }}>
             <label>Select Fundraising Stage</label>
+            <br/>
             <select
               onChange={(e) => dispatch(changefundingStage(e.target.value))}
             >

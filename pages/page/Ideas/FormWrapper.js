@@ -16,9 +16,10 @@ export function FormWrapper({ number, title, children }) {
         xssize="clamp(2.4rem, 1.5vw, 2rem)"
         msize="2rem"
         mwidth="100%"
+        mmwidth="100%"
         padding="0"
         mpadding="0"
-        mta="left"
+        mta="center"
         mlh="unset"
       />
 
@@ -31,12 +32,15 @@ export function FormWrapper({ number, title, children }) {
         lh="30px"
         xmsize="clamp(2.4rem, 1.5vw, 2rem)"
         xssize="clamp(2.4rem, 1.5vw, 2rem)"
-        msize="2rem"
+        msize="1.6rem"
+        mmsize="1.6rem"
         mwidth="100%"
+        mmwidth="100%"
         padding="0"
         mpadding="0"
-        mta="left"
+        mta="center"
         mlh="unset"
+        ow="break-word"
       />
 
       <Text
@@ -49,11 +53,13 @@ export function FormWrapper({ number, title, children }) {
         m="0 0 1rem 0"
         xmsize="clamp(2.4rem, 1.5vw, 2rem)"
         xssize="clamp(2.4rem, 1.5vw, 2rem)"
-        msize="2rem"
+        msize="1.6rem"
+        mmsize="1.6rem"
         mwidth="100%"
+        mmwidth="100%"
         padding="0"
         mpadding="0"
-        mta="left"
+        mta="center"
         mlh="unset"
       />
 
@@ -70,20 +76,14 @@ export function FormWrapper({ number, title, children }) {
         xssize="clamp(2.4rem, 1.5vw, 2rem)"
         msize="2rem"
         mwidth="100%"
+        mmwidth="100%"
         padding="0"
         mpadding="0"
-        mta="left"
+        mta="center"
         mlh="unset"
       />
       <StepperSteps activeStep={number} />
-      <div
-        style={{
-          display: "grid",
-          gap: "1rem 0 ",
-          justifyContent: "flex-start",
-          gridTemplateColumns: "auto minmax(auto, 400px)",
-        }}
-      >
+      <div className="formWrapper">
         {children}
       </div>
     </>
