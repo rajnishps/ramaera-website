@@ -1,19 +1,10 @@
 import { FormWrapper } from "./FormWrapper"
+import {Container} from "./ApplicationDetailStyle.js"
 
 const ApplicationDetail = (props) => {
   return (
     <>
-      <div
-        style={{
-          position: "relative",
-          background: "white",
-          padding: "2rem 2rem 3.5rem 2rem",
-          margin: "1rem",
-          borderRadius: ".5rem",
-          maxWidth: "max-content",
-          color: "black",
-        }}
-      >
+      <Container >
         <FormWrapper>
           <div style={{ width: "500px", marginTop: "30px" }}>
             <label
@@ -23,8 +14,8 @@ const ApplicationDetail = (props) => {
             </label>
           </div>
           <div style={{ width: "450px" }}></div>
-          <hr />
-          <hr />
+          <hr className="lineHr1"/>
+          <hr className="lineHr2"/>
           <div style={{ width: "500px" }}>
             <label>Name </label>
             <br />
@@ -84,8 +75,8 @@ const ApplicationDetail = (props) => {
             </label>
           </div>
           <div style={{ width: "450px" }}></div>
-          <hr />
-          <hr />
+          <hr  className="lineHr1"/>
+          <hr  className="lineHr2"/>
           <div style={{ width: "500px" }}>
             <label>Project Title </label>
             <br />
@@ -226,8 +217,8 @@ const ApplicationDetail = (props) => {
             </label>
           </div>
           <div style={{ width: "450px" }}></div>
-          <hr />
-          <hr />
+          <hr  className="lineHr1"/>
+          <hr className="lineHr2"/>
 
           <div style={{ width: "500px" }}>
             <label>LinkedIn Profile </label>
@@ -262,7 +253,7 @@ const ApplicationDetail = (props) => {
 
         
         </FormWrapper>
-      </div>
+      </Container>
     </>
   )
 }
