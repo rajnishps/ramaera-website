@@ -40,8 +40,8 @@ export function UserForm({}) {
         </label>
       </div>
       <div style={{ width: "450px" }}></div>
-      <hr />
-      <hr />
+      <hr className="lineHr1"/>
+      <hr className="lineHr2"/>
       <div style={{ width: "500px" }}>
         <label>Applicant's Name (आवेदक का नाम)</label>
         <br />
@@ -130,8 +130,8 @@ export function UserForm({}) {
         </label>
       </div>
       <div style={{ width: "450px" }}></div>
-      <hr />
-      <hr />
+      <hr className="lineHr1"/>
+      <hr className="lineHr2"/>
       <div style={{ width: "500px" }}>
         <label>Application (आवेदन)</label>
         <br />
@@ -378,13 +378,13 @@ export function UserForm({}) {
       {partner === "DISTRIBUTOR" && district && (
         <div style={{ width: "450px" }}></div>
       )}
-      <div style={{ width: "500px", paddingTop: "7px", fontSize: "16px" }}>
+      <div className="detailContact" style={{ width: "500px", paddingTop: "7px", fontSize: "16px" }}>
         <br />
         <strong>Contact us:</strong>
         <br />
         E-Mail: sales@ramaera.in | Phone: +91-0120-4152818
       </div>
-      <div style={{ width: "450px", fontSize: "16px" }}>
+      <div className="detailContact" style={{ width: "450px", fontSize: "16px" }}>
         <br />
         <strong>संपर्क करें:</strong>
         <br />

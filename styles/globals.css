@@ -846,3 +846,9 @@ h3 {
     height:80px
   }
 }
+
+@media (max-width: 450px){
+.detailContact{
+  width: 60vw !important;
+}
+}
