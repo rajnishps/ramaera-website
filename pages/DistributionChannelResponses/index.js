@@ -1,4 +1,4 @@
-import Applicant from "./page/ApplicantSubmission/applicant"
+import Applicant from "../page/ApplicantSubmission/applicant"
 
 const Applicants = () => {
   return (

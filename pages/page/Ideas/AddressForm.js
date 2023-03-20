@@ -56,7 +56,7 @@ export function AddressForm() {
           <label>Your Project Type</label>
           <br />
           <select
-            required
+            //required
             onChange={(e) => dispatch(changeyourProjectType(e.target.value))}
           >
             <option value={undefined} disabled selected>
@@ -70,7 +70,7 @@ export function AddressForm() {
           <label>You Are ?</label>
           <br />
           <select
-            required
+            //required
             onChange={(e) => dispatch(changeyouAre(e.target.value))}
           >
             <option value={""} disabled selected>
@@ -86,7 +86,7 @@ export function AddressForm() {
           <label>Type Of Partnership !!</label>
           <br />
           <select
-            required
+            //required
             onChange={(e) => dispatch(changetypeOfPartnership(e.target.value))}
           >
             <option disabled selected>
@@ -101,7 +101,7 @@ export function AddressForm() {
           <label>Funding Type</label>
           <br />
           <input
-            required
+            //required
             onChange={(e) => dispatch(changefundingType(e.target.value))}
             type="text"
           />
@@ -109,7 +109,7 @@ export function AddressForm() {
         <div style={{ width: "500px" }}>
           <label>Contribution Receiving Mode</label>
           <select
-            required
+            //required
             onChange={(e) => dispatch(changereceivingMode(e.target.value))}
           >
             <br />
@@ -124,7 +124,7 @@ export function AddressForm() {
           <br />
 
           <input
-            required
+            //required
             onChange={(e) => {
               changeGoalAmount(e.target.value)
               dispatch(changegoal(e.target.value))
@@ -137,7 +137,7 @@ export function AddressForm() {
           <label>Target For</label>
           <br />
           <input
-            required
+            //required 
             onChange={(e) => {
               changeTotalPeople(e.target.value)
               dispatch(changetargetFor(e.target.value))
@@ -150,7 +150,7 @@ export function AddressForm() {
           <label>Per Person Amount</label>
           <br />
           <input
-            required
+            //required 
             disable
             value={perPersonAmount}
             onChange={() => dispatch(changeperPersonAmount(perPersonAmount))}
@@ -161,7 +161,7 @@ export function AddressForm() {
           <label>Your Project Title</label>
           <br />
           <input
-            required
+            //required
             type="text"
             onChange={(e) => dispatch(changeyourProjectTitle(e.target.value))}
             placeholder="I am offering for Partnership"
@@ -169,12 +169,10 @@ export function AddressForm() {
         </div>
         <div style={{ width: "450px" }}></div>
         <div style={{ width: "500px" }}>
-          <label>
-            Brief about yourself & experience
-          </label>
+          <label>Brief about yourself & experience</label>
           <br />
           <textarea
-            required
+            //required
             onChange={(e) => dispatch(changebrief(e.target.value))}
             rows={5}
             cols={60}
@@ -185,7 +183,7 @@ export function AddressForm() {
           <label>Market Problem</label>
           <br />
           <textarea
-            required
+            //required
             onChange={(e) => dispatch(changemarketProblem(e.target.value))}
             rows={5}
             cols={60}
@@ -196,7 +194,7 @@ export function AddressForm() {
           <label>Solution</label>
           <br />
           <textarea
-            required
+            //required
             onChange={(e) => dispatch(changeSolution(e.target.value))}
             rows={5}
             cols={60}
@@ -207,7 +205,7 @@ export function AddressForm() {
           <label>Your Product</label>
           <br />
           <textarea
-            required
+            //required
             onChange={(e) => dispatch(changeyourProduct(e.target.value))}
             rows={5}
             cols={60}
@@ -218,7 +216,7 @@ export function AddressForm() {
           <label>Business Model</label>
           <br />
           <textarea
-            required
+            //required
             onChange={(e) => dispatch(changebusinessModel(e.target.value))}
             rows={5}
             cols={60}
@@ -229,7 +227,7 @@ export function AddressForm() {
           <label>Size of Market</label>
           <br />
           <textarea
-            required
+            //required
             onChange={(e) => dispatch(changesizeOfMarket(e.target.value))}
             rows={5}
             cols={60}
@@ -240,7 +238,7 @@ export function AddressForm() {
           <label>Current Trasaction</label>
           <br />
           <textarea
-            required
+            //required
             onChange={(e) => dispatch(changecurrentTransaction(e.target.value))}
             rows={5}
             cols={60}
@@ -251,7 +249,7 @@ export function AddressForm() {
           <label>Competitive Landscape</label>
           <br />
           <textarea
-            required
+            //required
             onChange={(e) =>
               dispatch(changecompetitiveLandscape(e.target.value))
             }
@@ -264,7 +262,7 @@ export function AddressForm() {
           <label>Financial Projection</label>
           <br />
           <textarea
-            required
+            //required
             onChange={(e) =>
               dispatch(changefinancialProjection(e.target.value))
             }
@@ -277,7 +275,7 @@ export function AddressForm() {
           <label>Fund Need & Use</label>
           <br />
           <textarea
-            required
+            //required
             onChange={(e) => dispatch(changefundNeed(e.target.value))}
             rows={5}
             cols={60}
@@ -288,7 +286,7 @@ export function AddressForm() {
           <label>Equity Structure</label>
           <br />
           <textarea
-            required
+            //required
             onChange={(e) => dispatch(changeequityStructure(e.target.value))}
             rows={5}
             cols={60}
@@ -299,7 +297,7 @@ export function AddressForm() {
           <label>Exit Option</label>
           <br />
           <textarea
-            required
+            //required
             onChange={(e) => dispatch(changeexitOption(e.target.value))}
             rows={5}
             cols={60}
@@ -310,7 +308,7 @@ export function AddressForm() {
           <label>Select Fundraising Type</label>
           <br />
           <select
-            required
+            //required
             onChange={(e) => dispatch(changeselectFundingType(e.target.value))}
           >
             <option value={""} disabled selected>
@@ -344,7 +342,7 @@ export function AddressForm() {
               }}
             >
               <input
-                required
+                //required
                 type="radio"
                 value="yes"
                 name="gender"
@@ -358,7 +356,7 @@ export function AddressForm() {
               }}
             >
               <input
-                required
+                //required
                 type="radio"
                 value="no"
                 name="gender"
@@ -374,7 +372,7 @@ export function AddressForm() {
         {show && (
           <div style={{ width: "500px" }}>
             <label>Select Fundraising Stage</label>
-            <br/>
+            <br />
             <select
               onChange={(e) => dispatch(changefundingStage(e.target.value))}
             >

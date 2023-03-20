@@ -1,5 +1,5 @@
-import ProjectApplicationInfo from "./page/ProjectApplication/projectApplicationInfo"
-import Navbar from "../components/Navbar/Navbar"
+import ProjectApplicationInfo from "../page/ProjectApplication/projectApplicationInfo"
+import Navbar from "../../components/Navbar/Navbar"
 
 const projectApplication = () => {
   return (

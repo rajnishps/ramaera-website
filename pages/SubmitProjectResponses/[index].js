@@ -2,8 +2,6 @@ import Navbar from "../../components/Navbar/Navbar"
 import PageLayout from "../../components/PageLayout/PageLayout"
 import PageWidth from "../../components/Width/PageWidth"
 import ApplicationDetail from "../page/ProjectApplicationDetail/ApplicationDetail"
-import { useRouter } from "next/router"
-import { useSelector } from "react-redux"
 
 const projectApplicationDetail = () => {
   return (

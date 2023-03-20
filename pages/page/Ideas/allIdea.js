@@ -8,69 +8,78 @@ import { useMutation } from "@apollo/client"
 import { useSelector } from "react-redux"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
-import ArrowBackIcon from '@mui/icons-material/ArrowBack';
-import {Container,ButtonContainer} from "./allIdeaStyle.js"
+import { Container, ButtonContainer } from "./allIdeaStyle.js"
 
 const Ideas = () => {
   const [CreateProject] = useMutation(CreateProjectApplications)
 
-  const City1 = useSelector((state) => state.project.City)
-  const Country1 = useSelector((state) => state.project.Country)
-  const State1 = useSelector((state) => state.project.State)
-  const dob1 = useSelector((state) => state.project.dob)
-  const mobileNumber1 = useSelector((state) => state.project.mobileNumber)
-  const occupation1 = useSelector((state) => state.project.occupation)
-  const name1 = useSelector((state) => state.project.name)
-  const email1 = useSelector((state) => state.project.email)
-  const directorData1 = useSelector((state) => state.project.directorData)
-  const yourProjectType1 = useSelector((state) => state.project.yourProjectType)
-  const youAre1 = useSelector((state) => state.project.youAre)
-  const typeOfPartnership1 = useSelector(
+  const CityVar = useSelector((state) => state.project.City)
+  const CountryVar = useSelector((state) => state.project.Country)
+  const StateVar = useSelector((state) => state.project.State)
+  const dobVar = useSelector((state) => state.project.dob)
+  const mobileNumberVar = useSelector((state) => state.project.mobileNumber)
+  const occupationVar = useSelector((state) => state.project.occupation)
+  const nameVar = useSelector((state) => state.project.name)
+  const emailVar = useSelector((state) => state.project.email)
+  const directorDataVar = useSelector((state) => state.project.directorData)
+  const yourProjectTypeVar = useSelector(
+    (state) => state.project.yourProjectType
+  )
+  const youAreVar = useSelector((state) => state.project.youAre)
+  const typeOfPartnershipVar = useSelector(
     (state) => state.project.typeOfPartnership
   )
-  const fundingType1 = useSelector((state) => state.project.fundingType)
-  const receivingMode1 = useSelector((state) => state.project.receivingMode)
-  const goal1 = useSelector((state) => state.project.goal)
-  const targetFor1 = useSelector((state) => state.project.targetFor)
-  const perPersonAmount1 = useSelector((state) => state.project.perPersonAmount)
-  const yourProjectTitle1 = useSelector(
+  const fundingTypeVar = useSelector((state) => state.project.fundingType)
+  const receivingModeVar = useSelector((state) => state.project.receivingMode)
+  const goalVar = useSelector((state) => state.project.goal)
+  const targetForVar = useSelector((state) => state.project.targetFor)
+  const perPersonAmountVar = useSelector(
+    (state) => state.project.perPersonAmount
+  )
+  const yourProjectTitleVar = useSelector(
     (state) => state.project.yourProjectTitle
   )
-  const brief1 = useSelector((state) => state.project.brief)
-  const marketProblem1 = useSelector((state) => state.project.marketProblem)
-  const solution1 = useSelector((state) => state.project.solution)
-  const yourProduct1 = useSelector((state) => state.project.yourProduct)
-  const businessModel1 = useSelector((state) => state.project.businessModel)
-  const sizeOfMarket1 = useSelector((state) => state.project.sizeOfMarket)
-  const currentTransaction1 = useSelector(
+  const briefVar = useSelector((state) => state.project.brief)
+  const marketProblemVar = useSelector((state) => state.project.marketProblem)
+  const solutionVar = useSelector((state) => state.project.solution)
+  const yourProductVar = useSelector((state) => state.project.yourProduct)
+  const businessModelVar = useSelector((state) => state.project.businessModel)
+  const sizeOfMarketVar = useSelector((state) => state.project.sizeOfMarket)
+  const currentTransactionVar = useSelector(
     (state) => state.project.currentTransaction
   )
-  const competitiveLandscape1 = useSelector(
+  const competitiveLandscapeVar = useSelector(
     (state) => state.project.competitiveLandscape
   )
-  const financialProjection1 = useSelector(
+  const financialProjectionVar = useSelector(
     (state) => state.project.financialProjection
   )
-  const fundNeed1 = useSelector((state) => state.project.fundNeed)
-  const equityStructure1 = useSelector((state) => state.project.equityStructure)
-  const exitOption1 = useSelector((state) => state.project.exitOption)
-  const selectFundingType1 = useSelector(
+  const fundNeedVar = useSelector((state) => state.project.fundNeed)
+  const equityStructureVar = useSelector(
+    (state) => state.project.equityStructure
+  )
+  const exitOptionVar = useSelector((state) => state.project.exitOption)
+  const selectFundingTypeVar = useSelector(
     (state) => state.project.selectFundingType
   )
-  const fundingStage1 = useSelector((state) => state.project.fundingStage)
-  const selectFundingTypeAgain1 = useSelector(
+  const fundingStageVar = useSelector((state) => state.project.fundingStage)
+  const selectFundingTypeAgainVar = useSelector(
     (state) => state.project.selectFundingTypeAgain
   )
-  const fundingAmount1 = useSelector((state) => state.project.fundingAmount)
-  const fundingDate1 = useSelector((state) => state.project.fundingDate)
-  const linkedinProfile1 = useSelector((state) => state.project.linkedinProfile)
-  const twitterProfile1 = useSelector((state) => state.project.twitterProfile)
-  const facebookProfile1 = useSelector((state) => state.project.facebookProfile)
-  const instagramProfile1 = useSelector(
+  const fundingAmountVar = useSelector((state) => state.project.fundingAmount)
+  const fundingDateVar = useSelector((state) => state.project.fundingDate)
+  const linkedinProfileVar = useSelector(
+    (state) => state.project.linkedinProfile
+  )
+  const twitterProfileVar = useSelector((state) => state.project.twitterProfile)
+  const facebookProfileVar = useSelector(
+    (state) => state.project.facebookProfile
+  )
+  const instagramProfileVar = useSelector(
     (state) => state.project.instagramProfile
   )
-  const websiteURL1 = useSelector((state) => state.project.websiteURL)
-  const thanksNote1 = useSelector((state) => state.project.thanksNote)
+  const websiteURLVar = useSelector((state) => state.project.websiteURL)
+  const thanksNoteVar = useSelector((state) => state.project.thanksNote)
 
   const { step, isFirstStep, isLastStep, back, next } = useMultistepForm([
     <UserForm />,
@@ -83,47 +92,47 @@ const Ideas = () => {
     if (!isLastStep) return next()
     CreateProject({
       variables: {
-        City: City1,
-        Country: Country1,
-        State: State1,
-        dob: dob1,
-        mobileNumber: mobileNumber1,
-        occupation: occupation1,
-        name: name1,
-        email: email1,
-        director: directorData1,
-        yourProjectType: yourProjectType1,
-        youAre: youAre1,
-        typeOfPartnership: typeOfPartnership1,
-        fundingType: fundingType1,
-        receivingMode: receivingMode1,
-        goal: goal1,
-        targetFor: targetFor1,
-        perPersonAmount: perPersonAmount1,
-        yourProjectTitle: yourProjectTitle1,
-        brief: brief1,
-        marketProblem: marketProblem1,
-        solution: solution1,
-        yourProduct: yourProduct1,
-        businessModel: businessModel1,
-        sizeOfMarket: sizeOfMarket1,
-        currentTransaction: currentTransaction1,
-        competitiveLandscape: competitiveLandscape1,
-        financialProjection: financialProjection1,
-        fundNeed: fundNeed1,
-        equityStructure: equityStructure1,
-        exitOption: exitOption1,
-        selectFundingType: selectFundingType1,
-        fundingStage: fundingStage1,
-        selectFundingTypeAgain: selectFundingTypeAgain1,
-        fundingAmount: fundingAmount1,
-        fundingDate: fundingDate1,
-        linkedinProfile: linkedinProfile1,
-        twitterProfile: twitterProfile1,
-        facebookProfile: facebookProfile1,
-        instagramProfile: instagramProfile1,
-        websiteURL: websiteURL1,
-        thanksNote: thanksNote1,
+        City: CityVar,
+        Country: CountryVar,
+        State: StateVar,
+        dob: dobVar,
+        mobileNumber: mobileNumberVar,
+        occupation: occupationVar,
+        name: nameVar,
+        email: emailVar,
+        director: directorDataVar,
+        yourProjectType: yourProjectTypeVar,
+        youAre: youAreVar,
+        typeOfPartnership: typeOfPartnershipVar,
+        fundingType: fundingTypeVar,
+        receivingMode: receivingModeVar,
+        goal: goalVar,
+        targetFor: targetForVar,
+        perPersonAmount: perPersonAmountVar,
+        yourProjectTitle: yourProjectTitleVar,
+        brief: briefVar,
+        marketProblem: marketProblemVar,
+        solution: solutionVar,
+        yourProduct: yourProductVar,
+        businessModel: businessModelVar,
+        sizeOfMarket: sizeOfMarketVar,
+        currentTransaction: currentTransactionVar,
+        competitiveLandscape: competitiveLandscapeVar,
+        financialProjection: financialProjectionVar,
+        fundNeed: fundNeedVar,
+        equityStructure: equityStructureVar,
+        exitOption: exitOptionVar,
+        selectFundingType: selectFundingTypeVar,
+        fundingStage: fundingStageVar,
+        selectFundingTypeAgain: selectFundingTypeAgainVar,
+        fundingAmount: fundingAmountVar,
+        fundingDate: fundingDateVar,
+        linkedinProfile: linkedinProfileVar,
+        twitterProfile: twitterProfileVar,
+        facebookProfile: facebookProfileVar,
+        instagramProfile: instagramProfileVar,
+        websiteURL: websiteURLVar,
+        thanksNote: thanksNoteVar,
       },
     })
 
@@ -142,11 +151,11 @@ const Ideas = () => {
     })
     setTimeout(() => {
       location.reload()
-    }, "3200")
+    }, "320000")
   }
 
   return (
-    <Container >
+    <Container>
       <form onSubmit={(e) => handleSubmit(e)}>
         <ToastContainer
           position="top-center"

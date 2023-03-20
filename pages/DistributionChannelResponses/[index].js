@@ -6,11 +6,8 @@ import { useSelector } from "react-redux"
 import { useRouter } from "next/router"
 
 const applicantDetail = () => {
-  return (
-    <>
-      
-    </>
-  )}
+  return <>'</>
+}
 /* const applicantDetail = () => {
   const router = useRouter()
   const applicantdata = useSelector((state) => state.applicationData.appData)
@@ -27,6 +24,5 @@ const applicantDetail = () => {
       </PageLayout>
     </>
   )
-}
- */
+} */
 export default applicantDetail

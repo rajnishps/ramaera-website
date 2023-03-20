@@ -36,7 +36,7 @@ export function UserForm() {
           <label>Your Name</label>
           <br />
           <input
-            required
+            //required
             autoFocus
             type="text"
             onChange={(e) => dispatch(changeName(e.target.value))}
@@ -47,7 +47,7 @@ export function UserForm() {
           <label>Country</label>
           <br />
           <select
-            required
+            //required
             value={country}
             onChange={(e) => handleCountryChange(e.target.value)}
           >
@@ -64,7 +64,7 @@ export function UserForm() {
           <label>State</label>
           <br />
           <select
-            required
+            //required
             value={state}
             onChange={(e) => dispatch(changeState(e.target.value))}
           >
@@ -81,7 +81,7 @@ export function UserForm() {
           <label>City</label>
           <br />
           <input
-            required
+            //required
             type="text"
             onChange={(e) => dispatch(changeCity(e.target.value))}
             placeholder="Type City name"
@@ -91,7 +91,7 @@ export function UserForm() {
           <label>Date Of Birth</label>
           <br />
           <input
-            required
+            //required
             type="date"
             onChange={(e) => dispatch(changeDob(e.target.value))}
           />
@@ -100,7 +100,7 @@ export function UserForm() {
           <label>Your Occupation</label>
           <br />
           <select
-            required
+            //required
             onChange={(e) => dispatch(changeOccupation(e.target.value))}
           >
             <option disabled selected>
@@ -114,7 +114,7 @@ export function UserForm() {
           <label>Contact No</label>
           <br />
           <input
-            required
+            //required
             type="number"
             onChange={(e) => dispatch(changeMobileNumber(e.target.value))}
             placeholder="Type Contact No."
@@ -124,7 +124,7 @@ export function UserForm() {
           <label>Email Id</label>
           <br />
           <input
-            required
+            //required
             type="email"
             onChange={(e) => dispatch(changeEmail(e.target.value))}
             placeholder="Type Email Id"
@@ -140,8 +140,8 @@ export function UserForm() {
         </div>
         <div style={{ width: "450px" }}></div>
 
-        <hr className="lineHr1"/>
-        <hr className="lineHr2"/>
+        <hr className="lineHr1" />
+        <hr className="lineHr2" />
 
         {buttonCount >= 1 && (
           <div style={{ width: "500px" }}>

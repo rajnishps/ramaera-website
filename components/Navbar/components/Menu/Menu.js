@@ -88,7 +88,7 @@ const Menu = ({ open, setOpen, ...props }) => {
           </Link>
         </H>
         <H>
-          <Link href="/contact" onClick={() => setOpen(false)}>
+          <Link href="/ContactUs" onClick={() => setOpen(false)}>
             Contact
           </Link>
         </H>

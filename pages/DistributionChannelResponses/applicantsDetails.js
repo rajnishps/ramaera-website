@@ -1,18 +1,7 @@
+import Link from "next/link"
 import { FormWrapper } from "./FormWrapper"
-import { useRouter } from "next/router"
+
 const applicantsDetails = ({ AppData }) => {
-  return (
-    <h2>'</h2>
-  )
-}
-
-/* const applicantsDetails = ({ AppData }) => {
-  const router = useRouter()
-
-  if (!AppData) {
-    console.log("not working")
-    router.push("/DistributionChannel")
-  }
   try {
     return (
       <>
@@ -120,8 +109,19 @@ const applicantsDetails = ({ AppData }) => {
       </>
     )
   } catch {
-    return
+    return (
+      <>
+        <Link
+          style={{
+            color: "white",
+          }}
+          href="/login"
+        >
+          Login to continue
+        </Link>
+      </>
+    )
   }
-} */
+}
 
 export default applicantsDetails

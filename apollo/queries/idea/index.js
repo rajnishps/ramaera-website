@@ -85,7 +85,7 @@ $director: [String!],
       instagramProfile: $instagramProfile
       websiteURL: $websiteURL
       thanksNote: $thanksNote
-      director:$director
+      director: $director
     }) 
     {
       name

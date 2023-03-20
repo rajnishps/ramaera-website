@@ -5,7 +5,7 @@ import { useQuery } from "@apollo/client"
 import { GetProjectApplications } from "../../../apollo/queries/idea"
 import { useDispatch, useSelector } from "react-redux"
 import { changeProjectData } from "../../../state/slice/applicantDataSlice"
-
+//todo
 const ProjectApplicationInfo = () => {
   const applicantdata = useSelector(
     (state) => state.applicationData.projectData
@@ -58,7 +58,7 @@ const ProjectApplicationInfo = () => {
   ]
 
   const rows = []
-  if (applicantdata) {
+  if (data) {
     data.AllProjectDetails.forEach((item) => {
       rows.push({
         id: item.name,
