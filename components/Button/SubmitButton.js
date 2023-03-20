@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import Spinner from "../Spinner";
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 
 const StyledButton = styled(motion.div)`
   color: ${(props) => (props.color ? props.color : "#FFFFFF")};

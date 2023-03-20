@@ -8,6 +8,8 @@ import { useMutation } from "@apollo/client"
 import { useSelector } from "react-redux"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
+import {Container,ButtonContainer} from "./allIdeaStyle.js"
 
 const Ideas = () => {
   const [CreateProject] = useMutation(CreateProjectApplications)
@@ -144,17 +146,7 @@ const Ideas = () => {
   }
 
   return (
-    <div
-      style={{
-        position: "relative",
-        background: "white",
-        padding: "2rem",
-        margin: "1rem",
-        borderRadius: ".5rem",
-        maxWidth: "max-content",
-        color: "black",
-      }}
-    >
+    <Container >
       <form onSubmit={(e) => handleSubmit(e)}>
         <ToastContainer
           position="top-center"
@@ -179,21 +171,14 @@ const Ideas = () => {
           {/* {currentStepIndex + 1} / {steps.length} */}
         </div>
         {step}
-        <div
-          style={{
-            marginTop: "1rem",
-            display: "flex",
-            gap: ".5rem",
-            justifyContent: "flex-end",
-          }}
-        >
+        <ButtonContainer>
           {!isFirstStep && (
             <div style={{ background: "none", border: "none" }} onClick={back}>
               <Button
                 nav
-                width="140px"
+                width="150px"
                 height="2.75rem"
-                Text="Back"
+                Text="⬅ Back"
                 inheight="2.5rem"
               />
             </div>
@@ -203,13 +188,13 @@ const Ideas = () => {
               nav
               width="140px"
               height="2.75rem"
-              Text={isLastStep ? "Finish" : "Next"}
+              Text={isLastStep ? "Finish" : "Next ⮕"}
               inheight="2.5rem"
             />
           </button>
-        </div>
+        </ButtonContainer>
       </form>
-    </div>
+    </Container>
   )
 }
 

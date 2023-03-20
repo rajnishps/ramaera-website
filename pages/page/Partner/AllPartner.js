@@ -5,6 +5,7 @@ import { useMutation } from "@apollo/client"
 import { useSelector } from "react-redux"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
+import {Container,ButtonContainer} from "./allPartnerStyle.js"
 
 const Ideas = () => {
   const [createApplication, { data, loading, error }] =
@@ -52,17 +53,7 @@ const Ideas = () => {
     }, "3200")
   }
   return (
-    <div
-      style={{
-        position: "relative",
-        background: "white",
-        padding: "2rem",
-        margin: "1rem",
-        borderRadius: ".5rem",
-        maxWidth: "max-content",
-        color: "black",
-      }}
-    >
+    <Container>
       <form onSubmit={(e) => handleSubmit(e)}>
         <ToastContainer
           position="top-center"
@@ -86,14 +77,7 @@ const Ideas = () => {
           }}
         ></div>
         <UserForm />
-        <div
-          style={{
-            marginTop: "1rem",
-            display: "flex",
-            gap: ".5rem",
-            justifyContent: "flex-end",
-          }}
-        >
+        <ButtonContainer>
           <button style={{ background: "none", border: "none" }} type="submit">
             <Button
               nav
@@ -103,9 +87,9 @@ const Ideas = () => {
               inheight="2.5rem"
             />
           </button>
-        </div>
+        </ButtonContainer>
       </form>
-    </div>
+    </Container>
   )
 }
 

@@ -140,8 +140,8 @@ export function UserForm() {
         </div>
         <div style={{ width: "450px" }}></div>
 
-        <hr />
-        <hr />
+        <hr className="lineHr1"/>
+        <hr className="lineHr2"/>
 
         {buttonCount >= 1 && (
           <div style={{ width: "500px" }}>

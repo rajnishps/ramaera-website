@@ -55,6 +55,7 @@ const Text = (props) => {
       line-height: ${props.mlh && props.mlh};
       padding: ${props.mpadding ? props.mpadding : "2vw"};
       margin: ${props.mmargin ? props.mmargin : ""};
+      overflow-wrap: ${props.ow ? props.ow : ""};
     }
     @media only screen and (max-width: 400px) {
       width: ${props.mmwidth ? props.mmwidth : "100vw;"};
