@@ -16,6 +16,7 @@ export const StyledMenu = styled.nav`
   line-height: 50px;
   left: 0;
   transition: transform 0.3s ease-in-out;
+  background-color: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(2rem);
   margin: 0;
   a {

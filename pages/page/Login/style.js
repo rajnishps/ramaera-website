@@ -20,6 +20,10 @@ export const FormBox = styled.form`
   border-radius: 2%;
   box-shadow: 0 0 10px rgb(0 0 0 / 27%);
   padding: 2rem;
+  @media (max-width: 450px) {
+    width: 100vw;
+    min-width: unset;
+     }
 `
 
 export const LoginContainer = styled.div`

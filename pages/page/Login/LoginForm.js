@@ -62,6 +62,7 @@ const LoginForm = () => {
           xssize="clamp(2.4rem, 1.5vw, 2rem)"
           msize="2rem"
           mwidth="100%"
+          mmwidth="100%"
           padding="0"
           mpadding="0"
           mta="center"
@@ -80,6 +81,7 @@ const LoginForm = () => {
           xssize="clamp(2.4rem, 1.5vw, 2rem)"
           msize="2rem"
           mwidth="100%"
+          mmwidth="100%"
           padding="0"
           mpadding="0"
           mta="center"
@@ -108,6 +110,7 @@ const LoginForm = () => {
                 paddingLeft: "60px",
                 marginTop: "0",
               }}
+              className="loginInput"
             />
           </LoginTitle>
           <LoginTitle>
@@ -131,6 +134,7 @@ const LoginForm = () => {
                 paddingLeft: "60px",
                 marginTop: "0",
               }}
+              className="loginInput"
             />
           </LoginTitle>
           <button type="submit" style={{ background: "none", border: "none" }}>
