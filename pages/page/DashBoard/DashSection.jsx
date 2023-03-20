@@ -1,104 +1,85 @@
-import { DataGrid } from "@mui/x-data-grid";
-import Box from "@mui/material/Box";
-import Text from "../../../components/Text/Text";
-import { data } from "./Collection/data";
+// import { DataGrid } from "@mui/x-data-grid";
+// import Box from "@mui/material/Box";
+// import Text from "../../../components/Text/Text";
+
+import Link from "next/link";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
+
+// import { data } from "./Collection/data";
+Link;
 const DashSection = () => {
-  const columns = [
-    {
-      field: "name",
-      headerName: "Dashboard",
-      width: 650,
-      editable: false,
-      selection: false,
-    },
-    {
-      field: "email",
-      headerName: "Link",
-      width: 650,
-    },
-    // {
-    //   field: "contact",
-    //   headerName: "Contact No.",
-    //   width: 200,
-    // },
-    // {
-    //   field: "project",
-    //   headerName: "Project Name",
-    //   description: "This column has a value getter and is not sortable.",
-    //   sortable: false,
-    //   width: 450,
-    // },
-    // {
-    //   field: "createAt",
-    //   headerName: "Created At",
-    //   description: "This column has a value getter and is not sortable.",
-    //   sortable: false,
-    //   width: 250,
-    // },
-  ];
-
-  const rows = [];
-
-  data.forEach((item) => {
-    rows.push({
-      id: item.name,
-      name: item.name,
-      email: item.email,
-      contact: item.mobileNumber,
-      project: item.yourProduct,
-      createdAt: item.createAt,
-    });
-  });
-
   return (
     <>
-      <div style={{ marginTop: "150px" }}>
-        <Text
-          Text="Dashboard Pannel"
-          lg="linear-gradient(to right, #ffa73d, gold)"
-          font
-          size="clamp(2.2rem, 1.2vw, 1.5rem)"
-          fw="400"
-          align="center"
-          lh="50px"
-          m="0 0 1rem 0"
-          xmsize="clamp(2.4rem, 1.5vw, 2rem)"
-          xssize="clamp(2.4rem, 1.5vw, 2rem)"
-          msize="2rem"
-          mwidth="100%"
-          padding="0"
-          mpadding="0"
-          mta="center"
-          mlh="unset"
-        />
+      <div className="container heading-container">
+        <h1 className="heading-text">Dashboard Details </h1>
+        <label class="dropdown">
+          <div class="dd-button">Dropdown</div>
+          <AccountCircleIcon style={{ fontSize: "50px", color: "white" }} />
+          <input type="checkbox" class="dd-input" id="test" />
 
-        <Box
-          sx={{
-            height: "80vh",
-            width: "90%",
-            margin: "auto",
-            background: "white",
-            padding: "20px",
-            borderRadius: "20px",
-            marginBottom: "50px",
-          }}
-        >
-          <DataGrid
-            rows={rows}
-            columns={columns}
-            initialState={{
-              pagination: {
-                paginationModel: {
-                  pageSize: 8,
-                },
-              },
-            }}
-            pageSizeOptions={[8]}
-            disablecolumnSelectionOnClick
-            displayRowCheckbox={false}
-            disableRowSelectionOnClick
-          />
-        </Box>
+          <ul class="dd-menu">
+            <li>Name</li>
+            <li class="divider"></li>
+            <li>Change Password</li>
+            <li class="divider"></li>
+            <li>Role</li>
+            <li className="divider"></li>
+            <li>Logout</li>
+          </ul>
+        </label>
+      </div>
+      <div className="container table-container">
+        <div className="basis-2/12 table-2"></div>
+        <div className="basis-8/12 table-8">
+          <table id="myTable">
+            <thead>
+              <tr className="header">
+                <th>DashBoard</th>
+                <th>Details</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Application Data</td>
+                <td>
+                  <Link href="/applicants" className="btn success">
+                    View All
+                  </Link>
+                </td>
+              </tr>
+              <tr>
+                <td>Contact Data</td>
+                <td>
+                  <Link href="/projectApplication" className="btn success">
+                    View All
+                  </Link>
+                </td>
+              </tr>
+              <tr>
+                <td>Distributer Data</td>
+                <td>
+                  <Link href="/contactDetail" className="btn success">
+                    View All
+                  </Link>
+                </td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+
+              <tr>
+                <td>&nbsp;</td>
+                <td>&nbsp;</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div className="basis-2/12 table-2"></div>
       </div>
     </>
   );
