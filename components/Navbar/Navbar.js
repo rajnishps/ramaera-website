@@ -34,7 +34,6 @@ const Link2 = styled.div`
   font-weight: 500;
   position: relative;
   height: 3.5rem !important;
-  color: #fff;
 
   @media (max-width: 1400px) {
     font-style: normal;
@@ -86,7 +85,11 @@ const Navbar = ({ selectedTab }) => {
         <div className="PC LeftNav">
           <ul className="list">
             <Link2>
-              <Link href="/" className="left-nav-font">
+              <Link
+                href="/"
+                className="left-nav-font"
+                style={{ color: "white" }}
+              >
                 HOME
                 <div
                   className="Line"
@@ -98,7 +101,11 @@ const Navbar = ({ selectedTab }) => {
             </Link2>
 
             <Link2>
-              <Link href="/industries" className="left-nav-font">
+              <Link
+                href="/industries"
+                className="left-nav-font"
+                style={{ color: "white" }}
+              >
                 OUR INDUSTRIES
                 <div
                   className="Line"
@@ -110,7 +117,11 @@ const Navbar = ({ selectedTab }) => {
             </Link2>
 
             <Link2>
-              <Link href="/companies" className="left-nav-font">
+              <Link
+                href="/companies"
+                className="left-nav-font"
+                style={{ color: "white" }}
+              >
                 OUR COMPANIES
                 <div
                   className="Line"
@@ -126,7 +137,7 @@ const Navbar = ({ selectedTab }) => {
         <div className="PC RightNav">
           <Link href="/SubmitProject">
             <Link2>
-              <LinkTo className="right-nav-font ">
+              <LinkTo className="right-nav-font " style={{ color: "white" }}>
                 Submit Your Ideas
                 <div />
               </LinkTo>
@@ -136,7 +147,7 @@ const Navbar = ({ selectedTab }) => {
             <Link
               href="/career"
               className="right-nav-font"
-              style={{ fontWeight: "300" }}
+              style={{ fontWeight: "300", color: "white" }}
             >
               Career
             </Link>
@@ -146,7 +157,7 @@ const Navbar = ({ selectedTab }) => {
             <Link
               href="/ContactUs"
               className="right-nav-font"
-              style={{ fontWeight: "300" }}
+              style={{ fontWeight: "300", color: "white" }}
             >
               Contact
             </Link>
