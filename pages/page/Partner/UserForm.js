@@ -16,6 +16,7 @@ export function UserForm({}) {
   const [stateIndia, setStateIndia] = useState("")
   const [isFirm, setIsFirm] = useState(false)
   const [district, setDistrict] = useState("")
+  const [location, setLocation] = useState([])
   const dispatch = useDispatch()
   const changeHandler = (val) => {
     setPartner(val)
@@ -25,11 +26,632 @@ export function UserForm({}) {
     setStateIndia(val)
     setDistrict("")
   }
-  const changeDistricts = (val) => {
+  const changeDistricts = async (val) => {
     setDistrict(val)
   }
   const changeFirm = () => {
     setIsFirm(!isFirm)
+  }
+  const setRetailLocation = (val) => {
+    switch (val) {
+      case "Danapur":
+        setLocation([
+          "Ganghara",
+          "Hathia Kandh",
+          "Hetanpur",
+          "Jamaluddin",
+          "Jamsaut",
+          "Patlapur",
+          "Sarari",
+          "Kasim Chak",
+          "Kothawan",
+          "Lakhani",
+          "Bigha",
+          "Manas",
+          "Mobarakpur-Raghurampur",
+          "Purani Panapur",
+        ])
+        break
+      case "Jehanabad":
+        setLocation([
+          "Jehanabad",
+          "Makhdumpur",
+          "Ghosi",
+          "Hulasganj",
+          "Ratni",
+          "Faridpur",
+          "Modanganj",
+          "Kako",
+        ])
+        break
+      case "Arwal":
+        setLocation([
+          "Kaler",
+          "Karpi",
+          "Kurtha",
+          "Arwal",
+          "Sonbhadra Banshi Suryapur",
+        ])
+        break
+      case "Paliganj":
+        setLocation(["Paliganj", "Dulhin Bazar", "Bikram"])
+        break
+      case "Gaya":
+        setLocation([
+          "Gaya Sadar",
+          "Manpur",
+          "Belaganj",
+          "Bodhgaya",
+          "Tankuppa",
+          "Fatehpur",
+          "Wazirganj",
+          "Tekari",
+          "Konch",
+          "Guraru",
+          "Paraiya",
+          "Sherghati",
+          "Gurua",
+          "Amas",
+          "Bankey ",
+          "Bazar",
+          "Imamganj",
+          "Dumariya",
+          "Barachatti",
+          "Mohanpur",
+          "Dobhi",
+        ])
+        break
+      case "Aurangabad":
+        setLocation([
+          "Aurangabad",
+          "Barun",
+          "Daudnagar",
+          "Deo",
+          "Goh",
+          "Haspura",
+          "Kutumba",
+          "Madanpur",
+          "Nabinagar",
+          "Obra",
+          "Rafiganj",
+        ])
+        break
+      case "Rohtas":
+        setLocation([
+          "Akorhi ",
+          "Gola",
+          "Bikramganj",
+          "Chenari",
+          "Dawath",
+          "Dehri",
+          "Dinara",
+          "Karakat",
+          "Kargahar",
+          "Kochas",
+          "Nasriganj",
+          "Nauhatta",
+          "Nokha",
+          "Rajpur",
+          "Rohtas",
+          "Sanjhauli",
+          "Sasaram",
+          "Sheosagar",
+          "Suryapura",
+          "Tilouthu",
+        ])
+        break
+      case "Kaimur":
+        setLocation([
+          "Adhaura",
+          "Bhabua",
+          "Bhagwanpur",
+          "Chainpur",
+          "Chand",
+          "Durgawati",
+          "Kundra",
+          "Mohania",
+          "Nuaon",
+          "Ramgarh",
+          "Rampur",
+        ])
+        break
+      case "Buxar":
+        setLocation([
+          "Barhmpur",
+          "Buxer",
+          "Chakki",
+          "Chaugain",
+          "Chausa",
+          "Dumraon",
+          "Itarhi",
+          "Kesath",
+          "Nawanagar",
+          "Rajpur",
+          "Simri",
+        ])
+        break
+      case "Arrah":
+        setLocation([
+          "Arrah",
+          "Agiaon",
+          "Barhara",
+          "Bihiya",
+          "Charpokhari",
+          "Garhani",
+          "Jagdispur",
+          "Koilwar",
+          "Piro",
+          "Udwantnagar",
+          "Sahar",
+          "Sandesh",
+          "Shahpur",
+          "Tarari",
+        ])
+        break
+      case "Biharsharif":
+        setLocation([
+          "Asthawan",
+          "Ben",
+          "Bihar",
+          "Bind",
+          "Chandi",
+          "Ekangarsarai",
+          "Giriak",
+          "Harnaut",
+          "Islampur",
+          "Karai Parsurai",
+          "Katrisarai",
+          "Nagar Nausa",
+          "Noorsarai",
+          "Parbalpur",
+          "Rahui",
+          "Sarmera",
+          "Silao",
+          "Tharthari",
+        ])
+        break
+      case "Sheikhpura":
+        setLocation([
+          "Ariari",
+          "Barbigha",
+          "Chewara",
+          "Ghat ",
+          "Kusumbha",
+          "Sheikhpura",
+          "Shekhopur Sarai",
+        ])
+        break
+      case "Lakhisarai":
+        setLocation(["Sadar Lakhisarai", "Surajgarha", "Halsi"])
+        break
+      case "Munger":
+        setLocation([
+          "Asarganj",
+          "Bariarpur",
+          "Dharhara",
+          "Jamalpur",
+          "Kharagpur",
+          "Munger",
+          "Sangrampur",
+          "Tarapur",
+          "Tetiha Bambor",
+        ])
+        break
+      case "Begusarai":
+        setLocation([
+          "Bachhwara",
+          "Bakhri",
+          "Balia",
+          "Begusarai",
+          "Bhagwanpur",
+          "Birpur",
+          "Cheria Bariarpur",
+          "Chhorahi",
+          "Dandari",
+          "Garhpura",
+          "Khudabandpur",
+          "Mansurchak",
+          "Matihani",
+          "Naokothi",
+          "Sahebpur kamal",
+          "Shamho Akha kurha",
+          "Teghra",
+        ])
+        break
+      case "Bhagalpur":
+        setLocation([
+          "Nathnagar",
+          "Sabour",
+          "Shahkund",
+          "Sultanganj",
+          "Kahalgaon",
+          "Sanhaula",
+          "Jagdishpur",
+          "Bihpur",
+          "Colgong",
+          "Gopalpur",
+          "Goradih",
+          "Ismailpur",
+          "Kharik",
+          "Narayanpur",
+          "Naugachhia",
+          "Pirpainti",
+          "Rangra Chowk",
+          "Sonhaula",
+        ])
+        break
+      case "Katihar":
+        setLocation([
+          "Katihar",
+          "Dandkhora",
+          "Hasanganj",
+          "Korha",
+          "Sameli",
+          "Falka",
+          "Kursela",
+          "Barari",
+          "Mansahi",
+          "Pranpur",
+          "Barsoi",
+          "Balrampur",
+          "Azamnagar",
+          "Kadwa",
+          "Manihari",
+          "Amdabad",
+        ])
+        break
+      case "Banka":
+        setLocation([
+          "Amarpur",
+          "Banka",
+          "Barahat",
+          "Belhar",
+          "Bounsi",
+          "Chandan",
+          "Dhoraiya",
+          "Fullidumar",
+          "Katoriya",
+          "Rajoun",
+          "Sambhuganj",
+        ])
+        break
+      case "Muzaffarpur":
+        setLocation([
+          "Aurai",
+          "Bandra",
+          "Bochahan",
+          "Gaighat",
+          "Kanti",
+          "Katra",
+          "Kurhani",
+          "Marwan",
+          "Minapur",
+          "Motipur",
+          "Muraul",
+          "Mushahari",
+          "Sahebganj",
+          "Sakra",
+          "Paroo",
+          "Saraiya",
+        ])
+        break
+      case "Vaishali":
+        setLocation([
+          "Bhagwanpur",
+          "Bidupur",
+          "Chehra kalan",
+          "Desri",
+          "Goraul",
+          "Hajipur",
+          "Jandaha",
+          "Lalganj",
+          "Mahnar",
+          "Mahua",
+          "Patepur",
+          "Paterhi Belsar",
+          "Raghopur",
+          "Raja Pakar",
+          "Sahdai Buzurg",
+          "Vaishali",
+        ])
+        break
+      case "Samastipur":
+        setLocation([
+          "Bibhutpur",
+          "Bithan",
+          "Dalsinghsarai",
+          "Hasanpur",
+          "Kalyanpur",
+          "Khanpur",
+          "Mohanpur          ",
+          "Mohiuddinagar",
+          "Morwa",
+          "Patori",
+          "Pusa",
+          "Rosera",
+          "Samastipur",
+          "Sarairanjan",
+          "Sivaji nagar",
+          "Singhia",
+          "Tajpur",
+          "Ujiarpur",
+          "Vidyapati Nagar",
+          "Warisnagar",
+        ])
+        break
+      case "Darbhanga":
+        setLocation([
+          "Darbhanga Sadar",
+          "Bahadurpur",
+          "Baheri",
+          "Hayaghat",
+          "Hanuman Nagar",
+          "Keoti",
+          "Jale",
+          "Singhwara",
+          "Manigachhi",
+          "Tardih",
+        ])
+        break
+      case "West Champaran":
+        setLocation([
+          "Bagaha",
+          "Bairia",
+          "Bettiah",
+          "Bhitaha",
+          "Chanpatia",
+          "Gaunaha",
+          "Jogapatti",
+          "Lauriya",
+          "Madhubani",
+          "Mainatanr",
+          "Majhaulia",
+          "Narkatiaganj",
+          "Nautan",
+          "Piprasi",
+          "Ramnagar",
+          "Sidhaw",
+          "Sikta",
+          "Thakrahan",
+        ])
+        break
+      case "Sheohar":
+        setLocation([
+          "Dumri Katsarai",
+          "Piprarhi",
+          "Purnahiya",
+          "Sheohar",
+          "Tariani Chowk",
+        ])
+        break
+      case "Sitamarhi":
+        setLocation([
+          "Bairgania",
+          "Bajpatti",
+          "Bathnaha",
+          "Belsand",
+          "Bokhara",
+          "Charaut",
+          "Dumra",
+          "Majorganj",
+          "Nanpur",
+          "Parihar",
+          "Parsauni",
+          "Pupri",
+          "Riga",
+          "Runisaidpur",
+          "Sonbhadra",
+          "Suppi",
+          "Sursand",
+        ])
+        break
+      case "East Champaran":
+        setLocation([
+          "Adapur",
+          "Areraj",
+          "Banjaria",
+          "Chakia",
+          "Chiraia",
+          "Dhaka",
+          "Ghorasahan",
+          "Harsidhi",
+          "Kalyanpur",
+          "Kesaria",
+          "Kotwa",
+          "Madhuban",
+          "Mehsi",
+          "Motihari",
+          "Narkatia",
+          "Paharpur",
+          "Pakri ",
+          "Dayal",
+          "Patahi",
+          "Phenhara",
+          "Piprakothi",
+          "Ramgarhwa",
+          "Raxaul",
+          "Sangrampur",
+          "Sugauli",
+          "Tetaria",
+          "Turkaulia",
+        ])
+        break
+      case "Saharsa":
+        setLocation([
+          "Kahra",
+          "Sattar ",
+          "Kataiya",
+          "Nauhatta",
+          "Mahishi",
+          "Sour ",
+          "Bazar",
+          "Sonbarsa",
+          "Patarghat",
+          "Simri Bakhtiyarpur",
+          "Salkhua",
+          "Banma Ithari",
+        ])
+        break
+      case "Madhubani":
+        setLocation([
+          "Andhratharhi",
+          "Babubarhi",
+          "Basopatti",
+          "Benipatti",
+          "Bisfi",
+          "Ghoghardiha",
+          "Harlakhi",
+          "Jainagar",
+          "Jhanjharpur",
+          "Kaluahi",
+          "Khajauli",
+          "Ladania",
+          "Lakhnaur",
+          "Laukaha",
+          "Madhepur",
+          "Madhubani",
+          "Madhwapur",
+          "Pandaul",
+          "Phulparas",
+          "Rajnagar",
+        ])
+        break
+      case "Khagaria":
+        setLocation([
+          "Alauli",
+          "Beldaur",
+          "Chautham",
+          "Gogri",
+          "Khagaria",
+          "Mansi",
+          "Parbatta",
+        ])
+        break
+      case "Supaul":
+        setLocation([
+          "Basantpur",
+          "Chhatapur",
+          "Kishanpur",
+          "Marauna",
+          "Nirmali",
+          "Pipra",
+          "Pratapganj",
+          "Raghopur",
+          "Saraigarh Bhaptiyahi",
+          "Supaul",
+          "Tribeniganj",
+        ])
+        break
+      case "Kishanganj":
+        setLocation([
+          "Bahadurganj",
+          "Dighalbank",
+          "Kishanganj",
+          "Kochadhaman",
+          "Pothia",
+          "Terhagachh",
+          "Thakurganj",
+        ])
+        break
+      case "Araria":
+        setLocation([
+          "Araria",
+          "Jokihat",
+          "Kursakanta",
+          "Raniganj",
+          "Sikti",
+          "Palasi",
+          "Forbesganj",
+          "Narpatganj",
+          "Bhargama",
+        ])
+        break
+      case "Madhepura":
+        setLocation([
+          "Alamnagar",
+          "Bihariganj",
+          "Chausa",
+          "Gamharia",
+          "Ghailarh",
+          "Gwalpara",
+          "Kishanganj",
+          "Kumarkhand",
+          "Madhepura",
+          "Murliganj",
+          "Puraini",
+          "Shankarpur",
+          "Singheshwar",
+        ])
+        break
+      case "Gopalganj":
+        setLocation([
+          "Baikunthpur",
+          "Barauli",
+          "Bhorey",
+          "Bijaipur",
+          "Gopalganj",
+          "Hathua",
+          "Katiya",
+          "Kuchaikote",
+          "Manjha",
+          "Pach Deuri",
+          "Phulwaria",
+          "Sidhwalia",
+          "Thawe",
+          "Uchkagaon",
+        ])
+        break
+      case "Siwan":
+        setLocation([
+          "Andar",
+          "Barharia",
+          "Basantpur",
+          "Bhagwanpur Hat",
+          "Darauli",
+          "Daraundha",
+          "Goriakothi",
+          "Guthani",
+          "Hasanpura",
+          "Hussainganj",
+          "Lakri Nabiganj",
+          "Maharajganj",
+          "Nautan",
+          "Mairwa",
+          "Pachrukhi",
+          "Raghunathpur",
+          "Siswan",
+          "Siwan",
+          "Ziradei",
+        ])
+        break
+      case "Chapra":
+        setLocation([
+          "Amnour",
+          "Baniapur",
+          "Chapra",
+          "Dariapur",
+          "Dighwara",
+          "Ekma",
+          "Garkha",
+          "Ishupur",
+          "Jalalpur",
+          "Lahladpur",
+          "Maker",
+          "Manjhi",
+          "Marhaura",
+          "Mashrakh",
+          "Nagra",
+          "Panapur",
+          "Parsa",
+          "Revelganj",
+          "Sonepur",
+          "Taraiya",
+        ])
+        break
+
+      default:
+        setLocation([])
+    }
   }
 
   return (
@@ -228,19 +850,32 @@ export function UserForm({}) {
       {partner === "STOCKIST" &&
         (stateIndia === "Bihar" ? (
           <div style={{ width: "450px" }}>
-            <label>District (ज़िला)</label>
+            <label>Location (जगह)</label>
             <br />
             <select
               required
               onChange={(e) => {
+                setRetailLocation(e.target.value)
                 changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
               }}
             >
               <option value={""} disabled selected>
-                Select District (चुनें)
+                Select Location (जगह चुनें)
               </option>
-              <option value={"Patna"}>Patna</option>
+              <option value={"Patna"}>Patna (District)</option>
+              <option value={"Gaya"}>Gaya</option>
+              <option value={"Nawada"}>Nawada (District)</option>
+              <option value={"Jamui"}>Jamui (District)</option>
+              <option value={"Bhagalpur"}>Bhagalpur (District)</option>
+              <option value={"Purnia"}>Purnia (District)</option>
+              <option value={"Vaishali"}>Vaishali (District)</option>]
+              <option value={"East Champaran"}>
+                East Champaran (District)
+              </option>
+              <option value={"Madhepura"}>Madhepura (District)</option>
+              <option value={"Siwan"}>Siwan (District)</option>
+              {/* <option value={"Patna"}>Patna</option>
               <option value={"Gaya"}>Gaya</option>
               <option value={"Buxar"}>Buxar</option>
               <option value={"Nalanda"}>Nalanda</option>
@@ -253,22 +888,24 @@ export function UserForm({}) {
               <option value={"EastChamparan"}>East Champaran</option>
               <option value={"Sitamarhi"}>Sitamarhi</option>
               <option value={"Madhepura"}>Madhepura</option>
-              <option value={"Siwan"}>Siwan</option>
+              <option value={"Siwan"}>Siwan</option> */}
             </select>
           </div>
         ) : (
           <div style={{ width: "450px" }}>
-            <label>District (ज़िला)</label>
+            <label>Location (जगह)</label>
             <br />
             <select
               required
               onChange={(e) => {
+                setRetailLocation(e.target.value)
+
                 changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
               }}
             >
               <option value={""} disabled selected>
-                Select District (चुनें)
+                Select Location (जगह चुनें)
               </option>
               <option value={""}>..</option>
             </select>
@@ -277,11 +914,13 @@ export function UserForm({}) {
       {partner === "DISTRIBUTOR" &&
         (stateIndia === "Bihar" ? (
           <div style={{ width: "450px" }}>
-            <label>District (ज़िला)</label>
+            <label>Location (जगह)</label>
             <br />
             <select
               required
               onChange={(e) => {
+                setRetailLocation(e.target.value)
+
                 changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
               }}
@@ -289,34 +928,69 @@ export function UserForm({}) {
               <option value={""} disabled selected>
                 Select District (चुनें)
               </option>
-              <option value={"Jehanabad"}>Jehanabad</option>
-              <option value={"Aurangabad"}>Aurangabad</option>
-              <option value={"Rohtas"}>Rohtas</option>
-              <option value={"Arrah"}>Arrah(Bhojpur)</option>
-              <option value={"Nawada"}>Nawada</option>
-              <option value={"Sheikhpure"}>Sheikhpure</option>
-              <option value={"Lakhisarai"}>Lakhisarai</option>
-              <option value={"Munger"}>Munger</option>
-              <option value={"Katihar"}>Katihar</option>
-              <option value={"Banka"}>Banka</option>
-              <option value={"Muzaffarpur"}>Muzaffarpur</option>
-              <option value={"Darbhanga"}>Darbhanga</option>
-              <option value={"Sheohar"}>Sheohar</option>
-              <option value={"Supaul"}>Supaul</option>
-              <option value={"Araria"}>Araria</option>
-              <option value={"Kishnaganj"}>Kishnaganj</option>
-              <option value={"Gopalganj"}>Gopalganj</option>
-              <option value={"Chhapra"}>Chhapra</option>
-              <option value={"Saran"}>Saran</option>
+              <option value={"Danapur"}>Danapur Sadan</option>
+              <option value={"Jehanabad"}>Jehanabad (District)</option>
+              <option value={"Arwal"}>Arwal (District)</option>
+              <option value={"Paliganj"}>Paliganj</option>
+
+              <option value={"Gaya"}>Gaya (District)</option>
+              <option value={"Aurangabad"}>Aurangabad (District)</option>
+              <option value={"Rohtas"}>Rohtas (District)</option>
+              <option value={"Kaimur"}>Kaimur (District)</option>
+              <option value={"Buxar"}>Buxar (District)</option>
+              <option value={"Arrah"}>Arrah(Bhojpur) (District)</option>
+
+              <option value={"Biharsharif"}>
+                Biharsharif/Nalanda (District)
+              </option>
+              <option value={"Sheikhpura"}>Sheikhpura (District)</option>
+
+              <option value={"Lakhisarai"}>Lakhisarai (District)</option>
+              <option value={"Munger"}>Munger (District)</option>
+              <option value={"Begusarai"}>Begusarai (District)</option>
+
+              <option value={"Bhagalpur"}>Bhagalpur (District)</option>
+
+              <option value={"Katihar"}>Katihar (District)</option>
+              <option value={"Banka"}>Banka (District)</option>
+
+              <option value={"Muzaffarpur"}>Muzaffarpur (District)</option>
+              <option value={"Vaishali"}>Vaishali (District)</option>
+              <option value={"Samastipur"}>Samastipur (District)</option>
+              <option value={"Darbhanga"}>Darbhanga (District)</option>
+
+              <option value={"West Champaran"}>
+                West Champaran (District)
+              </option>
+              <option value={"Sheohar"}>Sheohar (District)</option>
+              <option value={"Sitamarhi"}>Sitamarhi (District)</option>
+              <option value={"East Champaran"}>
+                East Champaran (District)
+              </option>
+
+              <option value={"Saharsa"}>Saharsa (District)</option>
+              <option value={"Madhubani"}>Madhubani (District)</option>
+              <option value={"Khagaria"}>Khagaria (District)</option>
+              <option value={"Supaul"}>Supaul (District)</option>
+              <option value={"Kishanganj"}>Kishanganj (District)</option>
+              <option value={"Araria"}>Araria (District)</option>
+              <option value={"Madhepura"}>Madhepura (District)</option>
+
+              <option value={"Gopalganj"}>Gopalganj (District)</option>
+              <option value={"Siwan"}>Siwan (District)</option>
+              <option value={"Chapra"}>Chapra (District)</option>
             </select>
           </div>
         ) : (
+          //UP
           <div style={{ width: "450px" }}>
             <label>District (ज़िला)</label>
             <br />
             <select
               required
               onChange={(e) => {
+                setRetailLocation(e.target.value)
+
                 changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
               }}
@@ -376,7 +1050,21 @@ export function UserForm({}) {
         </div>
       )}
       {partner === "DISTRIBUTOR" && district && (
-        <div style={{ width: "450px" }}></div>
+        <div style={{ width: "450px" }}>
+          <p style={{ padding: " 10px 0" }}>
+            <br />
+            Locations you have to provide your services to:
+            <br />
+            <br />
+            {location.map((loc) => {
+              return (
+                <>
+                  <strong>{loc}, </strong>
+                </>
+              )
+            })}
+          </p>
+        </div>
       )}
       <div style={{ width: "500px", paddingTop: "7px", fontSize: "16px" }}>
         <br />
