@@ -6,7 +6,7 @@ if (typeof window !== "undefined") {
 }
 const client = new ApolloClient({
   //uri: "https://192.46.210.85:5655/graphql",
-  uri: "https://ramaerawebsitebackend-production.up.railway.app/graphql",
+  uri: "https://websitebackend.ramaera.com/graphql",
   //uri: "http://localhost:3000/graphql",
   headers: {
     authorization: ACCESSTOKEN ? `Bearer ${ACCESSTOKEN}` : "",
