@@ -90,9 +90,9 @@ const applicantsDetails = ({ AppData }) => {
                 <option disabled selected>
                   Select Status
                 </option>
-                <option style={{widows:"200px"}} value={"pending"}>Pending</option>
-                <option style={{widows:"200px"}} value={"approval"}>Approval </option>
-                <option style={{widows:"200px"}} value={"rejected"}>Rejected </option>
+                <option value={"pending"}>Pending</option>
+                <option value={"approval"}>Approval </option>
+                <option value={"rejected"}>Rejected </option>
               </select>
             </div>
           </FormWrapper>

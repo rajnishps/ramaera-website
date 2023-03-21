@@ -13,7 +13,7 @@ const projectApplicationDetail = () => {
     <>
       <PageLayout mheight="100vh" height="120vh">
         <Navbar />
-        <div style={{ height: "200px" }}></div>
+        <div className="navSpace"></div>
         <PageWidth full scale={"95%"} width="1500px" position="relative">
           <ApplicationDetail ProjectData={projectData[index - 1]} />
         </PageWidth>
