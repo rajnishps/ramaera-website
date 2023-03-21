@@ -1058,8 +1058,22 @@ a:hover {
   }
 }
 
+.responseSpace{
+  height: 80px;
+}
+
+.responseSpaceDetail{
+  height: 150px;
+}
 @media (max-width: 450px) {
-  .loginInput {
-    width: 80vw !important;
+  .responseSpaceDetail {
+    height: 100px;
+  }
+}
+
+@media (max-width: 450px) {
+  .divResponsive {
+    width: 85vw !important;
+    overflow-wrap: break-word;
   }
 }
