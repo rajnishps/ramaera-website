@@ -8,78 +8,78 @@ const applicantsDetails = ({ AppData }) => {
       <>
         <Container >
           <FormWrapper>
-            <div style={{ width: "500px", marginTop: "30px" }}>
+            <div className="divResponsive" style={{ width: "500px", marginTop: "30px" }}>
               <label
                 style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
               >
                 Personal Details
               </label>
             </div>
-            <div style={{ width: "450px" }}></div>
+            <div className="divResponsive" style={{ width: "450px" }}></div>
             <hr className="lineHr1"/>
           <hr className="lineHr2"/>
-            <div style={{ width: "500px" }}>
+            <div className="divResponsive" style={{ width: "500px" }}>
               <label>Applicant's Name </label>
               <br />
               <p>{AppData.name}</p>
             </div>
-            <div style={{ width: "450px" }}>
+            <div className="divResponsive" style={{ width: "450px" }}>
               <label>Applicant's Email </label>
               <br />
               <p>{AppData.email}</p>
             </div>
-            <div style={{ width: "500px" }}>
+            <div className="divResponsive" style={{ width: "500px" }}>
               <label>Address</label>
               <br />
               <p>{AppData.applicantAddress}</p>
             </div>
-            <div style={{ width: "450px" }}>
+            <div className="divResponsive" style={{ width: "450px" }}>
               <label>State </label>
               <br />
               <p>{AppData.applicantState} </p>
             </div>
-            <div style={{ width: "500px" }}>
+            <div className="divResponsive" style={{ width: "500px" }}>
               <label>Pincode </label>
               <br />
               <p>{AppData.applicantPin} </p>
             </div>
-            <div style={{ width: "450px" }}>
+            <div className="divResponsive" style={{ width: "450px" }}>
               <label>Applicant's Mobile No. </label>
               <br />
               <p>{AppData.mobileNumber}</p>
             </div>
-            <div style={{ width: "500px", marginTop: "30px" }}>
+            <div className="divResponsive" style={{ width: "500px", marginTop: "30px" }}>
               <label
                 style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
               >
                 Application Details
               </label>
             </div>
-            <div style={{ width: "450px" }}></div>
+            <div className="divResponsive" style={{ width: "450px" }}></div>
             <hr  className="lineHr1"/>
           <hr className="lineHr2"/>
-            <div style={{ width: "500px" }}>
+            <div className="divResponsive" style={{ width: "500px" }}>
               <label>Application </label>
               <br />
               <p>{AppData.applicantType}</p>
             </div>
-            <div style={{ width: "450px" }}>
+            <div className="divResponsive" style={{ width: "450px" }}>
               <label>Firm Name</label>
               <br />
               <p>{AppData.applicantType}</p>
             </div>
-            <div style={{ width: "500px" }}>
+            <div className="divResponsive" style={{ width: "500px" }}>
               <label>State</label>
               <br />
               <p>{AppData.State}</p>
             </div>
-            <div style={{ width: "450px" }}>
+            <div className="divResponsive" style={{ width: "450px" }}>
               <label>District</label>
               <br />
               <p>{AppData.District}</p>
             </div>
 
-            <div style={{ width: "450px" }}>
+            <div className="divResponsive" style={{ width: "450px" }}>
               <label
                 style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
               >

@@ -1,6 +1,10 @@
+import { useState } from "react"
 import { DataGrid } from "@mui/x-data-grid"
 import Box from "@mui/material/Box"
 import Text from "../../../components/Text/Text"
+import AccountCircleIcon from "@mui/icons-material/AccountCircle"
+import Menu from "@mui/material/Menu"
+import MenuItem from "@mui/material/MenuItem"
 import { useQuery } from "@apollo/client"
 import { GetProjectApplications } from "../../../apollo/queries/idea"
 import { useDispatch, useSelector } from "react-redux"
@@ -12,6 +16,8 @@ const ProjectApplicationInfo = () => {
   const projectData = useSelector((state) => state.applicationData.projectData)
   const dispatch = useDispatch()
   const { loading, error, data } = useQuery(GetProjectApplications)
+  const [anchorEl, setAnchorEl] = useState(false)
+
   if (loading) {
     return "Loading..."
   }
@@ -37,6 +43,14 @@ const ProjectApplicationInfo = () => {
       console.log(err)
     }
   }
+
+  const handleMenu = (event) => {
+    setAnchorEl(event.currentTarget)
+  }
+  const handleClose = () => {
+    setAnchorEl(null)
+  }
+
   const columns = [
     {
       field: "number",
@@ -100,7 +114,7 @@ const ProjectApplicationInfo = () => {
 
     return (
       <>
-        <div style={{ marginTop: "150px" }}>
+        <div>
           <Text
             Text="Project Application List"
             lg="linear-gradient(to right, #ffa73d, gold)"
@@ -119,6 +133,40 @@ const ProjectApplicationInfo = () => {
             mta="center"
             mlh="unset"
           />
+
+          <AccountCircleIcon
+            onClick={handleMenu}
+            style={{
+              color: "white",
+              fontSize: "50px",
+              right: "5%",
+              top: "20px",
+              position: "absolute",
+              cursor: "pointer",
+            }}
+          />
+
+          <Menu
+            id="menu-appbar"
+            anchorEl={anchorEl}
+            anchorOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            keepMounted
+            transformOrigin={{
+              vertical: "top",
+              horizontal: "right",
+            }}
+            open={Boolean(anchorEl)}
+            onClose={handleClose}
+          >
+            <MenuItem onClick={handleClose}>Name</MenuItem>
+            <a href="/passwordChange">
+              <MenuItem onClick={handleClose}>Change Password</MenuItem>
+            </a>
+            <MenuItem onClick={handleClose}>Logout</MenuItem>
+          </Menu>
 
           <Box
             sx={{
