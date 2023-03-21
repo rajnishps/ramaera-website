@@ -17,6 +17,7 @@ export function UserForm({}) {
   const [isFirm, setIsFirm] = useState(false)
   const [district, setDistrict] = useState("")
   const [location, setLocation] = useState([])
+  const [locationStock, setLocationStock] = useState([])
   const dispatch = useDispatch()
   const changeHandler = (val) => {
     setPartner(val)
@@ -33,6 +34,7 @@ export function UserForm({}) {
     setIsFirm(!isFirm)
   }
   const setRetailLocation = (val) => {
+    console.log(locationStock)
     switch (val) {
       case "Danapur":
         setLocation([
@@ -654,6 +656,89 @@ export function UserForm({}) {
     }
   }
 
+  const setStokistLocation = (val) => {
+    switch (val) {
+      case "Patna":
+        setLocationStock([
+          "Danapur Sadan",
+          "Jehanabad (District)",
+          "Arwal (District)",
+          "Paliganj",
+        ])
+        break
+      case "Gaya":
+        setLocationStock([
+          "Gaya (District)",
+          "Aurangabad (District)",
+          "Rohtas (District)",
+          "Kaimur (District)",
+          "Buxar (District)",
+          "Arrah(Bhojpur) (District)",
+        ])
+        break
+      case "Nawada":
+        setLocationStock([
+          "Biharsharif/Nalanda (District)",
+          "Sheikhpura (District)",
+        ])
+        break
+      case "Jamui":
+        setLocationStock([
+          "Lakhisarai (District)",
+          "Munger (District)",
+          "Begusarai (District)",
+        ])
+        break
+      case "Purnia":
+        setLocationStock(["Katihar  (District)", "Banka  (District)"])
+        break
+      case "Vaishali":
+        setLocationStock([
+          "Muzzafarpur (District)",
+          "Vaishali (District)",
+          "Samastipur (District)",
+          "Darbhanga (District)",
+        ])
+        break
+      case "East Champaran":
+        setLocationStock([
+          "West Champaran (District)",
+          "Sheohar (District)",
+          "Sitamarhi (District)",
+          "East Champaran (District)",
+        ])
+        break
+      case "Madhepura":
+        setLocationStock([
+          "Saharsa (District)",
+
+          "Madhubani (District)",
+
+          "Khagaria (District)",
+          "Supaul (District)",
+          "Kishanganj (District)",
+          "Araria (District)",
+
+          "Madhepura  (District)",
+        ])
+        break
+      case "Siwan":
+        setLocationStock([
+          "Gopalganj (District)",
+
+          "Siwan (District)",
+          "Chapra (District)",
+        ])
+        break
+      case "Bhagalpur":
+        setLocationStock([" Bhagalpur (District)"])
+        break
+
+      default:
+        setLocationStock([])
+    }
+  }
+
   return (
     <FormWrapper title="BECOME A PART OF OUR DISTRIBUTION CHANNEL">
       <div style={{ width: "500px", marginTop: "30px" }}>
@@ -849,7 +934,7 @@ export function UserForm({}) {
             <select
               required
               onChange={(e) => {
-                setRetailLocation(e.target.value)
+                setStokistLocation(e.target.value)
                 changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
               }}
@@ -858,7 +943,7 @@ export function UserForm({}) {
                 Select Location (जगह चुनें)
               </option>
               <option value={"Patna"}>Patna (District)</option>
-              <option value={"Gaya"}>Gaya</option>
+              <option value={"Gaya"}>Gaya (District)</option>
               <option value={"Nawada"}>Nawada (District)</option>
               <option value={"Jamui"}>Jamui (District)</option>
               <option value={"Bhagalpur"}>Bhagalpur (District)</option>
@@ -892,8 +977,7 @@ export function UserForm({}) {
             <select
               required
               onChange={(e) => {
-                setRetailLocation(e.target.value)
-
+                setStokistLocation(e.target.value)
                 changeDistricts(e.target.value)
                 dispatch(changeDistrict(e.target.value))
               }}
@@ -1023,7 +1107,22 @@ export function UserForm({}) {
         </div>
       )}
       {partner === "STOCKIST" && district && (
-        <div style={{ width: "450px" }}></div>
+        <div style={{ width: "450px" }}>
+          <p style={{ padding: " 10px 0", color: "black" }}>
+            Area Coverage:
+            <br />
+            <br />
+            <p style={{ width: "350px", padding: "0px" }}>
+              {locationStock.map((loc) => {
+                return (
+                  <>
+                    <strong style={{ overflowWrap: "wrap" }}>{loc}, </strong>
+                  </>
+                )
+              })}
+            </p>
+          </p>
+        </div>
       )}
       {partner === "DISTRIBUTOR" && district && (
         <div style={{ width: "500px", color: "black" }}>
