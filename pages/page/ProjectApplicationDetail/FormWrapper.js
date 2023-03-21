@@ -15,9 +15,10 @@ export function FormWrapper({ title, children }) {
         xssize="clamp(2.4rem, 1.5vw, 2rem)"
         msize="2rem"
         mwidth="100%"
+        mmwidth="100%"
         padding="0"
         mpadding="0"
-        mta="left"
+        mta="center"
         mlh="unset"
       />
       <Text
@@ -31,21 +32,15 @@ export function FormWrapper({ title, children }) {
         m="0 0 2rem 0"
         xmsize="clamp(2.4rem, 1.5vw, 2rem)"
         xssize="clamp(2.4rem, 1.5vw, 2rem)"
-        msize="2rem"
+        msize="1.6rem"
         mwidth="100%"
+        mmwidth="100%"
         padding="0"
         mpadding="0"
-        mta="left"
+        mta="center"
         mlh="unset"
       />
-      <div
-        style={{
-          display: "grid",
-          gap: "1rem 0",
-          justifyContent: "flex-start",
-          gridTemplateColumns: "auto minmax(auto, 400px)",
-        }}
-      >
+      <div className="formWrapper">
         {children}
       </div>
     </>
