@@ -1072,9 +1072,13 @@ a:hover {
   }
 }
 
+.divResponsive{
+  padding-right: 2rem;
+}
 @media (max-width: 450px) {
   .divResponsive {
     width: 85vw !important;
     overflow-wrap: break-word;
+    padding-right: unset;
   }
 }
