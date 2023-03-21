@@ -19,7 +19,6 @@ export function AccountForm() {
         <br />
         <input
           required
-          autoFocus
           type="text"
           onChange={(e) => dispatch(changelinkedinProfile(e.target.value))}
         />
