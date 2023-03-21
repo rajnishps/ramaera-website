@@ -1081,7 +1081,7 @@ export function UserForm({}) {
           </div>
         ))}
       {partner === "STOCKIST" && district && (
-        <div style={{ width: "500px", color: "black" }}>
+        <div style={{ width: "500px" }}>
           <p style={{ padding: " 10px 0" }}>
             <strong style={{ textDecoration: "underline" }}>
               {" "}
@@ -1108,7 +1108,7 @@ export function UserForm({}) {
       )}
       {partner === "STOCKIST" && district && (
         <div style={{ width: "450px" }}>
-          <p style={{ padding: " 10px 0", color: "black" }}>
+          <p style={{ padding: " 10px 0" }}>
             Area Coverage:
             <br />
             <br />
@@ -1125,7 +1125,7 @@ export function UserForm({}) {
         </div>
       )}
       {partner === "DISTRIBUTOR" && district && (
-        <div style={{ width: "500px", color: "black" }}>
+        <div style={{ width: "500px" }}>
           <p style={{ padding: " 10px 0" }}>
             <strong style={{ textDecoration: "underline" }}>
               {" "}
@@ -1151,7 +1151,7 @@ export function UserForm({}) {
         </div>
       )}
       {partner === "DISTRIBUTOR" && district && (
-        <div style={{ width: "450px", color: "black" }}>
+        <div style={{ width: "450px" }}>
           <p style={{ padding: " 10px 0" }}>
             Area Coverage:
             <br />
@@ -1174,7 +1174,6 @@ export function UserForm({}) {
           width: "500px",
           paddingTop: "7px",
           fontSize: "16px",
-          color: "black",
         }}
       >
         <br />
@@ -1184,7 +1183,7 @@ export function UserForm({}) {
       </div>
       <div
         className="detailContact"
-        style={{ width: "450px", fontSize: "16px", color: "black" }}
+        style={{ width: "450px", fontSize: "16px" }}
       >
         <br />
         <strong>संपर्क करें:</strong>
@@ -1192,7 +1191,7 @@ export function UserForm({}) {
         ई-मेल: sales@ramaera.in | फोन: +91-120-4152818
       </div>
       {partner && district && (
-        <div style={{ width: "500px", color: "black" }}>
+        <div style={{ width: "500px" }}>
           <p style={{ fontSize: "12px" }}>
             <sup>*</sup>All Data for the proposal purpose only,
             <br />

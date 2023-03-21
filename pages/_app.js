@@ -45,7 +45,7 @@ export default function App({ Component, pageProps }) {
         ></meta>
         <meta property="og:image" content="/logo/logo.png"></meta>
       </Head>
-      <NextNProgress color="#f9d5239b" startPosition={0.4} height={3} />
+      <NextNProgress color="#f9d523" startPosition={0.4} height={3} />
 
       {
         <ApolloProvider client={client}>

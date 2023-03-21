@@ -10,21 +10,25 @@ const Container = styled.div`
   align-items: center;
   flex-direction: column;
 `
-
+const Linked = styled(Link)`
+  transition: 200ms;
+  &:hover {
+    transform: scale(1.05);
+  }
+`
 export default function FourOhFour() {
   return (
     <Container>
-      <h2 style={{ fontSize: "2.6rem", margin: "2rem" }}>
-        An error as occured.
+      <h2 style={{ fontSize: "1.6rem", margin: "2rem", color: "white" }}>
+        404 | This page could not be found.
       </h2>
-      <h1>
-        <span style={{ fontSize: "3.2rem", margin: "2rem" }}>
-          (╯°□°）╯︵ ┻━┻
-        </span>
-      </h1>
-      <Link style={{ fontSize: "1.6rem", margin: "2rem" }} href="/">
-        Go back
-      </Link>
+
+      <Linked
+        style={{ fontSize: "1.6rem", margin: "2rem", color: "white" }}
+        href="/"
+      >
+        Go back Home
+      </Linked>
     </Container>
   )
 }
