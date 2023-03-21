@@ -194,7 +194,7 @@ const index = () => {
                     noLineHeight
                     Text="Send Message "
                     fontSize="1rem"
-                    padding="10px 30px"
+                    padding="18px 30px"
                     fw="500"
                     sh
                   />

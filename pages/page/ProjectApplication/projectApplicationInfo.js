@@ -10,6 +10,7 @@ import { GetProjectApplications } from "../../../apollo/queries/idea"
 import { useDispatch, useSelector } from "react-redux"
 import { changeProjectData } from "../../../state/slice/applicantDataSlice"
 import Link from "next/link"
+import Button from "../../../components/Button/SubmitButton"
 //todo
 
 const ProjectApplicationInfo = () => {
@@ -60,7 +61,18 @@ const ProjectApplicationInfo = () => {
       selection: false,
       renderCell: (params) => (
         <Link href={`/SubmitProjectResponses/${params.value}`}>
-          <button>View Details</button>
+      <button style={{ background: "none", border: "none" }} type="submit">
+        <Button
+          nav
+          width="auto"
+          height="auto"
+          Text="View Details"
+          inheight="auto"
+          fontSize="auto"
+          padding=" 5px 8px"
+        />
+      </button>
+          {/* <button>View Details</button> */}
         </Link>
       ),
     },
@@ -86,14 +98,14 @@ const ProjectApplicationInfo = () => {
       headerName: "Project Name",
       description: "This column has a value getter and is not sortable.",
       sortable: false,
-      width: 450,
+      width: 350,
     },
     {
       field: "createAt",
       headerName: "Created At",
       description: "This column has a value getter and is not sortable.",
       sortable: false,
-      width: 250,
+      width: 200,
     },
   ]
 
@@ -170,7 +182,7 @@ const ProjectApplicationInfo = () => {
 
           <Box
             sx={{
-              height: "80vh",
+              height: "78vh",
               width: "90%",
               margin: "auto",
               background: "white",
@@ -185,11 +197,11 @@ const ProjectApplicationInfo = () => {
               initialState={{
                 pagination: {
                   paginationModel: {
-                    pageSize: 8,
+                    pageSize: 9,
                   },
                 },
               }}
-              pageSizeOptions={[8]}
+              pageSizeOptions={[9]}
               disablecolumnSelectionOnClick
               displayRowCheckbox={false}
               disableRowSelectionOnClick

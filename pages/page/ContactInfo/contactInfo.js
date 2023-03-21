@@ -10,6 +10,7 @@ import { GetContactResponses } from "../../../apollo/queries"
 import Link from "next/link"
 import { useDispatch, useSelector } from "react-redux"
 import { changeContactData } from "../../../state/slice/applicantDataSlice"
+import Button from "../../../components/Button/SubmitButton"
 
 const ContactInfo = () => {
   const dispatch = useDispatch()
@@ -60,7 +61,18 @@ const ContactInfo = () => {
       selection: false,
       renderCell: (params) => (
         <Link href={`/ContactUsResponses/${params.value}`}>
-          <button>View Details</button>
+        <button style={{ background: "none", border: "none" }} type="submit">
+        <Button
+          nav
+          width="auto"
+          height="auto"
+          Text="View Details"
+          inheight="auto"
+          fontSize="auto"
+          padding=" 5px 8px"
+        />
+      </button>
+          {/* <button>View Details</button> */}
         </Link>
       ),
     },
@@ -165,7 +177,7 @@ const ContactInfo = () => {
 
         <Box
           sx={{
-            height: "80vh",
+            height: "78vh",
             width: "90%",
             margin: "auto",
             background: "white",
@@ -180,11 +192,11 @@ const ContactInfo = () => {
             initialState={{
               pagination: {
                 paginationModel: {
-                  pageSize: 8,
+                  pageSize: 9,
                 },
               },
             }}
-            pageSizeOptions={[8]}
+            pageSizeOptions={[9]}
             disablecolumnSelectionOnClick
             displayRowCheckbox={false}
             disableRowSelectionOnClick

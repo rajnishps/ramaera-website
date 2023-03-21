@@ -11,6 +11,7 @@ import { GetApplications } from "../../../apollo/queries"
 import Link from "next/link"
 import { useDispatch, useSelector } from "react-redux"
 import { changeAppData } from "../../../state/slice/applicantDataSlice"
+import Button from "../../../components/Button/SubmitButton"
 
 const Applicant = () => {
   const applicantdata = useSelector((state) => state.applicationData.appData)
@@ -64,7 +65,18 @@ const Applicant = () => {
       selection: false,
       renderCell: (params) => (
         <Link href={`/DistributionChannelResponses/${params.value}`}>
-          <button>View Details</button>
+          <button style={{ background: "none", border: "none" }} type="submit">
+        <Button
+          nav
+          width="auto"
+          height="auto"
+          Text="View Details"
+          inheight="auto"
+          fontSize="auto"
+          padding=" 5px 8px"
+        />
+      </button>
+          {/* <button>View Details</button> */}
         </Link>
       ),
     },
@@ -181,7 +193,7 @@ const Applicant = () => {
 
           <Box
             sx={{
-              height: "80vh",
+              height: "78vh",
               width: "90%",
               margin: "auto",
               background: "white",
@@ -196,11 +208,11 @@ const Applicant = () => {
               initialState={{
                 pagination: {
                   paginationModel: {
-                    pageSize: 8,
+                    pageSize: 9,
                   },
                 },
               }}
-              pageSizeOptions={[5]}
+              pageSizeOptions={[9]}
               disablecolumnSelectionOnClick
               displayRowCheckbox={false}
               //onClick={routeChange}
