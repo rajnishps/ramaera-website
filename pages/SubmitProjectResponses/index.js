@@ -4,7 +4,7 @@ import Navbar from "../../components/Navbar/Navbar"
 const projectApplication = () => {
   return (
     <>
-      <Navbar />
+      <div  className="responseSpace"></div> 
       <ProjectApplicationInfo />
     </>
   )

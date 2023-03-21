@@ -150,7 +150,7 @@ const Applicant = () => {
             style={{
               color: "white",
               fontSize: "50px",
-              right: "100px",
+              right: "5%",
               top: "20px",
               position: "absolute",
               cursor: "pointer",
