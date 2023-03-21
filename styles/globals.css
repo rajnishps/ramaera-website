@@ -1063,3 +1063,11 @@ a:hover {
     width: 80vw !important;
   }
 }
+
+
+option {
+  width: 100px !important;
+  overflow: hidden;
+  word-wrap: normal !important;
+  white-space: normal;
+}

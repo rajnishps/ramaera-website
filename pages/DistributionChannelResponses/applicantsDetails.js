@@ -1,21 +1,12 @@
 import Link from "next/link"
 import { FormWrapper } from "./FormWrapper"
+import {Container} from "./applicantsDetailsStyle.js"
 
 const applicantsDetails = ({ AppData }) => {
   try {
     return (
       <>
-        <div
-          style={{
-            position: "relative",
-            background: "white",
-            padding: "2rem 2rem 3.5rem 2rem",
-            margin: "1rem",
-            borderRadius: ".5rem",
-            maxWidth: "max-content",
-            color: "black",
-          }}
-        >
+        <Container >
           <FormWrapper>
             <div style={{ width: "500px", marginTop: "30px" }}>
               <label
@@ -25,8 +16,8 @@ const applicantsDetails = ({ AppData }) => {
               </label>
             </div>
             <div style={{ width: "450px" }}></div>
-            <hr />
-            <hr />
+            <hr className="lineHr1"/>
+          <hr className="lineHr2"/>
             <div style={{ width: "500px" }}>
               <label>Applicant's Name </label>
               <br />
@@ -65,8 +56,8 @@ const applicantsDetails = ({ AppData }) => {
               </label>
             </div>
             <div style={{ width: "450px" }}></div>
-            <hr />
-            <hr />
+            <hr  className="lineHr1"/>
+          <hr className="lineHr2"/>
             <div style={{ width: "500px" }}>
               <label>Application </label>
               <br />
@@ -99,13 +90,13 @@ const applicantsDetails = ({ AppData }) => {
                 <option disabled selected>
                   Select Status
                 </option>
-                <option value={"pending"}>Pending</option>
-                <option value={"approval"}>Approval </option>
-                <option value={"rejected"}>Rejected </option>
+                <option style={{widows:"200px"}} value={"pending"}>Pending</option>
+                <option style={{widows:"200px"}} value={"approval"}>Approval </option>
+                <option style={{widows:"200px"}} value={"rejected"}>Rejected </option>
               </select>
             </div>
           </FormWrapper>
-        </div>
+        </Container>
       </>
     )
   } catch {
