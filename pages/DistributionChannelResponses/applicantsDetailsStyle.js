@@ -12,3 +12,8 @@ export const Container = styled.div`
     padding: 1.5rem;
   }
 `
+const StyleImage = () => {
+  return <div>StyleImage</div>
+}
+
+export default StyleImage

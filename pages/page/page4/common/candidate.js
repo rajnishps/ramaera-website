@@ -6,12 +6,15 @@ const Wrapper = styled.div`
   height: 100%;
   padding: 0 5vw;
   scroll-snap-align: center;
+
   @media only screen and (max-width: 500px) {
     padding: 0;
     transform: scale(0.75);
   }
 `
 const Container = styled.div`
+  color: white;
+
   display: flex;
   @media only screen and (max-width: 500px) {
     flex-direction: column;
@@ -21,25 +24,37 @@ const Image = styled.img`
   height: 60vh;
 `
 const LeftDiv = styled.div`
+  color: white;
+
   display: flex;
 `
 const Content = styled.p`
+  color: white;
+
   font-size: 1rem;
   margin-top: 20px;
 `
 const LeftContent = styled.p`
+  color: white;
+
   font-size: 1.6rem;
 `
 const NumDiv = styled.div`
+  color: white;
+
   margin-right: auto;
   font-size: 5rem;
   opacity: 60%;
   font-weight: 500;
 `
 const Link = styled.a`
+  color: white;
+
   cursor: pointer;
 `
 const RightDiv = styled.div`
+  color: white;
+
   display: flex;
   flex-direction: column;
   justify-content: center;

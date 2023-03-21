@@ -9,6 +9,7 @@ const TalentWrapper = styled.div`
   scroll-snap-type: y mandatory;
   -ms-overflow-style: none;
   scrollbar-width: none;
+
   &::-webkit-scrollbar {
     display: none;
   }
