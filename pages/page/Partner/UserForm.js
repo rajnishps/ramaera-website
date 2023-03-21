@@ -668,7 +668,6 @@ export function UserForm({}) {
         <label>Applicant's Name (आवेदक का नाम)</label>
         <br />
         <input
-          autoFocus
           required
           type="text"
           onChange={(e) => dispatch(changeName(e.target.value))}
@@ -679,7 +678,6 @@ export function UserForm({}) {
         <label>Applicant's Email (आवेदक का ईमेल) </label>
         <br />
         <input
-          autoFocus
           required
           type="email"
           onChange={(e) => dispatch(changeEmail(e.target.value))}
@@ -690,7 +688,6 @@ export function UserForm({}) {
         <label>Address (पता)</label>
         <br />
         <input
-          autoFocus
           required
           type="text"
           onChange={(e) => dispatch(changeApplicantAddress(e.target.value))}
@@ -701,7 +698,6 @@ export function UserForm({}) {
         <label>State (राज्य)</label>
         <br />
         <input
-          autoFocus
           required
           type="text"
           // onChange={(e) => dispatch(changeApplicantAddress(e.target.value))}
@@ -712,7 +708,6 @@ export function UserForm({}) {
         <label>Pincode (पिन कोड)</label>
         <br />
         <input
-          autoFocus
           required
           type="number"
           // onChange={(e) => dispatch(changeApplicantAddress(e.target.value))}
@@ -737,7 +732,6 @@ export function UserForm({}) {
           required
           rows={5}
           cols={80}
-          autoFocus
           type="text"
           // onChange={(e) => dispatch(changeApplicantAddress(e.target.value))}
           placeholder="Type Extra Info"

@@ -45,7 +45,7 @@ $thanksNote: String!,
 $director: [String!]!,
 ){CreateProject(
     data: {
-      City: $City
+         City: $City    
       State:$State
       Country:$Country
       dob:$dob

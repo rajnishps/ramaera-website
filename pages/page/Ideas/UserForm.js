@@ -37,7 +37,6 @@ export function UserForm() {
           <br />
           <input
             required
-            autoFocus
             type="text"
             onChange={(e) => dispatch(changeName(e.target.value))}
             placeholder="Type your name"
@@ -148,7 +147,6 @@ export function UserForm() {
             <label>Director Name</label>
             <br />
             <input
-              autoFocus
               onChange={(e) => dispatch(changeDirectorData(e.target.value))}
               type="text"
               placeholder="Type your name"
@@ -159,21 +157,21 @@ export function UserForm() {
           <div style={{ width: "450px" }}>
             <label>Basic introduction with experience </label>
             <br />
-            <input autoFocus type="text" />
+            <input type="text" />
           </div>
         )}
         {buttonCount >= 2 && (
           <div style={{ width: "500px" }}>
             <label>Director Name</label>
             <br />
-            <input autoFocus type="text" placeholder="Type your name" />
+            <input type="text" placeholder="Type your name" />
           </div>
         )}
         {buttonCount >= 2 && (
           <div style={{ width: "450px" }}>
             <label>Basic introduction with experience </label>
             <br />
-            <input autoFocus type="text" />
+            <input type="text" />
           </div>
         )}
 
@@ -181,14 +179,14 @@ export function UserForm() {
           <div style={{ width: "500px" }}>
             <label>Director Name</label>
             <br />
-            <input autoFocus type="text" placeholder="Type your name" />
+            <input type="text" placeholder="Type your name" />
           </div>
         )}
         {buttonCount >= 3 && (
           <div style={{ width: "450px" }}>
             <label>Basic introduction with experience </label>
             <br />
-            <input autoFocus type="text" />
+            <input type="text" />
           </div>
         )}
         {buttonCount === 3 ? null : (
