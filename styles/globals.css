@@ -504,6 +504,12 @@ a {
   width: 100vw;
 }
 
+@media (max-width: 450px){
+  .tabscontent{
+    padding: 0 4vw !important;
+  }
+}
+
 @media (min-width: 768px) {
   .mobText {
     display: none;
@@ -1119,5 +1125,15 @@ a:hover {
   .boxGird{
     padding: 10px;
     border-radius: 5px;
+  }
+}
+
+.termSpaceTop{
+  height: 200px;
+}
+
+@media (max-width: 450px){
+  .termSpaceTop{
+    height: 130px;
   }
 }

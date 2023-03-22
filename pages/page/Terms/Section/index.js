@@ -34,6 +34,7 @@ const index = () => {
                   msize="0.8rem"
                   padding=" 0"
                   mwidth="unset"
+                  mmwidth="unset"
                   mpadding="0"
                 />
               </Tab>

@@ -7,7 +7,7 @@ const terms = () => {
   return (
     <>
       <Navbar />
-      <div style={{ height: "200px" }}></div>
+      <div className="termSpaceTop"></div>
       {/* <Head /> */}
       <Section />
       <Footer />
