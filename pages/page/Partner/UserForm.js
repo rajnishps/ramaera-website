@@ -668,488 +668,516 @@ export function UserForm({}) {
         break
       case "Etah":
         setLocation([
-          "Sheetalpur	Etah	",
-          "Sakit	",
+          "Sheetalpur	Etah",
+          "Sakit",
           "Nidhauli Kalan",
-          "Marahara	",
-          "Jalesar	",
-          "Awagarh	 ",
-          "Jaithara	",
-          "Aliganj	",
+          "Marahara",
+          "Jalesar",
+          "Awagarh ",
+          "Jaithara",
+          "Aliganj",
         ])
         break
       case "Hathras":
         setLocation([
-          "HATHRAS	",
-          "MURASN	",
-          "SASNI	",
-          "SIKNDRA RAO	",
-          "HASAYAN	",
-          "SADABAD	",
-          "SAHPAU	",
+          "Hathras",
+          "Murasn",
+          "Sasni",
+          "Sikndra Rao",
+          "Hasayan",
+          "Sadabad",
+          "Sahpau",
         ])
         break
       case "Kasganj":
         setLocation([
-          "Kasganj	",
-          "Soron	",
-          "Patiyali	",
-          "Ganjdundwara	",
-          "Sidhpura	",
-          "Sahawar	",
-          "Amanpur	",
+          "Kasganj",
+          "Soron",
+          "Patiyali",
+          "Ganjdundwara",
+          "Sidhpura",
+          "Sahawar",
+          "Amanpur",
         ])
         break
       case "Agra":
         setLocation([
-          "Achnera	",
-          "Fatehpur Sikri	",
-          "Akola	",
-          "Bichpuri	",
-          "Baroli Ahir	",
-          "Khandoli	",
-          "Etmadpur	",
-          "Jagner	",
-          "Kheragarh	",
-          "Sainyan	",
-          "Shamsabad	",
-          "Fatehabad	",
-          "Pinahat	",
-          "Bah	",
-          "Jaitpur Kalan		",
+          "Achnera",
+          "Fatehpur Sikri",
+          "Akola",
+          "Bichpuri",
+          "Baroli Ahir",
+          "Khandoli",
+          "Etmadpur",
+          "Jagner",
+          "Kheragarh",
+          "Sainyan",
+          "Shamsabad",
+          "Fatehabad",
+          "Pinahat",
+          "Bah",
+          "Jaitpur Kalan",
         ])
         break
       case "Mathura":
         setLocation([
-          "NandGaon	",
-          "Chhata	Chaumuha	",
-          "Goverdhan	",
-          "Mathura	",
-          "Farah	",
-          "Raya	",
-          "Baldeo	",
-          "Naujheel	",
-          "Mant	",
+          "NandGaon",
+          "ChhataChaumuha",
+          "Goverdhan",
+          "Mathura",
+          "Farah",
+          "Raya",
+          "Baldeo",
+          "Naujheel",
+          "Mant",
         ])
         break
       case "Mainpuri":
         setLocation([
-          "Barnahal	",
-          "Mainpuri	",
-          "Bewar	",
-          "Ghiror	",
-          "Jageer	",
-          "Karhal	",
-          "Kishni	",
-          "Kuraoli	",
-          "Sultanganj	",
+          "Barnahal",
+          "Mainpuri",
+          "Bewar",
+          "Ghiror",
+          "Jageer",
+          "Karhal",
+          "Kishni",
+          "Kuraoli",
+          "Sultanganj",
         ])
         break
       case "Firozabad":
         setLocation([
-          "Firozabad	",
-          "Shikohabad	",
-          "Tundla	",
-          "Jasrana	",
-          "Eka	",
-          "Narkhi	",
-          "Madanpur				",
-          "Araon	Hathwant	",
+          "Firozabad",
+          "Shikohabad",
+          "Tundla",
+          "Jasrana",
+          "Eka",
+          "Narkhi",
+          "Madanpur",
+          "AraonHathwant",
         ])
         break
       case "Azamgarh":
         setLocation([
-          "Ahiraula	",
-          "Atrauliya	",
-          "Azamatgarh	",
-          "Bilariyaganj	",
-          "Hariya	",
-          "Jahanaganj	",
-          "Koilsa	",
-          "Lalganj	",
-          "Maharajganj	",
-          "Martinganj	",
-          "Mehnagar	",
-          "Mirzapur	",
-          "Mohammadpur	",
-          "Tehbarpur	",
-          "Palhna	",
-          "Palhani	",
-          "Pawai	",
-          "Phoolpur	",
-          "Rani Ki Sarai	",
-          "Sathiyaon		Tarwa	",
-          "Thekma		",
+          "Ahiraula",
+          "Atrauliya",
+          "Azamatgarh",
+          "Bilariyaganj",
+          "Hariya",
+          "Jahanaganj",
+          "Koilsa",
+          "Lalganj",
+          "Maharajganj",
+          "Martinganj",
+          "Mehnagar",
+          "Mirzapur",
+          "Mohammadpur",
+          "Tehbarpur",
+          "Palhna",
+          "Palhani",
+          "Pawai",
+          "Phoolpur",
+          "Rani Ki Sarai",
+          "Sathiyaon Tarwa",
+          "Thekma",
         ])
         break
       case "Ballia":
         setLocation([
-          "BANSDIH	",
-          "BELHARI	",
-          "BERUARWARI	",
-          "CHILKAHAR	",
-          "DUBHAD	",
-          "GARWAR	",
-          "HANUMANGANJ	",
-          "MANIYAR	",
-          "MURLI CHHAPRA	",
-          "NAGRA	",
-          "NAVANAGAR	",
-          "PANDAH	",
-          "RASRA	",
-          "REVATI	",
-          "SIAR	",
-          "SOHAON	",
-          "BAIRIA	",
+          "Bansdih",
+          "Belhari",
+          "Beruarwari",
+          "Chilkahar",
+          "Dubhad",
+          "Garwar",
+          "Hanumanganj",
+          "Maniyar",
+          "Murli Chhapra",
+          "Nagra",
+          "Navanagar",
+          "Pandah",
+          "Rasra",
+          "Revati",
+          "Siar",
+          "Sohaon",
+          "Bairia",
         ])
         break
       case "Mau":
         setLocation([
-          "Badraon	",
+          "Badraon",
           "Dohri ",
-          "Ghat	",
-          "Fatehpur Madaun	",
-          "Ghosi	Kopaganj	",
-          "Mohammadabad Gohana	",
-          "Pardaha	",
-          "Ranipur	",
-          "Ratanpura		",
+          "Ghat",
+          "Fatehpur Madaun",
+          "Ghosi Kopaganj",
+          "Mohammadabad Gohana",
+          "Pardaha",
+          "Ranipur",
+          "Ratanpura",
         ])
         break
       case "Prayagraj":
         setLocation([
           "Kaurihar",
-          "Soraon	 ",
-          "Holagarh	 ",
-          "Mauaima	 ",
-          "Soraon	 ",
-          "Bahariya	 ",
-          "Phulpur	 ",
-          "Bahadurpur	 ",
-          "Pratappur	 ",
-          "Saidabad	 ",
-          "Dhanupur	 ",
-          "Handia	 ",
-          "Jasra	 ",
-          "Shankargarh	   ",
-          "Chaka	 ",
-          "Karchhana	 ",
-          "Kaundhiyara	 ",
-          "Uruwa	 ",
-          "Meja	 ",
-          "Koraon	 ",
-          "Manda	    ",
-          "Sahson	 ",
-          "Shringverpur Dham	",
-          "Bara				",
+          "Soraon",
+          "Holagarh",
+          "Mauaima",
+          "Soraon",
+          "Bahariya",
+          "Phulpur",
+          "Bahadurpur",
+          "Pratappur",
+          "Saidabad",
+          "Dhanupur",
+          "Handia",
+          "Jasra",
+          "Shankargarh  ",
+          "Chaka",
+          "Karchhana",
+          "Kaundhiyara",
+          "Uruwa",
+          "Meja",
+          "Koraon",
+          "Manda   ",
+          "Sahson",
+          "Shringverpur Dham",
+          "Bara",
         ])
         break
       case "Fatehpur":
         setLocation([
-          "Asothar	",
-          "Fatehpur	",
-          "Bahua	",
-          "Bhitaura	",
-          "Haswa	",
-          "Teliyani	",
-          "Amauli	",
-          "Deomai	",
-          "Khajuha	",
-          "Malwan	",
-          "Airaya	Dhata	",
-          "Hathgam	",
-          "Vijayipur	",
+          "Asothar",
+          "Fatehpur",
+          "Bahua",
+          "Bhitaura",
+          "Haswa",
+          "Teliyani",
+          "Amauli",
+          "Deomai",
+          "Khajuha",
+          "Malwan",
+          "Airaya Dhata",
+          "Hathgam",
+          "Vijayipur",
         ])
         break
       case "Kaushambi":
         setLocation([
-          "Chail	",
-          "Kara	",
-          "Kaushambi	",
-          "Manjhanpur	",
-          "Mooratganj	",
-          "Nevada	",
-          "Sarsawan	 ",
+          "Chail",
+          "Kara",
+          "Kaushambi",
+          "Manjhanpur",
+          "Mooratganj",
+          "Nevada",
+          "Sarsawan ",
           "Sirathu",
         ])
         break
       case "Pratapgarh":
         setLocation([
-          "BABAGANJ	 ",
-          "BIHAR	",
-          "KALAKANKAR	",
-          "RAMPUR SANGRAMGARH	",
-          "SANGIPUR	",
-          "LAXMANPUR	",
-          "MANDHATA	 ",
-          "SANDWACHANDRIKA	",
-          "ASPURDEOSARA	",
-          "BABA BELKHAR NATH DHAM	",
-          "MANGRORA	",
-          "SHIVGARH	",
-          "GAURA	",
-          "SADAR	  ",
-          "PATTI	",
-          "KUNDA	",
-          "LALGANJ	",
+          "Babaganj",
+          "Bihar",
+          "Kalakankar",
+          "Rampur Sangramgarh",
+          "Sangipur",
+          "Laxmanpur",
+          "Mandhata ",
+          "Sandwachandrika",
+          "Aspurdeosara",
+          "Baba Belkhar Nath Dham",
+          "Mangrora",
+          "Shivgarh",
+          "Gaura",
+          "Sadar  ",
+          "Patti",
+          "Kunda",
+          "Lalganj",
         ])
         break
       case "Bareilly":
         setLocation([
-          "Aalampur Jafarabad	",
-          "Baheri	",
-          "Bhadpura	",
-          "Bhojipura	",
-          "Bhuta	",
-          "Bithiri Chainpur	",
-          "Damkhauda	 ",
-          "Faridpur	",
-          "Fatehganj West	",
-          "Kyara	",
-          "Majhgawan	",
-          "Mirganj	",
-          "Nawabganj	",
-          "Ramnagar	  ",
-          "Shergarh	",
+          "Aalampur Jafarabad",
+          "Baheri",
+          "Bhadpura",
+          "Bhojipura",
+          "Bhuta",
+          "Bithiri Chainpur",
+          "Damkhauda ",
+          "Faridpur",
+          "Fatehganj West",
+          "Kyara",
+          "Majhgawan",
+          "Mirganj",
+          "Nawabganj",
+          "Ramnagar  ",
+          "Shergarh",
         ])
         break
       case "Pilibhit":
         setLocation([
-          "Amariya	",
-          "Barkhera	",
-          "Bilsanda	",
-          "Bisalpur	",
-          "Lalaurikhera	",
-          "Marori	",
-          "Puranpur	",
+          "Amariya",
+          "Barkhera",
+          "Bilsanda",
+          "Bisalpur",
+          "Lalaurikhera",
+          "Marori",
+          "Puranpur",
         ])
         break
       case "Shahjahanpur":
         setLocation([
-          "Banda	",
-          "Khutar	",
-          "Powayan	",
-          "Sindhauli	",
-          "Katra Khudaganj	",
-          "Jaitipur	",
-          "Tilhar	",
-          "Nigohi	",
-          "Kanth	",
-          "Dadraul	",
-          "Bhawalkhera	",
-          "Madnapur	",
-          "Kalan	",
-          "Mirzapur	",
-          "Jalalabad			",
+          "Banda",
+          "Khutar",
+          "Powayan",
+          "Sindhauli",
+          "Katra Khudaganj",
+          "Jaitipur",
+          "Tilhar",
+          "Nigohi",
+          "Kanth",
+          "Dadraul",
+          "Bhawalkhera",
+          "Madnapur",
+          "Kalan",
+          "Mirzapur",
+          "Jalalabad",
         ])
         break
       case "Badaun":
         setLocation([
-          "Ambiapur	Asafpur	Bisauli	Dehgwan	Dataganj	Islamnagar	Jagat	 Mion	Qadarchowk	Sahaswan	Salarpur	Samrer	Ujhani	Usawan	 Wazirganj					",
+          "Ambiapur",
+          "Asafpur",
+          "Bisauli",
+          "Dehgwan",
+          "Dataganj",
+          "Islamnagar",
+          "Jagat ",
+          "Mion",
+          "Qadarchowk",
+          "Sahaswan",
+          "Salarpur",
+          "Samrer",
+          "Ujhani",
+          "Usawan ",
+          "Wazirganj",
         ])
         break
       case "Basti":
         setLocation([
-          "BASTI	",
-          "BAHADURPUR	",
-          "BANKATI	",
-          "GAUR	",
-          "HARRAIYA	",
-          "KAPTANGANJ	",
-          "KUDARAHA	 ",
-          "PARAS RAMPUR	",
-          "RAMNAGAR	",
-          "RUDHAULI	 ",
-          "SALTAUA GOPALPUR	",
-          "SAU GHAT	",
-          "VIKRAMJOT	",
-          "DUBAULIYA	",
+          "Basti",
+          "Bahadurpur",
+          "Bankati",
+          "Gaur",
+          "Harraiya",
+          "Kaptanganj",
+          "Kudaraha ",
+          "Paras Rampur",
+          "Ramnagar",
+          "Rudhauli ",
+          "Saltaua Gopalpur",
+          "Sau Ghat",
+          "Vikramjot",
+          "Dubauliya",
         ])
         break
       case "Sant Kabir Nagar":
         setLocation([
-          "Mehdawal	",
-          "Baghauli	",
-          "Pauli	",
-          "Semariyaw	",
-          "Santha	",
-          "Nathnagar	",
+          "Mehdawal",
+          "Baghauli",
+          "Pauli",
+          "Semariyaw",
+          "Santha",
+          "Nathnagar",
           "Khalilabad",
-          "Belhar	",
+          "Belhar",
           "Hainsar Bazar",
         ])
         break
       case "Siddharthnagar":
         setLocation([
-          "Naugarh	",
-          "Barhni	",
-          "Shohartgarh	",
-          "Birdpur	",
-          "Jogia	",
-          "Uska Bazar	",
-          "Bansi	 ",
-          "Khesraha	",
-          "Bhanwapur	",
-          "Itwa	",
-          "Khuniyaon	",
-          "Dumariyaganj	",
-          "Lotan	",
-          "Methwal	",
+          "Naugarh",
+          "Barhni",
+          "Shohartgarh",
+          "Birdpur",
+          "Jogia",
+          "Uska Bazar",
+          "Bansi ",
+          "Khesraha",
+          "Bhanwapur",
+          "Itwa",
+          "Khuniyaon",
+          "Dumariyaganj",
+          "Lotan",
+          "Methwal",
         ])
         break
       case "Bahraich":
         setLocation([
-          "Hujurpur	",
-          "Mahasi	",
-          "Pakharpur	",
-          "Chittaura	",
-          "Mihinpurwa	",
-          "Shivpur	",
-          "Risia	 ",
-          "Visheshwarganj	",
-          "Jarwal	",
-          "Nawabganj	",
-          "Tejwapur	",
-          "Kaisarganj	",
-          "Balha	",
+          "Hujurpur",
+          "Mahasi",
+          "Pakharpur",
+          "Chittaura",
+          "Mihinpurwa",
+          "Shivpur",
+          "Risia ",
+          "Visheshwarganj",
+          "Jarwal",
+          "Nawabganj",
+          "Tejwapur",
+          "Kaisarganj",
+          "Balha",
           "Payagpur",
         ])
         break
       case "Balarampur":
         setLocation([
-          "Harriya Satgharwa	",
-          "Balrampur	",
-          "Tulsipur	",
-          "Gainsari	",
-          "Pachperwa	",
-          "Sridattganj	",
-          "Utraula	  ",
-          "Gaindas Bujurg	",
+          "Harriya Satgharwa",
+          "Balrampur",
+          "Tulsipur",
+          "Gainsari",
+          "Pachperwa",
+          "Sridattganj",
+          "Utraula  ",
+          "Gaindas Bujurg",
           "Rehra Bazar",
         ])
         break
       case "Gonda":
         setLocation([
-          "BABHANJOT	",
-          "BELSAR	",
-          "CHHAPIA	",
-          "COLONELGANJ	",
-          "HALDHARMAU	",
-          "ITIA THOK	",
-          "JHANJHARI	  ",
-          "KATRA ",
-          "BAZAR	",
-          "MANKAPUR	",
-          "MUJEHANA	",
-          "NAWABGANJ	",
-          "PANDRI ",
-          "KRIPAL	",
-          "PARASPUR	",
-          "RUPAIDIH	    ",
-          "TARABGANJ	",
-          "WAZIRGANJ	",
+          "Babhanjot",
+          "Belsar",
+          "Chhapia",
+          "Colonelganj",
+          "Haldharmau",
+          "Itia Thok",
+          "Jhanjhari  ",
+          "Katra ",
+          "Bazar",
+          "Mankapur",
+          "Mujehana",
+          "Nawabganj",
+          "Pandri ",
+          "Kripal",
+          "Paraspur",
+          "Rupaidih    ",
+          "Tarabganj",
+          "Wazirganj",
         ])
         break
       case "Shravasti":
         setLocation([
-          "Hariharpur Rani	",
-          "Sirsiya	",
-          "Jamunaha	",
-          "Ikauna	",
+          "Hariharpur Rani",
+          "Sirsiya",
+          "Jamunaha",
+          "Ikauna",
           "Gilaula",
         ])
         break
       case "Ayodhya":
         setLocation([
-          "Masodha	",
-          "Sohawal	",
-          "Bikapur	",
-          "Milkipur	",
-          "MayaBazar	",
-          "PuraBazar	",
+          "Masodha",
+          "Sohawal",
+          "Bikapur",
+          "Milkipur",
+          "MayaBazar",
+          "PuraBazar",
           "Haringtonganj",
-          "Amaniganj	",
-          "Tarun	",
-          "Mawai	",
-          "Rudauli				",
+          "Amaniganj",
+          "Tarun",
+          "Mawai",
+          "Rudauli",
         ])
         break
       case "Ambedkar Nagar":
         setLocation([
-          "Akbarpur	",
-          "Baskhari	",
-          "Bhiti	",
-          "Bhiyaon	",
-          "Jahageerganj	",
-          "Jalalpur	",
-          "Katehari	 ",
-          "Ramnagar	",
-          "Tanda						",
+          "Akbarpur",
+          "Baskhari",
+          "Bhiti",
+          "Bhiyaon",
+          "Jahageerganj",
+          "Jalalpur",
+          "Katehari ",
+          "Ramnagar",
+          "Tanda",
         ])
         break
       case "Barabanki":
         setLocation([
-          "Banki	Masauli	Dewa	Harakh	 Fatehpur	Haidergarh	Dariyabad	Suratganj	Siddhaur	Pure Dalai	Nindura	Trivediganj	Ramnagar	Sirauli Ghauspur	Banikodar	",
+          "Banki",
+          "Masauli",
+          "Dewa",
+          "Harakh",
+          "Fatehpur",
+          "Haidergarh",
+          "Dariyabad",
+          "Suratganj",
+          "Siddhaur",
+          "Pure Dalai",
+          "Nindura",
+          "Trivediganj",
+          "Ramnagar",
+          "Sirauli Ghauspur",
+          "Banikodar",
         ])
         break
       case "Sultanpur":
         setLocation([
-          "Dubeypur	",
-          "Kurebhar	",
-          "Kurwar	",
-          "Bhadaiyan	",
-          "Lambhua	",
-          "Pratappur Kamaicha	",
-          "Jaisinghpur	 ",
-          "Motigarpur	",
-          "Karaundi kalan	",
-          "Kadipur	",
-          "Dostpur	",
-          "Akhandnagar	",
-          "Dhanpatganj	",
+          "Dubeypur",
+          "Kurebhar",
+          "Kurwar",
+          "Bhadaiyan",
+          "Lambhua",
+          "Pratappur Kamaicha",
+          "Jaisinghpur ",
+          "Motigarpur",
+          "Karaundi kalan",
+          "Kadipur",
+          "Dostpur",
+          "Akhandnagar",
+          "Dhanpatganj",
           "Baldirai",
         ])
         break
       case "Amethi":
         setLocation([
-          "Amethi	",
-          "Gauriganj	",
-          "Musafirkhana	",
-          "Tiloi	",
-          "Jagdishpur	",
-          "Bazar Shukul	",
-          "Bhetua	",
-          "Bhadar	",
-          "Sangrampur	",
-          "Shahgarh	",
-          "Jamo	",
-          "Singhpur	",
-          "Bhadurpur		 ",
+          "Amethi",
+          "Gauriganj",
+          "Musafirkhana",
+          "Tiloi",
+          "Jagdishpur",
+          "Bazar Shukul",
+          "Bhetua",
+          "Bhadar",
+          "Sangrampur",
+          "Shahgarh",
+          "Jamo",
+          "Singhpur",
+          "Bhadurpur ",
         ])
         break
       case "Banda":
         setLocation([
-          "Badokhar Khurd	",
-          "Banda	",
-          "Mahuva	",
-          "Naraini	",
-          "Baberu	",
-          "Kamasin	",
-          "Jaspura	 ",
-          "Tindwari	",
+          "Badokhar Khurd",
+          "Banda",
+          "Mahuva",
+          "Naraini",
+          "Baberu",
+          "Kamasin",
+          "Jaspura ",
+          "Tindwari",
         ])
         break
       case "Chitrakoot":
-        setLocation(["Karwi	", "Mau	", "Pahari	", "Ramnagar	", "Manikpur	"])
+        setLocation(["Karwi", "Mau", "Pahari", "Ramnagar", "Manikpur"])
         break
       case "Hamirpur":
         setLocation([
-          "Hamirpur	",
-          "Nadaun	",
-          "Bijhari	",
-          "Bhoranj	",
-          "Sujanpur	",
-          "Bamson		",
+          "Hamirpur",
+          "Nadaun",
+          "Bijhari",
+          "Bhoranj",
+          "Sujanpur",
+          "Bamson",
         ])
         break
       case "Mahoba":
@@ -1157,246 +1185,570 @@ export function UserForm({}) {
         break
       case "Deoria":
         setLocation([
-          "Baitalpur	",
-          "Bankata	",
-          "Barhaj	",
+          "Baitalpur",
+          "Bankata",
+          "Barhaj",
           "Bhaluani",
-          "Bhagalpur	",
-          "Bhatni	",
-          "Bhatparrani	 ",
-          "Deoria Sadar	",
-          "Desahi Deoria	",
-          "Gauri Bazar	",
-          "Lar	",
-          "Pathardeva	",
-          "Rampur Karkhana	",
-          "Rudrapur	 ",
-          "Salempur	",
+          "Bhagalpur",
+          "Bhatni",
+          "Bhatparrani ",
+          "Deoria Sadar",
+          "Desahi Deoria",
+          "Gauri Bazar",
+          "Lar",
+          "Pathardeva",
+          "Rampur Karkhana",
+          "Rudrapur ",
+          "Salempur",
           "Tarkulwa",
         ])
         break
       case "Gorakhpur":
         setLocation([
-          "Campierganj	",
-          "Jungle Kaudia(Partial)	 ",
-          "Sadar	 ",
-          "Sahjanwa	 ",
-          "Khajni	 ",
-          "Chauri  Chaura	 ",
-          "Bansgaon	 ",
-          "Gola	",
-          "Chargawa	",
-          "Khorabar	",
-          "Bhathat	",
-          "Pipraich	",
-          "Sahjanwa	 ",
-          "Pali	",
-          "Piprauli	",
-          "Khajni	",
-          "Belghat	 ",
-          "SardarNagar	",
-          "Brahmpur	",
-          "Bansgaon	",
-          "Kauriram	",
-          "Gagaha	",
-          "Gola	",
-          "Barhalganj	",
-          "Uruwa	",
+          "Campierganj",
+          "Jungle Kaudia(Partial)",
+          "Sadar",
+          "Sahjanwa",
+          "Khajni",
+          "Chauri Chaura",
+          "Bansgaon",
+          "Gola",
+          "Chargawa",
+          "Khorabar",
+          "Bhathat",
+          "Pipraich",
+          "Sahjanwa ",
+          "Pali",
+          "Piprauli",
+          "Khajni",
+          "Belghat",
+          "SardarNagar",
+          "Brahmpur",
+          "Bansgaon",
+          "Kauriram",
+          "Gagaha",
+          "Gola",
+          "Barhalganj",
+          "Uruwa",
         ])
         break
       case "Kushinagar":
         setLocation([
-          "Tamkuhi	",
-          "Dudahi	",
-          "Seorahi	",
-          "Kasia	",
-          "Fazilnagar	",
-          "Hata	",
-          "Motichak	",
-          "Sukrauli	",
-          "Vishnupura	",
-          "Padrauna	",
-          "Khadda	",
-          "Nebua Naurangiya	",
-          "Captainganj	",
+          "Tamkuhi",
+          "Dudahi",
+          "Seorahi",
+          "Kasia",
+          "Fazilnagar",
+          "Hata",
+          "Motichak",
+          "Sukrauli",
+          "Vishnupura",
+          "Padrauna",
+          "Khadda",
+          "Nebua Naurangiya",
+          "Captainganj",
           "Ramkola",
         ])
         break
       case "Maharajganj":
         setLocation([
-          "Brijmanganj	",
-          "Dhani	",
-          "Partawal	",
-          "Paniyara	",
-          "Lakshmipur	",
-          "Ghughali	",
-          "Mithaura	",
-          "Nautanwa	",
-          "Pharenda	",
-          "Nichlaul	",
-          "Sadar	",
-          "Siswa	",
+          "Brijmanganj",
+          "Dhani",
+          "Partawal",
+          "Paniyara",
+          "Lakshmipur",
+          "Ghughali",
+          "Mithaura",
+          "Nautanwa",
+          "Pharenda",
+          "Nichlaul",
+          "Sadar",
+          "Siswa",
         ])
         break
       case "Auraiya":
         setLocation([
-          "Auraiya	  Bhagaynagar	  Sahar	  Achalda	  Etwakatra	   Bidhuan	   Ajitmal	",
+          "Auraiya ",
+          "Bhagaynagar ",
+          "Sahar ",
+          "Achalda ",
+          "Etwakatra ",
+          "Bidhuan ",
+          "Ajitmal",
         ])
         break
       case "Etawah":
         setLocation([
-          "Barhpur	Basrehar	Jaswantnagar	Mahewa	Saifai	Chakarnagar	Takha	 Bharthana		",
+          "Barhpur",
+          "Basrehar",
+          "Jaswantnagar",
+          "Mahewa",
+          "Saifai",
+          "Chakarnagar",
+          "Takha ",
+          "Bharthana",
         ])
         break
       case "Farrukhabad":
-        setLocation(["Kamalganj	Mohammadabad	Kaimganj	Nawabganj	Shamshabad	Rajepur		"])
+        setLocation([
+          "Kamalganj",
+          "Mohammadabad",
+          "Kaimganj",
+          "Nawabganj",
+          "Shamshabad",
+          "Rajepur",
+        ])
         break
       case "Kannauj":
         setLocation([
-          "Chibramau	Gugrapur	Haseran	Jalalabad	Kannauj	Saurikh	Talgram	Umarda",
+          "Chibramau",
+          "Gugrapur",
+          "Haseran",
+          "Jalalabad",
+          "Kannauj",
+          "Saurikh",
+          "Talgram",
+          "Umarda",
         ])
         break
       case "Kanpur Dehat":
         setLocation([
-          "Akbarpur	 Maitha	Sarvankheda	Jhinjhak	Rasulabad	Amraudha	Malasa	 Sandalpur	Rajpur",
+          "Akbarpur ",
+          "Maitha",
+          "Sarvankheda",
+          "Jhinjhak",
+          "Rasulabad",
+          "Amraudha",
+          "Malasa ",
+          "Sandalpur",
+          "Rajpur",
         ])
         break
       case "Kanpur Nagar":
         setLocation([
-          "Kakwan	Bilhaur	Shivrajpur	Chaubeypur	Kalyanpur	Vidhnu	Sarsaul	Bhitargaon	Patara	Ghatampur",
+          "Kakwan",
+          "Bilhaur",
+          "Shivrajpur",
+          "Chaubeypur",
+          "Kalyanpur",
+          "Vidhnu",
+          "Sarsaul",
+          "Bhitargaon",
+          "Patara",
+          "Ghatampur",
         ])
         break
       case "Jalaun":
         setLocation([
-          "Rampura	Kuthaund	Madhogarh	Nadigaon	Jalaun	Mahewa	Kadaura	 Dakore	Konch",
+          "Rampura",
+          "Kuthaund",
+          "Madhogarh",
+          "Nadigaon",
+          "Jalaun",
+          "Mahewa",
+          "Kadaura ",
+          "Dakore",
+          "Konch",
         ])
         break
       case "Jhansi":
         setLocation([
-          "Babina	Badagaon	Bamaur	 Bangra	Chirgaon	Gursrai	Mauranipur	 Moth",
+          "Babina",
+          "Badagaon",
+          "Bamaur ",
+          "Bangra",
+          "Chirgaon",
+          "Gursrai",
+          "Mauranipur",
+          "Moth",
         ])
         break
       case "Lalitpur":
-        setLocation(["Talbehat	Jakhaura	Bar	Birdha	Mehroni	Madawra		"])
+        setLocation([
+          "Talbehat",
+          "Jakhaura",
+          "Bar",
+          "Birdha",
+          "Mehroni",
+          "Madawra",
+        ])
         break
       case "Hardoi":
         setLocation([
-          "AHIRORI	BAWAN	BEHADAR	BHARAWAN	BHARKHANI	BILGRAM	HARIYAWAN	HARPALPUR	KACHHAUNA	KOTHAWAN	MADHOGANJ	MALLAWAN	PIHANI	SANDI	SANDILA	SHAHABAD	SURSA	TADIYAWAN	TONDARPUR",
+          "Ahirori",
+          "Bawan",
+          "Behadar",
+          "Bharawan",
+          "Bharkhani",
+          "Bilgram",
+          "Hariyawan",
+          "Harpalpur",
+          "Kachhauna",
+          "Kothawan",
+          "Madhoganj",
+          "Mallawan",
+          "Pihani",
+          "Sandi",
+          "Sandila",
+          "Shahabad",
+          "Sursa",
+          "Tadiyawan",
+          "Tondarpur",
         ])
         break
       case "Lakhimpur Kheri":
         setLocation([
-          "Lakhimpur	Behjam	Mitauli	Pasgawan	Gola	Bankeyganj	Bijuwa	Paliya	Issanagar	Dhaurahara	Nakaha	Phoolbehar	Ramiyabehar	Nighasan	Mohammdi",
+          "Lakhimpur",
+          "Behjam",
+          "Mitauli",
+          "Pasgawan",
+          "Gola",
+          "Bankeyganj",
+          "Bijuwa",
+          "Paliya",
+          "Issanagar",
+          "Dhaurahara",
+          "Nakaha",
+          "Phoolbehar",
+          "Ramiyabehar",
+          "Nighasan",
+          "Mohammdi",
         ])
         break
       case "Lucknow":
         setLocation([
-          "Mall	Malihabad	Chinhat	Bakhshi Ka Talab	Kakori	Gosain ganj	Sarojni nagar	Mohanlal Ganj",
+          "Mall",
+          "Malihabad",
+          "Chinhat",
+          "Bakhshi Ka Talab",
+          "Kakori",
+          "Gosain ganj",
+          "Sarojni nagar",
+          "Mohanlal Ganj",
         ])
         break
       case "Raebareli":
         setLocation([
-          "Amawan	Bachhrawan	Sataon	Dalmau	Harchandpur	Kheeron	Lalganj	Maharajganj	Jagatpur	Rahi	Rohaniya	Sareni	Shivgarh	Deen Shah Gaura	Unchahar	Deeh	Chatoh	Salon",
+          "Amawan",
+          "Bachhrawan",
+          "Sataon",
+          "Dalmau",
+          "Harchandpur",
+          "Kheeron",
+          "Lalganj",
+          "Maharajganj",
+          "Jagatpur",
+          "Rahi",
+          "Rohaniya",
+          "Sareni",
+          "Shivgarh",
+          "Deen Shah Gaura",
+          "Unchahar",
+          "Deeh",
+          "Chatoh",
+          "Salon",
         ])
         break
       case "Sitapur":
         setLocation([
-          "AILIYA	BEHTA	BISWAN	GONDLAMAU	HARGAON	KASMANDA	KHAIRABAD	LAHARPUR	MACHHREHTA	MAHMUDABAD	MAHOLI	MISRIKH	PAHALA	PARSENDI	PISAWAN	RAMPUR MATHURA	REUSA	SAKRAN	SIDHAULI",
+          "Ailiya",
+          "Behta",
+          "Biswan",
+          "Gondlamau",
+          "Hargaon",
+          "Kasmanda",
+          "Khairabad",
+          "Laharpur",
+          "Machhrehta",
+          "Mahmudabad",
+          "Maholi",
+          "Misrikh",
+          "Pahala",
+          "Parsendi",
+          "Pisawan",
+          "Rampur ",
+          "Mathura",
+          "Reusa",
+          "Sakran",
+          "Sidhauli",
         ])
         break
       case "Unnao":
         setLocation([
-          "ASOHA	AURAS	BANGARMAU	BICHHIYA	BIGHAPUR	FATEHPUR CHAURASI	GANJ MORADABAD	HASANGANJ	HILAULI	MIANGANJ	NAWABGANJ	PURWA	SAFIPUR	SIKANDARPUR KARAN	SIKANDARPUR SARAUSI	SUMERPUR",
+          "Asoha",
+          "Auras",
+          "Bangarmau",
+          "Bichhiya",
+          "Bighapur",
+          "Fatehpur Chaurasi",
+          "Ganj Moradabad",
+          "Hasanganj",
+          "Hilauli",
+          "Mianganj",
+          "Nawabganj",
+          "Purwa",
+          "Safipur",
+          "Sikandarpur Karan",
+          "Sikandarpur Sarausi",
+          "Sumerpur",
         ])
         break
       case "Mirzapur":
         setLocation([
-          "Chhanbey	City	Hallia	Jamalpur	Kon	Lalganj	Majhawan	Narayanpur	Pahari	Patehara",
+          "Chhanbey",
+          "City",
+          "Hallia",
+          "Jamalpur",
+          "Kon",
+          "Lalganj",
+          "Majhawan",
+          "Narayanpur",
+          "Pahari",
+          "Patehara",
         ])
         break
       case "Sant Ravidas Nagar":
-        setLocation(["Abholi	Deegh	Suriyawan	Gyanpur	Aurai	Bhadohi"])
+        setLocation([
+          "Abholi",
+          "Deegh",
+          "Suriyawan",
+          "Gyanpur",
+          "Aurai",
+          "Bhadohi",
+        ])
         break
       case "Sonbhadra":
         setLocation([
-          "ROBERTSGANJ	GHORAWAL	CHATRA	NAGWA	CHOPAN	BABHANI	MYORPUR	DUDDHI	KARMA	KONE	",
+          "Robertsganj",
+          "Ghorawal",
+          "Chatra",
+          "Nagwa",
+          "Chopan",
+          "Babhani",
+          "Myorpur",
+          "Duddhi",
+          "Karma",
+          "Kone",
         ])
         break
       case "Baghpat":
-        setLocation(["Baghpat	Khekra	Baraut	Chhaprauli	Binauli	Pilana		"])
+        setLocation([
+          "Baghpat",
+          "Khekra",
+          "Baraut",
+          "Chhaprauli",
+          "Binauli",
+          "Pilana",
+        ])
         break
       case "Bulandshahar":
         setLocation([
-          "Bulandshahr	Agauta	Gulaothi	Lakhaoti	Sikandrabad	Khurja	Arnia	Anoopshahr	Jhangirabad	Shikarpur	Pahasu	Siyana	Unchagaon	B B Nagar	Dibai	Danpur		",
+          "Bulandshahr",
+          "Agauta",
+          "Gulaothi",
+          "Lakhaoti",
+          "Sikandrabad",
+          "Khurja",
+          "Arnia",
+          "Anoopshahr",
+          "Jhangirabad",
+          "Shikarpur",
+          "Pahasu",
+          "Siyana",
+          "Unchagaon",
+          "B B Nagar",
+          "DibaiDanpur",
         ])
         break
       case "Gautam Buddh Nagar":
-        setLocation(["Bisrakh	Dadri	Dankaur	Jewar	"])
+        setLocation(["Bisrakh", "Dadri", "Dankaur", "Jewar"])
         break
       case "Ghaziabad":
-        setLocation(["Rajapur	Bhojpur	Muradnagar	Loni"])
+        setLocation(["Rajapur", "Bhojpur", "Muradnagar", "Loni"])
         break
       case "Meerut":
         setLocation([
-          "Jaani	 Meerut	 Kharkhoda	 Rajpura	 Rohta	 Hastinapur	Machara	Mawana	 Parikshitgarh	 Daurala	Sardhana	 Saroorpur",
+          "Jaani",
+          "Meerut",
+          "Kharkhoda",
+          "Rajpura",
+          "Rohta",
+          "Hastinapur",
+          "Machara",
+          "Mawana",
+          "Parikshitgarh",
+          "Daurala",
+          "Sardhana",
+          "Saroorpur",
         ])
         break
       case "Hapur":
-        setLocation(["GARHMUKTESHWAR	DAHAULANA	SIMBHAWALI	HAPUR		"])
+        setLocation(["Garhmukteshwar", "Dahaulana", "Simbhawali", "Hapur"])
         break
       case "Bijnor":
         setLocation([
-          "Mohammadpur Deomal	Haldaur	Kiratpur	Najibabad	Kotwali	Nehtaur	Noorpur	Dhampur	Afzalgarh	Sehora	Jalilpur",
+          "Mohammadpur Deomal",
+          "Haldaur",
+          "Kiratpur",
+          "Najibabad",
+          "Kotwali",
+          "Nehtaur",
+          "Noorpur",
+          "Dhampur",
+          "Afzalgarh",
+          "Sehora",
+          "Jalilpur",
         ])
         break
       case "Amroha":
-        setLocation(["Amroha	Joya	Hasanpur	Dhanaura	Gajraula	Gangeshwari	"])
+        setLocation([
+          "Amroha",
+          "Joya",
+          "Hasanpur",
+          "Dhanaura",
+          "Gajraula",
+          "Gangeshwari",
+        ])
         break
       case "Moradabad":
         setLocation([
-          "Moradabad	Mundapandey	Bhagatpur Tanda	Bilari	Kundarki	Kanth	Chajlet	Thakurdwara	Dilari",
+          "Moradabad",
+          "Mundapandey",
+          "Bhagatpur Tanda",
+          "Bilari",
+          "Kundarki",
+          "Kanth",
+          "Chajlet",
+          "Thakurdwara",
+          "Dilari",
         ])
         break
       case "Rampur":
-        setLocation(["Bilaspur	Chamrawa	Milak 	Saidnagar	Shahabad	Swar		"])
+        setLocation([
+          "Bilaspur",
+          "Chamrawa",
+          "Milak",
+          "Saidnagar",
+          "Shahabad",
+          "Swar",
+        ])
         break
       case "Sambhal":
         setLocation([
-          "Behjoi	Sambhal	Asmoli	Rajpura	Gunnaur	Baniyakheda	Junavi	Panwasa	",
+          "Behjoi",
+          "Sambhal",
+          "Asmoli",
+          "Rajpura",
+          "Gunnaur",
+          "Baniyakheda",
+          "Junavi",
+          "Panwasa",
         ])
         break
       case "Chandauli":
         setLocation([
-          "Barahani	Chandauli	Niyamatabad	Chahaniya	Sakaldiha	Dhanapur	Chakia	Shahabganj	Naugarh	",
+          "Barahani",
+          "Chandauli",
+          "Niyamatabad",
+          "Chahaniya",
+          "Sakaldiha",
+          "Dhanapur",
+          "Chakia",
+          "Shahabganj",
+          "Naugarh",
         ])
         break
       case "Ghazipur":
         setLocation([
-          "Ghazipur	Virno	Karanda	Mardah	Zamania	Bhadaura	Reotipur	 Saidpur	Deokali	Sadat	Jakhania	Manihari	Mohammadabad	Bhanwarkol	 Kasimabad	Barachawar",
+          "Ghazipur",
+          "Virno",
+          "Karanda",
+          "Mardah",
+          "Zamania",
+          "Bhadaura",
+          "Reotipur ",
+          "Saidpur",
+          "Deokali",
+          "Sadat",
+          "Jakhania",
+          "Manihari",
+          "Mohammadabad",
+          "Bhanwarkol ",
+          "Kasimabad",
+          "Barachawar",
         ])
         break
       case "Jaunpur":
         setLocation([
-          "Badlapur	Baksha	Barasathi	Dharmapur	Dobhi	Jalalpur	Karanjakala	Kerakat	Khuthan	Machhli Shahar	Maharajganj	Mariyahu	Muftiganj	Mungara Badshahpur	Ramnagar	Rampur	Shahganj	Sikarara	Sirkoni	Suithakala	Sujanganj	",
+          "Badlapur",
+          "Baksha",
+          "Barasathi",
+          "Dharmapur",
+          "Dobhi",
+          "Jalalpur",
+          "Karanjakala",
+          "Kerakat",
+          "Khuthan",
+          "Machhli Shahar",
+          "Maharajganj",
+          "Mariyahu",
+          "Muftiganj",
+          "Mungara Badshahpur",
+          "Ramnagar",
+          "Rampur",
+          "Shahganj",
+          "Sikarara",
+          "Sirkoni",
+          "Suithakala",
+          "Sujanganj",
         ])
         break
       case "Varanasi":
         setLocation([
-          "Arajiline	Baragaon	Chirai Gaon	Cholapur	Harhua	Kashi Vidya Peeth	Pindara	Sewapuri	",
+          "Arajiline",
+          "Baragaon",
+          "Chirai Gaon",
+          "Cholapur",
+          "Harhua",
+          "Kashi Vidya Peeth",
+          "Pindara",
+          "Sewapuri",
         ])
         break
       case "Muzaffarnagar":
         setLocation([
-          "Sadar – Kukda	Budhana	Baghra	Shahpur	Purquazi	Charthawal	Morna	Jansath	Khatauli",
+          "Sadar – Kukda",
+          "Budhana",
+          "Baghra",
+          "Shahpur",
+          "Purquazi",
+          "Charthawal",
+          "Morna",
+          "Jansath",
+          "Khatauli",
         ])
         break
       case "Saharanpur":
         setLocation([
-          "Behat	Sadholi Kadeem	Saharanpur	Muzaffarabad	Punwarka	Balia Kheri	Sarsawan	Nakur	Gangoh	Rampur Maniharan	Nagal	Nanauta	Deoband	",
+          "Behat",
+          "Sadholi Kadeem",
+          "Saharanpur",
+          "Muzaffarabad",
+          "Punwarka",
+          "Balia ",
+          "Kheri",
+          "Sarsawan",
+          "Nakur",
+          "Gangoh",
+          "Rampur ",
+          "Maniharan",
+          "Nagal",
+          "Nanauta",
+          "Deoband",
         ])
         break
       case "Shamli":
-        setLocation(["Shamli	Thanabhawan	Kandhala	Kairana	Uun	"])
+        setLocation(["Shamli", "Thanabhawan", "Kandhala", "Kairana", "Uun"])
         break
 
       default:
@@ -2060,11 +2412,23 @@ export function UserForm({}) {
             Area Coverage:
             <br />
             <br />
-            <p style={{ width: "350px", padding: "0px" }}>
+            <p
+              style={{
+                width: "350px",
+                padding: "0px",
+                textTransform: "capitalize",
+              }}
+            >
               {locationStock.map((loc) => {
                 return (
                   <>
-                    <strong style={{ overflowWrap: "wrap" }}>{loc}, </strong>
+                    <strong
+                      style={{
+                        overflowWrap: "wrap",
+                      }}
+                    >
+                      {loc},{" "}
+                    </strong>
                   </>
                 )
               })}
@@ -2104,11 +2468,23 @@ export function UserForm({}) {
             Area Coverage:
             <br />
             <br />
-            <p style={{ width: "350px", padding: "0px" }}>
+            <p
+              style={{
+                width: "350px",
+                padding: "0px",
+                textTransform: "capitalize",
+              }}
+            >
               {location.map((loc) => {
                 return (
                   <>
-                    <strong style={{ overflowWrap: "wrap" }}>{loc}, </strong>
+                    <strong
+                      style={{
+                        overflowWrap: "wrap",
+                      }}
+                    >
+                      {loc},{" "}
+                    </strong>
                   </>
                 )
               })}
