@@ -51,6 +51,7 @@ const index = () => {
             msize="1.4rem"
             mta="center"
             mwidth="100%"
+            mmwidth="100%"
           />
         </Heading>
         <Position

@@ -94,6 +94,7 @@ const position = ({ role, place, work, description }) => {
           mpadding="0"
           msize="0.8rem"
           mwidth="100%"
+          mmwidth="100%"
           mta="center"
         />
       </Head>
@@ -113,6 +114,7 @@ const position = ({ role, place, work, description }) => {
                 msize="0.8rem"
                 mta="left"
                 mwidth="100%"
+                mmwidth="100%"
                 mpadding="0"
               />
             </Location>
@@ -130,6 +132,7 @@ const position = ({ role, place, work, description }) => {
                 msize="0.8rem"
                 mta="left"
                 mwidth="100vw"
+                mmwidth="100%"
                 mpadding="0"
               />
             </Work>
@@ -148,6 +151,7 @@ const position = ({ role, place, work, description }) => {
               msize="1rem"
               fw="400"
               mwidth="100%"
+              mmwidth="100%"
               mpadding="0 0 2rem 0"
               mta="center"
             />

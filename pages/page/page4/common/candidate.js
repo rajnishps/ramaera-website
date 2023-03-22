@@ -80,6 +80,7 @@ const candidate = ({ href, id, sub1, txt1, gif, sub2, txt2, txt3, number }) => {
           msize="1.4rem"
           mta="center"
           mwidth="100vw"
+          mmwidth="100%"
         />
         <Container>
           <LeftDiv>
@@ -95,6 +96,7 @@ const candidate = ({ href, id, sub1, txt1, gif, sub2, txt2, txt3, number }) => {
                 xmsize="1.2rem"
                 xssize="5vw"
                 msize="1rem"
+                mmwidth="100%"
               />
               <LeftContent>{txt1}</LeftContent>
               <Image loading="lazy" alt="gifs" src={gif} />
