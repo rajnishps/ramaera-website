@@ -157,9 +157,9 @@ const Navbar = ({ selectedTab }) => {
             <Link
               href="/ContactUs"
               className="right-nav-font"
-              style={{ fontWeight: "300", color: "white" }}
+              style={{ fontWeight: "300", color: "white",minWidth:"90px" }}
             >
-              Contact
+              Contact Us
             </Link>
           </Link2>
 

@@ -89,7 +89,7 @@ const Menu = ({ open, setOpen, ...props }) => {
         </H>
         <H>
           <Link href="/ContactUs" onClick={() => setOpen(false)}>
-            Contact
+            Contact Us
           </Link>
         </H>
         <Link target="_blank" href="https://kyc.ramaera.com/Kyc-login.aspx">
