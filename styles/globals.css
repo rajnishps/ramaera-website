@@ -178,6 +178,12 @@ a {
   margin: 2.5rem 0 0 0;
 }
 
+@media (max-width: 450px) {
+  .nav {
+    margin: 1rem 0 0 0;
+  }
+}
+
 .Hactive {
   transition: 0.5s linear;
   font-size: 1.5rem;
