@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { DataGrid } from "@mui/x-data-grid"
+import { DataGrid ,GridToolbar} from "@mui/x-data-grid"
 import Box from "@mui/material/Box"
 import Text from "../../../components/Text/Text"
 import AccountCircleIcon from "@mui/icons-material/AccountCircle"
@@ -11,7 +11,6 @@ import { useDispatch, useSelector } from "react-redux"
 import { changeProjectData } from "../../../state/slice/applicantDataSlice"
 import Link from "next/link"
 import Button from "../../../components/Button/SubmitButton"
-//todo
 
 const ProjectApplicationInfo = () => {
   const projectData = useSelector((state) => state.applicationData.projectData)
@@ -59,6 +58,8 @@ const ProjectApplicationInfo = () => {
       width: 150,
       editable: false,
       selection: false,
+      filterable:false,
+      sortable:false,
       renderCell: (params) => (
         <Link href={`/SubmitProjectResponses/${params.value}`}>
           <button style={{ background: "none", border: "none" }} type="submit">
@@ -79,33 +80,32 @@ const ProjectApplicationInfo = () => {
     {
       field: "name",
       headerName: " Name",
-      width: 150,
-      editable: false,
-      selection: false,
+      minWidth: 200,
+      flex:1,
     },
     {
       field: "email",
       headerName: "Email",
-      width: 200,
+      minWidth: 250,
+      flex:1,
     },
     {
       field: "contact",
       headerName: "Contact No.",
-      width: 200,
+      minWidth: 200,
+      flex:1,
     },
     {
       field: "project",
       headerName: "Project Name",
-      description: "This column has a value getter and is not sortable.",
-      sortable: false,
-      width: 350,
+      minWidth: 300,
+      flex:1,
     },
     {
       field: "createAt",
       headerName: "Created At",
-      description: "This column has a value getter and is not sortable.",
-      sortable: false,
-      width: 200,
+      minWidth: 150,
+      flex:1,
     },
   ]
 
@@ -180,28 +180,24 @@ const ProjectApplicationInfo = () => {
             <MenuItem onClick={handleClose}>Logout</MenuItem>
           </Menu>
 
-          <Box
-            sx={{
-              height: "78vh",
-              width: "90%",
-              margin: "auto",
-              background: "white",
-              padding: "20px",
-              borderRadius: "20px",
-              marginBottom: "50px",
-            }}
-          >
+          <Box className="boxGird">
             <DataGrid
+              components={{ Toolbar: GridToolbar }}
+              componentsProps={{
+              toolbar: {
+              printOptions: { disableToolbarButton: true },
+              csvOptions: { disableToolbarButton: true },            }
+             }}
               rows={rows}
               columns={columns}
               initialState={{
                 pagination: {
                   paginationModel: {
-                    pageSize: 9,
+                    pageSize: 8,
                   },
                 },
               }}
-              pageSizeOptions={[9]}
+              pageSizeOptions={[8]}
               disablecolumnSelectionOnClick
               displayRowCheckbox={false}
               disableRowSelectionOnClick

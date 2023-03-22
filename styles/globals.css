@@ -1082,3 +1082,36 @@ a:hover {
     padding-right: unset;
   }
 }
+
+.MuiFormLabel-root {
+  margin-top: unset !important;
+}
+
+.MuiDataGrid-menuIcon{
+  display: none !important;
+}
+
+.MuiButtonBase-root{
+  color: black !important;
+  font-weight: 900 !important;
+}
+
+.css-yrdy0g-MuiDataGrid-columnHeaderRow {
+  background: #eeece8 !important;
+}
+.boxGird{
+  height: 76vh;
+  width: 90%;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  border-radius: 15px;
+  margin-bottom: 50px;
+}
+
+@media (max-width: 450px){
+  .boxGird{
+    padding: 10px;
+    border-radius: 5px;
+  }
+}

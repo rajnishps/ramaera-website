@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { DataGrid } from "@mui/x-data-grid"
+import { DataGrid,GridToolbar } from "@mui/x-data-grid"
 import Box from "@mui/material/Box"
 import Text from "../../../components/Text/Text"
 import AccountCircleIcon from "@mui/icons-material/AccountCircle"
@@ -59,6 +59,8 @@ const ContactInfo = () => {
       width: 150,
       editable: false,
       selection: false,
+      filterable:false,
+      sortable:false,
       renderCell: (params) => (
         <Link href={`/ContactUsResponses/${params.value}`}>
           <button style={{ background: "none", border: "none" }} type="submit">
@@ -79,26 +81,26 @@ const ContactInfo = () => {
     {
       field: "name",
       headerName: " Name",
-      width: 250,
-      editable: false,
-      selection: false,
+      minWidth: 200,
+      flex:1,
     },
     {
       field: "email",
       headerName: "Email",
-      width: 300,
+      minWidth: 250,
+      flex:1,
     },
     {
       field: "company",
       headerName: "Company",
-      width: 250,
+      minWidth: 280,
+      flex:1,
     },
     {
       field: "subject",
       headerName: "Subject",
-      description: "This column has a value getter and is not sortable.",
-      sortable: false,
-      width: 300,
+      minWidth: 350,
+      flex:1,
     },
   ]
 
@@ -174,28 +176,24 @@ const ContactInfo = () => {
             <MenuItem onClick={handleClose}>Logout</MenuItem>
           </Menu>
 
-          <Box
-            sx={{
-              height: "78vh",
-              width: "90%",
-              margin: "auto",
-              background: "white",
-              padding: "20px",
-              borderRadius: "20px",
-              marginBottom: "50px",
-            }}
-          >
+          <Box className="boxGird" >
             <DataGrid
+               components={{ Toolbar: GridToolbar }}
+               componentsProps={{
+               toolbar: {
+               printOptions: { disableToolbarButton: true },
+               csvOptions: { disableToolbarButton: true },            }
+              }}
               rows={rows}
               columns={columns}
               initialState={{
                 pagination: {
                   paginationModel: {
-                    pageSize: 9,
+                    pageSize: 8,
                   },
                 },
               }}
-              pageSizeOptions={[9]}
+              pageSizeOptions={[8]}
               disablecolumnSelectionOnClick
               displayRowCheckbox={false}
               disableRowSelectionOnClick
