@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { DataGrid } from "@mui/x-data-grid"
+import { DataGrid,GridToolbar } from "@mui/x-data-grid"
 import Box from "@mui/material/Box"
 import Text from "../../../components/Text/Text"
 import AccountCircleIcon from "@mui/icons-material/AccountCircle"
@@ -30,7 +30,7 @@ const Applicant = () => {
           style={{
             color: "white",
           }}
-          href=" /Login"
+          href="/Login"
         >
           Login to continue
         </Link>
@@ -63,19 +63,21 @@ const Applicant = () => {
       width: 150,
       editable: false,
       selection: false,
+      filterable:false,
+      sortable:false,
       renderCell: (params) => (
         <Link href={`/DistributionChannelResponses/${params.value}`}>
           <button style={{ background: "none", border: "none" }} type="submit">
-            <Button
-              nav
-              width="auto"
-              height="auto"
-              Text="View Details"
-              inheight="auto"
-              fontSize="auto"
-              padding=" 5px 8px"
-            />
-          </button>
+        <Button
+          nav
+          width="auto"
+          height="auto"
+          Text="View Details"
+          inheight="auto"
+          fontSize="auto"
+          padding=" 5px 8px"
+        />
+      </button>
           {/* <button>View Details</button> */}
         </Link>
       ),
@@ -83,39 +85,38 @@ const Applicant = () => {
     {
       field: "name",
       headerName: " Name",
-      width: 150,
-      editable: false,
-      selection: false,
+      minWidth: 200,
+      flex:1,
     },
     {
       field: "email",
       headerName: "Email",
-      width: 200,
+      minWidth: 250,
+      flex:1,
     },
     {
       field: "applicatant",
       headerName: "Applicatant",
-      width: 150,
+      minWidth: 150,
+      flex:1,
     },
     {
       field: "state",
       headerName: "State",
-      description: "This column has a value getter and is not sortable.",
-      sortable: false,
-      width: 160,
+      minWidth: 120,
+      flex:1,
     },
     {
       field: "district",
       headerName: "District",
-      description: "This column has a value getter and is not sortable.",
-      sortable: false,
-      width: 160,
+      minWidth: 160,
+      flex:1,
     },
     {
       field: "status",
       headerName: "Status",
       minWidth: 150,
-      flex: 0.3,
+      flex:1,
     },
   ]
 
@@ -185,37 +186,38 @@ const Applicant = () => {
             onClose={handleClose}
           >
             <MenuItem onClick={handleClose}>Name</MenuItem>
-            <a href="/PasswordChange">
+            <a href="/passwordChange">
               <MenuItem onClick={handleClose}>Change Password</MenuItem>
             </a>
             <MenuItem onClick={handleClose}>Logout</MenuItem>
           </Menu>
 
-          <Box
-            sx={{
-              height: "78vh",
-              width: "90%",
-              margin: "auto",
-              background: "white",
-              padding: "20px",
-              borderRadius: "20px",
-              marginBottom: "50px",
-            }}
-          >
+          <Box className="boxGird">
             <DataGrid
+            //  slots={{
+            //   toolbar: GridToolbar
+            // }}
+            components={{ Toolbar: GridToolbar }}
+            componentsProps={{
+            toolbar: {
+            printOptions: { disableToolbarButton: true },
+            csvOptions: { disableToolbarButton: true },            }
+           }}
+
               rows={rows}
               columns={columns}
               initialState={{
                 pagination: {
                   paginationModel: {
-                    pageSize: 9,
+                    pageSize: 8,
                   },
                 },
               }}
-              pageSizeOptions={[9]}
-              disablecolumnSelectionOnClick
+              pageSizeOptions={[8]}
+              disablecolumnSelectionOnClick={false}
               displayRowCheckbox={false}
               //onClick={routeChange}
+              disableRowSelectionOnClick
             />
           </Box>
         </Container>
