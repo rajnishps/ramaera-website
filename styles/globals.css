@@ -506,7 +506,7 @@ a {
 label {
   margin-top: 20px;
   font-size: 0.8rem;
-  color: #000;
+  color: #c56d03;
 }
 textarea {
   padding: 10px;
@@ -1022,7 +1022,7 @@ a:hover {
 
 .formWrapper {
   display: grid;
-  gap: 1rem 0;
+  gap: 0.5rem 0;
   justify-content: flex-start;
   grid-template-columns: auto minmax(auto, 400px);
 }
