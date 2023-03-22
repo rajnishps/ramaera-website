@@ -145,7 +145,7 @@ const Navbar = ({ selectedTab }) => {
           </Link>
           <Link2>
             <Link
-              href="/career"
+              href="/Career"
               className="right-nav-font"
               style={{ fontWeight: "300", color: "white" }}
             >
