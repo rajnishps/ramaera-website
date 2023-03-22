@@ -13,8 +13,8 @@ const ApplicationDetail = ({ ProjectData }) => {
               style={{ width: "500px", marginTop: "30px" }}
             >
               <label
-                style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
-              >
+                style={{ fontSize: "1.3rem", opacity: ".9", fontWeight: "600" ,color:"#5a5a5a"}}
+                >
                 Basic Details
               </label>
             </div>
@@ -77,8 +77,8 @@ const ApplicationDetail = ({ ProjectData }) => {
               style={{ width: "450px", marginTop: "30px" }}
             >
               <label
-                style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
-              >
+                style={{ fontSize: "1.3rem", opacity: ".9", fontWeight: "600" ,color:"#5a5a5a"}}
+                >
                 Project Details
               </label>
             </div>
@@ -221,8 +221,8 @@ const ApplicationDetail = ({ ProjectData }) => {
               style={{ width: "450px", marginTop: "30px" }}
             >
               <label
-                style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
-              >
+                style={{ fontSize: "1.3rem", opacity: ".9", fontWeight: "600" ,color:"#5a5a5a"}}
+                >
                 Finish Details
               </label>
             </div>
