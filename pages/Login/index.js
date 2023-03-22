@@ -1,7 +1,7 @@
-import Navbar from "../components/Navbar/Navbar";
-import PageLayout from "../components/PageLayout/PageLayout";
-import PageWidth from "../components/Width/PageWidth";
-import LoginForm from "./page/Login/LoginForm";
+import Navbar from "../../components/Navbar/Navbar"
+import PageLayout from "../../components/PageLayout/PageLayout"
+import PageWidth from "../../components/Width/PageWidth"
+import LoginForm from "../page/Login/LoginForm"
 
 const login = () => {
   return (
@@ -14,7 +14,7 @@ const login = () => {
         </PageWidth>
       </PageLayout>
     </>
-  );
-};
+  )
+}
 
-export default login;
+export default login

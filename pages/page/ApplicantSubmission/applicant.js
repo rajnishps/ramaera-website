@@ -30,7 +30,7 @@ const Applicant = () => {
           style={{
             color: "white",
           }}
-          href="/login"
+          href=" /Login"
         >
           Login to continue
         </Link>
@@ -66,16 +66,16 @@ const Applicant = () => {
       renderCell: (params) => (
         <Link href={`/DistributionChannelResponses/${params.value}`}>
           <button style={{ background: "none", border: "none" }} type="submit">
-        <Button
-          nav
-          width="auto"
-          height="auto"
-          Text="View Details"
-          inheight="auto"
-          fontSize="auto"
-          padding=" 5px 8px"
-        />
-      </button>
+            <Button
+              nav
+              width="auto"
+              height="auto"
+              Text="View Details"
+              inheight="auto"
+              fontSize="auto"
+              padding=" 5px 8px"
+            />
+          </button>
           {/* <button>View Details</button> */}
         </Link>
       ),
@@ -185,7 +185,7 @@ const Applicant = () => {
             onClose={handleClose}
           >
             <MenuItem onClick={handleClose}>Name</MenuItem>
-            <a href="/passwordChange">
+            <a href="/PasswordChange">
               <MenuItem onClick={handleClose}>Change Password</MenuItem>
             </a>
             <MenuItem onClick={handleClose}>Logout</MenuItem>

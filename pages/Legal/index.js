@@ -1,7 +1,6 @@
-import React from "react"
-import Footer from "./page/common/footer"
-import LegalSection from "./page/LegalPage/LegalSection"
-import Navbar from "../components/Navbar/Navbar"
+import Footer from "../page/common/footer"
+import LegalSection from "../page/LegalPage/LegalSection"
+import Navbar from "../../components/Navbar/Navbar"
 
 const legal = () => {
   return (

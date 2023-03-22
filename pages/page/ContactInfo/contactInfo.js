@@ -29,7 +29,7 @@ const ContactInfo = () => {
           style={{
             color: "white",
           }}
-          href="/login"
+          href=" /Login"
         >
           Login to continue
         </Link>
@@ -61,17 +61,17 @@ const ContactInfo = () => {
       selection: false,
       renderCell: (params) => (
         <Link href={`/ContactUsResponses/${params.value}`}>
-        <button style={{ background: "none", border: "none" }} type="submit">
-        <Button
-          nav
-          width="auto"
-          height="auto"
-          Text="View Details"
-          inheight="auto"
-          fontSize="auto"
-          padding=" 5px 8px"
-        />
-      </button>
+          <button style={{ background: "none", border: "none" }} type="submit">
+            <Button
+              nav
+              width="auto"
+              height="auto"
+              Text="View Details"
+              inheight="auto"
+              fontSize="auto"
+              padding=" 5px 8px"
+            />
+          </button>
           {/* <button>View Details</button> */}
         </Link>
       ),
@@ -100,14 +100,13 @@ const ContactInfo = () => {
       sortable: false,
       width: 300,
     },
-   
   ]
 
   const rows = []
 
   if (data) {
     dataPush()
-    data.contactUsRepsonses.forEach((item,index) => {
+    data.contactUsRepsonses.forEach((item, index) => {
       rows.push({
         id: index,
         number: index + 1,
@@ -119,29 +118,29 @@ const ContactInfo = () => {
       })
     })
 
-  return (
-    <>
-      <div>
-        <Text
-          Text="Contact Us Submissions"
-          lg="linear-gradient(to right, #ffa73d, gold)"
-          font
-          size="clamp(2.2rem, 1.2vw, 1.5rem)"
-          fw="400"
-          align="center"
-          lh="50px"
-          m="0 0 1rem 0"
-          xmsize="clamp(2.4rem, 1.5vw, 2rem)"
-          xssize="clamp(2.4rem, 1.5vw, 2rem)"
-          msize="2rem"
-          mwidth="100%"
-          padding="0"
-          mpadding="0"
-          mta="center"
-          mlh="unset"
-        />
+    return (
+      <>
+        <div>
+          <Text
+            Text="Contact Us Submissions"
+            lg="linear-gradient(to right, #ffa73d, gold)"
+            font
+            size="clamp(2.2rem, 1.2vw, 1.5rem)"
+            fw="400"
+            align="center"
+            lh="50px"
+            m="0 0 1rem 0"
+            xmsize="clamp(2.4rem, 1.5vw, 2rem)"
+            xssize="clamp(2.4rem, 1.5vw, 2rem)"
+            msize="2rem"
+            mwidth="100%"
+            padding="0"
+            mpadding="0"
+            mta="center"
+            mlh="unset"
+          />
 
-        <AccountCircleIcon
+          <AccountCircleIcon
             onClick={handleMenu}
             style={{
               color: "white",
@@ -151,7 +150,7 @@ const ContactInfo = () => {
               position: "absolute",
               cursor: "pointer",
             }}
-        />
+          />
 
           <Menu
             id="menu-appbar"
@@ -169,45 +168,45 @@ const ContactInfo = () => {
             onClose={handleClose}
           >
             <MenuItem onClick={handleClose}>Name</MenuItem>
-            <a href="/passwordChange">
+            <a href="/PasswordChange">
               <MenuItem onClick={handleClose}>Change Password</MenuItem>
             </a>
             <MenuItem onClick={handleClose}>Logout</MenuItem>
           </Menu>
 
-        <Box
-          sx={{
-            height: "78vh",
-            width: "90%",
-            margin: "auto",
-            background: "white",
-            padding: "20px",
-            borderRadius: "20px",
-            marginBottom: "50px",
-          }}
-        >
-          <DataGrid
-            rows={rows}
-            columns={columns}
-            initialState={{
-              pagination: {
-                paginationModel: {
-                  pageSize: 9,
-                },
-              },
+          <Box
+            sx={{
+              height: "78vh",
+              width: "90%",
+              margin: "auto",
+              background: "white",
+              padding: "20px",
+              borderRadius: "20px",
+              marginBottom: "50px",
             }}
-            pageSizeOptions={[9]}
-            disablecolumnSelectionOnClick
-            displayRowCheckbox={false}
-            disableRowSelectionOnClick
-          />
-        </Box>
-      </div>
-    </>
-  )
- } else {
-  return <div onClick={location.reload()}></div>
- }
-}  
+          >
+            <DataGrid
+              rows={rows}
+              columns={columns}
+              initialState={{
+                pagination: {
+                  paginationModel: {
+                    pageSize: 9,
+                  },
+                },
+              }}
+              pageSizeOptions={[9]}
+              disablecolumnSelectionOnClick
+              displayRowCheckbox={false}
+              disableRowSelectionOnClick
+            />
+          </Box>
+        </div>
+      </>
+    )
+  } else {
+    return <div onClick={location.reload()}></div>
+  }
+}
 
 export default ContactInfo

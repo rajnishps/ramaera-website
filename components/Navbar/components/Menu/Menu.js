@@ -70,12 +70,12 @@ const Menu = ({ open, setOpen, ...props }) => {
           </Link>
         </H>
         <H>
-          <Link href="/industries" onClick={() => setOpen(false)}>
+          <Link href="/Industries" onClick={() => setOpen(false)}>
             OUR INDUSTRIES
           </Link>
         </H>
         <H>
-          <Link href="/companies" onClick={() => setOpen(false)}>
+          <Link href="/Companies" onClick={() => setOpen(false)}>
             OUR COMPANIES
           </Link>
         </H>

@@ -1,7 +1,7 @@
-import Navbar from "../components/Navbar/Navbar";
-import PageLayout from "../components/PageLayout/PageLayout";
-import PageWidth from "../components/Width/PageWidth";
-import ChangePassword from "./page/ChangePassword/Password";
+import Navbar from "../../components/Navbar/Navbar"
+import PageLayout from "../../components/PageLayout/PageLayout"
+import PageWidth from "../../components/Width/PageWidth"
+import ChangePassword from "../page/ChangePassword/Password"
 
 const passwordChange = () => {
   return (
@@ -14,7 +14,7 @@ const passwordChange = () => {
         </PageWidth>
       </PageLayout>
     </>
-  );
-};
+  )
+}
 
-export default passwordChange;
+export default passwordChange

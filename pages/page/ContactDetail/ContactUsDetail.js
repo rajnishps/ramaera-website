@@ -1,14 +1,17 @@
 import Link from "next/link"
 import { FormWrapper } from "./FormWrapper"
-import {Container} from "./ContactUsDetailStyle.js"
+import { Container } from "./ContactUsDetailStyle.js"
 
 const ApplicationDetail = ({ ContactUsData }) => {
   try {
     return (
       <>
-        <Container >
+        <Container>
           <FormWrapper>
-            <div className="divResponsive" tyle={{ width: "500px", marginTop: "30px" }}>
+            <div
+              className="divResponsive"
+              tyle={{ width: "500px", marginTop: "30px" }}
+            >
               <label
                 style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
               >
@@ -16,8 +19,8 @@ const ApplicationDetail = ({ ContactUsData }) => {
               </label>
             </div>
             <div className="divResponsive" style={{ width: "450px" }}></div>
-            <hr className="lineHr1"/>
-            <hr className="lineHr2"/>
+            <hr className="lineHr1" />
+            <hr className="lineHr2" />
             <div className="divResponsive" style={{ width: "500px" }}>
               <label>Name </label>
               <br />
@@ -54,7 +57,7 @@ const ApplicationDetail = ({ ContactUsData }) => {
           style={{
             color: "white",
           }}
-          href="/login"
+          href=" /Login"
         >
           Login to continue
         </Link>

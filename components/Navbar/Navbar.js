@@ -102,7 +102,7 @@ const Navbar = ({ selectedTab }) => {
 
             <Link2>
               <Link
-                href="/industries"
+                href="/Industries"
                 className="left-nav-font"
                 style={{ color: "white" }}
               >
@@ -118,7 +118,7 @@ const Navbar = ({ selectedTab }) => {
 
             <Link2>
               <Link
-                href="/companies"
+                href="/Companies"
                 className="left-nav-font"
                 style={{ color: "white" }}
               >

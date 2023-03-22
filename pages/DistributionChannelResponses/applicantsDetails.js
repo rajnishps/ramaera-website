@@ -1,14 +1,17 @@
 import Link from "next/link"
 import { FormWrapper } from "./FormWrapper"
-import {Container} from "./applicantsDetailsStyle.js"
+import { Container } from "./applicantsDetailsStyle.js"
 
 const applicantsDetails = ({ AppData }) => {
   try {
     return (
       <>
-        <Container >
+        <Container>
           <FormWrapper>
-            <div className="divResponsive" style={{ width: "500px", marginTop: "30px" }}>
+            <div
+              className="divResponsive"
+              style={{ width: "500px", marginTop: "30px" }}
+            >
               <label
                 style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
               >
@@ -16,8 +19,8 @@ const applicantsDetails = ({ AppData }) => {
               </label>
             </div>
             <div className="divResponsive" style={{ width: "450px" }}></div>
-            <hr className="lineHr1"/>
-          <hr className="lineHr2"/>
+            <hr className="lineHr1" />
+            <hr className="lineHr2" />
             <div className="divResponsive" style={{ width: "500px" }}>
               <label>Applicant's Name </label>
               <br />
@@ -48,7 +51,10 @@ const applicantsDetails = ({ AppData }) => {
               <br />
               <p>{AppData.mobileNumber}</p>
             </div>
-            <div className="divResponsive" style={{ width: "500px", marginTop: "30px" }}>
+            <div
+              className="divResponsive"
+              style={{ width: "500px", marginTop: "30px" }}
+            >
               <label
                 style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
               >
@@ -56,8 +62,8 @@ const applicantsDetails = ({ AppData }) => {
               </label>
             </div>
             <div className="divResponsive" style={{ width: "450px" }}></div>
-            <hr  className="lineHr1"/>
-          <hr className="lineHr2"/>
+            <hr className="lineHr1" />
+            <hr className="lineHr2" />
             <div className="divResponsive" style={{ width: "500px" }}>
               <label>Application </label>
               <br />
@@ -106,7 +112,7 @@ const applicantsDetails = ({ AppData }) => {
           style={{
             color: "white",
           }}
-          href="/login"
+          href=" /Login"
         >
           Login to continue
         </Link>

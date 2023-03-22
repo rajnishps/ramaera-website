@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import Flex from "../../../../../components/Styling/Flex";
-import Text from "../../../../../components/Text/Text";
-import Link from "next/link";
-import TransparentButton from "../../../../../components/TransparentButton/TransparentButton";
+import React from "react"
+import styled from "styled-components"
+import Flex from "../../../../../components/Styling/Flex"
+import Text from "../../../../../components/Text/Text"
+import Link from "next/link"
+import TransparentButton from "../../../../../components/TransparentButton/TransparentButton"
 
 const StyleTextContainer = styled.div`
   display: flex;
@@ -26,7 +26,7 @@ const StyleTextContainer = styled.div`
   //@media only screen and (max-width: 400px) {
   //margin-top: 250px;
   //  }
-`;
+`
 const ButtonWrapper = styled.div`
   padding: 2vh 22vw 0 0;
 
@@ -36,20 +36,20 @@ const ButtonWrapper = styled.div`
   @media only screen and (max-width: 400px) {
     padding: 2vh 25vw 2vh 25vw;
   }
-`;
+`
 const ImageTag = styled.img`
   width: 200px;
   transition: 200ms;
   &:hover {
     transform: scale(1.05);
   }
-`;
+`
 const IconDiv = styled.div`
   @media only screen and (min-width: 768px) {
     position: absolute;
     left: -120px;
   }
-`;
+`
 const TextContainer = () => {
   return (
     <StyleTextContainer>
@@ -110,7 +110,7 @@ const TextContainer = () => {
         padding="0 0 0 0vw "
       />
       <ButtonWrapper>
-        <Link href="/industries#hotel">
+        <Link href="/Industries#hotel">
           <TransparentButton
             Text="Read more"
             border="solid #FFE259 1.6px"
@@ -124,7 +124,7 @@ const TextContainer = () => {
         </Link>
       </ButtonWrapper>
     </StyleTextContainer>
-  );
-};
+  )
+}
 
-export default TextContainer;
+export default TextContainer
