@@ -295,7 +295,7 @@ a {
     list-style: none;
     display: flex;
     justify-content: space-between;
-    width: 32rem;
+    width: 30rem;
     text-decoration: none;
     margin: 0 1rem 0 0;
   }
@@ -502,6 +502,12 @@ a {
 }
 .tabscontent.active {
   width: 100vw;
+}
+
+@media (max-width: 450px){
+  .tabscontent{
+    padding: 0 4vw !important;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1119,5 +1125,15 @@ a:hover {
   .boxGird{
     padding: 10px;
     border-radius: 5px;
+  }
+}
+
+.termSpaceTop{
+  height: 200px;
+}
+
+@media (max-width: 450px){
+  .termSpaceTop{
+    height: 130px;
   }
 }

@@ -1923,7 +1923,7 @@ export function UserForm({}) {
   return (
     <FormWrapper title="BECOME A PART OF OUR DISTRIBUTION CHANNEL">
       <div style={{ width: "500px", marginTop: "30px" }}>
-        <label style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}>
+        <label style={{ fontSize: "1.3rem", opacity: ".9", fontWeight: "600" ,color:"#5a5a5a"}}>
           Personal Details
         </label>
       </div>
@@ -2007,7 +2007,7 @@ export function UserForm({}) {
       <div style={{ width: "450px" }}></div>
 
       <div style={{ width: "500px", marginTop: "30px" }}>
-        <label style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}>
+      <label style={{ fontSize: "1.3rem", opacity: ".9", fontWeight: "600" ,color:"#5a5a5a"}}>
           Application Details
         </label>
       </div>

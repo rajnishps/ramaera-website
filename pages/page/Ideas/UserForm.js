@@ -136,9 +136,7 @@ export function UserForm() {
         </div>
 
         <div style={{ width: "500px", marginTop: "30px" }}>
-          <label
-            style={{ fontSize: ".8rem", opacity: ".9", fontWeight: "600" }}
-          >
+        <label style={{ fontSize: "1.3rem", opacity: ".9", fontWeight: "600" ,color:"#5a5a5a"}}>
             Team Details
           </label>
         </div>
