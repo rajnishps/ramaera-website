@@ -2166,24 +2166,24 @@ export function UserForm({}) {
               <option value={""} disabled selected>
                 Select Location (जगह चुनें)
               </option>
-              <option value={"Aligarh"}>Aligarh division</option>
-              <option value={"Agra"}>Agra division</option>
-              <option value={"Azamgarh"}>Azamgarh division</option>
-              <option value={"Prayagraj"}>Prayagraj division</option>
-              <option value={"Bareilly"}>Bareilly division</option>
-              <option value={"Basti"}>Basti division</option>
-              <option value={"Gonda"}>Gonda division</option>
-              <option value={"Ayodhya"}>Ayodhya division</option>
-              <option value={"Banda"}>Banda</option>
-              <option value={"Gorakhpur"}>Gorakhpur</option>
-              <option value={"Kanpur"}>Kanpur</option>
-              <option value={"Jhansi"}>Jhansi</option>
-              <option value={"Lucknow"}>Lucknow</option>
-              <option value={"Mirzapur"}>Mirzapur</option>
-              <option value={"Meerut"}>Meerut division</option>
-              <option value={"Moradabad"}>Moradabad division</option>
-              <option value={"Varanasi"}>Varanasi</option>
-              <option value={"Saharanpur"}>Saharanpur</option>
+              <option value={"Aligarh"}>Aligarh Division</option>
+              <option value={"Agra"}>Agra Division</option>
+              <option value={"Azamgarh"}>Azamgarh Division</option>
+              <option value={"Prayagraj"}>Prayagraj Division</option>
+              <option value={"Bareilly"}>Bareilly Division</option>
+              <option value={"Basti"}>Basti Division</option>
+              <option value={"Gonda"}>Gonda Division</option>
+              <option value={"Ayodhya"}>Ayodhya Division</option>
+              <option value={"Banda"}>Banda Division</option>
+              <option value={"Gorakhpur"}>Gorakhpur Division</option>
+              <option value={"Kanpur"}>Kanpur Division</option>
+              <option value={"Jhansi"}>Jhansi Division</option>
+              <option value={"Lucknow"}>Lucknow Division</option>
+              <option value={"Mirzapur"}>Mirzapur Division</option>
+              <option value={"Meerut"}>Meerut Division</option>
+              <option value={"Moradabad"}>Moradabad Division</option>
+              <option value={"Varanasi"}>Varanasi Division</option>
+              <option value={"Saharanpur"}>Saharanpur Division</option>
             </select>
           </div>
         ))}
@@ -2201,7 +2201,7 @@ export function UserForm({}) {
               }}
             >
               <option value={""} disabled selected>
-                Select District (चुनें)
+                Select (चुनें)
               </option>
               <option value={"Danapur"}>Danapur Sadan</option>
               <option value={"Jehanabad"}>Jehanabad (District)</option>
@@ -2271,32 +2271,57 @@ export function UserForm({}) {
               }}
             >
               <option value={""} disabled selected>
-                Select District (चुनें)
+                Select (चुनें)
               </option>
+              {/*  <option disabled value={""}></option>
+
+              <option disabled value={""}>
+                ---Aligarh Division---
+              </option> */}
               <option value={"Aligarh"}>Aligarh (District)</option>
               <option value={"Etah"}>Etah (District)</option>
               <option value={"Hathras"}>Hathras (District)</option>
               <option value={"Kasganj"}>Kasganj (District)</option>
 
+              {/*  <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Agra Division---
+              </option> */}
               <option value={"Agra"}>Agra (District)</option>
               <option value={"Mathura"}>Mathura (District)</option>
               <option value={"Mainpuri"}>Mainpuri (District)</option>
               <option value={"Firozabad"}>Firozabad (District)</option>
 
+              {/* <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Azamgarh Division---
+              </option> */}
               <option value={"Azamgarh"}>Azamgarh (District)</option>
               <option value={"Ballia"}>Ballia (District)</option>
               <option value={"Mau"}>Mau (District)</option>
 
+              {/* <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Prayagraj Division---
+              </option> */}
               <option value={"Prayagraj"}>Prayagraj (District)</option>
               <option value={"Fatehpur"}>Fatehpur (District)</option>
               <option value={"Kaushambi"}>Kaushambi (District)</option>
               <option value={"Pratapgarh"}>Pratapgarh (District)</option>
 
+              {/* <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Bareilly Division---
+              </option> */}
               <option value={"Bareilly"}>Bareilly (District)</option>
               <option value={"Pilibhit"}>Pilibhit (District)</option>
               <option value={"Shahjahanpur"}>Shahjahanpur (District)</option>
               <option value={"Badaun"}>Badaun (District)</option>
 
+              {/* <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Basti Division---
+              </option> */}
               <option value={"Basti"}>Basti (District)</option>
               <option value={"Sant Kabir Nagar"}>
                 Sant Kabir Nagar (District)
@@ -2305,11 +2330,19 @@ export function UserForm({}) {
                 Siddharthnagar (District)
               </option>
 
+              {/*  <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Gonda Division---
+              </option> */}
               <option value={"Bahraich"}>Bahraich (District)</option>
               <option value={"Balarampur"}>Balarampur (District)</option>
               <option value={"Gonda"}>Gonda (District)</option>
               <option value={"Shravasti"}>Shravasti (District)</option>
 
+              {/*  <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Ayodhya Division---
+              </option> */}
               <option value={"Ayodhya"}>Ayodhya (District)</option>
               <option value={"Ambedkar Nagar"}>
                 Ambedkar Nagar (District)
@@ -2318,16 +2351,28 @@ export function UserForm({}) {
               <option value={"Sultanpur"}>Sultanpur (District)</option>
               <option value={"Amethi"}>Amethi (District)</option>
 
+              {/* <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Banda Division---
+              </option> */}
               <option value={"Banda"}>Banda (District)</option>
               <option value={"Chitrakoot"}>Chitrakoot (District)</option>
               <option value={"Hamirpur"}>Hamirpur (District)</option>
               <option value={"Mahoba"}>Mahoba (District)</option>
 
+              {/* <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Gorakhpur Division---
+              </option> */}
               <option value={"Deoria"}>Deoria (District)</option>
               <option value={"Gorakhpur"}>Gorakhpur (District)</option>
               <option value={"Kushinagar"}>Kushinagar (District)</option>
               <option value={"Maharajganj"}>Maharajganj (District)</option>
 
+              {/* <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Kanpur Division---
+              </option> */}
               <option value={"Auraiya"}>Auraiya (District)</option>
               <option value={"Etawah"}>Etawah (District)</option>
               <option value={"Farrukhabad"}>Farrukhabad (District)</option>
@@ -2335,10 +2380,18 @@ export function UserForm({}) {
               <option value={"Kanpur Dehat"}>Kanpur Dehat (District)</option>
               <option value={"Kanpur Nagar"}>Kanpur Nagar (District)</option>
 
+              {/* <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Jhansi Division---
+              </option> */}
               <option value={"Jalaun"}>Jalaun (District)</option>
               <option value={"Jhansi"}>Jhansi (District)</option>
               <option value={"Lalitpur"}>Lalitpur (District)</option>
 
+              {/* <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Lucknow Division---
+              </option> */}
               <option value={"Hardoi"}>Hardoi (District)</option>
               <option value={"Lakhimpur Kheri"}>
                 Lakhimpur Kheri (District)
@@ -2348,12 +2401,20 @@ export function UserForm({}) {
               <option value={"Sitapur"}>Sitapur (District)</option>
               <option value={"Unnao"}>Unnao (District)</option>
 
+              {/* <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Mirzapur Division---
+              </option> */}
               <option value={"Mirzapur"}>Mirzapur (District)</option>
               <option value={"Sant Ravidas Nagar"}>
                 Sant Ravidas Nagar (District)
               </option>
               <option value={"Sonbhadra"}>Sonbhadra (District)</option>
 
+              {/*  <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Meerut Division---
+              </option> */}
               <option value={"Baghpat"}>Baghpat (District)</option>
               <option value={"Bulandshahar"}>Bulandshahar (District)</option>
               <option value={"Gautam Buddh Nagar"}>
@@ -2363,17 +2424,29 @@ export function UserForm({}) {
               <option value={"Meerut"}>Meerut (District)</option>
               <option value={"Hapur"}>Hapur (District)</option>
 
+              {/* <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Moradabad Division---
+              </option> */}
               <option value={"Bijnor"}>Bijnor (District)</option>
               <option value={"Amroha"}>Amroha (District)</option>
               <option value={"Moradabad"}>Moradabad (District)</option>
               <option value={"Rampur"}>Rampur (District)</option>
               <option value={"Sambhal"}>Sambhal (District)</option>
 
+              {/*  <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Varanasi Division---
+              </option> */}
               <option value={"Chandauli"}>Chandauli (District)</option>
               <option value={"Ghazipur"}>Ghazipur (District)</option>
               <option value={"Jaunpur"}>Jaunpur (District)</option>
               <option value={"Varanasi"}>Varanasi (District)</option>
 
+              {/* <option disabled value={""}></option>
+              <option disabled value={""}>
+                ---Saharanpur Division---
+              </option> */}
               <option value={"Muzaffarnagar"}>Muzaffarnagar (District)</option>
               <option value={"Saharanpur"}>Saharanpur (District)</option>
               <option value={"Shamli"}>Shamli (District)</option>
