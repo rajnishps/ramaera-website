@@ -3,6 +3,7 @@ import { FormWrapper } from "./FormWrapper"
 import { Container } from "./ApplicationDetailStyle.js"
 
 const ApplicationDetail = ({ ProjectData }) => {
+  console.log(ProjectData)
   try {
     return (
       <>
@@ -64,13 +65,45 @@ const ApplicationDetail = ({ ProjectData }) => {
             <div className="divResponsive" style={{ width: "500px" }}>
               <label>Director Name </label>
               <br />
-              <p>{ProjectData.directorName} </p>
+              <p>{ProjectData.director[0]} </p>
             </div>
             <div className="divResponsive" style={{ width: "450px" }}>
-              <label>Basic Introduction </label>
-              <br />
-              <p>{ProjectData.introduction} </p>
+              {ProjectData.director[1] && (
+                <>
+                  <label>Basic Introduction </label>
+                  <br />
+                  <p>{ProjectData.director[1]} </p>
+                </>
+              )}
             </div>
+            {ProjectData.director[2] && (
+              <>
+                <div className="divResponsive" style={{ width: "500px" }}>
+                  <label>Director Name </label>
+                  <br />
+                  <p>{ProjectData.director[2]} </p>
+                </div>
+                <div className="divResponsive" style={{ width: "450px" }}>
+                  <label>Basic Introduction </label>
+                  <br />
+                  <p>{ProjectData.director[3]} </p>
+                </div>
+              </>
+            )}
+            {ProjectData.director[4] && (
+              <>
+                <div className="divResponsive" style={{ width: "500px" }}>
+                  <label>Director Name </label>
+                  <br />
+                  <p>{ProjectData.director[4]} </p>
+                </div>
+                <div className="divResponsive" style={{ width: "450px" }}>
+                  <label>Basic Introduction </label>
+                  <br />
+                  <p>{ProjectData.director[5]} </p>
+                </div>
+              </>
+            )}
 
             <div
               className="divResponsive"

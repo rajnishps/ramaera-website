@@ -9,10 +9,25 @@ import { useSelector } from "react-redux"
 import { ToastContainer, toast } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import { Container, ButtonContainer } from "./allIdeaStyle.js"
+import { useState } from "react"
 
 const Ideas = () => {
-  const [CreateProject] = useMutation(CreateProjectApplications)
+  const [allDirectorsData, setAllDirectorsData] = useState([])
+  const changeAllDirectorsData = () => {
+    const directorsString = [
+      directorOneVar,
+      directorIntroOneVar,
+      directorTwoVar,
+      directorIntroTwoVar,
+      directorThreeVar,
+      directorIntroThreeVar,
+    ]
+    console.log("directorsString", directorsString)
+    setAllDirectorsData(directorsString)
+  }
+  console.log("allDirectorsData", allDirectorsData)
 
+  const [CreateProject] = useMutation(CreateProjectApplications)
   const CityVar = useSelector((state) => state.project.City)
   const CountryVar = useSelector((state) => state.project.Country)
   const StateVar = useSelector((state) => state.project.State)
@@ -21,7 +36,19 @@ const Ideas = () => {
   const occupationVar = useSelector((state) => state.project.occupation)
   const nameVar = useSelector((state) => state.project.name)
   const emailVar = useSelector((state) => state.project.email)
-  const directorDataVar = useSelector((state) => state.project.directorData)
+  const directorOneVar = useSelector((state) => state.project.directorOne)
+  const directorIntroOneVar = useSelector(
+    (state) => state.project.directorIntroOne
+  )
+  const directorTwoVar = useSelector((state) => state.project.directorTwo)
+  const directorIntroTwoVar = useSelector(
+    (state) => state.project.directorIntroTwo
+  )
+  const directorThreeVar = useSelector((state) => state.project.directorThree)
+  const directorIntroThreeVar = useSelector(
+    (state) => state.project.directorIntroThree
+  )
+  const directorDataVar = allDirectorsData
   const yourProjectTypeVar = useSelector(
     (state) => state.project.yourProjectType
   )
@@ -159,7 +186,12 @@ const Ideas = () => {
 
   return (
     <Container>
-      <form onSubmit={(e) => handleSubmit(e)}>
+      <form
+        onSubmit={(e) => {
+          changeAllDirectorsData()
+          handleSubmit(e)
+        }}
+      >
         <ToastContainer
           position="top-center"
           autoClose={5000}

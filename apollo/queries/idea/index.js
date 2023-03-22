@@ -92,7 +92,7 @@ $director: [String!]!,
     }
 }`)
 
-export const hGetProjectApplications = gql(`
+export const GetProjectApplications = gql(`
 
 query getProjectApplicants {
   AllProjectDetails {
@@ -139,7 +139,7 @@ query getProjectApplicants {
     director
   }
 }`)
-export const GetProjectApplications = gql(`
+export const fGetProjectApplications = gql(`
 
 query getProjectApplicants {
   AllProjectDetails {

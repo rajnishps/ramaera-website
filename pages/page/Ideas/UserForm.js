@@ -10,7 +10,12 @@ import {
   changeDob,
   changeEmail,
   changeMobileNumber,
-  changeDirectorData,
+  changedirectorOne,
+  changedirectorIntroOne,
+  changedirectorTwo,
+  changedirectorIntroTwo,
+  changedirectorThree,
+  changedirectorIntroThree,
   changeName,
   changeOccupation,
 } from "../../../state/slice/projectSlice"
@@ -147,7 +152,7 @@ export function UserForm() {
             <label>Director Name</label>
             <br />
             <input
-              onChange={(e) => dispatch(changeDirectorData(e.target.value))}
+              onChange={(e) => dispatch(changedirectorOne(e.target.value))}
               type="text"
               placeholder="Type your name"
             />
@@ -157,21 +162,31 @@ export function UserForm() {
           <div style={{ width: "450px" }}>
             <label>Basic introduction with experience </label>
             <br />
-            <input type="text" />
+            <input
+              type="text"
+              onChange={(e) => dispatch(changedirectorIntroOne(e.target.value))}
+            />
           </div>
         )}
         {buttonCount >= 2 && (
           <div style={{ width: "500px" }}>
             <label>Director Name</label>
             <br />
-            <input type="text" placeholder="Type your name" />
+            <input
+              type="text"
+              onChange={(e) => dispatch(changedirectorTwo(e.target.value))}
+              placeholder="Type your name"
+            />
           </div>
         )}
         {buttonCount >= 2 && (
           <div style={{ width: "450px" }}>
             <label>Basic introduction with experience </label>
             <br />
-            <input type="text" />
+            <input
+              type="text"
+              onChange={(e) => dispatch(changedirectorIntroTwo(e.target.value))}
+            />
           </div>
         )}
 
@@ -179,14 +194,23 @@ export function UserForm() {
           <div style={{ width: "500px" }}>
             <label>Director Name</label>
             <br />
-            <input type="text" placeholder="Type your name" />
+            <input
+              type="text"
+              onChange={(e) => dispatch(changedirectorThree(e.target.value))}
+              placeholder="Type your name"
+            />
           </div>
         )}
         {buttonCount >= 3 && (
           <div style={{ width: "450px" }}>
             <label>Basic introduction with experience </label>
             <br />
-            <input type="text" />
+            <input
+              onChange={(e) =>
+                dispatch(changedirectorIntroThree(e.target.value))
+              }
+              type="text"
+            />
           </div>
         )}
         {buttonCount === 3 ? null : (
