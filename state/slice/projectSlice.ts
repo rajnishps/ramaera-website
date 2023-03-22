@@ -42,6 +42,12 @@ const initialState = {
   instagramProfile: "",
   websiteURL: "",
   thanksNote: "",
+  directorOne: "",
+  directorIntroOne: "",
+  directorTwo: "",
+  directorIntroTwo: "",
+  directorThree: "",
+  directorIntroThree: "",
 }
 
 export const projectSlice = createSlice({
@@ -172,10 +178,34 @@ export const projectSlice = createSlice({
     changethanksNote: (state, action) => {
       state.thanksNote = action.payload
     },
+    changedirectorOne: (state, action) => {
+      state.directorOne = action.payload
+    },
+    changedirectorIntroOne: (state, action) => {
+      state.directorIntroOne = action.payload
+    },
+    changedirectorTwo: (state, action) => {
+      state.directorTwo = action.payload
+    },
+    changedirectorIntroTwo: (state, action) => {
+      state.directorIntroTwo = action.payload
+    },
+    changedirectorThree: (state, action) => {
+      state.directorThree = action.payload
+    },
+    changedirectorIntroThree: (state, action) => {
+      state.directorIntroThree = action.payload
+    },
   },
 })
 
 export const {
+  changedirectorOne,
+  changedirectorIntroOne,
+  changedirectorTwo,
+  changedirectorIntroTwo,
+  changedirectorThree,
+  changedirectorIntroThree,
   changeCity,
   changeCountry,
   changeState,
